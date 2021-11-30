@@ -1,0 +1,26 @@
+---
+title: "Introduction to version control with git"
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+
+# Workshop organization and schedule
+
+# Workshop Material
+
+You can find all the workshop material on this website.
+On top, you can navigate to the presentation slides and the tasks.
+
+To download presentation slides in pdf format, you can use the following links:
+
+<!-- - <a href="./slides/01_01_RStudio.pdf" download> 01 - Introduction RStudio</a> -->

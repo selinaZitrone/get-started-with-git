@@ -1,0 +1,18 @@
+name: "get-started-with-git"
+title: "Get started with Git"
+theme: theme.css
+description: |
+  My Website
+output_dir: "docs"
+exclude: ["R/", "data/"]
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Slides"
+    - text: "Tasks"
+    - text: "Resources"
+
+    - icon: fa fa-github
+      href: https://github.com/selinaZitrone/get-started-with-git
+output: distill::distill_article

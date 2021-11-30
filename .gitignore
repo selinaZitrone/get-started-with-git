@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+
+slides/img/
+slides/*.html
+slides/*.pdf
+slides/*_files/
+
+tasks/*/*.html
+docs/
