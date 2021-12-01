@@ -158,6 +158,11 @@ I will show you everything in the command line. There are also GUI programs for 
 ---
 # Step 1: Initialize a git repository `git init`
 
+.center[![Git init concept](img/git-init-concept.png)]
+
+---
+# Step 1: Initialize a git repository `git init`
+
 To use git in any project, just navigate to the project folder and run `git init`
 
 ![](img/workflow/git-init.png)
@@ -166,5 +171,88 @@ To use git in any project, just navigate to the project folder and run `git init
 
 This initializes a (hidden) `.git` folder that contains your git repository.
 
+![List files](img/workflow/git-init-ls.png)
+
+- You don't have to touch anything that is in this folder
+
 ---
-# 
+# Step 2: Modify files and stage changes `git add`
+
+.pull-left[
+- git detects any changes in the working directory and marks them as 
+
+  - untracked
+  - modified
+  - deleted
+  
+]
+
+--
+
+.pull-right[
+![Add file Bob.txt to working directory](img/git-add-concept-1.png)
+]
+
+--
+
+- see whats going on with `git status`
+
+![Git status showes untracked files](img/workflow/git-status.png)
+---
+# Step 2: Modify files and stage changes `git add`
+
+.pull-left[
+- Add files to the staging area with
+
+  - Specific file: `git add <filename>`
+  - All changed files: `git add .`
+]
+
+.pull-right[
+![Add Bob.txt to the staging area](img/git-add-concept-2.png)
+]
+
+--
+
+![:scale 70%](img/workflow/git-add.png)
+
+---
+# Step 3: Commit changes to the local repository `git commit`
+
+.pull-left[
+- Commits are basically snapshots of your projects
+
+- Commit work from staging area to local repository
+
+- Now your changes are part of your project's git history
+]
+.pull-right[
+![Concept of a git commit](img/git-commit-concept.png)
+]
+
+--
+
+![Git commit in command line](img/workflow/git-commit.png)
+
+
+---
+# Commit messages
+
+- Every commit needs a commit message
+- Good commit messages are essential to make good use of git!
+
+--
+
+.center[![xkcd on commit messages](https://imgs.xkcd.com/comics/git_commit.png)]
+
+--
+
+- One line commit messages can be given directly in the command line:
+  - `git commit -m "Your very nice commit message"`
+- More complex commit messages are better entered in a text editor:
+  - `git commit` and a text editor will automatically open for you message
+  
+.footnote-left[Comic by [xkcd](https://xkcd.com/1296/)]
+
+---
+# Step 4: Share changes with a remote repository `git push`
