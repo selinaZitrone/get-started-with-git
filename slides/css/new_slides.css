@@ -26,11 +26,11 @@
   --text-bold-color: #272822;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #FFFFFF;
-  --inverse-background-color: #986960;
+  --inverse-background-color: #404E64;
   --inverse-header-color: #FFFFFF;
-  --title-slide-background-color: #986960;
+  --title-slide-background-color: #404E64;
   --title-slide-text-color: #FFFFFF;
-  --header-background-color: #986960;
+  --header-background-color: #404E64;
   --header-background-text-color: #FFFFFF;
   --progressbar-color: #986960;
 }
