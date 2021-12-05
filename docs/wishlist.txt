@@ -1,0 +1,5 @@
+Index:
+- link to section step 2
+
+General:
+- git vs. Git
