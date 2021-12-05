@@ -186,3 +186,5 @@ git push -u origin main
 - push to origin
 
 ## Look at the log
+
+Use `git log` to look at the log of your current repository
