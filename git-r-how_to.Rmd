@@ -1,0 +1,85 @@
+---
+title: How to use git with R and R Studio
+---
+
+```{r setup}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+
+# Install usethis package
+
+```{r}
+install.packages("usethis")
+```
+
+## Configure github token
+
+Check if you already have a personal access token for Github
+
+```{r}
+gh::gh_token()
+```
+
+If not, you can create one
+
+```{r}
+usethis::create_github_token()
+```
+
+This will first open Github and ask you to sign in. Then you are asked to create a new personal access token.
+
+On top enter a note that reminds you what this token is for (e.g. Something like "RStudio/R on HP laptop").
+
+You can set an expiration date that you like to have.
+You can also select the scopes for your PAT. For our use case, the default selected scopes are enough.
+Scroll down and click on `Generate token`.
+
+Copy the token to the clipboard. Careful: You will not be able to read it again
+
+Now register the token with
+
+```{r}
+gitcreds::gitcreds_set()
+```
+You are now prompted to paste your token into the Console.
+
+Now your PAT should be added to the credentials. You can check it with
+
+```{r}
+gh::gh_token()
+```
+
+## Add usethis to your Rprofile (optional)
+
+If you want to load the `usethis` package every time you start R, you can add it to yuor `.Rprofile`. This way, you have all the `usethis` functionality available without having to load the packages first.
+
+**Carful: ** Loading packages automatically should generally only be done for packages that are not used in your R analyses, packages, ... Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else. Adding utility packages to the `.Rprofile` is however, very convenient.
+
+You can open your `.Rprofile` file with 
+```{r}
+usethis::edit_r_profile()
+```
+Then you can add the following line, save the file and close it:
+
+```{r}
+library(usethis)
+```
+
+This takes effect after restarting R.
+
+## Now
+
+- create new R project and 
+
+```{r}
+use_git()
+use_github()
+
+# add ons
+use_git_ignore()
+```
+
+- after use_git: git gui
+
+
