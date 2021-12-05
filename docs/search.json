@@ -4,34 +4,41 @@
       "path": "git-collab.html",
       "author": [],
       "contents": "\nNo content yet\n\n\n\n",
-      "last_modified": "2021-12-05T17:00:46+01:00"
+      "last_modified": "2021-12-05T17:35:41+01:00"
+    },
+    {
+      "path": "git-r-how_to.html",
+      "title": "How to use git with R and R Studio",
+      "author": [],
+      "contents": "\n\n\nknitr::opts_chunk$set(eval = FALSE)\n\n\n\nInstall usethis package\n\n\ninstall.packages(\"usethis\")\n\n\n\nConfigure github token\nCheck if you already have a personal access token for Github\n\n\ngh::gh_token()\n\n\n\nIf not, you can create one\n\n\nusethis::create_github_token()\n\n\n\nThis will first open Github and ask you to sign in. Then you are asked to create a new personal access token.\nOn top enter a note that reminds you what this token is for (e.g. Something like “RStudio/R on HP laptop”).\nYou can set an expiration date that you like to have. You can also select the scopes for your PAT. For our use case, the default selected scopes are enough. Scroll down and click on Generate token.\nCopy the token to the clipboard. Careful: You will not be able to read it again\nNow register the token with\n\n\ngitcreds::gitcreds_set()\n\n\n\nYou are now prompted to paste your token into the Console.\nNow your PAT should be added to the credentials. You can check it with\n\n\ngh::gh_token()\n\n\n\nAdd usethis to your Rprofile (optional)\nIf you want to load the usethis package every time you start R, you can add it to yuor .Rprofile. This way, you have all the usethis functionality available without having to load the packages first.\nCarful:  Loading packages automatically should generally only be done for packages that are not used in your R analyses, packages, … Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else. Adding utility packages to the .Rprofile is however, very convenient.\nYou can open your .Rprofile file with\n\n\nusethis::edit_r_profile()\n\n\n\nThen you can add the following line, save the file and close it:\n\n\nlibrary(usethis)\n\n\n\nThis takes effect after restarting R.\nNow\ncreate new R project and\n\n\nuse_git()\nuse_github()\n\n# add ons\nuse_git_ignore()\n\n\n\nafter use_git: git gui\n\n\n\n",
+      "last_modified": "2021-12-05T17:35:43+01:00"
     },
     {
       "path": "index.html",
       "title": "Introduction to version control with git",
       "author": [],
       "contents": "\nWorkshop Material\nYou can find all the workshop material on this website. On top, you can navigate to the presentation slides and the how tos.\n\n\nWorkshop Prerequisites\nTo follow everything we discuss in the workshop you need to prepare a few things:\n1. Install git on your machine\nIf you have git already installed, you can skip this step and go to prerequisite 2.\nWindows\nYou can download git from here\nDownload and install the correct version for your machine (probably 64 bit). Use recommended or default settings during the installation. Most options can also be changed later if you want to.\nWith the git installation for Windows, you also get a program called Git bash. Git bash is a terminal application for Windows that provides a Git command line experience.\nOpen the Git bash application (you can find it searching in the Windows search bar) and run the command git --version. If the git installation was successful, you should see the version of git that you are using printed to the console.\nLinux (Ubuntu)\nYou can install git from the terminal. Run\nsudo apt-get update\nsudo apt-get install git\nCheck the version of git that you have installed with\ngit --version\nMacOS\nSome versions of MacOS come with git pre-installed. To check if you already have git, open the terminal and run\ngit --version\nIf the terminal tells you which version of git is installed, you can skip the next steps.\nIf you need to install git, you can do this with homebrew. Just run\nbrew install git\nThen check the version and verify the installation with\ngit --versions\n2. Sign up for Github/Gitlab\nI will use Github as a remote repository service in the workshop. However, you can also follow if you have Gitlab or any other remote repo service.\nIf you don’t use any of these services yet, I suggest to make a Github account to follow this workshop. However, if your university provides a self-hosted Gitlab, you might also prefer to use that instead.\nTip: If you sign up for Github with an institutional email address, you will get a free upgrade to Github Pro. This gives you some additional benefits like private wikis, … You can always add a second email address later or change it if you leave your institution.\n3. Set up SSH Authentication\nIn order to communicate between your local machine and your Github/Gitlab account, you need to set up authentication via SSH keys. Please follow the instructions  here to do so.\n\n\n\n",
-      "last_modified": "2021-12-05T17:00:47+01:00"
+      "last_modified": "2021-12-05T17:35:43+01:00"
     },
     {
       "path": "LICENSE.html",
       "author": [],
       "contents": "\nMIT License\nCopyright (c) 2021 Selina Baldauf\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n\n",
-      "last_modified": "2021-12-05T17:00:47+01:00"
+      "last_modified": "2021-12-05T17:35:44+01:00"
     },
     {
       "path": "Resources.html",
       "title": "Git resources for learning",
       "author": [],
       "contents": "\nNo content yet\n\n\n\n",
-      "last_modified": "2021-12-05T17:00:47+01:00"
+      "last_modified": "2021-12-05T17:35:44+01:00"
     },
     {
       "path": "ssh_keys_how.html",
       "title": "Set up SSH key authentication",
       "author": [],
       "contents": "\nIn order to use transfer information between Github or Gitlab and your local machine, you need to authenticate yourself to the remote server. On both, Github and Gitlab, this works by using SSH keys. On Github, you can also authenticate using a personal access token (PAT) instead but we will stick with SSH keys here.\nIf you already set up authentication on your machine, you can skip this guide.\nIf you are not sure if you already set it up on your machine, you can try the following:\nCan you push to Github/Gitlab from the command line without having to provide credentials (except for SSH key password)?\nIf yes, then you already set up authentication.\n\nTry running ssh -T git@github.com or ssh - T git@gitlab.com in the terminal (Git bash for Windows users). If Github/Gitlab welcomes you with your correct user account, you are all set.\nIf you don’t have an SSH key set up, please follow the steps from the Github documentation below. Make sure that on top of the website, your correct operating system is selected to get the correct guide (should happen automatically but you never know).\nStep 1: Check for existing SSH keys\nSee here\nStep 2: Generate an SSH key and add it to SSH-agent\nSee here\nStep 3: Add your public key to your Github account\nSee here\nStep 4: Test the connection\nTo test if the setup was successful, run ssh -T git@github.com or ssh -T git@gitlab.com.\n\n\n\n",
-      "last_modified": "2021-12-05T17:00:48+01:00"
+      "last_modified": "2021-12-05T17:35:44+01:00"
     }
   ],
   "collections": []
