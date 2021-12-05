@@ -24,3 +24,42 @@ On top, you can navigate to the presentation slides and the tasks.
 To download presentation slides in pdf format, you can use the following links:
 
 <!-- - <a href="./slides/01_01_RStudio.pdf" download> 01 - Introduction RStudio</a> -->
+
+# Prerequisites
+
+To follow everything we discuss in the workshop you need to prepare a few things:
+
+## 1. Install git on your machine
+
+If you don't have git installed already, follow the instructions below to install git for your OS.
+
+**For Windows**
+
+You can download git from [here](https://git-scm.com/download/win)
+
+Download and install the correct version for your machine (probably 64 bit).
+
+With the git installation for windows, you should also get a program called `Git bash`. 
+Git bash is a linux like command line for Windows.
+
+When you are done, open this program (you can find it after searching for it in the Windows search bar) 
+and run `git --version`. If you successfully installed git, you should see the version
+of git that you are using printed to the console.
+
+**For Linux (Ubuntu/Debian)**
+
+You can install git in the terminal. Run
+
+```
+sudo apt-get update
+sudo apt-get install git
+```
+
+Check the version of git that you have installed with
+
+```
+git --version
+```
+
+**For MacOS**
+
