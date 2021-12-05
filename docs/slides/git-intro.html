@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>git-intro.knit</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Selina Baldauf" />
+    <meta name="date" content="2021-10-28" />
+    <script src="git-intro_files/header-attrs-2.11/header-attrs.js"></script>
+    <link href="git-intro_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/new_slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+class: inverse title-slide
+background-image: url(img/Git-Logo-2Color.png)
+background-size: 40%
+background-position: 90% 90%
+
+# Introduction to version control with Git
+
+## 
+
+### Instructor: [Selina Baldauf](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/People/wissenschaftliche_programmierer/baldauf/index.html) &lt;br&gt;
+
+### Freie Universität Berlin - Theoretical Ecology
+
+.footnote-left[
+  2021-10-28 (updated: 2021-12-05)
+]
+
+---
+# Version control
+
+.pull-left[
+
+## Why?
+
+- Go back in time
+  
+- Collaborate in teams -&gt; Who did what and why?
+
+- Don't loose overview of your project
+
+]
+
+.pull-right[
+ ![It's never final](img/final-doc.jpg)
+]
+
+---
+# Version control
+
+.pull-left[
+## How?
+
+- Complete and long-term history of every file in your project
+
+- Safe (e.g. no accidental loss of versions)
+
+- Easy to use
+
+- Overview and documentation of all changes
+
+- Repository on remote server for everyone to access
+
+- Offline and asynchronous work should be possible
+
+]
+
+.pull-right[
+ ![It's never final](img/final-doc.jpg)]
+
+---
+# Git for version control
+
+.pull-left[
+
+- Software that tracks changes in any set of files
+
+- Stores snapshots (i.e. commits) of your project files
+  - like a mini-filesystem
+
+]
+.pull-right[
+![Git principle with different snapshots](img/git-versions.jpg)
+]
+
+--
+
+.pull-left[
+
+- Distributed version control system
+
+  - (usually) one remote and one or more local repositories
+  
+  - every computer has full full-fledged version of repo with entire history
+
+]
+.pull-right[
+![Git as distributed VCS](img/distributed-git.png)
+]
+
+---
+# Version control with git
+
+- Complete and long-term history of every file in your project <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+--
+
+- Safe (e.g. no accidental loss of versions) <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+  - Multiple copies of same repository 
+  - Additional "backup" on a remote server
+  - Git makes it hard for you to delete something accidentally
+
+--
+
+- Easy to  use <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+  - There is some practice necessary to get the concepts
+  - A lot of documentation
+  - Easy to use git clients
+
+--
+
+- Overview and documentation of all changes <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+  - For every change: Who, What, When, Why
+  
+--
+
+- Repository on remote server for everyone to access <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+  - Distributed idea: many local repositories synced via one remote repo
+
+--
+
+- Offline and asynchronous work should be possible <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+  - Complete local copy -&gt; can be uploaded to remote any time
+
+---
+# This git workshop
+
+Git is a huge topic because it is so powerful. Most of the things are best to learn as you need them.
+
+**Aim of this workshop:** 
+
+Get started with simple workflows.Learn the rest as you need it.
+
+--
+
+## Session 1
+
+- Introduction to git concepts
+- Simple git workflow for your projects (Local + Remote)
+
+## Session 2
+
+- Collaboration with others
+  - Branching and merging
+- Using git with R and RStudio
+
+---
+# Git core concepts I
+
+## Some terminology
+
+.pull-left[
+
+- **Repository / Repo:** Database of the project (a `.git` folder in your project)
+  - **local:** on a local machine (e.g. your computer)
+  - **remote:** on a server (e.g. Github)
+- **Commit:** a change to the repository
+- **Branches:** different versions of a repo within a repo
+- **Merge:** combine two branches
+ ]
+.pull-right[
+![Git core setup](img/git-core-concepts-2.png)
+]
+
+---
+# Git core concepts II
+
+A git repository does not contain the files in a version that you can just open and edit.
+
+.pull-left[
+- **Repository:** 
+  - Database of the project
+  - Stores *all versions* of your project
+  
+- **Working directory:** 
+  - Checkout *one version* of the project
+  - Files can be edited here and then added into the repository
+  
+- **Staging area (index):** 
+  - Collect changes to files here before commiting
+  - Info of what goes into the next commit
+  
+]
+
+.pull-right[
+  ![](img/git-core-concepts-1.png)
+]
+
+
+---
+class: inverse
+
+# Basic workflow for working alone
+
+I will show you everything in the command line. There are also GUI programs for git that you can switch to but the concepts are better learned in the terminal.
+
+
+**Your starting situation**
+
+- Local working directory (i.e. a folder) with or without files
+
+.center[![](img/git-start-concept.png)]
+
+
+---
+# Step 1: Initialize a git repository `git init`
+
+.center[![Git init concept](img/git-init-concept.png)]
+
+---
+# Step 1: Initialize a git repository `git init`
+
+To use git in any project, just navigate to the project folder and run `git init`
+
+![](img/workflow/git-init.png)
+
+--
+
+This initializes a (hidden) `.git` folder that contains your git repository.
+
+![List files](img/workflow/git-init-ls.png)
+
+- You don't have to touch anything that is in this folder
+
+---
+# Step 2: Modify files and stage changes `git add`
+
+.pull-left[
+- git detects any changes in the working directory and marks them as 
+
+  - untracked
+  - modified
+  - deleted
+  
+]
+
+--
+
+.pull-right[
+![Add file Bob.txt to working directory](img/git-add-concept-1.png)
+]
+
+--
+
+- see whats going on with `git status`
+
+![Git status showes untracked files](img/workflow/git-status.png)
+---
+# Step 2: Modify files and stage changes `git add`
+
+.pull-left[
+- Add files to the staging area with
+
+  - Specific file: `git add &lt;filename&gt;`
+  - All changed files: `git add .`
+]
+
+.pull-right[
+![Add Bob.txt to the staging area](img/git-add-concept-2.png)
+]
+
+--
+
+![:scale 70%](img/workflow/git-add.png)
+
+---
+# Step 3: Commit changes `git commit`
+
+.pull-left[
+- Commits are basically snapshots of your projects
+
+- Commit work from staging area to local repository
+
+- Now your changes are part of your project's git history
+]
+.pull-right[
+![Concept of a git commit](img/git-commit-concept.png)
+]
+
+--
+
+![Git commit in command line](img/workflow/git-commit.png)
+
+
+---
+# Commit messages
+
+- Every commit needs a commit message
+- Good commit messages are essential to make good use of git!
+
+
+.center[![xkcd on commit messages](https://imgs.xkcd.com/comics/git_commit.png)]
+
+--
+
+- One line commit messages can be given directly in the command line:
+  - `git commit -m "Your very nice commit message"`
+- More complex commit messages are better entered in a text editor:
+  - `git commit` and a text editor will automatically open for you message
+  
+.footnote-right[Comic by [xkcd](https://xkcd.com/1296/)]
+
+---
+# Short recap
+
+We have
+
+- Added a file to the working directory
+
+- Added file to staging area
+
+- Commited changes to local repository
+
+.center[![Local git setup](img/git-local-concept.png)]
+
+--
+
+Now: Share changes with a remote repository
+
+---
+# Step 4: Create a remote repository
+
+- E.g. on Github, Bitbucket or Gitlab
+
+.center[![:scale 70%](img/git-remote-concept.png)]
+
+---
+# Step 5: Connect local and remote repository
+
+- Tell the local repository where to push its changes to
+  - `git remote add &lt;remote_name&gt; &lt;remote_address&gt;`
+
+- Default remote name is often `origin` but could be anything else
+
+- The address of the remote can be found on Github
+
+- You can chose SSH or HTTPS protocol
+
+So an example is:
+
+`git remote add origin https://github.com/selinaZitrone/test_repository.git`
+
+---
+# Step 6: Share changes with a remote repository `git push`
+
+- Push your local changes to the remote with `git push`
+
+- The first time, you need to tell git to which remote branch, your local branch should be pushed
+
+  - `git push set-upstream &lt;remote_name&gt; &lt;remote_branch_name&gt;`
+  
+  - `git push set-upstream origin master`
+
+---
+# Looking at the git history `git log`
+
+.pull-left[
+- list of all commits with hash, author, date, commit message, ...
+- state of local and remote repository branches
+
+- `git log` for normal view
+- `git log --oneline` compact version of log
+- `git log --graph` graphical representation (interesting if you have a branching workflow)
+]
+
+---
+# Explore differences with `git diff`
+
+- `git diff` show changes in the working directory
+- `git diff --staged` changes in staging area
+- `git diff &lt;commit_hash&gt;^!` compare to one commit before
+- `git diff &lt;commit_hash_1&gt; &lt;commit_hash_1&gt;` compare commit 1 and 2
+  - e.g. `git diff 8af2ff 87a4ad`
+  
+---
+# Ignoring files
+
+- You can add files that you don't want to have tracked by in the `.gitignore` file
+
+- Useful to ignore e.g.
+  - Compiled code and build directories
+  - Log files 
+  - Hidden system files
+  - Personal IDE config files
+  - ...
+
+- **Step 1: **  Create a file with the name `.gitignore` in working directory
+- **Step 2: ** Add all files and directories you want to ignore to the `.gitignore` file
+
+---
+# Ignoring files: Example
+
+
+    *.html    # ignore all .html files
+    *.exe     # ignore all .exe files
+
+    debug.log # ignore the file debug.log
+
+    build/    # ignore all files in subdirectory build
+
+
+See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

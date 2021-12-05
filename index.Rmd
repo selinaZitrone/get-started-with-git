@@ -63,3 +63,40 @@ git --version
 
 **For MacOS**
 
+Some versions of MacOS come with git preinstalled. To check if you already have it, open the terminal and run
+
+```
+git --version
+```
+
+If the terminal tells you which verison of git is installed, you can skip the next steps.
+
+If you need to install git, you can do this with homebrew. Just run
+
+```
+brew install git
+```
+
+Then check the version and verify the installation with 
+
+```
+git --versions
+```
+
+## Github/Gitlab account
+
+If you don't have a Gitlab or Github account yet, you can make one to follow the tutorials in the workshop.
+I will use Github in the examples that I will show you, but Gitlab will work as well.
+
+If you don't have any Account for a remote repository hoster, I suggest to [make a Github account](https://github.com/join).
+
+Tip: If you do your Github account with an institutional email address, you will get a free upgrade to Github Pro.
+This gives you some benefits like private wikis, ... You can always add a second email address later or change it if you leave your institution.
+
+## SSH Authentication
+
+In order to communicate between your local machine and your Github/Gitlab account,
+you need to set up authentication via SSH keys.
+Please follow the instructions <a href="./tasks/ssh_keys_how.html"> here</a> to do so.
+
+

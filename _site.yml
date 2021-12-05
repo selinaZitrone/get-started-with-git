@@ -2,17 +2,31 @@ name: "get-started-with-git"
 title: "Get started with Git"
 theme: theme.css
 description: |
-  My Website
+  Introduction to version control with git
 output_dir: "docs"
-exclude: ["R/", "data/"]
+exclude: "R/"
 navbar:
   right:
     - text: "Home"
       href: index.html
     - text: "Slides"
-    - text: "Tasks"
+      menu:
+        - text: "01 - Introduction to git"
+          href: slides/git-intro.html
+        - text: "02 - Collaboration with git"
+          href: slides/git-collab.html
+        - text: "03 - R, RStudio and git"
+          href: slides/git-r.html
+    - text: "How Tos"
+      menu:
+      - text: "01 - Simple git workflow"
+        href: tasks/basic_git_workflow_how_to.html
+      - text: "02 - Collaboration with git"
+        href: tasks/git-collab_how_to.html
+      - text: "03 - R, RStudio and git"
+        href: tasks/git-r_how_to.html
     - text: "Resources"
-
+      href: Resources.html
     - icon: fa fa-github
       href: https://github.com/selinaZitrone/get-started-with-git
 output: distill::distill_article

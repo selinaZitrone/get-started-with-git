@@ -1,0 +1,423 @@
+---
+subtitle: ""
+author: "Selina Baldauf"
+institute: "Freie Universität Berlin - Theoretical Ecology"
+date: "2021-10-28"
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: [default, css/new_slides.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+      beforeInit: "macros.js"
+params:
+  title: "Introduction to version control with Git"
+  day: ""
+  bg_image: "img/Git-Logo-2Color.png"
+  bg_image_scale: "40%"
+  bg_position: "90% 90%"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+library(fontawesome)
+```
+
+```{r child="title_slide.Rmd"}
+
+```
+
+---
+# Version control
+
+.pull-left[
+
+## Why?
+
+- Go back in time
+  
+- Collaborate in teams -> Who did what and why?
+
+- Don't loose overview of your project
+
+]
+
+.pull-right[
+ ![It's never final](img/final-doc.jpg)
+]
+
+---
+# Version control
+
+.pull-left[
+## How?
+
+- Complete and long-term history of every file in your project
+
+- Safe (e.g. no accidental loss of versions)
+
+- Easy to use
+
+- Overview and documentation of all changes
+
+- Repository on remote server for everyone to access
+
+- Offline and asynchronous work should be possible
+
+]
+
+.pull-right[
+ ![It's never final](img/final-doc.jpg)]
+
+---
+# Git for version control
+
+.pull-left[
+
+- Software that tracks changes in any set of files
+
+- Stores snapshots (i.e. commits) of your project files
+  - like a mini-filesystem
+
+]
+.pull-right[
+![Git principle with different snapshots](img/git-versions.jpg)
+]
+
+--
+
+.pull-left[
+
+- Distributed version control system
+
+  - (usually) one remote and one or more local repositories
+  
+  - every computer has full full-fledged version of repo with entire history
+
+]
+.pull-right[
+![Git as distributed VCS](img/distributed-git.png)
+]
+
+---
+# Version control with git
+
+- Complete and long-term history of every file in your project `r fontawesome::fa("check-square", fill = "green")`
+
+--
+
+- Safe (e.g. no accidental loss of versions) `r fontawesome::fa("check-square", fill = "green")`
+  - Multiple copies of same repository 
+  - Additional "backup" on a remote server
+  - Git makes it hard for you to delete something accidentally
+
+--
+
+- Easy to  use `r fontawesome::fa("check-square", fill = "green")`
+  - There is some practice necessary to get the concepts
+  - A lot of documentation
+  - Easy to use git clients
+
+--
+
+- Overview and documentation of all changes `r fontawesome::fa("check-square", fill = "green")`
+  - For every change: Who, What, When, Why
+  
+--
+
+- Repository on remote server for everyone to access `r fontawesome::fa("check-square", fill = "green")`
+  - Distributed idea: many local repositories synced via one remote repo
+
+--
+
+- Offline and asynchronous work should be possible `r fontawesome::fa("check-square", fill = "green")`
+  - Complete local copy -> can be uploaded to remote any time
+
+---
+# This git workshop
+
+Git is a huge topic because it is so powerful. Most of the things are best to learn as you need them.
+
+**Aim of this workshop:** 
+
+Get started with simple workflows.Learn the rest as you need it.
+
+--
+
+## Session 1
+
+- Introduction to git concepts
+- Simple git workflow for your projects (Local + Remote)
+
+## Session 2
+
+- Collaboration with others
+  - Branching and merging
+- Using git with R and RStudio
+
+---
+# Git core concepts I
+
+## Some terminology
+
+.pull-left[
+
+- **Repository / Repo:** Database of the project (a `.git` folder in your project)
+  - **local:** on a local machine (e.g. your computer)
+  - **remote:** on a server (e.g. Github)
+- **Commit:** a change to the repository
+- **Branches:** different versions of a repo within a repo
+- **Merge:** combine two branches
+ ]
+.pull-right[
+![Git core setup](img/git-core-concepts-2.png)
+]
+
+---
+# Git core concepts II
+
+A git repository does not contain the files in a version that you can just open and edit.
+
+.pull-left[
+- **Repository:** 
+  - Database of the project
+  - Stores *all versions* of your project
+  
+- **Working directory:** 
+  - Checkout *one version* of the project
+  - Files can be edited here and then added into the repository
+  
+- **Staging area (index):** 
+  - Collect changes to files here before commiting
+  - Info of what goes into the next commit
+  
+]
+
+.pull-right[
+  ![](img/git-core-concepts-1.png)
+]
+
+
+---
+class: inverse
+
+# Basic workflow for working alone
+
+I will show you everything in the command line. There are also GUI programs for git that you can switch to but the concepts are better learned in the terminal.
+
+
+**Your starting situation**
+
+- Local working directory (i.e. a folder) with or without files
+
+.center[![](img/git-start-concept.png)]
+
+
+---
+# Step 1: Initialize a git repository `git init`
+
+.center[![Git init concept](img/git-init-concept.png)]
+
+---
+# Step 1: Initialize a git repository `git init`
+
+To use git in any project, just navigate to the project folder and run `git init`
+
+![](img/workflow/git-init.png)
+
+--
+
+This initializes a (hidden) `.git` folder that contains your git repository.
+
+![List files](img/workflow/git-init-ls.png)
+
+- You don't have to touch anything that is in this folder
+
+---
+# Step 2: Modify files and stage changes `git add`
+
+.pull-left[
+- git detects any changes in the working directory and marks them as 
+
+  - untracked
+  - modified
+  - deleted
+  
+]
+
+--
+
+.pull-right[
+![Add file Bob.txt to working directory](img/git-add-concept-1.png)
+]
+
+--
+
+- see whats going on with `git status`
+
+![Git status showes untracked files](img/workflow/git-status.png)
+---
+# Step 2: Modify files and stage changes `git add`
+
+.pull-left[
+- Add files to the staging area with
+
+  - Specific file: `git add <filename>`
+  - All changed files: `git add .`
+]
+
+.pull-right[
+![Add Bob.txt to the staging area](img/git-add-concept-2.png)
+]
+
+--
+
+![:scale 70%](img/workflow/git-add.png)
+
+---
+# Step 3: Commit changes `git commit`
+
+.pull-left[
+- Commits are basically snapshots of your projects
+
+- Commit work from staging area to local repository
+
+- Now your changes are part of your project's git history
+]
+.pull-right[
+![Concept of a git commit](img/git-commit-concept.png)
+]
+
+--
+
+![Git commit in command line](img/workflow/git-commit.png)
+
+
+---
+# Commit messages
+
+- Every commit needs a commit message
+- Good commit messages are essential to make good use of git!
+
+
+.center[![xkcd on commit messages](https://imgs.xkcd.com/comics/git_commit.png)]
+
+--
+
+- One line commit messages can be given directly in the command line:
+  - `git commit -m "Your very nice commit message"`
+- More complex commit messages are better entered in a text editor:
+  - `git commit` and a text editor will automatically open for you message
+  
+.footnote-right[Comic by [xkcd](https://xkcd.com/1296/)]
+
+---
+# Short recap
+
+We have
+
+- Added a file to the working directory
+
+- Added file to staging area
+
+- Commited changes to local repository
+
+.center[![Local git setup](img/git-local-concept.png)]
+
+--
+
+Now: Share changes with a remote repository
+
+---
+# Step 4: Create a remote repository
+
+- E.g. on Github, Bitbucket or Gitlab
+
+.center[![:scale 70%](img/git-remote-concept.png)]
+
+---
+# Step 5: Connect local and remote repository
+
+- Tell the local repository where to push its changes to
+  - `git remote add <remote_name> <remote_address>`
+
+- Default remote name is often `origin` but could be anything else
+
+- The address of the remote can be found on Github
+
+- You can chose SSH or HTTPS protocol
+
+So an example is:
+
+`git remote add origin https://github.com/selinaZitrone/test_repository.git`
+
+---
+# Step 6: Share changes with a remote repository `git push`
+
+- Push your local changes to the remote with `git push`
+
+- The first time, you need to tell git to which remote branch, your local branch should be pushed
+
+  - `git push set-upstream <remote_name> <remote_branch_name>`
+  
+  - `git push set-upstream origin master`
+
+---
+# Looking at the git history `git log`
+
+.pull-left[
+- list of all commits with hash, author, date, commit message, ...
+- state of local and remote repository branches
+
+- `git log` for normal view
+- `git log --oneline` compact version of log
+- `git log --graph` graphical representation (interesting if you have a branching workflow)
+]
+
+---
+# Explore differences with `git diff`
+
+- `git diff` show changes in the working directory
+- `git diff --staged` changes in staging area
+- `git diff <commit_hash>^!` compare to one commit before
+- `git diff <commit_hash_1> <commit_hash_1>` compare commit 1 and 2
+  - e.g. `git diff 8af2ff 87a4ad`
+  
+---
+# Ignoring files
+
+- You can add files that you don't want to have tracked by in the `.gitignore` file
+
+- Useful to ignore e.g.
+  - Compiled code and build directories
+  - Log files 
+  - Hidden system files
+  - Personal IDE config files
+  - ...
+
+- **Step 1: **  Create a file with the name `.gitignore` in working directory
+- **Step 2: ** Add all files and directories you want to ignore to the `.gitignore` file
+
+---
+# Ignoring files: Example
+
+
+    *.html    # ignore all .html files
+    *.exe     # ignore all .exe files
+
+    debug.log # ignore the file debug.log
+
+    build/    # ignore all files in subdirectory build
+
+
+See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
+
+
+
+
+
