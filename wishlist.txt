@@ -7,3 +7,5 @@ General:
 Slides 1:
 - css .bottom[]
 - credit unseen wizard blog post
+- git diff graph
+- 23: Remote repository with a name and an url

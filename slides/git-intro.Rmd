@@ -9,7 +9,7 @@ output:
     css: [default, css/new_slides.css]
     nature:
       highlightStyle: github
-      highlightLines: true
+      highlightLines: false
       ratio: 16:9
       countIncrementalSlides: false
       beforeInit: "macros.js"
@@ -390,7 +390,7 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 
 - `git diff <commit_hash>^!` compare to one commit before
 
-- `git diff <commit_hash_1> <commit_hash_1>` compare commit 1 and 2
+- `git diff <commit_hash_1> <commit_hash_2>` compare commit 1 and 2
   - e.g. `git diff 8af2ff 87a4ad`
 
 ---
@@ -400,15 +400,14 @@ We have
 
 - Added a file to the working directory
 
-- Added file to staging area
+- Committed changes to local repository via the staging area
 
-- Commited changes to local repository
 
 .center[![Local git setup](img/git-local-concept.png)]
 
 --
 
-Now: Share changes with a remote repository
+**Now: Share changes with a remote repository**
 
 ---
 # Step 4: Create a remote repository
@@ -422,16 +421,23 @@ Now: Share changes with a remote repository
 
 - Tell the local repository where to push its changes to
   - `git remote add <remote_name> <remote_address>`
+  
+--
 
 - Default remote name is often `origin` but could be anything else
 
+--
+
 - The address of the remote can be found on Github
 
+--
+
 - You can chose SSH or HTTPS protocol
+  - Depending on this, choose the repository address
 
-So an example is:
+Example:
 
-`git remote add origin https://github.com/selinaZitrone/test_repository.git`
+`git remote add origin git@github.com:selinaZitrone/git_test_project.git`
 
 ---
 # Step 6: Share changes with a remote repository `git push`
@@ -440,18 +446,24 @@ So an example is:
 
 - The first time, you need to tell git to which remote branch, your local branch should be pushed
 
-  - `git push set-upstream <remote_name> <remote_branch_name>`
+  - `git push --set-upstream <remote_name> <remote_branch_name>`
   
-  - `git push set-upstream origin master`
+  - `git push --set-upstream origin master`
 
+**Note on branch names:**
 
+- Default branch names changed from master to main on Github and Gitlab
+- Depending on settings: local default branches might be called master instead of main
+- You can rename the default branch before pushing with 
 
+`git branch -M main`
 
-  
 ---
-# Ignoring files
+# Ignoring files in `.gitignore`
 
-- You can add files that you don't want to have tracked by in the `.gitignore` file
+- Use a `.gitignore` file to list files/folders that you don't want to track with git
+
+--
 
 - Useful to ignore e.g.
   - Compiled code and build directories
@@ -459,23 +471,33 @@ So an example is:
   - Hidden system files
   - Personal IDE config files
   - ...
+  
+--
+
+## How to ignore files/folders?
 
 - **Step 1: **  Create a file with the name `.gitignore` in working directory
+
+--
+
 - **Step 2: ** Add all files and directories you want to ignore to the `.gitignore` file
 
 ---
 # Ignoring files: Example
 
+```
+*.html    # ignore all .html files
+*.exe     # ignore all .exe files
 
-    *.html    # ignore all .html files
-    *.exe     # ignore all .exe files
+debug.log # ignore the file debug.log
 
-    debug.log # ignore the file debug.log
-
-    build/    # ignore all files in subdirectory build
-
+build/    # ignore all files in subdirectory build
+```
 
 See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
+
+---
+# Questions?
 
 
 
