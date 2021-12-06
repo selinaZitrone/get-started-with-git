@@ -385,8 +385,11 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 # Explore differences with `git diff`
 
 - `git diff` show changes in the working directory
+
 - `git diff --staged` changes in staging area
+
 - `git diff <commit_hash>^!` compare to one commit before
+
 - `git diff <commit_hash_1> <commit_hash_1>` compare commit 1 and 2
   - e.g. `git diff 8af2ff 87a4ad`
 
