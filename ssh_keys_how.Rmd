@@ -15,22 +15,23 @@ If you are not sure if you already set it up on your machine, you can try the fo
   - If yes, then you already set up authentication.
 - Try running `ssh -T git@github.com` or `ssh - T git@gitlab.com` in the terminal (Git bash for Windows users). If Github/Gitlab welcomes you with your correct user account, you are all set.
 
-If you don't have an SSH key set up, please follow the steps from the Github documentation below. Make sure 
-that on top of the website, your correct operating system is selected to get the correct guide (should happen automatically but you never know).
+If you don't have an SSH key set up, please follow the steps from the Github documentation below. Make sure that on top of the website, your correct operating system is selected to get the correct guide (should happen automatically but you never know). If you are using Gitlab, please follow [this](guide).
 
-# Step 1: Check for existing SSH keys
+If you prefer a video, you can check out [this one](https://www.youtube.com/watch?v=mNtQ55quG9M). It is for Gitlab but works the same for Github.
+
+## Step 1: Check for existing SSH keys
 
 See [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 
-# Step 2: Generate an SSH key and add it to SSH-agent
+## Step 2: Generate an SSH key and add it to SSH-agent
 
 See [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-# Step 3: Add your public key to your Github account
+## Step 3: Add your public key to your Github account
 
 See [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-# Step 4: Test the connection
+## Step 4: Test the connection
 
 To test if the setup was successful, run `ssh -T git@github.com` or `ssh -T git@gitlab.com`.
 
