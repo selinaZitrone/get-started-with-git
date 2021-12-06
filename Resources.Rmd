@@ -2,4 +2,8 @@
 title: Git resources for learning
 ---
 
-No content yet
+Blogpost: [Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc): Explains really well the concepts of git, also more advanced ones like `rebase` or `cherry-pick`.
+
+
+Blogpost: [How to write good commit messages](https://cbea.ms/git-commit/): Explains why good commit messages are important and gives 7 rules for writing them.
+

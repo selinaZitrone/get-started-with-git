@@ -36,72 +36,45 @@ library(fontawesome)
 # Version control
 
 .pull-left[
+ ![It's never final](img/final-doc.jpg)
+]
+
+--
+
+.pull-right[
 
 ## Why?
 
-- Go back in time
+- **Go back** in time
   
-- Collaborate in teams -> Who did what and why?
+- **Collaborate** in teams -> Who did what and why?
 
-- Don't loose overview of your project
+- Don't loose **overview** of your project
 
-]
-
-.pull-right[
- ![It's never final](img/final-doc.jpg)
 ]
 
 ---
 # Version control
 
 .pull-left[
+ ![It's never final](img/final-doc.jpg)
+ ]
+ 
+.pull-right[
 ## How?
 
-- Complete and long-term history of every file in your project
+- **Complete and long-term history** of every file in your project
 
-- Safe (e.g. no accidental loss of versions)
+- **Safe** (e.g. no accidental loss of versions)
 
-- Easy to use
+- **Easy** to use
 
-- Overview and documentation of all changes
+- **Overview and documentation** of all changes
 
-- Repository on remote server for everyone to access
+- Repository on **remote server** for everyone to access
 
-- Offline and asynchronous work should be possible
+- **Offline and asynchronous** work should be possible
 
-]
-
-.pull-right[
- ![It's never final](img/final-doc.jpg)]
-
----
-# Git for version control
-
-.pull-left[
-
-- Software that tracks changes in any set of files
-
-- Stores snapshots (i.e. commits) of your project files
-  - like a mini-filesystem
-
-]
-.pull-right[
-![Git principle with different snapshots](img/git-versions.jpg)
-]
-
---
-
-.pull-left[
-
-- Distributed version control system
-
-  - (usually) one remote and one or more local repositories
-  
-  - every computer has full full-fledged version of repo with entire history
-
-]
-.pull-right[
-![Git as distributed VCS](img/distributed-git.png)
 ]
 
 ---
@@ -109,39 +82,100 @@ library(fontawesome)
 
 - Complete and long-term history of every file in your project `r fontawesome::fa("check-square", fill = "green")`
 
---
+.pull-left[
+**Git is a software that**
+
+- Tracks changes in any set of files
+
+- Stores snapshots (i.e. commits) of your project files
+  - like a mini-filesystem
+]
+
+.pull-right[
+![Git principle with different snapshots](img/git-versions.jpg)
+]
+
+---
+# Version control with git
+
+- Complete and long-term history of every file in your project `r fontawesome::fa("check-square", fill = "green")`
 
 - Safe (e.g. no accidental loss of versions) `r fontawesome::fa("check-square", fill = "green")`
-  - Multiple copies of same repository 
+
+- Repository on remote server for everyone to access `r fontawesome::fa("check-square", fill = "green")`
+
+--
+.pull-left[
+**Distributed version control system**
+
+  - Idea: many local repositories synced via one remote repo
+  - Every computer has full full-fledged version of repo with entire history
   - Additional "backup" on a remote server
-  - Git makes it hard for you to delete something accidentally
+  - Git makes it hard for you to delete something accidentally]
+  
+.pull-right[.right[
+![:scale 90%](img/distributed-git.png)]]
+
+
+---
+# Version control with git
+
+- Complete and long-term history of every file in your project `r fontawesome::fa("check-square", fill = "green")`
+
+- Safe (e.g. no accidental loss of versions) `r fontawesome::fa("check-square", fill = "green")`
+
+- Repository on remote server for everyone to access `r fontawesome::fa("check-square", fill = "green")`
+
+- Easy to  use `r fontawesome::fa("check-square", fill = "green")`
 
 --
 
-- Easy to  use `r fontawesome::fa("check-square", fill = "green")`
   - There is some practice necessary to get the concepts
   - A lot of documentation
   - Easy to use git clients
 
---
+---
+# Version control with git
 
-- Overview and documentation of all changes `r fontawesome::fa("check-square", fill = "green")`
-  - For every change: Who, What, When, Why
-  
---
+- Complete and long-term history of every file in your project `r fontawesome::fa("check-square", fill = "green")`
+
+- Safe (e.g. no accidental loss of versions) `r fontawesome::fa("check-square", fill = "green")`
 
 - Repository on remote server for everyone to access `r fontawesome::fa("check-square", fill = "green")`
-  - Distributed idea: many local repositories synced via one remote repo
+
+- Easy to  use `r fontawesome::fa("check-square", fill = "green")`
+
+- Overview and documentation of all changes `r fontawesome::fa("check-square", fill = "green")`
 
 --
 
+  - For every change: Who, What, When, Why
+  
+---
+# Version control with git
+
+- Complete and long-term history of every file in your project `r fontawesome::fa("check-square", fill = "green")`
+
+- Safe (e.g. no accidental loss of versions) `r fontawesome::fa("check-square", fill = "green")`
+
+- Repository on remote server for everyone to access `r fontawesome::fa("check-square", fill = "green")`
+
+- Easy to  use `r fontawesome::fa("check-square", fill = "green")`
+
+- Overview and documentation of all changes `r fontawesome::fa("check-square", fill = "green")`
+
 - Offline and asynchronous work should be possible `r fontawesome::fa("check-square", fill = "green")`
+
+--
+
   - Complete local copy -> can be uploaded to remote any time
 
 ---
-# This git workshop
+# This workshop
 
-Git is a huge topic because it is so powerful. Most of the things are best to learn as you need them.
+Git is a huge topic because and git is very powerful. Most of the things are best to learn as you need them.
+
+--
 
 **Aim of this workshop:** 
 
@@ -170,8 +204,11 @@ Get started with simple workflows.Learn the rest as you need it.
 - **Repository / Repo:** Database of the project (a `.git` folder in your project)
   - **local:** on a local machine (e.g. your computer)
   - **remote:** on a server (e.g. Github)
+  
 - **Commit:** a change to the repository
+
 - **Branches:** different versions of a repo within a repo
+
 - **Merge:** combine two branches
  ]
 .pull-right[
@@ -182,6 +219,8 @@ Get started with simple workflows.Learn the rest as you need it.
 # Git core concepts II
 
 A git repository does not contain the files in a version that you can just open and edit.
+
+--
 
 .pull-left[
 - **Repository:** 
@@ -206,12 +245,26 @@ A git repository does not contain the files in a version that you can just open 
 ---
 class: inverse
 
-# Basic workflow for working alone
+# Basic git workflow for working alone
 
-I will show you everything in the command line. There are also GUI programs for git that you can switch to but the concepts are better learned in the terminal.
+I will show you everything in the command line. There are also GUI programs for git that you can switch to but the concepts are (in my opinion) better learned in the terminal.
+
+.bottom[
+.pull-left[
+
+`git init`
+
+`git add`
+
+`git commit`
+
+`git push`
+]
+]
 
 
-**Your starting situation**
+---
+# Starting situation
 
 - Local working directory (i.e. a folder) with or without files
 
@@ -242,7 +295,7 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 # Step 2: Modify files and stage changes `git add`
 
 .pull-left[
-- git detects any changes in the working directory and marks them as 
+- Git detects any changes in the working directory and marks them as 
 
   - untracked
   - modified
@@ -286,21 +339,21 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 - Commits are basically snapshots of your projects
 
 - Commit work from staging area to local repository
+  - First, collect meaningful chunks of work in the staging area, then commit
 
-- Now your changes are part of your project's git history
+- After a commit, your changes are part of your project's git history
 ]
 .pull-right[
 ![Concept of a git commit](img/git-commit-concept.png)
 ]
 
---
-
-![Git commit in command line](img/workflow/git-commit.png)
+<!-- ![Git commit in command line](img/workflow/git-commit.png) -->
 
 
 ---
 # Commit messages
 
+.footnote-right[Comic by [xkcd](https://xkcd.com/1296/)]
 - Every commit needs a commit message
 - Good commit messages are essential to make good use of git!
 
@@ -309,12 +362,33 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 
 --
 
-- One line commit messages can be given directly in the command line:
+- **One line commit messages** can be given directly in the command line:
   - `git commit -m "Your very nice commit message"`
-- More complex commit messages are better entered in a text editor:
+- **More complex commit messages** are better entered in a text editor:
   - `git commit` and a text editor will automatically open for you message
   
-.footnote-right[Comic by [xkcd](https://xkcd.com/1296/)]
+---
+# Looking at the git history `git log`
+
+- List of all commits with hash, author, date, commit message, ...
+- State of local and remote repository branches
+
+--
+
+- `git log` for normal view
+
+- `git log --oneline` for a compact version of log
+
+- `git log --graph` for a graphical representation (interesting if you have a branching workflow)
+
+---
+# Explore differences with `git diff`
+
+- `git diff` show changes in the working directory
+- `git diff --staged` changes in staging area
+- `git diff <commit_hash>^!` compare to one commit before
+- `git diff <commit_hash_1> <commit_hash_1>` compare commit 1 and 2
+  - e.g. `git diff 8af2ff 87a4ad`
 
 ---
 # Short recap
@@ -367,26 +441,9 @@ So an example is:
   
   - `git push set-upstream origin master`
 
----
-# Looking at the git history `git log`
 
-.pull-left[
-- list of all commits with hash, author, date, commit message, ...
-- state of local and remote repository branches
 
-- `git log` for normal view
-- `git log --oneline` compact version of log
-- `git log --graph` graphical representation (interesting if you have a branching workflow)
-]
 
----
-# Explore differences with `git diff`
-
-- `git diff` show changes in the working directory
-- `git diff --staged` changes in staging area
-- `git diff <commit_hash>^!` compare to one commit before
-- `git diff <commit_hash_1> <commit_hash_1>` compare commit 1 and 2
-  - e.g. `git diff 8af2ff 87a4ad`
   
 ---
 # Ignoring files
