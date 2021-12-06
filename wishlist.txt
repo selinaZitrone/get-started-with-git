@@ -3,3 +3,7 @@ Index:
 
 General:
 - git vs. Git
+
+Slides 1:
+- css .bottom[]
+- credit unseen wizard blog post
