@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - gh-pages
     paths-ignore:
       - 'slides/*'
 
@@ -21,6 +21,7 @@ jobs:
         run: |
           install.packages("rmarkdown")
           install.packages("distill")
+          install.packages("withr")
         shell: Rscript {0}
 
       - name: Render Site
