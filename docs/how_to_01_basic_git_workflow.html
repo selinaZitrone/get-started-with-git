@@ -86,26 +86,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Get started with git: How to use git with R and R Studio</title>
+  <title>Get started with git: A simple git workflow step by step</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Get started with git: How to use git with R and R Studio"/>
+  <meta property="og:title" content="Get started with git: A simple git workflow step by step"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Get started with git"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Get started with git: How to use git with R and R Studio"/>
+  <meta property="twitter:title" content="Get started with git: A simple git workflow step by step"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["How to use git with R and R Studio"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["output","title"]}},"value":[{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["A simple git workflow step by step"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2360,7 +2360,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"How to use git with R and R Studio","authors":[]}
+{"title":"A simple git workflow step by step","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2379,7 +2379,7 @@ Slides
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<span class="nav-dropdown-header">01 - Introduction to git</span>
+<a href="slides/git-intro.html">01 - Introduction to git</a>
 <span class="nav-dropdown-header">02 - Collaboration with git</span>
 <span class="nav-dropdown-header">03 - R, RStudio and git</span>
 </div>
@@ -2392,7 +2392,7 @@ How Tos
 </button>
 <div class="nav-dropdown-content">
 <a href="ssh_keys_how.html">00 - Set up SSH authentication</a>
-<span class="nav-dropdown-header">01 - Simple git workflow</span>
+<a href="tasks/basic_git_workflow_how_to.html">01 - Simple git workflow</a>
 <span class="nav-dropdown-header">02 - Collaboration with git</span>
 <span class="nav-dropdown-header">03 - R, RStudio and git</span>
 </div>
@@ -2410,7 +2410,7 @@ How Tos
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>How to use git with R and R Studio</h1>
+<h1>A simple git workflow step by step</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2418,89 +2418,112 @@ How Tos
 
 
 <div class="d-article">
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='va'><a href='https://rdrr.io/pkg/knitr/man/opts_chunk.html'>opts_chunk</a></span><span class='op'>$</span><span class='fu'>set</span><span class='op'>(</span>eval <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<h1 id="install-usethis-package">Install usethis package</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"usethis"</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<h2 id="configure-github-token">Configure github token</h2>
-<p>Check if you already have a personal access token for Github</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>gh</span><span class='fu'>::</span><span class='fu'><a href='https://gh.r-lib.org/reference/gh_token.html'>gh_token</a></span><span class='op'>(</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>If not, you can create one</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/github-token.html'>create_github_token</a></span><span class='op'>(</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>This will first open Github and ask you to sign in. Then you are asked to create a new personal access token.</p>
-<p>On top enter a note that reminds you what this token is for (e.g. Something like “RStudio/R on HP laptop”).</p>
-<p>You can set an expiration date that you like to have. You can also select the scopes for your PAT. For our use case, the default selected scopes are enough. Scroll down and click on <code>Generate token</code>.</p>
-<p>Copy the token to the clipboard. Careful: You will not be able to read it again</p>
-<p>Now register the token with</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>gitcreds</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/gitcreds/man/gitcreds_get.html'>gitcreds_set</a></span><span class='op'>(</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>You are now prompted to paste your token into the Console.</p>
-<p>Now your PAT should be added to the credentials. You can check it with</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>gh</span><span class='fu'>::</span><span class='fu'><a href='https://gh.r-lib.org/reference/gh_token.html'>gh_token</a></span><span class='op'>(</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<h2 id="add-usethis-to-your-rprofile-optional">Add usethis to your Rprofile (optional)</h2>
-<p>If you want to load the <code>usethis</code> package every time you start R, you can add it to yuor <code>.Rprofile</code>. This way, you have all the <code>usethis</code> functionality available without having to load the packages first.</p>
-<p><strong>Carful: </strong> Loading packages automatically should generally only be done for packages that are not used in your R analyses, packages, … Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else. Adding utility packages to the <code>.Rprofile</code> is however, very convenient.</p>
-You can open your <code>.Rprofile</code> file with
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/edit.html'>edit_r_profile</a></span><span class='op'>(</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>Then you can add the following line, save the file and close it:</p>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://usethis.r-lib.org'>usethis</a></span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
-<p>This takes effect after restarting R.</p>
-<h2 id="now">Now</h2>
+<p>The following describes a simple git workflow starting with a local repo.</p>
+<p><em>The italic text refers to Windows users.</em></p>
+<h2 id="step-0-minimal-git-configuration">Step 0: Minimal git configuration</h2>
+<p>Let git know who you are in order to sign your commits correctly. Git configuration can be set locally (just for the current repo) or globally (global is default for all repos if no local config is specified). To see if you already have git configured run</p>
+<pre><code>git config --global -l</code></pre>
+<p>If you don’t yet see a <code>user.name</code> or <code>user.email</code> field or get a message, that the <code>.gitconfig</code> file does not exist, run the following to configure:</p>
+<pre><code>git config --global user.name &quot;&lt;your_user_name&gt;&quot;
+git config --global user.email &quot;&lt;your_user_email&gt;&quot;</code></pre>
+<p>Use the user name and email that you also use in your Gitlab/Github here.</p>
+<h2 id="start-with-an-empty-working-directory">Start with an empty working directory</h2>
+<p>In general, the working directory can be a project that already contains files or a completely empty folder like in this example. For this example, create an empty folder called <code>first_git_project</code> using your operating system’s file explorer or the terminal if you are familiar with it.</p>
+<p>Open the terminal and navigate into the working directory that you just created.</p>
+<p><em>If you are working on Windows, open the <code>Git bash</code> terminal that comes with your installation of git. Just search the App with the Windows search tool.</em></p>
+<p>You can use <code>cd /path/to/navigate/to</code> to navigate into a specific path. If you want to go back one level, use <code>cd ..</code>.</p>
+<p><em>On Windows, you can right click on the folder that contains your working directory and then click on <code>Git Bash Here</code></em></p>
+<p><img src="img/how_to/git-bash-here.png" /></p>
+<p>To see if you are in the correct directory, have a look at the path that is written on top. It should show the directory that you just created. Something like this:</p>
+<p><img src="img/how_to/navigate-path.png" /></p>
+<h2 id="step-1-initialize-empty-git-repository">Step 1: Initialize empty git repository</h2>
+<p>To initialize a git repo in the working directory run</p>
+<pre><code>git init</code></pre>
+<p>This creates a hidden folder <code>.git</code> in your working directory. The terminal now indicates that you are using git by indicating the branch that you are currently on. The default branch that is usually created by git is called <code>master</code> or <code>main</code>.</p>
+<p><img src="img/how_to/git-master.png" /></p>
+<p>Check the current status of your git repository by running</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div>
+<p>Right now, there should be nothing to commit.</p>
+<h2 id="step-2-add-a-file-to-the-git-repository">Step 2: Add a file to the git repository</h2>
+<p>Create a file <code>Bob.txt</code> in your working directory and add the following text to it:</p>
+<pre><code>Hello, this is Bob. How are you?</code></pre>
+<p>Save and close the file.</p>
+<p>Now have a look at the repository with</p>
+<pre><code>git status</code></pre>
+<p><code>Bob.txt</code> is now an untracked file that we can add to the staging area with</p>
+<pre><code>git add Bob.txt</code></pre>
+<p>Run</p>
+<pre><code>git status</code></pre>
+<p>again, to see how the status of the file has changed. It is now ready to be committed.</p>
+<h2 id="step-3-commit-bob.txt-to-the-repository">Step 3: Commit <code>Bob.txt</code> to the repository</h2>
+<p>To commit the file run</p>
+<pre><code>git commit</code></pre>
+<p>Wait for your default text editor to open, and add a commit message. Close the text editor and the commit is done.</p>
+<p>Look how the status of your repository has changed again with</p>
+<pre><code>git status</code></pre>
+<p>To see how the commit that you just did looks like, run</p>
+<pre><code>git log</code></pre>
+<h2 id="step-4-create-a-remote-repository-and-add-it-as-a-remote">Step 4: Create a remote repository and add it as a remote</h2>
+<p>Create a new remote repository on Gitlab or Github (whichever you already use or prefer to use).</p>
+<h3 id="a-github">4A) Github</h3>
+<p>Go to the <a href="https://github.com/">Github website</a>, log in and click on the green <code>New</code> button on the left of the start page:</p>
+<p><img src="img/how_to/github-new-button-small.png" /></p>
+<p>Enter a repository name (e.g. <code>first_git_project</code>), select if it should be private or public and add a description if you like. Set the check mark for adding a <code>README.md</code> file. This way, the remote already has some content that we can integrate into the local repository.</p>
+<p>Github will now bring you to the newly created repository.</p>
+<p><strong>Add the repository on Github as a remote to your local repository</strong></p>
+<p>To add this newly created repository as a remote to your local repository, you first have to copy the remote’s address.</p>
+<p>You can find and copy the address by clicking on the green <code>Code</code> button on the right. Choose the SSH address.</p>
+<p><img src="img/how_to/github-find-address.png" /> Now switch back to your local terminal and add this address as a remote with the name origin. (Replace the address below with the address of your personal repository)</p>
+<pre><code>git remote add origin git@github.com:selinaZitrone/git_test_project.git</code></pre>
+<h3 id="b-gitlab">4B) Gitlab</h3>
+<p>Log in to <a href="https://gitlab.com/users/sign_in">Gitlab</a> and click on the little <code>+</code> symbol on top of the start page. Choose <code>New project/repository</code> and then <code>Create blank project</code>.</p>
+<p><img src="img/how_to/gitlab-new-button-small.png" /></p>
+<p>Enter a repository name (e.g. <code>first_git_project</code>), select if it should be private or public and add a description if you like. Set the check mark for adding a <code>README</code> file.</p>
+<p>Click on <code>Create project</code> and Gitlab will bring you to the repositories main page.</p>
+<p><strong>Add the repository on Github as a remote to your local repository</strong></p>
+<p>To get the address of the remote repository click on the blue button <code>Clone</code> on the right. Copy the address under <code>Clone with SSH</code></p>
+<p>Now switch back to your local terminal and add this address as a remote with the name origin. (Replace the address below with the address of your personal repository)</p>
+<pre><code>git remote add origin git@gitlab.com:selinaZitrone/git_test_project.git</code></pre>
+<h1 id="step-5-push-local-changes-to-the-remote">Step 5: Push local changes to the remote</h1>
+<p>Before pushing your local changes to the remote, you can change the default branches name from master to main by running</p>
+<pre><code>git branch -M main</code></pre>
+<p>Now you can push your changes to the remote by running</p>
+<pre><code>git push -u origin main</code></pre>
+<p>Now you will get an error message and a warning, that the remote contains commits that you don’t have locally. This makes sense, because we added a readme file when creating the remote repository. In these situation, git prevents you from pushing and you first need to pull all changes from the remote (i.e. the <code>README</code> file that we initialized on Github/Gitlab) before pushing.</p>
+<p>Just run</p>
+<pre><code>git pull</code></pre>
+<p>Now you should be able to run</p>
+<pre><code>git push</code></pre>
+<h1 id="other-things-to-try">Other things to try</h1>
+<h2 id="add-a-gitignore-file">Add a gitignore file</h2>
 <ul>
-<li>create new R project and</li>
-</ul>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://usethis.r-lib.org/reference/use_git.html'>use_git</a></span><span class='op'>(</span><span class='op'>)</span>
-<span class='fu'><a href='https://usethis.r-lib.org/reference/use_github.html'>use_github</a></span><span class='op'>(</span><span class='op'>)</span>
-
-<span class='co'># add ons</span>
-<span class='fu'><a href='https://usethis.r-lib.org/reference/use_git_ignore.html'>use_git_ignore</a></span><span class='op'>(</span><span class='op'>)</span>
-</code></pre>
-</div>
-</div>
+<li>put a pdf file in your repo</li>
+<li>look at git status</li>
+<li>Add a gitignore file
 <ul>
-<li>after use_git: git gui</li>
+<li><em>On Windows, you cannot create a file without a file name. So the Windows explorer will complain if you try to create a file with only the file ending .gitignore. One way around this is to use the terminal. In Git bash, just run</em> <code>touch .gitignore</code> <em>to create a gitignore file</em></li>
+</ul></li>
+<li>ignore pdf files
+<ul>
+<li>Add a line with the pattern <code>*.pdf</code> to your gitignore file and save it</li>
+</ul></li>
+<li>look at git status again</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h2 id="add-another-commit">Add another commit</h2>
+<ul>
+<li>Change some text in Bob.txt</li>
+<li>stage it with <code>git add</code></li>
+<li>look at the diff with <code>git diff --staged</code></li>
+<li>commit the changes</li>
+<li>compare this commit to the previous one with
+<ul>
+<li><code>git commit HEAD^</code></li>
+</ul></li>
+<li>push to origin</li>
+</ul>
+<h2 id="look-at-the-log">Look at the log</h2>
+<p>Use <code>git log</code> to look at the log of your current repository</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

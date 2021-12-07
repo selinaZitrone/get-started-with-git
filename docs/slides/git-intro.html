@@ -30,79 +30,52 @@ background-position: 90% 90%
 ### Freie Universität Berlin - Theoretical Ecology
 
 .footnote-left[
-  2021-10-28 (updated: 2021-12-04)
+  2021-10-28 (updated: 2021-12-07)
 ]
 
 ---
 # Version control
 
 .pull-left[
-
-## Why?
-
-- Go back in time
-  
-- Collaborate in teams -&gt; Who did what and why?
-
-- Don't loose overview of your project
-
-]
-
-.pull-right[
  ![It's never final](img/final-doc.jpg)
-]
-
----
-# Version control
-
-.pull-left[
-## How?
-
-- Complete and long-term history of every file in your project
-
-- Safe (e.g. no accidental loss of versions)
-
-- Easy to use
-
-- Overview and documentation of all changes
-
-- Repository on remote server for everyone to access
-
-- Offline and asynchronous work should be possible
-
-]
-
-.pull-right[
- ![It's never final](img/final-doc.jpg)]
-
----
-# Git for version control
-
-.pull-left[
-
-- Software that tracks changes in any set of files
-
-- Stores snapshots (i.e. commits) of your project files
-  - like a mini-filesystem
-
-]
-.pull-right[
-![Git principle with different snapshots](img/git-versions.jpg)
 ]
 
 --
 
-.pull-left[
+.pull-right[
 
-- Distributed version control system
+## Why?
 
-  - (usually) one remote and one or more local repositories
+- **Go back** in time
   
-  - every computer has full full-fledged version of repo with entire history
+- **Collaborate** in teams -&gt; Who did what and why?
+
+- Don't loose **overview** of your project
 
 ]
+
+---
+# Version control
+
+.pull-left[
+ ![It's never final](img/final-doc.jpg)
+ ]
+ 
 .pull-right[
-![Git as distributed VCS](img/distributed-git.png)
+## How?
+
+- **Complete and long-term history** of every file in your project
+
+- **Safe** (e.g. no accidental loss of versions)
+
+- **Easy** to use
+
+- **Overview and documentation** of all changes
+
+- Repository on **remote server** for everyone to access
+
+- **Offline and asynchronous** work should be possible
+
 ]
 
 ---
@@ -110,39 +83,100 @@ background-position: 90% 90%
 
 - Complete and long-term history of every file in your project <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
 
---
+.pull-left[
+**Git is a software that**
+
+- Tracks changes in any set of files
+
+- Stores snapshots (i.e. commits) of your project files
+  - like a mini-filesystem
+]
+
+.pull-right[
+![Git principle with different snapshots](img/git-versions.jpg)
+]
+
+---
+# Version control with git
+
+- Complete and long-term history of every file in your project <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
 
 - Safe (e.g. no accidental loss of versions) <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
-  - Multiple copies of same repository 
+
+- Repository on remote server for everyone to access <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+--
+.pull-left[
+**Distributed version control system**
+
+  - Idea: many local repositories synced via one remote repo
+  - Every computer has full full-fledged version of repo with entire history
   - Additional "backup" on a remote server
-  - Git makes it hard for you to delete something accidentally
+  - Git makes it hard for you to delete something accidentally]
+  
+.pull-right[.right[
+![:scale 90%](img/distributed-git.png)]]
+
+
+---
+# Version control with git
+
+- Complete and long-term history of every file in your project <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Safe (e.g. no accidental loss of versions) <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Repository on remote server for everyone to access <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Easy to  use <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
 
 --
 
-- Easy to  use <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
   - There is some practice necessary to get the concepts
   - A lot of documentation
   - Easy to use git clients
 
---
+---
+# Version control with git
 
-- Overview and documentation of all changes <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
-  - For every change: Who, What, When, Why
-  
---
+- Complete and long-term history of every file in your project <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Safe (e.g. no accidental loss of versions) <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
 
 - Repository on remote server for everyone to access <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
-  - Distributed idea: many local repositories synced via one remote repo
+
+- Easy to  use <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Overview and documentation of all changes <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
 
 --
 
+  - For every change: Who, What, When, Why
+  
+---
+# Version control with git
+
+- Complete and long-term history of every file in your project <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Safe (e.g. no accidental loss of versions) <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Repository on remote server for everyone to access <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Easy to  use <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+- Overview and documentation of all changes <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
 - Offline and asynchronous work should be possible <svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:green;overflow:visible;position:relative;"><path d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z"/></svg>
+
+--
+
   - Complete local copy -&gt; can be uploaded to remote any time
 
 ---
-# This git workshop
+# This workshop
 
-Git is a huge topic because it is so powerful. Most of the things are best to learn as you need them.
+Git is a huge topic because and git is very powerful. Most of the things are best to learn as you need them.
+
+--
 
 **Aim of this workshop:** 
 
@@ -171,8 +205,11 @@ Get started with simple workflows.Learn the rest as you need it.
 - **Repository / Repo:** Database of the project (a `.git` folder in your project)
   - **local:** on a local machine (e.g. your computer)
   - **remote:** on a server (e.g. Github)
+  
 - **Commit:** a change to the repository
+
 - **Branches:** different versions of a repo within a repo
+
 - **Merge:** combine two branches
  ]
 .pull-right[
@@ -183,6 +220,8 @@ Get started with simple workflows.Learn the rest as you need it.
 # Git core concepts II
 
 A git repository does not contain the files in a version that you can just open and edit.
+
+--
 
 .pull-left[
 - **Repository:** 
@@ -207,12 +246,26 @@ A git repository does not contain the files in a version that you can just open 
 ---
 class: inverse
 
-# Basic workflow for working alone
+# Basic git workflow for working alone
 
-I will show you everything in the command line. There are also GUI programs for git that you can switch to but the concepts are better learned in the terminal.
+I will show you everything in the command line. There are also GUI programs for git that you can switch to but the concepts are (in my opinion) better learned in the terminal.
+
+.bottom[
+.pull-left[
+
+`git init`
+
+`git add`
+
+`git commit`
+
+`git push`
+]
+]
 
 
-**Your starting situation**
+---
+# Starting situation
 
 - Local working directory (i.e. a folder) with or without files
 
@@ -243,7 +296,7 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 # Step 2: Modify files and stage changes `git add`
 
 .pull-left[
-- git detects any changes in the working directory and marks them as 
+- Git detects any changes in the working directory and marks them as 
 
   - untracked
   - modified
@@ -287,21 +340,21 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 - Commits are basically snapshots of your projects
 
 - Commit work from staging area to local repository
+  - First, collect meaningful chunks of work in the staging area, then commit
 
-- Now your changes are part of your project's git history
+- After a commit, your changes are part of your project's git history
 ]
 .pull-right[
 ![Concept of a git commit](img/git-commit-concept.png)
 ]
 
---
-
-![Git commit in command line](img/workflow/git-commit.png)
+&lt;!-- ![Git commit in command line](img/workflow/git-commit.png) --&gt;
 
 
 ---
 # Commit messages
 
+.footnote-right[Comic by [xkcd](https://xkcd.com/1296/)]
 - Every commit needs a commit message
 - Good commit messages are essential to make good use of git!
 
@@ -310,12 +363,36 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 
 --
 
-- One line commit messages can be given directly in the command line:
+- **One line commit messages** can be given directly in the command line:
   - `git commit -m "Your very nice commit message"`
-- More complex commit messages are better entered in a text editor:
+- **More complex commit messages** are better entered in a text editor:
   - `git commit` and a text editor will automatically open for you message
   
-.footnote-right[Comic by [xkcd](https://xkcd.com/1296/)]
+---
+# Looking at the git history `git log`
+
+- List of all commits with hash, author, date, commit message, ...
+- State of local and remote repository branches
+
+--
+
+- `git log` for normal view
+
+- `git log --oneline` for a compact version of log
+
+- `git log --graph` for a graphical representation (interesting if you have a branching workflow)
+
+---
+# Explore differences with `git diff`
+
+- `git diff` show changes in the working directory
+
+- `git diff --staged` changes in staging area
+
+- `git diff &lt;commit_hash&gt;^!` compare to one commit before
+
+- `git diff &lt;commit_hash_1&gt; &lt;commit_hash_2&gt;` compare commit 1 and 2
+  - e.g. `git diff 8af2ff 87a4ad`
 
 ---
 # Short recap
@@ -324,15 +401,14 @@ We have
 
 - Added a file to the working directory
 
-- Added file to staging area
+- Committed changes to local repository via the staging area
 
-- Commited changes to local repository
 
 .center[![Local git setup](img/git-local-concept.png)]
 
 --
 
-Now: Share changes with a remote repository
+**Now: Share changes with a remote repository**
 
 ---
 # Step 4: Create a remote repository
@@ -345,17 +421,25 @@ Now: Share changes with a remote repository
 # Step 5: Connect local and remote repository
 
 - Tell the local repository where to push its changes to
+
   - `git remote add &lt;remote_name&gt; &lt;remote_address&gt;`
+  
+--
 
 - Default remote name is often `origin` but could be anything else
 
+--
+
 - The address of the remote can be found on Github
 
+--
+
 - You can chose SSH or HTTPS protocol
+  - Depending on this, choose the repository address
 
-So an example is:
+Example:
 
-`git remote add origin https://github.com/selinaZitrone/test_repository.git`
+`git remote add origin git@github.com:selinaZitrone/git_test_project.git`
 
 ---
 # Step 6: Share changes with a remote repository `git push`
@@ -364,35 +448,66 @@ So an example is:
 
 - The first time, you need to tell git to which remote branch, your local branch should be pushed
 
-  - `git push set-upstream &lt;remote_name&gt; &lt;remote_branch_name&gt;`
+  - `git push --set-upstream &lt;remote_name&gt; &lt;remote_branch_name&gt;`
   
-  - `git push set-upstream origin master`
+  - `git push --set-upstream origin main`
+
+**Note on branch names:**
+
+- Default branch names changed from master to main on Github and Gitlab
+- Depending on settings: local default branches might be called master instead of main
+- You can rename the default branch before pushing with 
+
+`git branch -M main`
 
 ---
-# Looking at the git history `git log`
+# Get a repo copy to another machine `git clone`
+
+.center[![](img/distributed-git.png)]
+
+- Get a copy of your own repository on a different machine
+- Get the repository from somebody else
+
+---
+# Get a repo copy to another machine `git clone`
+
 
 .pull-left[
-- list of all commits with hash, author, date, commit message, ...
-- state of local and remote repository branches
+- Locally, working directory is created, git repository is copied and checked out
 
-- `git log` for normal view
-- `git log --oneline` compact version of log
-- `git log --graph` graphical representation (interesting if you have a branching workflow)
 ]
 
----
-# Explore differences with `git diff`
+.pull-right[
 
-- `git diff` show changes in the working directory
-- `git diff --staged` changes in staging area
-- `git diff &lt;commit_hash&gt;^!` compare to one commit before
-- `git diff &lt;commit_hash_1&gt; &lt;commit_hash_1&gt;` compare commit 1 and 2
-  - e.g. `git diff 8af2ff 87a4ad`
-  
----
-# Ignoring files
+.center[![](img/git-clone-concept.png)]
 
-- You can add files that you don't want to have tracked by in the `.gitignore` file
+]
+
+- Clone a remote repository with &lt;br&gt;
+`git clone git@github.com:{your_username}/{your_project}`
+
+
+---
+# Sync changes with the remote `git pull`
+
+.pull-left[
+
+- Local changes, publish to remote: `git push`
+
+- Remote changes, pull to local: `git pull`
+
+]
+
+.pull-right[
+
+![](img/git-pull-concept.png)
+]
+---
+# Ignoring files in `.gitignore`
+
+- Use a `.gitignore` file to list files/folders that you don't want to track with git
+
+--
 
 - Useful to ignore e.g.
   - Compiled code and build directories
@@ -400,23 +515,119 @@ So an example is:
   - Hidden system files
   - Personal IDE config files
   - ...
+  
+--
+
+## How to ignore files/folders?
 
 - **Step 1: **  Create a file with the name `.gitignore` in working directory
+
+--
+
 - **Step 2: ** Add all files and directories you want to ignore to the `.gitignore` file
 
 ---
 # Ignoring files: Example
 
+```
+*.html    # ignore all .html files
+*.exe     # ignore all .exe files
 
-    *.html    # ignore all .html files
-    *.exe     # ignore all .exe files
+debug.log # ignore the file debug.log
 
-    debug.log # ignore the file debug.log
-
-    build/    # ignore all files in subdirectory build
-
+build/    # ignore all files in subdirectory build
+```
 
 See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
+
+---
+# Recap
+
+## Basic git workflow (Start local)
+
+- `git init`: initialize a repository
+
+- `git add`: add changes to staging area
+
+- `git commit` / `git commit -m`: Commit changes to repository
+
+--
+
+- Create a remote repository
+
+- `git add remote &lt;remote_name&gt; &lt;remote_address&gt;`: Add the remote to the local repository
+
+--
+
+(- `git branch -M main`: rename branch to main if it's called master by default (optional))
+
+- `git push -u origin main`: push local changes to remote
+  - `-u origin main` only when pushing for first time. Afterwards just `git push`
+
+---
+# Recap
+
+## Basic git workflow (Start remote)
+
+- `git clone`: Clone remote repository
+
+- `git add`: add changes to staging area
+
+- `git commit` / `git commit -m`: Commit changes to repository
+
+- `git push`: publish changes on the remote
+
+- `git pull`: pull changes from the remote
+
+---
+# Recap
+
+## Additional useful things
+
+- `git log`: look at commit history
+
+- `git diff`: look at differences between versions
+
+- use a `.gitignore` file to list files/folders that you don't want tracked
+
+---
+# What if I don't want to use the command line?
+
+- There are many git GUI clients
+
+  - Most IDEs have a git GUI integrated (e.g. RStudio -&gt; tommorrow)
+  
+- GUI clients can be used in combination with the command line
+
+- My recommendation: First understand git concepts in command line, then move on to a GUI client if you want
+
+---
+# Example: Github Desktop
+
+- For MacOS and Windows
+
+- Easily connected to your Github account, but also works for GitLab repos etc.
+
+- I personally don't use it, but it looks pretty good and simple to use
+
+---
+# Example: Github Desktop
+
+![](img/github-desktop.png)
+
+---
+class: inverse
+
+.center[.large[# Thanks for you attention :)]]
+
+## Questions?
+
+## Find exercise [here](../how_to_01_basic_git_workflow.html)
+
+## Tomorrow
+
+- Branching and merging, pull requests
+- Git with R and RStudio
 
 
 
@@ -428,7 +639,7 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 <script src="macros.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
-"highlightLines": true,
+"highlightLines": false,
 "ratio": "16:9",
 "countIncrementalSlides": false
 });
@@ -496,24 +707,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 slideshow._releaseMath = function(el) {
