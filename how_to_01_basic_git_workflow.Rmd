@@ -13,13 +13,13 @@ Let git know who you are in order to sign your commits correctly.
 Git configuration can be set locally (just for the current repo) or globally (global is default for all repos if no local config is specified).
 To see if you already have git configured run
 
-```
+```sh
 git config --global -l
 ```
 
 If you don't yet see a `user.name` or `user.email` field or get a message, that the `.gitconfig` file does not exist, run the following to configure:
 
-```
+```sh
 git config --global user.name "<your_user_name>"
 git config --global user.email "<your_user_email>"
 ```
@@ -49,7 +49,7 @@ To see if you are in the correct directory, have a look at the path that is writ
 
 To initialize a git repo in the working directory run 
 
-```
+```sh
 git init
 ```
 
@@ -77,19 +77,19 @@ Save and close the file.
 
 Now have a look at the repository with
 
-```
+```sh
 git status
 ```
 
 `Bob.txt` is now an untracked file that we can add to the staging area with
 
-```
+```sh
 git add Bob.txt
 ```
 
 Run
 
-```
+```sh
 git status
 ```
 
@@ -99,7 +99,7 @@ again, to see how the status of the file has changed. It is now ready to be comm
 
 To commit the file run
 
-```
+```sh
 git commit
 ```
 
@@ -107,13 +107,13 @@ Wait for your default text editor to open, and add a commit message. Close the t
 
 Look how the status of your repository has changed again with
 
-```
+```sh
 git status
 ```
 
 To see how the commit that you just did looks like, run
 
-```
+```sh
 git log
 ```
 
@@ -143,7 +143,7 @@ Choose the SSH address.
 Now switch back to your local terminal and add this address as a remote with the name origin.
 (Replace the address below with the address of your personal repository)
 
-```
+```sh
 git remote add origin git@github.com:selinaZitrone/git_test_project.git
 ```
 
@@ -165,7 +165,7 @@ To get the address of the remote repository click on the blue button `Clone` on 
 Now switch back to your local terminal and add this address as a remote with the name origin.
 (Replace the address below with the address of your personal repository)
 
-```
+```sh
 git remote add origin git@gitlab.com:selinaZitrone/git_test_project.git
 ```
 
@@ -173,13 +173,13 @@ git remote add origin git@gitlab.com:selinaZitrone/git_test_project.git
 
 Before pushing your local changes to the remote, you can change the default branches name from master to main by running
 
-```
+```sh
 git branch -M main
 ```
 
 Now you can push your changes to the remote by running
 
-```
+```sh
 git push -u origin main
 ```
 
@@ -188,13 +188,13 @@ In these situation, git prevents you from pushing and you first need to pull all
 
 Just run
 
-```
+```sh
 git pull
 ```
 
 Now you should be able to run
 
-```
+```sh
 git push
 ```
 # Other things to try
