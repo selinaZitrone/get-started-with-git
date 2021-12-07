@@ -142,8 +142,92 @@ Before we can do this, we need to understand the concept of **branching** and **
 
 `git push --set-upstream origin <branch_name>`
 
-- Have a look at all the branches that exist (local and remote) with <br>
+- Have a look at all the branches that exist (local and remote) with `git branch -a`
 
-`git branch -a`
+<!-- ![Git push with set-upstream](img/branching/git-push-set-upstream-concept.png) -->
 
-![Git push with set-upstream](img/branching/git-push-set-upstream-concept.png)
+---
+class: inverse
+
+
+---
+# Merging branches `git merge`
+
+- You always merge **into** the branch you are currently on <br>
+
+`git merge <branch_to_merge>`
+
+- E.g. to merge branch `change_alice` back into master, do
+  - `git checkout master` to switch to master
+  - `git merge change_alice`  to merge `change_alice` into master
+
+---
+# Fast forward merging
+
+- No conflicts or diverging files
+
+![Fast forward merging](img/branching/git-merge-fast-forward.png)
+
+---
+# Merging divergent branches
+
+- Merge commit is introduced
+
+![Git merge with diverging branches](img/branching/git-merge-diverging.png)
+
+---
+# Solving merge conflicts
+
+- If you try to merge changes that interfere, you run into a merge conflict
+
+- Solve it by hand
+
+- Then stage and commit the changes to merge
+
+- You can always abort this process with <br>
+
+`git merge --abort`
+
+---
+# Getting changes from the remote `git fetch`
+
+- With `git fetch`, changes are fetched but not merged into the local repo
+
+- Use `git status` to see what is new on remote compared to your current local repo
+
+![Git fetch concept](img/branching/git-fetch-concept.png)
+
+---
+# Getting changes from the remote `git pull`
+
+- Changes are integrated directly into local branches and working directory
+
+- Implicitly does a fetch first
+
+--
+
+- Often good to do fetch first and check what was updated in the remote
+  - Avoids conflicts
+  - Avoids pulling changes that you don't want
+  - Important when working together
+  
+--
+
+![:scale 80%](img/branching/git-pull-concept.png)
+
+---
+# Pull requests on remote
+
+## More complex workflow
+
+- One remote and multiple local repos
+- One main branch that only has code that is agreed upon and tested
+- Everyone works on separate branches and **requests a merge** if they are finished
+
+**Idea**
+
+
+
+
+
+
