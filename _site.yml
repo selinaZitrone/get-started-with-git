@@ -12,7 +12,7 @@ navbar:
     - text: "Slides"
       menu:
         - text: "01 - Introduction to git"
-          #href: slides/git-intro.html
+          href: slides/git-intro.html
         - text: "02 - Collaboration with git"
           #href: slides/git-collab.html
         - text: "03 - R, RStudio and git"
@@ -22,7 +22,7 @@ navbar:
       - text: "00 - Set up SSH authentication"
         href: ssh_keys_how.html
       - text: "01 - Simple git workflow"
-        #href: tasks/basic_git_workflow_how_to.html
+        href: tasks/basic_git_workflow_how_to.html
       - text: "02 - Collaboration with git"
         #href: tasks/git-collab_how_to.html
       - text: "03 - R, RStudio and git"
