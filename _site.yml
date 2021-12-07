@@ -20,9 +20,9 @@ navbar:
     - text: "How Tos"
       menu:
       - text: "00 - Set up SSH authentication"
-        href: ssh_keys_how.html
+        href: how_to_00_ssh_keys.html
       - text: "01 - Simple git workflow"
-        href: basic_git_workflow_how_to.html
+        href: how_to_01_basic_git_workflow.html
       - text: "02 - Collaboration with git"
         #href: tasks/git-collab_how_to.html
       - text: "03 - R, RStudio and git"
