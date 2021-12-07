@@ -1,5 +1,5 @@
 ---
-subtitle: ""
+subtitle: "Introduction and simple workflow"
 author: "Selina Baldauf"
 institute: "Freie Universität Berlin - Theoretical Ecology"
 date: "2021-10-28"

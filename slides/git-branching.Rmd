@@ -1,0 +1,149 @@
+---
+subtitle: "Collaboration (branching, merging and pull requests)"
+author: "Selina Baldauf"
+institute: "Freie Universität Berlin - Theoretical Ecology"
+date: "2021-10-28"
+output:
+  xaringan::moon_reader:
+    seal: false
+    css: [default, css/new_slides.css]
+    nature:
+      highlightStyle: github
+      highlightLines: false
+      ratio: 16:9
+      countIncrementalSlides: false
+      beforeInit: "macros.js"
+params:
+  title: "Introduction to version control with Git"
+  day: ""
+  bg_image: "img/Git-Logo-2Color.png"
+  bg_image_scale: "40%"
+  bg_position: "90% 90%"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+library(fontawesome)
+```
+
+```{r child="title_slide.Rmd"}
+
+```
+
+---
+# Collaboration with git
+
+## Simple option
+
+- One remote and multiple local repos
+- Everyone works on same branch and use push and pull to sync
+
+--
+
+This works good if
+
+- Repo is not updated often
+- One person is primarily pushes, others mostly pull
+- No need for discussing code
+  - everything that is pushed is integrated in the repo
+  
+--
+  
+**Problems with this approach**
+
+- If more people push often -> conflicts
+- Not possible to improve on code before integration
+- Not possible to just "try something out"
+
+---
+# Collaboration with git
+
+## More complex workflow
+
+- One remote and multiple local repos
+- One main branch that only has code that is agreed upon and tested
+- Everyone works on separate branches and requests a merge if they are finished
+
+--
+
+**Advantages**
+
+- It can be guaranteed that main always works
+- Code can be reviewed before it's integrated
+- Potential conflicts don't have to be solved on the main branch
+
+--
+
+Before we can do this, we need to understand the concept of **branching** and **merging**
+
+---
+# Branches in git
+
+.pull-left[
+
+- All repositories start with a default branch (main/master)
+
+- **Branches** are lightweight movable pointers to commits
+  - at every commit, branch pointer moves forward automatically
+
+- **HEAD** is a pointer that points to the local branch that is checked out (i.e. that you are currently on)
+
+]
+
+.pull-right[
+  ![](img/branching/branch-concept.png)
+]
+
+---
+# Creating a new branch `git branch`
+
+.pull-left[
+
+- Create a new branch in a local repository with <br>
+`git branch <branch_name>`
+
+- Idea: Make changes in this new branch and then merge them back into the main branch
+
+]
+.pull-right[![Create new git branch](img/branching/git-branch-new.png)]
+
+<br>
+
+--
+
+![Branches in a repository](img/branching/repo-branches.png)
+
+---
+# Switching branches `git checkout`
+
+.pull-left[
+
+- Switch to a different branch with <br>
+`git checkout <branch_name>`
+
+- This moves the HEAD pointer
+
+- Add and commit changes to this branch as usually
+
+]
+.pull-right[![Git checkout concept](img/branching/git-checkout-concept.png)]
+
+--
+
+- Create and checkout a new branch in one command with <br>
+`git checkout -b <branch_name>`
+
+---
+# Add local branches to remote `git push`
+
+- If you want to push a new local branch to the remote for the first time, you have to explicitly set an upstream branch <br>
+
+`git push --set-upstream origin <branch_name>`
+
+- Have a look at all the branches that exist (local and remote) with <br>
+
+`git branch -a`
+
+![Git push with set-upstream](img/branching/git-push-set-upstream-concept.png)
