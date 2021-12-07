@@ -2422,10 +2422,10 @@ How Tos
 <p><em>The italic text refers to Windows users.</em></p>
 <h2 id="step-0-minimal-git-configuration">Step 0: Minimal git configuration</h2>
 <p>Let git know who you are in order to sign your commits correctly. Git configuration can be set locally (just for the current repo) or globally (global is default for all repos if no local config is specified). To see if you already have git configured run</p>
-<pre><code>git config --global -l</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> <span class="at">-l</span></span></code></pre></div>
 <p>If you don’t yet see a <code>user.name</code> or <code>user.email</code> field or get a message, that the <code>.gitconfig</code> file does not exist, run the following to configure:</p>
-<pre><code>git config --global user.name &quot;&lt;your_user_name&gt;&quot;
-git config --global user.email &quot;&lt;your_user_email&gt;&quot;</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">&quot;&lt;your_user_name&gt;&quot;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">&quot;&lt;your_user_email&gt;&quot;</span></span></code></pre></div>
 <p>Use the user name and email that you also use in your Gitlab/Github here.</p>
 <h2 id="start-with-an-empty-working-directory">Start with an empty working directory</h2>
 <p>In general, the working directory can be a project that already contains files or a completely empty folder like in this example. For this example, create an empty folder called <code>first_git_project</code> using your operating system’s file explorer or the terminal if you are familiar with it.</p>
@@ -2438,7 +2438,7 @@ git config --global user.email &quot;&lt;your_user_email&gt;&quot;</code></pre>
 <p><img src="img/how_to/navigate-path.png" /></p>
 <h2 id="step-1-initialize-empty-git-repository">Step 1: Initialize empty git repository</h2>
 <p>To initialize a git repo in the working directory run</p>
-<pre><code>git init</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code></pre></div>
 <p>This creates a hidden folder <code>.git</code> in your working directory. The terminal now indicates that you are using git by indicating the branch that you are currently on. The default branch that is usually created by git is called <code>master</code> or <code>main</code>.</p>
 <p><img src="img/how_to/git-master.png" /></p>
 <p>Check the current status of your git repository by running</p>
@@ -2449,20 +2449,20 @@ git config --global user.email &quot;&lt;your_user_email&gt;&quot;</code></pre>
 <pre><code>Hello, this is Bob. How are you?</code></pre>
 <p>Save and close the file.</p>
 <p>Now have a look at the repository with</p>
-<pre><code>git status</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div>
 <p><code>Bob.txt</code> is now an untracked file that we can add to the staging area with</p>
-<pre><code>git add Bob.txt</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add Bob.txt</span></code></pre></div>
 <p>Run</p>
-<pre><code>git status</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div>
 <p>again, to see how the status of the file has changed. It is now ready to be committed.</p>
 <h2 id="step-3-commit-bob.txt-to-the-repository">Step 3: Commit <code>Bob.txt</code> to the repository</h2>
 <p>To commit the file run</p>
-<pre><code>git commit</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit</span></code></pre></div>
 <p>Wait for your default text editor to open, and add a commit message. Close the text editor and the commit is done.</p>
 <p>Look how the status of your repository has changed again with</p>
-<pre><code>git status</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div>
 <p>To see how the commit that you just did looks like, run</p>
-<pre><code>git log</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log</span></code></pre></div>
 <h2 id="step-4-create-a-remote-repository-and-add-it-as-a-remote">Step 4: Create a remote repository and add it as a remote</h2>
 <p>Create a new remote repository on Gitlab or Github (whichever you already use or prefer to use).</p>
 <h3 id="a-github">4A) Github</h3>
@@ -2474,7 +2474,7 @@ git config --global user.email &quot;&lt;your_user_email&gt;&quot;</code></pre>
 <p>To add this newly created repository as a remote to your local repository, you first have to copy the remote’s address.</p>
 <p>You can find and copy the address by clicking on the green <code>Code</code> button on the right. Choose the SSH address.</p>
 <p><img src="img/how_to/github-find-address.png" /> Now switch back to your local terminal and add this address as a remote with the name origin. (Replace the address below with the address of your personal repository)</p>
-<pre><code>git remote add origin git@github.com:selinaZitrone/git_test_project.git</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:selinaZitrone/git_test_project.git</span></code></pre></div>
 <h3 id="b-gitlab">4B) Gitlab</h3>
 <p>Log in to <a href="https://gitlab.com/users/sign_in">Gitlab</a> and click on the little <code>+</code> symbol on top of the start page. Choose <code>New project/repository</code> and then <code>Create blank project</code>.</p>
 <p><img src="img/how_to/gitlab-new-button-small.png" /></p>
@@ -2483,17 +2483,17 @@ git config --global user.email &quot;&lt;your_user_email&gt;&quot;</code></pre>
 <p><strong>Add the repository on Github as a remote to your local repository</strong></p>
 <p>To get the address of the remote repository click on the blue button <code>Clone</code> on the right. Copy the address under <code>Clone with SSH</code></p>
 <p>Now switch back to your local terminal and add this address as a remote with the name origin. (Replace the address below with the address of your personal repository)</p>
-<pre><code>git remote add origin git@gitlab.com:selinaZitrone/git_test_project.git</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@gitlab.com:selinaZitrone/git_test_project.git</span></code></pre></div>
 <h1 id="step-5-push-local-changes-to-the-remote">Step 5: Push local changes to the remote</h1>
 <p>Before pushing your local changes to the remote, you can change the default branches name from master to main by running</p>
-<pre><code>git branch -M main</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span></code></pre></div>
 <p>Now you can push your changes to the remote by running</p>
-<pre><code>git push -u origin main</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div>
 <p>Now you will get an error message and a warning, that the remote contains commits that you don’t have locally. This makes sense, because we added a readme file when creating the remote repository. In these situation, git prevents you from pushing and you first need to pull all changes from the remote (i.e. the <code>README</code> file that we initialized on Github/Gitlab) before pushing.</p>
 <p>Just run</p>
-<pre><code>git pull</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre></div>
 <p>Now you should be able to run</p>
-<pre><code>git push</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div>
 <h1 id="other-things-to-try">Other things to try</h1>
 <h2 id="add-a-gitignore-file">Add a gitignore file</h2>
 <ul>
