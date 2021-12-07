@@ -1,8 +1,7 @@
 ---
 output: distill::distill_article
+title: "A simple git workflow step by step"
 ---
-
-# Simple git workflow step by step
 
 The following describes a simple git workflow starting with a local repo.
 
