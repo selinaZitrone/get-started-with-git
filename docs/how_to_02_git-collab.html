@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,27 +85,28 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+
   <!--radix_placeholder_meta_tags-->
-  <title>Get started with git: Untitled</title>
+  <title>Get started with git: Collaboration (branching, merging and pull requests)</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Get started with git: Untitled"/>
+  <meta property="og:title" content="Get started with git: Collaboration (branching, merging and pull requests)"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Get started with git"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Get started with git: Untitled"/>
+  <meta property="twitter:title" content="Get started with git: Collaboration (branching, merging and pull requests)"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{},"value":[]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["output","title"]}},"value":[{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["Collaboration (branching, merging and pull requests)"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1859,7 +1860,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2360,7 +2364,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Untitled","authors":[]}
+{"title":"Collaboration (branching, merging and pull requests)","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2391,8 +2395,8 @@ How Tos
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="ssh_keys_how.html">00 - Set up SSH authentication</a>
-<a href="basic_git_workflow_how_to.html">01 - Simple git workflow</a>
+<a href="how_to_00_ssh_keys.html">00 - Set up SSH authentication</a>
+<a href="how_to_01_basic_git_workflow.html">01 - Simple git workflow</a>
 <span class="nav-dropdown-header">02 - Collaboration with git</span>
 <span class="nav-dropdown-header">03 - R, RStudio and git</span>
 </div>
@@ -2410,7 +2414,7 @@ How Tos
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>how_to_02_git-collab.knit</h1>
+<h1>Collaboration (branching, merging and pull requests)</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2418,8 +2422,46 @@ How Tos
 
 
 <div class="d-article">
-<p>No content yet</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Before you start, clone the practice repository for this exercise:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:selinaZitrone/git_collaboration_training.git</span></code></pre></div>
+<p>The repo contains only a README.md file.</p>
+<h2 id="part-1-understand-branching-and-merging">Part 1: Understand branching and merging</h2>
+<p>Open the terminal (Git bash on Windows) and navigate into the repository that you just cloned.</p>
+<p>Before you start working on the repository, create a new branch with your name and switch to it.</p>
+<p>The two step version of this is:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="op">&lt;</span>your_name<span class="op">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="op">&lt;</span>your_name<span class="op">&gt;</span></span></code></pre></div>
+<p>The one step version is</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> <span class="op">&lt;</span>your_name<span class="op">&gt;</span></span></code></pre></div>
+<p><strong>Adding some content</strong></p>
+<p>Create a new file with the name <code>your_name.txt</code> and add some text in that file. Add and commit the file like you learned before.</p>
+<p>Now we want to practice some merging. But we don’t want to touch the master for now. So create a second branch (make sure that you checked out your new branch and not master):</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-</span> b <span class="op">&lt;</span>feature_branch<span class="op">&gt;</span></span></code></pre></div>
+<p>Now you should be in the feature branch. It should also contain the file with your name and the text in it. Open this file and add some text. Then stage (add) the file and commit it.</p>
+<p>To see the branching pattern that you just created, you can have a look at</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--graph</span> <span class="at">--oneline</span></span></code></pre></div>
+<p><strong>Merge feature_branch</strong></p>
+<p>Now we want to merge the <code>feature_branch</code> back into your name branch. To do so, first, switch back to your name branch with</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="op">&lt;</span>your_name<span class="op">&gt;</span></span></code></pre></div>
+<p>Now do the merge with</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge <span class="op">&lt;</span>feature_branch<span class="op">&gt;</span></span></code></pre></div>
+<p>No have a look at the file with your name: The new lines that you just created on the <code>feature_branch</code> should now also be added in your name branch.</p>
+<h2 id="part-2-push-to-github-and-pull-request">Part 2: Push to Github and pull request</h2>
+<p>Now you want to share your local changes with your collaborators.</p>
+<p>The first step is to push your name branch to Github.</p>
+<p>Have a look at which branches exist on the remote with</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-a</span></span></code></pre></div>
+<p>Your local name branch is not part of that list of remote branches yet.</p>
+<p>So if you push for the first time, you need to run</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--set-upstream</span> origin <span class="op">&lt;</span>your_name<span class="op">&gt;</span></span></code></pre></div>
+<p>Since right now, many people are pushing to the remote, it could be that you have to pull the new changes first before you can push your own.</p>
+<p>If this is the case, just run</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre></div>
+<p>and then try to push again.</p>
+<p><strong>Do a pull request</strong></p>
+<p>After your local branch is successfully pushed to Github, you can request a merge into the master.</p>
+<p>Log in to Github and <a href="https://github.com/selinaZitrone/git_collaboration_training">find the repository</a>.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

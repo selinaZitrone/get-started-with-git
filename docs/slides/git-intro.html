@@ -30,7 +30,7 @@ background-position: 90% 90%
 ### Freie Universität Berlin - Theoretical Ecology
 
 .footnote-left[
-  2021-10-28 (updated: 2021-12-07)
+  2021-10-28 (updated: 2021-12-06)
 ]
 
 ---
@@ -421,7 +421,6 @@ We have
 # Step 5: Connect local and remote repository
 
 - Tell the local repository where to push its changes to
-
   - `git remote add &lt;remote_name&gt; &lt;remote_address&gt;`
   
 --
@@ -450,7 +449,7 @@ Example:
 
   - `git push --set-upstream &lt;remote_name&gt; &lt;remote_branch_name&gt;`
   
-  - `git push --set-upstream origin main`
+  - `git push --set-upstream origin master`
 
 **Note on branch names:**
 
@@ -460,48 +459,6 @@ Example:
 
 `git branch -M main`
 
----
-# Get a repo copy to another machine `git clone`
-
-.center[![](img/distributed-git.png)]
-
-- Get a copy of your own repository on a different machine
-- Get the repository from somebody else
-
----
-# Get a repo copy to another machine `git clone`
-
-
-.pull-left[
-- Locally, working directory is created, git repository is copied and checked out
-
-]
-
-.pull-right[
-
-.center[![](img/git-clone-concept.png)]
-
-]
-
-- Clone a remote repository with &lt;br&gt;
-`git clone git@github.com:{your_username}/{your_project}`
-
-
----
-# Sync changes with the remote `git pull`
-
-.pull-left[
-
-- Local changes, publish to remote: `git push`
-
-- Remote changes, pull to local: `git pull`
-
-]
-
-.pull-right[
-
-![](img/git-pull-concept.png)
-]
 ---
 # Ignoring files in `.gitignore`
 
@@ -541,93 +498,7 @@ build/    # ignore all files in subdirectory build
 See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
 
 ---
-# Recap
-
-## Basic git workflow (Start local)
-
-- `git init`: initialize a repository
-
-- `git add`: add changes to staging area
-
-- `git commit` / `git commit -m`: Commit changes to repository
-
---
-
-- Create a remote repository
-
-- `git add remote &lt;remote_name&gt; &lt;remote_address&gt;`: Add the remote to the local repository
-
---
-
-(- `git branch -M main`: rename branch to main if it's called master by default (optional))
-
-- `git push -u origin main`: push local changes to remote
-  - `-u origin main` only when pushing for first time. Afterwards just `git push`
-
----
-# Recap
-
-## Basic git workflow (Start remote)
-
-- `git clone`: Clone remote repository
-
-- `git add`: add changes to staging area
-
-- `git commit` / `git commit -m`: Commit changes to repository
-
-- `git push`: publish changes on the remote
-
-- `git pull`: pull changes from the remote
-
----
-# Recap
-
-## Additional useful things
-
-- `git log`: look at commit history
-
-- `git diff`: look at differences between versions
-
-- use a `.gitignore` file to list files/folders that you don't want tracked
-
----
-# What if I don't want to use the command line?
-
-- There are many git GUI clients
-
-  - Most IDEs have a git GUI integrated (e.g. RStudio -&gt; tommorrow)
-  
-- GUI clients can be used in combination with the command line
-
-- My recommendation: First understand git concepts in command line, then move on to a GUI client if you want
-
----
-# Example: Github Desktop
-
-- For MacOS and Windows
-
-- Easily connected to your Github account, but also works for GitLab repos etc.
-
-- I personally don't use it, but it looks pretty good and simple to use
-
----
-# Example: Github Desktop
-
-![](img/github-desktop.png)
-
----
-class: inverse
-
-.center[.large[# Thanks for you attention :)]]
-
-## Questions?
-
-## Find exercise [here](../how_to_01_basic_git_workflow.html)
-
-## Tomorrow
-
-- Branching and merging, pull requests
-- Git with R and RStudio
+# Questions?
 
 
 
