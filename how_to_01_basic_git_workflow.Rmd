@@ -171,19 +171,15 @@ git remote add origin git@gitlab.com:selinaZitrone/git_test_project.git
 
 # Step 5: Push local changes to the remote
 
-Before pushing your local changes to the remote, you can change the default branches name from master to main by running
+You can push your changes to the remote by running
+
+(Note: If your default local branch is called main, then replace master with main in the command)
 
 ```sh
-git branch -M main
+git push --set-upstream origin master
 ```
 
-Now you can push your changes to the remote by running
-
-```sh
-git push -u origin main
-```
-
-Now you will get an error message and a warning, that the remote contains commits that you don't have locally. This makes sense, because we added a readme file when creating the remote repository.
+Now you will get an error message and a warning, that the remote contains commits that you don't have locally. This makes sense, because you added a readme file when creating the remote repository.
 In these situation, git prevents you from pushing and you first need to pull all changes from the remote (i.e. the `README` file that we initialized on Github/Gitlab) before pushing.
 
 Just run
