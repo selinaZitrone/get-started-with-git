@@ -226,6 +226,26 @@ class: inverse
 
 **Idea**
 
+- Don't merge changes into the master yourself
+- Push your local branch to github and do a pull request (i.e. request a merge)
+
+---
+# More on the topic
+
+Thanks to this blogpost from which all the examples and explanations are taken:
+
+[Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc): Blogpost that explains really well the concepts of git, also more advanced ones like `rebase` or `cherry-pick`.
+
+---
+class: inverse
+
+.center[.large[# Thanks for you attention :)]]
+
+## Questions?
+
+## Find exercise [here](../how_to_02_git-collab.html)
+
+
 
 
 

@@ -1,1 +1,108 @@
-No content yet
+---
+output: distill::distill_article
+title: "Collaboration (branching, merging and pull requests)"
+---
+
+Before you start, clone the practice repository for this exercise:
+
+```sh
+git clone git@github.com:selinaZitrone/git_collaboration_training.git
+```
+
+The repo contains only a README.md file.
+
+## Part 1: Understand branching and merging
+
+Open the terminal (Git bash on Windows) and navigate into the repository that you just cloned.
+
+Before you start working on the repository, create a new branch with your name and switch to it.
+
+The two step version of this is:
+
+```sh
+git branch <your_name>
+git checkout <your_name>
+```
+
+The one step version is
+
+```sh
+git checkout -b <your_name>
+```
+
+**Adding some content**
+
+Create a new file with the name `your_name.txt` and add some text in that file.
+Add and commit the file like you learned before.
+
+Now we want to practice some merging. But we don't want to touch the master for now.
+So create a second branch (make sure that you checked out your new branch and not master):
+
+```sh
+git checkout - b <feature_branch>
+```
+Now you should be in the feature branch. It should also contain the file with your name and the text in it.
+Open this file and add some text.
+Then stage (add) the file and commit it.
+
+To see the branching pattern that you just created, you can have a look at 
+
+```sh
+git log --graph --oneline
+```
+
+**Merge feature_branch**
+
+Now we want to merge the `feature_branch` back into your name branch.
+To do so, first, switch back to your name branch with 
+
+```sh
+git checkout <your_name>
+```
+
+Now do the merge with
+
+```sh
+git merge <feature_branch>
+```
+No have a look at the file with your name: The new lines that you just created on the `feature_branch` should now also be added in your name branch.
+
+## Part 2: Push to Github and pull request
+
+Now you want to share your local changes with your collaborators.
+
+The first step is to push your name branch to Github.
+
+Have a look at which branches exist on the remote with 
+
+```sh
+git branch -a
+```
+
+Your local name branch is not part of that list of remote branches yet.
+
+So if you push for the first time, you need to run
+
+```sh
+git push --set-upstream origin <your_name>
+```
+
+Since right now, many people are pushing to the remote, it could be that you have to pull the new changes first before you can push your own.
+
+If this is the case, just run
+
+```sh
+git pull
+```
+
+and then try to push again.
+
+**Do a pull request**
+
+After your local branch is successfully pushed to Github, you can request a merge into the master.
+
+Log in to Github and [find the repository](https://github.com/selinaZitrone/git_collaboration_training). 
+
+
+
+
