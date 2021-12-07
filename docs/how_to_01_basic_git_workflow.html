@@ -2489,15 +2489,14 @@ How Tos
 <p>Now switch back to your local terminal and add this address as a remote with the name origin. (Replace the address below with the address of your personal repository)</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@gitlab.com:selinaZitrone/git_test_project.git</span></code></pre></div>
 <h1 id="step-5-push-local-changes-to-the-remote">Step 5: Push local changes to the remote</h1>
-<p>Before pushing your local changes to the remote, you can change the default branches name from master to main by running</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span></code></pre></div>
-<p>Now you can push your changes to the remote by running</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div>
-<p>Now you will get an error message and a warning, that the remote contains commits that you don’t have locally. This makes sense, because we added a readme file when creating the remote repository. In these situation, git prevents you from pushing and you first need to pull all changes from the remote (i.e. the <code>README</code> file that we initialized on Github/Gitlab) before pushing.</p>
+<p>You can push your changes to the remote by running</p>
+<p>(Note: If your default local branch is called main, then replace master with main in the command)</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">--set-upstream</span> origin master</span></code></pre></div>
+<p>Now you will get an error message and a warning, that the remote contains commits that you don’t have locally. This makes sense, because you added a readme file when creating the remote repository. In these situation, git prevents you from pushing and you first need to pull all changes from the remote (i.e. the <code>README</code> file that we initialized on Github/Gitlab) before pushing.</p>
 <p>Just run</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code></pre></div>
 <p>Now you should be able to run</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div>
 <h1 id="other-things-to-try">Other things to try</h1>
 <h2 id="add-a-gitignore-file">Add a gitignore file</h2>
 <ul>
@@ -2527,7 +2526,7 @@ How Tos
 </ul>
 <h2 id="look-at-the-log">Look at the log</h2>
 <p>Use <code>git log</code> to look at the log of your current repository</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
