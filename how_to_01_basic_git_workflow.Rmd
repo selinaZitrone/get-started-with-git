@@ -10,18 +10,18 @@ The following describes a simple git workflow starting with a local repo.
 ## Step 0: Minimal git configuration
 
 Let git know who you are in order to sign your commits correctly. 
-Git configuration can be set locally (just for the current repo) or globally (default for all repos if no local config is specified).
-To see if you already have your git configured run
+Git configuration can be set locally (just for the current repo) or globally (global is default for all repos if no local config is specified).
+To see if you already have git configured run
 
 ```
 git config --global -l
 ```
 
-If you don't yet see a `user.name` or `user.email` field or you get a message, that the `.gitconfig` file does not exist, run the following to configure:
+If you don't yet see a `user.name` or `user.email` field or get a message, that the `.gitconfig` file does not exist, run the following to configure:
 
 ```
-git config --global user.name <your_user_name>
-git config --global user.email <your_user_email>
+git config --global user.name "<your_user_name>"
+git config --global user.email "<your_user_email>"
 ```
 
 Use the user name and email that you also use in your Gitlab/Github here.
@@ -29,7 +29,7 @@ Use the user name and email that you also use in your Gitlab/Github here.
 ## Start with an empty working directory
 
 In general, the working directory can be a project that already contains files or a completely empty folder like in this example. 
-Create an empty folder called `first_git_project` using your operating system's file explorer or the terminal if you are familiar with it.
+For this example, create an empty folder called `first_git_project` using your operating system's file explorer or the terminal if you are familiar with it.
 
 Open the terminal and navigate into the working directory that you just created.
 
@@ -103,9 +103,9 @@ To commit the file run
 git commit
 ```
 
-Wait for your default text editor to open, and add a commit message. Close the texteditor.
+Wait for your default text editor to open, and add a commit message. Close the text editor and the commit is done.
 
-Look how the status of the file has changed again with
+Look how the status of your repository has changed again with
 
 ```
 git status
@@ -117,20 +117,18 @@ To see how the commit that you just did looks like, run
 git log
 ```
 
-To see how the commit that you just did looks like.
-
 ## Step 4: Create a remote repository and add it as a remote
 
-Create a new remote repository on [Gitlab](https://gitlab.com/users/sign_in) or [Github](https://github.com/) (whichever you already use or prefer to use).
+Create a new remote repository on Gitlab or Github (whichever you already use or prefer to use).
 
 ### 4A) Github
 
-To do this on Github, go to the website, log in and click on the green `New` button on the left of the start page:
+Go to the [Github website](https://github.com/), log in and click on the green `New` button on the left of the start page:
 
 ![](img/how_to/github-new-button-small.png)
 
 Enter a repository name (e.g. `first_git_project`), select if it should be private or public and add a description if you like.
-Set the check mark for adding a `README.md` file.
+Set the check mark for adding a `README.md` file. This way, the remote already has some content that we can integrate into the local repository.
 
 Github will now bring you to the newly created repository.
 
@@ -151,7 +149,7 @@ git remote add origin git@github.com:selinaZitrone/git_test_project.git
 
 ### 4B) Gitlab
 
-Log in to Gitlab and on the start page, click on the little `+` symbol on top. Choose `New project/repository` and then `Create blank project`.
+Log in to [Gitlab](https://gitlab.com/users/sign_in) and click on the little `+` symbol on top of the start page. Choose `New project/repository` and then `Create blank project`.
 
 ![](img/how_to/gitlab-new-button-small.png)
 
@@ -159,6 +157,8 @@ Enter a repository name (e.g. `first_git_project`), select if it should be priva
 Set the check mark for adding a `README` file.
 
 Click on `Create project` and Gitlab will bring you to the repositories main page.
+
+**Add the repository on Github as a remote to your local repository**
 
 To get the address of the remote repository click on the blue button `Clone` on the right. Copy the address under `Clone with SSH`
 
@@ -183,10 +183,8 @@ Now you can push your changes to the remote by running
 git push -u origin main
 ```
 
-Now you might get a warning, that the remote contains commits that you don't have locally. 
-In this situation, git prevents you from pushing. 
-
-So first, you need to get all the changes from the remote (i.e. the `README` file that we initialized on Github/Gitlab).
+Now you will get an error message and a warning, that the remote contains commits that you don't have locally. This makes sense, because we added a readme file when creating the remote repository.
+In these situation, git prevents you from pushing and you first need to pull all changes from the remote (i.e. the `README` file that we initialized on Github/Gitlab) before pushing.
 
 Just run
 
@@ -199,24 +197,26 @@ Now you should be able to run
 ```
 git push
 ```
-
 # Other things to try
 
 ## Add a gitignore file
 
-- put a pdf file in your rep
+- put a pdf file in your repo
 - look at git status
 - Add a gitignore file
+  - *On Windows, you cannot create a file without a file name. So the Windows explorer will complain if you try to create a file with only the file ending .gitignore. One way around this is to use the terminal. In Git bash, just run* `touch .gitignore` *to create a gitignore file*
 - ignore pdf files
+  - Add a line with the pattern `*.pdf` to your gitignore file and save it
 - look at git status again
 
 ## Add another commit
 
-- Change something in Bob.txt
-- stage it
-- look at the diff with git diff --staged
-- commit it
-- compare this commit to the previous one
+- Change some text in Bob.txt
+- stage it with `git add`
+- look at the diff with `git diff --staged`
+- commit the changes
+- compare this commit to the previous one with
+  - `git commit HEAD^`
 - push to origin
 
 ## Look at the log
