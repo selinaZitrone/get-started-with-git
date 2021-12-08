@@ -96,6 +96,6 @@ This gives you some additional benefits like private wikis, ... You can always a
 
 In order to communicate between your local machine and your Github/Gitlab account,
 you need to set up authentication via SSH keys.
-Please follow the instructions <a href="./ssh_keys_how.html"> here</a> to do so.
+Please follow the instructions <a href="./how_to_00_ssh_keys.html"> here</a> to do so.
 
 
