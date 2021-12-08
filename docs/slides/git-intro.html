@@ -23,14 +23,14 @@ background-position: 90% 90%
 
 # Introduction to version control with Git
 
-## 
+## Introduction and simple workflow
 
 ### Instructor: [Selina Baldauf](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/People/wissenschaftliche_programmierer/baldauf/index.html) &lt;br&gt;
 
 ### Freie Universität Berlin - Theoretical Ecology
 
 .footnote-left[
-  2021-10-28 (updated: 2021-12-07)
+  2021-10-28 (updated: 2021-12-08)
 ]
 
 ---
@@ -180,7 +180,7 @@ Git is a huge topic because and git is very powerful. Most of the things are bes
 
 **Aim of this workshop:** 
 
-Get started with simple workflows.Learn the rest as you need it.
+Get started with simple workflows. Learn the rest as you need it.
 
 --
 
@@ -307,7 +307,8 @@ This initializes a (hidden) `.git` folder that contains your git repository.
 --
 
 .pull-right[
-![Add file Bob.txt to working directory](img/git-add-concept-1.png)
+  
+  ![Add file Bob.txt to working directory](img/git-add-concept-1.png)
 ]
 
 --
@@ -452,14 +453,6 @@ Example:
   
   - `git push --set-upstream origin main`
 
-**Note on branch names:**
-
-- Default branch names changed from master to main on Github and Gitlab
-- Depending on settings: local default branches might be called master instead of main
-- You can rename the default branch before pushing with 
-
-`git branch -M main`
-
 ---
 # Get a repo copy to another machine `git clone`
 
@@ -559,10 +552,8 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 
 --
 
-(- `git branch -M main`: rename branch to main if it's called master by default (optional))
-
-- `git push -u origin main`: push local changes to remote
-  - `-u origin main` only when pushing for first time. Afterwards just `git push`
+- `git push --set-upstream origin master`: push local changes to remote branch
+  - `-u origin master` only when pushing for first time. Afterwards just `git push`
 
 ---
 # Recap
@@ -595,7 +586,7 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 
 - There are many git GUI clients
 
-  - Most IDEs have a git GUI integrated (e.g. RStudio -&gt; tommorrow)
+  - Most IDEs have a git GUI integrated (e.g. RStudio -&gt; tomorrow)
   
 - GUI clients can be used in combination with the command line
 
@@ -616,6 +607,19 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 ![](img/github-desktop.png)
 
 ---
+# More on the topic
+
+Thanks to this blogpost from which all the examples and explanations are taken:
+
+[Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc): Blogpost that explains really well the concepts of git, also more advanced ones like `rebase` or `cherry-pick`.
+
+[How to write good commit messages](https://cbea.ms/git-commit/): Blogpost that explains why good commit messages are important and gives 7 rules for writing them.
+
+[Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf): Always handy if you don't remember the basic commands
+
+[Download Github Desktop](https://desktop.github.com/)
+
+---
 class: inverse
 
 .center[.large[# Thanks for you attention :)]]
@@ -623,16 +627,6 @@ class: inverse
 ## Questions?
 
 ## Find exercise [here](../how_to_01_basic_git_workflow.html)
-
-## Tomorrow
-
-- Branching and merging, pull requests
-- Git with R and RStudio
-
-
-
-
-
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
