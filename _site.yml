@@ -14,19 +14,17 @@ navbar:
         - text: "01 - Introduction to git"
           href: slides/git-intro.html
         - text: "02 - Collaboration with git"
-          #href: slides/git-collab.html
+          href: slides/git-collab.html
         - text: "03 - R, RStudio and git"
-          #href: slides/git-r.html
+          href: slides/git-r.html
     - text: "How Tos"
       menu:
       - text: "00 - Set up SSH authentication"
         href: how_to_00_ssh_keys.html
       - text: "01 - Simple git workflow"
         href: how_to_01_basic_git_workflow.html
-      - text: "02 - Collaboration with git"
-        #href: tasks/git-collab_how_to.html
-      - text: "03 - R, RStudio and git"
-        #href: tasks/git-r_how_to.html
+      - text: "02 - Collaboration with git, R and RStudio"
+        href: tasks/how_to_02_git-r-collab.html
     - text: "Resources"
       href: Resources.html
     - icon: fa fa-github
