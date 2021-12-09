@@ -44,7 +44,7 @@ I recommend you have a look at the book [Happy Git and GitHub for the useR](http
 
 ## Part I
 
-`{usethis}` package for easy workflow with R functions
+`{usethis}` package for easy git workflow with R functions
 
 ## Part II
 
@@ -63,13 +63,15 @@ library(usethis)
 
 --
 
-## Add `usethis` to `.Rprofile` (optional)
+&lt;br&gt;
 
-- Then it's loaded automatically if you open R
-- Only do this for packages that are not needed in your scripts 
+### Add `usethis` to `.Rprofile` (optional)
+
+- Load package automatically if you open R
+- Only for packages that are not needed in your scripts 
   - Otherwise reproducibility is compromised
 
-Follow [task]() to see how to do this
+Follow [task](../how_to_02_git-r-collab.Rmd) to see how to do this
 
 ---
 # Authentication SSH or HTTPS
@@ -81,19 +83,19 @@ Follow [task]() to see how to do this
 - HTTPS needs a Personal Access Token (PAT)
   - can be easily created with `usethis`
   
-Follow [task]() to see how to do this
+Follow [task](../how_to_02_git-r-collab.Rmd) to see how to do this
 
 ---
-# `usethis` git functions
+# `usethis` functions
 
-Use R function to setup your RStudio project with git and GitHub
+**Use R function to setup your RStudio project with git and GitHub**
 
 --
 
 
 ```r
 # Step 1: Create an empty RStudio project
-usethis::create_project(path = "where/the/project/should/be")
+usethis::create_project(path = "where/the/project/should/be/project_name")
 ```
 
 --
@@ -115,7 +117,7 @@ usethis::use_github(private = TRUE)
 ---
 # The Git GUI client in RStudio
 
-If you R project includes a git repository, you will see a Git Tab in one of your RStudio panes (by default in the top right):
+If you R project includes a git repository, you will see a Git tab in one of your RStudio panes (by default in the top right):
 
 .center[![](img/git-r/Rstudio-Git-pane.png)]
 
@@ -178,7 +180,7 @@ class: inverse
 
 ## Questions?
 
-## Find exercise [here](../how_to_02_git-collab.html)
+## Find exercise [here](../how_to_02_git-r-collab.Rmd)
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

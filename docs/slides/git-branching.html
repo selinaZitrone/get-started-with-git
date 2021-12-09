@@ -44,25 +44,22 @@ git config --global init.defaultBranch main
 
 --
 
-On GUI clients
+Some thoughts on GUI clients
 
 
-&gt; I sometimes encounter people who feel it’s “better” to use command line Git, but for very ill-defined reasons. These people may feel like they should work in the shell, even if it leads to Git-avoidance, frequent mistakes, or limiting themselves to a small set of ~3 Git commands. This is counterproductive.
+&gt; "I sometimes encounter people who feel it’s “better” to use command line Git, but for very ill-defined reasons. These people may feel like they should work in the shell, even if it leads to Git-avoidance, frequent mistakes, or limiting themselves to a small set of ~3 Git commands. This is counterproductive."
 
-[Happy git with R book](https://happygitwithr.com/git-client.html)
-
-
-
+from [Happy git with R book](https://happygitwithr.com/git-client.html) (follow link for some git client suggestions)
 
 --
 
 Thanks to this blogpost from which all the examples and explanations are taken:
 
-[Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc): Blogpost that explains really well the concepts of git, also more advanced ones like `rebase` or `cherry-pick`.
+[Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc): Blogpost that explains really well the concepts of git
 
 --
 
-[How to write good commit messages](https://cbea.ms/git-commit/): Blogpost that explains why good commit messages are important and gives 7 rules for writing them.
+[How to write good commit messages](https://cbea.ms/git-commit/): Blogpost that explains how to write good commit messages
 
 
 ---
@@ -71,12 +68,12 @@ Thanks to this blogpost from which all the examples and explanations are taken:
 
 .pull-left[
 
-Prerequisite for collaboration on one remote: Add collaborators to the project to have correct permissions
+**Prerequisite for collaboration on one remote**: Add collaborators to the project to have correct permissions
 
 ## Simple option
 
 - One remote and multiple local repos
-- Everyone works on same branch and use push and pull to sync
+- **Everyone works on same branch** and use push and pull to sync
 
 ]
 
@@ -94,7 +91,7 @@ Prerequisite for collaboration on one remote: Add collaborators to the project t
 ## Simple option
 
 - One remote and multiple local repos
-- Everyone works on same branch and use push and pull to sync
+- **Everyone works on same branch** and use push and pull to sync
 
 
 **This works good if e.g.**
@@ -119,7 +116,7 @@ Prerequisite for collaboration on one remote: Add collaborators to the project t
 ## Simple option
 
 - One remote and multiple local repos
-- Everyone works on same branch and use push and pull to sync
+- **Everyone works on same branch** and use push and pull to sync
 
 
 **Problems with this approach**
@@ -146,7 +143,7 @@ Prerequisite for collaboration on one remote: Add collaborators to the project t
 
 - One remote and multiple local repos
 - One main branch that only has code that is agreed upon and tested
-- Everyone works on separate branches and requests a merge if they are finished
+- **Everyone works on separate branches** and requests a merge if they are finished
 
 ]
 
@@ -192,7 +189,7 @@ First understand the concept of **branching** and **merging**
 &lt;br&gt;
 - All repositories start with a default branch (main/master)
 
-  - As long as you work on one branch and just make changes in working directory, stage and commit them, you don'T really care about branches
+  - As long as you work on one branch and just make changes in working directory, stage and commit them, you don't really care about branches
 
 
 
@@ -221,10 +218,6 @@ First understand the concept of **branching** and **merging**
 
 - Create a new branch in a local repository with `git branch &lt;branch_name&gt;`
 
---
-
-- **Idea:** Make changes in this new branch and then merge them back into the main/master branch
-
 
 ---
 # Creating a new branch `git branch`
@@ -241,8 +234,14 @@ First understand the concept of **branching** and **merging**
 git branch -a
 ```
 
+--
+
+- **Idea:** Make changes in this new branch and then merge them back into the main/master branch
+
 ---
 # Switching branches `git checkout`
+
+--
 
 &lt;br&gt;
 
@@ -265,6 +264,20 @@ git branch -a
 ```sh
 git checkout -b &lt;branch_name&gt;
 ```
+
+---
+# Working on another branch
+
+Working with git works the same in every branch:
+
+- Make changes
+
+- Stage changes with `git add`
+
+- Commit changes with `git commit`
+
+- Push them to remote with `git push`
+
 ---
 # Add local branches to remote `git push`
 
@@ -346,7 +359,7 @@ git merge &lt;branch_to_merge&gt;
 
 - One remote and multiple local repos
 - One main branch that only has code that is agreed upon and tested
-- Everyone works on separate branches and **requests a merge** if they are finished
+- **Everyone works on separate branches** and **requests a merge** if they are finished
 
 ]
 
@@ -363,12 +376,12 @@ git merge &lt;branch_to_merge&gt;
 
 - One remote and multiple local repos
 - One main branch that only has code that is agreed upon and tested
-- Everyone works on separate branches and **requests a merge** if they are finished
+- **Everyone works on separate branches** and **requests a merge** if they are finished
 
 **Idea**
 
 - Don't merge changes into the master yourself
-- Push your local branch to github and do a pull request (i.e. request a merge)
+- Push your local branch to github and **do a pull request** (i.e. request a merge)
 
 ]
 
@@ -397,7 +410,7 @@ class: inverse
 
 ## Questions?
 
-## Find exercise [here](../how_to_02_git-collab.html)
+## Find exercise at the end of next presentation
 
 
 ---
