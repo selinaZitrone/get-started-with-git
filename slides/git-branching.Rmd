@@ -35,11 +35,23 @@ library(fontawesome)
 ---
 # Before we start
 
-- Change default branch name for `git init`
+Change default branch name for `git init`
 
 ```sh
 git config --global init.defaultBranch main
 ```
+
+--
+
+On GUI clients
+
+
+> I sometimes encounter people who feel it’s “better” to use command line Git, but for very ill-defined reasons. These people may feel like they should work in the shell, even if it leads to Git-avoidance, frequent mistakes, or limiting themselves to a small set of ~3 Git commands. This is counterproductive.
+
+[Happy git with R book](https://happygitwithr.com/git-client.html)
+
+
+
 
 --
 
@@ -376,13 +388,6 @@ Before the merge happens, collaborators can
 - Request more changes
 
 If everyone is happy, your branch is merged into master.
-
----
-# More on the topic
-
-Thanks to this blogpost from which all the examples and explanations are taken:
-
-[Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc): Blogpost that explains really well the concepts of git, also more advanced ones like `rebase` or `cherry-pick`.
 
 ---
 class: inverse

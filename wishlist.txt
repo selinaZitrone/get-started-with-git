@@ -10,3 +10,6 @@ Slides 1:
 - git diff graph
 
 link to exercise
+
+slides 2:
+- link to task for r profile
