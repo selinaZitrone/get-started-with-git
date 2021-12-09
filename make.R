@@ -2,11 +2,11 @@
 
 slides_rmd <- list.files("./slides",pattern = "*.Rmd")
 slides_rmd <- slides_rmd[!(slides_rmd == "title_slide.Rmd")]
-how_to_rmd <- list.files("./tasks", pattern = "*.Rmd")
+#how_to_rmd <- list.files("./tasks", pattern = "*.Rmd")
 
 # Render all slides
 lapply(slides_rmd, function(x) {rmarkdown::render(here::here("slides",x))})
-lapply(how_to_rmd, function(x) {rmarkdown::render(here::here("tasks",x))})
+#lapply(how_to_rmd, function(x) {rmarkdown::render(here::here("tasks",x))})
 
 # Print slides to pdf
 

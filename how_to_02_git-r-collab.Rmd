@@ -1,9 +1,11 @@
 ---
-output: distill::distill_article
+output: 
+  distill::distill_article:
+    toc: true
 title: "How to collaborate using git with R and R Studio"
 ---
 
-```{r setup}
+```{r setup, echo=FALSE}
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
@@ -59,7 +61,7 @@ Now your PAT should be added to the credentials. You can check it with
 gh::gh_token()
 ```
 
-## Add usethis and the standard protocol to your Rprofile (optional)
+### Add usethis and the standard protocol to your Rprofile (optional)
 
 If you want to load the `usethis` package automatically when starting R, you can add it to your `.Rprofile`. This way, you have all the `usethis` functionality available without having to load the package first.
 
