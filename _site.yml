@@ -24,7 +24,7 @@ navbar:
       - text: "01 - Simple git workflow"
         href: how_to_01_basic_git_workflow.html
       - text: "02 - Collaboration with git, R and RStudio"
-        href: tasks/how_to_02_git-r-collab.html
+        href: how_to_02_git-r-collab.html
     - text: "Resources"
       href: Resources.html
     - icon: fa fa-github
