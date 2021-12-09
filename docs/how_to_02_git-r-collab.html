@@ -105,7 +105,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["output","title"]}},"value":[{"type":"character","attributes":{},"value":["distill::distill_article"]},{"type":"character","attributes":{},"value":["How to collaborate using git with R and R Studio"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["output","title"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc"]}},"value":[{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["How to collaborate using git with R and R Studio"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2393,7 +2393,7 @@ How Tos
 <div class="nav-dropdown-content">
 <a href="how_to_00_ssh_keys.html">00 - Set up SSH authentication</a>
 <a href="how_to_01_basic_git_workflow.html">01 - Simple git workflow</a>
-<a href="tasks/how_to_02_git-r-collab.html">02 - Collaboration with git, R and RStudio</a>
+<a href="how_to_02_git-r-collab.html">02 - Collaboration with git, R and RStudio</a>
 </div>
 </div>
 <a href="Resources.html">Resources</a>
@@ -2417,11 +2417,29 @@ How Tos
 
 
 <div class="d-article">
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>knitr</span><span class='fu'>::</span><span class='va'><a href='https://rdrr.io/pkg/knitr/man/opts_chunk.html'>opts_chunk</a></span><span class='op'>$</span><span class='fu'>set</span><span class='op'>(</span>eval <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
-</code></pre>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#preparation">Preparation</a>
+<ul>
+<li><a href="#install-usethis-package">Install usethis package</a></li>
+<li><a href="#ssh-vs.-https">SSH vs. HTTPS</a></li>
+</ul></li>
+<li><a href="#add-usethis-and-the-standard-protocol-to-your-rprofile-optional">Add usethis and the standard protocol to your Rprofile (optional)</a></li>
+<li><a href="#step-1-create-new-r-project">Step 1: Create new R project</a></li>
+<li><a href="#step-2-initialize-a-git-repository">Step 2: Initialize a git repository</a></li>
+<li><a href="#step-3-create-a-remote-repository-on-github">Step 3: Create a remote repository on Github</a></li>
+<li><a href="#step-4-make-changes">Step 4: Make changes</a></li>
+<li><a href="#step-5-commit-and-push-the-new-file">Step 5: Commit and push the new file</a></li>
+<li><a href="#step-6-create-a-new-branch">Step 6: Create a new branch</a></li>
+<li><a href="#step-7-change-files-and-push-new-branch-to-remote">Step 7: Change files and push new branch to remote</a></li>
+<li><a href="#step-8-create-a-pull-request">Step 8: Create a pull request</a></li>
+</ul>
+</nav>
 </div>
+<div class="layout-chunk" data-layout="l-body">
+
 </div>
 <h2 id="preparation">Preparation</h2>
 <h3 id="install-usethis-package">Install usethis package</h3>

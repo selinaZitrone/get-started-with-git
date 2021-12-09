@@ -1,5 +1,5 @@
 ---
-subtitle: "Using git with R and RStudio"
+subtitle: "Git with R and RStudio"
 author: "Selina Baldauf"
 institute: "Freie Universität Berlin - Theoretical Ecology"
 date: "2021-10-28"
@@ -21,7 +21,7 @@ params:
   bg_position: "90% 90%"
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, eval=TRUE}
 knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE,
                       message = FALSE,
@@ -29,9 +29,10 @@ knitr::opts_chunk$set(echo = TRUE,
 library(fontawesome)
 ```
 
-```{r child="title_slide.Rmd"}
+```{r child="title_slide.Rmd", eval=TRUE}
 
 ```
+
 
 ---
 # Before we start
