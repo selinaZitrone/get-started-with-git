@@ -70,7 +70,7 @@ library(usethis)
 - Only for packages that are not needed in your scripts 
   - Otherwise reproducibility is compromised
 
-Follow [task](../how_to_02_git-r-collab.Rmd) to see how to do this
+Follow [task](../how_to_02_git-r-collab.html) to see how to do this
 
 ---
 # Authentication SSH or HTTPS
@@ -82,7 +82,7 @@ Follow [task](../how_to_02_git-r-collab.Rmd) to see how to do this
 - HTTPS needs a Personal Access Token (PAT)
   - can be easily created with `usethis`
   
-Follow [task](../how_to_02_git-r-collab.Rmd) to see how to do this
+Follow [task](../how_to_02_git-r-collab.html) to see how to do this
 
 ---
 # `usethis` functions
@@ -176,5 +176,5 @@ class: inverse
 
 ## Questions?
 
-## Find exercise [here](../how_to_02_git-r-collab.Rmd)
+## Find exercise [here](../how_to_02_git-r-collab.html)
 

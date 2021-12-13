@@ -1,15 +1,2 @@
-Index:
-- link to section step 2
-
-General:
-- git vs. Git
-
-Slides 1:
-- css .bottom[]
-- credit unseen wizard blog post
-- git diff graph
-
-link to exercise
-
-slides 2:
-- link to task for r profile
+- git push --set-upstream graph -> REmove the remotes part of the local repo
+- go through first exercise again
