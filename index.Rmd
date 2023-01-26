@@ -78,7 +78,7 @@ brew install git
 Then check the version and verify the installation with 
 
 ```
-git --versions
+git --version
 ```
 
 ## 2. Sign up for Github/Gitlab
