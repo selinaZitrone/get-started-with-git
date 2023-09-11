@@ -1,28 +1,19 @@
-# build all Rmd files and the website
+# render the website
+quarto::quarto_render()
 
-slides_rmd <- list.files("./slides",pattern = "*.Rmd")
-slides_rmd <- slides_rmd[!(slides_rmd == "title_slide.Rmd")]
-#how_to_rmd <- list.files("./tasks", pattern = "*.Rmd")
+# render slides as pdf
+slides_html <- list.files(here::here("docs/slides"),
+                          pattern = "2023", full.names = TRUE
+)
 
-# Render all slides
-lapply(slides_rmd, function(x) {rmarkdown::render(here::here("slides",x))})
-#lapply(how_to_rmd, function(x) {rmarkdown::render(here::here("tasks",x))})
+lapply(slides_html, function(x) {
+  pagedown::chrome_print(x,
+                         format = "pdf"
+  )
+})
 
-# Print slides to pdf
-
-# Print slides to pdf -----------------------------------------------------
-# slides_html <- list.files("./slides",pattern = "*.html")
-# 
-# lapply(slides_html, function(x) {pagedown::chrome_print(here::here("slides",x),
-#                                                         format = "pdf")})
-
-
-
-
-rmarkdown::render_site(encoding = "UTF-8")
-
-# Commit ------------------------------------------------------------------
-
+# commit and push
 git2r::add(path = here::here("docs"))
 git2r::commit(message = "re-render site")
-git2r::push(credentials = git2r::cred_token())
+git2r::push(credentials = git2r::ssh_path())
+

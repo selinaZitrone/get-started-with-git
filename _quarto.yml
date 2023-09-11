@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - "slides/*.pdf"
+    - "slides/*.html"
+
+website:
+  title: "️Introduction to Version Control with Git"
+  description: "A crash course in 2 afternoons"
+
+  navbar:
+    pinned: true
+    right:
+      - text: Sessions
+        menu:
+          - text: 01 - Introduction to Git
+            href: sessions/01_intro_git.qmd
+          - text: 02 - Collaboration with Git
+            href: sessions/02_git_collaboration.qmd
+      - icon: github
+        href: https://github.com/selinaZitrone/get-started-with-git
+    left: 
+      - text: Preparation
+        href: course_preparation.qmd
+
+
+format:
+  html:
+    embed-resources: true
+    theme:
+      light: [flatly, style/theme.scss]
+      dark: [darkly, style/theme.scss]
+    css: style/style.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+
+
+
