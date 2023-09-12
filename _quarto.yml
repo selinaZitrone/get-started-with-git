@@ -1,16 +1,17 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd"
+    - "!*.Rmd"
   resources:
     - "slides/*.pdf"
     - "slides/*.html"
 
 website:
-  title: "️Introduction to Version Control with Git"
-  description: "A crash course in 2 afternoons"
+  title: "Git course"
 
   navbar:
-    pinned: true
     right:
       - text: Sessions
         menu:
@@ -18,6 +19,12 @@ website:
             href: sessions/01_intro_git.qmd
           - text: 02 - Collaboration with Git
             href: sessions/02_git_collaboration.qmd
+      - text: How-to-guides
+        menu: 
+          - text: Command line
+          - text: R Studio
+      - text: Resources
+        href: resources.qmd
       - icon: github
         href: https://github.com/selinaZitrone/get-started-with-git
     left: 

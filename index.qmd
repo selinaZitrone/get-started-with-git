@@ -1,89 +1,37 @@
 ---
-title: "Introduction to version control with git"
+title: "Introduction to Version Control with Git"
+subtitle: "A crash course by Selina Baldauf"
 ---
 
-# Workshop Material
+🚧🚧🚧🚧🚧🚧🚧 This website is still work in progress 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 
-You can find all the workshop material on this website.
-On top, you can navigate to the presentation slides and the how tos.
+-------
+📅 18.09.2023 - 19.09.2023 <br>
+🕓 2.30 - 4 p.m.  <br>
+📍 Webex <br> <br>
+Additonal consultation hour:
+📅 25.09.2023 🕓 2.30 -3.30 p.m.
+--------
 
-<!-- To download presentation slides in pdf format, you can use the following links: -->
+# Course description:
 
-<!-- - <a href="./slides/01_01_RStudio.pdf" download> 01 - Introduction RStudio</a> -->
+Learning to use Git is an essential skill if you use any programming language. It allows you to keep track of changes to your project over time, collaborate with others, and maintain a clear and organized project structure. This can save you time, improve research efficiency, and also makes it easy to publish your code via platforms such as Github. 
 
-# Workshop Prerequisites
+The main goal of this crash-course is to give you the basic skills you need to start using Git for your own research projects both individually and in collaboration with your colleagues. You will learn a complete Git workflow including remote repositories on Github both in theory and practice. 
 
-To follow everything we discuss in the workshop you need to prepare a few things:
+In 2 afternoon sessions, we will cover the following topics:
 
-## 1. Install git on your machine
+1. Basic Git concepts and workflow (initializing a repository, commiting changes, pushing to a remote)
+2. Collaboration workflow with Git and Github (branching, merging, pull requests)
 
-If you have git already installed, you can skip this step and go to prerequisite 2.
+You will learn both the theory and the practice with hands-on exercises.
 
-**Windows**
+One week after the workshop, we meet again for a consultation hour to discuss potential questions that came up during your individual work with Git.
 
-You can download git from [here](https://git-scm.com/download/win)
+## For whom is this course?
 
-Download and install the correct version for your machine (probably 64 bit). Use recommended or default settings during the installation. Most options can also be changed
-later if you want to.
+The target audience of this workshop are beginners without prior experience with Git and Github. However, it might also be interesting if you already use Git for your personal projects but want to learn more about the underlying concepts and collaboration using Git and Github. 
 
-With the git installation for Windows, you also get a program called `Git bash`. 
-Git bash is a terminal application for Windows that provides a Git command line experience.
+# Who is the instructor?
 
-Open the Git bash application (you can find it searching in the Windows search bar) 
-and run the command `git --version`. If the git installation was successful, you should see the version of git that you are using printed to the console.
-
-**Linux (Ubuntu)**
-
-You can install git from the terminal. Run
-
-```
-sudo apt-get update
-sudo apt-get install git
-```
-
-Check the version of git that you have installed with
-
-```
-git --version
-```
-
-**MacOS**
-
-Some versions of MacOS come with git pre-installed. To check if you already have git, open the terminal and run
-
-```
-git --version
-```
-
-If the terminal tells you which version of git is installed, you can skip the next steps.
-
-If you need to install git, you can do this with homebrew. Just run
-
-```
-brew install git
-```
-
-Then check the version and verify the installation with 
-
-```
-git --version
-```
-
-## 2. Sign up for Github/Gitlab
-
-I will use Github as a remote repository service in the workshop. However, you can also follow 
-if you have Gitlab or any other remote repo service.
-
-If you don't use any of these services yet, I suggest to [make a Github account](https://github.com/join) to follow this workshop. However, if your university provides
-a self-hosted Gitlab, you might also prefer to use that instead.
-
-Tip: If you sign up for Github with an institutional email address, you will get a free upgrade to Github Pro.
-This gives you some additional benefits like private wikis, ... You can always add a second email address later or change it if you leave your institution.
-
-## 3. Set up SSH Authentication
-
-In order to communicate between your local machine and your Github/Gitlab account,
-you need to set up authentication via SSH keys.
-Please follow the instructions <a href="./how_to_00_ssh_keys.html"> here</a> to do so.
-
-
+I am a scientific programmer in the theoretical ecology group at Freie Universität. I love sharing knowledge about tools and workflows that make research more reproducible, robust and fun. If you have any questions regarding the course, please don't hesitate to contact me via [email](mailto:selina.baldauf@fu-berlin.de.)

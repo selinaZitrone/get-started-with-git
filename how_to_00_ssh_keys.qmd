@@ -1,6 +1,5 @@
 ---
 title: Set up SSH key authentication
-output: distill::distill_article
 ---
 
 In order to use transfer information between Github or Gitlab and your local machine, you need to authenticate yourself to the remote server.
