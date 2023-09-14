@@ -1,5 +1,5 @@
 ---
-title: "A simple Git workflow with the terminal"
+title: "A Git workflow with the terminal"
 ---
 
 The following describes a simple git workflow starting with a local repository.

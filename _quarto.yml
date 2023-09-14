@@ -21,8 +21,16 @@ website:
             href: sessions/02_git_collaboration.qmd
       - text: How-to-guides
         menu: 
-          - text: Command line
-          - text: R Studio
+          - text: Git workflow with the command line
+            href: how-tos/git_workflow_terminal.qmd
+          - text: Git workflow with RStudio and usethis
+            href: how-tos/git_workflow_usethis.qmd
+          - text: Git workflow with Github Desktop
+            href: how-tos/git_workflow_gh_desktop.qmd
+          - text: Pull requests on Github
+            href: how-tos/create_pull_request.qmd
+          - text: Utility - Set up SSH keys
+            href: how-tos/ssh_keys.qmd
       - text: Resources
         href: resources.qmd
       - icon: github
