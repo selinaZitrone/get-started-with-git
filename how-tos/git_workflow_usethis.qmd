@@ -1,12 +1,13 @@
 ---
-title: "How to collaborate using git with R and R Studio"
+title: "A Git workflow with the R and `usethis`"
 execute: 
   eval: false
 ---
 
 # Preparation
 
-## Install usethis package
+For this workflow, you need the [`usethis`](https://usethis.r-lib.org/) package. It is a very cool workflow package that has a lot of functionality including Git workflows.
+Install it in R with:
 
 ```{r}
 install.packages("usethis")
@@ -17,7 +18,7 @@ install.packages("usethis")
 You can chose if you want to use SSH or HTTPS as a default protocol to communicate with the remote server.
 If you correctly set up SSH key authentication, you can just use SSH protocol and skip the next step.
 If you have not set up SSH key authentication yet or if you prefer to use HTTPS 
-you need to setup a Personal Access Token (PAT).
+you need to setup a Personal Access Token (PAT). Follow the steps below.
 
 ## Setup PAT to use HTTPS protocol with Github
 
@@ -61,7 +62,7 @@ Now register the token with git using the function:
 gitcreds::gitcreds_set()
 ```
 
-You are now prompted to paste your token into the Console.
+You are now prompted to paste your token into the R console.
 
 Now your PAT should be added to the credentials. You can check it with
 
@@ -69,7 +70,7 @@ Now your PAT should be added to the credentials. You can check it with
 gh::gh_token()
 ```
 
-## Add usethis and the standard protocol to your Rprofile (optional)
+## Optional: Add `usethis` and standard protocol to your `.Rprofile`
 
 If you want to load the `usethis` package automatically when starting R, 
 you can add it to your `.Rprofile`. This way, you have all the `usethis` functionality
@@ -201,7 +202,7 @@ Save the file in your project.
 
 In the Git Pane of RStudio, click on the "Commit" button (both buttons bring you to a similar window.):
 
-![](rstudio_commit_button.png)
+![](img/rstudio_commit_button.png)
 
 Stage your file (i.e. `git add`) by checking the check box next to it.
 On the bottom you can see the code that you added (therefore green).

@@ -4,7 +4,7 @@ title: "A Git workflow with the terminal"
 
 The following describes a simple git workflow starting with a local repository.
 
-## Prerequisites
+# Prerequisites
 
 To follow this workflow you need:
 
@@ -24,7 +24,7 @@ git --version
 
 If everything is set up correctly it will show you the current installation of Git.
 
-# Configure Git
+## Configure Git
 
 Git needs to know who you are in order to sign your commits correctly. 
 If you already set up Github Desktop, you might already have the minimal Git
@@ -50,7 +50,9 @@ git config --global user.email "<your_user_email>"
 
 Use the user name and email that you also use in your Gitlab/Github here.
 
-# Start with an empty working directory
+# A Git workflow in the terminal
+
+## Step 1: Create a new project
 
 A new Git project can be started in an empty folder or in a folder that already 
 contains files.
@@ -74,7 +76,7 @@ on top or your terminal. It should show the directory that you just created. Som
 
 ![](img/navigate-path.png)
 
-# Initialize empty Git repository with `git init`
+## Step 2: Initialize a Git repository
 
 To initialize a Git repo in the working directory run 
 
@@ -89,7 +91,7 @@ The default branch that is created by Git is called `master` or `main`.
 
 ![](img/git-master.png)
 
-##  Check the status of your repository with `git status`
+###  Check the status of your repository with `git status`
 
 Check the current status of your Git repository by running
 
@@ -101,7 +103,7 @@ Right now, there should be nothing to commit.
 In general, you can always use `git status` to check if there are any new changes 
 to your project.
 
-# Add a file to the project
+## Step 3: Make some changes
 
 Create a file `Bob.txt` in your working directory and add the following text to it:
 
@@ -119,7 +121,7 @@ git status
 
 `Bob.txt` is now an untracked file that we can add to the staging area
 
-## Stage a file with `git add`
+### Stage a file with `git add`
 
 With the `git add` command, you can stage a file. This means that it is marked
 to be in the next commit. In this example, you can stage the single file `Bob.txt`
@@ -147,7 +149,7 @@ git add *
 
 :::
 
-## Commit the file to the repository with `git commit`
+## Step 4: Commit the file to the repository with `git commit`
 
 To commit the file run
 
@@ -179,7 +181,7 @@ Look how the status of your repository has changed again with
 git status
 ```
 
-## Look at the history with `git log`
+### Look at the history with `git log`
 
 To see how the commit that you just did looks like, run
 
@@ -193,7 +195,7 @@ If you want a shorter summary, you can also use
 git log --oneline
 ```
 
-# Create a remote repository and add it as a remote
+## Step 5: Create a remote repository
 
 Now, we connect our local repository with a remote repository on Github or Gitlab
 (whichever you already use or prefer to use).
@@ -202,9 +204,7 @@ If you already know Github Desktop with Github, this might seem a bit complicate
 but Github Desktop is just build in a way that it nicely integrates with Github.
 For the command line we need some extra steps.
 
-## A) Github remote repo
-
-### Create a Github repository
+### Option 1: Github
 
 Go to the [Github website](https://github.com/), log in and click on the green
 `New` button on the left of the start page:
@@ -218,7 +218,7 @@ local repository.
 
 Github will now bring you to the newly created repository.
 
-### Add the repository on Github as a remote to your local repository
+#### Add the repository on Github as a remote to your local repository
 
 We now want to connect the local `first_git_project` with the remote `first_git_project`
 on Github.
@@ -235,7 +235,7 @@ Now switch back to your terminal and add this address as a remote with the name 
 git remote add origin git@github.com:selinaZitrone/git_test_project.git
 ```
 
-## B) Gitlab
+### Option 2: Gitlab
 
 Log in to [Gitlab](https://gitlab.com/users/sign_in) and click on the little `+`
 symbol on top of the start page. Choose `New project/repository` and 
@@ -249,7 +249,7 @@ Set the check mark for adding a `README` file.
 
 Click on `Create project` and Gitlab will bring you to the repositories main page.
 
-### Add the repository on Github as a remote to your local repository
+#### Add the repository on Github as a remote to your local repository
 
 To get the address of the remote repository click on the blue button `Clone` 
 on the right. Copy the address under `Clone with SSH`
@@ -261,7 +261,7 @@ Now switch back to your local terminal and add this address as a remote with the
 git remote add origin git@gitlab.com:selinaZitrone/git_test_project.git
 ```
 
-# Push local changes to the remote with `git push`
+## Step 6: Push local changes to the remote with `git push`
 
 You can push your changes to the remote by running
 
@@ -297,7 +297,7 @@ git push
 
 # Collaboration using branching
 
-## Create a new branch
+## Step 7: Create a new branch with `git branch`
 
 In this step, you will create a new branch for a new feature that you want to introduce.
 This branch will later be use to do a pull request on Github.
@@ -317,7 +317,7 @@ git checkout my_feature
 
 Now you can start working on your branch and do commits there.
 
-## Push your branch to the remote
+## Step 8: Push your branch to the remote with `git push`
 
 To make your branch visible to others, you need to push it to the remote repository as well. This works just like with the main branch using `git push`.
 
@@ -329,9 +329,11 @@ git push --set-upstream origin my_feature
 
 Now your branch should be pushed to Github/Gitlab and you can do a pull request.
 
-## Create a pull request
+## Step 9: Create a pull request
 
 See [here](create_pull_request.qmd) for a guide on pull requests.
+
+---
 
 # Other things to try in the terminal
 
