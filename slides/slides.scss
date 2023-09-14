@@ -8,34 +8,56 @@
 $font-family-sans-serif: 'Jost', sans-serif !default;
 //$font-family-sans-serif:'Source Sans Pro', sans-serif !default;
 
+// Define the colors
+$white:    #fff !default;
+$white2:   #f8f8f8 !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #ecf0f1 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #b4bcc2 !default;
+$gray-600: #95a5a6 !default;
+$gray-700: #7b8a8b !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+
+$col1: #160F29 !default;
+$col2: #246A73 !default;
+$col3: #368F8B !default;
+$col4: #F3DFC1 !default;
+$col5: #DDBEA8 !default;
+
+
 // headings
 //$presentation-heading-font: 'Yanone Kaffeesatz',  Tahoma, sans-serif  !default;
 $presentation-heading-font: 'Abhaya Libre', serif  !default;
-$presentation-heading-color: #562457 !default;
+$presentation-heading-color: $col2 !default;
 $h1-font-size: 1.6em !default;
 $h2-font-size: 1.3em !default;
 $h3-font-size: 1.15em !default;
 
 //code
-$code-color: #88398A !default;
-  $font-family-monospace: 'Inconsolata', monospace  !default;
+$code-color: $col2 !default;
+$font-family-monospace: 'Inconsolata', monospace  !default;
 
 // general  
-$body-bg: #fff;
-  $body-color: #000000;
-  $link-color: #88398a;
-  $presentation-font-size-root: 35px;
+$body-bg: $white2;
+$body-color: $col1;
+$link-color: $col3;
+$presentation-font-size-root: 35px;
 
 /*-- scss:rules --*/
   .reveal pre code {
-    background-color: #f8f8f8;
+    background-color: $white2;
       font-size: 1em;
     padding: 0.5em;
     line-height: 1.2em;
   }
 
 .subtitle {
-  color: #88398A;
+  color: $col3;
   font-size: $h2-font-size;
   font-family: $presentation-heading-font;
 }
@@ -59,7 +81,7 @@ $body-bg: #fff;
 }
 
 .reveal .footer {
-  color: #9d709e;
+  color: $col2;
 }
 
 
@@ -68,7 +90,7 @@ $body-bg: #fff;
 }
 
 section.has-dark-background a, section.has-dark-background a:hover {
-  color: #fee4ff;
+  color: $col4;
 }
 
 
@@ -91,7 +113,7 @@ section.has-dark-background a, section.has-dark-background a:hover {
 }
 
 .inverse {
-  background-color: '#562457';
+  background-color: $col4;
 }
 
 .reveal {
