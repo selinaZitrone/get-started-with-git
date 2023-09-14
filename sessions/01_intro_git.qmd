@@ -11,10 +11,10 @@ The lecture is for Git beginners but also for people who use basic Git for their
 
 
 ```{=html}
-<iframe class="slide-deck" width="780" height="500" src="../slides/2023_06_15_git.html"></iframe>
+<iframe class="slide-deck" width="780" height="500" src="../slides/01_intro_git.html"></iframe>
 ```
 
-[Slides in full screen](../slides/2023_06_15_git.html){target="_blank"} &nbsp;&nbsp;&nbsp; <a href="../slides/2023_06_15_git.pdf" download>Download PDF slides</a>
+[Slides in full screen](../slides/01_intro_git.html){target="_blank"} &nbsp;&nbsp;&nbsp; <a href="../slides/01_intro_git.pdf" download>Download PDF slides</a>
 
 ## Summary
 
