@@ -1,0 +1,59 @@
+
+# Synchronize, share and collaborate
+
+## Get a repo from a remote
+
+![](images/2023_06_15_git/distributed_git.png){fig-align="center" width=40%}
+
+- In Git language, this is called **cloning**
+- Get a copy of your own repository on a different machine
+- Get the repository from somebody else
+
+## Get a repo from a remote
+
+By cloning, you get a full copy of the repository and the working directory with all files on your machine.
+
+- Clone a remote repository with `git clone <remote_address>`
+
+. . .
+
+![](images/2023_06_15_git/git-clone-concept.png){width=50%}
+
+- If the clone is authorized it can also commit and push
+
+## Get changes from the remote
+
+- Local changes, publish to remote: `git push`
+
+- Remote changes, pull to local: `git pull`
+
+. . .
+
+![](images/2023_06_15_git/git-pull-concept.png){width=60%}
+
+## A simple collaboration workflow
+<br><br>
+![](images/2023_06_15_git/git-collab-one-branch.png)
+
+- By default: Everything on one branch (main)
+  - Branches are connections between specific commits
+- Basic idea: **Pull** newest version before you start working, **push** new version
+after you are done
+
+## A more complex collaboration workflow
+
+- You can also have multiple branches of the same project
+
+. . .
+
+![](images/2023_06_15_git/git-branch.png)
+
+## A more complex collaboration workflow
+
+:::{.nonincremental}
+- Branches can be merged using `git merge`
+:::
+
+. . .
+
+![](images/2023_06_15_git/git-merge.png)
