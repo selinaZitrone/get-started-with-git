@@ -29,14 +29,14 @@ and run the command `git --version`. If the Git installation was successful, you
 
 You can install Git from the terminal. Run
 
-```
+```sh
 sudo apt-get update
 sudo apt-get install git
 ```
 
 Check the version of Git that you have installed with
 
-```
+```sh
 git --version
 ```
 
@@ -44,7 +44,7 @@ git --version
 
 Some versions of MacOS come with Git pre-installed. To check if you already have Git, open the terminal and run
 
-```
+```sh
 git --version
 ```
 
@@ -53,13 +53,13 @@ and check if you can update your current Git installation.
 
 If you need to install Git, you can do this with homebrew. Just run
 
-```
+```sh
 brew install git
 ```
 
 Then check the version and verify the installation with 
 
-```
+```sh
 git --version
 ```
 
