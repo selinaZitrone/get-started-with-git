@@ -1,0 +1,426 @@
+---
+title: "A simple Git workflow with the terminal"
+---
+
+The following describes a simple git workflow starting with a local repository.
+
+## Prerequisites
+
+To follow this workflow you need:
+
+- Git installed (see [course preparations](../course_preparation.qmd))
+- A Github or Gitlab account
+- An SSH key to authenticate to Github/Gitlab (see [here](ssh_keys.qmd))
+
+All commands that are used in the following, have to be typed in the terminal.
+If you are on Windows, I recommend to use the Git Bash terminal that comes with
+the Git installation. On MacOS/Linux, you can just use the standard terminal.
+
+To check if you are ready to go, open the terminal and run
+
+```sh
+git --version
+```
+
+If everything is set up correctly it will show you the current installation of Git.
+
+# Configure Git
+
+Git needs to know who you are in order to sign your commits correctly. 
+If you already set up Github Desktop, you might already have the minimal Git
+configuration ready.
+
+The Git configuration can be set locally (just for the current repo) or globally 
+(default for all repos without local configuration). Here, we just set a global
+configuration for all repositories.
+
+To check if you already have a configuration run
+
+```sh
+git config --global -l
+```
+
+If you don't yet see a `user.name` or `user.email` field or get a message, 
+that the `.gitconfig` file does not exist, run the following to configure:
+
+```sh
+git config --global user.name "<your_user_name>"
+git config --global user.email "<your_user_email>"
+```
+
+Use the user name and email that you also use in your Gitlab/Github here.
+
+# Start with an empty working directory
+
+A new Git project can be started in an empty folder or in a folder that already 
+contains files.
+For this example, create an new folder called `first_git_project` using your
+operating system's file explorer or the terminal if you are familiar with it.
+
+Open the terminal and navigate into the working directory that you just created.
+
+You can use `cd /path/to/navigate/to` to navigate into a specific path. 
+If you want to go back one level, use `cd ..`.
+
+::: {.callout-tip}
+On Windows, you can also right click on the folder that contains your project
+and then click on `Git Bash Here`
+
+![](img/git-bash-here.png)
+:::
+
+To see if you are really in the correct directory, have a look at the path that is written 
+on top or your terminal. It should show the directory that you just created. Something like this:
+
+![](img/navigate-path.png)
+
+# Initialize empty Git repository with `git init`
+
+To initialize a Git repo in the working directory run 
+
+```sh
+git init
+```
+
+This creates a hidden `.git` folder in your working directory. 
+
+In the terminal, you can now see the branch that you are currently on.
+The default branch that is created by Git is called `master` or `main`.
+
+![](img/git-master.png)
+
+##  Check the status of your repository with `git status`
+
+Check the current status of your Git repository by running
+
+```sh
+git status
+```
+
+Right now, there should be nothing to commit.
+In general, you can always use `git status` to check if there are any new changes 
+to your project.
+
+# Add a file to the project
+
+Create a file `Bob.txt` in your working directory and add the following text to it:
+
+```
+Hello, this is Bob. How are you?
+```
+
+Save and close the file.
+
+Now have a look at the repository again with
+
+```sh
+git status
+```
+
+`Bob.txt` is now an untracked file that we can add to the staging area
+
+## Stage a file with `git add`
+
+With the `git add` command, you can stage a file. This means that it is marked
+to be in the next commit. In this example, you can stage the single file `Bob.txt`
+with
+
+```sh
+git add Bob.txt
+```
+
+Now you can check the repository status again:
+
+```sh
+git status
+```
+
+The file Bob.txt is now ready to be committed.
+
+::: {.callout-tip}
+
+If you have multiple files, you want to stage, you can do this in one step with
+
+```sh
+git add *
+```
+
+:::
+
+## Commit the file to the repository with `git commit`
+
+To commit the file run
+
+```sh
+git commit
+```
+
+Wait for your default text editor to open, and add a commit message. In the text
+editor, your commit message should take the following form:
+
+```md
+Summary of the changes
+
+A more detailed description of what was changed and why.
+Can also contain
+
+- Bullet
+- Points
+
+You can also continue writing for as long as you want in this
+description section of the commit message.
+```
+
+Close the text editor and the commit is done.
+
+Look how the status of your repository has changed again with
+
+```sh
+git status
+```
+
+## Look at the history with `git log`
+
+To see how the commit that you just did looks like, run
+
+```sh
+git log
+```
+
+If you want a shorter summary, you can also use
+
+```
+git log --oneline
+```
+
+# Create a remote repository and add it as a remote
+
+Now, we connect our local repository with a remote repository on Github or Gitlab
+(whichever you already use or prefer to use).
+
+If you already know Github Desktop with Github, this might seem a bit complicated,
+but Github Desktop is just build in a way that it nicely integrates with Github.
+For the command line we need some extra steps.
+
+## A) Github remote repo
+
+### Create a Github repository
+
+Go to the [Github website](https://github.com/), log in and click on the green
+`New` button on the left of the start page:
+
+![](img/github-new-button-small.png)
+
+Enter a repository name (e.g. `first_git_project`), select if it should be private or public and add a description if you like.
+Set the check mark for adding a `README.md` file. 
+This way, the remote already has some content that we can integrate into the 
+local repository.
+
+Github will now bring you to the newly created repository.
+
+### Add the repository on Github as a remote to your local repository
+
+We now want to connect the local `first_git_project` with the remote `first_git_project`
+on Github.
+First, copy the remote's address.
+
+You can find and copy the address by clicking on the green `Code` button on the right. 
+Choose the SSH address in the middle.
+
+![](img/github-find-address.png)
+Now switch back to your terminal and add this address as a remote with the name origin.
+(Replace the address below with the address of your personal repository)
+
+```sh
+git remote add origin git@github.com:selinaZitrone/git_test_project.git
+```
+
+## B) Gitlab
+
+Log in to [Gitlab](https://gitlab.com/users/sign_in) and click on the little `+`
+symbol on top of the start page. Choose `New project/repository` and 
+then `Create blank project`.
+
+![](img/gitlab-new-button-small.png)
+
+Enter a repository name (e.g. `first_git_project`), select if it should be private
+or public and add a description if you like.
+Set the check mark for adding a `README` file.
+
+Click on `Create project` and Gitlab will bring you to the repositories main page.
+
+### Add the repository on Github as a remote to your local repository
+
+To get the address of the remote repository click on the blue button `Clone` 
+on the right. Copy the address under `Clone with SSH`
+
+Now switch back to your local terminal and add this address as a remote with the name origin.
+(Replace the address below with the address of your personal repository)
+
+```sh
+git remote add origin git@gitlab.com:selinaZitrone/git_test_project.git
+```
+
+# Push local changes to the remote with `git push`
+
+You can push your changes to the remote by running
+
+::: {.callout-note}
+
+If your default local branch is called main, then replace 
+`master` with `main` in the command
+
+:::
+
+```sh
+git push --set-upstream origin master
+```
+
+Now you will get an error message and a warning, that the remote contains commits
+that you don't have locally. This makes sense, because you added a readme file
+when creating the remote repository.
+In these situation, git prevents you from pushing and you first need to pull all
+changes from the remote (i.e. the `README` file that we initialized on Github/Gitlab)
+before pushing.
+
+Just run
+
+```sh
+git pull
+```
+
+Now you should be able to run
+
+```sh
+git push
+```
+
+# Collaboration using branching
+
+## Create a new branch
+
+In this step, you will create a new branch for a new feature that you want to introduce.
+This branch will later be use to do a pull request on Github.
+
+
+You can create a new branch with the name "my_feature" just run
+
+```sh
+git branch my_feature
+```
+
+After the branch is created, you need to switch to it with
+
+```sh
+git checkout my_feature
+```
+
+Now you can start working on your branch and do commits there.
+
+## Push your branch to the remote
+
+To make your branch visible to others, you need to push it to the remote repository as well. This works just like with the main branch using `git push`.
+
+But the first time you push a new branch, you need to specify the upstream by running:
+
+```sh
+git push --set-upstream origin my_feature
+```
+
+Now your branch should be pushed to Github/Gitlab and you can do a pull request.
+
+## Create a pull request
+
+See [here](create_pull_request.qmd) for a guide on pull requests.
+
+# Other things to try in the terminal
+
+## Add a gitignore file
+
+- Put a pdf file in your repo
+
+- Look at `git status`: It should now show that you can commit the pdf file. But
+for this example, we want to ignore it.
+
+- Add a gitignore file to your project
+
+::: {.callout-tip}
+On Windows, you cannot create a file without a file name. So the Windows explorer 
+will complain if you try to create a file with only the file ending .gitignore. 
+One way around this is to use the terminal. In Git bash, just run
+
+```sh
+touch .gitignore
+```
+
+to create a gitignore file
+:::
+
+- Ignore pdf files
+  - Add a line with the pattern `*.pdf` to your gitignore file and save it
+- Now look at `git status` again. If everything worked, you should not see the 
+changes in the pdf anymore, because it was ignored.
+
+## Compare commits
+
+- Change some text in Bob.txt
+- stage it with `git add`
+- look at the diff with `git diff --staged`
+- commit the changes
+- compare this commit to the previous one with
+  - `git commit HEAD^`
+- push to origin
+
+## Look at the history
+
+Use 
+
+```sh
+git log
+```
+
+to look at the log of your current repository.
+
+If you want a shorter version of your Git history, use 
+
+```sh
+git log --oneline
+```
+
+## Create a new branch
+
+You can create a new branch with
+
+```sh
+git branch <name_of_branch>
+```
+(replace `<name_of_branch>` with your chosen branch name)
+
+After the branch is created, you need to switch to it with
+
+```sh
+git checkout <name_of_branch>
+```
+
+Now you can start working on your branch and do commits there.
+
+### Merge your new branch with the `master`/`main`
+
+If you want to integrate the changes you did in your separate branch into the master,
+you first need to switch back to the master branch:
+
+```sh
+git checkout master
+```
+
+Now merge the commits from your branch with
+
+```sh
+git merge <name_of_branch>
+```
+
+Check if it actually worked with
+
+```sh
+git log
+```
