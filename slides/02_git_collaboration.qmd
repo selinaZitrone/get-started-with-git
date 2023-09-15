@@ -1,23 +1,89 @@
+---
+title: "Introduction to version control with Git"
+subtitle: "Day 1: Branching, Merging and collaboration workflows"
+author: "Selina Baldauf"
+date: "Updated `r Sys.Date()`"
+date-format: long
+format: 
+  revealjs:
+    footer: "Branching, Merging and Collaboration with Git"
+    highlight-style: printing
+    mainfont: Cabinet Grotesk
+    slide-number: true
+    show-slide-number: all
+    incremental: true
+    self-contained: true
+    code-line-numbers: false
+    theme: slides.scss
+    auto-stretch: false
+    scrollable: true
+editor: source
+execute: 
+  echo: false
+  eval: true
+from: markdown+emoji
+---
 
-# Synchronize, share and collaborate
+## Recap
+
+:::{.columns}
+
+:::{.column width="50%"}
+
+The basic Git workflow consists of the following steps:
+
+1. Initializing a Git repository
+2. Working on the project
+3. Staging and commiting files to the local repository
+4. Publishing the repository on a remote server
+5. Pushing future changes to the remote repository
+
+:::
+
+:::{.column width="50%"}
+
+![](img/day2/local_to_remote.png)
+
+:::
+
+:::
+
+## Version control with Git
+
+Git is a **distributed version control system**
+
+:::{.columns}
+
+:::{.column width="50%"}
+
+![](img/day1/distributed.png)
+
+:::
+
+:::{.column width="50%"}
+
+- Idea: many *local* repositories synced via one *remote* repo
+- We still need to learn the other way around: From remote to local
+  - This is essential for collaboration
+:::
+
+:::
 
 ## Get a repo from a remote
 
-![](images/2023_06_15_git/distributed_git.png){fig-align="center" width=40%}
 
-- In Git language, this is called **cloning**
 - Get a copy of your own repository on a different machine
 - Get the repository from somebody else
 
 ## Get a repo from a remote
 
-By cloning, you get a full copy of the repository and the working directory with all files on your machine.
+- In Git language, this is called **cloning**
 
-- Clone a remote repository with `git clone <remote_address>`
+By cloning, you get a full copy of the repository and the working directory with all files on your machine.
 
 . . .
 
-![](images/2023_06_15_git/git-clone-concept.png){width=50%}
+![](img/day2/git_clone_concept.png)
 
 - If the clone is authorized it can also commit and push
 
@@ -29,31 +95,134 @@ By cloning, you get a full copy of the repository and the working directory with
 
 . . .
 
-![](images/2023_06_15_git/git-pull-concept.png){width=60%}
+![](img/day2/git_pull_concept.png)
 
 ## A simple collaboration workflow
-<br><br>
-![](images/2023_06_15_git/git-collab-one-branch.png)
 
-- By default: Everything on one branch (main)
-  - Branches are connections between specific commits
-- Basic idea: **Pull** newest version before you start working, **push** new version
-after you are done
+- One remote repo on Github, multiple local repos
+- Idea: Everyone works on the same branch
+  - Pull before you start working
+  - Push after you finished working
+  
+![](img/day2/collab_simple.png){fig-align="bottom"}
+## A simple collaboration workflow
 
-## A more complex collaboration workflow
+This works well if
+- Repo is not updated often
+- You don't work on the same files simultaneousely
+- No need to discuss changes
+  - Everything is directly integrated in main
+- You collaborate with yourself
 
-- You can also have multiple branches of the same project
+
+![](img/day2/collab_simple.png){fig-align="bottom"}
+
+## A simple collaboration workflow
+
+This workflow starts to be problematic when
+- People push often
+  - Conflicts on main
+- Not possible to discuss code before integration
+- Difficult to just "try something out"
+  - Everything goes directly to main
+
+## A branching-merging collaboration workflow
+
+- One remote repo on Github, multiple local repos
+- Idea: Everyone works on the their separate branch
+  - Merge your branch with the main when you are finished 
+
+![](img/day2/collab_branching_merging.png){fig-align="bottom"}
+## A branching-merging collaboration workflow
+
+#### Advantages of this approach
+
+- Guarantee that main always works
+- Potential conflicts don't have to be solved on main
+
+![](img/day2/collab_branching_merging.png){fig-align="bottom"}
+
+## Working on a separate branch
+
+The steps to create and work on a separate branch are easy:
+
+- Create a local branch and switch to it
+- Work on the branch like you are used to
+  - Make changes
+  - Stage the changes
+  - Make commits
+  - Publish and push changes in your branch
+  
+![](img/day2/create_branch_stew.png)
+
+## Merging changes from a branch
+
+To bring back your changes to the main branch you need to **merge** them.
+
+Normally: Git merge brings the commits from the branch to main
 
 . . .
 
-![](images/2023_06_15_git/git-branch.png)
+![](img/day2/merge_branch_stew_ff.png)
 
-## A more complex collaboration workflow
+## Merging changes from a branch
 
-:::{.nonincremental}
-- Branches can be merged using `git merge`
-:::
+To bring back your changes to the main branch you need to **merge** them.
+
+If there was a commit on a common file in main, a *merge commit* is introduced:
 
 . . .
 
-![](images/2023_06_15_git/git-merge.png)
+![](img/day2/merge_branch_stew_merge_commit.png)
+## Merging changes from a branch
+
+To bring back your changes to the main branch you need to **merge** them.
+
+. . .
+
+- Mostly merging happens without problems, but...
+- ... if the same line was edited on separate branches...
+- ... there will be a merge conflict :scream:
+
+. . .
+
+Merge conflicts need to be solved manually. You need to chose which of the conflicting
+versions you want to keep.
+
+# Now you
+> Try out branching and merging in your cook book (10 min)
+
+## A branching-merging collaboration workflow with Github
+
+- One remote repo on Github, multiple local repos
+- Idea: Everyone works on the their separate branch
+  ~~- Merge your branch with the main when you are finished ~~
+  - Create a pull request on Github to ask for a merge
+  
+![](img/day2/collab_branching_pre_pr.png)
+## A branching-merging collaboration workflow with Github
+
+- One remote repo on Github, multiple local repos
+- Idea: Everyone works on the their separate branch
+  ~~- Merge your branch with the main when you are finished ~~
+  - Create a pull request on Github to ask for a merge
+
+![](img/day2/collab_branching_pr.png)
+## A branching-merging collaboration workflow with Github
+
+A pull request is basically asking your collaborators:
+
+> What do you think of my changes? Can we integrate them in main or do we still need to change something?
+
+. . .
+
+Github has nice features for pull requests:
+
+- Describe your changes in detail
+- Collaborators can easily compare old and new code
+- Collaborators can comment on your changes
+- ...
+
+# Now you
+> Add a recipe to your partner's repo and create a pull request
+> Answer to the pull request of you partner
