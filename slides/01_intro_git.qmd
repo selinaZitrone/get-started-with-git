@@ -2,7 +2,7 @@
 title: "Introduction to version control with Git"
 subtitle: "Day 1: Concepts and a basic workflow"
 author: "Selina Baldauf"
-date: "Updated `r Sys.Date()`"
+date: today
 date-format: long
 format: 
   revealjs:
@@ -47,8 +47,6 @@ Git is a huge topic because and git is very powerful. Most of the things are bes
 
 Get started with simple workflows. Learn the rest as you need it.
 
-. . .
-
 #### Session 1
 
 - Introduction to Git concepts
@@ -57,7 +55,6 @@ Get started with simple workflows. Learn the rest as you need it.
 #### Session 2
 
 - Collaborate using Git and Github
-  - Branching and Merging
 
 ## Before we start
 
@@ -67,8 +64,8 @@ Get started with simple workflows. Learn the rest as you need it.
   - Theoretical input + practical exercises
   
 - Next Monday: :clock2: 2.30 - 3.30 p.m.
-  - Until then: Start working on a small Git project
   - Clarify questions and problems, talk about more advanced features, ...
+  - Until then: Start working on a small Git project
 
 - Material is all online
 
@@ -149,15 +146,15 @@ Using Git from the terminal
 
 :::{.column width="50%"}
 
-`r fontawesome::fa(name = "plus", fill = "green")` Most control<br>
+:heavy_plus_sign: Most control<br>
 
-`r fontawesome::fa(name = "plus", fill = "green")` A lot of help/answers online<br>
+:heavy_plus_sign: A lot of help/answers online<br>
 
 :::
 
 :::{.column width="50%"}
 
-`r fontawesome::fa(name = "minus", fill = "red")` You need to use the terminal :scream:<br>
+:heavy_minus_sign: You need to use terminal :scream:<br>
 
 :::
 
@@ -177,15 +174,15 @@ A Git GUI is integrated in most (all?) IDEs, e.g. R Studio, VS Code
 
 :::{.column width="50%"}
 
-`r fontawesome::fa(name = "plus", fill = "green")` Easy and intuitive <br>
+:heavy_plus_sign: Easy and intuitive <br>
 
-`r fontawesome::fa(name = "plus", fill = "green")` Stay inside IDE<br>
+:heavy_plus_sign: Stay inside IDE<br>
 
 :::
 
 :::{.column width="50%"}
 
-`r fontawesome::fa(name = "minus", fill = "red")` Different for every program <br>
+:heavy_minus_sign: Different for every program <br>
 
 :::
 
@@ -203,15 +200,15 @@ Standalone Git GUI software, e.g. Github Desktop
 
 :::{.column width="50%"}
 
-`r fontawesome::fa(name = "plus", fill = "green")` Easy and intuitive <br>
+:heavy_plus_sign: Easy and intuitive <br>
 
-`r fontawesome::fa(name = "plus", fill = "green")` Nice integration with Github <br>
+:heavy_plus_sign: Nice integration with Github <br>
 
 :::
 
 :::{.column width="50%"}
 
-`r fontawesome::fa(name = "minus", fill = "red")` Switch programs to use Git <br>
+:heavy_minus_sign: Switch programs to use Git <br>
 
 :::
 
@@ -224,19 +221,22 @@ Standalone Git GUI software, e.g. Github Desktop
 - Depends on experience and taste
 - You can mix methods because they are all interfaces to the same Git
 
-. . .
+:::{.fragment}
 
 - We will use Github Desktop
-  - I'll still mention the corresponding terminal commands for the terminology
-
-. . .
-
-:::{.callout-tip}
-
-Have a look at the Website where you find How-To guides for all other methods as well.
+  - I'll still mention the corresponding terminal terminology at times
 
 :::
 
+:::{.fragment}
+
+:::{.callout-tip}
+
+Have a look at the website where you find **How-To guides for the other methods** as well.
+
+:::
+
+:::
 
 # The basic Git workflow
 
@@ -248,17 +248,13 @@ Have a look at the Website where you find How-To guides for all other methods as
 
 :::{.column width="70%"}
 
-**Concept:**
-
-![](img/day1/0_init_concept.png)
+![](img/day1/0_init_concept.png){width=50%}
 
 :::
 
 :::{.column width="30%"}
 
-**Folder:**
-
-![](img/day1/0_init_folder.png)
+![](img/day1/0_init_folder.png){width=80%}
 
 :::
 
@@ -275,14 +271,10 @@ Have a look at the Website where you find How-To guides for all other methods as
 
 :::{.column width=70%"}
 
-**Conceptual:**
-
 ![](img/day1/1_init_concept.png)
 :::
 
 :::{.column width="30%"}
-
-**Folder:**
 
 ![](img/day1/1_init_folder.png)
 
@@ -301,17 +293,13 @@ Git detects any changes in the working directory
 
 :::{.column width="70%"}
 
-**Concept:**
-
-![](img/day1/2_modify_concept.png)
+![](img/day1/2_modify_concept.png){width=90%}
 
 :::
 
 :::{.column width="30%"}
 
-**Folder:**
-
-![](img/day1/2_modify_folder.png)
+![](img/day1/2_modify_folder.png){width=80%}
 
 :::
 
@@ -331,15 +319,11 @@ Stage file to be part of the next commit (snapshot)
 
 :::{.column width="70%"}
 
-**Concept:**
-
-![](img/day1/2_add_concept.png)
+![](img/day1/2_add_concept.png){width=90%}
 
 :::
 
 :::{.column width="30%"}
-
-**Folder:**
 
 ![](img/day1/2_add_folder.png)
 :::
@@ -358,15 +342,11 @@ Stage file to be part of the next commit (snapshot)
 
 :::{.column width="70%"}
 
-**Concept:**
-
 ![](img/day1/3_commit_concept.png)
 
 :::
 
 :::{.column width="30%"}
-
-**Folder:**
 
 ![](img/day1/2_add_folder.png)
 
@@ -385,15 +365,11 @@ Stage file to be part of the next commit (snapshot)
 
 :::{.column width="70%"}
 
-**Concept:**
-
 ![](img/day1/3_afterCommit_concept.png)
 
 :::
 
 :::{.column width="30%"}
-
-**Folder:**
 
 ![](img/day1/2_add_folder.png)
 
@@ -421,7 +397,7 @@ Stage file to be part of the next commit (snapshot)
 
 ## How to write good commit messages?
 
-![[xkcd](https://xkcd.com/1296/) on commit messages](https://imgs.xkcd.com/comics/git_commit.png){fig-align="center" width=80%}
+![[xkcd](https://xkcd.com/1296/) on commit messages](https://imgs.xkcd.com/comics/git_commit.png){fig-align="center" width=70%}
 
 ## How to write good commit messages?
 
@@ -437,25 +413,30 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 
 :::{.columns}
 
-:::{.column width="50%"}
+:::{.column width="47%"}
 
 :heavy_check_mark:
 
-```
+```md
 Limit model temperature range
 
-I modified the temperature range the model can operate on to an upper limit of 40°C. This fixes the following problems:
-- no more unrealistic results because temperature cannot exceed the meaningful range
-- the program does not terminate with error code 123 anymore
+I modified the temperature range the model can 
+operate on to an upper limit of 40°C. This 
+fixes the following problems:
+
+- no more unrealistic results because 
+temperature cannot exceed the meaningful range
+- the program does not terminate with error 
+code 123 anymore
 ```
 
 :::
 
-:::{.column width="50%"}
+:::{.column width="47%"}
 
 :x:
 
-```
+```md
 limited model temperature range.
 
 Temperatures above 40°C are unrealistic.
@@ -484,6 +465,9 @@ Temperatures above 40°C are unrealistic.
 . . .
 
 ![](img/day1/4_push_concept.png){fig-align="center" width=60%}
+
+# Now you
+> Publish your cook book on Github (please make it public)
 
 ## A word on remote repositories
 
@@ -517,13 +501,9 @@ Temperatures above 40°C are unrealistic.
 
 ## The commit history
 
-![](img/day1/commit_history.png)
+![](img/day1/commit_history.png){width=80%}
 
-- In the terminal use `git log`
-
-. . .
-
-![](img/day1/github_desktop_history.png)
+![](img/day1/github_desktop_history.png){width=80%}
 
 ## Checkout a previous commit
 
@@ -531,22 +511,24 @@ Temperatures above 40°C are unrealistic.
 
 . . .
 
-![](img/day1/commit_history_head.png)
+![](img/day1/commit_history_head.png){width=85%}
 
 . . .
 
-![](img/day1/commit_history_checkout.png)
+![](img/day1/commit_history_checkout.png){width=85%}
 
 ## Revert changes
 
 - Use `git revert` to revert specific commits
-- This does not delete the commit, it creates a new commit that undoes a
-previous commit
+- This does not delete the commit, it creates a **new commit that undoes a previous commit**
   - It's a safe way to undo commited changes
 
 . . .
 
-![](img/day1/commit_history_after_revert.png)
+![](img/day1/commit_history_after_revert.png){width=90%}
+
+# Now you
+> Revert a part of your recipe
 
 # Other good things to know
 
@@ -579,9 +561,9 @@ previous commit
 
 #### Example
 
-```
+```md
 *.html    # ignore all .html files
-*.exe     # ignore all .exe files
+*.pdf     # ignore all .pdf files
 
 debug.log # ignore the file debug.log
 
@@ -594,20 +576,22 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 
 Github/Gitlab are a good way to publish and share your work.
 
+. . .
+
 ##### Advantages of publishing your code
 
 - Others can build on your work
-- You could get more citations
-- You are forced to write nice, reproducible code
-- Get feedback on your code
+- Citations
+- Reproducibility
+- Get feedback
 
 ## Publish your repositories
 
 You can increase the quality/complexity of your repo by
 
 - Adding a README.md file
-- Connecting the repo with Zenodo to get a DOI
-- Create a Github pages Website alongside your repo
+- [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html)
+- Create a Github pages website alongside your repo
 - Encourage people to write issues if they find problems
 - ...
 
