@@ -1,3 +1,137 @@
 ---
 title: "A Git workflow with Github Desktop"
 ---
+
+# Prerequisites
+
+To follow this workflow you need (see [course preparations](../course_preparation.qmd)
+if you miss anything):
+
+- Git installed
+- Github Desktop installed
+- A Github Account connect to your Github Desktop program
+
+# A Git workflow with Github Desktop
+
+## Step 1: Initialize a new repository
+
+To initialize a new Git repository with Github Desktop, you have to options: You 
+create an empty project with a repository or you add a repository to an existing 
+project.
+
+### Option 1: Create a new project
+
+Go to **File -> New repository** (keyboard shortcut Ctrl/Cmd + N)
+
+![](img/ghd_new_repo.png)
+
+This opens up the dialog box to create a new repository. You can give your repository
+a name, add an optional description and choose where on your computer it should be 
+created. You can also initialize the repo with a REAMDE file inside. This is 
+always a good idea as you can use this file to guide users (or you from the
+future) through the repository:
+
+![](img/ghd_new_repo_create.png)
+Click on **Create repository** when you are done.
+
+### Option 2: Add a repository to an existing project
+
+This works similar to Option 1. But instead you go to **File -> Add local repository**
+(keyboard shortcut Ctrl/Cmd + O)
+
+![](img/ghd_add_repo.png)
+
+If your project is not Git repository yet, you will get a warning and the program suggest you to **create a repository** instead. Click on that link:
+
+![](img/ghd_add_repo_create.png)
+Fill out the dialog box just like in option 1 but leave the project name as 
+suggested by Github Desktop to match the folder name you already created.
+
+Click on **Create repository** when you are done.
+
+## Step 2: Add some files
+
+Open your project in your file explorer. In Github Desktop, you can easily do this by going to **Repository -> Show in Explorer**.
+
+Add a new file `Bob.txt` to your project and add some text to the file. Then switch back to Github Desktop.
+
+### Explore the changes
+
+Github Desktop recorded all the current changes to your project. Have a look at the user interface to see how much information and options it gives you:
+
+![](img/ghd_add_bobtxt.png)
+
+Notice, that by default, Github Desktop stages your files (i.e. marks them to be part of the next commit). If you want to remove a file from the staging area, just uncheck the box next to the file.
+
+## Step 3: Make a commit
+
+To commit the changes to your local repository, you need to enter
+a commit message (Github Desktop suggests you something, but you can change it). Optionally, you can add a more detailed description of you changes in the description box below:
+
+![](img/ghd_commit.png)
+
+When you are ready click on **Commit to main**.
+
+### Look at the history
+
+To look at the history of your commits, you can go to the history view of Github desktop. It gives you all the details about previous commits:
+
+![](img/ghd_history.png)
+
+## Step 4: Create a remote repository and push your changes
+
+In Github Desktop, you can easily create a remote Github repository that corresponds to your local one. On the top right,
+click on **Publish repository** and then check out the dialogue box that opens:
+
+![](img/ghd_publish_repo.png)
+
+Leave the name as it is, add an optional description and select whether the Github repository should be private or public.
+When you are done click **Publish repository**.
+
+You can checkout how your Github repository looks online by going to **Repository -> View on GitHub**.
+
+## Step 5: Push new changes to Github
+
+Whenever you have new changes commited and you can publish then on Github, Github Desktop will tell you this. Just click on one of the two **Push** buttons:
+
+![](img/ghd_push.png)
+
+# Collaboration using branching
+
+## Step 6: Create a new branch
+
+To use the collaboration workflow discussed in the lecture, you need to create a new branch when you want to do some work. In Github Desktop, go to **Branch -> New Branch**.
+Give the branch a name and then click on **Create branch**:
+
+![](img/ghd_new_branch.png)
+
+Github Desktop will also automatically switch to this branch for you. You can see your current branch and switch branches on top:
+
+![](img/ghd_switch_branch.png)
+
+You can now continue working on this branch. Add new files and changes to the repository and commit them like you are used to.
+
+## Step 7: Publish and push your branch to remote
+
+To make your branch visible to others, you need to push it to the remote repository as well. This works just like with the main branch. On the top right, just click on the **Push** button.
+The first time, the button will say **Publish branch** because your branch first needs to be published. Just click it and others can now see your changes in the branch on Github.
+
+Now your branch should be pushed to Github/Gitlab and you can do a pull request.
+
+## Step 9: Create a pull request
+
+See [here](create_pull_request.qmd) for a guide on pull requests.
+
+# Other things to try
+
+## Revert a commit
+
+If you want to undo a commit without deleting the whole commit history, you can revert the respective commit. Just go to the history tab in Github Desktop and find the commit you want to revert. Now right-click on the commit and select **Revert changes in commit**:
+
+![](img/ghd_revert.png)
+
+Github Desktop will create a new commit that reverts the original commit:
+
+![](img/ghd_revert_commit.png)
+
+This commit can be pushed just like any other commit. This is a safe way to undo changes.
