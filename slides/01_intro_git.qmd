@@ -6,7 +6,7 @@ date: "Updated `r Sys.Date()`"
 date-format: long
 format: 
   revealjs:
-    footer: "Version control with Git"
+    footer: "Basic Git workflow"
     highlight-style: printing
     mainfont: Cabinet Grotesk
     slide-number: true
@@ -39,32 +39,25 @@ from: markdown+emoji
 
 ## Welcome to the workshop
 
-- Git is a huge topic and it can become quite complex
-- We will cover the most important steps for *individual* (today) and *collaborative* (tomorrow)
-workflows
+Git is a huge topic because and git is very powerful. Most of the things are best to learn as you need them.
 
 . . .
 
-### At the end of this workshop you ...
+#### Aim of this workshop
 
-... know the **basic concept** behind Git.
-
-. . .
-
-... can use Git for your **personal workflows**.
-
+Get started with simple workflows. Learn the rest as you need it.
 
 . . .
 
-... can **collaborate** with your colleagues.
+#### Session 1
 
-. . .
+- Introduction to Git concepts
+- Simple Git workflow for your own projects
 
-... can **publish your code** on Github.
+#### Session 2
 
-. . .
-
-... have an idea of more **advanced features**.
+- Collaborate using Git and Github
+  - Branching and Merging
 
 ## Before we start
 
