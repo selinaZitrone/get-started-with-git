@@ -1,0 +1,108 @@
+The goal of these tasks is to get a feeling for the basic Git workflow.
+In the tasks, I will not describe all steps in detail. But if you are stuck 
+somewhere, have a look at the [how-to description](../how-tos/git_workflow_gh_desktop.qmd). There you find a guide of every step including screenshots. 
+But most of the steps are made very intuitive with Github Desktop.
+
+:::{.panel-tabset}
+
+# 1 Local repo (10 min)
+
+## Local repository with a basic workflow
+
+#### Create a new repository
+
+First, open Github Desktop and create a new repository (**File -> New repository**).
+In the dialogue box that opens:
+
+- give it a name
+- select where on your computer
+- click the checkbox to initialize with a README file
+
+#### Open your project in the explorer
+
+You can go to **Repository -> Show in Explorer** to open your project in the explorer.
+Note that you should see a hidden `.git` folder in the project folder now. 
+If you don't see the folder, it could be that you need to turn on hidden files.
+
+In the Windows explorer, go to **View** and then check the **Hidden items** checkbox:
+
+![](tasks/img/windows_hidden_files.png)
+
+In the Mac finder, you can just hit 'Command' + 'Shift' + '.' (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.
+
+#### Start adding some files
+
+Add some files to your project. You can start with a file called `Bob.txt`.
+Create and open the file and add some text to it.
+
+#### Commit your changes
+
+Switch back to Github Desktop and have a look at the interface. You should see
+the files you created, the changes you made to the files. Create a commit of your 
+changes by entering a commit message and optional description and clicking the commit 
+button.
+
+## For the fast ones:
+
+- Add more files and make more commits
+  - Try different file formats (e.g. add a png, and R/Python script, ...)
+
+
+# 2 Github (10 mins)
+
+## Publish your project on Github
+
+Publish your project on Github by clicking the Publish button on the top right.
+Choose whether you want to keep your project private or make it public.
+
+#### Check out your brand-new Github repo
+
+Check out how your repository on Github. You can find it by going to **Repository ->
+View on GitHub**
+
+Have a brief look around in your Github repository. Which buttons are there? Can you find the code?
+
+
+## For the fast ones
+
+Switch back to your local repository and add some more files. Commit and push
+them to Github and check if you can find them online now.
+
+# 3 Go back (5 min)
+
+## Go back in time in your repository
+
+Have a look at the history of your repository in Github Desktop.
+
+### Revert a commit 
+
+Select a commit in the middle. Right-click and revert the commit. See how your history has changed.
+
+### For the fast ones: Checkout a previous commit
+
+To see your project state at an earlier commit, select the commit and right-click. Then you can checkout this commmit.
+
+See how your branch changed to the commit hash of the checked out commit.
+
+If you now look at your project files, they should look exactly how they looked like back when you made that commit.
+
+::: {.callout-note}
+Note that you cannot work on the project in this state. You can only look at the files. To come back to the current state, click on the current branch button at the top and select the main branch again
+:::
+
+# Extra: Ignore files (5 min)
+
+## Add a `.gitignore` file
+
+Find a random file on your computer and copy it to your Git repository.
+Check if Github Desktop recognized the change to your repository, but DO NOT COMMIT 
+this file.
+
+We now want to ignore this file because we don't want to track it.
+
+Ignore the file by going to **Repository-> Repository settings -> Ignored files**.
+Enter the file name of the new file in the window of ignored files.
+
+Then check the *Changes* view of Github Desktop. What is different now?
+
+:::
