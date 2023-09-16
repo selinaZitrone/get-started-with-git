@@ -1,17 +1,16 @@
 ---
 title: "Introduction to Version Control with Git"
-subtitle: "A crash course by Selina Baldauf"
+subtitle: "Workshop by Selina Baldauf"
 ---
 
-🚧🚧🚧🚧🚧🚧🚧 This website is still work in progress 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
-
--------
-📅 18.09.2023 - 19.09.2023 <br>
-🕓 2.30 - 4 p.m.  <br>
-📍 Webex <br> <br>
-Additonal consultation hour:
-📅 25.09.2023 🕓 2.30 -3.30 p.m.
---------
+<hr>
+**Workshop sessions**<br>
+📅 18.09.2023 - 19.09.2023 from 🕝 2.30 - 🕓 4 p.m.
+<br>
+**Q&A**
+<br>
+📅 25.09.2023 from 🕝 2.30 - 🕞 3.30 p.m.
+<hr>
 
 # Course description:
 
@@ -34,4 +33,4 @@ The target audience of this workshop are beginners without prior experience with
 
 # Who is the instructor?
 
-I am a scientific programmer in the theoretical ecology group at Freie Universität. I love sharing knowledge about tools and workflows that make research more reproducible, robust and fun. If you have any questions regarding the course, please don't hesitate to contact me via [email](mailto:selina.baldauf@fu-berlin.de.)
+I am a scientific programmer in the theoretical ecology group at Freie Universität. I love sharing knowledge about tools and workflows that make research more reproducible, robust and fun. If you have any questions regarding the course, please don't hesitate to contact me via [email](mailto:selina.baldauf@fu-berlin.de).
