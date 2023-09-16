@@ -1,2 +1,0 @@
-- git push --set-upstream graph -> REmove the remotes part of the local repo
-- go through first exercise again
