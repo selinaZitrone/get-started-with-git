@@ -3,7 +3,7 @@ quarto::quarto_render()
 
 # render slides as pdf
 slides_html <- list.files(here::here("docs/slides"),
-                          pattern = "2023", full.names = TRUE
+                          pattern = "01|02", full.names = TRUE
 )
 
 lapply(slides_html, function(x) {

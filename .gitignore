@@ -11,3 +11,5 @@ slides/*_files/
 tasks/*.html
 
 /.quarto/
+*.pptx
+*.pptx
