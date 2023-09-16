@@ -1,6 +1,5 @@
 ---
-title: "Introduction to Version Control with Git"
-subtitle: "Session 1: A basic Git workflow in theory and practice"
+title: "A basic Git workflow in theory and practice"
 callout-appearance: default
 ---
 
