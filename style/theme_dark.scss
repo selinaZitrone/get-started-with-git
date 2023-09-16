@@ -20,12 +20,9 @@ $col4: #F3DFC1 !default;
 $col5: #DDBEA8 !default;
 $col6: #AB7F78 !default;
 
-$primary:       $col4 !default;
+$primary:       $col5 !default;
 $secondary:     $col2 !default;
-$success:       $col3 !default;
-$info:          $col2 !default;
-$warning:       $col4 !default;
-$danger:        #F7F !default;
+
 $light:         $gray-200 !default;
 $dark:          $gray-700 !default;
 
@@ -33,4 +30,3 @@ $link-color: $col3 !default;
 $code-color: $col6 !default;
 $body-color: $col1 !default;
 $code-block-bg: $gray-100 !default;
-$code-block-color: $col6 !default;
