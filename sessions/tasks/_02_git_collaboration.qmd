@@ -1,15 +1,25 @@
-The goal of these tasks is to get a feeling for the basic Git workflow.
-In the tasks, I will not describe all steps in detail. But if you are stuck 
-somewhere, have a look at the [how-to description](../how-tos/git_workflow_gh_desktop.qmd). There you find a guide of every step including screenshots. 
-But most of the steps are made very intuitive with Github Desktop.
+The goal of these tasks is to get a feeling for a collaborative Git workflow.
+
+In the tasks, I will not describe all steps in detail. 
+
+But if you are stuck somewhere, have a look at the 
+[how-to description](../how-tos/git_workflow_gh_desktop.qmd). 
+
+There you find a guide of every step including screenshots. 
+
+But most of the steps are made very intuitive with Github Desktop and Github.
 
 :::{.panel-tabset}
 
-# 1 Clone (5 min)
+# 1 Clone 
+
+## Clone the cook book repo of your partner (5 min)
 
 Use Github Desktop to clone the cook book repository of your partner.
 
-# Branch and merge (10 min)
+# Branch and merge
+
+## Try branching and merging in your repo (10 min)
 
 Switch back to your personal cook book repository.
 
@@ -28,7 +38,9 @@ Now switch back to the main branch (click on the "current branch" button on top)
 Merge your new branch into the main branch. Then check the commit history to see
 if you branch commit is actually there.
 
-# Pull requests (20 min)
+# Pull requests
+
+## Make a pull request in your partner's repo (20 min)
 
 Now it's time to modify something in your partner's cook book. Switch to their 
 repository and create a new branch for your changes. 
@@ -49,10 +61,10 @@ Publish and push your branch to Github.
 Open the repository on Github. On top you should already see the option to
 "Compare and pull request". Open a pull request and describe your changes.
 
-# Review pull request
+#### Review pull request on your repo
 
-Now it's time to look at your partner's pull request to decide if you want to
-merge it or not.
+Now it's time to look at the pull request your partner left in your repository
+and decide if you want to merge it or not.
 
 Try to comment on single lines of code asking for changes.
 

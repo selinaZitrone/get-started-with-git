@@ -1,4 +1,4 @@
-In these tasks, you will create your own Git cook book :ramen:.
+In these tasks, you will create your own Git cook book 🍜.
 
 All recipes will be simple text files and changes will be commited to the repository.
 
@@ -13,9 +13,9 @@ But if you are stuck at some step you can find help here:
 
 :::{.panel-tabset}
 
-# 1 Local repository (10 min)
+# 1 Local repo
 
-## Create your own Git cook book :ramen:
+## Create your own Git cook book 🍜 (10 min)
 
 ### Create a new repository
 
@@ -64,9 +64,9 @@ then clicking the commit button.
 - Make a change to your first recipe and commit this change
 - Try adding and commiting other file formats (e.g. a png picture of your dish, a pdf file, ...)
 
-# 2 Github (10 mins)
+# 2 Github
 
-## Publish your project on Github
+## Publish your project on Github (10 mins)
 
 Publish your cook book project on Github (**Publish** button on the top right).
 In the dialogue that opens, chose to make your project public (this is easier for
@@ -90,9 +90,9 @@ b) Work on the README file and add some information about your cook book project
 
 Commit and push these new changes to Github and check out how they look online.
 
-# 3 Go back (5 min)
+# 3 Time travel
 
-## Go back in time in your repository
+## Go back in time in your repository (5 min)
 
 First, have a brief look at the history of your repository in Github Desktop.
 
@@ -124,7 +124,9 @@ You can only look at the files.
 To come back to the current state, click on the current branch button at the top
 and select the main branch again
 
-# Extra: Ignore files (5 min)
+# Extra
+
+## Ignore files (5 min)
 
 We only want actual recipe files in our project. All other files should be ignored.
 
