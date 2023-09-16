@@ -377,22 +377,10 @@ Stage file to be part of the next commit (snapshot)
 
 :::
 
-## The commit history
-
-::: {layout="[[-1], [1], [-1]]" layout-valign="bottom"}
-
-![](img/day1/commit_info_blank.png)
-
-:::
+# Now you
+> Add some recipes to your cook book
 
 
-## The commit history
-
-::: {layout="[[-1], [1], [-1]]" layout-valign="bottom"}
-
-![](img/day1/commit_info_arrows.png)
-
-:::
 
 
 ## How to write good commit messages?
@@ -445,6 +433,30 @@ Temperatures above 40°C are unrealistic.
 :::
 
 :::
+
+## The commit history
+
+![](img/day1/commit_history.png){width=80%}
+
+![](img/day1/github_desktop_history.png){width=80%}
+
+## The commit history
+
+::: {layout="[[-1], [1], [-1]]" layout-valign="bottom"}
+
+![](img/day1/commit_info_blank.png)
+
+:::
+
+
+## The commit history
+
+::: {layout="[[-1], [1], [-1]]" layout-valign="bottom"}
+
+![](img/day1/commit_info_arrows.png)
+
+:::
+
 
 ## Step 4: Create and connect a remote repo
 
@@ -499,11 +511,6 @@ Temperatures above 40°C are unrealistic.
 
 > git log, git checkout, git revert
 
-## The commit history
-
-![](img/day1/commit_history.png){width=80%}
-
-![](img/day1/github_desktop_history.png){width=80%}
 
 ## Checkout a previous commit
 
