@@ -69,7 +69,7 @@ If you want to go back one level, use `cd ..`.
 On Windows, you can also right click on the folder that contains your project
 and then click on `Git Bash Here`
 
-![](img/git-bash-here.png)
+![](img/git-bash-here.png){width=50%}
 :::
 
 To see if you are in the correct directory, have a look at the path that is written 
@@ -198,7 +198,7 @@ git log
 
 If you want a shorter summary, you can also use
 
-```
+```sh
 git log --oneline
 ```
 
@@ -300,6 +300,7 @@ of the repository onto our machine. To clone a repository, you need to know the
 repositories address. You can find the SSH address by clicking on the green code button on Github:
 
 ![](img/gh_copy_adress_ssh.png)
+
 Open the terminal, navigate to a location where you want to clone the project and run:
 
 ```sh
@@ -396,7 +397,7 @@ changes in the pdf anymore, because it was ignored.
   - `git commit HEAD^`
 - push to origin
 
-### Merge your new branch with the `main`
+## Merge your new branch with the `main`
 
 If you want to locally integrate changes you did in a separate branch into the main branch,
 you first need to switch back to the main branch:

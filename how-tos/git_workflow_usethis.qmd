@@ -1,12 +1,18 @@
 ---
-title: "A Git workflow with the R and `usethis`"
+title: "A Git workflow with RStudio, R and `usethis`"
 execute: 
   eval: false
 ---
 
 # Preparation
 
-For this workflow, you need the [`usethis`](https://usethis.r-lib.org/) package. It is a very cool workflow package that has a lot of functionality including Git workflows.
+For this workflow, you need 
+
+- Git installed
+- RStudio and R installed
+- The R package `usethis` installed
+
+The [`usethis`](https://usethis.r-lib.org/) is a very cool workflow package that has a lot of functionality including Git workflows.
 Install it in R with:
 
 ```{r}
@@ -15,10 +21,9 @@ install.packages("usethis")
 
 ## SSH vs. HTTPS
 
-You can chose if you want to use SSH or HTTPS as a default protocol to communicate with the remote server.
-If you correctly set up SSH key authentication, you can just use SSH protocol and skip the next step.
-If you have not set up SSH key authentication yet or if you prefer to use HTTPS 
-you need to setup a Personal Access Token (PAT). Follow the steps below.
+You can use SSH or HTTPS as a default protocol to communicate with the remote server.
+If you correctly set up SSH key authentication (see [here](ssh_keys.qmd)), you can just use SSH protocol and skip the next step. If you have not set up SSH key authentication yet you can follow
+the next steps to setup a Personal Access Token (PAT). 
 
 ## Setup PAT to use HTTPS protocol with Github
 
@@ -40,8 +45,8 @@ Next, you are asked to create a new personal access token.
 
 On top enter a note that reminds you what this token is for (e.g. Something like "RStudio/R on HP laptop").
 
-Set an expiration date of your choice (the shorter the more secure, but then you have
-to update it more often - Github will send you an email about this).
+Set an expiration date of your choice (the shorter the more secure, but you have
+to update more often - Github will send you a reminder for this).
 
 You can also select the scopes for your PAT. For general use case, the default selected scopes are enough.
 Scroll down and click on `Generate token`.
@@ -102,14 +107,14 @@ if (interactive()) {
   suppressMessages(library(usethis))
 }
 options(
-  usethis.protocol = "ssh" # or "https" if you chose PAT + HTTPS
+  usethis.protocol = "https" # or "ssh" if you set up ssh
 )
 ```
 
 With this, `usethis` will be loaded every time you open RStudio and you already 
 registered the default protocol that you want to use with Git (This is only relevant for the Git things you do with `usethis`).
 
-# A Git Workflow using `usethis`
+# A Git workflow using `usethis`
 
 ## Step 1: Create new R project
 
@@ -202,12 +207,12 @@ Save the file in your project.
 
 In the Git Pane of RStudio, click on the "Commit" button (both buttons bring you to a similar window.):
 
-![](img/rstudio_commit_button.png)
+![](img/rstudio_commit_button.png){width=70%}
 
 Stage your file (i.e. `git add`) by checking the check box next to it.
 On the bottom you can see the code that you added (therefore green).
 
-![](img/rstudio-commit.png)
+![](img/rstudio-commit.png){width=70%}
 
 Enter a commit message on the right and click commit. 
 When the commit is finished, close the little window that opened.
@@ -216,7 +221,7 @@ Now push the changes to Github by clicking on the green upward arrow on the top 
 
 Go to Github and check if everything was pushed as you expected.
 
-# Collaboration using branching and merging
+# Collaboration using branching
 
 ## Step 6: Create a new branch
 
