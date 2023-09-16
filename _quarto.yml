@@ -9,6 +9,11 @@ project:
     - "slides/*.html"
 
 website:
+  page-navigation: true
+  repo-url: "https://github.com/selinaZitrone/get-started-with-git"
+  site-url: "https://selinazitrone.github.io/get-started-with-git/"
+  repo-actions: [edit, issue]
+  repo-branch: master
   title: "Git course"
 
   navbar:
@@ -21,13 +26,13 @@ website:
             href: sessions/02_git_collaboration.qmd
       - text: How-to-guides
         menu: 
-          - text: Git workflow with the command line
-            href: how-tos/git_workflow_terminal.qmd
-          - text: Git workflow with RStudio and usethis
-            href: how-tos/git_workflow_usethis.qmd
-          - text: Git workflow with Github Desktop
+          - text: Github Desktop
             href: how-tos/git_workflow_gh_desktop.qmd
-          - text: Pull requests on Github
+          - text: Terminal
+            href: how-tos/git_workflow_terminal.qmd
+          - text: RStudio, R and `usethis`
+            href: how-tos/git_workflow_usethis.qmd
+          - text: Create pull requests on Github
             href: how-tos/create_pull_request.qmd
           - text: Utility - Set up SSH keys
             href: how-tos/ssh_keys.qmd
@@ -36,7 +41,7 @@ website:
       - icon: github
         href: https://github.com/selinaZitrone/get-started-with-git
     left: 
-      - text: Preparation
+      - text: Course preparation
         href: course_preparation.qmd
 
 
@@ -44,8 +49,8 @@ format:
   html:
     embed-resources: true
     theme:
-      light: [flatly, style/theme.scss]
-      dark: [darkly, style/theme.scss]
+      light: [flatly, style/theme_dark.scss]
+      dark: [darkly, style/theme_light.scss]
     css: style/style.css
     toc: true
     code-copy: true
