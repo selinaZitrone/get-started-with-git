@@ -1,108 +1,147 @@
-The goal of these tasks is to get a feeling for the basic Git workflow.
-In the tasks, I will not describe all steps in detail. But if you are stuck 
-somewhere, have a look at the [how-to description](../how-tos/git_workflow_gh_desktop.qmd). There you find a guide of every step including screenshots. 
-But most of the steps are made very intuitive with Github Desktop.
+In these tasks, you will create your own Git cook book :ramen:.
+
+All recipes will be simple text files and changes will be commited to the repository.
+
+The goal of these tasks is to get a first idea and feeling for the basic Git workflow.
+
+In the tasks, I will not describe all steps in detail (e.g. where you have to click exactly).
+
+But if you are stuck at some step you can find help here:
+
+- [A cheatsheet for the Github Desktop GUI](../gh_desktop_cheatsheet.qmd): Explains all the buttons and windows of Github Desktop
+- [A How-To description](../how-tos/git_workflow_gh_desktop.qmd) of the Git workflow with detailed explanations and Screenshots
 
 :::{.panel-tabset}
 
-# 1 Local repo (10 min)
+# 1 Local repository (10 min)
 
-## Local repository with a basic workflow
+## Create your own Git cook book :ramen:
 
-#### Create a new repository
+### Create a new repository
 
-First, open Github Desktop and create a new repository (**File -> New repository**).
+Open Github Desktop and create a new repository (**File -> New repository**) for your
+cook book project.
+
 In the dialogue box that opens:
 
-- give it a name
-- select where on your computer
-- click the checkbox to initialize with a README file
+- Give it the following name: cookBook-yourName (replacing yourName with your name)
+  - This is necessary for tomorrow when we collaborate
+- Select where on your computer you want the cook book to be stored
+- Check the box to initialize with a README file
 
-#### Open your project in the explorer
+### Open your project in the explorer
 
-You can go to **Repository -> Show in Explorer** to open your project in the explorer.
-Note that you should see a hidden `.git` folder in the project folder now. 
-If you don't see the folder, it could be that you need to turn on hidden files.
+Go to **Repository -> Show in Explorer** to open your project in the explorer.
+
+Do you see the hidden `.git` foder in there?
+
+If you don't see the `.git` folder you probably have to unhide hidden files.
 
 In the Windows explorer, go to **View** and then check the **Hidden items** checkbox:
 
 ![](tasks/img/windows_hidden_files.png)
 
-In the Mac finder, you can just hit 'Command' + 'Shift' + '.' (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.
+In the Mac finder, you can just hit 'Command' + 'Shift' + '.' (the period key) at the same time.
+This is the keyboard shortcut to hide and unhide files and folders.
 
-#### Start adding some files
+### Add a recipe
 
-Add some files to your project. You can start with a file called `Bob.txt`.
-Create and open the file and add some text to it.
+Add a recipe to your project. Start with a file for your favorite dish. 
+Create and open the file in a text editor.
+Then add the recipe to the file (you can also invent something - don't spend much time
+actually writing a recipe, just add some lines of text)
 
-#### Commit your changes
+### Commit your changes
 
 Switch back to Github Desktop and have a look at the interface. You should see
-the files you created, the changes you made to the files. Create a commit of your 
-changes by entering a commit message and optional description and clicking the commit 
-button.
+the recipe file you created and the changes you made to the file.
+Commit your changes by entering a commit message and optional description and and
+then clicking the commit button.
 
-## For the fast ones:
+### For the fast ones:
 
-- Add more files and make more commits
-  - Try different file formats (e.g. add a png, and R/Python script, ...)
-
+- Add another recipe and commit it to your repository
+- Make a change to your first recipe and commit this change
+- Try adding and commiting other file formats (e.g. a png picture of your dish, a pdf file, ...)
 
 # 2 Github (10 mins)
 
 ## Publish your project on Github
 
-Publish your project on Github by clicking the Publish button on the top right.
-Choose whether you want to keep your project private or make it public.
+Publish your cook book project on Github (**Publish** button on the top right).
+In the dialogue that opens, chose to make your project public (this is easier for
+the collaboration session tomorrow).
 
-#### Check out your brand-new Github repo
+### Check out your brand-new Github repository
 
-Check out how your repository on Github. You can find it by going to **Repository ->
-View on GitHub**
+Check out how your repository on Github looks like.
+You can find via **Repository ->View on GitHub** or by logging into your Github
+account in the browser.
 
-Have a brief look around in your Github repository. Which buttons are there? Can you find the code?
-
+Have a brief look around in your Github repository.
+Which buttons are there and what do they do? How do your files look like?
 
 ## For the fast ones
 
-Switch back to your local repository and add some more files. Commit and push
-them to Github and check if you can find them online now.
+Switch back to your local repo and
+
+a) Add or change recipes
+b) Work on the README file and add some information about your cook book project there
+
+Commit and push these new changes to Github and check out how they look online.
 
 # 3 Go back (5 min)
 
 ## Go back in time in your repository
 
-Have a look at the history of your repository in Github Desktop.
+First, have a brief look at the history of your repository in Github Desktop.
 
 ### Revert a commit 
 
-Select a commit in the middle. Right-click and revert the commit. See how your history has changed.
+Chose a commit that you want to revert.
+Select the commit and right-click to revert it.
+See how your history has changed.
 
-### For the fast ones: Checkout a previous commit
+### For the fast ones
 
-To see your project state at an earlier commit, select the commit and right-click. Then you can checkout this commmit.
+#### Checkout a previous commit
 
-See how your branch changed to the commit hash of the checked out commit.
+To see your cook book at an earlier stage, select the commit you want to jump back to.
+Then right-click and checkout this commit.
 
-If you now look at your project files, they should look exactly how they looked like back when you made that commit.
+You will get a warning that you will create a detached HEAD state. This is ok, so
+checkout anyways.
+
+See how your history changed. You can also see on top of Github Desktop, that you
+are now in Detached HEAD mode. If you now look at your cook book files, you will see  
+that they correspond to an earlier version.
 
 ::: {.callout-note}
-Note that you cannot work on the project in this state. You can only look at the files. To come back to the current state, click on the current branch button at the top and select the main branch again
+Note that you cannot work on the project in this state. 
+You can only look at the files. 
 :::
+
+To come back to the current state, click on the current branch button at the top
+and select the main branch again
 
 # Extra: Ignore files (5 min)
 
-## Add a `.gitignore` file
+We only want actual recipe files in our project. All other files should be ignored.
 
-Find a random file on your computer and copy it to your Git repository.
+### Add a `.gitignore` file
+
+Find a random file on your computer and copy it into your cook book project.
+
 Check if Github Desktop recognized the change to your repository, but DO NOT COMMIT 
 this file.
 
-We now want to ignore this file because we don't want to track it.
+This file does not belong to your cook book, so it should be ignored by Git.
 
-Ignore the file by going to **Repository-> Repository settings -> Ignored files**.
+Go to **Repository-> Repository settings -> Ignored files**.
+
 Enter the file name of the new file in the window of ignored files.
 
 Then check the *Changes* view of Github Desktop. What is different now?
 
+Have a look at the newly created `.gitignore` file
 :::
