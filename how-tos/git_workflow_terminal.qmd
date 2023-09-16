@@ -2,7 +2,9 @@
 title: "A Git workflow with the terminal"
 ---
 
-The following describes a simple git workflow starting with a local repository.
+In this guide, we will create a small cook book project using Git. We will
+add recipes and commit the our repository and then publish the project on Github
+to collaborate with others on it.
 
 # Prerequisites
 
@@ -52,16 +54,15 @@ Use the user name and email that you also use in your Gitlab/Github here.
 
 # A Git workflow in the terminal
 
-## Step 1: Create a new project
+## Step 1: Initialize a new repository
 
 A new Git project can be started in an empty folder or in a folder that already 
 contains files.
-For this example, create an new folder called `first_git_project` using your
-operating system's file explorer or the terminal if you are familiar with it.
+For this example, we can create an new folder `cookBook` at a desired location.
 
-Open the terminal and navigate into the working directory that you just created.
+When the folder is created, open the terminal and navigate into this folder.
 
-You can use `cd /path/to/navigate/to` to navigate into a specific path. 
+You can use `cd /path/to/navigate/to/cookBook` to navigate to a specific path. 
 If you want to go back one level, use `cd ..`.
 
 ::: {.callout-tip}
@@ -71,25 +72,46 @@ and then click on `Git Bash Here`
 ![](img/git-bash-here.png)
 :::
 
-To see if you are really in the correct directory, have a look at the path that is written 
-on top or your terminal. It should show the directory that you just created. Something like this:
+To see if you are in the correct directory, have a look at the path that is written 
+on top or your terminal. It should show the directory for the cookbook that you just created.
+Something like this:
 
 ![](img/navigate-path.png)
 
-## Step 2: Initialize a Git repository
-
-To initialize a Git repo in the working directory run 
+To initialize a Git repo in your cook book project, just run
 
 ```sh
 git init
 ```
 
-This creates a hidden `.git` folder in your working directory. 
-
 In the terminal, you can now see the branch that you are currently on.
-The default branch that is created by Git is called `master` or `main`.
+In my case the name of the default branch is `main` which is now written in blue
+behind the folder path:
 
-![](img/git-master.png)
+![](img/git_init.png)
+
+## Step 2: Add a recipe
+
+Open your cook book project in the file explorer.
+
+Add a new text file for your favorite recipe. I will add `pie.txt`.
+Add the recipe text to the file, e.g.:
+
+```md
+Ingredients:
+150 g butter
+200 g sugar
+3 eggs
+350 g flour
+1 pkg. baking powder
+juice from one lemon
+
+Mix everything together and put in the oven
+for 45 mins at 200 °C.
+```
+Save and close the file.
+
+After you added a recipe, switch back to the terminal.
 
 ###  Check the status of your repository with `git status`
 
@@ -99,45 +121,25 @@ Check the current status of your Git repository by running
 git status
 ```
 
-Right now, there should be nothing to commit.
-In general, you can always use `git status` to check if there are any new changes 
-to your project.
+This will show you that `pie.txt` is a new and untracked file:
 
-## Step 3: Make some changes
+![](img/git_status.png)
 
-Create a file `Bob.txt` in your working directory and add the following text to it:
 
-```
-Hello, this is Bob. How are you?
-```
+## Step 3: Stage the new file
 
-Save and close the file.
-
-Now have a look at the repository again with
+With the `git add` command, you can stage the newly created `pie.txt`. This means that it is marked
+to be in the next commit. 
 
 ```sh
-git status
+git add pie.txt
 ```
 
-`Bob.txt` is now an untracked file that we can add to the staging area
+Now you can check the repository status with `git status` again:
 
-### Stage a file with `git add`
+![](img/git_add.png)
 
-With the `git add` command, you can stage a file. This means that it is marked
-to be in the next commit. In this example, you can stage the single file `Bob.txt`
-with
-
-```sh
-git add Bob.txt
-```
-
-Now you can check the repository status again:
-
-```sh
-git status
-```
-
-The file Bob.txt is now ready to be committed.
+Git already tells you, that `pie.txt` is now ready to be committed.
 
 ::: {.callout-tip}
 
@@ -149,7 +151,7 @@ git add *
 
 :::
 
-## Step 4: Commit the file to the repository with `git commit`
+## Step 4: Make a commit
 
 To commit the file run
 
@@ -157,20 +159,15 @@ To commit the file run
 git commit
 ```
 
-Wait for your default text editor to open, and add a commit message. In the text
-editor, your commit message should take the following form:
+Wait for your default text editor to open, and add a commit message and an
+optional description after a new line:
 
 ```md
-Summary of the changes
+Add pie recipe
 
-A more detailed description of what was changed and why.
-Can also contain
-
-- Bullet
-- Points
-
-You can also continue writing for as long as you want in this
-description section of the commit message.
+This is my favourite pie in the world. 
+The recipe comes from my grandfather and 
+he learned it from his neighbor.
 ```
 
 Close the text editor and the commit is done.
@@ -181,7 +178,17 @@ Look how the status of your repository has changed again with
 git status
 ```
 
-### Look at the history with `git log`
+No you don't have any more changes in your project:
+
+![](img/git_commit.png)
+
+:::{.callout-tip}
+Please note that there are guidelines on how to write good commit messages.
+This becomes especially important when collaborating.
+Have a look [here](https://cbea.ms/git-commit/) for some guidelines.
+:::
+
+### Look at the history
 
 To see how the commit that you just did looks like, run
 
@@ -197,22 +204,16 @@ git log --oneline
 
 ## Step 5: Create a remote repository
 
-Now, we connect our local repository with a remote repository on Github or Gitlab
-(whichever you already use or prefer to use).
+Now, we connect our local repository with a remote repository on Github.
 
-If you already know Github Desktop with Github, this might seem a bit complicated,
-but Github Desktop is just build in a way that it nicely integrates with Github.
-For the command line we need some extra steps.
-
-### Option 1: Github
+In the terminal, this is slightly more complicated than with Github Desktop.
 
 Go to the [Github website](https://github.com/), log in and click on the green
 `New` button on the left of the start page:
 
 ![](img/github-new-button-small.png)
 
-Enter a repository name (e.g. `first_git_project`), select if it should be private or public and add a description if you like.
-Set the check mark for adding a `README.md` file. 
+Enter a repository name (e.g. `cookBook`), select if it should be private or public and add a description if you like. Set the check mark for adding a `README.md` file. 
 This way, the remote already has some content that we can integrate into the 
 local repository.
 
@@ -220,68 +221,39 @@ Github will now bring you to the newly created repository.
 
 #### Add the repository on Github as a remote to your local repository
 
-We now want to connect the local `first_git_project` with the remote `first_git_project`
+We now want to connect the local `cookBook` with the remote `cookBook`
 on Github.
+
 First, copy the remote's address.
 
 You can find and copy the address by clicking on the green `Code` button on the right. 
 Choose the SSH address in the middle.
 
-![](img/github-find-address.png)
+![](img/gh_copy_adress_ssh.png)
+
 Now switch back to your terminal and add this address as a remote with the name origin.
 (Replace the address below with the address of your personal repository)
 
 ```sh
-git remote add origin git@github.com:selinaZitrone/git_test_project.git
+git remote add origin git@github.com:selinaZitrone/cookBook-Selina.git
 ```
 
-### Option 2: Gitlab
+## Step 6: Push new changes to Github
 
-Log in to [Gitlab](https://gitlab.com/users/sign_in) and click on the little `+`
-symbol on top of the start page. Choose `New project/repository` and 
-then `Create blank project`.
-
-![](img/gitlab-new-button-small.png)
-
-Enter a repository name (e.g. `first_git_project`), select if it should be private
-or public and add a description if you like.
-Set the check mark for adding a `README` file.
-
-Click on `Create project` and Gitlab will bring you to the repositories main page.
-
-#### Add the repository on Github as a remote to your local repository
-
-To get the address of the remote repository click on the blue button `Clone` 
-on the right. Copy the address under `Clone with SSH`
-
-Now switch back to your local terminal and add this address as a remote with the name origin.
-(Replace the address below with the address of your personal repository)
+You can now push your changes to the remote by running
 
 ```sh
-git remote add origin git@gitlab.com:selinaZitrone/git_test_project.git
-```
-
-## Step 6: Push local changes to the remote with `git push`
-
-You can push your changes to the remote by running
-
-::: {.callout-note}
-
-If your default local branch is called main, then replace 
-`master` with `main` in the command
-
-:::
-
-```sh
-git push --set-upstream origin master
+git push --set-upstream origin main
 ```
 
 Now you will get an error message and a warning, that the remote contains commits
-that you don't have locally. This makes sense, because you added a readme file
-when creating the remote repository.
-In these situation, git prevents you from pushing and you first need to pull all
-changes from the remote (i.e. the `README` file that we initialized on Github/Gitlab)
-before pushing.
+that you don't have locally:
+
+![](img/push_rejected.png)
+
+This makes sense, because you added a readme file when creating the remote repository
+on Github. In these situation, Git prevents you from pushing and you first need to pull all
+changes from the remote.
 
 Just run
 
@@ -292,44 +264,95 @@ git pull
 Now you should be able to run
 
 ```sh
-git push
+git push --set-upstream origin main
 ```
+
+:::{.callout-note}
+
+You only have to do `git push --set-upstream origin main` when you push a branch
+for the first time. Afterwards you can just use `git push`
+
+:::
 
 # Collaboration using branching
 
-## Step 7: Create a new branch with `git branch`
+Git and Github are perfect for collaboration. Let's assume our friend also has a
+cook-book project on Github and we want to work together with them on the book.
 
-In this step, you will create a new branch for a new feature that you want to introduce.
-This branch will later be use to do a pull request on Github.
+If you want to try the workflow by collaborating with yourself, you can just skip
+step 1 and do the other steps with your own instead of your friend's cook book.
 
+## Add collaborators on Github repository
 
-You can create a new branch with the name "my_feature" just run
+To collaborate, your friend needs to add you to their Github project.
+On the Github webpage, they can go to **Settings -> Collaborators -> Add people**:
+
+![](img/gh_add_collaborator.png)
+
+Your friend can then add your Github user name and you will get an invitation email
+for the repository. Accept this invitation and you are now a collaborator on your
+friend's project.
+
+## Step 1: Clone a remote repository
+
+First, we need to clone our friend's repository. This means we pull an entire copy
+of the repository onto our machine. To clone a repository, you need to know the 
+repositories address. You can find the SSH address by clicking on the green code button on Github:
+
+![](img/gh_copy_adress_ssh.png)
+Open the terminal, navigate to a location where you want to clone the project and run:
 
 ```sh
-git branch my_feature
+git clone git@github.com:selinaZitrone/cookBook-Selina.git
+```
+
+(Of course replace the address with the repository you actually want to clone).
+
+Here, I clone my own cookBook-Selina project into the documents folder. Then I use
+`cd` to navigate into the newly cloned project. You can see in the last line that
+I am in a Git repository, because the branch name is indicated in blue:
+
+![](img/git_clone.png)
+
+## Step 2: Create a new branch
+
+To use the collaboration workflow discussed in the lecture, you need to create a new branch
+when you want to do some work. Let's say, I want to add some vegan pie recipe.
+
+
+You can create a new branch with the name "add_vegan_pie" just run
+
+```sh
+git branch add_vegan_pie
 ```
 
 After the branch is created, you need to switch to it with
 
 ```sh
-git checkout my_feature
+git checkout add_vegan_pie
 ```
 
-Now you can start working on your branch and do commits there.
+You can see that I now switched branches (just look at the blue text):
 
-## Step 8: Push your branch to the remote with `git push`
+![](img/git_branch.png)
 
-To make your branch visible to others, you need to push it to the remote repository as well. This works just like with the main branch using `git push`.
+Now you can start working on your branch and do commits there like you learned earlier.
 
-But the first time you push a new branch, you need to specify the upstream by running:
+## Step 3: Publish and push your branch to remote
+
+To make your branch with the vegan pie recipe available for you friend, you need 
+to push the branch to the remote repository on Github. This works just like with the main 
+branch using `git push`.
+
+But again, the first time you push a new branch, you need to specify the upstream by running:
 
 ```sh
-git push --set-upstream origin my_feature
+git push --set-upstream origin add_vegan_pie
 ```
 
-Now your branch should be pushed to Github/Gitlab and you can do a pull request.
+Now your branch should be pushed to Github and you can do a pull request.
 
-## Step 9: Create a pull request
+## Step 4: Create a pull request
 
 See [here](create_pull_request.qmd) for a guide on pull requests.
 
@@ -373,52 +396,19 @@ changes in the pdf anymore, because it was ignored.
   - `git commit HEAD^`
 - push to origin
 
-## Look at the history
+### Merge your new branch with the `main`
 
-Use 
-
-```sh
-git log
-```
-
-to look at the log of your current repository.
-
-If you want a shorter version of your Git history, use 
+If you want to locally integrate changes you did in a separate branch into the main branch,
+you first need to switch back to the main branch:
 
 ```sh
-git log --oneline
-```
-
-## Create a new branch
-
-You can create a new branch with
-
-```sh
-git branch <name_of_branch>
-```
-(replace `<name_of_branch>` with your chosen branch name)
-
-After the branch is created, you need to switch to it with
-
-```sh
-git checkout <name_of_branch>
-```
-
-Now you can start working on your branch and do commits there.
-
-### Merge your new branch with the `master`/`main`
-
-If you want to integrate the changes you did in your separate branch into the master,
-you first need to switch back to the master branch:
-
-```sh
-git checkout master
+git checkout main
 ```
 
 Now merge the commits from your branch with
 
 ```sh
-git merge <name_of_branch>
+git merge add_vegan_pie
 ```
 
 Check if it actually worked with

@@ -2,14 +2,20 @@
 title: "A Git workflow with Github Desktop"
 ---
 
+In this guide, we will create a small cook book project using Git. We will
+add recipes and commit the our repository and then publish the project on Github
+to collaborate with others on it.
+
 # Prerequisites
 
-To follow this workflow you need (see [course preparations](../course_preparation.qmd)
-if you miss anything):
+To follow this workflow you need:
 
 - Git installed
 - Github Desktop installed
-- A Github Account connect to your Github Desktop program
+- A Github account connected to your Github Desktop program
+
+Have a look at the [course preparations](../course_preparation.qmd)
+if you miss anything
 
 # A Git workflow with Github Desktop
 
@@ -17,31 +23,33 @@ if you miss anything):
 
 To initialize a new Git repository with Github Desktop, you have to options: You 
 create an empty project with a repository or you add a repository to an existing 
-project.
+project. For our cook book, we chose option 1 because we don't have an project yet.
 
-### Option 1: Create a new project
+### Option 1: New project
 
 Go to **File -> New repository** (keyboard shortcut Ctrl/Cmd + N)
 
 ![](img/ghd_new_repo.png)
 
-This opens up the dialog box to create a new repository. You can give your repository
-a name, add an optional description and choose where on your computer it should be 
+This opens up the dialog box to create a new repository. 
+You can give your repository a name, add an optional description and choose where on your computer it should be 
 created. You can also initialize the repo with a REAMDE file inside. This is 
 always a good idea as you can use this file to guide users (or you from the
-future) through the repository:
+future) through the repository. For this example, my project looks like this:
 
 ![](img/ghd_new_repo_create.png)
 Click on **Create repository** when you are done.
 
-### Option 2: Add a repository to an existing project
+### Option 2: Existing project
 
-This works similar to Option 1. But instead you go to **File -> Add local repository**
+If you already have a project, that you want to put under version control, you can
+go to **File -> Add local repository**
 (keyboard shortcut Ctrl/Cmd + O)
 
 ![](img/ghd_add_repo.png)
 
-If your project is not Git repository yet, you will get a warning and the program suggest you to **create a repository** instead. Click on that link:
+If your project is not Git repository yet, you will get a warning and the program suggest 
+you to **create a repository** instead. Click on that link:
 
 ![](img/ghd_add_repo_create.png)
 Fill out the dialog box just like in option 1 but leave the project name as 
@@ -49,78 +57,161 @@ suggested by Github Desktop to match the folder name you already created.
 
 Click on **Create repository** when you are done.
 
-## Step 2: Add some files
+## Step 2: Add a recipe
 
-Open your project in your file explorer. In Github Desktop, you can easily do this by going to **Repository -> Show in Explorer**.
+Open your cook book project in the file explorer (**Repository -> Show in Explorer**).
 
-Add a new file `Bob.txt` to your project and add some text to the file. Then switch back to Github Desktop.
+Add a new text file for your favorite recipe. I will add `pie.txt`.
+Add the recipe text to the file, e.g.:
+
+```md
+Ingredients:
+150 g butter
+200 g sugar
+3 eggs
+350 g flour
+1 pkg. baking powder
+juice from one lemon
+
+Mix everything together and put in the oven
+for 45 mins at 200 °C.
+```
+
+After you added a recipe, switch back to Github Desktop.
 
 ### Explore the changes
 
-Github Desktop recorded all the current changes to your project. Have a look at the user interface to see how much information and options it gives you:
+Github Desktop recorded all the changes to your project.
+Have a look at the user interface to see how much information and options it gives you:
 
-![](img/ghd_add_bobtxt.png)
+![](img/ghd_add_pie.png)
 
-Notice, that by default, Github Desktop stages your files (i.e. marks them to be part of the next commit). If you want to remove a file from the staging area, just uncheck the box next to the file.
+Notice, that by default, Github Desktop stages your files (i.e. marks them to be part of the next commit).
+If you want to remove a file from the staging area, just uncheck the box next to the file.
 
 ## Step 3: Make a commit
 
 To commit the changes to your local repository, you need to enter
-a commit message (Github Desktop suggests you something, but you can change it). Optionally, you can add a more detailed description of you changes in the description box below:
+a commit message (Github Desktop suggests you something, but you can change it).
+
+Optionally, you can add a more detailed description of you changes in the 
+description box below:
 
 ![](img/ghd_commit.png)
 
 When you are ready click on **Commit to main**.
 
+:::{.callout-tip}
+Please note that there are guidelines on how to write good commit messages.
+This becomes especially important when collaborating.
+Have a look [here](https://cbea.ms/git-commit/) for some guidelines.
+:::
+
 ### Look at the history
 
-To look at the history of your commits, you can go to the history view of Github desktop. It gives you all the details about previous commits:
+To look at the history of your commits, you can go to the history view
+of Github desktop. It gives you all the details about previous commits:
 
 ![](img/ghd_history.png)
 
 ## Step 4: Create a remote repository and push your changes
 
-In Github Desktop, you can easily create a remote Github repository that corresponds to your local one. On the top right,
-click on **Publish repository** and then check out the dialogue box that opens:
+Now we want to share our cook book with the world. Using Github Desktop makes it
+very easy to publish a repository on Github.
+Just click **Publish repository** on the top right.
+In the dialogue box that opens, you can choose whether to make your code public 
+or keep it private. Optionally, you can add a description which will be displayed on
+Github. This is how my cook book repository looks like:
 
 ![](img/ghd_publish_repo.png)
-
-Leave the name as it is, add an optional description and select whether the Github repository should be private or public.
 When you are done click **Publish repository**.
 
-You can checkout how your Github repository looks online by going to **Repository -> View on GitHub**.
+You can checkout how your Github repository looks online by going to 
+**Repository -> View on GitHub**.
 
 ## Step 5: Push new changes to Github
 
-Whenever you have new changes commited and you can publish then on Github, Github Desktop will tell you this. Just click on one of the two **Push** buttons:
+Once, you published the repository on Github, you can push new changes up there 
+to update the remote repository.
+
+Just continue working locally, add new recipe files, update existing recipes and commit
+the changes when you are done.
+Just click on one of the two **Push** buttons update the Github repository with the
+latest local changes:
 
 ![](img/ghd_push.png)
 
 # Collaboration using branching
 
-## Step 6: Create a new branch
+Git and Github are perfect for collaboration. Let's assume our friend also has a
+cook-book project on Github and we want to work together with them on the book.
 
-To use the collaboration workflow discussed in the lecture, you need to create a new branch when you want to do some work. In Github Desktop, go to **Branch -> New Branch**.
-Give the branch a name and then click on **Create branch**:
+If you want to try the workflow by collaborating with yourself, you can just skip
+step 1 and do the other steps with your own instead of your friend's cook book.
+
+## Add collaborators to Github repository
+
+To collaborate, your friend needs to add you to their Github project.
+On the Github webpage, they can go to **Settings -> Collaborators -> Add people**:
+
+![](img/gh_add_collaborator.png)
+Your friend can then add your Github user name and you will get an invitation email
+for the repository. Accept this invitation and you are now a collaborator on your
+friend's project.
+
+## Step 1: Clone a remote repository
+
+First, we need to clone our friend's repository. This means we pull an entire copy
+of the repository onto our machine. To clone a repository, you need to know the 
+repositories address. You can find the HTTPS address by clicking on the green code button on Github:
+
+![](img/gh_copy_adress.png)
+Go to Github Desktop and **File -> Clone repository**. In the dialogue box that opens
+You can either clone repositories from
+
+- Github.com: Here you can scroll through a list of all your Github repositories. 
+Maybe this list already shows the repository of your friend because you are now a 
+collaborator.
+- URL: Enter the URL of your friends repo that you copied from Github
+
+If you enter the URL, you can select the location where the repository should be stored in:
+
+![](img/ghd_clone.png)
+When you are ready click on **Clone**.
+
+Now you can start working with the repository of your friend.
+
+## Step 2: Create a new branch
+
+To use the collaboration workflow discussed in the lecture, you need to create a new branch
+when you want to do some work. Let's say, I want to add some vegan pie recipe.
+In Github Desktop, go to **Branch -> New Branch**.
+Give the branch a short but meaningful name and then click on **Create branch**:
 
 ![](img/ghd_new_branch.png)
 
-Github Desktop will also automatically switch to this branch for you. You can see your current branch and switch branches on top:
+Github Desktop will also automatically switch to this branch for you. 
+You can see your current branch and switch branches on top:
 
 ![](img/ghd_switch_branch.png)
 
-You can now continue working on this branch. Add new files and changes to the repository and commit them like you are used to.
+Now you can start working on this branch. Add a file for the vegan pie and then
+commit them like you are used to (see how-to above).
 
-## Step 7: Publish and push your branch to remote
+## Step 3: Publish and push your branch to remote
 
-To make your branch visible to others, you need to push it to the remote repository as well. This works just like with the main branch. On the top right, just click on the **Push** button.
-The first time, the button will say **Publish branch** because your branch first needs to be published. Just click it and others can now see your changes in the branch on Github.
+To make your branch with the vegan pie recipe available for you friend, you need 
+to push the branch to the remote repository on Github. This works just like with the main 
+branch. On the top right, just click the **Push** button (The first time, this button will say **Publish branch** instead of Push).
 
-Now your branch should be pushed to Github/Gitlab and you can do a pull request.
+Now your branch should be pushed to Github and you can do a pull request.
 
-## Step 9: Create a pull request
+## Step 4: Create a pull request
 
-See [here](create_pull_request.qmd) for a guide on pull requests.
+See [here](create_pull_request.qmd) for a guide on how to create a pull requests
+to ask your friend to integrate your recipe into their cookbook.
+
+---
 
 # Other things to try
 
