@@ -17,7 +17,6 @@ format:
     theme: slides.scss
     auto-stretch: false
     scrollable: true
-    chalkboard: true
 editor: source
 execute: 
   echo: false
@@ -30,6 +29,11 @@ from: markdown+emoji
 > Scientific programmer @ [theoretical ecology group](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
 
 # Who are you?
+> Biology, Chemistry, Pharmacy, Biochamistry, Veterinary Medicine
+
+## What do you want to learn here?
+
+![](img/day1/who_are_you.png)
 
 ## Aims of the workshop
 
@@ -67,6 +71,8 @@ Enough time to for practice and questions.
 - Next Monday: :clock2: 2.30 - 3.30 p.m.
 
 - Material is all [online](https://selinazitrone.github.io/get-started-with-git/)
+
+- Feedback is very welcome
 
 ## Before we start
 
@@ -111,11 +117,11 @@ Two examples in which proper version control can be a time/stress saver
 
 - Basic idea: Take snapshots (**commits**) of your project over time
 
-- A project version controlled with Git is a Git **repository** (**repo**)
-
 . . .
 
 ![](img/day1/basic_idea.png)
+
+- A project version controlled with Git is a Git **repository** (**repo**)
 
 ## Version control with Git
 
@@ -246,8 +252,7 @@ Standalone Git GUI software, e.g. Github Desktop, Source Tree, ...
 :::{.fragment}
 
 - We will use Github Desktop
-  - Beginner-friendly and intuitive
-  - Very convenient
+  - Beginner-friendly, intuitive and convenient
   - Nice integration with Github
 
 :::
@@ -266,95 +271,33 @@ Have a look at the [website](https://selinazitrone.github.io/get-started-with-gi
 
 > `git init`, `git add`, `git commit`, `git push`
 
-## Step 0: An empty project
+## Example
 
-Example: A cookBook project to collect all our favorite recipes
+A cook book project to collect all my favorite recipes.
 
-:::{.columns}
-
-:::{.column width="70%"}
-
-![](img/day1/0_init_concept.png){width=50%}
-
-:::
-
-:::{.column width="30%"}
-
-![](img/day1/0_init_folder.png){width=80%}
-
-:::
-
-:::
+![](img/day1/basic_idea.png)
 
 ## Step 1: Initialize a Git repository
 
-- Adds a (hidden) `.git` folder to your project
-  - You don't need to interact with this folder directly
+![](img/day1/0_init_concept_folder.png)
 
-. . .
+## Step 1: Initialize a Git repository
 
-:::{.columns}
+![](img/day1/1_init_concept_folder.png)
 
-:::{.column width=70%"}
-
-![](img/day1/1_init_concept.png)
-:::
-
-:::{.column width="30%"}
-
-![](img/day1/1_init_folder.png)
-
-:::
-
-
-:::
-
-## Step 2: Modify files and stage changes
+## Step 2: Add and modify files
 
 Git detects any changes in the working directory
 
-. . .
+![](img/day1/2_modify_concept_folder.png)
 
-:::{.columns}
+## Step 2: Stage changes
 
-:::{.column width="70%"}
-
-![](img/day1/2_modify_concept.png){width=90%}
-
-:::
-
-:::{.column width="30%"}
-
-![](img/day1/2_modify_folder.png){width=80%}
-
-:::
-
-:::
-
-
-## Step 2: Modify files and stage changes
-
-Stage file to be part of the next commit (snapshot)
-
-- In the terminal use `git add`
-- In GUIs just a check box
+Stage file to mark it for the next commit.
 
 . . .
 
-:::{.columns}
-
-:::{.column width="70%"}
-
-![](img/day1/2_add_concept.png){width=90%}
-
-:::
-
-:::{.column width="30%"}
-
-![](img/day1/2_add_folder.png)
-:::
-
-:::
+![](img/day1/2_add_concept_folder.png){width=90%}
 
 ## Step 3: Commit changes
 
@@ -362,49 +305,20 @@ Stage file to be part of the next commit (snapshot)
 
 . . .
 
-:::{.columns}
-
-:::{.column width="70%"}
-
-![](img/day1/3_commit_concept.png)
-
-:::
-
-:::{.column width="30%"}
-
-![](img/day1/2_add_folder.png)
-
-:::
-
-:::
-
-- Collect meaningful bundles of changes in the staging area, then commit
+![](img/day1/3_commit_concept_folder.png)
 
 ## Step 3: Commit changes
 
-- After a commit, the staging area is clear again
-- Changes are now part of the project's Git history
+:::{.nonincremental}
 
-. . .
-
-:::{.columns}
-
-:::{.column width="70%"}
-
-![](img/day1/3_afterCommit_concept.png)
+- Changes are part of Git history and staging area is clear again 
 
 :::
 
-:::{.column width="30%"}
-
-![](img/day1/2_add_folder.png)
-
-:::
-
-:::
+![](img/day1/3_afterCommit_concept_folder.png)
 
 # Now you
-> [Start your own cook book](../sessions/01_intro_git.qmd#Tasks)
+> [Start your own cook book](../sessions/01_intro_git.qmd#Tasks)<br>
 > Complete task 1 "Local repo" (10 min)
 
 Stay in the meeting for the task.<br>
@@ -465,40 +379,21 @@ This is a a really good recipe that I like.
 
 :::
 
-
-## The commit history
-
-::: {layout="[[-1], [1], [-1]]" layout-valign="bottom"}
-
-![](img/day1/commit_info_arrows.png)
-
-:::
-
-## The commit history
-
-![](img/day1/github_desktop_history.png){width=80%}
-
-
-## Step 4: Create and connect a remote repo
+## Step 4: Share changes with the remote repo
 
 - Use remote repos (on a server) to *synchronize*, *share* and *collaborate*
 
 - Remote repos can be *private* (you + collaborators) or
 *public* (visible to anyone)
 
-. . .
-
-
 ![](img/day1/4_remote_concept.png){fig-align="center" width=60%}
 
-## Step 5: Share changes with the remote repo
-
-- Push your local changes to the remote with `git push`
+## Step 4: Share changes with the remote repo
 
 ![](img/day1/4_push_concept.png){fig-align="center" width=60%}
 
 # Now you
-> [Publish your cook book on Github](../sessions/01_intro_git.qmd#Tasks)
+> [Publish your cook book on Github](../sessions/01_intro_git.qmd#Tasks)<br>
 > Complete task 2 "Github" (5 min)
 
 ## A word on remote repositories
@@ -555,7 +450,7 @@ This is a a really good recipe that I like.
 ![](img/day1/commit_history_after_revert.png){width=90%}
 
 # Now you
-> [Revert a part of your recipe](../sessions/01_intro_git.qmd#Tasks)
+> [Revert a part of your recipe](../sessions/01_intro_git.qmd#Tasks)<br>
 > Complete the task 3 "Time travel" (5 min)
 
 # Publish your repositories
