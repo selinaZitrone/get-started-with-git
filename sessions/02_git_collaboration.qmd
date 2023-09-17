@@ -24,8 +24,6 @@ where I talked about basic Git concepts and a simple Git workflow.
 
 [Slides in full screen](../slides/02_git_collaboration.html){target="_blank"} &nbsp;&nbsp;&nbsp; <a href="../slides/02_git_collaboration.pdf" download>Download PDF slides</a>
 
-## Summary
-
 ## Tasks
 
 {{< include tasks/_02_git_collaboration.qmd >}}

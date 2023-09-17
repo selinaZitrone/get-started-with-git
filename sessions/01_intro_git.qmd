@@ -22,9 +22,6 @@ Github.
 
 [Slides in full screen](../slides/01_intro_git.html){target="_blank"} &nbsp;&nbsp;&nbsp; <a href="../slides/01_intro_git.pdf" download>Download PDF slides</a>
 
-## Summary
-
 ## Tasks
 
 {{< include tasks/_01_intro_git.qmd >}}
-
