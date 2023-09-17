@@ -4,12 +4,7 @@ All recipes will be simple text files and changes will be commited to the reposi
 
 The goal of these tasks is to get a first idea and feeling for the basic Git workflow.
 
-In the tasks, I will not describe all steps in detail (e.g. where you have to click exactly).
-
-But if you are stuck at some step you can find help here:
-
-- [A cheatsheet for the Github Desktop GUI](../gh_desktop_cheatsheet.qmd): Explains all the buttons and windows of Github Desktop
-- [A How-To description](../how-tos/git_workflow_gh_desktop.qmd) of the Git workflow with detailed explanations and Screenshots
+If you are stuck in a task, you can have a look at the [A How-To description](../how-tos/git_workflow_gh_desktop.qmd) of the Git workflow with detailed explanations and Screenshots or the steps.
 
 :::{.panel-tabset}
 
@@ -33,7 +28,7 @@ In the dialogue box that opens:
 
 Go to **Repository -> Show in Explorer** to open your project in the explorer.
 
-Do you see the hidden `.git` foder in there?
+Do you see the hidden `.git` folder in there?
 
 If you don't see the `.git` folder you probably have to unhide hidden files.
 
@@ -104,6 +99,8 @@ See how your history has changed.
 
 ### For the fast ones
 
+If you only have 1 commit in your project, make another one (e.g. add a recipe or )
+
 #### Checkout a previous commit
 
 To see your cook book at an earlier stage, select the commit you want to jump back to.
@@ -117,7 +114,7 @@ are now in Detached HEAD mode. If you now look at your cook book files, you will
 that they correspond to an earlier version.
 
 ::: {.callout-note}
-Note that you cannot work on the project in this state. 
+You cannot work on the project in this state. 
 You can only look at the files. 
 :::
 

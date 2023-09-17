@@ -1,13 +1,6 @@
 The goal of these tasks is to get a feeling for a collaborative Git workflow.
 
-In the tasks, I will not describe all steps in detail. 
-
-But if you are stuck somewhere, have a look at the 
-[how-to description](../how-tos/git_workflow_gh_desktop.qmd). 
-
-There you find a guide of every step including screenshots. 
-
-But most of the steps are made very intuitive with Github Desktop and Github.
+If you are stuck in a task, you can have a look at the [A How-To description](../how-tos/git_workflow_gh_desktop.qmd) of the Git workflow with detailed explanations and Screenshots or the steps.
 
 :::{.panel-tabset}
 
@@ -17,26 +10,34 @@ But most of the steps are made very intuitive with Github Desktop and Github.
 
 Use Github Desktop to clone the cook book repository of your partner.
 
+Go to **File -> Clone Repository**.
+
+In the tab "Github.com" you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your partner and clone it to a local path of your choice.
+
+If you don't see your partners repository, switch to the tab "URL". Open your partner's repository on Github (find the correct link [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.
+
+Open your partner's cook book in the explorer to see which files are already in there (**Repository -> Show in Explorer**).
+
 # Branch and merge
 
 ## Try branching and merging in your repo (10 min)
 
-Switch back to your personal cook book repository.
+Make sure that you are in your partner's cook book (check which repository you are in on the top left).
 
 Create a new branch to add a recipe.
 
-Make sure that you are now in the new branch by looking in the top middle of 
-Github Desktop what your current branch is.
+Make sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is.
 
-Now go to your project folder and add a file for the new recipe with some 
+Now go to the project folder and add a file for the new recipe with some 
 recipe instructions in it.
 
-Add and commit that new file to your branch. 
+Add and commit that new recipe to your branch. 
 
 Now switch back to the main branch (click on the "current branch" button on top).
 
-Merge your new branch into the main branch. Then check the commit history to see
-if you branch commit is actually there.
+Merge your new branch into the main branch (**Branch -> Merge into current branch**). Then check the commit history to see if you branch commit is actually there.
+
+Now push to Github.
 
 # Pull requests
 
@@ -58,13 +59,11 @@ Publish and push your branch to Github.
 
 #### Pull request
 
-Open the repository on Github. On top you should already see the option to
-"Compare and pull request". Open a pull request and describe your changes.
+Open the repository on Github. On top you should already see the option to "Compare and pull request". Open a pull request and describe your changes.
 
 #### Review pull request on your repo
 
-Now it's time to look at the pull request your partner left in your repository
-and decide if you want to merge it or not.
+Now it's time to look at the pull request your partner left in your repository and decide if you want to merge it or not.
 
 Try to comment on single lines of code asking for changes.
 
