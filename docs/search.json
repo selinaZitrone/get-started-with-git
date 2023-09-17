@@ -1,31 +1,38 @@
 [
   {
+    "objectID": "slides/02_git_collaboration.html#before-we-start",
+    "href": "slides/02_git_collaboration.html#before-we-start",
+    "title": "Introduction to version control with Git",
+    "section": "Before we start",
+    "text": "Before we start\nDid everyone accept the invitation to the cook book of their partner?"
+  },
+  {
     "objectID": "slides/02_git_collaboration.html#recap",
     "href": "slides/02_git_collaboration.html#recap",
     "title": "Introduction to version control with Git",
     "section": "Recap",
-    "text": "Recap\n\n\nThe basic Git workflow consists of the following steps:\n\nInitialize a Git repository\nWork on the project\nStage and commit files to the local repository\nPublish the repository on a remote server\nPush future changes to the remote repository"
+    "text": "Recap\n\n\nBasic Git workflow:\n\n\nInitialize a Git repository\nWork on the project\nStage and commit files to the local repository\nPush future changes to the remote repository"
   },
   {
-    "objectID": "slides/02_git_collaboration.html#version-control-with-git",
-    "href": "slides/02_git_collaboration.html#version-control-with-git",
+    "objectID": "slides/02_git_collaboration.html#recap-1",
+    "href": "slides/02_git_collaboration.html#recap-1",
     "title": "Introduction to version control with Git",
-    "section": "Version control with Git",
-    "text": "Version control with Git\nGit is a distributed version control system\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\nWhat we still miss: From remote to local\n\nThis is essential for collaboration"
+    "section": "Recap",
+    "text": "Recap\n\n\nBasic Git workflow:\n\n\nInitialize a Git repository\nWork on the project\nStage and commit files to the local repository\nPush future changes to the remote repository"
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#recap-2",
+    "href": "slides/02_git_collaboration.html#recap-2",
+    "title": "Introduction to version control with Git",
+    "section": "Recap",
+    "text": "Recap\nGit is a distributed version control system\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\nCollaborate with\n\nyourself on different machines\nyour colleagues and friends\nstrangers on open source projects"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-a-repo-from-a-remote",
     "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote",
     "title": "Introduction to version control with Git",
     "section": "Get a repo from a remote",
-    "text": "Get a repo from a remote\n\n\n\nIn Git language, this is called cloning\nGet a copy of your own repository on a different machine\nGet the repository from somebody else to collaborate"
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-1",
-    "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-1",
-    "title": "Introduction to version control with Git",
-    "section": "Get a repo from a remote",
-    "text": "Get a repo from a remote\nBy cloning, you get a full copy of the repository on your machine.\n\n\n\n\n\n\n\nIf the clone is authorized it can also commit and push"
+    "text": "Get a repo from a remote\n\nIn Git language, this is called cloning\n\nGet a full copy of the remote repo\n\n\n\n\n\n\n\n\n\nIf the clone is authorized it can also commit and push"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-changes-from-the-remote",
@@ -56,6 +63,13 @@
     "text": "A simple collaboration workflow\n\n\nThis workflow starts to be problematic when\n\nPeople push often\n\nConflicts on main\n\nNot possible to discuss code before integration\nDifficult to just “try something out”\n\nEverything goes directly to main"
   },
   {
+    "objectID": "slides/02_git_collaboration.html#lets-give-it-a-try",
+    "href": "slides/02_git_collaboration.html#lets-give-it-a-try",
+    "title": "Introduction to version control with Git",
+    "section": "Let’s give it a try",
+    "text": "Let’s give it a try\n\nOpen a recipe in the cook book of your partner\nChange something in there\nCommit the change and push it\n\n\n\nNow switch to your own cook book\nPull the change that your partner just did\nCheckout what they changed in the history tab"
+  },
+  {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow",
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow",
     "title": "Introduction to version control with Git",
@@ -67,7 +81,7 @@
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-1",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow",
-    "text": "A branching-merging workflow\n\n\nAdvantages of this approach\n\nGuarantee that main always works\nPotential conflicts don’t have to be solved on main"
+    "text": "A branching-merging workflow\n\n\nAdvantages of this approach\n\nGuarantee that main always works\nPotential conflicts don’t have to be solved on main\nYou can just “try something out”"
   },
   {
     "objectID": "slides/02_git_collaboration.html#working-on-a-separate-branch",
@@ -98,6 +112,13 @@
     "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\n\nMostly merging happens without problems, but…\n… if the same line was edited on separate branches…\n… there will be a merge conflict 😱\n\n\n\nMerge conflicts need to be solved manually. You need to chose which of the conflicting versions you want to keep."
   },
   {
+    "objectID": "slides/02_git_collaboration.html#before-we-continue",
+    "href": "slides/02_git_collaboration.html#before-we-continue",
+    "title": "Introduction to version control with Git",
+    "section": "Before we continue",
+    "text": "Before we continue\nYou partner now has pushed some changes to your cook book.\nGet the changes from the remote. In Github Desktop\n\nSwitch to your own cook book repository\nClick the pull button (same as push)\nHave a look at the commit history to see your partner’s changes"
+  },
+  {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github",
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github",
     "title": "Introduction to version control with Git",
@@ -119,11 +140,18 @@
     "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\n\nGithub has nice features for pull requests:\n\nDescribe your changes in detail\nCollaborators can easily compare versions\nCollaborators can discuss and comment on your changes\n…"
   },
   {
+    "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-3",
+    "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-3",
+    "title": "Introduction to version control with Git",
+    "section": "A branching-merging workflow with Github",
+    "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\nA pull request is merged on Github when everyone agreed on the code."
+  },
+  {
     "objectID": "slides/02_git_collaboration.html#next-week",
     "href": "slides/02_git_collaboration.html#next-week",
     "title": "Introduction to version control with Git",
     "section": "Next week",
-    "text": "Next week\n\n\nBranching, Merging and Collaboration with Git"
+    "text": "Next week\nIdea: Questions and problems often arise when working with the tool.\nUntil then\nWork with Git (~ 2 h), e.g.\n\nStart using version control for you own projects\nCreate a cook book project using the terminal\nTry to use Git from R (see How-To)\n…\n\nWrite down your problems/questions/other Git things you are interested in.\nNext week we will - Discuss your questions - Look at other interesting Git things todo - e.g. Use Git from R, VS Code - Use Github to publish websites - …\n\n\nBranching, Merging and Collaboration with Git"
   },
   {
     "objectID": "sessions/02_git_collaboration.html",
@@ -140,32 +168,25 @@
     "text": "Apart from letting you track your changes over time in your individual projects, Git is also very powerful when it comes to collaboration with other people. In combination with a platform such as Github or Gitlab, you can seamlessly collaborate without losing the overview of your project.\nThis session will be about:\n\nBranching and merging with Git\nA collaboration workflow with Github\n\nCheck out the previous session if you missed it, where I talked about basic Git concepts and a simple Git workflow.\n\nSlides in full screen     Download PDF slides"
   },
   {
-    "objectID": "sessions/02_git_collaboration.html#summary",
-    "href": "sessions/02_git_collaboration.html#summary",
-    "title": "A collaboration workflows with Git",
-    "section": "Summary",
-    "text": "Summary"
-  },
-  {
     "objectID": "sessions/02_git_collaboration.html#tasks",
     "href": "sessions/02_git_collaboration.html#tasks",
     "title": "A collaboration workflows with Git",
     "section": "Tasks",
-    "text": "Tasks\nThe goal of these tasks is to get a feeling for a collaborative Git workflow.\nIn the tasks, I will not describe all steps in detail.\nBut if you are stuck somewhere, have a look at the how-to description.\nThere you find a guide of every step including screenshots.\nBut most of the steps are made very intuitive with Github Desktop and Github.\n\n1 CloneBranch and mergePull requests\n\n\n\nClone the cook book repo of your partner (5 min)\nUse Github Desktop to clone the cook book repository of your partner.\n\n\n\n\nTry branching and merging in your repo (10 min)\nSwitch back to your personal cook book repository.\nCreate a new branch to add a recipe.\nMake sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is.\nNow go to your project folder and add a file for the new recipe with some recipe instructions in it.\nAdd and commit that new file to your branch.\nNow switch back to the main branch (click on the “current branch” button on top).\nMerge your new branch into the main branch. Then check the commit history to see if you branch commit is actually there.\n\n\n\n\nMake a pull request in your partner’s repo (20 min)\nNow it’s time to modify something in your partner’s cook book. Switch to their repository and create a new branch for your changes.\n\nMake some changes\nChange two things in your partner’s cook book and commit them using 2 separate commits:\n\nAdd a new file with a new recipe\nOpen one of their recipes and make a change there. E.g. you can add or replace some ingredients.\n\n\n\nPush\nPublish and push your branch to Github.\n\n\nPull request\nOpen the repository on Github. On top you should already see the option to “Compare and pull request”. Open a pull request and describe your changes.\n\n\nReview pull request on your repo\nNow it’s time to look at the pull request your partner left in your repository and decide if you want to merge it or not.\nTry to comment on single lines of code asking for changes."
+    "text": "Tasks\nThe goal of these tasks is to get a feeling for a collaborative Git workflow.\nIf you are stuck in a task, you can have a look at the A How-To description of the Git workflow with detailed explanations and Screenshots or the steps.\n\n1 CloneBranch and mergePull requests\n\n\n\nClone the cook book repo of your partner (5 min)\nUse Github Desktop to clone the cook book repository of your partner.\nGo to File -&gt; Clone Repository.\nIn the tab “Github.com” you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your partner and clone it to a local path of your choice.\nIf you don’t see your partners repository, switch to the tab “URL”. Open your partner’s repository on Github (find the correct link here). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.\nOpen your partner’s cook book in the explorer to see which files are already in there (Repository -&gt; Show in Explorer).\n\n\n\n\nTry branching and merging in your repo (10 min)\nMake sure that you are in your partner’s cook book (check which repository you are in on the top left).\nCreate a new branch to add a recipe.\nMake sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is.\nNow go to the project folder and add a file for the new recipe with some recipe instructions in it.\nAdd and commit that new recipe to your branch.\nNow switch back to the main branch (click on the “current branch” button on top).\nMerge your new branch into the main branch (Branch -&gt; Merge into current branch). Then check the commit history to see if you branch commit is actually there.\nNow push to Github.\n\n\n\n\nMake a pull request in your partner’s repo (20 min)\nNow it’s time to modify something in your partner’s cook book. Switch to their repository and create a new branch for your changes.\n\nMake some changes\nChange two things in your partner’s cook book and commit them using 2 separate commits:\n\nAdd a new file with a new recipe\nOpen one of their recipes and make a change there. E.g. you can add or replace some ingredients.\n\n\n\nPush\nPublish and push your branch to Github.\n\n\nPull request\nOpen the repository on Github. On top you should already see the option to “Compare and pull request”. Open a pull request and describe your changes.\n\n\nReview pull request on your repo\nNow it’s time to look at the pull request your partner left in your repository and decide if you want to merge it or not.\nTry to comment on single lines of code asking for changes."
   },
   {
     "objectID": "sessions/02_git_collaboration.html#clone-the-cook-book-repo-of-your-partner-5-min",
     "href": "sessions/02_git_collaboration.html#clone-the-cook-book-repo-of-your-partner-5-min",
     "title": "A collaboration workflows with Git",
     "section": "Clone the cook book repo of your partner (5 min)",
-    "text": "Clone the cook book repo of your partner (5 min)\nUse Github Desktop to clone the cook book repository of your partner."
+    "text": "Clone the cook book repo of your partner (5 min)\nUse Github Desktop to clone the cook book repository of your partner.\nGo to File -&gt; Clone Repository.\nIn the tab “Github.com” you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your partner and clone it to a local path of your choice.\nIf you don’t see your partners repository, switch to the tab “URL”. Open your partner’s repository on Github (find the correct link here). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.\nOpen your partner’s cook book in the explorer to see which files are already in there (Repository -&gt; Show in Explorer)."
   },
   {
     "objectID": "sessions/02_git_collaboration.html#try-branching-and-merging-in-your-repo-10-min",
     "href": "sessions/02_git_collaboration.html#try-branching-and-merging-in-your-repo-10-min",
     "title": "A collaboration workflows with Git",
     "section": "Try branching and merging in your repo (10 min)",
-    "text": "Try branching and merging in your repo (10 min)\nSwitch back to your personal cook book repository.\nCreate a new branch to add a recipe.\nMake sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is.\nNow go to your project folder and add a file for the new recipe with some recipe instructions in it.\nAdd and commit that new file to your branch.\nNow switch back to the main branch (click on the “current branch” button on top).\nMerge your new branch into the main branch. Then check the commit history to see if you branch commit is actually there."
+    "text": "Try branching and merging in your repo (10 min)\nMake sure that you are in your partner’s cook book (check which repository you are in on the top left).\nCreate a new branch to add a recipe.\nMake sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is.\nNow go to the project folder and add a file for the new recipe with some recipe instructions in it.\nAdd and commit that new recipe to your branch.\nNow switch back to the main branch (click on the “current branch” button on top).\nMerge your new branch into the main branch (Branch -&gt; Merge into current branch). Then check the commit history to see if you branch commit is actually there.\nNow push to Github."
   },
   {
     "objectID": "sessions/02_git_collaboration.html#make-a-pull-request-in-your-partners-repo-20-min",
@@ -532,25 +553,18 @@
     "text": "Git is an essential skill if you use any programming language. It allows you to keep track of changes to your project over time, collaborate with others, and maintain a clear and organized project structure. This can save time, improve research efficiency, and also makes it easy to publish your code via platforms such as Github. This session will be about:\n\nThe basic concepts behind Git\nA simple Git workflow for you individual projects\nPublishing projects on Github\n\nIn the next session, I will talk about a collaborative workflow using Git and Github.\n\nSlides in full screen     Download PDF slides"
   },
   {
-    "objectID": "sessions/01_intro_git.html#summary",
-    "href": "sessions/01_intro_git.html#summary",
-    "title": "A basic Git workflow in theory and practice",
-    "section": "Summary",
-    "text": "Summary"
-  },
-  {
     "objectID": "sessions/01_intro_git.html#tasks",
     "href": "sessions/01_intro_git.html#tasks",
     "title": "A basic Git workflow in theory and practice",
     "section": "Tasks",
-    "text": "Tasks\nIn these tasks, you will create your own Git cook book 🍜.\nAll recipes will be simple text files and changes will be commited to the repository.\nThe goal of these tasks is to get a first idea and feeling for the basic Git workflow.\nIn the tasks, I will not describe all steps in detail (e.g. where you have to click exactly).\nBut if you are stuck at some step you can find help here:\n\nA cheatsheet for the Github Desktop GUI: Explains all the buttons and windows of Github Desktop\nA How-To description of the Git workflow with detailed explanations and Screenshots\n\n\n1 Local repo2 Github3 Time travelExtra\n\n\n\nCreate your own Git cook book 🍜 (10 min)\n\nCreate a new repository\nOpen Github Desktop and create a new repository (File -&gt; New repository) for your cook book project.\nIn the dialogue box that opens:\n\nGive it the following name: cookBook-yourName (replacing yourName with your name)\n\nThis is necessary for tomorrow when we collaborate\n\nSelect where on your computer you want the cook book to be stored\nCheck the box to initialize with a README file\n\n\n\nOpen your project in the explorer\nGo to Repository -&gt; Show in Explorer to open your project in the explorer.\nDo you see the hidden .git foder in there?\nIf you don’t see the .git folder you probably have to unhide hidden files.\nIn the Windows explorer, go to View and then check the Hidden items checkbox:\n\nIn the Mac finder, you can just hit ‘Command’ + ‘Shift’ + ‘.’ (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.\n\n\nAdd a recipe\nAdd a recipe to your project. Start with a file for your favorite dish. Create and open the file in a text editor. Then add the recipe to the file (you can also invent something - don’t spend much time actually writing a recipe, just add some lines of text)\n\n\nCommit your changes\nSwitch back to Github Desktop and have a look at the interface. You should see the recipe file you created and the changes you made to the file. Commit your changes by entering a commit message and optional description and and then clicking the commit button.\n\n\nFor the fast ones:\n\nAdd another recipe and commit it to your repository\nMake a change to your first recipe and commit this change\nTry adding and commiting other file formats (e.g. a png picture of your dish, a pdf file, …)\n\n\n\n\n\n\nPublish your project on Github (10 mins)\nPublish your cook book project on Github (Publish button on the top right). In the dialogue that opens, chose to make your project public (this is easier for the collaboration session tomorrow).\n\nCheck out your brand-new Github repository\nCheck out how your repository on Github looks like. You can find via Repository -&gt;View on GitHub or by logging into your Github account in the browser.\nHave a brief look around in your Github repository. Which buttons are there and what do they do? How do your files look like?\n\n\n\nFor the fast ones\nSwitch back to your local repo and\n\nAdd or change recipes\nWork on the README file and add some information about your cook book project there\n\nCommit and push these new changes to Github and check out how they look online.\n\n\n\n\nGo back in time in your repository (5 min)\nFirst, have a brief look at the history of your repository in Github Desktop.\n\nRevert a commit\nChose a commit that you want to revert. Select the commit and right-click to revert it. See how your history has changed.\n\n\nFor the fast ones\n\nCheckout a previous commit\nTo see your cook book at an earlier stage, select the commit you want to jump back to. Then right-click and checkout this commit.\nYou will get a warning that you will create a detached HEAD state. This is ok, so checkout anyways.\nSee how your history changed. You can also see on top of Github Desktop, that you are now in Detached HEAD mode. If you now look at your cook book files, you will see\nthat they correspond to an earlier version.\n\n\n\n\n\n\nNote\n\n\n\nNote that you cannot work on the project in this state. You can only look at the files.\n\n\nTo come back to the current state, click on the current branch button at the top and select the main branch again\n\n\n\n\n\n\nIgnore files (5 min)\nWe only want actual recipe files in our project. All other files should be ignored.\n\nAdd a .gitignore file\nFind a random file on your computer and copy it into your cook book project.\nCheck if Github Desktop recognized the change to your repository, but DO NOT COMMIT this file.\nThis file does not belong to your cook book, so it should be ignored by Git.\nGo to Repository-&gt; Repository settings -&gt; Ignored files.\nEnter the file name of the new file in the window of ignored files.\nThen check the Changes view of Github Desktop. What is different now?\nHave a look at the newly created .gitignore file"
+    "text": "Tasks\nIn these tasks, you will create your own Git cook book 🍜.\nAll recipes will be simple text files and changes will be commited to the repository.\nThe goal of these tasks is to get a first idea and feeling for the basic Git workflow.\nIf you are stuck in a task, you can have a look at the A How-To description of the Git workflow with detailed explanations and Screenshots or the steps.\n\n1 Local repo2 Github3 Time travelExtra\n\n\n\nCreate your own Git cook book 🍜 (10 min)\n\nCreate a new repository\nOpen Github Desktop and create a new repository (File -&gt; New repository) for your cook book project.\nIn the dialogue box that opens:\n\nGive it the following name: cookBook-yourName (replacing yourName with your name)\n\nThis is necessary for tomorrow when we collaborate\n\nSelect where on your computer you want the cook book to be stored\nCheck the box to initialize with a README file\n\n\n\nOpen your project in the explorer\nGo to Repository -&gt; Show in Explorer to open your project in the explorer.\nDo you see the hidden .git folder in there?\nIf you don’t see the .git folder you probably have to unhide hidden files.\nIn the Windows explorer, go to View and then check the Hidden items checkbox:\n\nIn the Mac finder, you can just hit ‘Command’ + ‘Shift’ + ‘.’ (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.\n\n\nAdd a recipe\nAdd a recipe to your project. Start with a file for your favorite dish. Create and open the file in a text editor. Then add the recipe to the file (you can also invent something - don’t spend much time actually writing a recipe, just add some lines of text)\n\n\nCommit your changes\nSwitch back to Github Desktop and have a look at the interface. You should see the recipe file you created and the changes you made to the file. Commit your changes by entering a commit message and optional description and and then clicking the commit button.\n\n\nFor the fast ones:\n\nAdd another recipe and commit it to your repository\nMake a change to your first recipe and commit this change\nTry adding and commiting other file formats (e.g. a png picture of your dish, a pdf file, …)\n\n\n\n\n\n\nPublish your project on Github (10 mins)\nPublish your cook book project on Github (Publish button on the top right). In the dialogue that opens, chose to make your project public (this is easier for the collaboration session tomorrow).\n\nCheck out your brand-new Github repository\nCheck out how your repository on Github looks like. You can find via Repository -&gt;View on GitHub or by logging into your Github account in the browser.\nHave a brief look around in your Github repository. Which buttons are there and what do they do? How do your files look like?\n\n\n\nFor the fast ones\nSwitch back to your local repo and\n\nAdd or change recipes\nWork on the README file and add some information about your cook book project there\n\nCommit and push these new changes to Github and check out how they look online.\n\n\n\n\nGo back in time in your repository (5 min)\nFirst, have a brief look at the history of your repository in Github Desktop.\n\nRevert a commit\nChose a commit that you want to revert. Select the commit and right-click to revert it. See how your history has changed.\n\n\nFor the fast ones\nIf you only have 1 commit in your project, make another one (e.g. add a recipe or )\n\nCheckout a previous commit\nTo see your cook book at an earlier stage, select the commit you want to jump back to. Then right-click and checkout this commit.\nYou will get a warning that you will create a detached HEAD state. This is ok, so checkout anyways.\nSee how your history changed. You can also see on top of Github Desktop, that you are now in Detached HEAD mode. If you now look at your cook book files, you will see\nthat they correspond to an earlier version.\n\n\n\n\n\n\nNote\n\n\n\nYou cannot work on the project in this state. You can only look at the files.\n\n\nTo come back to the current state, click on the current branch button at the top and select the main branch again\n\n\n\n\n\n\nIgnore files (5 min)\nWe only want actual recipe files in our project. All other files should be ignored.\n\nAdd a .gitignore file\nFind a random file on your computer and copy it into your cook book project.\nCheck if Github Desktop recognized the change to your repository, but DO NOT COMMIT this file.\nThis file does not belong to your cook book, so it should be ignored by Git.\nGo to Repository-&gt; Repository settings -&gt; Ignored files.\nEnter the file name of the new file in the window of ignored files.\nThen check the Changes view of Github Desktop. What is different now?\nHave a look at the newly created .gitignore file"
   },
   {
     "objectID": "sessions/01_intro_git.html#create-your-own-git-cook-book-10-min",
     "href": "sessions/01_intro_git.html#create-your-own-git-cook-book-10-min",
     "title": "A basic Git workflow in theory and practice",
     "section": "Create your own Git cook book 🍜 (10 min)",
-    "text": "Create your own Git cook book 🍜 (10 min)\n\nCreate a new repository\nOpen Github Desktop and create a new repository (File -&gt; New repository) for your cook book project.\nIn the dialogue box that opens:\n\nGive it the following name: cookBook-yourName (replacing yourName with your name)\n\nThis is necessary for tomorrow when we collaborate\n\nSelect where on your computer you want the cook book to be stored\nCheck the box to initialize with a README file\n\n\n\nOpen your project in the explorer\nGo to Repository -&gt; Show in Explorer to open your project in the explorer.\nDo you see the hidden .git foder in there?\nIf you don’t see the .git folder you probably have to unhide hidden files.\nIn the Windows explorer, go to View and then check the Hidden items checkbox:\n\nIn the Mac finder, you can just hit ‘Command’ + ‘Shift’ + ‘.’ (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.\n\n\nAdd a recipe\nAdd a recipe to your project. Start with a file for your favorite dish. Create and open the file in a text editor. Then add the recipe to the file (you can also invent something - don’t spend much time actually writing a recipe, just add some lines of text)\n\n\nCommit your changes\nSwitch back to Github Desktop and have a look at the interface. You should see the recipe file you created and the changes you made to the file. Commit your changes by entering a commit message and optional description and and then clicking the commit button.\n\n\nFor the fast ones:\n\nAdd another recipe and commit it to your repository\nMake a change to your first recipe and commit this change\nTry adding and commiting other file formats (e.g. a png picture of your dish, a pdf file, …)"
+    "text": "Create your own Git cook book 🍜 (10 min)\n\nCreate a new repository\nOpen Github Desktop and create a new repository (File -&gt; New repository) for your cook book project.\nIn the dialogue box that opens:\n\nGive it the following name: cookBook-yourName (replacing yourName with your name)\n\nThis is necessary for tomorrow when we collaborate\n\nSelect where on your computer you want the cook book to be stored\nCheck the box to initialize with a README file\n\n\n\nOpen your project in the explorer\nGo to Repository -&gt; Show in Explorer to open your project in the explorer.\nDo you see the hidden .git folder in there?\nIf you don’t see the .git folder you probably have to unhide hidden files.\nIn the Windows explorer, go to View and then check the Hidden items checkbox:\n\nIn the Mac finder, you can just hit ‘Command’ + ‘Shift’ + ‘.’ (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.\n\n\nAdd a recipe\nAdd a recipe to your project. Start with a file for your favorite dish. Create and open the file in a text editor. Then add the recipe to the file (you can also invent something - don’t spend much time actually writing a recipe, just add some lines of text)\n\n\nCommit your changes\nSwitch back to Github Desktop and have a look at the interface. You should see the recipe file you created and the changes you made to the file. Commit your changes by entering a commit message and optional description and and then clicking the commit button.\n\n\nFor the fast ones:\n\nAdd another recipe and commit it to your repository\nMake a change to your first recipe and commit this change\nTry adding and commiting other file formats (e.g. a png picture of your dish, a pdf file, …)"
   },
   {
     "objectID": "sessions/01_intro_git.html#publish-your-project-on-github-10-mins",
@@ -571,7 +585,7 @@
     "href": "sessions/01_intro_git.html#go-back-in-time-in-your-repository-5-min",
     "title": "A basic Git workflow in theory and practice",
     "section": "Go back in time in your repository (5 min)",
-    "text": "Go back in time in your repository (5 min)\nFirst, have a brief look at the history of your repository in Github Desktop.\n\nRevert a commit\nChose a commit that you want to revert. Select the commit and right-click to revert it. See how your history has changed.\n\n\nFor the fast ones\n\nCheckout a previous commit\nTo see your cook book at an earlier stage, select the commit you want to jump back to. Then right-click and checkout this commit.\nYou will get a warning that you will create a detached HEAD state. This is ok, so checkout anyways.\nSee how your history changed. You can also see on top of Github Desktop, that you are now in Detached HEAD mode. If you now look at your cook book files, you will see\nthat they correspond to an earlier version.\n\n\n\n\n\n\nNote\n\n\n\nNote that you cannot work on the project in this state. You can only look at the files.\n\n\nTo come back to the current state, click on the current branch button at the top and select the main branch again"
+    "text": "Go back in time in your repository (5 min)\nFirst, have a brief look at the history of your repository in Github Desktop.\n\nRevert a commit\nChose a commit that you want to revert. Select the commit and right-click to revert it. See how your history has changed.\n\n\nFor the fast ones\nIf you only have 1 commit in your project, make another one (e.g. add a recipe or )\n\nCheckout a previous commit\nTo see your cook book at an earlier stage, select the commit you want to jump back to. Then right-click and checkout this commit.\nYou will get a warning that you will create a detached HEAD state. This is ok, so checkout anyways.\nSee how your history changed. You can also see on top of Github Desktop, that you are now in Detached HEAD mode. If you now look at your cook book files, you will see\nthat they correspond to an earlier version.\n\n\n\n\n\n\nNote\n\n\n\nYou cannot work on the project in this state. You can only look at the files.\n\n\nTo come back to the current state, click on the current branch button at the top and select the main branch again"
   },
   {
     "objectID": "sessions/01_intro_git.html#ignore-files-5-min",
@@ -581,39 +595,39 @@
     "text": "Ignore files (5 min)\nWe only want actual recipe files in our project. All other files should be ignored.\n\nAdd a .gitignore file\nFind a random file on your computer and copy it into your cook book project.\nCheck if Github Desktop recognized the change to your repository, but DO NOT COMMIT this file.\nThis file does not belong to your cook book, so it should be ignored by Git.\nGo to Repository-&gt; Repository settings -&gt; Ignored files.\nEnter the file name of the new file in the window of ignored files.\nThen check the Changes view of Github Desktop. What is different now?\nHave a look at the newly created .gitignore file"
   },
   {
-    "objectID": "slides/01_intro_git.html#welcome-to-the-workshop",
-    "href": "slides/01_intro_git.html#welcome-to-the-workshop",
+    "objectID": "slides/01_intro_git.html#aims-of-the-workshop",
+    "href": "slides/01_intro_git.html#aims-of-the-workshop",
     "title": "Introduction to version control with Git",
-    "section": "Welcome to the workshop",
-    "text": "Welcome to the workshop\nWho am I?\n\nScientific programmer theoretical ecology lab\n\n. . .\nWho are you?\n\nLarge range of topics and reserach interests\nDifferent prior Git experience and expectations"
+    "section": "Aims of the workshop",
+    "text": "Aims of the workshop\nGit is a huge topic and Git is very powerful.\n\nLearn simple Git workflows in theory and practice that you can immediately apply to your research projects.\n\n\nEnough time to for practice and questions."
   },
   {
-    "objectID": "slides/01_intro_git.html#welcome-to-the-workshop-1",
-    "href": "slides/01_intro_git.html#welcome-to-the-workshop-1",
+    "objectID": "slides/01_intro_git.html#topics",
+    "href": "slides/01_intro_git.html#topics",
     "title": "Introduction to version control with Git",
-    "section": "Welcome to the workshop",
-    "text": "Welcome to the workshop\nGit is a huge topic because and git is very powerful. Most of the things are best to learn as you need them.\n\nAim of this workshop\nGet started with simple workflows. Learn the rest as you need it.\nSession 1\n\nIntroduction to Git concepts\nSimple Git workflow for your own projects\n\nSession 2\n\nCollaborate using Git and Github"
+    "section": "Topics",
+    "text": "Topics\nToday\n\nIntroduction to Git concepts\nSimple Git workflow for your own projects\n\nTomorrow\n\nCollaborate using Git and Github\n\nNext Monday\n\nQ&A\nAdvanced topics\nUntil then: work with Git on your own projects"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#organization",
+    "href": "slides/01_intro_git.html#organization",
+    "title": "Introduction to version control with Git",
+    "section": "Organization",
+    "text": "Organization\n\nToday and tomorrow: 🕑 2.30 - 4 p.m.\nNext Monday: 🕑 2.30 - 3.30 p.m.\nMaterial is all online"
   },
   {
     "objectID": "slides/01_intro_git.html#before-we-start",
     "href": "slides/01_intro_git.html#before-we-start",
     "title": "Introduction to version control with Git",
     "section": "Before we start",
-    "text": "Before we start\nOrganisation\n\nToday and tomorrow: 🕑 2.30 - 4 p.m.\n\nTheoretical input + practical exercises\n\nNext Monday: 🕑 2.30 - 3.30 p.m.\n\nClarify questions and problems, talk about more advanced features, …\nUntil then: Start working on a small Git project\n\nMaterial is all online"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#before-we-start-1",
-    "href": "slides/01_intro_git.html#before-we-start-1",
-    "title": "Introduction to version control with Git",
-    "section": "Before we start",
-    "text": "Before we start\nDid anyone have problems with the workshop preparation?"
+    "text": "Before we start\nDid anyone have problems with the workshop preparation?\n\n\nInstall Git\nInstall Github Desktop\nGet a Github account and connect it with Github Desktop"
   },
   {
     "objectID": "slides/01_intro_git.html#why-version-control",
     "href": "slides/01_intro_git.html#why-version-control",
     "title": "Introduction to version control with Git",
     "section": "Why version control?",
-    "text": "Why version control?\nTwo examples in which proper version control can be a life/time saver"
+    "text": "Why version control?\nTwo examples in which proper version control can be a time/stress saver"
   },
   {
     "objectID": "slides/01_intro_git.html#version-control-with-git",
@@ -623,18 +637,18 @@
     "text": "Version control with Git\n\nComplete and long-term history of every file in your project\nOpen source and free to use version control software\nQuasi standard for software development\nA whole universe of other software and services around it"
   },
   {
-    "objectID": "slides/01_intro_git.html#the-basic-idea-of-git",
-    "href": "slides/01_intro_git.html#the-basic-idea-of-git",
-    "title": "Introduction to version control with Git",
-    "section": "The basic idea of Git",
-    "text": "The basic idea of Git\n\nFor projects with mainly text files (e.g. code, markdown files, …)\nBasic idea: Take snapshots (commits) of your project over time\nA project version controlled with Git is a Git repository (repo)"
-  },
-  {
     "objectID": "slides/01_intro_git.html#version-control-with-git-1",
     "href": "slides/01_intro_git.html#version-control-with-git-1",
     "title": "Introduction to version control with Git",
     "section": "Version control with Git",
-    "text": "Version control with Git\nGit is a distributed version control system\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\nEveryone has a complete copy of the repo"
+    "text": "Version control with Git\n\nFor projects with mainly text files (e.g. code, markdown files, …)\nBasic idea: Take snapshots (commits) of your project over time\nA project version controlled with Git is a Git repository (repo)"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#version-control-with-git-2",
+    "href": "slides/01_intro_git.html#version-control-with-git-2",
+    "title": "Introduction to version control with Git",
+    "section": "Version control with Git",
+    "text": "Version control with Git\nGit is a distributed version control system\n\n\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\nEveryone has a complete copy of the repo"
   },
   {
     "objectID": "slides/01_intro_git.html#how-to-use-git",
@@ -648,42 +662,42 @@
     "href": "slides/01_intro_git.html#how-to-use-git---terminal",
     "title": "Introduction to version control with Git",
     "section": "How to use Git - Terminal",
-    "text": "How to use Git - Terminal\nUsing Git from the terminal\n\n\n\n\n➕ Most control\n➕ A lot of help/answers online\n\n➖ You need to use terminal 😱"
+    "text": "How to use Git - Terminal\nUsing Git from the terminal\n\n\n\n\n➕ Most control\n➕ A lot of help/answers online\n\n\n➖ You need to use terminal 😱"
   },
   {
     "objectID": "slides/01_intro_git.html#how-to-use-git---integrated-guis",
     "href": "slides/01_intro_git.html#how-to-use-git---integrated-guis",
     "title": "Introduction to version control with Git",
     "section": "How to use Git - Integrated GUIs",
-    "text": "How to use Git - Integrated GUIs\nA Git GUI is integrated in most (all?) IDEs, e.g. R Studio, VS Code\n\n\n\n\n\n\n\n\n\n\n➕ Easy and intuitive \n➕ Stay inside IDE\n\n➖ Different for every program"
+    "text": "How to use Git - Integrated GUIs\nA Git GUI is integrated in most (all?) IDEs, e.g. R Studio, VS Code\n\n\n\n\n\n\n\n\n➕ Easy and intuitive \n➕ Stay inside IDE\n\n\n➖ Different for every program"
   },
   {
     "objectID": "slides/01_intro_git.html#how-to-use-git---standalone-guis",
     "href": "slides/01_intro_git.html#how-to-use-git---standalone-guis",
     "title": "Introduction to version control with Git",
     "section": "How to use Git - Standalone GUIs",
-    "text": "How to use Git - Standalone GUIs\nStandalone Git GUI software, e.g. Github Desktop\n\n\n\n\n\n\n\n\n➕ Easy and intuitive \n➕ Nice integration with Github \n\n➖ Switch programs to use Git"
+    "text": "How to use Git - Standalone GUIs\nStandalone Git GUI software, e.g. Github Desktop, Source Tree, …\n\n\n\n\n\n\n\n\n➕ Easy and intuitive \n➕ Nice integration with Github \n\n\n➖ Switch programs to use Git"
   },
   {
     "objectID": "slides/01_intro_git.html#how-to-use-git-1",
     "href": "slides/01_intro_git.html#how-to-use-git-1",
     "title": "Introduction to version control with Git",
     "section": "How to use Git",
-    "text": "How to use Git\nWhich one to choose?\n\nDepends on experience and taste\nYou can mix methods because they are all interfaces to the same Git\n\n\n\nWe will use Github Desktop\n\nI’ll still mention the corresponding terminal terminology at times\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nHave a look at the website where you find How-To guides for the other methods as well."
+    "text": "How to use Git\nWhich one to choose?\n\nDepends on experience and taste\nYou can mix methods because they are all interfaces to the same Git\n\n\n\nWe will use Github Desktop\n\nBeginner-friendly and intuitive\nVery convenient\nNice integration with Github\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nHave a look at the website where you find How-To guides for the other methods as well."
   },
   {
     "objectID": "slides/01_intro_git.html#step-0-an-empty-project",
     "href": "slides/01_intro_git.html#step-0-an-empty-project",
     "title": "Introduction to version control with Git",
     "section": "Step 0: An empty project",
-    "text": "Step 0: An empty project"
+    "text": "Step 0: An empty project\nExample: A cookBook project to collect all our favorite recipes"
   },
   {
     "objectID": "slides/01_intro_git.html#step-1-initialize-a-git-repository",
     "href": "slides/01_intro_git.html#step-1-initialize-a-git-repository",
     "title": "Introduction to version control with Git",
-    "section": "Step 1: Initialize a git repository",
-    "text": "Step 1: Initialize a git repository\n\nAdds a (hidden) .git folder to your project\n\nYou don’t need to interact with this folder directly"
+    "section": "Step 1: Initialize a Git repository",
+    "text": "Step 1: Initialize a Git repository\n\nAdds a (hidden) .git folder to your project\n\nYou don’t need to interact with this folder directly"
   },
   {
     "objectID": "slides/01_intro_git.html#step-2-modify-files-and-stage-changes",
@@ -704,7 +718,7 @@
     "href": "slides/01_intro_git.html#step-3-commit-changes",
     "title": "Introduction to version control with Git",
     "section": "Step 3: Commit changes",
-    "text": "Step 3: Commit changes\n\nCommits are the snapshots of your project state\nCommit a bundle of changes from staging area to local repo\nCollect meaningful chunks of work in the staging area, then commit"
+    "text": "Step 3: Commit changes\n\nCommits are the snapshots of your project state\n\n\n\n\n\n\n\n\n\n\nCollect meaningful bundles of changes in the staging area, then commit"
   },
   {
     "objectID": "slides/01_intro_git.html#step-3-commit-changes-1",
@@ -732,7 +746,7 @@
     "href": "slides/01_intro_git.html#how-to-write-good-commit-messages-2",
     "title": "Introduction to version control with Git",
     "section": "How to write good commit messages?",
-    "text": "How to write good commit messages?\n\n\n✔️\nLimit model temperature range\n\nI modified the temperature range the model can \noperate on to an upper limit of 40°C. This \nfixes the following problems:\n\n- no more unrealistic results because \ntemperature cannot exceed the meaningful range\n- the program does not terminate with error \ncode 123 anymore\n\n❌\nlimited model temperature range.\n\nTemperatures above 40°C are unrealistic."
+    "text": "How to write good commit messages?\n\n\n✔️\nAdd pie recipe\n\nThis is my favorite pie in the world. \nThe recipe comes from my grandfather and \nhe learned it from his neighbor.\n\n❌\nadded a file.\n\nThis is a a really good recipe that I like."
   },
   {
     "objectID": "slides/01_intro_git.html#the-commit-history",
@@ -774,7 +788,7 @@
     "href": "slides/01_intro_git.html#a-word-on-remote-repositories",
     "title": "Introduction to version control with Git",
     "section": "A word on remote repositories",
-    "text": "A word on remote repositories\n\nThere are commercial and self-hosted options for your remote repositories\n\nCommercial: Github, Gitlab, Bitbucket, …\nSelf-hosted: Gitlab (maybe at your institution?)\n\nFor the commercial options please be aware of your institutional guidelines\n\nServers are likely outside EU\nPrivacy rules might apply"
+    "text": "A word on remote repositories\n\nThere are commercial and self-hosted options for your remote repositories\n\nCommercial: Github, Gitlab, Bitbucket, …\nSelf-hosted: Gitlab (maybe at your institution?)\n\nPlease be aware of your institutional guidelines\n\nServers outside EU\nPrivacy rules might apply"
   },
   {
     "objectID": "slides/01_intro_git.html#summary-of-the-basic-steps",
@@ -798,31 +812,38 @@
     "text": "Revert changes\n\nUse git revert to revert specific commits\nThis does not delete the commit, it creates a new commit that undoes a previous commit\n\nIt’s a safe way to undo commited changes"
   },
   {
+    "objectID": "slides/01_intro_git.html#publish-your-repositories-1",
+    "href": "slides/01_intro_git.html#publish-your-repositories-1",
+    "title": "Introduction to version control with Git",
+    "section": "Publish your repositories",
+    "text": "Publish your repositories\nGithub/Gitlab are a good way to publish and share your work.\n\nAdvantages of publishing your code\n\nOthers can build on your work\nCitations\nReproducibility\nGet feedback"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#publish-your-repositories-2",
+    "href": "slides/01_intro_git.html#publish-your-repositories-2",
+    "title": "Introduction to version control with Git",
+    "section": "Publish your repositories",
+    "text": "Publish your repositories\nYou can increase the quality/complexity of your repo by\n\nAdding a nice README.md file\nConnecting the repo with Zenodo to get a DOI\nCreate a Github pages website alongside your repo\nEncourage people to write issues if they find problems\n…"
+  },
+  {
     "objectID": "slides/01_intro_git.html#ignore-files-with-.gitignore",
     "href": "slides/01_intro_git.html#ignore-files-with-.gitignore",
     "title": "Introduction to version control with Git",
     "section": "Ignore files with .gitignore",
-    "text": "Ignore files with .gitignore\n\nUse a .gitignore file to list files/folders that you don’t want to track with git\n\n\n\n\nUseful to ignore e.g.\n\nCompiled code and build directories\nLog files\nHidden system files\nPersonal IDE config files\n…"
+    "text": "Ignore files with .gitignore\n\nCreate a file with the name .gitignore in working directory\nAdd all files and directories you want to ignore to the .gitignore file\n\n\n\n\nUseful to ignore e.g.\n\nCompiled code and build directories\nLog files\nHidden system files\nPersonal IDE config files\n…"
   },
   {
     "objectID": "slides/01_intro_git.html#ignore-files-with-.gitignore-1",
     "href": "slides/01_intro_git.html#ignore-files-with-.gitignore-1",
     "title": "Introduction to version control with Git",
     "section": "Ignore files with .gitignore",
-    "text": "Ignore files with .gitignore\n\nCreate a file with the name .gitignore in working directory\nAdd all files and directories you want to ignore to the .gitignore file\n\n\nExample\n*.html    # ignore all .html files\n*.pdf     # ignore all .pdf files\n\ndebug.log # ignore the file debug.log\n\nbuild/    # ignore all files in subdirectory build\nSee here for more ignore patterns that you can use."
+    "text": "Ignore files with .gitignore\n\n\nCreate a file with the name .gitignore in working directory\nAdd all files and directories you want to ignore to the .gitignore file\n\n\nExample\n*.html    # ignore all .html files\n*.pdf     # ignore all .pdf files\n\ndebug.log # ignore the file debug.log\n\nbuild/    # ignore all files in subdirectory build\nSee here for more ignore patterns that you can use."
   },
   {
-    "objectID": "slides/01_intro_git.html#publish-your-repositories",
-    "href": "slides/01_intro_git.html#publish-your-repositories",
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow",
     "title": "Introduction to version control with Git",
-    "section": "Publish your repositories",
-    "text": "Publish your repositories\nGithub/Gitlab are a good way to publish and share your work.\n\nAdvantages of publishing your code\n\nOthers can build on your work\nCitations\nReproducibility\nGet feedback"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#publish-your-repositories-1",
-    "href": "slides/01_intro_git.html#publish-your-repositories-1",
-    "title": "Introduction to version control with Git",
-    "section": "Publish your repositories",
-    "text": "Publish your repositories\nYou can increase the quality/complexity of your repo by\n\nAdding a README.md file\nConnecting the repo with Zenodo to get a DOI\nCreate a Github pages website alongside your repo\nEncourage people to write issues if they find problems\n…"
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nTomorrow we collaborate on our cookbooks in teams of 2\n\nEnter your Github Account Name and the link to your repo here\n\nLook for the Github Name of your partner and add them as a collaborator to your repository\nAccept the invitation of your partner to their repository\n\nYou will get an Email or you can do it on Github\n\n\n\n\nBasic Git workflow"
   }
 ]

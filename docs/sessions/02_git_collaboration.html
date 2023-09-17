@@ -4548,7 +4548,6 @@ height: 400px;
    
   <ul>
   <li><a href="#description" id="toc-description" class="nav-link active" data-scroll-target="#description">Description</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks">Tasks</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/selinaZitrone/get-started-with-git/edit/master/sessions/02_git_collaboration.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/selinaZitrone/get-started-with-git/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -4585,16 +4584,10 @@ height: 400px;
 <iframe class="slide-deck" width="780" height="500" src="../slides/02_git_collaboration.html"></iframe>
 <p><a href="../slides/02_git_collaboration.html" target="_blank">Slides in full screen</a>     <a href="../slides/02_git_collaboration.pdf" download>Download PDF slides</a></p>
 </section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-</section>
 <section id="tasks" class="level2">
 <h2 class="anchored" data-anchor-id="tasks">Tasks</h2>
 <p>The goal of these tasks is to get a feeling for a collaborative Git workflow.</p>
-<p>In the tasks, I will not describe all steps in detail.</p>
-<p>But if you are stuck somewhere, have a look at the <a href="../how-tos/git_workflow_gh_desktop.html">how-to description</a>.</p>
-<p>There you find a guide of every step including screenshots.</p>
-<p>But most of the steps are made very intuitive with Github Desktop and Github.</p>
+<p>If you are stuck in a task, you can have a look at the <a href="../how-tos/git_workflow_gh_desktop.html">A How-To description</a> of the Git workflow with detailed explanations and Screenshots or the steps.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">1 Clone</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Branch and merge</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Pull requests</a></li></ul>
 <div class="tab-content">
@@ -4602,18 +4595,23 @@ height: 400px;
 <section id="clone-the-cook-book-repo-of-your-partner-5-min" class="level2">
 <h2 class="anchored" data-anchor-id="clone-the-cook-book-repo-of-your-partner-5-min">Clone the cook book repo of your partner (5 min)</h2>
 <p>Use Github Desktop to clone the cook book repository of your partner.</p>
+<p>Go to <strong>File -&gt; Clone Repository</strong>.</p>
+<p>In the tab “Github.com” you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your partner and clone it to a local path of your choice.</p>
+<p>If you don’t see your partners repository, switch to the tab “URL”. Open your partner’s repository on Github (find the correct link <a href="https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing">here</a>). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.</p>
+<p>Open your partner’s cook book in the explorer to see which files are already in there (<strong>Repository -&gt; Show in Explorer</strong>).</p>
 </section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <section id="try-branching-and-merging-in-your-repo-10-min" class="level2">
 <h2 class="anchored" data-anchor-id="try-branching-and-merging-in-your-repo-10-min">Try branching and merging in your repo (10 min)</h2>
-<p>Switch back to your personal cook book repository.</p>
+<p>Make sure that you are in your partner’s cook book (check which repository you are in on the top left).</p>
 <p>Create a new branch to add a recipe.</p>
 <p>Make sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is.</p>
-<p>Now go to your project folder and add a file for the new recipe with some recipe instructions in it.</p>
-<p>Add and commit that new file to your branch.</p>
+<p>Now go to the project folder and add a file for the new recipe with some recipe instructions in it.</p>
+<p>Add and commit that new recipe to your branch.</p>
 <p>Now switch back to the main branch (click on the “current branch” button on top).</p>
-<p>Merge your new branch into the main branch. Then check the commit history to see if you branch commit is actually there.</p>
+<p>Merge your new branch into the main branch (<strong>Branch -&gt; Merge into current branch</strong>). Then check the commit history to see if you branch commit is actually there.</p>
+<p>Now push to Github.</p>
 </section>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
