@@ -316,3 +316,22 @@ A pull request is merged on Github when **everyone agreed on the code**.
 
 ## Next week
 
+**Idea:** Questions and problems often arise when working with the tool.
+
+**Until then**
+
+Work with Git (~ 2 h), e.g.
+
+- Start using version control for you own projects
+- Create a cook book project using the terminal
+- Try to use Git from R (see How-To)
+- ...
+
+Write down your problems/questions/other Git things you are interested in.
+
+**Next week we will**
+- Discuss your questions 
+- Look at other interesting Git things todo
+  - e.g. Use Git from R
+  - Use Github to publish websites
+  - ...
