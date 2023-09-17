@@ -17,6 +17,7 @@ format:
     theme: slides.scss
     auto-stretch: false
     scrollable: true
+    chalkboard: true
 editor: source
 execute: 
   echo: false
@@ -24,60 +25,64 @@ execute:
 from: markdown+emoji
 ---
 
-## Welcome to the workshop
+# Who am I?
 
-### Who am I?
+> Scientific programmer @ [theoretical ecology group](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
 
-- Scientific programmer theoretical ecology lab
+# Who are you?
 
-. . .
+## Aims of the workshop
 
-### Who are you?
-
-- Large range of topics and reserach interests
-- [Different prior Git experience and expectations](https://docs.google.com/forms/d/1XBomnWIBaEXA0BorhIeVop6lfJ_02f7gDnkfPWJg-oE/edit#responses)
-
-## Welcome to the workshop
-
-Git is a huge topic because and git is very powerful. Most of the things are best to learn as you need them.
+Git is a huge topic and Git is very powerful.
 
 . . .
 
-#### Aim of this workshop
+Learn simple Git workflows in **theory and practice** that you can immediately apply to your research projects.
 
-Get started with simple workflows. Learn the rest as you need it.
+. . .
 
-#### Session 1
+Enough time to for practice and questions.
+
+## Topics
+
+#### Today
 
 - Introduction to Git concepts
 - Simple Git workflow for your own projects
 
-#### Session 2
+#### Tomorrow
 
 - Collaborate using Git and Github
 
-## Before we start
+#### Next Monday
 
-#### Organisation
+- Q&A
+- Advanced topics
+- Until then: work with Git on your own projects
+
+## Organization
 
 - Today and tomorrow: :clock2: 2.30 - 4 p.m.
-  - Theoretical input + practical exercises
   
 - Next Monday: :clock2: 2.30 - 3.30 p.m.
-  - Clarify questions and problems, talk about more advanced features, ...
-  - Until then: Start working on a small Git project
 
-- Material is all online
+- Material is all [online](https://selinazitrone.github.io/get-started-with-git/)
 
 ## Before we start
 
 Did anyone have problems with the workshop preparation?
 
+:::{.nonincremental}
+- Install Git
+- Install Github Desktop
+- Get a Github account and connect it with Github Desktop
+:::
+
 # Let's get started
 
 ## Why version control?
 
-Two examples in which proper version control can be a life/time saver
+Two examples in which proper version control can be a time/stress saver
 
 . . .
 
@@ -91,13 +96,16 @@ Two examples in which proper version control can be a life/time saver
 
 - **Complete** and **long-term** history of every file in your project
 
+
 - **Open source and free** to use version control software
+
 
 - Quasi **standard** for software development
 
+
 - A whole universe of **other software and services** around it
 
-## The basic idea of Git
+## Version control with Git
 
 - For projects with mainly text files (e.g. code, markdown files, ...)
 
@@ -117,7 +125,11 @@ Git is a **distributed version control system**
 
 :::{.column width="50%"}
 
+:::{.fragment}
+
 ![](img/day1/distributed.png)
+
+:::
 
 :::
 
@@ -154,7 +166,11 @@ Using Git from the terminal
 
 :::{.column width="50%"}
 
+:::{.fragment}
+
 :heavy_minus_sign: You need to use terminal :scream:<br>
+
+:::
 
 :::
 
@@ -163,8 +179,6 @@ Using Git from the terminal
 ## How to use Git - Integrated GUIs
 
 A Git GUI is integrated in most (all?) IDEs, e.g. R Studio, VS Code
-
-. . .
 
 ![](img/day1/rstudio_vscode_git.png){fig-align="center"}
 
@@ -182,7 +196,11 @@ A Git GUI is integrated in most (all?) IDEs, e.g. R Studio, VS Code
 
 :::{.column width="50%"}
 
+:::{.fragment}
+
 :heavy_minus_sign: Different for every program <br>
+
+:::
 
 :::
 
@@ -190,7 +208,7 @@ A Git GUI is integrated in most (all?) IDEs, e.g. R Studio, VS Code
 
 ## How to use Git - Standalone GUIs
   
-Standalone Git GUI software, e.g. Github Desktop
+Standalone Git GUI software, e.g. Github Desktop, Source Tree, ...
 
 ![](img/day1/github_desktop.png){width=50% fig-align="center"}
 
@@ -208,7 +226,11 @@ Standalone Git GUI software, e.g. Github Desktop
 
 :::{.column width="50%"}
 
+:::{.fragment}
+
 :heavy_minus_sign: Switch programs to use Git <br>
+
+:::
 
 :::
 
@@ -224,7 +246,9 @@ Standalone Git GUI software, e.g. Github Desktop
 :::{.fragment}
 
 - We will use Github Desktop
-  - I'll still mention the corresponding terminal terminology at times
+  - Beginner-friendly and intuitive
+  - Very convenient
+  - Nice integration with Github
 
 :::
 
@@ -232,7 +256,7 @@ Standalone Git GUI software, e.g. Github Desktop
 
 :::{.callout-tip}
 
-Have a look at the website where you find **How-To guides for the other methods** as well.
+Have a look at the [website](https://selinazitrone.github.io/get-started-with-git/) where you find **How-To guides for the other methods** as well.
 
 :::
 
@@ -243,6 +267,8 @@ Have a look at the website where you find **How-To guides for the other methods*
 > `git init`, `git add`, `git commit`, `git push`
 
 ## Step 0: An empty project
+
+Example: A cookBook project to collect all our favorite recipes
 
 :::{.columns}
 
@@ -260,7 +286,7 @@ Have a look at the website where you find **How-To guides for the other methods*
 
 :::
 
-## Step 1: Initialize a git repository
+## Step 1: Initialize a Git repository
 
 - Adds a (hidden) `.git` folder to your project
   - You don't need to interact with this folder directly
@@ -333,8 +359,6 @@ Stage file to be part of the next commit (snapshot)
 ## Step 3: Commit changes
 
 - Commits are the snapshots of your project state
-- Commit a bundle of changes from staging area to local repo
-- Collect meaningful chunks of work in the staging area, then commit
 
 . . .
 
@@ -353,6 +377,8 @@ Stage file to be part of the next commit (snapshot)
 :::
 
 :::
+
+- Collect meaningful bundles of changes in the staging area, then commit
 
 ## Step 3: Commit changes
 
@@ -378,10 +404,12 @@ Stage file to be part of the next commit (snapshot)
 :::
 
 # Now you
-> Add some recipes to your cook book
+> [Start your own cook book](../sessions/01_intro_git.qmd#Tasks)
+> Complete task 1 "Local repo" (10 min)
 
-
-
+Stay in the meeting for the task.<br>
+Ask questions if you are stuck. <br>
+Turn down/off volume if you are disturbed. <br>
 
 ## How to write good commit messages?
 
@@ -406,16 +434,11 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 :heavy_check_mark:
 
 ```md
-Limit model temperature range
+Add pie recipe
 
-I modified the temperature range the model can 
-operate on to an upper limit of 40°C. This 
-fixes the following problems:
-
-- no more unrealistic results because 
-temperature cannot exceed the meaningful range
-- the program does not terminate with error 
-code 123 anymore
+This is my favorite pie in the world. 
+The recipe comes from my grandfather and 
+he learned it from his neighbor.
 ```
 
 :::
@@ -425,20 +448,14 @@ code 123 anymore
 :x:
 
 ```md
-limited model temperature range.
+added a file.
 
-Temperatures above 40°C are unrealistic.
+This is a a really good recipe that I like.
 ```
 
 :::
 
 :::
-
-## The commit history
-
-![](img/day1/commit_history.png){width=80%}
-
-![](img/day1/github_desktop_history.png){width=80%}
 
 ## The commit history
 
@@ -457,6 +474,10 @@ Temperatures above 40°C are unrealistic.
 
 :::
 
+## The commit history
+
+![](img/day1/github_desktop_history.png){width=80%}
+
 
 ## Step 4: Create and connect a remote repo
 
@@ -474,21 +495,20 @@ Temperatures above 40°C are unrealistic.
 
 - Push your local changes to the remote with `git push`
 
-. . .
-
 ![](img/day1/4_push_concept.png){fig-align="center" width=60%}
 
 # Now you
-> Publish your cook book on Github (please make it public)
+> [Publish your cook book on Github](../sessions/01_intro_git.qmd#Tasks)
+> Complete task 2 "Github" (5 min)
 
 ## A word on remote repositories
 
-- There are commercial and self-hosted options for your remote repositories
+- There are **commercial** and **self-hosted** options for your remote repositories
   - Commercial: Github, Gitlab, Bitbucket, ...
   - Self-hosted: Gitlab (maybe at your institution?)
 
-- For the commercial options please be aware of your institutional guidelines
-  - Servers are likely outside EU
+- Please be aware of your institutional guidelines
+  - Servers outside EU
   - Privacy rules might apply
 
 
@@ -509,7 +529,7 @@ Temperatures above 40°C are unrealistic.
 
 # Go back in time with Git
 
-> git log, git checkout, git revert
+> git checkout, git revert
 
 
 ## Checkout a previous commit
@@ -535,49 +555,10 @@ Temperatures above 40°C are unrealistic.
 ![](img/day1/commit_history_after_revert.png){width=90%}
 
 # Now you
-> Revert a part of your recipe
+> [Revert a part of your recipe](../sessions/01_intro_git.qmd#Tasks)
+> Complete the task 3 "Time travel" (5 min)
 
-# Other good things to know
-
-> Ignore files, publish your projects
-
-## Ignore files with `.gitignore`
-
-- Use a `.gitignore` file to list files/folders that you don't want to track with git
-
-. . .
-
-::: {.nonincremental}
-
-- Useful to ignore e.g.
-  - Compiled code and build directories
-  - Log files 
-  - Hidden system files
-  - Personal IDE config files
-  - ...
-  
-:::
-  
-## Ignore files with `.gitignore`
-
-- Create a file with the name `.gitignore` in working directory
-
-- Add all files and directories you want to ignore to the `.gitignore` file
-
-. . .
-
-#### Example
-
-```md
-*.html    # ignore all .html files
-*.pdf     # ignore all .pdf files
-
-debug.log # ignore the file debug.log
-
-build/    # ignore all files in subdirectory build
-```
-
-See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
+# Publish your repositories
 
 ## Publish your repositories
 
@@ -596,12 +577,64 @@ Github/Gitlab are a good way to publish and share your work.
 
 You can increase the quality/complexity of your repo by
 
-- Adding a README.md file
+- Adding a nice README.md file
 - [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html)
 - Create a Github pages website alongside your repo
 - Encourage people to write issues if they find problems
 - ...
 
+# Ignoring files
+
+## Ignore files with `.gitignore`
+
+- Create a file with the name `.gitignore` in working directory
+
+- Add all files and directories you want to ignore to the `.gitignore` file
+
+. . .
+
+::: {.nonincremental}
+
+- Useful to ignore e.g.
+  - Compiled code and build directories
+  - Log files 
+  - Hidden system files
+  - Personal IDE config files
+  - ...
+  
+:::
+
+## Ignore files with `.gitignore`
+
+:::{.nonincremental}
+
+- Create a file with the name `.gitignore` in working directory
+
+- Add all files and directories you want to ignore to the `.gitignore` file
+
+:::
+
+#### Example
+
+```md
+*.html    # ignore all .html files
+*.pdf     # ignore all .pdf files
+
+debug.log # ignore the file debug.log
+
+build/    # ignore all files in subdirectory build
+```
+
+See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
+
 # Thanks for your attention
 
 > Questions?
+
+## Preparation for tomorrow
+
+- Tomorrow we collaborate on our cookbooks in teams of 2
+  - Enter your Github Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+- Look for the Github Name of your partner and add them as a collaborator to your repository
+- Accept the invitation of your partner to their repository 
+  - You will get an Email or you can do it on Github

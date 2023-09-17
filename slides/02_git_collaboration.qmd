@@ -25,19 +25,26 @@ execute:
 from: markdown+emoji
 ---
 
+## Before we start
+
+Did everyone accept the invitation to the cook book of their partner?
+
 ## Recap
 
 :::{.columns}
 
 :::{.column width="70%"}
 
-The basic Git workflow consists of the following steps:
+Basic Git workflow:
+
+:::{.nonincremental}
 
 1. **Initialize** a Git repository
 2. **Work** on the project
 3. **Stage** and **commit** files to the local repository
-4. **Publish** the repository on a remote server
-5. **Push** future changes to the remote repository
+4. **Push** future changes to the remote repository
+
+:::
 
 :::
 
@@ -49,7 +56,35 @@ The basic Git workflow consists of the following steps:
 
 :::
 
-## Version control with Git
+
+## Recap
+
+:::{.columns}
+
+:::{.column width="70%"}
+
+Basic Git workflow:
+
+:::{.nonincremental}
+
+1. **Initialize** a Git repository
+2. **Work** on the project
+3. **Stage** and **commit** files to the local repository
+4. **Push** future changes to the remote repository
+
+:::
+
+:::
+
+:::{.column width="30%"}
+
+![](img/day2/both_directions_with_question.png){fig-align="center"}
+
+:::
+
+:::
+
+## Recap
 
 Git is a **distributed version control system**
 
@@ -64,42 +99,29 @@ Git is a **distributed version control system**
 :::{.column width="50%"}
 
 - Idea: many *local* repositories synced via one *remote* repo
-- What we still miss: From remote to local
-  - This is essential for collaboration
+- Collaborate with
+  - yourself on different machines
+  - your colleagues and friends
+  - strangers on open source projects
+  
 :::
 
 :::
 
 ## Get a repo from a remote
-
-:::{.columns}
-
-:::{.column width="70%"}
 
 - In Git language, this is called **cloning**
-- Get a copy of your own repository on a different machine
-- Get the repository from somebody else to collaborate
-
-:::
-
-:::{.column width="30%"}
-
-![](img/day2/remote_to_local.png){fig-align="center"}
-
-:::
-
-:::
-
-## Get a repo from a remote
-
-
-By cloning, you get a **full copy** of the repository on your machine.
+  - Get a **full copy** of the remote repo
 
 . . .
 
 ![](img/day2/git_clone_concept.png){width=70% fig-align="center"}
 
 - If the clone is authorized it can also commit and push
+
+# Now you
+> Clone your partners cookBook repo
+> [Complete task 1 "Clone" (5 min)](../sessions/02_git_collaboration.qmd#Tasks)
 
 ## Get changes from the remote
 
@@ -149,6 +171,18 @@ This workflow starts to be problematic when
 - Not possible to discuss code before integration
 - Difficult to just "try something out"
   - Everything goes directly to main
+  
+## Let's give it a try
+
+- Open a recipe in the cook book of your partner
+- Change something in there
+- Commit the change and push it
+
+. . .
+
+- Now switch to your own cook book
+- Pull the change that your partner just did
+- Checkout what they changed in the history tab
 
 ## A branching-merging workflow
 
@@ -170,6 +204,7 @@ This workflow starts to be problematic when
 
 - Guarantee that main always works
 - Potential conflicts don't have to be solved on main
+- You can just "try something out"
 
 ## Working on a separate branch
 
@@ -213,7 +248,18 @@ Merge conflicts need to be solved manually. You need to chose which of the confl
 versions you want to keep.
 
 # Now you
-> Try out branching and merging in your cook book (10 min)
+> Create a branch in your partner's cook book
+> [Complete task 2 "Branch and merge" (10 min)](../sessions/02_git_collaboration.qmd#Tasks)
+
+## Before we continue
+
+You partner now has pushed some changes to your cook book.
+
+Get the changes from the remote. In Github Desktop
+
+- Switch to your own cook book repository
+- Click the pull button (same as push)
+- Have a look at the commit history to see your partner's changes
 
 ## A branching-merging workflow with Github
 
@@ -251,9 +297,18 @@ Github has nice features for pull requests:
 - Collaborators can **discuss and comment** on your changes
 - ...
 
+## A branching-merging workflow with Github
+
+A pull request is basically asking your collaborators:
+
+> What do you think of my changes? Can we integrate them in main or do we still need to change something?
+
+A pull request is merged on Github when **everyone agreed on the code**.
+
 # Now you
-> Add a recipe to your partner's repo and create a pull request
-> Answer to the pull request of you partner
+> Create a pull request on your partners repo
+> Review the pull request by your partner on your own repo
+> [Complete task "Pull requests" (20 min)](../sessions/02_git_collaboration.qmd#Tasks)
 
 # Thanks for your attention
 
