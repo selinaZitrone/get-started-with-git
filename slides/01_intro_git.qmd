@@ -28,51 +28,46 @@ from: markdown+emoji
 
 > Scientific programmer @ [theoretical ecology group](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
 
-# Who are you?
-> Biology, Chemistry, Pharmacy, Biochamistry, Veterinary Medicine
-
 ## What do you want to learn here?
 
 ![](img/day1/who_are_you.png)
 
 ## Aims of the workshop
 
-Git is a huge topic and Git is very powerful.
+Git is a huge topic and Git is very powerful.<br>
 
 . . .
 
 Learn simple Git workflows in **theory and practice** that you can immediately apply to your research projects.
 
-. . .
-
-Enough time to for practice and questions.
-
 ## Topics
 
-#### Today
+#### Today 2.30 - 4 pm
 
 - Introduction to Git concepts
 - Simple Git workflow for your own projects
 
-#### Tomorrow
+#### Tomorrow 2.30 - 4 pm
 
 - Collaborate using Git and Github
 
-#### Next Monday
+#### Next Monday 2.30 - 3.30 pm
 
+- Until then: work with Git on your own projects
 - Q&A
 - Advanced topics
-- Until then: work with Git on your own projects
 
 ## Organization
 
-- Today and tomorrow: :clock2: 2.30 - 4 p.m.
-  
-- Next Monday: :clock2: 2.30 - 3.30 p.m.
-
 - Material is all [online](https://selinazitrone.github.io/get-started-with-git/)
 
+- Certificate of attendance from the graduate center
+
 - Feedback is very welcome
+
+- Just interrupt me for questions/comments
+
+
 
 ## Before we start
 
@@ -92,11 +87,11 @@ Two examples in which proper version control can be a time/stress saver
 
 . . .
 
-![](img/day1/motivation_time.png){fig-align="center" width=70%}
+![](img/day1/motivation_time.png){fig-align="center" width=65%}
 
 . . .
 
-![](img/day1/motivation_collab.png){fig-align="center" width=80%}
+![](img/day1/motivation_collab.png){fig-align="center" width=66%}
 
 ## Version control with Git
 
@@ -226,7 +221,7 @@ Standalone Git GUI software, e.g. Github Desktop, Source Tree, ...
 
 :heavy_plus_sign: Easy and intuitive <br>
 
-:heavy_plus_sign: Nice integration with Github <br>
+:heavy_plus_sign: Use for all projects <br>
 
 :::
 
@@ -285,6 +280,11 @@ A cook book project to collect all my favorite recipes.
 
 ![](img/day1/1_init_concept_folder.png)
 
+## Step 1: Initialize a Git repository
+
+![](img/day1/1_init_explanation.png)
+
+
 ## Step 2: Add and modify files
 
 Git detects any changes in the working directory
@@ -293,7 +293,7 @@ Git detects any changes in the working directory
 
 ## Step 2: Stage changes
 
-Stage file to mark it for the next commit.
+Staging a file means to **list it for the next commit**.
 
 . . .
 
@@ -317,27 +317,9 @@ Stage file to mark it for the next commit.
 
 ![](img/day1/3_afterCommit_concept_folder.png)
 
-# Now you
-> [Start your own cook book](../sessions/01_intro_git.qmd#Tasks)<br>
-> Complete task 1 "Local repo" (10 min)
-
-Stay in the meeting for the task.<br>
-Ask questions if you are stuck. <br>
-Turn down/off volume if you are disturbed. <br>
-
 ## How to write good commit messages?
 
 ![[xkcd](https://xkcd.com/1296/) on commit messages](https://imgs.xkcd.com/comics/git_commit.png){fig-align="center" width=70%}
-
-## How to write good commit messages?
-
-See [here](https://cbea.ms/git-commit/) for more details but some general rules:
-
-1. Limit summary line to 50 characters
-2. Capitalize summary line
-3. Do not end summary line with period
-4. Use imperative mood in the subject line
-5. Use the *Description* to explain **what** and **why**, not **how**
 
 ## How to write good commit messages?
 
@@ -371,6 +353,22 @@ This is a a really good recipe that I like.
 
 :::
 
+See [here](https://cbea.ms/git-commit/) for more details but some general rules:
+
+1. Limit summary line to 50 characters
+2. Capitalize summary line
+3. Do not end summary line with period
+4. Use imperative mood in the subject line
+5. Use the *Description* to explain **what** and **why**, not **how**
+
+# Now you
+> [Start your own cook book](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks)<br>
+> Complete task 1 "Local repo" (10 - 15 min)
+
+**Stay in the meeting** for the task.<br>
+**Ask** if you are stuck. <br>
+**Turn down/off volume** if you are disturbed. <br>
+
 ## The commit history
 
 ::: {layout="[[-1], [1], [-1]]" layout-valign="bottom"}
@@ -392,11 +390,7 @@ This is a a really good recipe that I like.
 
 ![](img/day1/4_push_concept.png){fig-align="center" width=60%}
 
-# Now you
-> [Publish your cook book on Github](../sessions/01_intro_git.qmd#Tasks)<br>
-> Complete task 2 "Github" (5 min)
-
-## A word on remote repositories
+## Different remote repositories
 
 - There are **commercial** and **self-hosted** options for your remote repositories
   - Commercial: Github, Gitlab, Bitbucket, ...
@@ -406,6 +400,10 @@ This is a a really good recipe that I like.
   - Servers outside EU
   - Privacy rules might apply
 
+# Now you
+> Publish your cook book on Github <br>
+> Checkout your repositories Github page (**Repository -> View on GitHub**)
+> 5 min
 
 ## Summary of the basic steps
 
@@ -422,22 +420,9 @@ This is a a really good recipe that I like.
 
 :::
 
-# Go back in time with Git
+# Undo things
 
-> git checkout, git revert
-
-
-## Checkout a previous commit
-
-- Bring your work space back in time temporarily with `git checkout`
-
-. . .
-
-![](img/day1/commit_history_head.png){width=85%}
-
-. . .
-
-![](img/day1/commit_history_checkout.png){width=85%}
+> git revert
 
 ## Revert changes
 
@@ -450,8 +435,7 @@ This is a a really good recipe that I like.
 ![](img/day1/commit_history_after_revert.png){width=90%}
 
 # Now you
-> [Revert a part of your recipe](../sessions/01_intro_git.qmd#Tasks)<br>
-> Complete the task 3 "Time travel" (5 min)
+> Revert a commit from your cook book
 
 # Publish your repositories
 
@@ -477,6 +461,26 @@ You can increase the quality/complexity of your repo by
 - Create a Github pages website alongside your repo
 - Encourage people to write issues if they find problems
 - ...
+
+# Thanks for your attention
+
+> Questions?
+
+# Go back in time
+> git checkout
+
+## Checkout a previous commit
+
+- Bring your work space back in time temporarily with `git checkout`
+
+. . .
+
+![](img/day1/commit_history_head.png){width=85%}
+
+. . .
+
+![](img/day1/commit_history_checkout.png){width=85%}
+
 
 # Ignoring files
 
@@ -522,14 +526,22 @@ build/    # ignore all files in subdirectory build
 
 See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
 
-# Thanks for your attention
-
-> Questions?
-
 ## Preparation for tomorrow
 
-- Tomorrow we collaborate on our cookbooks in teams of 2
-  - Enter your Github Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-- Look for the Github Name of your partner and add them as a collaborator to your repository
-- Accept the invitation of your partner to their repository 
+- Tomorow we have teams of 2
+- Collaborate on the cook book of your team mate
+
+:::{.fragment}
+
+Now please
+
+:::{.nonincremental}
+
+1) Enter your Github Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+2) Look for the Github Name of your team mate and add them as a collaborator to your repository
+3) Accept the invitation of your team mate to their repository 
   - You will get an Email or you can do it on Github
+
+:::
+
+:::
