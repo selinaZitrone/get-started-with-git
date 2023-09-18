@@ -31,3 +31,7 @@ to set up Git and a Github connection in R and R Studio
 
 - There are detailed step by step guides on how to set up Github Desktop and how to
 work with in the [Github Desktop Documentation](https://docs.github.com/desktop)
+
+## Other resources
+
+- [Connect Github Desktop with a Gitlab repository](https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104?gi=b32bd84e7fe4)
