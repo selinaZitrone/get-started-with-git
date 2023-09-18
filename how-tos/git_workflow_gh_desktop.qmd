@@ -161,20 +161,33 @@ friend's project.
 
 ## Step 1: Clone a remote repository
 
+### Option 1: You are collaborating on a Github repository
+
+This option is great if you collaborate on a Github repository. As soon as you accepted the invitation to be a collaborator on a repository, this repository will be listed by Github Desktop in the list of your repositories.
+
+To clone the repository you just need to go to **File -> Clone repository**.
+In the dialogue box that opens stay in the "GitHub.com" tab. There you can scroll through the list of your repositories and select the one you want to clone.
+
+Below, you can select the local path where the repository and all it's files should be stored.
+
+When you are ready click on **Clone**.
+
+Now you can start working with the repository of your friend.
+
+(Select option 2 if you friend's repository is not in the list of your repositories)
+
+### Option 2: Works for all repository
+
+This option works for Github repositories but also for others like Gitlab.
+
 First, we need to clone our friend's repository. This means we pull an entire copy
 of the repository onto our machine. To clone a repository, you need to know the 
 repositories address. You can find the HTTPS address by clicking on the green code button on Github:
 
 ![](img/gh_copy_adress.png)
 Go to Github Desktop and **File -> Clone repository**. In the dialogue box that opens
-You can either clone repositories from
 
-- Github.com: Here you can scroll through a list of all your Github repositories. 
-Maybe this list already shows the repository of your friend because you are now a 
-collaborator.
-- URL: Enter the URL of your friends repo that you copied from Github
-
-If you enter the URL, you can select the location where the repository should be stored in:
+Go to the URL Tab and enter the URL. Then, you can select the location where the repository should be stored in:
 
 ![](img/ghd_clone.png)
 When you are ready click on **Clone**.
@@ -183,8 +196,7 @@ Now you can start working with the repository of your friend.
 
 ## Step 2: Create a new branch
 
-To use the collaboration workflow discussed in the lecture, you need to create a new branch
-when you want to do some work. Let's say, I want to add some vegan pie recipe.
+To use the collaboration workflow discussed in the lecture, you need to create a new branch when you want to do some work. Let's say, I want to add some vegan pie recipe.
 In Github Desktop, go to **Branch -> New Branch**.
 Give the branch a short but meaningful name and then click on **Create branch**:
 

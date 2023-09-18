@@ -27,7 +27,7 @@ from: markdown+emoji
 
 ## Before we start
 
-Did everyone accept the invitation to the cook book of their partner?
+Did everyone accept a collaboration invitation?
 
 ## Recap
 
@@ -98,11 +98,17 @@ Git is a **distributed version control system**
 
 :::{.column width="50%"}
 
+::: {.nonincremental}
+
 - Idea: many *local* repositories synced via one *remote* repo
+
+:::
+
 - Collaborate with
   - yourself on different machines
   - your colleagues and friends
   - strangers on open source projects
+
   
 :::
 
@@ -120,8 +126,9 @@ Git is a **distributed version control system**
 - If the clone is authorized it can also commit and push
 
 # Now you
-> Clone your partners cookBook repo
-> [Complete task 1 "Clone" (5 min)](../sessions/02_git_collaboration.qmd#Tasks)
+> Clone your team mate's cook Book repo <br>
+> It should be in the list of your repositories if you accepted the invitation.
+> If not, check [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit#gid=0) for the correct remote URL.
 
 ## Get changes from the remote
 
@@ -174,15 +181,30 @@ This workflow starts to be problematic when
   
 ## Let's give it a try
 
-- Open a recipe in the cook book of your partner
+::: {.nonincremental}
+
+- Make sure you are in the repository of your team mate
+- Open a recipe in the cook book of your team mate
+  - **Repository -> Show in Explorer**
 - Change something in there
 - Commit the change and push it
 
+:::
+
 . . .
 
-- Now switch to your own cook book
-- Pull the change that your partner just did
-- Checkout what they changed in the history tab
+::: {.nonincremental}
+
+
+You team mate now has pushed some changes to your cook book.
+
+Get the changes from the remote. In Github Desktop
+
+- Switch to your own cook book repository
+- Pull the changes (Same button as the push button)
+- Have a look at the commit history to see what changed
+
+:::
 
 ## A branching-merging workflow
 
@@ -248,18 +270,8 @@ Merge conflicts need to be solved manually. You need to chose which of the confl
 versions you want to keep.
 
 # Now you
-> Create a branch in your partner's cook book
-> [Complete task 2 "Branch and merge" (10 min)](../sessions/02_git_collaboration.qmd#Tasks)
-
-## Before we continue
-
-You partner now has pushed some changes to your cook book.
-
-Get the changes from the remote. In Github Desktop
-
-- Switch to your own cook book repository
-- Click the pull button (same as push)
-- Have a look at the commit history to see your partner's changes
+> [Create a branch and merge it in your team mate's cook book](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
+> Complete task 2 "Branch and merge" (10 min)
 
 ## A branching-merging workflow with Github
 
@@ -306,9 +318,8 @@ A pull request is basically asking your collaborators:
 A pull request is merged on Github when **everyone agreed on the code**.
 
 # Now you
-> Create a pull request on your partners repo
-> Review the pull request by your partner on your own repo
-> [Complete task "Pull requests" (20 min)](../sessions/02_git_collaboration.qmd#Tasks)
+> [Create a pull request on your partners repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
+> Complete task 3 "Pull requests" (10 min)
 
 # Thanks for your attention
 
@@ -332,6 +343,6 @@ Write down your problems/questions/other Git things you are interested in.
 **Next week we will**
 - Discuss your questions 
 - Look at other interesting Git things todo
-  - e.g. Use Git from R
+  - e.g. Use Git from R, VS Code
   - Use Github to publish websites
   - ...
