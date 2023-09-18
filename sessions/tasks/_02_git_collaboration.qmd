@@ -63,7 +63,7 @@ Publish and push your branch to Github by clicking on the push button.
 Now open the repository on Github (**Repository -> View on Github**).
 On top you should already see the option to "Compare and pull request".
 
-Open a pull request and describe your changes.
+Click on that button and use the dialogue window that opens to describe your changes. Then create the pull request.
 
 # Extra
 
