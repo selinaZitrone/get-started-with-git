@@ -1,10 +1,10 @@
-In these tasks, you will create your own Git cook book 🍜.
+Create your own Git cook book 🍜.
 
 All recipes will be simple text files and changes will be commited to the repository.
 
-The goal of these tasks is to get a first idea and feeling for the basic Git workflow.
+The goal is to give you a first idea and feeling for the basic Git workflow.
 
-If you are stuck in a task, you can have a look at the [A How-To description](../how-tos/git_workflow_gh_desktop.qmd) of the Git workflow with detailed explanations and Screenshots or the steps.
+If you are stuck in a task, you can have a look at the [A How-To description](../how-tos/git_workflow_gh_desktop.qmd) of the Git workflow with detailed explanations and Screenshots of the steps.
 
 :::{.panel-tabset}
 
@@ -14,15 +14,16 @@ If you are stuck in a task, you can have a look at the [A How-To description](..
 
 ### Create a new repository
 
-Open Github Desktop and create a new repository (**File -> New repository**) for your
-cook book project.
+Open Github Desktop and create a new repository (**File -> New repository**) for your cook book project.
 
 In the dialogue box that opens:
 
 - Give it the following name: cookBook-yourName (replacing yourName with your name)
-  - This is necessary for tomorrow when we collaborate
+  - This name is needed for tomorrow when we collaborate
 - Select where on your computer you want the cook book to be stored
 - Check the box to initialize with a README file
+
+Now initialize the repository.
 
 ### Open your project in the explorer
 
@@ -30,28 +31,24 @@ Go to **Repository -> Show in Explorer** to open your project in the explorer.
 
 Do you see the hidden `.git` folder in there?
 
-If you don't see the `.git` folder you probably have to unhide hidden files.
+If you don't see it you probably have to unhide hidden files.
 
 In the Windows explorer, go to **View** and then check the **Hidden items** checkbox:
 
 ![](tasks/img/windows_hidden_files.png)
 
-In the Mac finder, you can just hit 'Command' + 'Shift' + '.' (the period key) at the same time.
-This is the keyboard shortcut to hide and unhide files and folders.
+In the Mac finder, hit 'Command' + 'Shift' + '.' (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.
 
-### Add a recipe
+### Add your favorite recipe
 
-Add a recipe to your project. Start with a file for your favorite dish. 
 Create and open the file in a text editor.
-Then add the recipe to the file (you can also invent something - don't spend much time
-actually writing a recipe, just add some lines of text)
+Then add the recipe text to the file (you can also invent something - don't spend much time, just add some lines)
 
 ### Commit your changes
 
-Switch back to Github Desktop and have a look at the interface. You should see
-the recipe file you created and the changes you made to the file.
-Commit your changes by entering a commit message and optional description and and
-then clicking the commit button.
+Switch back to Github Desktop and have a look at the interface.
+Do you see your changes?
+Commit your recipe file by entering a commit message and optional description and and then clicking the commit button.
 
 ### For the fast ones:
 
@@ -61,57 +58,48 @@ then clicking the commit button.
 
 # 2 Github
 
-## Publish your project on Github (10 mins)
+## Publish your project on Github (5 min)
 
-Publish your cook book project on Github (**Publish** button on the top right).
-In the dialogue that opens, chose to make your project public (this is easier for
-the collaboration session tomorrow).
+Publish your cook book project on Github (**Publish** button on the top right). In the dialogue that opens, chose to make your project public (this is easier for the collaboration session tomorrow).
 
 ### Check out your brand-new Github repository
 
 Check out how your repository on Github looks like.
-You can find via **Repository ->View on GitHub** or by logging into your Github
-account in the browser.
+You can find it via **Repository -> View on GitHub** or by logging into your Github account in the browser.
 
 Have a brief look around in your Github repository.
-Which buttons are there and what do they do? How do your files look like?
+Which buttons are there? How do your files look like?
 
 ## For the fast ones
 
 Switch back to your local repo and
 
-a) Add or change recipes
-b) Work on the README file and add some information about your cook book project there
+a) Add or change recipes.
+b) Work on the README file and add some information about your cook book project there.
 
 Commit and push these new changes to Github and check out how they look online.
 
-# 3 Time travel
+# 3 Revert
 
-## Go back in time in your repository (5 min)
+## Undo changes in your repository (5 min)
 
-First, have a brief look at the history of your repository in Github Desktop.
+If you only have 1 commit in your project, make another one (e.g. add a recipe or change something).
 
-### Revert a commit 
+Now, have a brief look at the history of your repository in Github Desktop.
 
 Chose a commit that you want to revert.
 Select the commit and right-click to revert it.
 See how your history has changed.
 
-### For the fast ones
+# Extra
 
-If you only have 1 commit in your project, make another one (e.g. add a recipe or )
+## Checkout a previous commit
 
-#### Checkout a previous commit
+To see your cook book at an earlier stage, select the commit you want to jump back to. Then right-click and checkout this commit.
 
-To see your cook book at an earlier stage, select the commit you want to jump back to.
-Then right-click and checkout this commit.
+You will get a warning that you will create a detached HEAD state. This is ok, so checkout anyways.
 
-You will get a warning that you will create a detached HEAD state. This is ok, so
-checkout anyways.
-
-See how your history changed. You can also see on top of Github Desktop, that you
-are now in Detached HEAD mode. If you now look at your cook book files, you will see  
-that they correspond to an earlier version.
+See how your history changed. You can also see on top of Github Desktop, that you are now in Detached HEAD mode. If you now look at your cook book files, you will see that they correspond to an earlier version.
 
 ::: {.callout-note}
 You cannot work on the project in this state. 
@@ -121,9 +109,7 @@ You can only look at the files.
 To come back to the current state, click on the current branch button at the top
 and select the main branch again
 
-# Extra
-
-## Ignore files (5 min)
+## Ignore files
 
 We only want actual recipe files in our project. All other files should be ignored.
 
