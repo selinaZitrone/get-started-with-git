@@ -233,6 +233,7 @@ Get the changes of your team mate from the remote.
 - One remote repo on Github, multiple local repos
 - Idea: Everyone works on the their **separate branch**
   - **Merge** branch with the main when work is done
+- **Pull before** and **push after** working
 
 ## A branching-merging workflow
 
@@ -289,6 +290,8 @@ Git merge brings the commits from the branch to main
   - Create a pull request on Github to ask for a merge
 
 :::
+
+- **Pull before** and **push after** working
 
 ## A branching-merging workflow with Github
 
