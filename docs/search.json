@@ -4,91 +4,98 @@
     "href": "slides/02_git_collaboration.html#before-we-start",
     "title": "Introduction to version control with Git",
     "section": "Before we start",
-    "text": "Before we start\nDid everyone accept the invitation to the cook book of their partner?"
+    "text": "Before we start\nDid everyone accept a collaboration invitation?"
   },
   {
     "objectID": "slides/02_git_collaboration.html#recap",
     "href": "slides/02_git_collaboration.html#recap",
     "title": "Introduction to version control with Git",
     "section": "Recap",
-    "text": "Recap\n\n\nBasic Git workflow:\n\n\nInitialize a Git repository\nWork on the project\nStage and commit files to the local repository\nPush future changes to the remote repository"
+    "text": "Recap\n\n\nBasic Git workflow:\n\n\nInitialize a Git repository\nWork on the project\nStage and commit changes to the local repository\nPush to the remote repository"
   },
   {
     "objectID": "slides/02_git_collaboration.html#recap-1",
     "href": "slides/02_git_collaboration.html#recap-1",
     "title": "Introduction to version control with Git",
     "section": "Recap",
-    "text": "Recap\n\n\nBasic Git workflow:\n\n\nInitialize a Git repository\nWork on the project\nStage and commit files to the local repository\nPush future changes to the remote repository"
+    "text": "Recap\n\n\nBasic Git workflow:\n\n\nInitialize a Git repository\nWork on the project\nStage and commit changes to the local repository\nPush to the remote repository"
   },
   {
     "objectID": "slides/02_git_collaboration.html#recap-2",
     "href": "slides/02_git_collaboration.html#recap-2",
     "title": "Introduction to version control with Git",
     "section": "Recap",
-    "text": "Recap\nGit is a distributed version control system\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\nCollaborate with\n\nyourself on different machines\nyour colleagues and friends\nstrangers on open source projects"
+    "text": "Recap\nGit is a distributed version control system\n\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\n\n\n\nCollaborate with\n\nyourself on different machines\nyour colleagues and friends\nstrangers on open source projects"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-a-repo-from-a-remote",
     "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote",
     "title": "Introduction to version control with Git",
     "section": "Get a repo from a remote",
-    "text": "Get a repo from a remote\n\nIn Git language, this is called cloning\n\nGet a full copy of the remote repo\n\n\n\n\n\n\n\n\n\nIf the clone is authorized it can also commit and push"
+    "text": "Get a repo from a remote\n\nIn Git language, this is called cloning\n\nGet a full copy of the remote repo"
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-1",
+    "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-1",
+    "title": "Introduction to version control with Git",
+    "section": "Get a repo from a remote",
+    "text": "Get a repo from a remote\n\n\nTo clone a repo, you need to know the repo’s URL\n\n\n\n\nYou can clone all public repositories\n\nYou can only push if you are authorized\n\nYou can clone private repositories if you are a collaborator"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-changes-from-the-remote",
     "href": "slides/02_git_collaboration.html#get-changes-from-the-remote",
     "title": "Introduction to version control with Git",
     "section": "Get changes from the remote",
-    "text": "Get changes from the remote\n\nLocal changes, publish to remote: git push\nRemote changes, pull to local: git pull"
+    "text": "Get changes from the remote\n\n\nLocal changes, publish to remote: git push\n\n\n\nRemote changes, pull to local: git pull"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-simple-collaboration-workflow",
     "href": "slides/02_git_collaboration.html#a-simple-collaboration-workflow",
     "title": "Introduction to version control with Git",
     "section": "A simple collaboration workflow",
-    "text": "A simple collaboration workflow\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the same branch\n\nPull before you start working\nPush after you finished working"
+    "text": "A simple collaboration workflow\n\n\n\n\nOne remote repo on Github, multiple local repos\n\n\n\nIdea: Everyone works on the same branch\n\nPull before you start working\nPush after you finished working"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-1",
     "href": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-1",
     "title": "Introduction to version control with Git",
     "section": "A simple collaboration workflow",
-    "text": "A simple collaboration workflow\n\n\nThis works well if\n\nRepo is not updated often\nYou don’t work on the same files simultaneously\nNo need to discuss changes\n\nEverything is directly integrated in main\n\nYou collaborate with yourself"
+    "text": "A simple collaboration workflow\n\n\nThis works well if\n\nRepo is not updated often\nYou don’t work on the same files simultaneously\nNo need to discuss changes before they are integrated\nYou collaborate with yourself"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-2",
     "href": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-2",
     "title": "Introduction to version control with Git",
     "section": "A simple collaboration workflow",
-    "text": "A simple collaboration workflow\n\n\nThis workflow starts to be problematic when\n\nPeople push often\n\nConflicts on main\n\nNot possible to discuss code before integration\nDifficult to just “try something out”\n\nEverything goes directly to main"
+    "text": "A simple collaboration workflow\n\n\nThis workflow starts to be problematic when\n\nPeople push often/forget to pull regularly\n\nPotential conflicts on main\n\nYou just want to experiment\n\nEverything goes directly to main"
   },
   {
     "objectID": "slides/02_git_collaboration.html#lets-give-it-a-try",
     "href": "slides/02_git_collaboration.html#lets-give-it-a-try",
     "title": "Introduction to version control with Git",
     "section": "Let’s give it a try",
-    "text": "Let’s give it a try\n\nOpen a recipe in the cook book of your partner\nChange something in there\nCommit the change and push it\n\n\n\nNow switch to your own cook book\nPull the change that your partner just did\nCheckout what they changed in the history tab"
+    "text": "Let’s give it a try\n\n\n\nMake sure you are in the repository of your team mate\nOpen a recipe in the cook book of your team mate\n\nRepository -&gt; Show in Explorer\n\nChange something in there\nCommit the change and push it\n\n\n\n\n\nGet the changes of your team mate from the remote.\n\nSwitch to your own cook book repository\nPull the changes (Same button as the push button)\nHave a look at the commit history to see what changed"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow",
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow",
-    "text": "A branching-merging workflow\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge your branch with the main when you are finished"
+    "text": "A branching-merging workflow\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge branch with the main when work is done"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-1",
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-1",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow",
-    "text": "A branching-merging workflow\n\n\nAdvantages of this approach\n\nGuarantee that main always works\nPotential conflicts don’t have to be solved on main\nYou can just “try something out”"
+    "text": "A branching-merging workflow\n\n\nAdvantages of this approach\n\nGuarantee that main always works\nPotential conflicts don’t have to be solved on main\nYou can experiment without messing up the main"
   },
   {
     "objectID": "slides/02_git_collaboration.html#working-on-a-separate-branch",
     "href": "slides/02_git_collaboration.html#working-on-a-separate-branch",
     "title": "Introduction to version control with Git",
     "section": "Working on a separate branch",
-    "text": "Working on a separate branch\nThe steps to create and work on a separate branch are easy:\n\n\nCreate a local branch and switch to it\nWork on the branch like you are used to\n\nMake changes, stage and commit, publish and push"
+    "text": "Working on a separate branch\nThe steps to create and work on a separate branch are easy:\n\n\nCreate a local branch and switch to it\nWork on the branch like you are used to\n\nMake changes, stage and commit"
   },
   {
     "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch",
@@ -112,18 +119,11 @@
     "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\n\nMostly merging happens without problems, but…\n… if the same line was edited on separate branches…\n… there will be a merge conflict 😱\n\n\n\nMerge conflicts need to be solved manually. You need to chose which of the conflicting versions you want to keep."
   },
   {
-    "objectID": "slides/02_git_collaboration.html#before-we-continue",
-    "href": "slides/02_git_collaboration.html#before-we-continue",
-    "title": "Introduction to version control with Git",
-    "section": "Before we continue",
-    "text": "Before we continue\nYou partner now has pushed some changes to your cook book.\nGet the changes from the remote. In Github Desktop\n\nSwitch to your own cook book repository\nClick the pull button (same as push)\nHave a look at the commit history to see your partner’s changes"
-  },
-  {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github",
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow with Github",
-    "text": "A branching-merging workflow with Github\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge your branch with the main when you are finished"
+    "text": "A branching-merging workflow with Github\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge branch with the main when work is done"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-1",
@@ -137,21 +137,21 @@
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-2",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow with Github",
-    "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\n\nGithub has nice features for pull requests:\n\nDescribe your changes in detail\nCollaborators can easily compare versions\nCollaborators can discuss and comment on your changes\n…"
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-3",
-    "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-3",
-    "title": "Introduction to version control with Git",
-    "section": "A branching-merging workflow with Github",
-    "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\nA pull request is merged on Github when everyone agreed on the code."
+    "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\n\nGithub has nice features for pull requests:\n\nDescribe your changes in detail\nCollaborators can easily compare versions\nCollaborators can discuss and comment on your changes\n…\n\n\n\nA pull request is merged on Github when everyone agreed on the code."
   },
   {
     "objectID": "slides/02_git_collaboration.html#next-week",
     "href": "slides/02_git_collaboration.html#next-week",
     "title": "Introduction to version control with Git",
     "section": "Next week",
-    "text": "Next week\nIdea: Questions and problems often arise when working with the tool.\nUntil then\nWork with Git (~ 2 h), e.g.\n\nStart using version control for you own projects\nCreate a cook book project using the terminal\nTry to use Git from R (see How-To)\n…\n\nWrite down your problems/questions/other Git things you are interested in.\nNext week we will - Discuss your questions - Look at other interesting Git things todo - e.g. Use Git from R, VS Code - Use Github to publish websites - …\n\n\nBranching, Merging and Collaboration with Git"
+    "text": "Next week\n\nMonday 2.30 - 3.30 on Webex (link via email)\nUntil then: work with Git on your own (~ 1 - 2 h)\n\nPick something you find most interesting/useful to you\n\nCollect questions/problems/discoveries\nMore Git topics"
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#some-ideas",
+    "href": "slides/02_git_collaboration.html#some-ideas",
+    "title": "Introduction to version control with Git",
+    "section": "Some ideas",
+    "text": "Some ideas\n\nStart working with Git on one of your research projects\nPublish one of your projects on Github including a nice README\nPractice collaboration by contributing to my cook book project\n\nAccept the invitation I’ll send you later and work with branches and pull requests\nI will answer your pull requests and request some changes :)\n\nCheck out the How-To guides if you want to\n\nRecap GH Desktop\nAre interested in the terminal\nWant to learn about Git + R\n\nIf you find a mistake on my websites\n\nEdit the page on Github or report an issue\n\n…\n\n\n\nBranching, Merging and Collaboration with Git"
   },
   {
     "objectID": "sessions/02_git_collaboration.html",
@@ -172,7 +172,7 @@
     "href": "sessions/02_git_collaboration.html#tasks",
     "title": "A collaboration workflows with Git",
     "section": "Tasks",
-    "text": "Tasks\nThe goal of these tasks is to get a feeling for a collaborative Git workflow.\nIf you are stuck in a task, you can have a look at the A How-To description of the Git workflow with detailed explanations and Screenshots or the steps.\n\n1 CloneBranch and mergePull requests\n\n\n\nClone the cook book repo of your partner (5 min)\nUse Github Desktop to clone the cook book repository of your partner.\nGo to File -&gt; Clone Repository.\nIn the tab “Github.com” you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your partner and clone it to a local path of your choice.\nIf you don’t see your partners repository, switch to the tab “URL”. Open your partner’s repository on Github (find the correct link here). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.\nOpen your partner’s cook book in the explorer to see which files are already in there (Repository -&gt; Show in Explorer).\n\n\n\n\nTry branching and merging in your repo (10 min)\nMake sure that you are in your partner’s cook book (check which repository you are in on the top left).\nCreate a new branch to add a recipe.\nMake sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is.\nNow go to the project folder and add a file for the new recipe with some recipe instructions in it.\nAdd and commit that new recipe to your branch.\nNow switch back to the main branch (click on the “current branch” button on top).\nMerge your new branch into the main branch (Branch -&gt; Merge into current branch). Then check the commit history to see if you branch commit is actually there.\nNow push to Github.\n\n\n\n\nMake a pull request in your partner’s repo (20 min)\nNow it’s time to modify something in your partner’s cook book. Switch to their repository and create a new branch for your changes.\n\nMake some changes\nChange two things in your partner’s cook book and commit them using 2 separate commits:\n\nAdd a new file with a new recipe\nOpen one of their recipes and make a change there. E.g. you can add or replace some ingredients.\n\n\n\nPush\nPublish and push your branch to Github.\n\n\nPull request\nOpen the repository on Github. On top you should already see the option to “Compare and pull request”. Open a pull request and describe your changes.\n\n\nReview pull request on your repo\nNow it’s time to look at the pull request your partner left in your repository and decide if you want to merge it or not.\nTry to comment on single lines of code asking for changes."
+    "text": "Tasks\nThe goal of these tasks is to get a feeling for a collaborative Git workflow.\nIf you are stuck in a task, you can have a look at the A How-To description of the Git workflow with detailed explanations and screenshots of the steps.\n\n1 Clone2 Branch and merge3 Pull requestsExtra\n\n\n\nClone the cook book repo of your partner (5 min)\nUse Github Desktop to clone the cook book repository of your partner.\nGo to File -&gt; Clone Repository.\nIn the tab “Github.com” you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your partner and clone it to a local path of your choice.\nIf you don’t see your partners repository, switch to the tab “URL”. Open your partner’s repository on Github (find the correct link here). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.\nOpen your partner’s cook book in the explorer to see which files are already in there (Repository -&gt; Show in Explorer).\n\n\n\n\nTry branching and merging (10 min)\nMake sure that you are in your team mate’s cook book (check which repository you are in on the top left).\nCreate a new branch to add a recipe (Branch -&gt; New branch).\nMake sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is:\n\nNow go to the project folder (Repository -&gt; Show in Explorer) and add a file for a new recipe with some recipe instructions in it.\nAdd and commit that new recipe to your branch.\nNow switch back to the main branch (click on the “current branch” button on top and select “main”).\nMerge your new branch into the main branch (Branch -&gt; Merge into current branch -&gt; select your branch). Now check the commit history to see if your branch commit is actually there.\nNow push the “main” to Github by clicking the push button to share your changes with your team mate.\n\n\n\n\nMake a pull request in your partner’s repo (10 min)\nNow it’s again time to modify something in your team mate’s cook book. Make sure you are in your team mate’s repository on the top left of Github desktop.\n\nCreate another branch and make some changes\nCreate another branch (Branch -&gt; New branch) and make sure that you are on that branch (top middle section of Github Desktop).\n\n\nMake some changes\nOpen a file in your team mate’s cook book and make some changes. Save and close the file and switch to Github Desktop.\nNow commit these changes.\n\n\nPublish and push branch\nPublish and push your branch to Github by clicking on the publish/push button.\n\n\nPull request\nNow open the repository on Github (Repository -&gt; View on Github). On top you should already see the option to “Compare and pull request”:\n\nClick on that button and use the dialogue window that opens to describe your changes. Then create the pull request by clicking on the green button that says “Create pull request”.\n\n\n\n\n\nReview pull request on your repo\nNow it’s time to look at the pull request your partner left in your repository and decide if you want to merge it or not.\nWhen you have a pull request, you can see it on top, indicated by the number next to the pull request button:\n Open the pull request by clickon on the button and selecting the Pull request from the list of pull requests.\nClick through the tabs on top. E.g. the “Files changed” tab is very interesting.\nYou can comment on the pull request if you want and ask for changes.\nWhen you are happy, you can merge the pull request by clicking on the green “Merge pull request” button:\n\nNow the changes are integrated into the main branch."
   },
   {
     "objectID": "sessions/02_git_collaboration.html#clone-the-cook-book-repo-of-your-partner-5-min",
@@ -182,18 +182,18 @@
     "text": "Clone the cook book repo of your partner (5 min)\nUse Github Desktop to clone the cook book repository of your partner.\nGo to File -&gt; Clone Repository.\nIn the tab “Github.com” you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your partner and clone it to a local path of your choice.\nIf you don’t see your partners repository, switch to the tab “URL”. Open your partner’s repository on Github (find the correct link here). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.\nOpen your partner’s cook book in the explorer to see which files are already in there (Repository -&gt; Show in Explorer)."
   },
   {
-    "objectID": "sessions/02_git_collaboration.html#try-branching-and-merging-in-your-repo-10-min",
-    "href": "sessions/02_git_collaboration.html#try-branching-and-merging-in-your-repo-10-min",
+    "objectID": "sessions/02_git_collaboration.html#try-branching-and-merging-10-min",
+    "href": "sessions/02_git_collaboration.html#try-branching-and-merging-10-min",
     "title": "A collaboration workflows with Git",
-    "section": "Try branching and merging in your repo (10 min)",
-    "text": "Try branching and merging in your repo (10 min)\nMake sure that you are in your partner’s cook book (check which repository you are in on the top left).\nCreate a new branch to add a recipe.\nMake sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is.\nNow go to the project folder and add a file for the new recipe with some recipe instructions in it.\nAdd and commit that new recipe to your branch.\nNow switch back to the main branch (click on the “current branch” button on top).\nMerge your new branch into the main branch (Branch -&gt; Merge into current branch). Then check the commit history to see if you branch commit is actually there.\nNow push to Github."
+    "section": "Try branching and merging (10 min)",
+    "text": "Try branching and merging (10 min)\nMake sure that you are in your team mate’s cook book (check which repository you are in on the top left).\nCreate a new branch to add a recipe (Branch -&gt; New branch).\nMake sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is:\n\nNow go to the project folder (Repository -&gt; Show in Explorer) and add a file for a new recipe with some recipe instructions in it.\nAdd and commit that new recipe to your branch.\nNow switch back to the main branch (click on the “current branch” button on top and select “main”).\nMerge your new branch into the main branch (Branch -&gt; Merge into current branch -&gt; select your branch). Now check the commit history to see if your branch commit is actually there.\nNow push the “main” to Github by clicking the push button to share your changes with your team mate."
   },
   {
-    "objectID": "sessions/02_git_collaboration.html#make-a-pull-request-in-your-partners-repo-20-min",
-    "href": "sessions/02_git_collaboration.html#make-a-pull-request-in-your-partners-repo-20-min",
+    "objectID": "sessions/02_git_collaboration.html#make-a-pull-request-in-your-partners-repo-10-min",
+    "href": "sessions/02_git_collaboration.html#make-a-pull-request-in-your-partners-repo-10-min",
     "title": "A collaboration workflows with Git",
-    "section": "Make a pull request in your partner’s repo (20 min)",
-    "text": "Make a pull request in your partner’s repo (20 min)\nNow it’s time to modify something in your partner’s cook book. Switch to their repository and create a new branch for your changes.\n\nMake some changes\nChange two things in your partner’s cook book and commit them using 2 separate commits:\n\nAdd a new file with a new recipe\nOpen one of their recipes and make a change there. E.g. you can add or replace some ingredients.\n\n\n\nPush\nPublish and push your branch to Github.\n\n\nPull request\nOpen the repository on Github. On top you should already see the option to “Compare and pull request”. Open a pull request and describe your changes.\n\n\nReview pull request on your repo\nNow it’s time to look at the pull request your partner left in your repository and decide if you want to merge it or not.\nTry to comment on single lines of code asking for changes."
+    "section": "Make a pull request in your partner’s repo (10 min)",
+    "text": "Make a pull request in your partner’s repo (10 min)\nNow it’s again time to modify something in your team mate’s cook book. Make sure you are in your team mate’s repository on the top left of Github desktop.\n\nCreate another branch and make some changes\nCreate another branch (Branch -&gt; New branch) and make sure that you are on that branch (top middle section of Github Desktop).\n\n\nMake some changes\nOpen a file in your team mate’s cook book and make some changes. Save and close the file and switch to Github Desktop.\nNow commit these changes.\n\n\nPublish and push branch\nPublish and push your branch to Github by clicking on the publish/push button.\n\n\nPull request\nNow open the repository on Github (Repository -&gt; View on Github). On top you should already see the option to “Compare and pull request”:\n\nClick on that button and use the dialogue window that opens to describe your changes. Then create the pull request by clicking on the green button that says “Create pull request”."
   },
   {
     "objectID": "resources.html",
@@ -424,7 +424,7 @@
     "href": "how-tos/git_workflow_gh_desktop.html#step-1-clone-a-remote-repository",
     "title": "A Git workflow with Github Desktop",
     "section": "Step 1: Clone a remote repository",
-    "text": "Step 1: Clone a remote repository\nFirst, we need to clone our friend’s repository. This means we pull an entire copy of the repository onto our machine. To clone a repository, you need to know the repositories address. You can find the HTTPS address by clicking on the green code button on Github:\n Go to Github Desktop and File -&gt; Clone repository. In the dialogue box that opens You can either clone repositories from\n\nGithub.com: Here you can scroll through a list of all your Github repositories. Maybe this list already shows the repository of your friend because you are now a collaborator.\nURL: Enter the URL of your friends repo that you copied from Github\n\nIf you enter the URL, you can select the location where the repository should be stored in:\n When you are ready click on Clone.\nNow you can start working with the repository of your friend."
+    "text": "Step 1: Clone a remote repository\n\nOption 1: You are collaborating on a Github repository\nThis option is great if you collaborate on a Github repository. As soon as you accepted the invitation to be a collaborator on a repository, this repository will be listed by Github Desktop in the list of your repositories.\nTo clone the repository you just need to go to File -&gt; Clone repository. In the dialogue box that opens stay in the “GitHub.com” tab. There you can scroll through the list of your repositories and select the one you want to clone.\nBelow, you can select the local path where the repository and all it’s files should be stored.\nWhen you are ready click on Clone.\nNow you can start working with the repository of your friend.\n(Select option 2 if you friend’s repository is not in the list of your repositories)\n\n\nOption 2: Works for all repository\nThis option works for Github repositories but also for others like Gitlab.\nFirst, we need to clone our friend’s repository. This means we pull an entire copy of the repository onto our machine. To clone a repository, you need to know the repositories address. You can find the HTTPS address by clicking on the green code button on Github:\n Go to Github Desktop and File -&gt; Clone repository. In the dialogue box that opens\nGo to the URL Tab and enter the URL. Then, you can select the location where the repository should be stored in:\n When you are ready click on Clone.\nNow you can start working with the repository of your friend."
   },
   {
     "objectID": "how-tos/git_workflow_gh_desktop.html#step-2-create-a-new-branch",
@@ -459,14 +459,7 @@
     "href": "how-tos/git_workflow_usethis.html",
     "title": "A Git workflow with RStudio, R and usethis",
     "section": "",
-    "text": "For this workflow, you need\n\nGit installed\nRStudio and R installed\nThe R package usethis installed\n\nThe usethis is a very cool workflow package that has a lot of functionality including Git workflows. Install it in R with:\n\ninstall.packages(\"usethis\")\n\n\n\nYou can use SSH or HTTPS as a default protocol to communicate with the remote server. If you correctly set up SSH key authentication (see here), you can just use SSH protocol and skip the next step. If you have not set up SSH key authentication yet you can follow the next steps to setup a Personal Access Token (PAT).\n\n\n\nCheck if you already have a personal access token for Github\n\ngh::gh_token()\n\nIf not, you can create one\n\nusethis::create_github_token()\n\nThis will open Github and ask you to sign in.\nNext, you are asked to create a new personal access token.\nOn top enter a note that reminds you what this token is for (e.g. Something like “RStudio/R on HP laptop”).\nSet an expiration date of your choice (the shorter the more secure, but you have to update more often - Github will send you a reminder for this).\nYou can also select the scopes for your PAT. For general use case, the default selected scopes are enough. Scroll down and click on Generate token.\nCopy the token to the clipboard.\n\n\n\n\n\n\nWarning\n\n\n\nYou will not be able to read the token again after you closed this window. So leave the window open until you successfully set up your connection.\n\n\nNow register the token with git using the function:\n\ngitcreds::gitcreds_set()\n\nYou are now prompted to paste your token into the R console.\nNow your PAT should be added to the credentials. You can check it with\n\ngh::gh_token()\n\n\n\n\nIf you want to load the usethis package automatically when starting R, you can add it to your .Rprofile. This way, you have all the usethis functionality available without having to load the package first.\n\n\n\n\n\n\nWarning\n\n\n\nLoading packages automatically should only be done for packages that are not used in your R scripts. Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else.\nAdding utility packages to the .Rprofile can however be convenient.\nRead more about this topic here.\n\n\nYou can open your .Rprofile file with\n\nusethis::edit_r_profile()\n\nThen you can add the following line, save the file and close it:\n\n# supress messages just means that messages are not printed when loading the package\nif (interactive()) {\n  suppressMessages(library(usethis))\n}\noptions(\n  usethis.protocol = \"https\" # or \"ssh\" if you set up ssh\n)\n\nWith this, usethis will be loaded every time you open RStudio and you already registered the default protocol that you want to use with Git (This is only relevant for the Git things you do with usethis)."
-  },
-  {
-    "objectID": "how-tos/git_workflow_usethis.html#ssh-vs.-https",
-    "href": "how-tos/git_workflow_usethis.html#ssh-vs.-https",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "",
-    "text": "You can use SSH or HTTPS as a default protocol to communicate with the remote server. If you correctly set up SSH key authentication (see here), you can just use SSH protocol and skip the next step. If you have not set up SSH key authentication yet you can follow the next steps to setup a Personal Access Token (PAT)."
+    "text": "For this workflow, you need\n\nGit installed\nRStudio and R installed\nThe R package usethis installed\n\nThe usethis is a very cool workflow package that has a lot of functionality including Git workflows. Install it in R with:\n\ninstall.packages(\"usethis\")\n\n\n\nCheck if you already have a personal access token for Github\n\ngh::gh_token()\n\nIf not, you can create one\n\nusethis::create_github_token()\n\nThis will open Github and ask you to sign in.\nNext, you are asked to create a new personal access token.\nOn top enter a note that reminds you what this token is for (e.g. Something like “RStudio/R on HP laptop”).\nSet an expiration date of your choice (the shorter the more secure, but you have to update more often - Github will send you a reminder for this).\nYou can also select the scopes for your PAT. For general use case, the default selected scopes are enough. Scroll down and click on Generate token.\nCopy the token to the clipboard.\n\n\n\n\n\n\nWarning\n\n\n\nYou will not be able to read the token again after you closed this window. So leave the window open until you successfully set up your connection.\n\n\nNow register the token with git using the function:\n\ngitcreds::gitcreds_set()\n\nYou are now prompted to paste your token into the R console.\nNow your PAT should be added to the credentials. You can check it with\n\ngh::gh_token()\n\n\n\n\nIf you want to load the usethis package automatically when starting R, you can add it to your .Rprofile. This way, you have all the usethis functionality available without having to load the package first.\n\n\n\n\n\n\nWarning\n\n\n\nLoading packages automatically should only be done for packages that are not used in your R scripts. Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else.\nAdding utility packages to the .Rprofile can however be convenient.\nRead more about this topic here.\n\n\nYou can open your .Rprofile file with\n\nusethis::edit_r_profile()\n\nThen you can add the following line, save the file and close it:\n\n# supress messages just means that messages are not printed when loading the package\nif (interactive()) {\n  suppressMessages(library(usethis))\n}\noptions(\n  usethis.protocol = \"https\" # or \"ssh\" if you set up ssh\n)\n\nWith this, usethis will be loaded every time you open RStudio and you already registered the default protocol that you want to use with Git (This is only relevant for the Git things you do with usethis)."
   },
   {
     "objectID": "how-tos/git_workflow_usethis.html#setup-pat-to-use-https-protocol-with-github",
