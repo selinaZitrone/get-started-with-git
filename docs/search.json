@@ -4,7 +4,7 @@
     "href": "slides/02_git_collaboration.html#before-we-start",
     "title": "Introduction to version control with Git",
     "section": "Before we start",
-    "text": "Before we start\nDid everyone accept a collaboration invitation?"
+    "text": "Before we start\nLet’s check if we are all set with the teams."
   },
   {
     "objectID": "slides/02_git_collaboration.html#recap",
@@ -102,21 +102,7 @@
     "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch",
     "title": "Introduction to version control with Git",
     "section": "Merging changes from a branch",
-    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\nNormally: Git merge brings the commits from the branch to main"
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
-    "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
-    "title": "Introduction to version control with Git",
-    "section": "Merging changes from a branch",
-    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\nIf there was a commit on a common file in main, a merge commit is introduced."
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
-    "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
-    "title": "Introduction to version control with Git",
-    "section": "Merging changes from a branch",
-    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\n\nMostly merging happens without problems, but…\n… if the same line was edited on separate branches…\n… there will be a merge conflict 😱\n\n\n\nMerge conflicts need to be solved manually. You need to chose which of the conflicting versions you want to keep."
+    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\nGit merge brings the commits from the branch to main"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github",
@@ -137,7 +123,7 @@
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-2",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow with Github",
-    "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\n\nGithub has nice features for pull requests:\n\nDescribe your changes in detail\nCollaborators can easily compare versions\nCollaborators can discuss and comment on your changes\n…\n\n\n\nA pull request is merged on Github when everyone agreed on the code."
+    "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\n\nGithub has nice features for pull requests, e.g.:\n\nDescribe your changes in detail\nCollaborators can easily compare versions\nCollaborators can discuss and comment on your changes\n\n\n\nA pull request is merged on Github when everyone agreed on the code."
   },
   {
     "objectID": "slides/02_git_collaboration.html#next-week",
@@ -151,7 +137,21 @@
     "href": "slides/02_git_collaboration.html#some-ideas",
     "title": "Introduction to version control with Git",
     "section": "Some ideas",
-    "text": "Some ideas\n\nStart working with Git on one of your research projects\nPublish one of your projects on Github including a nice README\nPractice collaboration by contributing to my cook book project\n\nAccept the invitation I’ll send you later and work with branches and pull requests\nI will answer your pull requests and request some changes :)\n\nCheck out the How-To guides if you want to\n\nRecap GH Desktop\nAre interested in the terminal\nWant to learn about Git + R\n\nIf you find a mistake on my websites\n\nEdit the page on Github or report an issue\n\n…\n\n\n\nBranching, Merging and Collaboration with Git"
+    "text": "Some ideas\n\nStart working with Git on one of your research projects\nPublish one of your projects on Github including a nice README\nPractice collaboration by contributing to your team mate’s cook using pull requests\n\nYour team mate can answer your pull requests and request some changes :)\n\nCheck out the How-To guides if you want to\n\nRecap GH Desktop\nAre interested in the terminal\nWant to learn about Git + R\n\nIf you find a mistake on my websites\n\nEdit the page on Github or report an issue\n\nCheckout the additional resources"
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
+    "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
+    "title": "Introduction to version control with Git",
+    "section": "Merging changes from a branch",
+    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\nIf there was a commit on a common file in main, a merge commit is introduced."
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
+    "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
+    "title": "Introduction to version control with Git",
+    "section": "Merging changes from a branch",
+    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\n\nMostly merging happens without problems, but…\n… if the same line was edited on separate branches…\n… there will be a merge conflict 😱\n\n\n\nMerge conflicts need to be solved manually. You need to chose which of the conflicting versions you want to keep.\n\n\nBranching, Merging and Collaboration with Git"
   },
   {
     "objectID": "sessions/02_git_collaboration.html",
