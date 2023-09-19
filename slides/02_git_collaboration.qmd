@@ -27,7 +27,7 @@ from: markdown+emoji
 
 ## Before we start
 
-Did everyone accept a collaboration invitation?
+Let's check if we are all set with the [teams](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit#gid=0).
 
 ## Recap
 
@@ -41,8 +41,8 @@ Basic Git workflow:
 
 1. **Initialize** a Git repository
 2. **Work** on the project
-3. **Stage** and **commit** files to the local repository
-4. **Push** future changes to the remote repository
+3. **Stage** and **commit** changes to the local repository
+4. **Push** to the remote repository
 
 :::
 
@@ -69,8 +69,8 @@ Basic Git workflow:
 
 1. **Initialize** a Git repository
 2. **Work** on the project
-3. **Stage** and **commit** files to the local repository
-4. **Push** future changes to the remote repository
+3. **Stage** and **commit** changes to the local repository
+4. **Push** to the remote repository
 
 :::
 
@@ -121,18 +121,34 @@ Git is a **distributed version control system**
 
 . . .
 
-![](img/day2/git_clone_concept.png){width=70% fig-align="center"}
+![](img/day2/git_clone_concept_folder.png)
 
-- If the clone is authorized it can also commit and push
+## Get a repo from a remote
+
+::: {.fragment}
+
+- To clone a repo, you need to know the repo's URL
+
+![](img/day2/github_get_repo_url.png)
+
+:::
+
+- You can clone all public repositories
+  - You can only push if you are authorized
+  
+- You can clone private repositories if you are a collaborator
 
 # Now you
-> Clone your team mate's cook Book repo <br>
+> Clone your team mate's cook Book repo (**File -> Clone repository**)<br>
 > It should be in the list of your repositories if you accepted the invitation.
-> If not, check [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit#gid=0) for the correct remote URL.
 
 ## Get changes from the remote
 
+::: {.nonincremental}
+
 - Local changes, publish to remote: `git push`
+
+:::
 
 - Remote changes, pull to local: `git pull`
 
@@ -146,7 +162,12 @@ Git is a **distributed version control system**
 
 ![](img/day2/collab_simple.png)
 
+::: {.nonincremental}
+
 - One remote repo on Github, multiple local repos
+
+:::
+
 - Idea: Everyone works on the same branch
   - **Pull before** you start **working**
   - **Push after** you finished **working**
@@ -161,8 +182,7 @@ This works well if
 
 - Repo is not updated often
 - You don't work on the same files simultaneously
-- No need to discuss changes
-  - Everything is directly integrated in main
+- No need to discuss changes before they are integrated
 - You collaborate with yourself
 
 ## A simple collaboration workflow
@@ -173,13 +193,14 @@ This works well if
 
 This workflow starts to be problematic when
 
-- People push often
-  - Conflicts on main
-- Not possible to discuss code before integration
-- Difficult to just "try something out"
+- People push often/forget to pull regularly
+  - Potential conflicts on main
+- You just want to experiment
   - Everything goes directly to main
   
 ## Let's give it a try
+
+. . .
 
 ::: {.nonincremental}
 
@@ -195,10 +216,7 @@ This workflow starts to be problematic when
 
 ::: {.nonincremental}
 
-
-You team mate now has pushed some changes to your cook book.
-
-Get the changes from the remote. In Github Desktop
+Get the changes of your team mate from the remote.
 
 - Switch to your own cook book repository
 - Pull the changes (Same button as the push button)
@@ -214,7 +232,7 @@ Get the changes from the remote. In Github Desktop
 
 - One remote repo on Github, multiple local repos
 - Idea: Everyone works on the their **separate branch**
-  - **Merge** your branch with the main when you are finished 
+  - **Merge** branch with the main when work is done
 
 ## A branching-merging workflow
 
@@ -226,7 +244,7 @@ Get the changes from the remote. In Github Desktop
 
 - Guarantee that main always works
 - Potential conflicts don't have to be solved on main
-- You can just "try something out"
+- You can experiment without messing up the main
 
 ## Working on a separate branch
 
@@ -236,7 +254,7 @@ The steps to create and work on a separate branch are easy:
 
 - Create a local branch and switch to it
 - Work on the branch like you are used to
-  - Make changes, **stage** and **commit**, publish and **push**
+  - Make changes, **stage** and **commit**
 
 ## Merging changes from a branch
 
@@ -244,7 +262,84 @@ To bring changes to the main branch you need to **merge** them.
 
 ![](img/day2/merge_branch_stew_ff.png)
 
-Normally: Git merge brings the commits from the branch to main
+Git merge brings the commits from the branch to main
+
+
+# Now you
+> [Create a branch and merge it in your team mate's cook book](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
+> Complete task 2 "Branch and merge" (10 min)
+
+## A branching-merging workflow with Github
+
+![](img/day2/collab_branching_pre_pr.png)
+
+- One remote repo on Github, multiple local repos
+- Idea: Everyone works on the their separate branch
+  - ~~**Merge** branch with the main when work is done~~
+
+## A branching-merging workflow with Github
+
+![](img/day2/collab_branching_pr.png)
+
+::: {.nonincremental}
+
+- One remote repo on Github, multiple local repos
+- Idea: Everyone works on the their separate branch
+  - ~~Merge your branch with the main when you are finished~~
+  - Create a pull request on Github to ask for a merge
+
+:::
+
+## A branching-merging workflow with Github
+
+A pull request is basically asking your collaborators:
+
+> What do you think of my changes? Can we integrate them in main or do we still need to change something?
+
+. . .
+
+Github has nice features for pull requests, e.g.:
+
+- **Describe your changes** in detail
+- Collaborators can easily **compare versions**
+- Collaborators can **discuss and comment** on your changes
+
+. . .
+
+A pull request is merged on Github when **everyone agreed on the code**.
+
+# Now you
+> [Create a pull request on your partners repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
+> Complete task 3 "Pull requests" (10 min)
+
+# Thanks for your attention
+
+> Questions?
+
+## Next week
+
+- Monday 2.30 - 3.30 on Webex (link via email)
+
+- Until then: work with Git on your own (~ 1 - 2 h)
+  - Pick something you find most interesting/useful to you
+- Collect questions/problems/discoveries
+- More Git topics
+
+## Some ideas
+
+- **Start working** with Git on one of **your research projects**
+- **Publish** one of your projects on Github including a nice README
+- **Practice collaboration** by contributing to your team mate's cook using pull requests
+  - Your team mate can answer your pull requests and request some changes :)
+- **Check out the How-To guides** if you want to
+  - [Recap GH Desktop](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_gh_desktop.html)
+  - Are interested in the [terminal](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_terminal.html)
+  - Want to learn about [Git + R](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_usethis.html)
+- If you find a mistake on my websites
+  - **Edit the page** on Github or **report an issue**
+- Checkout the additional [resources](https://selinazitrone.github.io/get-started-with-git/resources.html)
+
+# Appendix
 
 ## Merging changes from a branch
 
@@ -269,80 +364,3 @@ To bring changes to the main branch you need to **merge** them.
 Merge conflicts need to be solved manually. You need to chose which of the conflicting
 versions you want to keep.
 
-# Now you
-> [Create a branch and merge it in your team mate's cook book](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
-> Complete task 2 "Branch and merge" (10 min)
-
-## A branching-merging workflow with Github
-
-![](img/day2/collab_branching_pre_pr.png)
-
-- One remote repo on Github, multiple local repos
-- Idea: Everyone works on the their separate branch
-  - ~~Merge your branch with the main when you are finished~~
-
-## A branching-merging workflow with Github
-
-![](img/day2/collab_branching_pr.png)
-
-::: {.nonincremental}
-
-- One remote repo on Github, multiple local repos
-- Idea: Everyone works on the their separate branch
-  - ~~Merge your branch with the main when you are finished~~
-  - Create a pull request on Github to ask for a merge
-
-:::
-
-## A branching-merging workflow with Github
-
-A pull request is basically asking your collaborators:
-
-> What do you think of my changes? Can we integrate them in main or do we still need to change something?
-
-. . .
-
-Github has nice features for pull requests:
-
-- **Describe your changes** in detail
-- Collaborators can easily **compare versions**
-- Collaborators can **discuss and comment** on your changes
-- ...
-
-## A branching-merging workflow with Github
-
-A pull request is basically asking your collaborators:
-
-> What do you think of my changes? Can we integrate them in main or do we still need to change something?
-
-A pull request is merged on Github when **everyone agreed on the code**.
-
-# Now you
-> [Create a pull request on your partners repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
-> Complete task 3 "Pull requests" (10 min)
-
-# Thanks for your attention
-
-> Questions?
-
-## Next week
-
-**Idea:** Questions and problems often arise when working with the tool.
-
-**Until then**
-
-Work with Git (~ 2 h), e.g.
-
-- Start using version control for you own projects
-- Create a cook book project using the terminal
-- Try to use Git from R (see How-To)
-- ...
-
-Write down your problems/questions/other Git things you are interested in.
-
-**Next week we will**
-- Discuss your questions 
-- Look at other interesting Git things todo
-  - e.g. Use Git from R, VS Code
-  - Use Github to publish websites
-  - ...

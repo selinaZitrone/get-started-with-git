@@ -30,40 +30,45 @@ Make sure that you are now in the new branch by looking in the top middle of Git
 
 ![](tasks/img/current_branch.png)
 
-Now go to the project folder (**Repository -> Show in Explorer**) and add a file for the new recipe with some recipe instructions in it.
+Now go to the project folder (**Repository -> Show in Explorer**) and add a file for a new recipe with some recipe instructions in it.
 
 Add and commit that new recipe to your branch. 
 
-Now switch back to the main branch (click on the "current branch" button on top
-and select "main").
+Now switch back to the main branch (click on the "current branch" button on top and select "main").
 
-Merge your new branch into the main branch (**Branch -> Merge into current branch -> select your branch**). Then check the commit history to see if your branch commit is actually there.
+Merge your new branch into the main branch (**Branch -> Merge into current branch -> select your branch**). Now check the commit history to see if your branch commit is actually there.
 
-Now push to Github.
+Now push the "main" to Github by clicking the push button to share your changes with your team mate.
 
 # 3 Pull requests
 
 ## Make a pull request in your partner's repo (10 min)
 
-Now it's time to again modify something in your team mate's cook book. Switch to their repository and create a new branch for your changes. 
+Now it's again time to modify something in your team mate's cook book. Make sure you are in your team mate's repository on the top left of Github desktop. 
+
+#### Create another branch and make some changes
+
+Create another branch (**Branch -> New branch**) and make sure that you are on that branch (top middle section of Github Desktop).
 
 #### Make some changes
 
-Change two things in your partner's cook book and commit them using 2 separate commits:
+Open a file in your team mate's cook book and make some changes.
+Save and close the file and switch to Github Desktop.
 
-1) Add a new file with a new recipe
-2) Open one of their recipes and make a change there. E.g. you can add or replace some ingredients.
+Now commit these changes.
 
-#### Push
+#### Publish and push branch
 
-Publish and push your branch to Github by clicking on the push button.
+Publish and push your branch to Github by clicking on the publish/push button.
 
 #### Pull request
 
 Now open the repository on Github (**Repository -> View on Github**).
-On top you should already see the option to "Compare and pull request".
+On top you should already see the option to "Compare and pull request":
 
-Click on that button and use the dialogue window that opens to describe your changes. Then create the pull request.
+![](tasks/img/compare_and_pr.png)
+
+Click on that button and use the dialogue window that opens to describe your changes. Then create the pull request by clicking on the green button that says "Create pull request".
 
 # Extra
 
@@ -71,6 +76,19 @@ Click on that button and use the dialogue window that opens to describe your cha
 
 Now it's time to look at the pull request your partner left in your repository and decide if you want to merge it or not.
 
-Try to comment on single lines of code asking for changes.
+When you have a pull request, you can see it on top, indicated by the number next to the pull request button:
+
+![](tasks/img/new_pr.png)
+Open the pull request by clickon on the button and selecting the Pull request from the list of pull requests.
+
+Click through the tabs on top. E.g. the "Files changed" tab is very interesting.
+
+You can comment on the pull request if you want and ask for changes.
+
+When you are happy, you can merge the pull request by clicking on the green "Merge pull request" button:
+
+![](tasks/img/merge_pr.png)
+
+Now the changes are integrated into the main branch.
 
 :::

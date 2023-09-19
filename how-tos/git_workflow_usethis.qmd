@@ -19,12 +19,6 @@ Install it in R with:
 install.packages("usethis")
 ```
 
-## SSH vs. HTTPS
-
-You can use SSH or HTTPS as a default protocol to communicate with the remote server.
-If you correctly set up SSH key authentication (see [here](ssh_keys.qmd)), you can just use SSH protocol and skip the next step. If you have not set up SSH key authentication yet you can follow
-the next steps to setup a Personal Access Token (PAT). 
-
 ## Setup PAT to use HTTPS protocol with Github
 
 Check if you already have a personal access token for Github
