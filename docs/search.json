@@ -81,7 +81,7 @@
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow",
-    "text": "A branching-merging workflow\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge branch with the main when work is done"
+    "text": "A branching-merging workflow\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge branch with the main when work is done\n\nPull before and push after working"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-1",
@@ -116,7 +116,7 @@
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-1",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow with Github",
-    "text": "A branching-merging workflow with Github\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge your branch with the main when you are finished\nCreate a pull request on Github to ask for a merge"
+    "text": "A branching-merging workflow with Github\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge your branch with the main when you are finished\nCreate a pull request on Github to ask for a merge\n\n\n\n\nPull before and push after working"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-2",
