@@ -35,3 +35,4 @@ work with in the [Github Desktop Documentation](https://docs.github.com/desktop)
 ## Other resources
 
 - [Connect Github Desktop with a Gitlab repository](https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104?gi=b32bd84e7fe4)
+- [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html)

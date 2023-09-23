@@ -24,6 +24,8 @@ website:
             href: sessions/01_intro_git.qmd
           - text: 02 - Collaboration with Git
             href: sessions/02_git_collaboration.qmd
+          - text: 03 - More Git
+            href: slides/03_extra.qmd
       - text: How-to-guides
         menu: 
           - text: Github Desktop
