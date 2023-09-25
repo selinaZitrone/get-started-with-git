@@ -4,7 +4,7 @@
     "href": "slides/03_extra.html#today",
     "title": "Introduction to version control with Git",
     "section": "Today",
-    "text": "Today\n\n\nCollect open questions in Excalidraw (10 min)\nDiscuss open questions (20 min)\nLook at additional topics (20 min)\nFeedback and Goodbye (10 min)"
+    "text": "Today\n\n\nCollect open questions in Excalidraw (5 min)\nDiscuss open questions and additional topics (40 min)\nFeedback and Goodbye (10 min)"
   },
   {
     "objectID": "slides/03_extra.html#ignoring-files",
@@ -32,14 +32,14 @@
     "href": "slides/03_extra.html#feedback",
     "title": "Introduction to version control with Git",
     "section": "Feedback",
-    "text": "Feedback\nPlease take 7 min to fill out the feedback form: https://votingo.cedis.fu-berlin.de/survey/ARZC2L\n\n\nUse the free text question in the end for suggestions"
+    "text": "Feedback\nPlease take 7 min to fill out the feedback form:\nhttps://votingo.cedis.fu-berlin.de/survey/ARZC2L\n\n\nUse the free text question in the end for suggestions"
   },
   {
     "objectID": "slides/03_extra.html#how-to-continue-from-here",
     "href": "slides/03_extra.html#how-to-continue-from-here",
     "title": "Introduction to version control with Git",
     "section": "How to continue from here",
-    "text": "How to continue from here\n\nStart using Git\nHave a look at additional resources\nCome to the tools and tips lecture\n\nNext topics: Probably about note taking\n\nConsultation\n\nR programming, Git, …"
+    "text": "How to continue from here\n\nStart using Git\nHave a look at additional resources\nCome to the tools and tips lecture for more science workflow topics\n\nNext topics: Probably about note taking\n\nConsultation: R programming, Git, …"
   },
   {
     "objectID": "slides/01_intro_git.html#what-do-you-want-to-learn-here",
