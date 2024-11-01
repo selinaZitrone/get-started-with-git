@@ -6,7 +6,7 @@ date: today
 date-format: long
 format: 
   revealjs:
-    footer: "Basic Git workflow"
+    footer: "Selina Baldauf // Basic Git workflow"
     highlight-style: printing
     mainfont: Cabinet Grotesk
     slide-number: true
@@ -26,7 +26,10 @@ from: markdown+emoji
 
 # Who am I?
 
-> Scientific programmer @ [theoretical ecology group](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
+> 💻 **Scientific programmer** @ [theoretical ecology group](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
+>
+> 🎓 PhD in **dryland ecology** modelling dryland ecohydrology
+> 👩‍🏫 **Teaching** R, Git, good scientific practice, ...
 
 ## What do you want to learn here?
 
@@ -34,39 +37,74 @@ from: markdown+emoji
 
 ## Aims of the workshop
 
-Git is a huge topic and Git is very powerful.<br>
+::: {.columns}
 
-. . .
+::: {.column width="50%"}
 
-Learn simple Git workflows in **theory and practice** that you can immediately apply to your research projects.
+::: {.fragment}
+
+Git is very powerful ...<br>
+
+:::
+
+::: {.fragment}
+
+... but can also be confusing in the beginning.
+
+:::
+
+::: {.fragment}
+
+&nbsp;&nbsp;
+
+🎯 Learn simple Git workflows in **theory and practice** that you can **immediately apply** to your research projects.
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![[xkcd](https://xkcd.com/1597/) on Git](https://imgs.xkcd.com/comics/git.png)
+
+:::
+
+:::
 
 ## Topics
 
-#### Today 2.30 - 4 pm
 
-- Introduction to Git concepts
-- Simple Git workflow for your own projects
+#### Today 2 - 4 pm
 
-#### Tomorrow 2.30 - 4 pm
+Introduction to **Git concepts** and a **simple workflow** for your **individual projects**
 
-- Collaborate using Git and Github
+#### Tomorrow 2 - 4 pm
 
-#### Next Monday 2.30 - 3.30 pm
+**Collaborate** using Git and GitHub
 
-- Until then: work with Git on your own projects
-- Q&A
-- Advanced topics
+:::: {.fragment}
+
+#### Next Monday 2 - 3 pm
+
+Q&A session and/or more advanced topics
+
+**Until then:** work with Git on your own projects
+
+:::
 
 ## Organization
 
-- Material is all [online](https://selinazitrone.github.io/get-started-with-git/)
-
+- Material is all [online](https://selinazitrone.GitHub.io/get-started-with-git/)
+  - View and download slides, tasks and more from there
+  - Will stay online after the workshop
+  
 - Certificate of attendance from the graduate center
+  
+- All questions and comments are welcome
 
-- Feedback is very welcome
+- If possible, please turn on your camera
 
-- Just interrupt me for questions/comments
-
+- Feedback is welcome (Evaluation at the end of the workshop)
 
 
 ## Before we start
@@ -75,11 +113,11 @@ Did anyone have problems with the workshop preparation?
 
 :::{.nonincremental}
 - Install Git
-- Install Github Desktop
-- Get a Github account and connect it with Github Desktop
+- Install GitHub Desktop
+- Get a GitHub account and connect it with GitHub Desktop
 :::
 
-# Let's get started
+# Let's get started {.inverse}
 
 ## Why version control?
 
@@ -209,9 +247,9 @@ A Git GUI is integrated in most (all?) IDEs, e.g. R Studio, VS Code
 
 ## How to use Git - Standalone GUIs
   
-Standalone Git GUI software, e.g. Github Desktop, Source Tree, ...
+Standalone Git GUI software, e.g. GitHub Desktop, Source Tree, ...
 
-![](img/day1/github_desktop.png){width=50% fig-align="center"}
+![](img/day1/GitHub_desktop.png){width=50% fig-align="center"}
 
 . . .
 
@@ -246,9 +284,9 @@ Standalone Git GUI software, e.g. Github Desktop, Source Tree, ...
 
 :::{.fragment}
 
-- We will use Github Desktop
+- We will use GitHub Desktop
   - Beginner-friendly, intuitive and convenient
-  - Nice integration with Github
+  - Nice integration with GitHub
 
 :::
 
@@ -256,13 +294,13 @@ Standalone Git GUI software, e.g. Github Desktop, Source Tree, ...
 
 :::{.callout-tip}
 
-Have a look at the [website](https://selinazitrone.github.io/get-started-with-git/) where you find **How-To guides for the other methods** as well.
+Have a look at the [website](https://selinazitrone.GitHub.io/get-started-with-git/) where you find **How-To guides for the other methods** as well.
 
 :::
 
 :::
 
-# The basic Git workflow
+# The basic Git workflow {.inverse}
 
 > `git init`, `git add`, `git commit`, `git push`
 
@@ -271,6 +309,11 @@ Have a look at the [website](https://selinazitrone.github.io/get-started-with-gi
 A cook book project to collect all my favorite recipes.
 
 ![](img/day1/basic_idea.png)
+
+. . .
+
+In real life this would be e.g. a data analysis project, your thesis in LaTex, 
+a software project, ...
 
 ## Step 1: Initialize a Git repository
 
@@ -301,7 +344,7 @@ Staging a file means to **list it for the next commit**.
 
 ## Step 3: Commit changes
 
-- Commits are the snapshots of your project state
+Commits are the snapshots of your project state
 
 . . .
 
@@ -309,11 +352,8 @@ Staging a file means to **list it for the next commit**.
 
 ## Step 3: Commit changes
 
-:::{.nonincremental}
 
-- Changes are part of Git history and staging area is clear again 
-
-:::
+Changes are part of Git history and staging area is clear again 
 
 ![](img/day1/3_afterCommit_concept_folder.png)
 
@@ -346,7 +386,7 @@ he learned it from his neighbor.
 ```md
 added a file.
 
-This is a a really good recipe that I like.
+This is really good.
 ```
 
 :::
@@ -361,9 +401,9 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 4. Use imperative mood in the subject line
 5. Use the *Description* to explain **what** and **why**, not **how**
 
-# Now you
-> [Start your own cook book](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks)<br>
-> Complete task 1 "Local repo" (10 - 15 min)
+# Now you {.task-slide}
+> Start your own cook book <br>
+> Complete [Task 1 "Local repo"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks)" (10 - 15 min)
 
 **Stay in the meeting** for the task.<br>
 **Ask** if you are stuck. <br>
@@ -379,30 +419,31 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 
 ## Step 4: Share changes with the remote repo
 
-- Use remote repos (on a server) to *synchronize*, *share* and *collaborate*
+Use remote repos (on a server) to **synchronize**, **share** and **collaborate**
 
-- Remote repos can be *private* (you + collaborators) or
-*public* (visible to anyone)
+- Remote repos can be **private** (you + collaborators) or
+**public** (visible to anyone)
 
-![](img/day1/4_remote_concept.png){fig-align="center" width=60%}
+![](img/day1/4_remote_concept.png){width=60% style="position: relative; bottom: -20px; left: 50%; transform: translateX(-50%);"}
 
 ## Step 4: Share changes with the remote repo
 
-![](img/day1/4_push_concept.png){fig-align="center" width=60%}
+![](img/day1/4_push_concept.png){width=60% style="position: relative; bottom: -20px; left: 50%; transform: translateX(-50%);"}
 
 ## Different remote repositories
 
 - There are **commercial** and **self-hosted** options for your remote repositories
-  - Commercial: Github, Gitlab, Bitbucket, ...
+  - Commercial: GitHub, Gitlab, Bitbucket, ...
   - Self-hosted: Gitlab (maybe at your institution?)
 
 - Please be aware of your institutional guidelines
   - Servers outside EU
-  - Privacy rules might apply
+  - Privacy rules might apply depending on type of data
 
-# Now you
-> Publish your cook book on Github <br>
-> Checkout your repositories Github page (**Repository -> View on GitHub**)
+# Now you {.task-slide}
+
+> Publish your cook book on GitHub <br>
+> Checkout your repositories GitHub page (**Repository -> View on GitHub**)
 > 5 min
 
 ## Summary of the basic steps
@@ -416,13 +457,13 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 - `git commit`: Take a snapshot of your current project version
   - Includes time stamp, commit message and information on the person who did the commit
 - `git push`: Push new commits to the remote repository
-  - Sync your local project version with the remote e.g. on Github
+  - Sync your local project version with the remote e.g. on GitHub
 
 :::
 
-# Undo things
+# Undo things {.inverse}
 
-> git revert
+> `git revert`
 
 ## Revert changes
 
@@ -434,18 +475,21 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 
 ![](img/day1/commit_history_after_revert.png){width=90%}
 
-# Now you
+# Now you {.task-slide}
+
 > Revert a commit from your cook book
 
-# Publish your repositories
+# Publish your repositories {.inverse}
 
 ## Publish your repositories
 
-Github/Gitlab are a good way to publish and share your work.
+GitHub/Gitlab are a good way to publish and share your work.
 
 . . .
 
-##### Advantages of publishing your code
+&nbsp;
+
+#### Advantages of publishing your code
 
 - Others can build on your work
 - Citations
@@ -457,17 +501,22 @@ Github/Gitlab are a good way to publish and share your work.
 You can increase the quality/complexity of your repo by
 
 - Adding a nice README.md file
-- [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html)
-- Create a Github pages website alongside your repo
+- [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.GitHub.io/idiv-git-introduction/21-GitHub_zenodo/index.html)
+- Create a GitHub pages website alongside your repo
 - Encourage people to write issues if they find problems
 - ...
 
-# Thanks for your attention
+. . . 
+
+If you are interested, browse some nice GitHub repositories for inspiration (e.g.
+[Git training repository](https://github.com/UnseenWizzard/git_training), [Computational notebooks](https://github.com/FellowsFreiesWissen/computational_notebooks), [Repo to publish code from a manuscript](https://github.com/AnneLew/Lewerentz-etal_2021_Macrophytes-DDG))
+
+# Thanks for your attention {.inverse}
 
 > Questions?
 
-# Go back in time
-> git checkout
+# Go back in time {.inverse}
+> `git checkout`
 
 ## Checkout a previous commit
 
@@ -537,10 +586,10 @@ Now please
 
 :::{.nonincremental}
 
-1) Enter your Github Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-2) Look for the Github Name of your team mate and add them as a collaborator to your repository
+1) Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+2) Look for the GitHub Name of your team mate and add them as a collaborator to your repository
 3) Accept the invitation of your team mate to their repository 
-  - You will get an Email or you can do it on Github
+  - You will get an Email or you can do it on GitHub
 
 :::
 

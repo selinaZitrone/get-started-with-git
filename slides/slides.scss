@@ -29,6 +29,8 @@ $col3: #368F8B !default;
 $col4: #F3DFC1 !default;
 $col5: #DDBEA8 !default;
 
+$col-lightblue: #59c0ce !default;
+
 
 // headings
 //$presentation-heading-font: 'Yanone Kaffeesatz',  Tahoma, sans-serif  !default;
@@ -113,7 +115,41 @@ section.has-dark-background a, section.has-dark-background a:hover {
 }
 
 .inverse {
-  background-color: $col4;
+  color: $col4;
+  h1, h2, h3, h4 {
+    color: $col4;
+  }
+  .slide-background-content {
+    background-color: $col2;
+  }
+  blockquote {
+    color: $gray-200
+  }
+  a {
+    color: $col3;
+  }
+  code {
+    color: $col5;
+  }
+}
+
+.task-slide {
+  color: $col1;
+  h1, h2, h3, h4 {
+    color: $col2;
+  }
+  .slide-background-content {
+    background-color: $col4;
+  }
+  blockquote {
+    color: $gray-800;
+  }
+  a {
+    color: $col3;
+  }
+  code {
+    color: $col2;
+  }
 }
 
 .reveal {
