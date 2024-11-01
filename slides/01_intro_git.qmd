@@ -516,11 +516,12 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
 > Questions?
 
 # Go back in time {.inverse}
+
 > `git checkout`
 
 ## Checkout a previous commit
 
-- Bring your work space back in time temporarily with `git checkout`
+Take your work space back in time temporarily with `git checkout`
 
 . . .
 
@@ -531,15 +532,9 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
 ![](img/day1/commit_history_checkout.png){width=85%}
 
 
-# Ignoring files
+# Ignoring files with `.gitignore` {.inverse}
 
 ## Ignore files with `.gitignore`
-
-- Create a file with the name `.gitignore` in working directory
-
-- Add all files and directories you want to ignore to the `.gitignore` file
-
-. . .
 
 ::: {.nonincremental}
 
@@ -551,6 +546,12 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
   - ...
   
 :::
+
+#### Idea
+
+- Create a file with the name `.gitignore` in working directory
+
+- Add all files and directories you want to ignore to the `.gitignore` file
 
 ## Ignore files with `.gitignore`
 
@@ -586,9 +587,9 @@ Now please
 
 :::{.nonincremental}
 
-1) Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-2) Look for the GitHub Name of your team mate and add them as a collaborator to your repository
-3) Accept the invitation of your team mate to their repository 
+1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
+3. Accept the invitation of your team mate to their repository 
   - You will get an Email or you can do it on GitHub
 
 :::
