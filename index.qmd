@@ -5,11 +5,11 @@ subtitle: "Workshop by Selina Baldauf"
 
 <hr>
 **Workshop sessions**<br>
-📅 18.09.2023 - 19.09.2023 from 🕝 2.30 - 🕓 4 p.m.
+📅 18.11.2024 & 19.11.2024 from 🕑 2 - 🕓 4 p.m.
 <br>
 **Q&A**
 <br>
-📅 25.09.2023 from 🕝 2.30 - 🕞 3.30 p.m.
+📅 25.11.2024 from 🕑 2 - 🕒 3 p.m.
 <hr>
 
 # Course description:
@@ -20,8 +20,8 @@ The main goal of this crash-course is to give you the basic skills you need to s
 
 In 2 afternoon sessions, we will cover the following topics:
 
-1. Basic Git concepts and workflow (initializing a repository, commiting changes, pushing to a remote)
-2. Collaboration workflow with Git and Github (branching, merging, pull requests)
+1. [Session 1](sessions/01_intro_git.qmd): Basic Git concepts and workflow (initializing a repository, commiting changes, pushing to a remote)
+2. [Session 2](sessions/02_git_collaboration.qmd) Collaboration workflow with Git and Github (branching, merging, pull requests)
 
 You will learn both the theory and the practice with hands-on exercises.
 

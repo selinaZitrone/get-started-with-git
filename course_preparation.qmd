@@ -67,12 +67,16 @@ git --version
 
 I will use Github as a remote repository service in the workshop and you can [create an account here](https://github.com/join). 
 
-Tip: If you sign up for Github with an institutional email address, you will get a free upgrade to Github Pro.
+::: {.callout-tip}
+
+## Tip
+
+If you sign up for GitHub with an institutional email address, you will get a free upgrade to GitHub Pro.
 This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.
 
-Also, if your institution provides a Gitlab server, you can later switch from
-using Github to Gitlab. The workflows are all the same, you just need the account
-for this course.
+:::
+
+If your institution provides a Gitlab server, you can later switch from Github to Gitlab. The workflows are all the same, you just need the account for this course.
 
 # Install Github Desktop
 
