@@ -116,18 +116,29 @@ Git is a **distributed version control system**
 
 ## Get a repo from a remote
 
-- In Git language, this is called **cloning**
+In Git language, this is called **cloning**
+
+:::{.nonincremental}
   - Get a **full copy** of the remote repo
+:::
 
-. . .
+![](img/day2/git_clone_concept_only_remote.png)
 
-![](img/day2/git_clone_concept_folder.png)
+## Get a repo from a remote
+
+In Git language, this is called **cloning**
+
+:::{.nonincremental}
+  - Get a **full copy** of the remote repo
+:::
+
+![](img/day2/git_clone_concept_both.png)
 
 ## Get a repo from a remote
 
 ::: {.fragment}
 
-- To clone a repo, you need to know the repo's URL
+To clone a repo, you need to know the repo's URL
 
 ![](img/day2/github_get_repo_url.png)
 
@@ -136,9 +147,10 @@ Git is a **distributed version control system**
 - You can clone all public repositories
   - You can only push if you are authorized
   
-- You can clone private repositories if you are a collaborator
+- You can clone private repositories if you are a owner/collaborator
 
-# Now you
+# Now you {.task-slide}
+
 > Clone your team mate's cook Book repo (**File -> Clone repository**)<br>
 > It should be in the list of your repositories if you accepted the invitation.
 
@@ -147,12 +159,9 @@ Git is a **distributed version control system**
 ::: {.nonincremental}
 
 - Local changes, publish to remote: `git push`
-
-:::
-
 - Remote changes, pull to local: `git pull`
 
-. . .
+:::
 
 ![](img/day2/git_pull_concept.png){width=63% fig-align="center"}
 
@@ -286,8 +295,8 @@ Git merge brings the commits from the branch to main
 
 - One remote repo on Github, multiple local repos
 - Idea: Everyone works on the their separate branch
-  - ~~Merge your branch with the main when you are finished~~
-  - Create a pull request on Github to ask for a merge
+  - ~~**Merge** branch with the main when work is done~~
+  - **Create a pull request** on Github to ask for a merge
 
 :::
 
@@ -303,7 +312,7 @@ A pull request is basically asking your collaborators:
 
 Github has nice features for pull requests, e.g.:
 
-- **Describe your changes** in detail
+- **Provide context and explanations** for your changes
 - Collaborators can easily **compare versions**
 - Collaborators can **discuss and comment** on your changes
 
@@ -330,10 +339,19 @@ A pull request is merged on Github when **everyone agreed on the code**.
 
 ## Some ideas
 
+:::{.nonincremental}
+
 - **Start working** with Git on one of **your research projects**
 - **Publish** one of your projects on Github including a nice README
 - **Practice collaboration** by contributing to your team mate's cook using pull requests
   - Your team mate can answer your pull requests and request some changes :)
+
+:::
+
+## Some ideas
+
+:::{.nonincremental}
+
 - **Check out the How-To guides** if you want to
   - [Recap GH Desktop](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_gh_desktop.html)
   - Are interested in the [terminal](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_terminal.html)
@@ -341,6 +359,8 @@ A pull request is merged on Github when **everyone agreed on the code**.
 - If you find a mistake on my websites
   - **Edit the page** on Github or **report an issue**
 - Checkout the additional [resources](https://selinazitrone.github.io/get-started-with-git/resources.html)
+
+:::
 
 # Appendix
 
