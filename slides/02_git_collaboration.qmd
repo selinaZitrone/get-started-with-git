@@ -104,12 +104,14 @@ Git is a **distributed version control system**
 
 :::
 
+::: {.nonincremental}
 - Collaborate with
-  - yourself on different machines
-  - your colleagues and friends
-  - strangers on open source projects
+  - **yourself** on different machines
+  - your **colleagues** and friends
+  - **strangers** on open source projects
 
-  
+:::
+
 :::
 
 :::
@@ -354,10 +356,10 @@ A pull request is merged on Github when **everyone agreed on the code**.
 
 - **Check out the How-To guides** if you want to
   - [Recap GH Desktop](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_gh_desktop.html)
-  - Are interested in the [terminal](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_terminal.html)
-  - Want to learn about [Git + R](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_usethis.html)
+  - learn about Git in the [terminal](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_terminal.html)
+  - learn about [Git + R](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_usethis.html)
 - If you find a mistake on my websites
-  - **Edit the page** on Github or **report an issue**
+  - **Edit the page** on Github (and make a Pull request) or **report an issue**
 - Checkout the additional [resources](https://selinazitrone.github.io/get-started-with-git/resources.html)
 
 :::
