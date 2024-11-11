@@ -29,9 +29,8 @@ from: markdown+emoji
 
 :::{.nonincremental}
 
-- Collect open questions in Excalidraw (10 min)
-- Discuss open questions (20 min)
-- Look at additional topics (20 min)
+- Collect open questions in [Excalidraw](https://excalidraw.com/#room=0fcae1237c5a7eef7272,M8DiUReF1Cf7TJqpjphEVw) (5 min)
+- Discuss open questions and additional topics (40 min)
 - Feedback and Goodbye (10 min)
 
 :::
@@ -48,16 +47,17 @@ see [here](https://selinazitrone.github.io/get-started-with-git/slides/01_intro_
 
 ## `git fetch` vs. `git pull`
 
-![Artwork by [@allison_horst](https://twitter.com/allison_horst)](img/day3/fetch_vs_pull.png){fig-alt="Illustration highlighting the difference between git fetch and git pull. On the left (representing git fetch), a crocodile holding a box says to another crocodile eating salad: \"They had a new topping mix at the store. Check it out, it might be good in your salad.\" On the right (representing git pull), a crocodile says \"They had a new topping mix at the store. I bought some and mixed it into your salad\" while a concerned looking crocodile looks at their salad, which now contains the topping mix of insects. Text at the bottom reads \"Check what you're getting before merging it in with git fetch.\"" width=75%}
+![Artwork by [@allison_horst](https://twitter.com/allison_horst)](img/day3/fetch_vs_pull.png){fig-alt="Illustration highlighting the difference between git fetch and git pull. On the left (representing git fetch), a crocodile holding a box says to another crocodile eating salad: \"They had a new topping mix at the store. Check it out, it might be good in your salad.\" On the right (representing git pull), a crocodile says \"They had a new topping mix at the store. I bought some and mixed it into your salad\" while a concerned looking crocodile looks at their salad, which now contains the topping mix of insects. Text at the bottom reads \"Check what you're getting before merging it in with git fetch.\"" width=70%}
 
 ## Feedback
 
 Please take 7 min to fill out the feedback form:
-  [https://votingo.cedis.fu-berlin.de/survey/ARZC2L](https://votingo.cedis.fu-berlin.de/survey/ARZC2L)
+
+[https://votingo.cedis.fu-berlin.de/survey/ARZC2L](https://votingo.cedis.fu-berlin.de/survey/ARZC2L)
 
 :::{.nonincremental}
 
-  - Use the free text question in the end for suggestions
+- Use the free text question in the end for suggestions
 
 :::
 
@@ -67,10 +67,9 @@ Please take 7 min to fill out the feedback form:
 
 - Start using Git
 - Have a look at [additional resources](https://selinazitrone.github.io/get-started-with-git/resources.html)
-- Come to the [tools and tips lecture](https://selinazitrone.github.io/tools_and_tips/)
+- Come to the [tools and tips lecture](https://selinazitrone.github.io/tools_and_tips/) for more science workflow topics
   - Next topics: Probably about note taking
-- [Consultation](https://www.bcp.fu-berlin.de/en/graduiertenzentrum/promovierende/beratung/index.html)
-  - R programming, Git, ...
+- [Consultation](https://www.bcp.fu-berlin.de/en/graduiertenzentrum/promovierende/beratung/index.html): R programming, Git, ...
 
 # Thanks for your participation
 > See you in the next workshop :wave:

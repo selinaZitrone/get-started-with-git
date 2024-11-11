@@ -1,14 +1,17 @@
 # render the website
-quarto::quarto_render()
+# This is for R Studio
+# quarto::quarto_render()
+# render the website in the terminal using quarto render (for VS code)
+system("quarto render")
 
 # render slides as pdf
 slides_html <- list.files(here::here("docs/slides"),
-                          pattern = "01|02", full.names = TRUE
+  pattern = "01|02|03", full.names = TRUE
 )
 
 lapply(slides_html, function(x) {
   pagedown::chrome_print(x,
-                         format = "pdf"
+    format = "pdf"
   )
 })
 
@@ -16,4 +19,3 @@ lapply(slides_html, function(x) {
 git2r::add(path = here::here("docs"))
 git2r::commit(message = "re-render site")
 git2r::push(credentials = git2r::cred_token())
-
