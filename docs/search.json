@@ -53,28 +53,28 @@
     "href": "slides/01_intro_git.html#aims-of-the-workshop",
     "title": "Introduction to version control with Git",
     "section": "Aims of the workshop",
-    "text": "Aims of the workshop\nGit is a huge topic and Git is very powerful.\n\nLearn simple Git workflows in theory and practice that you can immediately apply to your research projects."
+    "text": "Aims of the workshop\n\n\n\nGit is very powerful …\n\n\n… but can also be confusing in the beginning.\n\n\n  \n🎯 Learn simple Git workflows in theory and practice that you can immediately apply to your research projects.\n\n\n\n\n\nxkcd on Git"
   },
   {
     "objectID": "slides/01_intro_git.html#topics",
     "href": "slides/01_intro_git.html#topics",
     "title": "Introduction to version control with Git",
     "section": "Topics",
-    "text": "Topics\nToday 2.30 - 4 pm\n\nIntroduction to Git concepts\nSimple Git workflow for your own projects\n\nTomorrow 2.30 - 4 pm\n\nCollaborate using Git and Github\n\nNext Monday 2.30 - 3.30 pm\n\nUntil then: work with Git on your own projects\nQ&A\nAdvanced topics"
+    "text": "Topics\nToday 2 - 4 pm\nIntroduction to Git concepts and a simple workflow for your individual projects\n\nTomorrow 2 - 4 pm\nCollaborate using Git and GitHub\n\n\nNext Monday 2 - 3 pm\nQ&A session and/or more advanced topics\nUntil then: work with Git on your own projects"
   },
   {
     "objectID": "slides/01_intro_git.html#organization",
     "href": "slides/01_intro_git.html#organization",
     "title": "Introduction to version control with Git",
     "section": "Organization",
-    "text": "Organization\n\nMaterial is all online\nCertificate of attendance from the graduate center\nFeedback is very welcome\nJust interrupt me for questions/comments"
+    "text": "Organization\n\nMaterial is all online\n\nView and download slides, tasks and more from there\nWill stay online after the workshop\n\nCertificate of attendance from the graduate center\nAll questions and comments are welcome\nFeedback is welcome (Evaluation at the end of the workshop)\nIf possible, please turn on your camera"
   },
   {
     "objectID": "slides/01_intro_git.html#before-we-start",
     "href": "slides/01_intro_git.html#before-we-start",
     "title": "Introduction to version control with Git",
     "section": "Before we start",
-    "text": "Before we start\nDid anyone have problems with the workshop preparation?\n\n\nInstall Git\nInstall Github Desktop\nGet a Github account and connect it with Github Desktop"
+    "text": "Before we start\nDid anyone have problems with the workshop preparation?\n\n\nInstall Git\nInstall GitHub Desktop\nGet a GitHub account and connect it with GitHub Desktop"
   },
   {
     "objectID": "slides/01_intro_git.html#why-version-control",
@@ -130,21 +130,21 @@
     "href": "slides/01_intro_git.html#how-to-use-git---standalone-guis",
     "title": "Introduction to version control with Git",
     "section": "How to use Git - Standalone GUIs",
-    "text": "How to use Git - Standalone GUIs\nStandalone Git GUI software, e.g. Github Desktop, Source Tree, …\n\n\n\n\n\n\n\n\n➕ Easy and intuitive \n➕ Use for all projects \n\n\n➖ Switch programs to use Git"
+    "text": "How to use Git - Standalone GUIs\nStandalone Git GUI software, e.g. GitHub Desktop, Source Tree, …\n\n\n\n\n\n\n\n\n➕ Easy and intuitive \n➕ Use for all projects \n\n\n➖ Switch programs to use Git"
   },
   {
     "objectID": "slides/01_intro_git.html#how-to-use-git-1",
     "href": "slides/01_intro_git.html#how-to-use-git-1",
     "title": "Introduction to version control with Git",
     "section": "How to use Git",
-    "text": "How to use Git\nWhich one to choose?\n\nDepends on experience and taste\nYou can mix methods because they are all interfaces to the same Git\n\n\n\nWe will use Github Desktop\n\nBeginner-friendly, intuitive and convenient\nNice integration with Github\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nHave a look at the website where you find How-To guides for the other methods as well."
+    "text": "How to use Git\nWhich one to choose?\n\nDepends on experience and taste\nYou can mix methods because they are all interfaces to the same Git\n\n\n\nWe will use GitHub Desktop\n\nBeginner-friendly, intuitive and convenient\nNice integration with GitHub\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nHave a look at the website where you find How-To guides for the other methods as well."
   },
   {
     "objectID": "slides/01_intro_git.html#example",
     "href": "slides/01_intro_git.html#example",
     "title": "Introduction to version control with Git",
     "section": "Example",
-    "text": "Example\nA cook book project to collect all my favorite recipes."
+    "text": "Example\nA cook book project to collect all my favorite recipes.\n\n\nIn real life this would be e.g. a data analysis project, your thesis in LaTex, a software project, …"
   },
   {
     "objectID": "slides/01_intro_git.html#step-1-initialize-a-git-repository",
@@ -182,18 +182,32 @@
     "text": "Step 2: Stage changes\nStaging a file means to list it for the next commit."
   },
   {
+    "objectID": "slides/01_intro_git.html#step-2-stage-changes-1",
+    "href": "slides/01_intro_git.html#step-2-stage-changes-1",
+    "title": "Introduction to version control with Git",
+    "section": "Step 2: Stage changes",
+    "text": "Step 2: Stage changes\nStaging a file means to list it for the next commit."
+  },
+  {
     "objectID": "slides/01_intro_git.html#step-3-commit-changes",
     "href": "slides/01_intro_git.html#step-3-commit-changes",
     "title": "Introduction to version control with Git",
     "section": "Step 3: Commit changes",
-    "text": "Step 3: Commit changes\n\nCommits are the snapshots of your project state"
+    "text": "Step 3: Commit changes\nCommits are the snapshots of your project state"
   },
   {
     "objectID": "slides/01_intro_git.html#step-3-commit-changes-1",
     "href": "slides/01_intro_git.html#step-3-commit-changes-1",
     "title": "Introduction to version control with Git",
     "section": "Step 3: Commit changes",
-    "text": "Step 3: Commit changes\n\n\nChanges are part of Git history and staging area is clear again"
+    "text": "Step 3: Commit changes\nCommits are the snapshots of your project state"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#step-3-commit-changes-2",
+    "href": "slides/01_intro_git.html#step-3-commit-changes-2",
+    "title": "Introduction to version control with Git",
+    "section": "Step 3: Commit changes",
+    "text": "Step 3: Commit changes\nChanges are part of Git history and staging area is clear again"
   },
   {
     "objectID": "slides/01_intro_git.html#how-to-write-good-commit-messages",
@@ -207,7 +221,7 @@
     "href": "slides/01_intro_git.html#how-to-write-good-commit-messages-1",
     "title": "Introduction to version control with Git",
     "section": "How to write good commit messages?",
-    "text": "How to write good commit messages?\n\n\n✔️\nAdd pie recipe\n\nThis is my favorite pie in the world. \nThe recipe comes from my grandfather and \nhe learned it from his neighbor.\n\n❌\nadded a file.\n\nThis is a a really good recipe that I like.\n\n\nSee here for more details but some general rules:\n\nLimit summary line to 50 characters\nCapitalize summary line\nDo not end summary line with period\nUse imperative mood in the subject line\nUse the Description to explain what and why, not how"
+    "text": "How to write good commit messages?\n\n\n✔️\nAdd pie recipe\n\nThis is my favorite pie in the world. \nThe recipe comes from my grandfather and \nhe learned it from his neighbor.\n\n❌\nadded a file.\n\nThis is really good.\n\nSee here for more details but some general rules:\n\nLimit summary line to 50 characters\nCapitalize summary line\nDo not end summary line with period\nUse imperative mood in the subject line\nUse the Description to explain what and why, not how"
   },
   {
     "objectID": "slides/01_intro_git.html#the-commit-history",
@@ -221,28 +235,42 @@
     "href": "slides/01_intro_git.html#step-4-share-changes-with-the-remote-repo",
     "title": "Introduction to version control with Git",
     "section": "Step 4: Share changes with the remote repo",
-    "text": "Step 4: Share changes with the remote repo\n\nUse remote repos (on a server) to synchronize, share and collaborate\nRemote repos can be private (you + collaborators) or public (visible to anyone)"
+    "text": "Step 4: Share changes with the remote repo\nUse remote repos (on a server) to synchronize, share and collaborate\n\n\nRemote repos can be private (you + collaborators) or public (visible to anyone)"
   },
   {
     "objectID": "slides/01_intro_git.html#step-4-share-changes-with-the-remote-repo-1",
     "href": "slides/01_intro_git.html#step-4-share-changes-with-the-remote-repo-1",
     "title": "Introduction to version control with Git",
     "section": "Step 4: Share changes with the remote repo",
-    "text": "Step 4: Share changes with the remote repo"
+    "text": "Step 4: Share changes with the remote repo\nUse remote repos (on a server) to synchronize, share and collaborate\n\nRemote repos can be private (you + collaborators) or public (visible to anyone)"
   },
   {
     "objectID": "slides/01_intro_git.html#different-remote-repositories",
     "href": "slides/01_intro_git.html#different-remote-repositories",
     "title": "Introduction to version control with Git",
     "section": "Different remote repositories",
-    "text": "Different remote repositories\n\nThere are commercial and self-hosted options for your remote repositories\n\nCommercial: Github, Gitlab, Bitbucket, …\nSelf-hosted: Gitlab (maybe at your institution?)\n\nPlease be aware of your institutional guidelines\n\nServers outside EU\nPrivacy rules might apply"
+    "text": "Different remote repositories\n\nThere are commercial and self-hosted options for your remote repositories\n\nCommercial: GitHub, Gitlab, Bitbucket, …\nSelf-hosted: Gitlab (maybe at your institution?)\n\nPlease be aware of your institutional guidelines\n\nServers outside EU\nPrivacy rules might apply depending on type of data"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#make-your-repositories-public",
+    "href": "slides/01_intro_git.html#make-your-repositories-public",
+    "title": "Introduction to version control with Git",
+    "section": "Make your repositories public",
+    "text": "Make your repositories public\nGitHub/Gitlab are a good way to publish and share your work.\n\n \nAdvantages of publishing your code\n\nOthers can build on your work\nCitations\nReproducibility\nGet feedback"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#make-your-repositories-public-1",
+    "href": "slides/01_intro_git.html#make-your-repositories-public-1",
+    "title": "Introduction to version control with Git",
+    "section": "Make your repositories public",
+    "text": "Make your repositories public\nYou can increase the quality/complexity of your repo by\n\nAdding a nice README.md file\nConnecting the repo with Zenodo to get a DOI\n…\n\n\nIf you are interested, browse some nice GitHub repositories for inspiration (e.g. Git training repository, Computational notebooks, Repo to publish code from a manuscript)"
   },
   {
     "objectID": "slides/01_intro_git.html#summary-of-the-basic-steps",
     "href": "slides/01_intro_git.html#summary-of-the-basic-steps",
     "title": "Introduction to version control with Git",
     "section": "Summary of the basic steps",
-    "text": "Summary of the basic steps\n\n\ngit init: Initialize a git repository\n\nAdds a .git folder to your working directory\n\ngit add: Add files to the staging area\n\nThis marks the files as being part of the next commit\n\ngit commit: Take a snapshot of your current project version\n\nIncludes time stamp, commit message and information on the person who did the commit\n\ngit push: Push new commits to the remote repository\n\nSync your local project version with the remote e.g. on Github"
+    "text": "Summary of the basic steps\n\n\ngit init: Initialize a git repository\n\nAdds a .git folder to your working directory\n\ngit add: Add files to the staging area\n\nThis marks the files as being part of the next commit\n\ngit commit: Take a snapshot of your current project version\n\nIncludes time stamp, commit message and information on the person who did the commit\n\ngit push: Push new commits to the remote repository\n\nSync your local project version with the remote e.g. on GitHub"
   },
   {
     "objectID": "slides/01_intro_git.html#revert-changes",
@@ -252,60 +280,46 @@
     "text": "Revert changes\n\nUse git revert to revert specific commits\nThis does not delete the commit, it creates a new commit that undoes a previous commit\n\nIt’s a safe way to undo commited changes"
   },
   {
-    "objectID": "slides/01_intro_git.html#publish-your-repositories-1",
-    "href": "slides/01_intro_git.html#publish-your-repositories-1",
-    "title": "Introduction to version control with Git",
-    "section": "Publish your repositories",
-    "text": "Publish your repositories\nGithub/Gitlab are a good way to publish and share your work.\n\nAdvantages of publishing your code\n\nOthers can build on your work\nCitations\nReproducibility\nGet feedback"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#publish-your-repositories-2",
-    "href": "slides/01_intro_git.html#publish-your-repositories-2",
-    "title": "Introduction to version control with Git",
-    "section": "Publish your repositories",
-    "text": "Publish your repositories\nYou can increase the quality/complexity of your repo by\n\nAdding a nice README.md file\nConnecting the repo with Zenodo to get a DOI\nCreate a Github pages website alongside your repo\nEncourage people to write issues if they find problems\n…"
-  },
-  {
     "objectID": "slides/01_intro_git.html#checkout-a-previous-commit",
     "href": "slides/01_intro_git.html#checkout-a-previous-commit",
     "title": "Introduction to version control with Git",
     "section": "Checkout a previous commit",
-    "text": "Checkout a previous commit\n\nBring your work space back in time temporarily with git checkout"
+    "text": "Checkout a previous commit\nTake your work space back in time temporarily with git checkout"
   },
   {
     "objectID": "slides/01_intro_git.html#ignore-files-with-.gitignore",
     "href": "slides/01_intro_git.html#ignore-files-with-.gitignore",
     "title": "Introduction to version control with Git",
     "section": "Ignore files with .gitignore",
-    "text": "Ignore files with .gitignore\n\nCreate a file with the name .gitignore in working directory\nAdd all files and directories you want to ignore to the .gitignore file\n\n\n\n\nUseful to ignore e.g.\n\nCompiled code and build directories\nLog files\nHidden system files\nPersonal IDE config files\n…"
+    "text": "Ignore files with .gitignore\n\n\nUseful to ignore e.g.\n\nCompiled code and build directories\nLog files\nHidden system files\nPersonal IDE config files\n…"
   },
   {
     "objectID": "slides/01_intro_git.html#ignore-files-with-.gitignore-1",
     "href": "slides/01_intro_git.html#ignore-files-with-.gitignore-1",
     "title": "Introduction to version control with Git",
     "section": "Ignore files with .gitignore",
-    "text": "Ignore files with .gitignore\n\n\nCreate a file with the name .gitignore in working directory\nAdd all files and directories you want to ignore to the .gitignore file\n\n\nExample\n*.html    # ignore all .html files\n*.pdf     # ignore all .pdf files\n\ndebug.log # ignore the file debug.log\n\nbuild/    # ignore all files in subdirectory build\nSee here for more ignore patterns that you can use."
+    "text": "Ignore files with .gitignore\n\nCreate a file with the name .gitignore in working directory\nAdd all files and directories you want to ignore to the .gitignore file\n\nExample\n*.html    # ignore all .html files\n*.pdf     # ignore all .pdf files\n\ndebug.log # ignore the file debug.log\n\nbuild/    # ignore all files in subdirectory build\nSee here for more ignore patterns that you can use."
   },
   {
     "objectID": "slides/01_intro_git.html#preparation-for-tomorrow",
     "href": "slides/01_intro_git.html#preparation-for-tomorrow",
     "title": "Introduction to version control with Git",
     "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nTomorow we have teams of 2\nCollaborate on the cook book of your team mate\n\n\nNow please\n\n\nEnter your Github Account Name and the link to your repo here\nLook for the Github Name of your team mate and add them as a collaborator to your repository\nAccept the invitation of your team mate to their repository\n\n\nYou will get an Email or you can do it on Github\n\n\n\n\n\nBasic Git workflow"
+    "text": "Preparation for tomorrow\n\nTomorow we have teams of 2\nCollaborate on the cook book of your team mate\n\n\nNow please\n\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository\nAccept the invitation of your team mate to their repository\n\n\nYou will get an Email or you can do it on GitHub"
   },
   {
     "objectID": "sessions/01_intro_git.html",
     "href": "sessions/01_intro_git.html",
     "title": "A basic Git workflow in theory and practice",
     "section": "",
-    "text": "Git is an essential skill if you use any programming language. It allows you to keep track of changes to your project over time, collaborate with others, and maintain a clear and organized project structure. This can save time, improve research efficiency, and also makes it easy to publish your code via platforms such as Github. This session will be about:\n\nThe basic concepts behind Git\nA simple Git workflow for you individual projects\nPublishing projects on Github\n\nIn the next session, I will talk about a collaborative workflow using Git and Github.\n\nSlides in full screen     Download PDF slides"
+    "text": "This session we will cover the following topics:\n\nThe basic concepts behind Git\nA simple Git workflow for you individual projects\nPublishing projects on Github\n\nIn the next session, I will talk about a collaborative workflow using Git and Github.\n\nSlides in full screen     Download PDF slides"
   },
   {
     "objectID": "sessions/01_intro_git.html#description",
     "href": "sessions/01_intro_git.html#description",
     "title": "A basic Git workflow in theory and practice",
     "section": "",
-    "text": "Git is an essential skill if you use any programming language. It allows you to keep track of changes to your project over time, collaborate with others, and maintain a clear and organized project structure. This can save time, improve research efficiency, and also makes it easy to publish your code via platforms such as Github. This session will be about:\n\nThe basic concepts behind Git\nA simple Git workflow for you individual projects\nPublishing projects on Github\n\nIn the next session, I will talk about a collaborative workflow using Git and Github.\n\nSlides in full screen     Download PDF slides"
+    "text": "This session we will cover the following topics:\n\nThe basic concepts behind Git\nA simple Git workflow for you individual projects\nPublishing projects on Github\n\nIn the next session, I will talk about a collaborative workflow using Git and Github.\n\nSlides in full screen     Download PDF slides"
   },
   {
     "objectID": "sessions/01_intro_git.html#tasks",
@@ -767,28 +781,35 @@
     "href": "slides/02_git_collaboration.html#recap-2",
     "title": "Introduction to version control with Git",
     "section": "Recap",
-    "text": "Recap\nGit is a distributed version control system\n\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\n\n\n\nCollaborate with\n\nyourself on different machines\nyour colleagues and friends\nstrangers on open source projects"
+    "text": "Recap\nGit is a distributed version control system\n\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\n\n\n\n\nCollaborate with\n\nyourself on different machines\nyour colleagues and friends\nstrangers on open source projects"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-a-repo-from-a-remote",
     "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote",
     "title": "Introduction to version control with Git",
     "section": "Get a repo from a remote",
-    "text": "Get a repo from a remote\n\nIn Git language, this is called cloning\n\nGet a full copy of the remote repo"
+    "text": "Get a repo from a remote\nIn Git language, this is called cloning\n\n\nGet a full copy of the remote repo"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-1",
     "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-1",
     "title": "Introduction to version control with Git",
     "section": "Get a repo from a remote",
-    "text": "Get a repo from a remote\n\n\nTo clone a repo, you need to know the repo’s URL\n\n\n\n\nYou can clone all public repositories\n\nYou can only push if you are authorized\n\nYou can clone private repositories if you are a collaborator"
+    "text": "Get a repo from a remote\nIn Git language, this is called cloning\n\n\nGet a full copy of the remote repo"
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-2",
+    "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-2",
+    "title": "Introduction to version control with Git",
+    "section": "Get a repo from a remote",
+    "text": "Get a repo from a remote\n\nTo clone a repo, you need to know the repo’s URL\n\n\n\nYou can clone all public repositories\n\nYou can only push if you are authorized\n\nYou can clone private repositories if you are a owner/collaborator"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-changes-from-the-remote",
     "href": "slides/02_git_collaboration.html#get-changes-from-the-remote",
     "title": "Introduction to version control with Git",
     "section": "Get changes from the remote",
-    "text": "Get changes from the remote\n\n\nLocal changes, publish to remote: git push\n\n\n\nRemote changes, pull to local: git pull"
+    "text": "Get changes from the remote\n\n\nLocal changes, publish to remote: git push\nRemote changes, pull to local: git pull"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-simple-collaboration-workflow",
@@ -858,14 +879,14 @@
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-1",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow with Github",
-    "text": "A branching-merging workflow with Github\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge your branch with the main when you are finished\nCreate a pull request on Github to ask for a merge\n\n\n\n\nPull before and push after working"
+    "text": "A branching-merging workflow with Github\n\n\n\nOne remote repo on Github, multiple local repos\nIdea: Everyone works on the their separate branch\n\nMerge branch with the main when work is done\nCreate a pull request on Github to ask for a merge\n\n\n\n\nPull before and push after working"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-2",
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github-2",
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow with Github",
-    "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\n\nGithub has nice features for pull requests, e.g.:\n\nDescribe your changes in detail\nCollaborators can easily compare versions\nCollaborators can discuss and comment on your changes\n\n\n\nA pull request is merged on Github when everyone agreed on the code."
+    "text": "A branching-merging workflow with Github\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\n\nGithub has nice features for pull requests, e.g.:\n\nProvide context and explanations for your changes\nCollaborators can easily compare versions\nCollaborators can discuss and comment on your changes\n\n\n\nA pull request is merged on Github when everyone agreed on the code."
   },
   {
     "objectID": "slides/02_git_collaboration.html#next-week",
@@ -879,7 +900,14 @@
     "href": "slides/02_git_collaboration.html#some-ideas",
     "title": "Introduction to version control with Git",
     "section": "Some ideas",
-    "text": "Some ideas\n\nStart working with Git on one of your research projects\nPublish one of your projects on Github including a nice README\nPractice collaboration by contributing to your team mate’s cook using pull requests\n\nYour team mate can answer your pull requests and request some changes :)\n\nCheck out the How-To guides if you want to\n\nRecap GH Desktop\nAre interested in the terminal\nWant to learn about Git + R\n\nIf you find a mistake on my websites\n\nEdit the page on Github or report an issue\n\nCheckout the additional resources"
+    "text": "Some ideas\n\n\nStart working with Git on one of your research projects\nPublish one of your projects on Github including a nice README\nPractice collaboration by contributing to your team mate’s cook using pull requests\n\nYour team mate can answer your pull requests and request some changes :)"
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#some-ideas-1",
+    "href": "slides/02_git_collaboration.html#some-ideas-1",
+    "title": "Introduction to version control with Git",
+    "section": "Some ideas",
+    "text": "Some ideas\n\n\nCheck out the How-To guides if you want to\n\nRecap GH Desktop\nlearn about Git in the terminal\nlearn about Git + R\n\nIf you find a mistake on my websites\n\nEdit the page on Github (and make a Pull request) or report an issue\n\nCheckout the additional resources"
   },
   {
     "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
@@ -893,6 +921,6 @@
     "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
     "title": "Introduction to version control with Git",
     "section": "Merging changes from a branch",
-    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\n\nMostly merging happens without problems, but…\n… if the same line was edited on separate branches…\n… there will be a merge conflict 😱\n\n\n\nMerge conflicts need to be solved manually. You need to chose which of the conflicting versions you want to keep.\n\n\nBranching, Merging and Collaboration with Git"
+    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\n\nMostly merging happens without problems, but…\n… if the same line was edited on separate branches…\n… there will be a merge conflict 😱\n\n\n\nMerge conflicts need to be solved manually. You need to chose which of the conflicting versions you want to keep."
   }
 ]
