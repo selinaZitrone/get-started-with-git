@@ -4774,7 +4774,7 @@ height: 400px;
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-how-to-guides">    
         <li>
     <a class="dropdown-item" href="../how-tos/git_workflow_gh_desktop.html">
- <span class="dropdown-text">Github Desktop</span></a>
+ <span class="dropdown-text">GitHub Desktop</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how-tos/git_workflow_terminal.html">
@@ -4786,7 +4786,7 @@ height: 400px;
   </li>  
         <li>
     <a class="dropdown-item" href="../how-tos/create_pull_request.html">
- <span class="dropdown-text">Create pull requests on Github</span></a>
+ <span class="dropdown-text">Create pull requests on GitHub</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how-tos/ssh_keys.html">
@@ -4822,7 +4822,7 @@ height: 400px;
   <ul>
   <li><a href="#check-of-you-already-have-an-ssh-key-set-up" id="toc-check-of-you-already-have-an-ssh-key-set-up" class="nav-link active" data-scroll-target="#check-of-you-already-have-an-ssh-key-set-up">Check of you already have an SSH key set up</a></li>
   <li><a href="#ssh-authentication-for-gitlab" id="toc-ssh-authentication-for-gitlab" class="nav-link" data-scroll-target="#ssh-authentication-for-gitlab">SSH-authentication for Gitlab</a></li>
-  <li><a href="#ssh-authentication-for-github" id="toc-ssh-authentication-for-github" class="nav-link" data-scroll-target="#ssh-authentication-for-github">SSH-authentication for Github</a></li>
+  <li><a href="#ssh-authentication-for-github" id="toc-ssh-authentication-for-github" class="nav-link" data-scroll-target="#ssh-authentication-for-github">SSH-authentication for GitHub</a></li>
   <li><a href="#test-the-connection" id="toc-test-the-connection" class="nav-link" data-scroll-target="#test-the-connection">Test the connection</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/selinaZitrone/get-started-with-git/edit/master/how-tos/ssh_keys.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/selinaZitrone/get-started-with-git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -4849,38 +4849,38 @@ height: 400px;
 </header>
 
 
-<p>In order to transfer information between Github or Gitlab and your local machine, you need to authenticate yourself to the remote server. If you use Github + Github Desktop, they take care of this for you. Otherwise, you need to setup SSH authentication with SSH keys. You can also authenticate using a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">personal access token (PAT)</a> instead but here we will stick with SSH keys here.</p>
+<p>In order to transfer information between GitHub or Gitlab and your local machine, you need to authenticate yourself to the remote server. If you use GitHub + GitHub Desktop, they take care of this for you. Otherwise, you need to setup SSH authentication with SSH keys. You can also authenticate using a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">personal access token (PAT)</a> instead but here we will stick with SSH keys here.</p>
 <p>If you want a good and simple explanation of how SSH works, checkout the video below</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/dPAw4opzN9g" title frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <section id="check-of-you-already-have-an-ssh-key-set-up" class="level1">
 <h1>Check of you already have an SSH key set up</h1>
 <p>If you are not sure if you already set up authentication via ssh on your machine, you can try the following:</p>
 <ul>
-<li>Can you push to Github/Gitlab from the command line without having to provide credentials (except for SSH key password)?
+<li>Can you push to GitHub/Gitlab from the command line without having to provide credentials (except for SSH key password)?
 <ul>
 <li>If yes, then you already set up authentication.</li>
 </ul></li>
-<li>Run <code>ssh -T git@github.com</code> or <code>ssh - T git@gitlab.com</code> in the terminal (Git bash for Windows users). If Github/Gitlab welcomes you with your correct user account, you are all set.</li>
+<li>Run <code>ssh -T git@github.com</code> or <code>ssh - T git@gitlab.com</code> in the terminal (Git bash for Windows users). If GitHub/Gitlab welcomes you with your correct user account, you are all set.</li>
 </ul>
 <p>If you don’t have an SSH key set up, please follow the steps below.</p>
 </section>
 <section id="ssh-authentication-for-gitlab" class="level1">
 <h1>SSH-authentication for Gitlab</h1>
 <p>Please follow <a href="https://blog.checkpoint.com/2022/05/06/the-complete-guide-to-ssh-keys-in-gitlab/">this guide</a></p>
-<p>If you prefer a video, you can check out <a href="https://www.youtube.com/watch?v=mNtQ55quG9M">this one</a>. It is for Gitlab but works the same for Github.</p>
+<p>If you prefer a video, you can check out <a href="https://www.youtube.com/watch?v=mNtQ55quG9M">this one</a>. It is for Gitlab but works the same for GitHub.</p>
 </section>
 <section id="ssh-authentication-for-github" class="level1">
-<h1>SSH-authentication for Github</h1>
+<h1>SSH-authentication for GitHub</h1>
 <p>Complete the following steps:</p>
 <ul>
 <li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys">Check for existing SSH keys</a></li>
 <li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Generate an SSH key and add it to SSH-agent</a></li>
-<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">Add your public key to your Github account</a></li>
+<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">Add your public key to your GitHub account</a></li>
 </ul>
 </section>
 <section id="test-the-connection" class="level1">
 <h1>Test the connection</h1>
-<p>To test if the setup was successful, run <code>ssh -T git@github.com</code> or <code>ssh -T git@gitlab.com</code> and see if Gitlab or Github answer to you.</p>
+<p>To test if the setup was successful, run <code>ssh -T git@github.com</code> or <code>ssh -T git@gitlab.com</code> and see if Gitlab or GitHub answer to you.</p>
 
 
 </section>
