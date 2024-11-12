@@ -1,10 +1,10 @@
 # Prerequisites
 
 - git installed
-- Github account, 
+- GitHub account, 
 - setup SSH key auth -> also test connection `ssh -T git@github.com`
 - R, RStudio, `usethis` package
-- if you want: Github desktop (optional)
+- if you want: GitHub desktop (optional)
 
 # Topics git workshop I
 
@@ -40,12 +40,12 @@
 
 #### Exercise
 
-Tommorow, look at Github features in a bit more detail
+Tommorow, look at GitHub features in a bit more detail
 
 #### What if I don't want to use the commandline?
 
 - Most IDEs have integrated git client (e.g. RStudio -> Next time)
-- Show Github desktop as an example
+- Show GitHub desktop as an example
 - Shows differences as well. 
 
 
@@ -79,12 +79,12 @@ Different options depending on your team
 
 - clone a repository from me
 - create a branch with your name
-- push the branch to Github -> First time you need to set upstream branch
+- push the branch to GitHub -> First time you need to set upstream branch
 
-### Pull requests on Github
+### Pull requests on GitHub
 
-- Show branches on Github
-- Show pull requests on Github
+- Show branches on GitHub
+- Show pull requests on GitHub
 
 #### Exercise
 

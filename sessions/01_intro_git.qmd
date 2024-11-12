@@ -9,10 +9,10 @@ This session we will cover the following topics:
 
 - The basic concepts behind Git
 - A simple Git workflow for you individual projects
-- Publishing projects on Github
+- Publishing projects on GitHub
 
 In the [next session](02_git_collaboration.qmd), I will talk about a collaborative workflow using Git and
-Github.
+GitHub.
 
 
 ```{=html}

@@ -6,13 +6,13 @@ callout-appearance: default
 ## Description
 
 Apart from letting you track your changes over time in your individual projects, Git is also very powerful when it
-comes to collaboration with other people. In combination with a platform such as Github or
+comes to collaboration with other people. In combination with a platform such as GitHub or
 Gitlab, you can seamlessly collaborate without losing the overview of your project.
 
 This session will be about:
 
 - Branching and merging with Git
-- A collaboration workflow with Github
+- A collaboration workflow with GitHub
 
 Check out the [previous session](01_intro_git.qmd) if you missed it, 
 where I talked about basic Git concepts and a simple Git workflow.

@@ -106,7 +106,7 @@ usethis::use_git()
 --
 
 ```{r}
-# Step 3: Create and connect a Github repository (here private)
+# Step 3: Create and connect a GitHub repository (here private)
 usethis::use_github(private = TRUE)
 ```
 

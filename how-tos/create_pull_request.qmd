@@ -1,5 +1,5 @@
 ---
-title: Create a pull request on Github
+title: Create a pull request on GitHub
 ---
 
 You can create a pull request when you want to integrate changes that you made on
@@ -8,7 +8,7 @@ one branch into the main branch.
 Usually a pull request is then reviewed by a collaborator before the changes are 
 accepted.
 
-If you go to your remote repository, Github should automatically detect
+If you go to your remote repository, GitHub should automatically detect
 new branches and ask you to create a pull request for it.
 
 It should look something like this (of course with your branch name instead of `new_feature`):

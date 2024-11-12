@@ -14,14 +14,14 @@ subtitle: "Workshop by Selina Baldauf"
 
 # Course description:
 
-Learning to use Git is an essential skill if you use any programming language. It allows you to keep track of changes to your project over time, collaborate with others, and maintain a clear and organized project structure. This can save you time, improve research efficiency, and also makes it easy to publish your code via platforms such as Github. 
+Learning to use Git is an essential skill if you use any programming language. It allows you to keep track of changes to your project over time, collaborate with others, and maintain a clear and organized project structure. This can save you time, improve research efficiency, and also makes it easy to publish your code via platforms such as GitHub. 
 
-The main goal of this crash-course is to give you the basic skills you need to start using Git for your own research projects both individually and in collaboration with your colleagues. You will learn a complete Git workflow including remote repositories on Github both in theory and practice. 
+The main goal of this crash-course is to give you the basic skills you need to start using Git for your own research projects both individually and in collaboration with your colleagues. You will learn a complete Git workflow including remote repositories on GitHub both in theory and practice. 
 
 In 2 afternoon sessions, we will cover the following topics:
 
 1. [Session 1](sessions/01_intro_git.qmd): Basic Git concepts and workflow (initializing a repository, commiting changes, pushing to a remote)
-2. [Session 2](sessions/02_git_collaboration.qmd) Collaboration workflow with Git and Github (branching, merging, pull requests)
+2. [Session 2](sessions/02_git_collaboration.qmd) Collaboration workflow with Git and GitHub (branching, merging, pull requests)
 
 You will learn both the theory and the practice with hands-on exercises.
 
@@ -29,7 +29,7 @@ One week after the workshop, we meet again for a consultation hour to discuss po
 
 ## For whom is this course?
 
-The target audience of this workshop are beginners without prior experience with Git and Github. However, it might also be interesting if you already use Git for your personal projects but want to learn more about the underlying concepts and collaboration using Git and Github. 
+The target audience of this workshop are beginners without prior experience with Git and GitHub. However, it might also be interesting if you already use Git for your personal projects but want to learn more about the underlying concepts and collaboration using Git and GitHub. 
 
 # Who is the instructor?
 

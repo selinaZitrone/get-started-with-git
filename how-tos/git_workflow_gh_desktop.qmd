@@ -1,9 +1,9 @@
 ---
-title: "A Git workflow with Github Desktop"
+title: "A Git workflow with GitHub Desktop"
 ---
 
 In this guide, we will create a small cook book project using Git. We will
-add recipes and commit the our repository and then publish the project on Github
+add recipes and commit the our repository and then publish the project on GitHub
 to collaborate with others on it.
 
 # Prerequisites
@@ -11,17 +11,17 @@ to collaborate with others on it.
 To follow this workflow you need:
 
 - Git installed
-- Github Desktop installed
-- A Github account connected to your Github Desktop program
+- GitHub Desktop installed
+- A GitHub account connected to your GitHub Desktop program
 
 Have a look at the [course preparations](../course_preparation.qmd)
 if you miss anything
 
-# A Git workflow with Github Desktop
+# A Git workflow with GitHub Desktop
 
 ## Step 1: Initialize a new repository
 
-To initialize a new Git repository with Github Desktop, you have to options: You 
+To initialize a new Git repository with GitHub Desktop, you have to options: You 
 create an empty project with a repository or you add a repository to an existing 
 project. For our cook book, we chose option 1 because we don't have an project yet.
 
@@ -57,7 +57,7 @@ you to **create a repository** instead. Click on that link:
 ![](img/ghd_add_repo_create.png)
 
 Fill out the dialog box just like in option 1 but leave the project name as 
-suggested by Github Desktop to match the folder name you already created.
+suggested by GitHub Desktop to match the folder name you already created.
 
 Click on **Create repository** when you are done.
 
@@ -83,22 +83,22 @@ Mix everything together and put in the oven
 for 45 mins at 200 °C.
 ```
 
-After you added a recipe, switch back to Github Desktop.
+After you added a recipe, switch back to GitHub Desktop.
 
 ### Explore the changes
 
-Github Desktop recorded all the changes to your project.
+GitHub Desktop recorded all the changes to your project.
 Have a look at the user interface to see how much information and options it gives you:
 
 ![](img/ghd_add_pie.png)
 
-Notice, that by default, Github Desktop stages your files (i.e. marks them to be part of the next commit).
+Notice, that by default, GitHub Desktop stages your files (i.e. marks them to be part of the next commit).
 If you want to remove a file from the staging area, just uncheck the box next to the file.
 
 ## Step 3: Make a commit
 
 To commit the changes to your local repository, you need to enter
-a commit message (Github Desktop suggests you something, but you can change it).
+a commit message (GitHub Desktop suggests you something, but you can change it).
 
 Optionally, you can add a more detailed description of you changes in the 
 description box below:
@@ -120,34 +120,34 @@ Have a look [here](https://cbea.ms/git-commit/) for some guidelines.
 ### Look at the history
 
 To look at the history of your commits, you can go to the history view
-of Github desktop. It gives you all the details about previous commits:
+of GitHub desktop. It gives you all the details about previous commits:
 
 ![](img/ghd_history.png)
 
 ## Step 4: Create a remote repository and push your changes
 
-Now we want to share our cook book with the world. Using Github Desktop makes it
-very easy to publish a repository on Github.
+Now we want to share our cook book with the world. Using GitHub Desktop makes it
+very easy to publish a repository on GitHub.
 Just click **Publish repository** on the top right.
 In the dialogue box that opens, you can choose whether to make your code public 
 or keep it private. Optionally, you can add a description which will be displayed on
-Github. This is how my cook book repository looks like:
+GitHub. This is how my cook book repository looks like:
 
 ![](img/ghd_publish_repo.png)
 
 When you are done click **Publish repository**.
 
-You can checkout how your Github repository looks online by going to 
+You can checkout how your GitHub repository looks online by going to 
 **Repository -> View on GitHub**.
 
-## Step 5: Push new changes to Github
+## Step 5: Push new changes to GitHub
 
-Once, you published the repository on Github, you can push new changes up there 
+Once, you published the repository on GitHub, you can push new changes up there 
 to update the remote repository.
 
 Just continue working locally, add new recipe files, update existing recipes and commit
 the changes when you are done.
-Just click on one of the two **Push** buttons update the Github repository with the
+Just click on one of the two **Push** buttons update the GitHub repository with the
 latest local changes.
 
 The small number on the right side of the button indicates how many commits you have
@@ -157,26 +157,26 @@ that are not pushed yet (in my case 1).
 
 # Collaboration using branching
 
-Git and Github are perfect for collaboration. Let's assume our friend also has a
-cook book project on Github and we want to work together with them on the book.
+Git and GitHub are perfect for collaboration. Let's assume our friend also has a
+cook book project on GitHub and we want to work together with them on the book.
 
 If you want to try the workflow by collaborating with yourself, you can just skip
 step 1 and do the other steps with your own instead of your friend's cook book.
 
-## Add collaborators to Github repository
+## Add collaborators to GitHub repository
 
-To collaborate, your friend needs to add you to their Github project.
-On the Github webpage, they can go to **Settings -> Collaborators -> Add people**:
+To collaborate, your friend needs to add you to their GitHub project.
+On the GitHub webpage, they can go to **Settings -> Collaborators -> Add people**:
 
 ![](img/gh_add_collaborator.png)
 
-Your friend can then add your Github user name and you will get an invitation email
+Your friend can then add your GitHub user name and you will get an invitation email
 for the repository. Accept this invitation and you are now a collaborator on your
 friend's project.
 
 ## Step 1: Clone a remote repository
 
-There are two ways to clone a remote repositiry in Github Desktop:
+There are two ways to clone a remote repositiry in GitHub Desktop:
 The easy option is if you are working on a shared GitHub repository (option 1). 
 But you can also clone any repository (also if it's not hosted on GitHub but e.g. on Gitlab) using the URL (option 2).
 
@@ -184,7 +184,7 @@ But you can also clone any repository (also if it's not hosted on GitHub but e.g
 
 # Option 1: Shared GitHub repository
 
-This option is great if you collaborate on a Github repository. As soon as you accepted the invitation to be a collaborator on a repository, this repository will be listed by Github Desktop in the list of your repositories.
+This option is great if you collaborate on a GitHub repository. As soon as you accepted the invitation to be a collaborator on a repository, this repository will be listed by GitHub Desktop in the list of your repositories.
 
 To clone the repository you just need to go to **File -> Clone repository**.
 In the dialogue box that opens stay in the "GitHub.com" tab. There you can scroll through the list of your repositories and select the one you want to clone.
@@ -199,15 +199,15 @@ Now you can start working with the repository of your friend.
 
 # Option 2: Clone all repositories using URL
 
-This option works for Github repositories but also for all other remote repositories (e.g. Gitlab).
+This option works for GitHub repositories but also for all other remote repositories (e.g. Gitlab).
 
 First, we need to clone our friend's repository. This means we pull an entire copy
 of the repository onto our machine. To clone a repository, you need to know the 
-repositories address. You can find the HTTPS address by clicking on the green code button on Github:
+repositories address. You can find the HTTPS address by clicking on the green code button on GitHub:
 
 ![](img/gh_copy_adress.png)
 
-Go to Github Desktop and **File -> Clone repository**. In the dialogue box that opens
+Go to GitHub Desktop and **File -> Clone repository**. In the dialogue box that opens
 
 Go to the URL Tab and enter the URL. Then, you can select the location where the repository should be stored in:
 
@@ -222,12 +222,12 @@ Now you can start working with the repository of your friend.
 ## Step 2: Create a new branch
 
 To use the collaboration workflow discussed in the lecture, you need to create a new branch when you want to do some work. Let's say, I want to add some vegan pie recipe.
-In Github Desktop, go to **Branch -> New Branch**.
+In GitHub Desktop, go to **Branch -> New Branch**.
 Give the branch a short but meaningful name and then click on **Create branch**:
 
 ![](img/ghd_new_branch.png)
 
-Github Desktop will also automatically switch to this branch for you. 
+GitHub Desktop will also automatically switch to this branch for you. 
 You can see your current branch and switch branches on top:
 
 ![](img/ghd_switch_branch.png)
@@ -238,10 +238,10 @@ commit them like you are used to (see how-to above).
 ## Step 3: Publish and push your branch to remote
 
 To make your branch with the vegan pie recipe available for you friend, you need 
-to push the branch to the remote repository on Github. This works just like with the main 
+to push the branch to the remote repository on GitHub. This works just like with the main 
 branch. On the top right, just click the **Push** button (The first time, this button will say **Publish branch** instead of Push).
 
-Now your branch should be pushed to Github and you can do a pull request.
+Now your branch should be pushed to GitHub and you can do a pull request.
 
 ## Step 4: Create a pull request
 
@@ -254,11 +254,11 @@ to ask your friend to integrate your recipe into their cookbook.
 
 ## Revert a commit
 
-If you want to undo a commit without deleting the whole commit history, you can revert the respective commit. Just go to the history tab in Github Desktop and find the commit you want to revert. Now right-click on the commit and select **Revert changes in commit**:
+If you want to undo a commit without deleting the whole commit history, you can revert the respective commit. Just go to the history tab in GitHub Desktop and find the commit you want to revert. Now right-click on the commit and select **Revert changes in commit**:
 
 ![](img/ghd_revert.png)
 
-Github Desktop will create a new commit that reverts the original commit:
+GitHub Desktop will create a new commit that reverts the original commit:
 
 ![](img/ghd_revert_commit.png)
 

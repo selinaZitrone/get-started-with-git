@@ -175,7 +175,7 @@ To clone a repo, you need to know the repo's URL
 
 ::: {.nonincremental}
 
-- One remote repo on Github, multiple local repos
+- One remote repo on GitHub, multiple local repos
 
 :::
 
@@ -241,7 +241,7 @@ Get the changes of your team mate from the remote.
 
 ![](img/day2/collab_branching_merging.png)
 
-- One remote repo on Github, multiple local repos
+- One remote repo on GitHub, multiple local repos
 - Idea: Everyone works on the their **separate branch**
   - **Merge** branch with the main when work is done
 - **Pull before** and **push after** working
@@ -281,30 +281,30 @@ Git merge brings the commits from the branch to main
 > [Create a branch and merge it in your team mate's cook book](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
 > Complete task 2 "Branch and merge"
 
-## A branching-merging workflow with Github
+## A branching-merging workflow with GitHub
 
 ![](img/day2/collab_branching_pre_pr.png)
 
-- One remote repo on Github, multiple local repos
+- One remote repo on GitHub, multiple local repos
 - Idea: Everyone works on the their separate branch
   - ~~**Merge** branch with the main when work is done~~
 
-## A branching-merging workflow with Github
+## A branching-merging workflow with GitHub
 
 ![](img/day2/collab_branching_pr.png)
 
 ::: {.nonincremental}
 
-- One remote repo on Github, multiple local repos
+- One remote repo on GitHub, multiple local repos
 - Idea: Everyone works on the their separate branch
   - ~~**Merge** branch with the main when work is done~~
-  - **Create a pull request** on Github to ask for a merge
+  - **Create a pull request** on GitHub to ask for a merge
 
 :::
 
 - **Pull before** and **push after** working
 
-## A branching-merging workflow with Github
+## A branching-merging workflow with GitHub
 
 A pull request is basically asking your collaborators:
 
@@ -312,7 +312,7 @@ A pull request is basically asking your collaborators:
 
 . . .
 
-Github has nice features for pull requests, e.g.:
+GitHub has nice features for pull requests, e.g.:
 
 - **Provide context and explanations** for your changes
 - Collaborators can easily **compare versions**
@@ -320,7 +320,7 @@ Github has nice features for pull requests, e.g.:
 
 . . .
 
-A pull request is merged on Github when **everyone agreed on the code**.
+A pull request is merged on GitHub when **everyone agreed on the code**.
 
 # Now you (10 min) {.task-slide}
 > [Create a pull request on your team mate'S repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
@@ -344,7 +344,7 @@ A pull request is merged on Github when **everyone agreed on the code**.
 :::{.nonincremental}
 
 - **Start working** with Git on one of **your research projects**
-- **Publish** one of your projects on Github including a nice README
+- **Publish** one of your projects on GitHub including a nice README
 - **Practice collaboration** by contributing to your team mate's cook using pull requests
   - Your team mate can answer your pull requests and request some changes :)
 
@@ -359,7 +359,7 @@ A pull request is merged on Github when **everyone agreed on the code**.
   - learn about Git in the [terminal](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_terminal.html)
   - learn about [Git + R](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_usethis.html)
 - If you find a mistake on my websites
-  - **Edit the page** on Github (and make a Pull request) or **report an issue**
+  - **Edit the page** on GitHub (and make a Pull request) or **report an issue**
 - Checkout the additional [resources](https://selinazitrone.github.io/get-started-with-git/resources.html)
 
 :::

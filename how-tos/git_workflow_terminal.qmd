@@ -3,7 +3,7 @@ title: "A Git workflow with the terminal"
 ---
 
 In this guide, we will create a small cook book project using Git. We will
-add recipes and commit the our repository and then publish the project on Github
+add recipes and commit the our repository and then publish the project on GitHub
 to collaborate with others on it.
 
 # Prerequisites
@@ -11,8 +11,8 @@ to collaborate with others on it.
 To follow this workflow you need:
 
 - Git installed (see [course preparations](../course_preparation.qmd))
-- A Github or Gitlab account
-- An SSH key to authenticate to Github/Gitlab (see [here](ssh_keys.qmd))
+- A GitHub or Gitlab account
+- An SSH key to authenticate to GitHub/Gitlab (see [here](ssh_keys.qmd))
 
 All commands that are used in the following, have to be typed in the terminal.
 If you are on Windows, I recommend to use the Git Bash terminal that comes with
@@ -29,7 +29,7 @@ If everything is set up correctly it will show you the current installation of G
 ## Configure Git
 
 Git needs to know who you are in order to sign your commits correctly. 
-If you already set up Github Desktop, you might already have the minimal Git
+If you already set up GitHub Desktop, you might already have the minimal Git
 configuration ready.
 
 The Git configuration can be set locally (just for the current repo) or globally 
@@ -50,7 +50,7 @@ git config --global user.name "<your_user_name>"
 git config --global user.email "<your_user_email>"
 ```
 
-Use the user name and email that you also use in your Gitlab/Github here.
+Use the user name and email that you also use in your Gitlab/GitHub here.
 
 # A Git workflow in the terminal
 
@@ -209,11 +209,11 @@ git log --oneline
 
 ## Step 5: Create a remote repository
 
-Now, we connect our local repository with a remote repository on Github.
+Now, we connect our local repository with a remote repository on GitHub.
 
-In the terminal, this is slightly more complicated than with Github Desktop.
+In the terminal, this is slightly more complicated than with GitHub Desktop.
 
-Go to the [Github website](https://github.com/), log in and click on the green **New** button on the left of the start page:
+Go to the [GitHub website](https://github.com/), log in and click on the green **New** button on the left of the start page:
 
 ![](img/github-new-button-small.png)
 
@@ -223,11 +223,11 @@ local repository:
 
 ![](img/gh-new-repo.png)
 
-Github will now bring you to the newly created repository.
+GitHub will now bring you to the newly created repository.
 
-#### Add the repository on Github as a remote to your local repository
+#### Add the repository on GitHub as a remote to your local repository
 
-We now want to connect the *local* cook book project with the *remote* cookBook on Github.
+We now want to connect the *local* cook book project with the *remote* cookBook on GitHub.
 
 First, copy the remote's address.
 
@@ -243,7 +243,7 @@ Now switch back to your terminal and add this address as a remote with the name 
 git remote add origin git@github.com:selinaZitrone/cookBook-Selina.git
 ```
 
-## Step 6: Push new changes to Github
+## Step 6: Push new changes to GitHub
 
 You can now push your changes to the remote by running
 
@@ -257,7 +257,7 @@ that you don't have locally:
 ![](img/push_rejected.png)
 
 This makes sense, because you added a README file when creating the remote repository
-on Github. In these situation, Git prevents you from pushing and you first need to pull all
+on GitHub. In these situation, Git prevents you from pushing and you first need to pull all
 changes from the remote.
 
 Just run
@@ -281,20 +281,20 @@ for the first time. Afterwards you can just use `git push`
 
 # Collaboration using branching
 
-Git and Github are perfect for collaboration. Let's assume our friend also has a
-cook-book project on Github and we want to work together with them on the book.
+Git and GitHub are perfect for collaboration. Let's assume our friend also has a
+cook-book project on GitHub and we want to work together with them on the book.
 
 If you want to try the workflow by collaborating with yourself, you can just skip
 step 1 and do the other steps with your own instead of your friend's cook book.
 
-## Add collaborators on Github repository
+## Add collaborators on GitHub repository
 
-To collaborate, your friend needs to add you to their Github project.
-On the Github webpage, they can go to **Settings -> Collaborators -> Add people**:
+To collaborate, your friend needs to add you to their GitHub project.
+On the GitHub webpage, they can go to **Settings -> Collaborators -> Add people**:
 
 ![](img/gh_add_collaborator.png)
 
-Your friend can then add your Github user name and you will get an invitation email
+Your friend can then add your GitHub user name and you will get an invitation email
 for the repository. Accept this invitation and you are now a collaborator on your
 friend's project.
 
@@ -302,7 +302,7 @@ friend's project.
 
 First, we need to clone our friend's repository. This means we pull an entire copy
 of the repository onto our machine. To clone a repository, you need to know the 
-repositories address. You can find the SSH address by clicking on the green code button on Github:
+repositories address. You can find the SSH address by clicking on the green code button on GitHub:
 
 ![](img/gh_copy_adress_ssh.png)
 
@@ -347,7 +347,7 @@ Now you can start working on your branch and do commits there like you learned e
 ## Step 3: Publish and push your branch to remote
 
 To make your branch with the vegan pie recipe available for you friend, you need 
-to push the branch to the remote repository on Github. This works just like with the main 
+to push the branch to the remote repository on GitHub. This works just like with the main 
 branch using `git push`.
 
 But again, the first time you push a new branch, you need to specify the upstream by running:
@@ -356,7 +356,7 @@ But again, the first time you push a new branch, you need to specify the upstrea
 git push --set-upstream origin add_vegan_pie
 ```
 
-Now your branch should be pushed to Github and you can do a pull request.
+Now your branch should be pushed to GitHub and you can do a pull request.
 
 ## Step 4: Create a pull request
 

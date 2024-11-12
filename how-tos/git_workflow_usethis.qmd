@@ -19,10 +19,10 @@ Install it in R with:
 install.packages("usethis")
 ```
 
-## Setup PAT to use HTTPS protocol with Github
+## Setup PAT to use HTTPS protocol with GitHub
 
-You can manage access to Github with a personal access token (PAT) instead of using your password. 
-Check if you already have a personal access token for Github.
+You can manage access to GitHub with a personal access token (PAT) instead of using your password. 
+Check if you already have a personal access token for GitHub.
 
 ```{r}
 usethis::gh_token_help()
@@ -35,14 +35,14 @@ To create a new token, call the function:
 usethis::create_github_token()
 ```
 
-This will open Github and ask you to sign in. 
+This will open GitHub and ask you to sign in. 
 
 Next, you are asked to create a new personal access token.
 
 On top enter a note that reminds you what this token is for (e.g. Something like "RStudio/R on HP laptop").
 
 Set an expiration date of your choice (the shorter the more secure, but you have
-to update more often - Github will send you a reminder for this).
+to update more often - GitHub will send you a reminder for this).
 
 You can also select the scopes for your PAT. For general use case, the default selected scopes are enough.
 Scroll down and click on **Generate token**.
@@ -146,9 +146,9 @@ RStudio will be restarted and a the git GUI client will be added.
 
 Can you find the `Git` Tab in the top right pane?
 
-## Step 3: Create a remote repository on Github
+## Step 3: Create a remote repository on GitHub
 
-Create a new repository on Github that will be associated with your local repository.
+Create a new repository on GitHub that will be associated with your local repository.
 
 Call the function
 
@@ -156,8 +156,8 @@ Call the function
 usethis::use_github(private = TRUE) # default is private = FALSE
 ```
 
-This should now open Github in the browser and bring you to a freshly created 
-Github project that is not associated with your local repository.
+This should now open GitHub in the browser and bring you to a freshly created 
+GitHub project that is not associated with your local repository.
 
 Really convenient :tada:
 
@@ -215,16 +215,16 @@ On the bottom you can see the code that you added (therefore green).
 Enter a commit message on the right and click commit. 
 When the commit is finished, close the little window that opened.
 
-Now push the changes to Github by clicking on the green upward arrow on the top right.
+Now push the changes to GitHub by clicking on the green upward arrow on the top right.
 
-Go to Github and check if everything was pushed as you expected.
+Go to GitHub and check if everything was pushed as you expected.
 
 # Collaboration using branching
 
 ## Step 6: Create a new branch
 
 In this step, you will create a new branch for a new feature that you want to introduce.
-This branch will later be use to do a pull request on Github.
+This branch will later be use to do a pull request on GitHub.
 
 In RStudio, you can create a new branch, by clicking on the little violet branch symbol in the Git pane:
 

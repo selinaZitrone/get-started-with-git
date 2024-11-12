@@ -8,20 +8,20 @@ If you are stuck in a task, you can have a look at the [How-To description](../h
 
 ## Clone the cook book repo of your team mate (5 min)
 
-Use Github Desktop to clone the cook book repository of your team mate.
+Use GitHub Desktop to clone the cook book repository of your team mate.
 
 Go to **File -> Clone Repository**.
 
-In the tab "Github.com" you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your team mate and clone it to a local path of your choice.
+In the tab "GitHub.com" you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your team mate and clone it to a local path of your choice.
 
 :::{.callout-caution}
 ## What if I don't see the repository of my team mate?
 
 
 You can also clone a repository using its URL. Switch to the tab "URL" in GitHub Desktop.
- Open your team mate's repository on Github (find the correct link [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)). On the Github page of the repo, click on the green code button
+ Open your team mate's repository on GitHub (find the correct link [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)). On the GitHub page of the repo, click on the green code button
 on the top right, copy the HTTPS address and then paste it in the URL field
-of Github Desktop. Then clone it to a local path of your choice.
+of GitHub Desktop. Then clone it to a local path of your choice.
 
 :::
 
@@ -35,7 +35,7 @@ Make sure that you are in your team mate's cook book (check which repository you
 
 Create a new branch to add a recipe (**Branch -> New branch**).
 
-Make sure that you are now in the new branch by looking in the top middle of Github Desktop what your current branch is:
+Make sure that you are now in the new branch by looking in the top middle of GitHub Desktop what your current branch is:
 
 ![](tasks/img/current_branch.png)
 
@@ -213,32 +213,32 @@ Now switch back to the main branch (click on the "current branch" button on top 
 
 Merge your new branch into the main branch (**Branch -> Merge into current branch -> select your branch**). Now check the commit history to see if your branch commit is actually there.
 
-Now push the "main" to Github by clicking the push button to share your changes with your team mate.
+Now push the "main" to GitHub by clicking the push button to share your changes with your team mate.
 
 # 3 Pull requests
 
 ## Make a pull request in your team mate's repo (10 min)
 
-Now it's again time to modify something in your team mate's cook book. Make sure you are in your team mate's repository on the top left of Github desktop. 
+Now it's again time to modify something in your team mate's cook book. Make sure you are in your team mate's repository on the top left of GitHub desktop. 
 
 #### Create another branch and make some changes
 
-Create another branch (**Branch -> New branch**) and make sure that you are on that branch (top middle section of Github Desktop).
+Create another branch (**Branch -> New branch**) and make sure that you are on that branch (top middle section of GitHub Desktop).
 
 #### Make some changes
 
 Open a file in your team mate's cook book and make some changes.
-Save and close the file and switch to Github Desktop.
+Save and close the file and switch to GitHub Desktop.
 
 Now commit these changes.
 
 #### Publish and push branch
 
-Publish and push your branch to Github by clicking on the publish/push button.
+Publish and push your branch to GitHub by clicking on the publish/push button.
 
 #### Pull request
 
-Now open the repository on Github (**Repository -> View on Github**).
+Now open the repository on GitHub (**Repository -> View on GitHub**).
 On top you should already see the option to "Compare and pull request":
 
 ![](tasks/img/compare_and_pr.png)
@@ -247,9 +247,9 @@ Click on that button and use the dialogue window that opens to describe your cha
 
 #### For the fast ones
 
-As long as the pull request is not merged, you can still make changes to your branch and push them to Github. The pull request will automatically update with the new changes.
-So you can now switch to your machine again, make sure that in Github Desktop you are
-still on your branch and make some more changes to repository. Commit and push the changes to Github. 
+As long as the pull request is not merged, you can still make changes to your branch and push them to GitHub. The pull request will automatically update with the new changes.
+So you can now switch to your machine again, make sure that in GitHub Desktop you are
+still on your branch and make some more changes to repository. Commit and push the changes to GitHub. 
 
 # Extra
 

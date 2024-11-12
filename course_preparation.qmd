@@ -67,9 +67,9 @@ git --version
 
 :::
 
-# Sign up for Github
+# Sign up for GitHub
 
-I will use Github as a remote repository service in the workshop and you can [create an account here](https://github.com/join). 
+I will use GitHub as a remote repository service in the workshop and you can [create an account here](https://github.com/join). 
 
 ::: {.callout-tip}
 
@@ -80,15 +80,15 @@ This gives you some additional benefits like private wikis and more. You can alw
 
 :::
 
-If your institution provides a Gitlab server, you can later switch from Github to Gitlab. The workflows are all the same, you just need the account for this course.
+If your institution provides a Gitlab server, you can later switch from GitHub to Gitlab. The workflows are all the same, you just need the account for this course.
 
-# Install Github Desktop
+# Install GitHub Desktop
 
-In the course, I'll be using the Github Desktop application as a graphical user
+In the course, I'll be using the GitHub Desktop application as a graphical user
 interface to work with Git.
 
-There are detailed step by step guides on how to install and set up Github Desktop
-on the Github Website. Please follow [this guide](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop#part-1-installing-github-desktop) and 
+There are detailed step by step guides on how to install and set up GitHub Desktop
+on the GitHub Website. Please follow [this guide](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop#part-1-installing-github-desktop) and 
 do Part 1 (Installing GitHub Desktop) and Part 2 (Configuring your account).
 
 

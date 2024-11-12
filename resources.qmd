@@ -25,14 +25,14 @@ concepts in the command line.
 explains the setup in detail but also goes into more advanced topics.
 
 - Follow this [step by step guide](https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r/)
-to set up Git and a Github connection in R and R Studio
+to set up Git and a GitHub connection in R and R Studio
 
-### Git :heart: Github Desktop
+### Git :heart: GitHub Desktop
 
-- There are detailed step by step guides on how to set up Github Desktop and how to
-work with in the [Github Desktop Documentation](https://docs.github.com/desktop)
+- There are detailed step by step guides on how to set up GitHub Desktop and how to
+work with in the [GitHub Desktop Documentation](https://docs.github.com/desktop)
 
 ## Other resources
 
-- [Connect Github Desktop with a Gitlab repository](https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104?gi=b32bd84e7fe4)
+- [Connect GitHub Desktop with a Gitlab repository](https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104?gi=b32bd84e7fe4)
 - [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html)

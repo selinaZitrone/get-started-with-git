@@ -2,9 +2,9 @@
 title: Set up SSH key authentication
 ---
 
-In order to transfer information between Github or Gitlab and your local machine,
+In order to transfer information between GitHub or Gitlab and your local machine,
 you need to authenticate yourself to the remote server.
-If you use Github + Github Desktop, they take care of this for you. Otherwise, you
+If you use GitHub + GitHub Desktop, they take care of this for you. Otherwise, you
 need to setup SSH authentication with SSH keys.
 You can also authenticate using a [personal access token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) instead but here we 
 will stick with SSH keys here.
@@ -18,10 +18,10 @@ If you want a good and simple explanation of how SSH works, checkout the video b
 If you are not sure if you already set up authentication via ssh on your machine,
 you can try the following:
 
-- Can you push to Github/Gitlab from the command line without having to provide credentials (except for SSH key password)? 
+- Can you push to GitHub/Gitlab from the command line without having to provide credentials (except for SSH key password)? 
   - If yes, then you already set up authentication.
 - Run `ssh -T git@github.com` or `ssh - T git@gitlab.com` in the terminal (Git bash for Windows users). 
-If Github/Gitlab welcomes you with your correct user account, you are all set.
+If GitHub/Gitlab welcomes you with your correct user account, you are all set.
 
 If you don't have an SSH key set up, please follow the steps below.
 
@@ -30,21 +30,21 @@ If you don't have an SSH key set up, please follow the steps below.
 Please follow [this guide](https://blog.checkpoint.com/2022/05/06/the-complete-guide-to-ssh-keys-in-gitlab/)
 
 If you prefer a video, you can check out [this one](https://www.youtube.com/watch?v=mNtQ55quG9M). 
-It is for Gitlab but works the same for Github.
+It is for Gitlab but works the same for GitHub.
 
-# SSH-authentication for Github
+# SSH-authentication for GitHub
 
 Complete the following steps:
 
 - [Check for existing SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 - [Generate an SSH key and add it to SSH-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-- [Add your public key to your Github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+- [Add your public key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 # Test the connection
 
 To test if the setup was successful, 
 run `ssh -T git@github.com` or `ssh -T git@gitlab.com` and see if Gitlab or 
-Github answer to you.
+GitHub answer to you.
 
 
 

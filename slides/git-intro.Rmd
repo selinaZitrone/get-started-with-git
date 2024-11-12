@@ -203,7 +203,7 @@ Get started with simple workflows. Learn the rest as you need it.
 
 - **Repository / Repo:** Database of the project (a `.git` folder in your project)
   - **local:** on a local machine (e.g. your computer)
-  - **remote:** on a server (e.g. Github)
+  - **remote:** on a server (e.g. GitHub)
   
 - **Commit:** a change to the repository
 
@@ -413,7 +413,7 @@ We have
 ---
 # Step 4: Create a remote repository
 
-- E.g. on Github, Bitbucket or Gitlab
+- E.g. on GitHub, Bitbucket or Gitlab
 
 .center[![:scale 70%](img/git-remote-concept.png)]
 
@@ -430,7 +430,7 @@ We have
 
 --
 
-- The address of the remote can be found on Github
+- The address of the remote can be found on GitHub
 
 --
 
@@ -592,16 +592,16 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 - My recommendation: First understand git concepts in command line, then move on to a GUI client if you want
 
 ---
-# Example: Github Desktop
+# Example: GitHub Desktop
 
 - For MacOS and Windows
 
-- Easily connected to your Github account, but also works for GitLab repos etc.
+- Easily connected to your GitHub account, but also works for GitLab repos etc.
 
 - I personally don't use it, but it looks pretty good and simple to use
 
 ---
-# Example: Github Desktop
+# Example: GitHub Desktop
 
 ![](img/github-desktop.png)
 
@@ -616,7 +616,7 @@ Thanks to this blogpost from which all the examples and explanations are taken:
 
 [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf): Always handy if you don't remember the basic commands
 
-[Download Github Desktop](https://desktop.github.com/)
+[Download GitHub Desktop](https://desktop.github.com/)
 
 ---
 class: inverse
