@@ -64,29 +64,36 @@ Cook on a heated pan with butter or oil until golden brown.
 ```
 
 
-# 🍜 Lentil soup
+# 🍜 Ramen Soup
 
 ```md
 Ingredients:
 
-200 g lentils
-1 large onion, chopped
-2 carrots, chopped
-2 celery stalks, chopped
-3 cloves garlic, minced
-400 g diced tomatoes
-1.5 liters vegetable broth
-1 tsp cumin
-1 tsp paprika
+200 g ramen noodles
+1 liter chicken broth
+2 cloves garlic, minced
+1 tbsp ginger, minced
+2 tbsp soy sauce
+1 tbsp miso paste
+2 large eggs
+100 g mushrooms, sliced
+1 carrot, julienned
+100 g spinach
+2 green onions, sliced
+1 tbsp sesame oil
 Salt and pepper to taste
-2 tbsp olive oil
 
 Preparation:
 
-Sauté onion, carrots, and celery in olive oil.
-Add garlic, cumin, and paprika.
-Add lentils, tomatoes, and broth; simmer until lentils are tender.
-Season with salt and pepper.
+Cook ramen noodles according to package instructions, drain and set aside.
+In a pot, heat sesame oil and sauté garlic and ginger until fragrant.
+Add chicken broth, soy sauce, and miso paste, and bring to a simmer.
+Add mushrooms and carrot, cook until tender.
+In a separate pot, boil eggs for 7 minutes, then cool, peel, and halve.
+Add spinach to the broth and cook until wilted.
+Divide noodles into bowls, pour broth and vegetables over them.
+Top with halved eggs and sliced green onions.
+Season with salt and pepper to taste.
 ```
 
 # 🍰 Carrot cake
@@ -139,6 +146,57 @@ Sauté onion, garlic, and ginger in oil.
 Add spices and chicken, cook until browned.
 Add tomatoes and coconut milk, simmer until chicken is cooked.
 Season with salt and pepper, garnish with cilantro.
+```
+
+# 🍪 Chocolate Chip Cookies
+
+```md
+Ingredients:
+
+250 g all-purpose flour
+150 g sugar
+150 g brown sugar
+225 g butter, softened
+2 large eggs
+1 tsp vanilla extract
+1 tsp baking soda
+0.5 tsp salt
+300 g chocolate chips
+
+Preparation:
+
+Preheat oven to 175°C.
+Cream together butter, sugar, and brown sugar.
+Add eggs and vanilla, mix well.
+Combine flour, baking soda, and salt.
+Gradually add dry ingredients to wet ingredients.
+Fold in chocolate chips.
+Drop spoonfuls of dough onto a baking sheet.
+Bake for 10-12 minutes until golden brown.
+```
+
+# 🥗 Greek Salad
+
+```md
+Ingredients:
+
+200 g cherry tomatoes, halved
+1 cucumber, diced
+1 red onion, thinly sliced
+1 green bell pepper, diced
+100 g feta cheese, crumbled
+50 g black olives
+2 tbsp olive oil
+1 tbsp red wine vinegar
+1 tsp dried oregano
+Salt and pepper to taste
+
+Preparation:
+
+Combine tomatoes, cucumber, onion, bell pepper, feta, and olives in a bowl.
+Whisk together olive oil, vinegar, oregano, salt, and pepper.
+Pour dressing over salad and toss to combine.
+Serve immediately.
 ```
 
 :::
