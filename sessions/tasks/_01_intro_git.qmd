@@ -1,4 +1,4 @@
-Create your own Git cook book 🍜.
+Create your own Git cook book 🧑‍🍳.
 
 All recipes will be simple text files and changes will be commited to the repository.
 
@@ -10,7 +10,7 @@ If you are stuck in a task, you can have a look at the [How-To description](../h
 
 # 1 Local repo
 
-## Create your own Git cook book 🍜 (10 min)
+## Create your own Git cook book 🧑‍🍳 (10 min)
 
 ### Create a new repository
 
