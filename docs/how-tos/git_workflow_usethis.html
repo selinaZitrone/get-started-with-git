@@ -4856,8 +4856,10 @@ height: 400px;
   <ul>
   <li><a href="#preparation" id="toc-preparation" class="nav-link active" data-scroll-target="#preparation">Preparation</a>
   <ul class="collapse">
-  <li><a href="#setup-pat-to-use-https-protocol-with-github" id="toc-setup-pat-to-use-https-protocol-with-github" class="nav-link" data-scroll-target="#setup-pat-to-use-https-protocol-with-github">Setup PAT to use HTTPS protocol with Github</a></li>
+  <li><a href="#setup-pat-to-use-https-protocol-with-github" id="toc-setup-pat-to-use-https-protocol-with-github" class="nav-link" data-scroll-target="#setup-pat-to-use-https-protocol-with-github">Setup PAT to use HTTPS protocol with Github</a>
+  <ul class="collapse">
   <li><a href="#optional-add-usethis-and-standard-protocol-to-your-.rprofile" id="toc-optional-add-usethis-and-standard-protocol-to-your-.rprofile" class="nav-link" data-scroll-target="#optional-add-usethis-and-standard-protocol-to-your-.rprofile">Optional: Add <code>usethis</code> and standard protocol to your <code>.Rprofile</code></a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#a-git-workflow-using-usethis" id="toc-a-git-workflow-using-usethis" class="nav-link" data-scroll-target="#a-git-workflow-using-usethis">A Git workflow using <code>usethis</code></a>
   <ul class="collapse">
@@ -4912,11 +4914,11 @@ height: 400px;
 </div>
 <section id="setup-pat-to-use-https-protocol-with-github" class="level2">
 <h2 class="anchored" data-anchor-id="setup-pat-to-use-https-protocol-with-github">Setup PAT to use HTTPS protocol with Github</h2>
-<p>Check if you already have a personal access token for Github</p>
+<p>You can manage access to Github with a personal access token (PAT) instead of using your password. Check if you already have a personal access token for Github.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>gh<span class="sc">::</span><span class="fu">gh_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">gh_token_help</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>If not, you can create one</p>
+<p>This will tell you if you already have a token and if not how you can create one. To create a new token, call the function:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -4924,7 +4926,7 @@ height: 400px;
 <p>Next, you are asked to create a new personal access token.</p>
 <p>On top enter a note that reminds you what this token is for (e.g. Something like “RStudio/R on HP laptop”).</p>
 <p>Set an expiration date of your choice (the shorter the more secure, but you have to update more often - Github will send you a reminder for this).</p>
-<p>You can also select the scopes for your PAT. For general use case, the default selected scopes are enough. Scroll down and click on <code>Generate token</code>.</p>
+<p>You can also select the scopes for your PAT. For general use case, the default selected scopes are enough. Scroll down and click on <strong>Generate token</strong>.</p>
 <p>Copy the token to the clipboard.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4944,13 +4946,12 @@ Warning
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>gitcreds<span class="sc">::</span><span class="fu">gitcreds_set</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You are now prompted to paste your token into the R console.</p>
-<p>Now your PAT should be added to the credentials. You can check it with</p>
+<p>Now your PAT should be added to the credentials. You can check it again with</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>gh<span class="sc">::</span><span class="fu">gh_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">gh_token_help</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="optional-add-usethis-and-standard-protocol-to-your-.rprofile" class="level2">
-<h2 class="anchored" data-anchor-id="optional-add-usethis-and-standard-protocol-to-your-.rprofile">Optional: Add <code>usethis</code> and standard protocol to your <code>.Rprofile</code></h2>
+<section id="optional-add-usethis-and-standard-protocol-to-your-.rprofile" class="level3">
+<h3 class="anchored" data-anchor-id="optional-add-usethis-and-standard-protocol-to-your-.rprofile">Optional: Add <code>usethis</code> and standard protocol to your <code>.Rprofile</code></h3>
 <p>If you want to load the <code>usethis</code> package automatically when starting R, you can add it to your <code>.Rprofile</code>. This way, you have all the <code>usethis</code> functionality available without having to load the package first.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -4958,7 +4959,7 @@ Warning
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Careful when adding packages to <code>.Rprofile</code>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -4982,6 +4983,7 @@ Warning
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>With this, <code>usethis</code> will be loaded every time you open RStudio and you already registered the default protocol that you want to use with Git (This is only relevant for the Git things you do with <code>usethis</code>).</p>
+</section>
 </section>
 </section>
 <section id="a-git-workflow-using-usethis" class="level1">

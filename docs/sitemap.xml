@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/slides/03_extra.html</loc>
-    <lastmod>2024-11-07T08:52:07.906Z</lastmod>
+    <lastmod>2024-11-12T14:35:28.072Z</lastmod>
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/slides/01_intro_git.html</loc>
-    <lastmod>2024-11-12T11:38:19.907Z</lastmod>
+    <lastmod>2024-11-12T14:30:14.557Z</lastmod>
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html</loc>
@@ -18,11 +18,11 @@
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_usethis.html</loc>
-    <lastmod>2023-09-18T19:31:20.868Z</lastmod>
+    <lastmod>2024-11-12T15:31:21.684Z</lastmod>
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_gh_desktop.html</loc>
-    <lastmod>2023-09-18T17:17:11.219Z</lastmod>
+    <lastmod>2024-11-12T15:12:33.314Z</lastmod>
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/course_preparation.html</loc>
@@ -30,11 +30,11 @@
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/how-tos/create_pull_request.html</loc>
-    <lastmod>2023-09-14T20:59:46.451Z</lastmod>
+    <lastmod>2024-11-12T15:05:48.843Z</lastmod>
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_terminal.html</loc>
-    <lastmod>2023-09-16T20:17:13.738Z</lastmod>
+    <lastmod>2024-11-12T15:20:55.265Z</lastmod>
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/how-tos/ssh_keys.html</loc>
@@ -50,6 +50,6 @@
   </url>
   <url>
     <loc>https://selinazitrone.github.io/get-started-with-git/slides/02_git_collaboration.html</loc>
-    <lastmod>2024-11-07T08:50:15.205Z</lastmod>
+    <lastmod>2024-11-12T14:33:04.921Z</lastmod>
   </url>
 </urlset>
