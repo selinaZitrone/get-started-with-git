@@ -21,13 +21,15 @@ install.packages("usethis")
 
 ## Setup PAT to use HTTPS protocol with Github
 
-Check if you already have a personal access token for Github
+You can manage access to Github with a personal access token (PAT) instead of using your password. 
+Check if you already have a personal access token for Github.
 
 ```{r}
-gh::gh_token()
+usethis::gh_token_help()
 ```
 
-If not, you can create one
+This will tell you if you already have a token and if not how you can create one.
+To create a new token, call the function:
 
 ```{r}
 usethis::create_github_token()
@@ -43,7 +45,7 @@ Set an expiration date of your choice (the shorter the more secure, but you have
 to update more often - Github will send you a reminder for this).
 
 You can also select the scopes for your PAT. For general use case, the default selected scopes are enough.
-Scroll down and click on `Generate token`.
+Scroll down and click on **Generate token**.
 
 Copy the token to the clipboard. 
 
@@ -63,19 +65,21 @@ gitcreds::gitcreds_set()
 
 You are now prompted to paste your token into the R console.
 
-Now your PAT should be added to the credentials. You can check it with
+Now your PAT should be added to the credentials. You can check it again with
 
 ```{r}
-gh::gh_token()
+usethis::gh_token_help()
 ```
 
-## Optional: Add `usethis` and standard protocol to your `.Rprofile`
+### Optional: Add `usethis` and standard protocol to your `.Rprofile`
 
 If you want to load the `usethis` package automatically when starting R, 
 you can add it to your `.Rprofile`. This way, you have all the `usethis` functionality
 available without having to load the package first.
 
 ::: {.callout-warning}
+
+## Careful when adding packages to `.Rprofile`
 
 Loading packages automatically should only be done for packages that are not 
 used in your R scripts. Otherwise, you might forget to explicitly load the package

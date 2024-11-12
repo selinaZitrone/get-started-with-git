@@ -151,7 +151,7 @@ To clone a repo, you need to know the repo's URL
   
 - You can clone private repositories if you are a owner/collaborator
 
-# Now you {.task-slide}
+# Now you (5 min) {.task-slide}
 
 > Clone your team mate's cook Book repo (**File -> Clone repository**)<br>
 > It should be in the list of your repositories if you accepted the invitation.
@@ -277,9 +277,9 @@ To bring changes to the main branch you need to **merge** them.
 Git merge brings the commits from the branch to main
 
 
-# Now you
+# Now you (10 min) {.task-slide}
 > [Create a branch and merge it in your team mate's cook book](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
-> Complete task 2 "Branch and merge" (10 min)
+> Complete task 2 "Branch and merge"
 
 ## A branching-merging workflow with Github
 
@@ -322,9 +322,9 @@ Github has nice features for pull requests, e.g.:
 
 A pull request is merged on Github when **everyone agreed on the code**.
 
-# Now you
-> [Create a pull request on your partners repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
-> Complete task 3 "Pull requests" (10 min)
+# Now you (10 min) {.task-slide}
+> [Create a pull request on your team mate'S repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
+> Complete task 3 "Pull requests"
 
 # Thanks for your attention
 

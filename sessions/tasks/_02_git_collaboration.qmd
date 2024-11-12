@@ -15,8 +15,13 @@ Go to **File -> Clone Repository**.
 In the tab "Github.com" you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your team mate and clone it to a local path of your choice.
 
 :::{.callout-caution}
+## What if I don't see the repository of my team mate?
 
-If you don't see your team mate's repository, switch to the tab "URL". Open your team mate's repository on Github (find the correct link [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.
+
+You can also clone a repository using its URL. Switch to the tab "URL" in GitHub Desktop.
+ Open your team mate's repository on Github (find the correct link [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)). On the Github page of the repo, click on the green code button
+on the top right, copy the HTTPS address and then paste it in the URL field
+of Github Desktop. Then clone it to a local path of your choice.
 
 :::
 
@@ -248,7 +253,7 @@ still on your branch and make some more changes to repository. Commit and push t
 
 # Extra
 
-### Review pull request on your repo
+## Review pull request on your repo
 
 Now it's time to look at the pull request your team mate left in your repository and decide if you want to merge it or not.
 

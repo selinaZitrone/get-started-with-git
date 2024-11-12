@@ -414,9 +414,9 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 4. Use imperative mood in the subject line
 5. Use the *Description* to explain **what** and **why**, not **how**
 
-# Now you {.task-slide}
+# Now you (15 min) {.task-slide}
 > Start your own cook book <br>
-> Complete [Task 1 "Local repo"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) (10 - 15 min)
+> Complete [Task 1 "Local repo"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
 
 **Stay in the meeting** for the task.<br>
 **Ask** if you are stuck. <br>

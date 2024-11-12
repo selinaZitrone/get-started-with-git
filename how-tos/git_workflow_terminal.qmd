@@ -67,7 +67,7 @@ If you want to go back one level, use `cd ..`.
 
 ::: {.callout-tip}
 On Windows, you can also right click on the folder that contains your project
-and then click on `Git Bash Here`
+and then click on **Git Bash Here**. If you are on Windows 11, you might first have to click on **Show more options** before this option appears.
 
 ![](img/git-bash-here.png){width=50%}
 :::
@@ -139,9 +139,11 @@ Now you can check the repository status with `git status` again:
 
 ![](img/git_add.png)
 
-Git already tells you, that `pie.txt` is now ready to be committed.
+Git tells you, that `pie.txt` is now ready to be committed.
 
 ::: {.callout-tip}
+
+## Stage multiple files at once
 
 If you have multiple files, you want to stage, you can do this in one step with
 
@@ -183,6 +185,9 @@ No you don't have any more changes in your project:
 ![](img/git_commit.png)
 
 :::{.callout-tip}
+
+## How to write good commit messages
+
 Please note that there are guidelines on how to write good commit messages.
 This becomes especially important when collaborating.
 Have a look [here](https://cbea.ms/git-commit/) for some guidelines.
@@ -208,25 +213,25 @@ Now, we connect our local repository with a remote repository on Github.
 
 In the terminal, this is slightly more complicated than with Github Desktop.
 
-Go to the [Github website](https://github.com/), log in and click on the green
-`New` button on the left of the start page:
+Go to the [Github website](https://github.com/), log in and click on the green **New** button on the left of the start page:
 
 ![](img/github-new-button-small.png)
 
 Enter a repository name (e.g. `cookBook`), select if it should be private or public and add a description if you like. Set the check mark for adding a `README.md` file. 
 This way, the remote already has some content that we can integrate into the 
-local repository.
+local repository:
+
+![](img/gh-new-repo.png)
 
 Github will now bring you to the newly created repository.
 
 #### Add the repository on Github as a remote to your local repository
 
-We now want to connect the local `cookBook` with the remote `cookBook`
-on Github.
+We now want to connect the *local* cook book project with the *remote* cookBook on Github.
 
 First, copy the remote's address.
 
-You can find and copy the address by clicking on the green `Code` button on the right. 
+You can find and copy the address by clicking on the green **Code** button on the right. 
 Choose the SSH address in the middle.
 
 ![](img/gh_copy_adress_ssh.png)
@@ -251,7 +256,7 @@ that you don't have locally:
 
 ![](img/push_rejected.png)
 
-This makes sense, because you added a readme file when creating the remote repository
+This makes sense, because you added a README file when creating the remote repository
 on Github. In these situation, Git prevents you from pushing and you first need to pull all
 changes from the remote.
 
@@ -371,6 +376,9 @@ for this example, we want to ignore it.
 - Add a gitignore file to your project
 
 ::: {.callout-tip}
+
+## Create a `.gitignore` file on Windows
+
 On Windows, you cannot create a file without a file name. So the Windows explorer 
 will complain if you try to create a file with only the file ending .gitignore. 
 One way around this is to use the terminal. In Git bash, just run

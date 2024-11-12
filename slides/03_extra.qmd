@@ -68,7 +68,7 @@ Please take 7 min to fill out the feedback form:
 - Start using Git
 - Have a look at [additional resources](https://selinazitrone.github.io/get-started-with-git/resources.html)
 - Come to the [tools and tips lecture](https://selinazitrone.github.io/tools_and_tips/) for more science workflow topics
-  - Next topics: Probably about note taking
+  - Starts again next summer semester
 - [Consultation](https://www.bcp.fu-berlin.de/en/graduiertenzentrum/promovierende/beratung/index.html): R programming, Git, ...
 
 # Thanks for your participation
