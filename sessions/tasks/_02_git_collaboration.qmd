@@ -1,22 +1,26 @@
 The goal of these tasks is to get a feeling for a collaborative Git workflow.
 
-If you are stuck in a task, you can have a look at the [A How-To description](../how-tos/git_workflow_gh_desktop.qmd) of the Git workflow with detailed explanations and screenshots of the steps.
+If you are stuck in a task, you can have a look at the [How-To description](../how-tos/git_workflow_gh_desktop.qmd#collaboration-using-branching){target="_blank"} of the Git workflow with detailed explanations and screenshots of the steps.
 
 :::{.panel-tabset}
 
 # 1 Clone 
 
-## Clone the cook book repo of your partner (5 min)
+## Clone the cook book repo of your team mate (5 min)
 
-Use Github Desktop to clone the cook book repository of your partner.
+Use Github Desktop to clone the cook book repository of your team mate.
 
 Go to **File -> Clone Repository**.
 
-In the tab "Github.com" you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your partner and clone it to a local path of your choice.
+In the tab "Github.com" you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your team mate and clone it to a local path of your choice.
 
-If you don't see your partners repository, switch to the tab "URL". Open your partner's repository on Github (find the correct link [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.
+:::{.callout-caution}
 
-Open your partner's cook book in the explorer to see which files are already in there (**Repository -> Show in Explorer**).
+If you don't see your team mate's repository, switch to the tab "URL". Open your team mate's repository on Github (find the correct link [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)). On the Github page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of Github Desktop. Then clone it to a local path of your choice.
+
+:::
+
+Open your team mate's cook book in the explorer to see which files are already in there (**Repository -> Show in Explorer**).
 
 # 2 Branch and merge
 
@@ -30,7 +34,115 @@ Make sure that you are now in the new branch by looking in the top middle of Git
 
 ![](tasks/img/current_branch.png)
 
-Now go to the project folder (**Repository -> Show in Explorer**) and add a file for a new recipe with some recipe instructions in it.
+Now go to the project folder (**Repository -> Show in Explorer**) and add a file for a new recipe.
+
+You can again copy paste a recipe from below to save some time.
+
+:::{.panel-tabset}
+
+# 🥞 Banana pancakes
+
+```md
+Ingredients:
+
+2 ripe bananas
+2 large eggs
+120 g all-purpose flour
+240 ml milk
+1 tsp baking powder
+1 tsp vanilla extract
+1 tbsp sugar
+Pinch of salt
+Butter or oil for cooking
+
+Preparation:
+
+Mash bananas and mix with eggs, milk, and vanilla.
+Combine flour, baking powder, sugar, and salt.
+Mix dry ingredients into wet ingredients until smooth.
+Cook on a heated pan with butter or oil until golden brown.
+```
+
+
+# 🍜 Lentil soup
+
+```md
+Ingredients:
+
+200 g lentils
+1 large onion, chopped
+2 carrots, chopped
+2 celery stalks, chopped
+3 cloves garlic, minced
+400 g diced tomatoes
+1.5 liters vegetable broth
+1 tsp cumin
+1 tsp paprika
+Salt and pepper to taste
+2 tbsp olive oil
+
+Preparation:
+
+Sauté onion, carrots, and celery in olive oil.
+Add garlic, cumin, and paprika.
+Add lentils, tomatoes, and broth; simmer until lentils are tender.
+Season with salt and pepper.
+```
+
+# 🍰 Carrot cake
+
+```md
+Ingredients:
+
+240 g all-purpose flour
+200 g grated carrots
+300 g sugar
+240 ml vegetable oil
+4 large eggs
+1 tsp baking powder
+1 tsp baking soda
+1 tsp ground cinnamon
+0.5 tsp ground nutmeg
+0.5 tsp salt
+1 tsp vanilla extract
+
+Preparation:
+
+Beat eggs and sugar, add oil and vanilla.
+Mix flour, baking powder, baking soda, cinnamon, nutmeg, and salt.
+Combine wet and dry ingredients, fold in carrots.
+Bake at 175°C for 35-40 minutes.
+```
+
+# 🍛 Chicken curry
+
+```md
+Ingredients:
+
+450 g chicken breast, cubed
+1 large onion, chopped
+3 cloves garlic, minced
+1 tbsp ginger, minced
+400 ml coconut milk
+400 g diced tomatoes
+2 tbsp curry powder
+1 tsp turmeric
+1 tsp cumin
+1 tsp coriander
+Salt and pepper to taste
+2 tbsp vegetable oil
+Fresh cilantro for garnish
+
+Preparation:
+
+Sauté onion, garlic, and ginger in oil.
+Add spices and chicken, cook until browned.
+Add tomatoes and coconut milk, simmer until chicken is cooked.
+Season with salt and pepper, garnish with cilantro.
+```
+
+:::
+
 
 Add and commit that new recipe to your branch. 
 
@@ -42,7 +154,7 @@ Now push the "main" to Github by clicking the push button to share your changes 
 
 # 3 Pull requests
 
-## Make a pull request in your partner's repo (10 min)
+## Make a pull request in your team mate's repo (10 min)
 
 Now it's again time to modify something in your team mate's cook book. Make sure you are in your team mate's repository on the top left of Github desktop. 
 
@@ -70,15 +182,22 @@ On top you should already see the option to "Compare and pull request":
 
 Click on that button and use the dialogue window that opens to describe your changes. Then create the pull request by clicking on the green button that says "Create pull request".
 
+#### For the fast ones
+
+As long as the pull request is not merged, you can still make changes to your branch and push them to Github. The pull request will automatically update with the new changes.
+So you can now switch to your machine again, make sure that in Github Desktop you are
+still on your branch and make some more changes to repository. Commit and push the changes to Github. 
+
 # Extra
 
 ### Review pull request on your repo
 
-Now it's time to look at the pull request your partner left in your repository and decide if you want to merge it or not.
+Now it's time to look at the pull request your team mate left in your repository and decide if you want to merge it or not.
 
 When you have a pull request, you can see it on top, indicated by the number next to the pull request button:
 
 ![](tasks/img/new_pr.png)
+
 Open the pull request by clickon on the button and selecting the Pull request from the list of pull requests.
 
 Click through the tabs on top. E.g. the "Files changed" tab is very interesting.

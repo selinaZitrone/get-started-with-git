@@ -4,7 +4,7 @@ All recipes will be simple text files and changes will be commited to the reposi
 
 The goal is to give you a first idea and feeling for the basic Git workflow.
 
-If you are stuck in a task, you can have a look at the [A How-To description](../how-tos/git_workflow_gh_desktop.qmd) of the Git workflow with detailed explanations and Screenshots of the steps.
+If you are stuck in a task, you can have a look at the [How-To description](../how-tos/git_workflow_gh_desktop.qmd){target="_blank"} of the Git workflow with detailed explanations and Screenshots of all steps.
 
 :::{.panel-tabset}
 
@@ -18,9 +18,9 @@ Open Github Desktop and create a new repository (**File -> New repository**) for
 
 In the dialogue box that opens:
 
-- Give it the following name: cookBook-yourName (replacing yourName with your name)
+- Give it the following name: **cookBook-yourName** (replacing yourName with your name)
   - This name is needed for tomorrow when we collaborate
-- Select where on your computer you want the cook book to be stored
+- Select where on your machine you want the cook book to be stored
 - Check the box to initialize with a README file
 
 Now initialize the repository.
@@ -37,30 +37,138 @@ In the Windows explorer, go to **View** and then check the **Hidden items** chec
 
 ![](tasks/img/windows_hidden_files.png)
 
-In the Mac finder, hit 'Command' + 'Shift' + '.' (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.
+In the Mac finder, hit `Command` + `Shift` + `.` (the period key) at the same time. 
+This is the keyboard shortcut to hide and unhide files and folders.
 
 ### Add your favorite recipe
 
-Create and open the file in a text editor.
-Then add the recipe text to the file (you can also invent something - don't spend much time, just add some lines)
+Create and open a text file (file ending `.txt`) in a text editor.
+Then add a recipe to the file. To speed things up, you can choose one from
+below and copy paste it into your file. 
+
+:::{.panel-tabset}
+
+# 🥞 Banana pancakes
+
+```md
+Ingredients:
+
+2 ripe bananas
+2 large eggs
+120 g all-purpose flour
+240 ml milk
+1 tsp baking powder
+1 tsp vanilla extract
+1 tbsp sugar
+Pinch of salt
+Butter or oil for cooking
+
+Preparation:
+
+Mash bananas and mix with eggs, milk, and vanilla.
+Combine flour, baking powder, sugar, and salt.
+Mix dry ingredients into wet ingredients until smooth.
+Cook on a heated pan with butter or oil until golden brown.
+```
+
+
+# 🍜 Lentil soup
+
+```md
+Ingredients:
+
+200 g lentils
+1 large onion, chopped
+2 carrots, chopped
+2 celery stalks, chopped
+3 cloves garlic, minced
+400 g diced tomatoes
+1.5 liters vegetable broth
+1 tsp cumin
+1 tsp paprika
+Salt and pepper to taste
+2 tbsp olive oil
+
+Preparation:
+
+Sauté onion, carrots, and celery in olive oil.
+Add garlic, cumin, and paprika.
+Add lentils, tomatoes, and broth; simmer until lentils are tender.
+Season with salt and pepper.
+```
+
+# 🍰 Carrot cake
+
+```md
+Ingredients:
+
+240 g all-purpose flour
+200 g grated carrots
+300 g sugar
+240 ml vegetable oil
+4 large eggs
+1 tsp baking powder
+1 tsp baking soda
+1 tsp ground cinnamon
+0.5 tsp ground nutmeg
+0.5 tsp salt
+1 tsp vanilla extract
+
+Preparation:
+
+Beat eggs and sugar, add oil and vanilla.
+Mix flour, baking powder, baking soda, cinnamon, nutmeg, and salt.
+Combine wet and dry ingredients, fold in carrots.
+Bake at 175°C for 35-40 minutes.
+```
+
+# 🍛 Chicken curry
+
+```md
+Ingredients:
+
+450 g chicken breast, cubed
+1 large onion, chopped
+3 cloves garlic, minced
+1 tbsp ginger, minced
+400 ml coconut milk
+400 g diced tomatoes
+2 tbsp curry powder
+1 tsp turmeric
+1 tsp cumin
+1 tsp coriander
+Salt and pepper to taste
+2 tbsp vegetable oil
+Fresh cilantro for garnish
+
+Preparation:
+
+Sauté onion, garlic, and ginger in oil.
+Add spices and chicken, cook until browned.
+Add tomatoes and coconut milk, simmer until chicken is cooked.
+Season with salt and pepper, garnish with cilantro.
+```
+
+:::
 
 ### Commit your changes
 
 Switch back to Github Desktop and have a look at the interface.
 Do you see your changes?
-Commit your recipe file by entering a commit message and optional description and and then clicking the commit button.
+Now commit your recipe file. Enter a commit message and a description and
+then click the commit button.
 
 ### For the fast ones:
 
-- Add another recipe and commit it to your repository
 - Make a change to your first recipe and commit this change
-- Try adding and commiting other file formats (e.g. a png picture of your dish, a pdf file, ...)
+- Add another recipe and commit it to your repository
+- Add and commit some other file formats (e.g. a png picture of your dish, a pdf file, ...)
 
 # 2 Github
 
-## Publish your project on Github (5 min)
+## Publish your project on Github (10 min)
 
-Publish your cook book project on Github (**Publish** button on the top right). In the dialogue that opens, chose to make your project public (this is easier for the collaboration session tomorrow).
+Publish your cook book project on Github (**Publish** button on the top right). In the dialogue that opens, chose to **make your project public** (easier for the collaboration session tomorrow).
 
 ### Check out your brand-new Github repository
 
@@ -72,22 +180,24 @@ Which buttons are there? How do your files look like?
 
 ## For the fast ones
 
-Switch back to your local repo and
+Switch back to your local repo and change some more things. 
+Always commit and push your chagnes to GitHub and check out how they look online.
 
-a) Add or change recipes.
-b) Work on the README file and add some information about your cook book project there.
+Some ideas:
 
-Commit and push these new changes to Github and check out how they look online.
+- Work on the README file and add some information about your cook book project there.
+  - You can check out this [example repository](https://github.com/selinaZitrone/cookbook-git-training) to see a slightly more advanced README.
+- Add or change recipes.
 
 # 3 Revert
 
 ## Undo changes in your repository (5 min)
 
-If you only have 1 commit in your project, make another one (e.g. add a recipe or change something).
+If you only have 1 commit in your project, make 1-2 other ones (e.g. add a recipe or change something).
 
 Now, have a brief look at the history of your repository in Github Desktop.
 
-Chose a commit that you want to revert.
+Choose a commit that you want to revert.
 Select the commit and right-click to revert it.
 See how your history has changed.
 
@@ -99,7 +209,8 @@ To see your cook book at an earlier stage, select the commit you want to jump ba
 
 You will get a warning that you will create a detached HEAD state. This is ok, so checkout anyways.
 
-See how your history changed. You can also see on top of Github Desktop, that you are now in Detached HEAD mode. If you now look at your cook book files, you will see that they correspond to an earlier version.
+See how your history changed. GitHub desktop will tell you that you are now in Detached HEAD mode. 
+If you now look at your cook book files, you will see that they correspond to an earlier version.
 
 ::: {.callout-note}
 You cannot work on the project in this state. 
@@ -122,11 +233,12 @@ this file.
 
 This file does not belong to your cook book, so it should be ignored by Git.
 
-Go to **Repository-> Repository settings -> Ignored files**.
+You can ignore the file with a right click and select **Ignore file**.
 
-Enter the file name of the new file in the window of ignored files.
+This will add the file to the `.gitignore` file.
 
 Then check the *Changes* view of Github Desktop. What is different now?
 
-Have a look at the newly created `.gitignore` file
+Have a look at the newly created `.gitignore` file. You can just commit and push it
+like any other file.
 :::

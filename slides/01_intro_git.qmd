@@ -491,7 +491,7 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
 [Git training repository](https://github.com/UnseenWizzard/git_training), [Computational notebooks](https://github.com/FellowsFreiesWissen/computational_notebooks), [Repo to publish code from a manuscript](https://github.com/AnneLew/Lewerentz-etal_2021_Macrophytes-DDG))
 
 
-# Now you {.task-slide}
+# Now you (10 min){.task-slide}
 
 > Publish your cook book on GitHub <br>
 > Checkout your repositories GitHub page (**Repository -> View on GitHub**)
@@ -526,7 +526,7 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
 
 ![](img/day1/commit_history_after_revert.png){width=90%}
 
-# Now you {.task-slide}
+# Now you (5 min) {.task-slide}
 
 > Revert a commit from your cook book
 
@@ -594,17 +594,30 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 - Tomorow we have teams of 2
 - Collaborate on the cook book of your team mate
 
-:::{.fragment}
+## Preparation for tomorrow
 
-Now please
+::: {.nonincremental}
+1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+
+:::
+
+
+## Preparation for tomorrow
 
 :::{.nonincremental}
+1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
 
+:::
+
+![](../how-tos/img/gh_add_collaborator.png){width=68% fig-align="center"}
+
+## Preparation for tomorrow
+
+:::{.nonincremental}
 1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
 2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
 3. Accept the invitation of your team mate to their repository 
   - You will get an Email or you can do it on GitHub
-
-:::
 
 :::
