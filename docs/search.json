@@ -557,28 +557,7 @@
     "href": "course_preparation.html",
     "title": "Course preparations",
     "section": "",
-    "text": "In order to have a smooth workshop start, you need to prepare a few technical things so you can jump right into using Git on the first day."
-  },
-  {
-    "objectID": "course_preparation.html#on-windows",
-    "href": "course_preparation.html#on-windows",
-    "title": "Course preparations",
-    "section": "On Windows",
-    "text": "On Windows\nYou can download Git from here.\nDownload and install the correct version for your machine (probably 64 bit). Use recommended or default settings during the installation. Most options can also be changed later if you want to.\nWith the Git installation for Windows, you also get a program called Git bash. Git bash is a terminal application for Windows that provides a Git command line experience.\nOpen the Git bash application (you can find it searching in the Windows search bar) and run the command git --version. If the Git installation was successful, you should see the version of Git that you are using printed to the console."
-  },
-  {
-    "objectID": "course_preparation.html#on-linux-ubuntu",
-    "href": "course_preparation.html#on-linux-ubuntu",
-    "title": "Course preparations",
-    "section": "On Linux (Ubuntu)",
-    "text": "On Linux (Ubuntu)\nYou can install Git from the terminal. Run\nsudo apt-get update\nsudo apt-get install git\nCheck the version of Git that you have installed with\ngit --version"
-  },
-  {
-    "objectID": "course_preparation.html#on-macos",
-    "href": "course_preparation.html#on-macos",
-    "title": "Course preparations",
-    "section": "On MacOS",
-    "text": "On MacOS\nSome versions of MacOS come with Git pre-installed. To check if you already have Git, open the terminal and run\ngit --version\nIf the terminal tells you which version of Git is installed, you can skip the next steps and check if you can update your current Git installation.\nIf you need to install Git, you can do this with homebrew. Just run\nbrew install git\nThen check the version and verify the installation with\ngit --version"
+    "text": "In order to have a smooth workshop start, you need to prepare a few technical things so you can jump right into using Git on the first day.\n\nInstall Git on your machine\nYou can find the download and installation guides for all major operating systems here or you can follow my guide below. If you have an old version of Git already installed, please make sure to update it prior to the workshop. You can checkout this article that explains how to find your current Git version and how to update to a newer one.\n\nWindowsLinux (Ubuntu)MacOS\n\n\nYou can download Git from here.\nDownload and install the correct version for your machine (probably 64 bit). Use recommended or default settings during the installation. Most options can also be changed later if you want to.\nWith the Git installation for Windows, you also get a program called Git bash. Git bash is a terminal application for Windows that provides a Git command line experience.\nOpen the Git bash application (you can find it searching in the Windows search bar) and run the command git --version. If the Git installation was successful, you should see the version of Git that you are using printed to the console.\n\n\nYou can install Git from the terminal. Run\nsudo apt-get update\nsudo apt-get install git\nCheck the version of Git that you have installed with\ngit --version\n\n\nSome versions of MacOS come with Git pre-installed. To check if you already have Git, open the terminal and run\ngit --version\nIf the terminal tells you which version of Git is installed, you can skip the next steps and check if you can update your current Git installation.\nIf you need to install Git, you can do this with homebrew. Just run\nbrew install git\nThen check the version and verify the installation with\ngit --version\n\n\n\n\n\nSign up for Github\nI will use Github as a remote repository service in the workshop and you can create an account here.\n\n\n\n\n\n\nUse your institutional email address to get benefits\n\n\n\nIf you sign up for GitHub with an institutional email address, you will get a free upgrade to GitHub Pro. This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.\n\n\nIf your institution provides a Gitlab server, you can later switch from Github to Gitlab. The workflows are all the same, you just need the account for this course.\n\n\nInstall Github Desktop\nIn the course, I’ll be using the Github Desktop application as a graphical user interface to work with Git.\nThere are detailed step by step guides on how to install and set up Github Desktop on the Github Website. Please follow this guide and do Part 1 (Installing GitHub Desktop) and Part 2 (Configuring your account)."
   },
   {
     "objectID": "how-tos/create_pull_request.html",

@@ -4854,12 +4854,7 @@ height: 400px;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#install-git-on-your-machine" id="toc-install-git-on-your-machine" class="nav-link active" data-scroll-target="#install-git-on-your-machine">Install Git on your machine</a>
-  <ul class="collapse">
-  <li><a href="#on-windows" id="toc-on-windows" class="nav-link" data-scroll-target="#on-windows">On Windows</a></li>
-  <li><a href="#on-linux-ubuntu" id="toc-on-linux-ubuntu" class="nav-link" data-scroll-target="#on-linux-ubuntu">On Linux (Ubuntu)</a></li>
-  <li><a href="#on-macos" id="toc-on-macos" class="nav-link" data-scroll-target="#on-macos">On MacOS</a></li>
-  </ul></li>
+  <li><a href="#install-git-on-your-machine" id="toc-install-git-on-your-machine" class="nav-link active" data-scroll-target="#install-git-on-your-machine">Install Git on your machine</a></li>
   <li><a href="#sign-up-for-github" id="toc-sign-up-for-github" class="nav-link" data-scroll-target="#sign-up-for-github">Sign up for Github</a></li>
   <li><a href="#install-github-desktop" id="toc-install-github-desktop" class="nav-link" data-scroll-target="#install-github-desktop">Install Github Desktop</a></li>
   </ul>
@@ -4891,23 +4886,23 @@ height: 400px;
 <section id="install-git-on-your-machine" class="level1">
 <h1>Install Git on your machine</h1>
 <p>You can find the download and installation guides for all major operating systems <a href="https://git-scm.com/downloads">here</a> or you can follow my guide below. If you have an old version of Git already installed, please make sure to update it prior to the workshop. You can checkout <a href="https://www.howtogeek.com/759319/how-to-check-and-update-your-git-version/">this article</a> that explains how to find your current Git version and how to update to a newer one.</p>
-<section id="on-windows" class="level2">
-<h2 class="anchored" data-anchor-id="on-windows">On Windows</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Linux (Ubuntu)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">MacOS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>You can download Git from <a href="https://git-scm.com/download/win">here</a>.</p>
 <p>Download and install the correct version for your machine (probably 64 bit). Use recommended or default settings during the installation. Most options can also be changed later if you want to.</p>
 <p>With the Git installation for Windows, you also get a program called <code>Git bash</code>. Git bash is a terminal application for Windows that provides a Git command line experience.</p>
 <p>Open the Git bash application (you can find it searching in the Windows search bar) and run the command <code>git --version</code>. If the Git installation was successful, you should see the version of Git that you are using printed to the console.</p>
-</section>
-<section id="on-linux-ubuntu" class="level2">
-<h2 class="anchored" data-anchor-id="on-linux-ubuntu">On Linux (Ubuntu)</h2>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>You can install Git from the terminal. Run</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get update</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Check the version of Git that you have installed with</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="on-macos" class="level2">
-<h2 class="anchored" data-anchor-id="on-macos">On MacOS</h2>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Some versions of MacOS come with Git pre-installed. To check if you already have Git, open the terminal and run</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>If the terminal tells you which version of Git is installed, you can skip the next steps and check if you can update your current Git installation.</p>
@@ -4915,7 +4910,9 @@ height: 400px;
 <div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then check the version and verify the installation with</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
+</div>
+</div>
+</div>
 </section>
 <section id="sign-up-for-github" class="level1">
 <h1>Sign up for Github</h1>
@@ -4926,7 +4923,7 @@ height: 400px;
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Use your institutional email address to get benefits
 </div>
 </div>
 <div class="callout-body-container callout-body">
