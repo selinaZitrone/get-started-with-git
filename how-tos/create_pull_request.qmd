@@ -21,7 +21,7 @@ Now you can add a title and description for your pull request. This can be quite
 long text if you made lots of changes that you need to explain.
 When you are finished click on **Create pull request**:
 
-![](img/github-pr-description.png)
+![](img/gh-pr-description.png)
 
 Now your (potential) collaborators can browse your code and make comments.
 
@@ -29,7 +29,7 @@ To see how it looks like, make a comment yourself.
 
 On top, you can go to `Files changed` and see all the differences that are made in this pull request:
 
-![](img/github-pr-comment.png)
+![](img/gh-pr-comment.png)
 
 You can select single or multiple lines of code and add comments to it.
 
