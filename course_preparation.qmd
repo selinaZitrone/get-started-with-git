@@ -13,7 +13,9 @@ If you have an old version of Git already installed, please make sure to update 
 prior to the workshop. You can checkout [this article](https://www.howtogeek.com/759319/how-to-check-and-update-your-git-version/)
 that explains how to find your current Git version and how to update to a newer one.
 
-## On Windows
+:::{.panel-tabset}
+
+# Windows
 
 You can download Git from [here](https://git-scm.com/download/win).
 
@@ -25,7 +27,7 @@ Git bash is a terminal application for Windows that provides a Git command line 
 Open the Git bash application (you can find it searching in the Windows search bar) 
 and run the command `git --version`. If the Git installation was successful, you should see the version of Git that you are using printed to the console.
 
-## On Linux (Ubuntu)
+# Linux (Ubuntu)
 
 You can install Git from the terminal. Run
 
@@ -40,7 +42,7 @@ Check the version of Git that you have installed with
 git --version
 ```
 
-## On MacOS
+# MacOS
 
 Some versions of MacOS come with Git pre-installed. To check if you already have Git, open the terminal and run
 
@@ -63,13 +65,15 @@ Then check the version and verify the installation with
 git --version
 ```
 
+:::
+
 # Sign up for Github
 
 I will use Github as a remote repository service in the workshop and you can [create an account here](https://github.com/join). 
 
 ::: {.callout-tip}
 
-## Tip
+## Use your institutional email address to get benefits
 
 If you sign up for GitHub with an institutional email address, you will get a free upgrade to GitHub Pro.
 This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.
