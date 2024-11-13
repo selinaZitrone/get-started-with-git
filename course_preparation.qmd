@@ -91,5 +91,14 @@ There are detailed step by step guides on how to install and set up GitHub Deskt
 on the GitHub Website. Please follow [this guide](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop#part-1-installing-github-desktop) and 
 do Part 1 (Installing GitHub Desktop) and Part 2 (Configuring your account).
 
+:::{.callout-note}
 
+## Linux users
+
+If you are running a Linux OS, you can install GitHub Desktop from the [shiftkey repository](https://github.com/shiftkey/desktop) as
+on the GitHub Desktop website, there is only a Windows and MacOS version available.
+When you finished with the installation, please head over to the GitHub Desktop documentation linked
+above and follow Part 2 (Configuring your account).
+
+:::
 
