@@ -32,7 +32,21 @@ from: markdown+emoji
 > 
 > 👩‍🏫 **Teaching** R, Git, good scientific practice, ...
 
-## What do you want to learn here?
+---
+
+![](img/day1/do_you_already_use_git.png)
+
+---
+
+![](img/day1/do_you_already_use_github.png)
+
+---
+
+![](img/day1/collaborative_or_individual_projects.png)
+
+---
+
+## What do you want to learn?
 
 ![](img/day1/who_are_you.png)
 
@@ -125,7 +139,7 @@ Did anyone have problems with the workshop preparation?
 
 # Let's get started {.inverse}
 
-## Why version control?
+<!-- ## Why version control? {.hidden}
 
 Two examples in which proper version control can be a time/stress saver
 
@@ -135,7 +149,7 @@ Two examples in which proper version control can be a time/stress saver
 
 . . .
 
-![](img/day1/motivation_collab.png){fig-align="center" width=66%}
+![](img/day1/motivation_collab.png){fig-align="center" width=66%} -->
 
 ## Version control with Git
 
@@ -186,6 +200,16 @@ Git is a **distributed version control system**
 :::
 
 :::
+
+## Why to use Git?
+
+- **Version control**: Keep a history of your project and roll back if needed
+  - Git makes it very hard for you to loose things
+  - Easy to figure out why code is suddenly broken
+- **Collaboration**: Work together on the same project without loosing track
+- **Publication**: Easily share your project with others (e.g. on Github)
+- **Backup**: Have multiple copies of your project, one of them on a remote server
+- ...
 
 ## How to use Git
 

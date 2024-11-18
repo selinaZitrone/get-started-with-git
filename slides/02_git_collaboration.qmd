@@ -153,8 +153,8 @@ To clone a repo, you need to know the repo's URL
 
 # Now you (5 min) {.task-slide}
 
-> Clone your team mate's cook Book repo (**File -> Clone repository**)<br>
-> It should be in the list of your repositories if you accepted the invitation.
+> Clone your team mate's cook Book repo<br>
+> Details in [Task 2 "Clone"](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)
 
 ## Get changes from the remote
 
