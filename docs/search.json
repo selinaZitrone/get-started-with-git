@@ -102,7 +102,7 @@
     "href": "slides/01_intro_git.html#why-to-use-git",
     "title": "Introduction to version control with Git",
     "section": "Why to use Git?",
-    "text": "Why to use Git?\n\nVersion control: Keep a history of your project and roll back if needed\n\nGit makes it very hard for you to loose things\n\nCollaboration: Work together on the same project without loosing track\nPublication: Easily share your project with others (e.g. on Github)\nBackup: Have multiple copies of your project, one of them on a remote server\n…"
+    "text": "Why to use Git?\n\nVersion control: Keep a history of your project and roll back if needed\n\nGit makes it very hard for you to loose things\nEasy to figure out why code is suddenly broken\n\nCollaboration: Work together on the same project without loosing track\nPublication: Easily share your project with others (e.g. on Github)\nBackup: Have multiple copies of your project, one of them on a remote server\n…"
   },
   {
     "objectID": "slides/01_intro_git.html#how-to-use-git",
