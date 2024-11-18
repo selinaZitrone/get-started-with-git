@@ -42,11 +42,11 @@
     "text": "How to continue from here\n\nStart using Git\nHave a look at additional resources\nCome to the tools and tips lecture for more science workflow topics\n\nStarts again next summer semester\n\nConsultation: R programming, Git, …"
   },
   {
-    "objectID": "slides/01_intro_git.html#what-do-you-want-to-learn-here",
-    "href": "slides/01_intro_git.html#what-do-you-want-to-learn-here",
+    "objectID": "slides/01_intro_git.html#what-do-you-want-to-learn",
+    "href": "slides/01_intro_git.html#what-do-you-want-to-learn",
     "title": "Introduction to version control with Git",
-    "section": "What do you want to learn here?",
-    "text": "What do you want to learn here?"
+    "section": "What do you want to learn?",
+    "text": "What do you want to learn?"
   },
   {
     "objectID": "slides/01_intro_git.html#aims-of-the-workshop",
@@ -77,13 +77,6 @@
     "text": "Before we start\nDid anyone have problems with the workshop preparation?\n\n\nInstall Git\nInstall GitHub Desktop\nGet a GitHub account and connect it with GitHub Desktop"
   },
   {
-    "objectID": "slides/01_intro_git.html#why-version-control",
-    "href": "slides/01_intro_git.html#why-version-control",
-    "title": "Introduction to version control with Git",
-    "section": "Why version control?",
-    "text": "Why version control?\nTwo examples in which proper version control can be a time/stress saver"
-  },
-  {
     "objectID": "slides/01_intro_git.html#version-control-with-git",
     "href": "slides/01_intro_git.html#version-control-with-git",
     "title": "Introduction to version control with Git",
@@ -103,6 +96,13 @@
     "title": "Introduction to version control with Git",
     "section": "Version control with Git",
     "text": "Version control with Git\nGit is a distributed version control system\n\n\n\n\n\n\n\nIdea: many local repositories synced via one remote repo\nEveryone has a complete copy of the repo"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#why-to-use-git",
+    "href": "slides/01_intro_git.html#why-to-use-git",
+    "title": "Introduction to version control with Git",
+    "section": "Why to use Git?",
+    "text": "Why to use Git?\n\nVersion control: Keep a history of your project and roll back if needed\n\nGit makes it very hard for you to loose things\n\nCollaboration: Work together on the same project without loosing track\nPublication: Easily share your project with others (e.g. on Github)\nBackup: Have multiple copies of your project, one of them on a remote server\n…"
   },
   {
     "objectID": "slides/01_intro_git.html#how-to-use-git",
