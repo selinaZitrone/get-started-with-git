@@ -152,7 +152,7 @@ Two examples in which proper version control can be a time/stress saver
 
 ## Version control with Git
 
-- For projects with mainly text files (e.g. code, markdown files, ...)
+- For projects with **mainly text files** (e.g. code, markdown files, ...)
 
 - Basic idea: Take snapshots (**commits**) of your project over time
 
@@ -494,8 +494,7 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
 # Now you (10 min){.task-slide}
 
 > Publish your cook book on GitHub <br>
-> Checkout your repositories GitHub page (**Repository -> View on GitHub**)
-> 5 min
+> Complete [Task 2 "GitHub"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks)
 
 ## Summary of the basic steps
 

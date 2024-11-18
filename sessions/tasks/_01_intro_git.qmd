@@ -238,7 +238,7 @@ Which buttons are there? How do your files look like?
 ## For the fast ones
 
 Switch back to your local repo and change some more things. 
-Always commit and push your chagnes to GitHub and check out how they look online.
+Always commit and push your changes to GitHub and check out how they look online.
 
 Some ideas:
 
