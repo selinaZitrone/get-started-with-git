@@ -7,6 +7,62 @@
     "text": "Today\n\n\nCollect open questions in Excalidraw (5 min)\nDiscuss open questions and additional topics (40 min)\nFeedback and Goodbye (10 min)"
   },
   {
+    "objectID": "slides/03_extra.html#undo-accidental-changes",
+    "href": "slides/03_extra.html#undo-accidental-changes",
+    "title": "Introduction to version control with Git",
+    "section": "Undo accidental changes",
+    "text": "Undo accidental changes\n\nIf you have non-commited changes\n\nDiscard your changes (right click on changes in GH Desktop &gt; discard changes)\nThis also works for deleted files\n\nIf you have commited changes\n\nUse git revert OR\nIf you did not push yet undo the commit (right click on commit in GH Desktop &gt; undo commit)\nThen discard unwanted changes"
+  },
+  {
+    "objectID": "slides/03_extra.html#checkout-a-previous-commit",
+    "href": "slides/03_extra.html#checkout-a-previous-commit",
+    "title": "Introduction to version control with Git",
+    "section": "Checkout a previous commit",
+    "text": "Checkout a previous commit\nTake your work space back in time temporarily with git checkout"
+  },
+  {
+    "objectID": "slides/03_extra.html#use-tags",
+    "href": "slides/03_extra.html#use-tags",
+    "title": "Introduction to version control with Git",
+    "section": "Use tags",
+    "text": "Use tags\n\nMarkers for specific commits (e.g. major milestones like “Submitted Manuscript” or “Version 1.0.”)\nMake it easy to return to a specific point in project’s history (e.g., if a reviewer requests changes based on an earlier analysis.)\n\n\n\n\nHow to Use Tags in GitHub Desktop:\n\nRight-click on a commit in the history view.\nSelect “Create Tag.”\nName the tag (e.g., submission-v1, revision-accepted)."
+  },
+  {
+    "objectID": "slides/03_extra.html#releasing-a-clean-version",
+    "href": "slides/03_extra.html#releasing-a-clean-version",
+    "title": "Introduction to version control with Git",
+    "section": "Releasing a clean version",
+    "text": "Releasing a clean version\n\nBefore sharing your code, make sure it is clean and works.\nRemove temporary files, logs, and other files that are not needed.\nUse .gitignore to exclude files from version control.\nYou can also create a branch with all extra files and then remove files from main\nCreate a realeae on GitHub or even better, connect with Zenodo to get a DOI."
+  },
+  {
+    "objectID": "slides/03_extra.html#git-large-fiels-storage-lfs",
+    "href": "slides/03_extra.html#git-large-fiels-storage-lfs",
+    "title": "Introduction to version control with Git",
+    "section": "Git Large Fiels Storage (LFS)",
+    "text": "Git Large Fiels Storage (LFS)\n\n\n\nGitHub file size limit is 100 MB\nGit cannot track changes in binary files (e.g. .png, docx, …)\n\nevery modification is treated as completely new file, leading to bloated history.\n\nGit LFS stores files outside the main history as lightweight pointers.\nKeeps repositories smaller and faster to clone.\n\n\n\n\n\nConcept figure of Git LFS from https://git-lfs.com"
+  },
+  {
+    "objectID": "slides/03_extra.html#git-large-fiels-storage-lfs-1",
+    "href": "slides/03_extra.html#git-large-fiels-storage-lfs-1",
+    "title": "Introduction to version control with Git",
+    "section": "Git Large Fiels Storage (LFS)",
+    "text": "Git Large Fiels Storage (LFS)\nUse regular Git for:\n\nText-based files (.csv, .txt, .R, .md, …) with incremental changes\n\nUse Git LFS for:\n\nlarge binary files (.png, .pdf, .zip, .docx, …)\nFiles &gt; 50 MB that\n\nchange frequently\nimpacts the repository size"
+  },
+  {
+    "objectID": "slides/03_extra.html#how-to-use-git-lfs",
+    "href": "slides/03_extra.html#how-to-use-git-lfs",
+    "title": "Introduction to version control with Git",
+    "section": "How to use Git LFS",
+    "text": "How to use Git LFS\n\n\nDownload from here\nInstall: Run git lfs install in the terminal.\nTrack Files with LFS: Use git lfs track \"*.png\" to configure tracking in .gitattributes.\nCommit: Add .gitattributes and large files as usual.\nPush: Upload changes with git push."
+  },
+  {
+    "objectID": "slides/03_extra.html#licences",
+    "href": "slides/03_extra.html#licences",
+    "title": "Introduction to version control with Git",
+    "section": "Licences",
+    "text": "Licences\n\nIf you publish a repository, you should add a license.\nFor research output CC licenses are common.\n\nCheck out choosealicense.com for help.\nCheck out journal, project, university requirements.\n\nAdd a licence using a LICENSE file\n\nCopy the license text into a file and commit\nUse GitHub’s license generator: In the GitHub repo, click “Add File” &gt; “Create New File” &gt; Type LICENSE and select template.\nIn R use usethis::use_*_license() functions to add a license file."
+  },
+  {
     "objectID": "slides/03_extra.html#feedback",
     "href": "slides/03_extra.html#feedback",
     "title": "Introduction to version control with Git",
