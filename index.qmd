@@ -5,7 +5,7 @@ subtitle: "Workshop by Selina Baldauf"
 
 <hr>
 **Workshop sessions**<br>
-📅 29.09.2025 & 30.09.2025 from 🕑 9 - 🕓 11 p.m. (Lisbon time)
+📅 29.09.2025 & 30.09.2025 from 🕑 9 - 🕓 11 a.m. (Lisbon time, UTC+1)
 <hr>
 
 # Course description:
