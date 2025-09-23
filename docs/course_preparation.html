@@ -4129,31 +4129,33 @@ vertical-align: -.125em;
 <p>In order to have a smooth workshop start, you need to prepare a few technical things so you can jump right into using Git on the first day.</p>
 <section id="install-git-on-your-machine" class="level1">
 <h1>Install Git on your machine</h1>
-<p>You can find the download and installation guides for all major operating systems <a href="https://git-scm.com/downloads">here</a> or you can follow my guide below. If you have an old version of Git already installed, please make sure to update it prior to the workshop. You can checkout <a href="https://www.howtogeek.com/759319/how-to-check-and-update-your-git-version/">this article</a> that explains how to find your current Git version and how to update to a newer one.</p>
+<p>You can follow my guide below but you can also find the download and installation guides for all major operating systems <a href="https://git-scm.com/downloads">on the official Git website</a>. If you have an old version of Git already installed, please make sure to update it prior to the workshop. You can checkout <a href="https://www.howtogeek.com/759319/how-to-check-and-update-your-git-version/">this article</a> that explains how to find your current Git version and how to update to a newer one.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Linux (Ubuntu)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">MacOS</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>You can download Git from <a href="https://git-scm.com/download/win">here</a>.</p>
-<p>Download and install the correct version for your machine (probably 64 bit). Use recommended or default settings during the installation. Most options can also be changed later if you want to.</p>
-<p>With the Git installation for Windows, you also get a program called <code>Git bash</code>. Git bash is a terminal application for Windows that provides a Git command line experience.</p>
-<p>Open the Git bash application (you can find it searching in the Windows search bar) and run the command <code>git --version</code>. If the Git installation was successful, you should see the version of Git that you are using printed to the console.</p>
+<p>Download and install the correct version for your machine (just click “Click here to download”). Use recommended or default settings during the installation. Most options can also be changed later if you want to.</p>
+<p>With the Git installation for Windows, you also get a program called “Git Bash”. Git Bash is a terminal application for Windows that provides a Git command line experience.</p>
+<p>Open the Git Bash application (you can find it searching in the Windows search bar) and run (just type it and hit Enter)</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If the Git installation was successful, you should see the version of Git printed to the console.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>You can install Git from the terminal. Run</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get update</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get update</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Check the version of Git that you have installed with</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Some versions of MacOS come with Git pre-installed. To check if you already have Git, open the terminal and run</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>If the terminal tells you which version of Git is installed, you can skip the next steps and check if you can update your current Git installation.</p>
+<p>If you are using Xcode, you might already have Git installed. To check if this is the case, open the terminal and run</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If the terminal tells you which version of Git is installed, you can check if you can update your current Git installation.</p>
 <p>If you need to install Git, you can do this with homebrew. Just run</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Then check the version and verify the installation with</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -4171,10 +4173,9 @@ Use your institutional email address to get benefits
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you sign up for GitHub with an institutional email address, you will get a free upgrade to GitHub Pro. This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.</p>
+<p>If you sign up for GitHub with an institutional email address, you can get a free upgrade to GitHub Pro. This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.</p>
 </div>
 </div>
-<p>If your institution provides a Gitlab server, you can later switch from GitHub to Gitlab. The workflows are all the same, you just need the account for this course.</p>
 </section>
 <section id="install-github-desktop" class="level1">
 <h1>Install GitHub Desktop</h1>
@@ -4190,7 +4191,7 @@ Linux users
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you are running a Linux OS, you can install GitHub Desktop from the <a href="https://github.com/shiftkey/desktop">shiftkey repository</a> as on the GitHub Desktop website, there is only a Windows and MacOS version available. When you finished with the installation, please head over to the GitHub Desktop documentation linked above and follow Part 2 (Configuring your account).</p>
+<p>If you are running a Linux OS, you can install GitHub Desktop from the <a href="https://github.com/shiftkey/desktop">shiftkey repository</a> as on the GitHub Desktop website, there is only a Windows and MacOS version available. When you are done with the installation step, please head over to the GitHub Desktop documentation linked above and follow Part 2 (Configuring your account).</p>
 </div>
 </div>
 
