@@ -5,14 +5,14 @@
 system("quarto render")
 
 # render slides as pdf
-slides_html <- list.files(here::here("docs/slides"),
-  pattern = "01|02|03", full.names = TRUE
+slides_html <- list.files(
+  here::here("docs/slides"),
+  pattern = "01|02|03",
+  full.names = TRUE
 )
 
 lapply(slides_html, function(x) {
-  pagedown::chrome_print(x,
-    format = "pdf"
-  )
+  pagedown::chrome_print(x, format = "pdf")
 })
 
 # commit and push
