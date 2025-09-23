@@ -4,28 +4,28 @@ subtitle: "Workshop by Selina Baldauf"
 ---
 
 <hr>
-**Workshop sessions**<br>
-📅 29.09.2025 & 30.09.2025 from 🕑 9 - 🕓 11 a.m. (Lisbon time, UTC+1)
+**Workshop sessions**<br><br>
+📅 29.09.2025 from 🕘 9 - 🕚 11 a.m. (Lisbon time, UTC+1)<br>
+📅 29.09.2025 from 🕘 9 - 🕚 11 a.m. (Lisbon time, UTC+1)
 <hr>
 
 # Course description:
 
-Learning to use Git is an essential skill if you use any programming language. It allows you to keep track of changes to your project over time, collaborate with others, and maintain a clear and organized project structure. This can save you time, improve research efficiency, and also makes it easy to publish your code via platforms such as GitHub. 
+Git is an essential skill for anyone using a programming language. It helps you track changes to your project over time, collaborate with others, and maintain an organized project structure. This can save time, enhance research efficiency, and simplify code publishing on platforms like GitHub.
 
-The main goal of this crash-course is to give you the basic skills you need to start using Git for your own research projects both individually and in collaboration with your colleagues. You will learn a complete Git workflow including remote repositories on GitHub both in theory and practice. 
+The main goal of this workshop is to give you the basic skills to start using Git for your own projects both individually and in collaboration with your friends & colleagues.
 
-In 2 afternoon sessions, we will cover the following topics:
+In 2 sessions, we will cover the following topics:
 
-1. [Session 1](sessions/01_intro_git.qmd): Basic Git concepts and workflow (initializing a repository, commiting changes, pushing to a remote)
-2. [Session 2](sessions/02_git_collaboration.qmd) Collaboration workflow with Git and GitHub (branching, merging, pull requests)
+1. [Session 1](sessions/01_intro_git.qmd): Basic Git concepts and workflow for individual projects (Initializing a repository, commiting changes, pushing to a remote repository on GitHub)
+2. [Session 2](sessions/02_git_collaboration.qmd): Collaborating with Git and GitHub (Branching, merging, pull requests)
 
 You will learn both the theory and the practice with hands-on exercises.
 
-One week after the workshop, we meet again for a consultation hour to discuss potential questions that came up during your individual work with Git.
-
 ## For whom is this course?
 
-The target audience of this workshop are beginners without prior experience with Git and GitHub. However, it might also be interesting if you already use Git for your personal projects but want to learn more about the underlying concepts and collaboration using Git and GitHub. 
+The target audience of this workshop are beginners without prior experience with Git and GitHub. However, the
+workshop might also be interesting if you already use Git for your personal projects but want to learn more about the underlying concepts and collaboration using Git and GitHub. 
 
 # Who is the instructor?
 

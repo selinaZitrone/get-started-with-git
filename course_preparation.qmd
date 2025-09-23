@@ -7,8 +7,8 @@ so you can jump right into using Git on the first day.
 
 # Install Git on your machine
 
-You can find the download and installation guides for all major operating systems
-[here](https://git-scm.com/downloads) or you can follow my guide below.
+You can follow my guide below but you can also find the download and installation guides for all major operating systems
+[on the official Git website](https://git-scm.com/downloads).
 If you have an old version of Git already installed, please make sure to update it
 prior to the workshop. You can checkout [this article](https://www.howtogeek.com/759319/how-to-check-and-update-your-git-version/)
 that explains how to find your current Git version and how to update to a newer one.
@@ -19,13 +19,19 @@ that explains how to find your current Git version and how to update to a newer 
 
 You can download Git from [here](https://git-scm.com/download/win).
 
-Download and install the correct version for your machine (probably 64 bit). Use recommended or default settings during the installation. Most options can also be changed later if you want to.
+Download and install the correct version for your machine (just click "Click here to download"). Use recommended or default settings during the installation. Most options can also be changed later if you want to.
 
-With the Git installation for Windows, you also get a program called `Git bash`. 
-Git bash is a terminal application for Windows that provides a Git command line experience.
+With the Git installation for Windows, you also get a program called "Git Bash". 
+Git Bash is a terminal application for Windows that provides a Git command line experience.
 
-Open the Git bash application (you can find it searching in the Windows search bar) 
-and run the command `git --version`. If the Git installation was successful, you should see the version of Git that you are using printed to the console.
+Open the Git Bash application (you can find it searching in the Windows search bar) 
+and run (just type it and hit Enter)
+
+```sh
+git --version
+```
+
+If the Git installation was successful, you should see the version of Git printed to the console.
 
 # Linux (Ubuntu)
 
@@ -44,14 +50,13 @@ git --version
 
 # MacOS
 
-Some versions of MacOS come with Git pre-installed. To check if you already have Git, open the terminal and run
+If you are using Xcode, you might already have Git installed. To check if this is the case, open the terminal and run
 
 ```sh
 git --version
 ```
 
-If the terminal tells you which version of Git is installed, you can skip the next steps
-and check if you can update your current Git installation.
+If the terminal tells you which version of Git is installed, you can check if you can update your current Git installation.
 
 If you need to install Git, you can do this with homebrew. Just run
 
@@ -75,12 +80,10 @@ I will use GitHub as a remote repository service in the workshop and you can [cr
 
 ## Use your institutional email address to get benefits
 
-If you sign up for GitHub with an institutional email address, you will get a free upgrade to GitHub Pro.
+If you sign up for GitHub with an institutional email address, you can get a free upgrade to GitHub Pro.
 This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.
 
 :::
-
-If your institution provides a Gitlab server, you can later switch from GitHub to Gitlab. The workflows are all the same, you just need the account for this course.
 
 # Install GitHub Desktop
 
@@ -97,7 +100,7 @@ do Part 1 (Installing GitHub Desktop) and Part 2 (Configuring your account).
 
 If you are running a Linux OS, you can install GitHub Desktop from the [shiftkey repository](https://github.com/shiftkey/desktop) as
 on the GitHub Desktop website, there is only a Windows and MacOS version available.
-When you finished with the installation, please head over to the GitHub Desktop documentation linked
+When you are done with the installation step, please head over to the GitHub Desktop documentation linked
 above and follow Part 2 (Configuring your account).
 
 :::
