@@ -1,37 +1,43 @@
 ---
-title: Create a pull request on GitHub
+title: Open a pull request on GitHub
 ---
 
-You can create a pull request when you want to integrate changes that you made on
-one branch into the main branch. 
+You can open a pull request when you want to integrate changes made on
+one branch into another branch. Usually this happens, when you or a collaborator made
+some changes in a separate branch and those changes should now be merged into the main branch.
 
-Usually a pull request is then reviewed by a collaborator before the changes are 
-accepted.
+The advantage of a pull request in comparison to a simple merge is that it can first be
+commented and reviewed by the collaborators before the changes are accepted.
 
-If you go to your remote repository, GitHub should automatically detect
-new branches and ask you to create a pull request for it.
+Let's say you created a new branch called `add_cookies`, made some changes and pushed 
+the branch to GitHub.
+If you now open your remote repository website, GitHub automatically detected this
+branch and ask you to create a pull request for it.
 
-It should look something like this (of course with your branch name instead of `new_feature`):
+It should look something like this:
 
 ![](img/github-pr.png)
 
 Click on **Compare & pull request**.
 
-Now you can add a title and description for your pull request. This can be quite a
-long text if you made lots of changes that you need to explain.
+Now is the time to describe your changes to your collaborators, so they can understand 
+what you did. Add a title and description for your pull request. This can become quite a
+long text (sometimes even with screenshots attached) if you made lots of changes that you need to explain.
 When you are finished click on **Create pull request**:
 
 ![](img/gh-pr-description.png)
 
-Now your (potential) collaborators can browse your code and make comments.
+Now your collaborators get notified of the pull request and can browse your code and make comments.
 
-To see how it looks like, make a comment yourself.
+Under the "Conversation" tab, you and your collaborators can make comments and discuss
+the changes. To see how it looks like, make a comment yourself.
 
-On top, you can go to `Files changed` and see all the differences that are made in this pull request:
+On the top, you can also navigate to `Files changed` and see all the changes that are
+introduced to the project in this pull request:
 
 ![](img/gh-pr-comment.png)
 
-You can select single or multiple lines of code and add comments to it.
+In the "Files changed" tab, you can select single or multiple lines of code and add comments to it.
 
 Just explore the functionality of pull requests a bit by yourself.
 
