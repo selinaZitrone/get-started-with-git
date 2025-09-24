@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 }
+
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -4062,9 +4097,8 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#check-of-you-already-have-an-ssh-key-set-up" id="toc-check-of-you-already-have-an-ssh-key-set-up" class="nav-link active" data-scroll-target="#check-of-you-already-have-an-ssh-key-set-up">Check of you already have an SSH key set up</a></li>
+  <li><a href="#ssh-authentication-for-github" id="toc-ssh-authentication-for-github" class="nav-link active" data-scroll-target="#ssh-authentication-for-github">SSH-authentication for GitHub</a></li>
   <li><a href="#ssh-authentication-for-gitlab" id="toc-ssh-authentication-for-gitlab" class="nav-link" data-scroll-target="#ssh-authentication-for-gitlab">SSH-authentication for Gitlab</a></li>
-  <li><a href="#ssh-authentication-for-github" id="toc-ssh-authentication-for-github" class="nav-link" data-scroll-target="#ssh-authentication-for-github">SSH-authentication for GitHub</a></li>
   <li><a href="#test-the-connection" id="toc-test-the-connection" class="nav-link" data-scroll-target="#test-the-connection">Test the connection</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/selinaZitrone/get-started-with-git/edit/master/how-tos/ssh_keys.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/selinaZitrone/get-started-with-git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -4092,26 +4126,12 @@ vertical-align: -.125em;
 </header>
 
 
-<p>In order to transfer information between GitHub or Gitlab and your local machine, you need to authenticate yourself to the remote server. If you use GitHub + GitHub Desktop, they take care of this for you. Otherwise, you need to setup SSH authentication with SSH keys. You can also authenticate using a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens">personal access token (PAT)</a> instead but here we will stick with SSH keys here.</p>
+<p>In order to exchange information between GitHub and your local machine, you need to authenticate yourself to the remote server.</p>
+<p>If you use GitHub + GitHub Desktop, authentication is handled for you using OAuth. During this process, GitHub Desktop securely stores your credentials in your operating system’s native credential store (Windows: Windows Credential Manager, macOS: Keychain Access, Linux: libsecret/gnome-keyring, depending on the distro).</p>
+<p>Because Git itself can read from these credential stores, other Git clients (e.g. command line, RStudio, VS Code) can also use the same authentication. This works as long as you are using HTTPS URLs for your repositories.</p>
+<p>If you prefer to use SSH for authentication (for automation, servers, or personal preference), you need to set up SSH keys and add them to GitHub. See the guide below for help on how to do this.</p>
 <p>If you want a good and simple explanation of how SSH works, checkout the video below</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/dPAw4opzN9g" title frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<section id="check-of-you-already-have-an-ssh-key-set-up" class="level1">
-<h1>Check of you already have an SSH key set up</h1>
-<p>If you are not sure if you already set up authentication via ssh on your machine, you can try the following:</p>
-<ul>
-<li>Can you push to GitHub/Gitlab from the command line without having to provide credentials (except for SSH key password)?
-<ul>
-<li>If yes, then you already set up authentication.</li>
-</ul></li>
-<li>Run <code>ssh -T git@github.com</code> or <code>ssh - T git@gitlab.com</code> in the terminal (Git bash for Windows users). If GitHub/Gitlab welcomes you with your correct user account, you are all set.</li>
-</ul>
-<p>If you don’t have an SSH key set up, please follow the steps below.</p>
-</section>
-<section id="ssh-authentication-for-gitlab" class="level1">
-<h1>SSH-authentication for Gitlab</h1>
-<p>Please follow <a href="https://blog.checkpoint.com/2022/05/06/the-complete-guide-to-ssh-keys-in-gitlab/">this guide</a></p>
-<p>If you prefer a video, you can check out <a href="https://www.youtube.com/watch?v=mNtQ55quG9M">this one</a>. It is for Gitlab but works the same for GitHub.</p>
-</section>
 <section id="ssh-authentication-for-github" class="level1">
 <h1>SSH-authentication for GitHub</h1>
 <p>Complete the following steps:</p>
@@ -4121,9 +4141,18 @@ vertical-align: -.125em;
 <li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">Add your public key to your GitHub account</a></li>
 </ul>
 </section>
+<section id="ssh-authentication-for-gitlab" class="level1">
+<h1>SSH-authentication for Gitlab</h1>
+<p>If you use Gitlab instead of GitHub, please follow <a href="https://blog.checkpoint.com/2022/05/06/the-complete-guide-to-ssh-keys-in-gitlab/">this guide</a></p>
+<p>If you prefer a video, you can check out <a href="https://www.youtube.com/watch?v=mNtQ55quG9M">this one</a>. It is for Gitlab but works the same for GitHub.</p>
+</section>
 <section id="test-the-connection" class="level1">
 <h1>Test the connection</h1>
-<p>To test if the setup was successful, run <code>ssh -T git@github.com</code> or <code>ssh -T git@gitlab.com</code> and see if Gitlab or GitHub answer to you.</p>
+<p>To test if the setup was successful, run</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com<span class="kw">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@gitlab.com<span class="kw">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>and see if Gitlab or GitHub answer to you.</p>
 
 
 </section>
