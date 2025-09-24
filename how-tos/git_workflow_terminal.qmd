@@ -2,29 +2,35 @@
 title: "A Git workflow with the terminal"
 ---
 
-In this guide, we will create a small cook book project using Git. We will
-add recipes and commit the our repository and then publish the project on GitHub
-to collaborate with others on it.
+In this guide, we will work on a cook book project using Git and the terminal.
+We will start going through all the steps for an individual project (you're working on
+the cook book alone) and then we will see how to collaborate with others.
 
-# Prerequisites
+# Preparations
 
-To follow this workflow you need:
+To follow this guide you need:
 
-- Git installed (see [course preparations](../course_preparation.qmd))
-- A GitHub or Gitlab account
-- An SSH key to authenticate to GitHub/Gitlab (see [here](ssh_keys.qmd))
+- Git installed
+- GitHub Desktop installed
+- A GitHub account connected to your GitHub Desktop program
 
-All commands that are used in the following, have to be typed in the terminal.
+Check out the [course preparations](../course_preparation.qmd)
+if you miss anything from this list. 
+
+You might ask yourself: why do I need GitHub Desktop if we are using the terminal?
+The reason is that GitHub Desktop makes it much easier to set up the connection
+between your local machine and GitHub. Authentication is handled for you using OAuth.
+During this process, GitHub Desktop securely stores your credentials in your operating system’s native credential store (Windows: Windows Credential Manager, macOS: Keychain Access, Linux: libsecret/gnome-keyring, depending on the distro).
+
+Because Git itself can read from these credential stores, other Git clients (e.g. command line, RStudio, VS Code) can also use the same authentication. This works as long as you are using HTTPS URLs for your repositories.
+
+If you prefer to use SSH for authentication (for automation, servers, or personal preference), you need to set up SSH keys and add them to GitHub. See [here](ssh_keys.qmd) for a guide on how to do this.
+
+All commands that you see in the following guide, have to be typed in the terminal and then
+you have to hit Enter to execute the command.
 If you are on Windows, I recommend to use the Git Bash terminal that comes with
-the Git installation. On MacOS/Linux, you can just use the standard terminal.
-
-To check if you are ready to go, open the terminal and run
-
-```sh
-git --version
-```
-
-If everything is set up correctly it will show you the current installation of Git.
+the Git installation (Just search for "Git Bash" in the Windows search bar).
+On MacOS/Linux, you can just use the standard terminal.
 
 ## Configure Git
 
