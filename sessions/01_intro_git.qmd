@@ -1,18 +1,22 @@
 ---
-title: "A basic Git workflow in theory and practice"
+title: "A Git workflow for individual projects"
 callout-appearance: default
 ---
 
 ## Description
 
-This session we will cover the following topics:
+In session we will cover the following topics:
 
-- The basic concepts behind Git
-- A simple Git workflow for you individual projects
+- What is Git and what are the basic concepts?
+- A simple Git workflow for your individual projects
+  - Tracking changes
+  - Undoing changes
 - Publishing projects on GitHub
 
-In the [next session](02_git_collaboration.qmd), I will talk about a collaborative workflow using Git and
+In the [next session](02_git_collaboration.qmd), I will learn a collaborative workflow using Git and
 GitHub.
+
+## Slides
 
 
 ```{=html}

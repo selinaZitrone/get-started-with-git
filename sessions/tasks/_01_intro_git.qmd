@@ -217,9 +217,10 @@ then click the commit button.
 
 ### For the fast ones:
 
-- Make a change to your first recipe and commit this change
-- Add another recipe and commit it to your repository
+- Add other recipes and commit them to your repository
+- Make changes to existing recipes and commit them
 - Add and commit some other file formats (e.g. a png picture of your dish, a pdf file, ...)
+  - How do these files look like in GitHub Desktop?
 
 # 2 GitHub
 
@@ -237,14 +238,14 @@ Which buttons are there? How do your files look like?
 
 ## For the fast ones
 
-Switch back to your local repo and change some more things. 
-Always commit and push your changes to GitHub and check out how they look online.
+Switch back to your local repo and make some more changes.
+Commit them, push them to GitHub and check out how they look online.
 
 Some ideas:
 
 - Work on the README file and add some information about your cook book project there.
   - You can check out this [example repository](https://github.com/selinaZitrone/cookbook-git-training) to see a slightly more advanced README.
-- Add or change recipes.
+- Add or change recipes
 
 # 3 Revert
 
@@ -257,6 +258,28 @@ Now, have a brief look at the history of your repository in GitHub Desktop.
 Choose a commit that you want to revert.
 Select the commit and right-click to revert it.
 See how your history has changed.
+
+# 4 Ignore files
+
+### Add a `.gitignore` file
+
+## Ignore files
+
+We only want actual recipe files in our project. All other files should be ignored.
+
+Find a random file on your computer (e.g. a PDF, an Excel file, ...) and copy it into your cook book folder.
+
+Check if GitHub Desktop recognized the change to your repository, but do not commit
+this file.
+
+Instead, ignore the file with a right click and select **Ignore file**.
+
+This will add the file to the `.gitignore` file.
+
+Then check the *Changes* view of GitHub Desktop. What is different now?
+
+Have a look at the newly created `.gitignore` file. You can just commit and push changes to
+a `.gitignore` file like with any other file.
 
 # Extra
 
@@ -277,25 +300,4 @@ You can only look at the files.
 To come back to the current state, click on the current branch button at the top
 and select the main branch again
 
-## Ignore files
-
-We only want actual recipe files in our project. All other files should be ignored.
-
-### Add a `.gitignore` file
-
-Find a random file on your computer and copy it into your cook book project.
-
-Check if GitHub Desktop recognized the change to your repository, but DO NOT COMMIT 
-this file.
-
-This file does not belong to your cook book, so it should be ignored by Git.
-
-You can ignore the file with a right click and select **Ignore file**.
-
-This will add the file to the `.gitignore` file.
-
-Then check the *Changes* view of GitHub Desktop. What is different now?
-
-Have a look at the newly created `.gitignore` file. You can just commit and push it
-like any other file.
 :::

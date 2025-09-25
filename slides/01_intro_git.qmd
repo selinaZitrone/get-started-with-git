@@ -1,6 +1,6 @@
 ---
 title: "Introduction to version control with Git"
-subtitle: "Day 1: Concepts and a basic workflow"
+subtitle: "Day 1: Concepts and individual Git workflow"
 author: "Selina Baldauf"
 date: today
 date-format: long
@@ -16,7 +16,7 @@ format:
     code-line-numbers: false
     theme: slides.scss
     auto-stretch: false
-    scrollable: true
+    scrollable: false
 editor: source
 execute: 
   echo: false
@@ -24,110 +24,40 @@ execute:
 from: markdown+emoji
 ---
 
-# Who am I?
-
-> 💻 **Scientific programmer** @ [theoretical ecology group](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
->
-> 🎓 PhD in **dryland ecology** modelling dryland ecohydrology
-> 
-> 👩‍🏫 **Teaching** R, Git, good scientific practice, ...
-
----
-
-![](img/day1/do_you_already_use_git.png)
-
----
-
-![](img/day1/do_you_already_use_github.png)
-
----
-
-![](img/day1/collaborative_or_individual_projects.png)
-
----
-
-## What do you want to learn?
-
-![](img/day1/who_are_you.png)
-
-## Aims of the workshop
+## Welcome
 
 ::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="80%"}
 
-::: {.fragment}
+- 🎓 Ecology/Theoretical Ecology
+- 💻 **Scientific programmer** @ [Freie Universität Berlin](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
+- 👩‍🏫 **Teaching** R, Git, good scientific practice, ...
+:::
+::: {.column width = "20%"}
 
-Git is very powerful ...<br>
+![](img/selina_cropped.jpg){fig-align="right"}
 
 :::
-
-::: {.fragment}
-
-... but can also be confusing in the beginning.
-
 :::
 
-::: {.fragment}
+. . .
 
-&nbsp;&nbsp;
+### Reach out
 
-🎯 Learn simple Git workflows in **theory and practice** that you can **immediately apply** to your research projects.
+:::{.text-small}
 
-:::
-
-:::
-
-::: {.column width="50%"}
-
-![[xkcd](https://xkcd.com/1597/) on Git](https://imgs.xkcd.com/comics/git.png)
+{{< fa envelope >}} selina.baldauf@fu-berlin.de &nbsp;&nbsp; {{< fa brands bluesky >}} @selina-b
 
 :::
-
-:::
-
-## Topics
-
-
-#### Today 2 - 4 pm
-
-Introduction to **Git concepts** and a **simple workflow** for your **individual projects**
-
-<br> 
-
-#### Tomorrow 2 - 4 pm
-
-**Collaborate** using Git and GitHub
-
-<br>
-
-:::: {.fragment}
-
-#### Next Monday 2 - 3 pm
-
-Q&A session and/or more advanced topics
-
-**Until then:** work with Git on your own projects
-
-:::
-
-## Organization
-
-- Material is all [online](https://selinazitrone.GitHub.io/get-started-with-git/)
-  - View and download slides, tasks and more from there
-  - Will stay online after the workshop
-  
-- Certificate of attendance from the graduate center
-  
-- All questions and comments are welcome
-
-- Feedback is welcome (Evaluation at the end of the workshop)
-
-- If possible, please turn on your camera
-
-
 
 ## Before we start
+
+. . .
+
+I :heart: questions
+
+. . .
 
 Did anyone have problems with the workshop preparation?
 
@@ -137,7 +67,33 @@ Did anyone have problems with the workshop preparation?
 - Get a GitHub account and connect it with GitHub Desktop
 :::
 
+## Workshop overview
+
+🎯 Learn simple Git workflows in **theory and practice** that you can **immediately apply** to your research projects.
+
+- Day 1: Git concepts and individual Git workflow
+- Day 2: Collaborative Git workflow
+
+## Organization
+
+Material is all [online](https://selinazitrone.GitHub.io/get-started-with-git/)
+
+:::{.nonincremental}
+
+- View and download slides 
+- Tasks for Hands-on
+- Step by step guides for different workflows
+- Will stay online after the workshop
+
+:::
+
 # Let's get started {.inverse}
+
+## It's never final
+
+
+![[Jorge Cham (PhD comics)](https://phdcomics.com/comics/archive.php?comicid=1531)](img/day1/never_final.png){fig-align="center" width=38%}
+
 
 <!-- ## Why version control? {.hidden}
 
@@ -151,20 +107,39 @@ Two examples in which proper version control can be a time/stress saver
 
 ![](img/day1/motivation_collab.png){fig-align="center" width=66%} -->
 
-## Version control with Git
+## Requirements for good version control
 
-- **Complete** and **long-term** history of every file in your project
+- [ ] Complete and long-term history of every file in your project
+- [ ] Safe (e.g. no accidental loss of versions)
+- [ ] Easy to use
+- [ ] Document all changes: what, why, who, when
+- [ ] Allow for collaboration
+- [ ] Online version for backup and sharing
+- [ ] Offline version for working on the project
 
+
+## Requirements for good version control
+
+:::{.nonincremental}
+- [x] Complete and long-term history of every file in your project
+- [x] Safe (e.g. no accidental loss of versions)
+- [x] Easy to use
+- [x] Document all changes: what, why, who, when
+- [x] Allow for collaboration
+- [x] Online version for backup and sharing
+- [x] Offline version for working on the project
+:::
+
+Git checks all the boxes!
+
+## What is Git?
 
 - **Open source and free** to use version control software
-
-
 - Quasi **standard** for software development
+- A whole universe of **other software and services** built on top of it
 
 
-- A whole universe of **other software and services** around it
-
-## Version control with Git
+## What is Git?
 
 - For projects with **mainly text files** (e.g. code, markdown files, ...)
 
@@ -176,7 +151,7 @@ Two examples in which proper version control can be a time/stress saver
 
 - A project version controlled with Git is a Git **repository** (**repo**)
 
-## Version control with Git
+## What is Git?
 
 Git is a **distributed version control system**
 
@@ -201,17 +176,7 @@ Git is a **distributed version control system**
 
 :::
 
-## Why to use Git?
-
-- **Version control**: Keep a history of your project and roll back if needed
-  - Git makes it very hard for you to loose things
-  - Easy to figure out why code is suddenly broken
-- **Collaboration**: Work together on the same project without loosing track
-- **Publication**: Easily share your project with others (e.g. on Github)
-- **Backup**: Have multiple copies of your project, one of them on a remote server
-- ...
-
-## How to use Git
+## How to use Git?
 
 After you [installed it](https://www.atlassian.com/de/git/tutorials/install-git) there are different ways to interact with the software.
 
@@ -305,20 +270,13 @@ Standalone Git GUI software, e.g. GitHub Desktop, Source Tree, ...
 
 :::
 
-## How to use Git
-
-#### Which one to choose?
+## How to use Git?
 
 - Depends on experience and taste
 - You can mix methods because they are all interfaces to the same Git
-
-:::{.fragment}
-
-- We will use GitHub Desktop
+- We will use the GitHub Desktop GUI
   - Beginner-friendly, intuitive and convenient
   - Nice integration with GitHub
-
-:::
 
 :::{.fragment}
 
@@ -430,7 +388,11 @@ This is really good.
 
 :::
 
+. . .
+
 See [here](https://cbea.ms/git-commit/) for more details but some general rules:
+
+:::{.nonincremental}
 
 1. Limit summary line to 50 characters
 2. Capitalize summary line
@@ -438,13 +400,7 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 4. Use imperative mood in the subject line
 5. Use the *Description* to explain **what** and **why**, not **how**
 
-# Now you (15 min) {.task-slide}
-> Start your own cook book <br>
-> Complete [Task 1 "Local repo"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
-
-**Stay in the meeting** for the task.<br>
-**Ask** if you are stuck. <br>
-**Turn down/off volume** if you are disturbed. <br>
+:::
 
 ## The commit history
 
@@ -454,66 +410,49 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 
 :::
 
+# Now you (15 min) {.task-slide}
+
+**Stay in the meeting** for the task.<br>
+**Ask** if you are stuck. <br>
+**Turn down volume** if you are disturbed. <br>
+
+. . .
+
+> Start your own cook book <br>
+> Complete [Task 1 "Local repo"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
+
+
 ## Step 4: Share changes with the remote repo
 
-Use remote repos (on a server) to **synchronize**, **share** and **collaborate**
-
-::: {.nonincremental}
-
-- Remote repos can be **private** (you + collaborators) or
-**public** (visible to anyone)
-
-:::
+Use remote repos to **synchronize**, **share** and **collaborate** (can be public or private/for collaborators only)
 
 ![](img/day1/4_remote_concept.png){width=60% style="position: relative; bottom: -20px; left: 50%; transform: translateX(-50%);"}
 
 ## Step 4: Share changes with the remote repo
 
-Use remote repos (on a server) to **synchronize**, **share** and **collaborate**
-
-- Remote repos can be **private** (you + collaborators) or
-**public** (visible to anyone)
+Use remote repos to **synchronize**, **share** and **collaborate** (can be public or private/for collaborators only)
 
 ![](img/day1/4_push_concept.png){width=60% style="position: relative; bottom: -20px; left: 50%; transform: translateX(-50%);"}
 
-## Different remote repositories
+## Publishing your projects
 
 - There are **commercial** and **self-hosted** options for your remote repositories
-  - Commercial: GitHub, Gitlab, Bitbucket, ...
-  - Self-hosted: Gitlab (maybe at your institution?)
+  - Commercial: GitHub, GitLab, Bitbucket, ...
+  - Self-hosted: GitLab (maybe at your institution?)
 
 - Please be aware of your institutional guidelines
-  - Servers outside EU
+  - Servers might be outside EU (e.g. GitHub)
   - Privacy rules might apply depending on type of data
 
-## Make your repositories public
+## Why publish?
 
-GitHub/Gitlab are a good way to publish and share your work.
+**Advantages for scientists**
 
-. . .
-
-&nbsp;
-
-#### Advantages of publishing your code
-
+- Visibility and Credit 
 - Others can build on your work
 - Citations
 - Reproducibility
 - Get feedback
-
-## Make your repositories public
-
-You can increase the quality/complexity of your repo by
-
-- Adding a nice README.md file
-- [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.GitHub.io/idiv-git-introduction/21-GitHub_zenodo/index.html)
-- ...
-
-. . . 
-
-If you are interested, browse some nice GitHub repositories for inspiration (e.g.
-[Git training repository](https://github.com/UnseenWizzard/git_training), [Computational notebooks](https://github.com/FellowsFreiesWissen/computational_notebooks), [Repo to publish code from a manuscript](https://github.com/AnneLew/Lewerentz-etal_2021_Macrophytes-DDG))
-
 
 # Now you (10 min){.task-slide}
 
@@ -523,7 +462,6 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
 ## Summary of the basic steps
 
 :::{.nonincremental}
-
 - `git init`: Initialize a git repository
   - Adds a `.git` folder to your working directory
 - `git add`: Add files to the staging area
@@ -532,7 +470,6 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
   - Includes time stamp, commit message and information on the person who did the commit
 - `git push`: Push new commits to the remote repository
   - Sync your local project version with the remote e.g. on GitHub
-
 :::
 
 # Undo things {.inverse}
@@ -553,7 +490,76 @@ If you are interested, browse some nice GitHub repositories for inspiration (e.g
 
 > Revert a commit from your cook book
 
+# Ignore files with `.gitignore` {.inverse}
 
+## Ignore files with `.gitignore`
+
+- Git tracks all files in your working directory
+- Often, we have files we do not want tracked
+  - Personal notes
+  - Compiled code and build directories
+  - Log files 
+  - Hidden system files
+  - Personal IDE config files
+  - ...
+  
+## Ignore files with `.gitignore`
+
+- Create a file with the name `.gitignore` in working directory
+- Add all files and directories you want to ignore to the `.gitignore` file
+
+. . .
+
+#### Example
+
+```md
+# Ignore single files
+
+my_notes.docx  # ignore the file my_notes.docx
+debug.log # ignore the file debug.log
+
+
+# Ignore files with specific endings
+
+*.html    # ignore all .html files
+*.pdf     # ignore all .pdf files
+
+# Ignore directories
+
+build/    # ignore all files in subdirectory build
+```
+
+See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
+
+# Now you (5 min) {.task-slide}
+
+> Ignore some files in your cook book project
+
+# Some good practice tips {.inverse}
+
+## Git
+
+- Commit often (small changes that can be described in one commit message)
+- Write good commit messages (it becomes a habit)
+- Push (at least) daily (backup!)
+- Use `.gitignore`
+- Don't commit secrets
+
+## Publishing
+
+Some essentials that will improve your published repository:
+
+- Add a good README.md file
+  - Tell people what your project is about and how to use it
+  - Check out the [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting options
+- Add a LICENSE file
+  - Tell others how to use your code
+- Add a DOI to your repository (e.g. via [Zenodo](https://emilio-berti.GitHub.io/idiv-git-introduction/21-GitHub_zenodo/index.html))
+
+. . . 
+
+If you are interested, browse some nice GitHub repositories for inspiration (e.g.
+[Computational notebooks guide](https://github.com/FellowsFreiesWissen/computational_notebooks), [Repo to publish code from a manuscript](https://github.com/AnneLew/Lewerentz-etal_2021_Macrophytes-DDG))
 
 # Thanks for your attention {.inverse}
 
@@ -576,41 +582,7 @@ Take your work space back in time temporarily with `git checkout`
 ![](img/day1/commit_history_checkout.png){width=85%}
 
 
-# Ignoring files with `.gitignore` {.inverse}
 
-## Ignore files with `.gitignore`
-
-::: {.nonincremental}
-
-- Useful to ignore e.g.
-  - Compiled code and build directories
-  - Log files 
-  - Hidden system files
-  - Personal IDE config files
-  - ...
-  
-:::
-
-## Ignore files with `.gitignore`
-
-
-- Create a file with the name `.gitignore` in working directory
-
-- Add all files and directories you want to ignore to the `.gitignore` file
-
-
-#### Example
-
-```md
-*.html    # ignore all .html files
-*.pdf     # ignore all .pdf files
-
-debug.log # ignore the file debug.log
-
-build/    # ignore all files in subdirectory build
-```
-
-See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for more ignore patterns that you can use.
 
 ## Preparation for tomorrow
 
