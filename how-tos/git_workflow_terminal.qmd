@@ -2,33 +2,23 @@
 title: "A Git workflow with the terminal"
 ---
 
-In this guide, we will work on a cook book project using Git and the terminal.
-We will start going through all the steps for an individual project (you're working on
-the cook book alone) and then we will see how to collaborate with others.
+In this guide, we will work on a cook book project using Git and the terminal. We will start going through all the steps for an individual project (you're working on the cook book alone) and then we will see how to collaborate with others.
 
 # Preparations
 
 To follow this guide you need:
 
-- Git installed
-- GitHub Desktop installed
-- A GitHub account connected to your GitHub Desktop program
+-   Git installed
+-   GitHub Desktop installed
+-   A GitHub account connected to your GitHub Desktop program
 
-Check out the [course preparations](../course_preparation.qmd)
-if you miss anything from this list. 
+Check out the [course preparations](../course_preparation.qmd) if you miss anything from this list.
 
-All commands that you see in the following guide, have to be typed in the terminal and then
-you have to hit Enter to execute the command.
-If you are on Windows, I recommend to use the Git Bash terminal that comes with
-the Git installation (Just search for "Git Bash" in the Windows search bar).
-On MacOS/Linux, you can just use the standard terminal.
+All commands that you see in the following guide, have to be typed in the terminal and then you have to hit Enter to execute the command. If you are on Windows, I recommend to use the Git Bash terminal that comes with the Git installation (Just search for "Git Bash" in the Windows search bar). On MacOS/Linux, you can just use the standard terminal.
 
 ## A word on authentication
 
-You might ask yourself: why do I need GitHub Desktop if we are using the terminal?
-The reason is that GitHub Desktop makes it much easier to set up the connection
-between your local machine and GitHub. Authentication is handled for you using OAuth.
-During this process, GitHub Desktop securely stores your credentials in your operating system’s native credential store (Windows: Windows Credential Manager, macOS: Keychain Access, Linux: libsecret/gnome-keyring, depending on the distro).
+You might ask yourself: why do I need GitHub Desktop if we are using the terminal? The reason is that GitHub Desktop makes it much easier to set up the connection between your local machine and GitHub. Authentication is handled for you using OAuth. During this process, GitHub Desktop securely stores your credentials in your operating system’s native credential store (Windows: Windows Credential Manager, macOS: Keychain Access, Linux: libsecret/gnome-keyring, depending on the distro).
 
 Because Git itself can read from these credential stores, other Git clients (e.g. command line, RStudio, VS Code) can also use the same authentication. This works as long as you are using HTTPS URLs for your repositories.
 
@@ -36,24 +26,19 @@ If you prefer to use SSH for authentication (for automation, servers, or persona
 
 ## Configure Git
 
-Git needs to know who you are in order to sign your commits correctly. 
-If you already set up GitHub Desktop, you might already have the minimal Git
-configuration ready.
+Git needs to know who you are in order to sign your commits correctly. If you already set up GitHub Desktop, you might already have the minimal Git configuration ready.
 
-The Git configuration can be set locally (just for the current repo) or globally 
-(default for all repos without local configuration). Here, we just set a global
-configuration for all repositories.
+The Git configuration can be set locally (just for the current repo) or globally (default for all repos without local configuration). Here, we just set a global configuration for all repositories.
 
 To check if you already have a configuration run
 
-```sh
+``` sh
 git config --global -l
 ```
 
-If you don't see a `user.name` or `user.email` or get a message, 
-that the `.gitconfig` file does not exist, run the following to configure:
+If you don't see a `user.name` or `user.email` or get a message, that the `.gitconfig` file does not exist, run the following to configure:
 
-```sh
+``` sh
 git config --global user.name "<your_user_name>"
 git config --global user.email "<your_user_email>"
 ```
@@ -64,24 +49,21 @@ Use the user name and email that you also use for your GitHub account.
 
 ## Step 1: Initialize a new repository
 
-A new Git project can be started in an empty folder or in a folder that already 
-contains files.
-For this example, first can create a new folder `cookBook` somewhere ony your computer.
+A new Git project can be started in an empty folder or in a folder that already contains files. For this example, first can create a new folder `cookBook` somewhere ony your computer.
 
 After opening the terminal (Git Bash on Windows, Terminal on macOS/Linux), move into the folder you created:
 
-```sh
+``` sh
 cd cookBook # go into the folder
 cd ..       # go back one level
 ```
 
 You might have to chain multiple `cd` commands to get to the right location.
 
-::: {.callout-tip}
-On Windows, you can also right-click the project folder and choose **Git Bash Here**.
-(Windows 11: first click **Show more options**.)
+::: callout-tip
+On Windows, you can also right-click the project folder and choose **Git Bash Here**. (Windows 11: first click **Show more options**.)
 
-![](img/git-bash-here.png){width=50%}
+![](img/git-bash-here.png){width="50%"}
 :::
 
 Your terminal should now show the path of your cookBook folder, like this:
@@ -90,20 +72,17 @@ Your terminal should now show the path of your cookBook folder, like this:
 
 Now you can initialize a new Git repository in this folder by running:
 
-```sh
+``` sh
 git init
 ```
 
-You should see a message telling you that the repository was initialized.
-In Git Bash, you can now also see that you are in a Git repository, because the
-branch name is indicated in blue behind the folder path:
+You should see a message telling you that the repository was initialized. In Git Bash, you can now also see that you are in a Git repository, because the branch name is indicated in blue behind the folder path:
 
 ![](img/git_init.png)
 
-You can also check that a new hidden folder `.git` was created in your cookBook folder.
-To print all files including hidden ones: 
+You can also check that a new hidden folder `.git` was created in your cookBook folder. To print all files including hidden ones:
 
-```sh
+``` sh
 ls -a
 ```
 
@@ -115,10 +94,9 @@ and you should see the `.git` folder:
 
 Open your cook book project in the file explorer.
 
-AAdd a new text file with your favorite recipe (Let's assume it's pie). 
-Create a file called pie.txt and add the recipe text below to it:
+Add a new text file with your favorite recipe (Let's assume it's pie). Create a file called pie.txt and add the recipe text below to it:
 
-```md
+``` md
 Ingredients:
 150 g butter
 200 g sugar
@@ -133,11 +111,11 @@ for 45 mins at 200 °C.
 
 Save the file and switch back to the terminal.
 
-###  Explore the changes to your repository with `git status`
+### Explore the changes to your repository with `git status`
 
 Check the current status of your Git repository by running
 
-```sh
+``` sh
 git status
 ```
 
@@ -151,21 +129,20 @@ The message already tells you what to do next: You can stage the file to be incl
 
 To stage the changes to `pie.txt` (i.e. the creation of the file) run
 
-```sh
+``` sh
 git add pie.txt
 ```
+
 This means that now `pie.txt` is ready to be committed.
 
-::: {.callout-tip}
-
+::: callout-tip
 ## Stage multiple files at once
 
 If you have multiple files, you want to stage, you can do this in one step with
 
-```sh
+``` sh
 git add *
 ```
-
 :::
 
 Now you can check the repository status with `git status` again to confirm this:
@@ -178,12 +155,11 @@ Git now tells you, that `pie.txt` is now ready to be committed.
 
 To commit all changes that are staged, run
 
-```sh
+``` sh
 git commit
 ```
 
-Now your your default text editor will open, and you can add a commit message and an
-optional description (this all the text followed by the empty line).
+Now your your default text editor will open, and you can add a commit message and an optional description (this all the text followed by the empty line).
 
 For me this opens VS Code and it looks like this:
 
@@ -193,7 +169,7 @@ When you are done writing the commit message, save the file and close the editor
 
 Look how the status of your repository has changed with
 
-```sh
+``` sh
 git status
 ```
 
@@ -201,40 +177,33 @@ No you don't have any more uncommited changes in your project:
 
 ![](img/git_commit.png)
 
-:::{.callout-tip}
-
+::: callout-tip
 ## Good commit messages
 
-There are guidelines on how to write good commit messages.
-This becomes especially important when collaborating.
-Have a look [here](https://cbea.ms/git-commit/) for some guidelines on how to write good
-commit messages and why this is important.
-
+There are guidelines on how to write good commit messages. This becomes especially important when collaborating. Have a look [here](https://cbea.ms/git-commit/) for some guidelines on how to write good commit messages and why this is important.
 :::
 
 ### Look at the commit history
 
 To look at the history of your commits, run
 
-```sh
+``` sh
 git log
 ```
 
-This will show you all commits in reverse chronological order (most recent first).
-You can also see who did the commit, when it was done and the commit message.
+This will show you all commits in reverse chronological order (most recent first). You can also see who did the commit, when it was done and the commit message.
 
 ![](img/git_log.png)
 
 If you want a shorter summary, you can also use
 
-```sh
+``` sh
 git log --oneline
 ```
 
 ## Step 5: Share your project on GitHub
 
-Now we want to share our cook book with the world (or our collaborators), so we want to publish it on
-GitHub.
+Now we want to share our cook book with the world (or our collaborators), so we want to publish it on GitHub.
 
 So what we want to do is connect our local repository with a remote repository on GitHub.
 
@@ -244,8 +213,7 @@ Go to the [GitHub website](https://github.com/), log into your account and click
 
 ![](img/github-new-button-small.png)
 
-Enter a repository name (e.g. `cookBook`), select if it should be private or public and add a description if you like. Important: Do not create the repository with a README or license file. 
-It should look like this:
+Enter a repository name (e.g. `cookBook`), select if it should be private or public and add a description if you like. Important: Do not create the repository with a README or license file. It should look like this:
 
 ![](img/gh-new-repo.png)
 
@@ -255,7 +223,7 @@ GitHub will now bring you to the newly created repository. Since the repository 
 
 So switch over to the terminal and run the three commands shown there one after another:
 
-```sh
+``` sh
 git remote add origin https://github.com/selinaZitrone/cookBook.git # connect the remote
 git branch -M main          # rename the local branch to main
 git push -u origin main     # push the local main branch to Github
@@ -263,37 +231,29 @@ git push -u origin main     # push the local main branch to Github
 
 (Of course replace the URL with the URL of your own repository.)
 
-Now you can head over to GitHub and refresh the page of your repository. You should now see
-your `pie.txt` file there:
+Now you can head over to GitHub and refresh the page of your repository. You should now see your `pie.txt` file there:
 
 ![](img/gh-repo-after-push.png)
 
 # Collaboration workflows
 
-Git and GitHub are perfect for collaboration. Let's assume your friend also has a
-cook book project on GitHub and you want to help work on their cook book.
+Git and GitHub are perfect for collaboration. Let's assume your friend also has a cook book project on GitHub and you want to help work on their cook book.
 
-If you want to test this workflow by collaborating with yourself, you can just skip
-step 1 and do the other steps with your own instead of your friend's cook book.
+If you want to test this workflow by collaborating with yourself, you can just skip step 1 and do the other steps with your own instead of your friend's cook book.
 
 ## Add collaborators on GitHub repository
 
-To collaborate, your friend needs to add you to their GitHub project.
-On the GitHub webpage of the repository, they can go to **Settings -> Collaborators -> Add people**:
+To collaborate, your friend needs to add you to their GitHub project. On the GitHub webpage of the repository, they can go to **Settings -\> Collaborators -\> Add people**:
 
 ![](img/gh_add_collaborator.png)
 
-Then add people using their GitHub user name. The invited person will get an invitation email
-for the repository. Accept this invitation and you are now a collaborator on your
-friend's project.
+Then add people using their GitHub user name. The invited person will get an invitation email for the repository. Accept this invitation and you are now a collaborator on your friend's project.
 
 ## Step 1: Clone a remote repository
 
-Before you can start working on your friend's cook book, you need to clone their repository.
-This means getting your own local copy of the cook book.
+Before you can start working on your friend's cook book, you need to clone their repository. This means getting your own local copy of the cook book.
 
-To clone a repository, you need to know the 
-repositories address. You can find and copy it by clicking on the green code button on GitHub (in this example, I just clone my own repository as a demonstration):
+To clone a repository, you need to know the repositories address. You can find and copy it by clicking on the green code button on GitHub (in this example, I just clone my own repository as a demonstration):
 
 ![](img/gh_copy_address_https.png)
 
@@ -301,7 +261,7 @@ Make sure you select the HTTPS address (unless you set up SSH keys, then you can
 
 Open the terminal, navigate to a location where you want to clone the project and run:
 
-```sh
+``` sh
 git clone https://github.com/selinaZitrone/cookBook.git
 ```
 
@@ -309,7 +269,7 @@ git clone https://github.com/selinaZitrone/cookBook.git
 
 After cloning, I navigate into the newly created folder using
 
-```sh
+``` sh
 cd cookBook # or your friend's repository name
 ```
 
@@ -319,44 +279,39 @@ You can see in the last line that I am in a Git repository, because the branch n
 
 ## Step 2: Create a new branch
 
-Let's say, you want to add a vegan pie recipe to your friend's cook book.
-To use the collaboration workflow discussed in the lecture, you need to create a new branch to work on. 
+Let's say, you want to add a vegan pie recipe to your friend's cook book. To use the collaboration workflow discussed in the lecture, you need to create a new branch to work on.
 
 To create a new branch with the name "add_vegan_pie" just run
 
-```sh
+``` sh
 git branch add_vegan_pie
 ```
 
 After the branch is created, you need to switch to it with
 
-```sh
+``` sh
 git checkout add_vegan_pie
 ```
 
 To see which branch you are currently on, run
 
-```sh
+``` sh
 git branch
 ```
 
-The green, highlighted branch is the one you are currently on (but you can also
-see it in the blue branch name next to the path).
+The green, highlighted branch is the one you are currently on (but you can also see it in the blue branch name next to the path).
 
 ![](img/git_branch.png)
 
-Now you can start working on this branch. Add a file for the vegan pie and then 
-stage and commit them like you are used to (see steps 2-4 in the previous section).
+Now you can start working on this branch. Add a file for the vegan pie and then stage and commit them like you are used to (see steps 2-4 in the previous section).
 
 ## Step 3: Publish and push your branch
 
-To share your branch with the vegan pie recipe with your friend, you need 
-to push the branch to the remote repository on GitHub. This works just like with the main 
-branch using `git push`.
+To share your branch with the vegan pie recipe with your friend, you need to push the branch to the remote repository on GitHub. This works just like with the main branch using `git push`.
 
 But the first time you push a new branch, you need to specify the upstream by running:
 
-```sh
+``` sh
 git push --set-upstream origin add_vegan_pie
 ```
 
@@ -364,69 +319,62 @@ Now your branch is pushed to GitHub and you can do a pull request.
 
 ## Step 4: Create a pull request
 
-See [here](create_pull_request.qmd) for a guide on how to create a pull requests
-to ask your friend to integrate your recipe into their cookbook.
+See [here](create_pull_request.qmd) for a guide on how to create a pull requests to ask your friend to integrate your recipe into their cookbook.
 
----
+------------------------------------------------------------------------
 
 # Other things to try
 
 ## Add a gitignore file
 
-- Put a pdf file in your repo
+-   Put a pdf file in your repo
 
-- Look at `git status`: It should now show that you can commit the pdf file. But
-for this example, we want to ignore it.
+-   Look at `git status`: It should now show that you can commit the pdf file. But for this example, we want to ignore it.
 
-- Add a `.gitignore` file to your project
+-   Add a `.gitignore` file to your project
 
-::: {.callout-note}
-
+::: callout-note
 ## Create a `.gitignore` file on Windows
 
-On Windows, you cannot create a file without a file name. So the Windows explorer 
-will complain if you try to create a file with only the file ending .gitignore. 
-One way around this is to use the terminal. In Git bash, just run
+On Windows, you cannot create a file without a file name. So the Windows explorer will complain if you try to create a file with only the file ending .gitignore. One way around this is to use the terminal. In Git bash, just run
 
-```sh
+``` sh
 touch .gitignore
 ```
 
 to create a gitignore file
 :::
 
-- Ignore pdf files
-  - Add a line with the pattern `*.pdf` to your gitignore file and save it
-- Now look at `git status` again. If everything worked, you should not see the 
-changes in the pdf anymore, because it was ignored.
+-   Ignore pdf files
+    -   Add a line with the pattern `*.pdf` to your gitignore file and save it
+-   Now look at `git status` again. If everything worked, you should not see the changes in the pdf anymore, because it was ignored.
 
 ## Compare commits
 
-- Change some text in pie.txt
-- stage it with `git add`
-- look at the diff with `git diff --staged`
-- commit the changes
-- compare this commit to the previous one with
-  - `git commit HEAD^`
-- push to origin
+-   Change some text in pie.txt
+-   stage it with `git add`
+-   look at the diff with `git diff --staged`
+-   commit the changes
+-   compare this commit to the previous one with
+    -   `git commit HEAD^`
+-   push to origin
 
 ## Merge your new branch with the `main`
 
-If you want to locally integrate changes you did in a separate branch into the main branch,
-you first need to switch back to the main branch:
+If you want to locally integrate changes you did in a separate branch into the main branch, you first need to switch back to the main branch:
 
-```sh
+``` sh
 git checkout main
 ```
 
 Now merge the commits from your branch with
 
-```sh
+``` sh
 git merge add_vegan_pie
 ```
 
 Check if it actually worked with
 
-```sh
+``` sh
 git log
 ```
