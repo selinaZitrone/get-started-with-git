@@ -138,18 +138,21 @@ In Git language, this is called **cloning**
 
 ## Get a repo from a remote
 
-::: {.fragment}
+You can clone
 
-To clone a repo, you need to know the repo's URL
+- all of your own repositories (public and private)
+- all repositories you are a collaborator on (public and private)
+- all public repositories of other people
+
+. . .
+
+All you need is the URL of the remote repository
+
+::: {.fragment}
 
 ![](img/day2/github_get_repo_url.png)
 
 :::
-
-- You can clone all public repositories
-  - You can only push if you are authorized
-  
-- You can clone private repositories if you are a owner/collaborator
 
 # Now you (5 min) {.task-slide}
 
@@ -165,6 +168,8 @@ To clone a repo, you need to know the repo's URL
 
 :::
 
+. . .
+
 ![](img/day2/git_pull_concept.png){width=63% fig-align="center"}
 
 ## A simple collaboration workflow
@@ -175,7 +180,7 @@ To clone a repo, you need to know the repo's URL
 
 ::: {.nonincremental}
 
-- One remote repo on GitHub, multiple local repos
+- One remote repo on GitHub, multiple local repos (Bob and me)
 
 :::
 
@@ -196,19 +201,6 @@ This works well if
 - No need to discuss changes before they are integrated
 - You collaborate with yourself
 
-## A simple collaboration workflow
-
-<br>
-
-![](img/day2/collab_simple.png)
-
-This workflow starts to be problematic when
-
-- People push often/forget to pull regularly
-  - Potential conflicts on main
-- You just want to experiment
-  - Everything goes directly to main
-  
 ## Let's give it a try
 
 . . .
@@ -235,6 +227,21 @@ Get the changes of your team mate from the remote.
 
 :::
 
+## A simple collaboration workflow
+
+<br>
+
+![](img/day2/collab_simple.png)
+
+This workflow starts to be problematic when
+
+- People push often/forget to pull regularly
+  - Potential conflicts on main
+- You just want to experiment
+  - Everything goes directly to main
+  
+
+
 ## A branching-merging workflow
 
 <br>
@@ -252,7 +259,7 @@ Get the changes of your team mate from the remote.
 
 ![](img/day2/collab_branching_merging.png)
 
-#### Advantages of this approach
+**Advantages** of this approach
 
 - Guarantee that main always works
 - Potential conflicts don't have to be solved on main
@@ -276,6 +283,21 @@ To bring changes to the main branch you need to **merge** them.
 
 Git merge brings the commits from the branch to main
 
+## Merging changes from a branch
+
+To bring changes to the main branch you need to **merge** them.
+
+![](img/day2/merge_branch_stew_merge_commit.png)
+
+If there was a commit in main, a *merge commit* is introduced.
+
+## Merging changes from a branch
+
+To bring changes to the main branch you need to **merge** them.
+
+![](img/day2/merge_branch_stew_merge_commit.png)
+
+If there was a commit in main, a *merge commit* is introduced.
 
 # Now you (10 min) {.task-slide}
 > [Create a branch and merge it in your team mate's cook book](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
@@ -323,69 +345,9 @@ GitHub has nice features for pull requests, e.g.:
 A pull request is merged on GitHub when **everyone agreed on the code**.
 
 # Now you (10 min) {.task-slide}
-> [Create a pull request on your team mate'S repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
+> [Create a pull request on your team mate's repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
 > Complete task 3 "Pull requests"
 
 # Thanks for your attention
 
 > Questions?
-
-## Next week
-
-- Monday 2.30 - 3.30 on Webex (link via email)
-
-- Until then: work with Git on your own (~ 1 - 2 h)
-  - Pick something you find most interesting/useful to you
-- Collect questions/problems/discoveries
-- More Git topics
-
-## Some ideas
-
-:::{.nonincremental}
-
-- **Start working** with Git on one of **your research projects**
-- **Publish** one of your projects on GitHub including a nice README
-- **Practice collaboration** by contributing to your team mate's cook using pull requests
-  - Your team mate can answer your pull requests and request some changes :)
-
-:::
-
-## Some ideas
-
-:::{.nonincremental}
-
-- **Check out the How-To guides** if you want to
-  - [Recap GH Desktop](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_gh_desktop.html)
-  - learn about Git in the [terminal](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_terminal.html)
-  - learn about [Git + R](https://selinazitrone.github.io/get-started-with-git/how-tos/git_workflow_usethis.html)
-- If you find a mistake on my websites
-  - **Edit the page** on GitHub (and make a Pull request) or **report an issue**
-- Checkout the additional [resources](https://selinazitrone.github.io/get-started-with-git/resources.html)
-
-:::
-
-# Appendix
-
-## Merging changes from a branch
-
-To bring changes to the main branch you need to **merge** them.
-
-![](img/day2/merge_branch_stew_merge_commit.png)
-
-If there was a commit on a common file in main, a *merge commit* is introduced.
-
-## Merging changes from a branch
-
-To bring changes to the main branch you need to **merge** them.
-
-. . .
-
-- Mostly merging happens without problems, but...
-- ... if the same line was edited on separate branches...
-- ... there will be a merge conflict :scream:
-
-. . .
-
-Merge conflicts need to be solved manually. You need to chose which of the conflicting
-versions you want to keep.
-

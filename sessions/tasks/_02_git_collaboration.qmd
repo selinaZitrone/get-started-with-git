@@ -261,7 +261,7 @@ When you have a pull request, you can see it on top, indicated by the number nex
 
 ![](tasks/img/new_pr.png)
 
-Open the pull request by clickon on the button and selecting the Pull request from the list of pull requests.
+Open the pull request by clicking on the button and selecting the Pull request from the list of pull requests.
 
 Click through the tabs on top. E.g. the "Files changed" tab is very interesting.
 
