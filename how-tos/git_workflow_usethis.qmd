@@ -4,9 +4,13 @@ execute:
   eval: false
 ---
 
-# Preparation
+In this guide, we will work on a cook book project using Git, R and RStudio.
+We will start going through all the steps for an individual project (you're working on
+the cook book alone) and then we will see how to collaborate with others.
 
-For this workflow, you need
+# Preparations
+
+To follow this guide you need:
 
 -   Git installed
 -   RStudio and R installed
@@ -20,13 +24,13 @@ install.packages("usethis")
 
 ## Setup PAT to use HTTPS protocol with GitHub
 
-You can manage access to GitHub with a personal access token (PAT) instead of using your password. Check if you already have a personal access token for GitHub.
+You can manage access to GitHub with a personal access token (PAT) instead of using your password. Check if you already have a personal access token with the correct configurations for GitHub.
 
 ```{r}
 usethis::gh_token_help()
 ```
 
-This will tell you if you already have a token and if not how you can create one. To create a new token, call the function:
+This will tell you exactly what's going on (in general, `usethis` is very helpful - so always read what it prints in the console): Do you already have a token or are problems with your current token? And if you need a token, it will also tell you can create one. To create a new token, call the function:
 
 ```{r}
 usethis::create_github_token()
@@ -36,16 +40,20 @@ This will open GitHub and ask you to sign in.
 
 Next, you are asked to create a new personal access token.
 
-On top enter a note that reminds you what this token is for (e.g. Something like "RStudio/R on HP laptop").
+On top enter a note to remind you what this token is for (e.g. Something like "RStudio on PC").
 
 Set an expiration date of your choice (the shorter the more secure, but you have to update more often - GitHub will send you a reminder for this).
 
-You can also select the scopes for your PAT. For general use case, the default selected scopes are enough. Scroll down and click on **Generate token**.
+You can also choose the scope for your PAT but for general use, the default settings are fine.
+
+![](img/gh_create_token.png)
+
+Scroll down and click on **Generate token**.
 
 Copy the token to the clipboard.
 
 ::: callout-warning
-You will not be able to read the token again after you closed this window. So leave the window open until you successfully set up your connection.
+You will not be able to read the token again after you closed GitHub. So leave the window open until you successfully set up your connection. You can also save the token in a safe place (e.g. a password manager).
 :::
 
 Now register the token with git using the function:
@@ -62,16 +70,18 @@ Now your PAT should be added to the credentials. You can check it again with
 usethis::gh_token_help()
 ```
 
-### Optional: Add `usethis` and standard protocol to your `.Rprofile`
+Check the console to see if everything is fine and `usethis` now knows your GitHub Account data.
+
+### Optional: Add `usethis` to your `.Rprofile`
 
 If you want to load the `usethis` package automatically when starting R, you can add it to your `.Rprofile`. This way, you have all the `usethis` functionality available without having to load the package first.
 
 ::: callout-warning
 ## Careful when adding packages to `.Rprofile`
 
-Loading packages automatically should only be done for packages that are not used in your R scripts. Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else.
+Loading packages via the `.Rprofile` should only be done for packages that are not used in your R scripts. Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else.
 
-Adding utility packages to the `.Rprofile` can however be convenient.
+Adding utility packages like `usethis` to the `.Rprofile` can however be very convenient.
 
 Read more about this topic [here](https://devtut.github.io/r/rprofile.html).
 :::
@@ -96,7 +106,7 @@ options(
 
 With this, `usethis` will be loaded every time you open RStudio and you already registered the default protocol that you want to use with Git (This is only relevant for the Git things you do with `usethis`).
 
-# A Git workflow using `usethis`
+# A Git workflow for your individual project
 
 ## Step 1: Create new R project
 
@@ -106,124 +116,129 @@ To create a new R project for this exercise call the function:
 usethis::create_project(path = "path/to/project/project_name")
 ```
 
-This will create a folder with `project_name` and set up and empty RStudio project. The project will then immediately open in a new RStudio instance. You can see that by default, the project already has some files inside (among them a `.gitignore` file).
+This will create a folder with `project_name` and set up and empty RStudio project.
+The project will open in a new RStudio instance. You can see that by default, the project already has some files inside (among them a `.gitignore` file).
 
-## Step 2: Initialize a git repository
+Here you can see my new project (called "demo_project") in R Studio. The files are highlighted in pink:
 
-With the project opened call the function
+![](img/rstudio_new_project.png)
+
+Of course you can also set up the project manually via RStudio (File -> New Project -> New Directory -> New Project) but I want to showcase the functionality of `usethis` here.
+
+## Step 2: Initialize a new Git repository
+
+With the project open call the function
 
 ```{r}
 usethis::use_git()
 ```
 
-You are now informed which changes will be committed. This is just the first commit that will include all the files that are in created by default and that are not in the `.gitignore`.
+Read the text in the console:
 
-Confirm that you want to commit these files by selecting the correct number and press enter. Then agree to the first commit with the commit message "Initial commit".
+R tells you which changes will be committed. This is just the first commit that will include all the files that are in created by default and that are not in the `.gitignore`.
 
-RStudio will be restarted and a the git GUI client will be added.
+Confirm that you want to commit these files by selecting the correct number for the "Yes" answer and press enter. Then agree to the first commit with the commit message "Initial commit" (again by selecting the correct number).
 
-Can you find the `Git` Tab in the top right pane?
+RStudio will restart and a the Git GUI client will be added.
 
-## Step 3: Create a remote repository on GitHub
+Can you find the `Git` tab in the top right pane? Here is where all the buttons for Git are located.
 
-Create a new repository on GitHub that will be associated with your local repository.
+![](img/rstudio_git_pane.png)
 
-Call the function
+## Step 3: Publish your project on GitHub
+
+You can skip this step if you only want to work locally. But I recommend you try it, it's really cool.
+
+To create a new GitHub repository and link it to your local repository, all we need to do
+is all the function:
 
 ```{r}
 usethis::use_github(private = TRUE) # default is private = FALSE
 ```
 
-This should now open GitHub in the browser and bring you to a freshly created GitHub project that is not associated with your local repository.
+With the `private` argument you can choose if your repository should be private or public.
 
-Really convenient :tada:
+This should now open GitHub in the browser and bring you to a freshly created GitHub project with
+all the files that were in your local repository (not a lot yet).
+
+Really convenient 🎉
 
 ## Step 4: Make some changes
+
+Now let's make some changes to the project.
 
 Create a new R file in your project and add some content to it.
 
 You can just copy the following code for convenience:
 
 ```{r}
-# Look at the first lines of the iris dataset
-head(iris)
-# What is the iris dataset -> Call the help
-?iris
-# How many rows and columns does the data set have?
-rownum <- nrow(iris)
-colnum <- ncol(iris)
-print(paste0("The iris dataset has ", rownum, " rows and ", colnum, " columns."))
-# Some summary statistics on the iris data set
-summary(iris)
-
-# create a plot
-plot(iris$Petal.Length, iris$Petal.Width,
-  xlab = "Petal Length",
-  ylab = "Petal Width",
-  main = "Petal Width vs Petal Length",
-  pch = 20,
-  col = ifelse(iris$Species == "setosa", "coral1",
-    ifelse(iris$Species == "virginica", "cyan4",
-      ifelse(iris$Species == "versicolor",
-        "darkgoldenrod2", "grey"
-      )
-    )
-  )
-)
-# add a legend
-legend("bottomright", c("setosa", "virginica", "versicolor"),
-  col = c("coral1", "cyan4", "darkgoldenrod2"), pch = 20
-)
+library(ggplot2)
+penguins |>
+  ggplot(aes(x = flipper_len, y = body_mass, color = species)) +
+  geom_point() +
+  theme_minimal()
 ```
 
 Save the file in your project.
 
-## Step 5: Commit and push the new file
+## Step 5: Make a commit
 
-In the Git Pane of RStudio, click on the "Commit" button (both buttons bring you to a similar window.):
+If you have new changes that are not committed yet, you will see the changes listed in the Git pane of RStudio (top right). I have for example addedd a new file called `penguins_plot.R`.
+
+To commit this file, just click on the "Commit" button in the Git pane:
 
 ![](img/rstudio_commit_button.png){width="70%"}
 
-Stage your file (i.e. `git add`) by checking the check box next to it. On the bottom you can see the code that you added (therefore green).
+Now you can select which files you want to commit. In this case we only have one file.
+To select (i.e. stage) files, just check the check box next to the file name.
+Now you can also see the changes that you made in the file (the code that you added is green, deleted code is shown in red).
+
+Enter a commit message in the top right field. You can write a one-line commit message. Optionally, you can also add a more detailed description of your changes followed by a blank line. Click **Commit** when you are ready.
 
 ![](img/rstudio-commit.png){width="70%"}
 
-Enter a commit message on the right and click commit. When the commit is finished, close the little window that opened.
+When everything is finished, close the commit window that opened.
+
+## Step 6: Push the changes to GitHub
 
 Now push the changes to GitHub by clicking on the green upward arrow on the top right.
 
+![](img/rstudio_push.png){width="70%"}
+
 Go to GitHub and check if everything was pushed as you expected.
 
-# Collaboration using branching
+# Collaboration workflows
 
-## Step 6: Create a new branch
+In collaboration workflows, you normally first need to be added as a collaborator to a project. Then you can clone the project to your computer and work on it. We will skip those two steps here.
+You cannot do this from within RStudio. So if you want to clone a repository, you would need to do it with
+[GitHub Desktop](git_workflow_gh_desktop.qmd) or in the [terminal](git_workflow_terminal.qmd).
+
+In the following, we will explore branching and merging from inside RStudio on our own
+project. But the workflow is the same when you work on a project of someone else.
+
+## Step 1: Create a new branch
 
 In this step, you will create a new branch for a new feature that you want to introduce. This branch will later be use to do a pull request on GitHub.
 
-In RStudio, you can create a new branch, by clicking on the little violet branch symbol in the Git pane:
+In RStudio, you can create a new branch (e.g. to add a data analysis file), by clicking on the little violet branch symbol in the Git pane:
 
 ![](img/rstudio-new-branch.png)
 
-Enter a name for your new branch (no white space in name!) and leave everything else as it is. Click on create and RStudio will create and switch the branch for you. Note that now, the checked out branch is not master/main anymore but you new branch (see image above).
+Enter a name for your new branch (no white space in name allowed) and leave everything else as it is. Click on create and RStudio will create and switch the branch for you. The new branch will also
+directly be pushed to GitHub Don't worry - this does not mess up anything. You are in a new branch so the main branch stays untouched by this. You can close the dialog that opened now.
+Note that the branch that you are on is not main anymore but you new branch (see image above).
 
-## Step 7: Change files and push new branch to remote
+## Step 2: Change files and push changes
 
-Open the R file that you created in your project. Now change some of the code.
+Now that you are on your new branch, you can make changes to the files.
 
-You can delete a part of it and instead add something else, like e.g.
+You could for example add a new R file with some data analysis code. Or you could 
+add new code to the R file that you already created in step 4 of the individual workflow.
 
-```{r}
-v1 <- c(1, "a", 2, 3)
-v2 <- c(TRUE, TRUE, 1, FALSE, 0)
-v3 <- c(0, "23", 5, 7)
-v4 <- c(4L, 6L, 23.5345)
-v5 <- c(TRUE, "a", FALSE, "FALSE")
-```
+When you are done making changes, commit and push them (like in step 5 and 6 of the individual workflow).
 
-It's not important that the code makes sense here.
+Now your changes should be available on GitHub in the new branch and you can do a pull request.
 
-Now save the file, commit and push it again (repeat step 5 and make sure that you are not on master/main but on your new branch).
+## Step 3: Create a pull request
 
-## Step 8: Create a pull request
-
-See [here](create_pull_request.qmd) for a guide on pull requests.
+See [here](create_pull_request.qmd) for a guide on how to create a pull requests.
