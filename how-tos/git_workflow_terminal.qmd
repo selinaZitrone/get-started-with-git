@@ -290,7 +290,7 @@ git branch add_vegan_pie
 After the branch is created, you need to switch to it with
 
 ``` sh
-git checkout add_vegan_pie
+git switch add_vegan_pie
 ```
 
 To see which branch you are currently on, run
@@ -364,7 +364,7 @@ to create a gitignore file
 If you want to locally integrate changes you did in a separate branch into the main branch, you first need to switch back to the main branch:
 
 ``` sh
-git checkout main
+git switch main
 ```
 
 Now merge the commits from your branch with
