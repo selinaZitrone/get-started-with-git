@@ -410,7 +410,7 @@ See [here](https://cbea.ms/git-commit/) for more details but some general rules:
 
 :::
 
-# Now you (15 min) {.task-slide}
+# Now you (10 min) {.task-slide}
 
 **Stay in the meeting** for the task.<br>
 **Ask** if you are stuck. <br>
@@ -444,17 +444,16 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
   - Servers might be outside EU (e.g. GitHub)
   - Privacy rules might apply depending on type of data
 
-## Why publish?
+## Advantages of publishing your projects
 
-**Advantages for scientists**
-
-- Visibility and Credit 
+- Visibility and Credit
+- Portfolio of your work
 - Others can build on your work
+- Get feedback
 - Citations
 - Reproducibility
-- Get feedback
 
-# Now you (10 min){.task-slide}
+# Now you (5 min){.task-slide}
 
 > Publish your cook book on GitHub <br>
 > Complete [Task 2 "GitHub"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks)
@@ -474,13 +473,19 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
 
 # Undo things {.inverse}
 
-> `git revert`
+> `git revert`, `git restore`
 
-## Revert changes
+## Restore/Discard uncommitted changes
+
+- You can easily discard uncommitted changes in your working directory
+  - In the terminal: `git restore <file>`
+  - In GUIs: right-click the file and select **Discard changes**
+
+## Revert committed changes
 
 - Use `git revert` to revert specific commits
 - This does not delete the commit, it creates a **new commit that undoes a previous commit**
-  - It's a safe way to undo commited changes
+  - It's a safe way to undo committed changes
 
 . . .
 
@@ -488,7 +493,7 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
 
 # Now you (5 min) {.task-slide}
 
-> Revert a commit from your cook book
+> Undo some changes in your cook book
 
 # Ignore files with `.gitignore` {.inverse}
 

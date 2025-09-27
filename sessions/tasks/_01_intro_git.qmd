@@ -10,7 +10,7 @@ If you are stuck in a task, you can have a look at the [How-To description](../h
 
 # 1 Local repo
 
-## Create your own Git cook book 🧑‍🍳 (15 min)
+## Create your own Git cook book 🧑‍🍳
 
 ### Create a new repository
 
@@ -224,7 +224,7 @@ then click the commit button.
 
 # 2 GitHub
 
-## Publish your project on GitHub (10 min)
+## Publish your project on GitHub
 
 Publish your cook book project on GitHub (**Publish** button on the top right). In the dialogue that opens, chose to **make your project public** (easier for the collaboration session tomorrow).
 
@@ -247,9 +247,9 @@ Some ideas:
   - You can check out this [example repository](https://github.com/selinaZitrone/cookbook-git-training) to see a slightly more advanced README.
 - Add or change recipes
 
-# 3 Revert
+# 3 Undo changes
 
-## Undo changes in your repository (5 min)
+## Revert a commit
 
 If you only have 1 commit in your project, make 1-2 other ones (e.g. add a recipe or change something).
 
@@ -258,6 +258,12 @@ Now, have a brief look at the history of your repository in GitHub Desktop.
 Choose a commit that you want to revert.
 Select the commit and right-click to revert it.
 See how your history has changed.
+
+## Undo uncommitted changes
+
+Make some changes to an existing recipe file, but do not commit them.
+See how GitHub Desktop recognizes these changes.
+Now, right-click on the changed file and select **Discard changes**.
 
 # 4 Ignore files
 
