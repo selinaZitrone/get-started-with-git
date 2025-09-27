@@ -259,11 +259,39 @@
     "text": "Publishing your projects\n\nThere are commercial and self-hosted options for your remote repositories\n\nCommercial: GitHub, GitLab, Bitbucket, …\nSelf-hosted: GitLab (maybe at your institution?)\n\nPlease be aware of your institutional guidelines\n\nServers might be outside EU (e.g. GitHub)\nPrivacy rules might apply depending on type of data"
   },
   {
-    "objectID": "slides/01_intro_git.html#why-publish",
-    "href": "slides/01_intro_git.html#why-publish",
+    "objectID": "slides/01_intro_git.html#advantages-of-publishing-your-projects",
+    "href": "slides/01_intro_git.html#advantages-of-publishing-your-projects",
     "title": "Introduction to version control with Git",
-    "section": "Why publish?",
-    "text": "Why publish?\nAdvantages for scientists\n\nVisibility and Credit\nOthers can build on your work\nCitations\nReproducibility\nGet feedback"
+    "section": "Advantages of publishing your projects",
+    "text": "Advantages of publishing your projects\n\nVisibility and Credit\nPortfolio of your work\nOthers can build on your work\nGet feedback\nCitations\nReproducibility"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow",
+    "title": "Introduction to version control with Git",
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nTomorrow we have teams of 2\nCollaborate on the cook book of your team mate"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-1",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow-1",
+    "title": "Introduction to version control with Git",
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-2",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow-2",
+    "title": "Introduction to version control with Git",
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-3",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow-3",
+    "title": "Introduction to version control with Git",
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository\nAccept the invitation of your team mate to their repository\n\n\nYou will get an Email or you can do it on GitHub"
   },
   {
     "objectID": "slides/01_intro_git.html#summary-of-the-basic-steps",
@@ -273,11 +301,18 @@
     "text": "Summary of the basic steps\n\ngit init: Initialize a git repository\n\nAdds a .git folder to your working directory\n\ngit add: Add files to the staging area\n\nThis marks the files as being part of the next commit\n\ngit commit: Take a snapshot of your current project version\n\nIncludes time stamp, commit message and information on the person who did the commit\n\ngit push: Push new commits to the remote repository\n\nSync your local project version with the remote e.g. on GitHub"
   },
   {
-    "objectID": "slides/01_intro_git.html#revert-changes",
-    "href": "slides/01_intro_git.html#revert-changes",
+    "objectID": "slides/01_intro_git.html#restorediscard-uncommitted-changes",
+    "href": "slides/01_intro_git.html#restorediscard-uncommitted-changes",
     "title": "Introduction to version control with Git",
-    "section": "Revert changes",
-    "text": "Revert changes\n\nUse git revert to revert specific commits\nThis does not delete the commit, it creates a new commit that undoes a previous commit\n\nIt’s a safe way to undo commited changes"
+    "section": "Restore/Discard uncommitted changes",
+    "text": "Restore/Discard uncommitted changes\n\nYou can easily discard uncommitted changes in your working directory\n\nIn the terminal: git restore &lt;file&gt;\nIn GUIs: right-click the file and select Discard changes"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#revert-committed-changes",
+    "href": "slides/01_intro_git.html#revert-committed-changes",
+    "title": "Introduction to version control with Git",
+    "section": "Revert committed changes",
+    "text": "Revert committed changes\n\nUse git revert to revert specific commits\nThis does not delete the commit, it creates a new commit that undoes a previous commit\n\nIt’s a safe way to undo committed changes"
   },
   {
     "objectID": "slides/01_intro_git.html#ignore-files-with-.gitignore-1",
@@ -305,7 +340,7 @@
     "href": "slides/01_intro_git.html#publishing",
     "title": "Introduction to version control with Git",
     "section": "Publishing",
-    "text": "Publishing\nSome essentials that will improve your published repository:\n\nAdd a good README.md file\n\nTell people what your project is about and how to use it\nCheck out the GitHub documentation for formatting options\n\nAdd a LICENSE file\n\nTell others how to use your code\n\nAdd a DOI to your repository (e.g. via Zenodo)\n\n\nIf you are interested, browse some nice GitHub repositories for inspiration (e.g. Computational notebooks guide, Repo to publish code from a manuscript)"
+    "text": "Publishing\nSome essentials that will improve your published repository:\n\nAdd a good README.md file\n\nTell people what your project is about and how to use it\nCheck out the GitHub documentation for formatting options\n\nAdd a LICENSE file\n\nTell others how to use your code\n\nAdd a DOI to your repository (e.g. via Zenodo)\n\n\nIf you are interested, browse some nice GitHub repositories for inspiration (e.g. Computational notebooks guide)"
   },
   {
     "objectID": "slides/01_intro_git.html#checkout-a-previous-commit",
@@ -313,34 +348,6 @@
     "title": "Introduction to version control with Git",
     "section": "Checkout a previous commit",
     "text": "Checkout a previous commit\nTake your work space back in time temporarily with git checkout"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow",
-    "href": "slides/01_intro_git.html#preparation-for-tomorrow",
-    "title": "Introduction to version control with Git",
-    "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nTomorow we have teams of 2\nCollaborate on the cook book of your team mate"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-1",
-    "href": "slides/01_intro_git.html#preparation-for-tomorrow-1",
-    "title": "Introduction to version control with Git",
-    "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-2",
-    "href": "slides/01_intro_git.html#preparation-for-tomorrow-2",
-    "title": "Introduction to version control with Git",
-    "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-3",
-    "href": "slides/01_intro_git.html#preparation-for-tomorrow-3",
-    "title": "Introduction to version control with Git",
-    "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository\nAccept the invitation of your team mate to their repository\n\n\nYou will get an Email or you can do it on GitHub"
   },
   {
     "objectID": "sessions/01_intro_git.html",
@@ -368,21 +375,21 @@
     "href": "sessions/01_intro_git.html#tasks",
     "title": "A Git workflow for individual projects",
     "section": "Tasks",
-    "text": "Tasks\nCreate your own Git cook book 🧑‍🍳.\nAll recipes will be simple text files and changes will be commited to the repository.\nThe goal is to give you a first idea and feeling for the basic Git workflow.\nIf you are stuck in a task, you can have a look at the How-To description of the Git workflow with detailed explanations and Screenshots of all steps.\n\n1 Local repo2 GitHub3 Revert4 Ignore filesExtra\n\n\n\nCreate your own Git cook book 🧑‍🍳 (15 min)\n\nCreate a new repository\nOpen GitHub Desktop and create a new repository (File -&gt; New repository) for your cook book project.\nIn the dialogue box that opens:\n\nGive it the following name: cookBook-yourName (replacing yourName with your name)\n\nThis name is needed for tomorrow when we collaborate\n\nSelect where on your machine you want the cook book to be stored\nCheck the box to initialize with a README file\n\nNow initialize the repository.\n\n\nOpen your project in the explorer\nGo to Repository -&gt; Show in Explorer to open your project in the explorer.\nDo you see the hidden .git folder in there?\nIf you don’t see it you probably have to unhide hidden files.\nIn the Windows explorer, go to View and then check the Hidden items checkbox:\n\nIn the Mac finder, hit Command + Shift + . (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.\n\n\nAdd your favorite recipe\nCreate and open a text file (file ending .txt) in a text editor. Then add a recipe to the file. To speed things up, you can choose one from below and copy paste it into your file.\n\n🥞 Banana pancakes🍜 Ramen Soup🍰 Carrot cake🍛 Chicken curry🍪 Chocolate Chip Cookies🥗 Greek Salad\n\n\nIngredients:\n\n2 ripe bananas\n2 large eggs\n120 g all-purpose flour\n240 ml milk\n1 tsp baking powder\n1 tsp vanilla extract\n1 tbsp sugar\nPinch of salt\nButter or oil for cooking\n\nPreparation:\n\nMash bananas and mix with eggs, milk, and vanilla.\nCombine flour, baking powder, sugar, and salt.\nMix dry ingredients into wet ingredients until smooth.\nCook on a heated pan with butter or oil until golden brown.\n\n\nIngredients:\n\n200 g ramen noodles\n1 liter chicken broth\n2 cloves garlic, minced\n1 tbsp ginger, minced\n2 tbsp soy sauce\n1 tbsp miso paste\n2 large eggs\n100 g mushrooms, sliced\n1 carrot, julienned\n100 g spinach\n2 green onions, sliced\n1 tbsp sesame oil\nSalt and pepper to taste\n\nPreparation:\n\nCook ramen noodles according to package instructions, drain and set aside.\nIn a pot, heat sesame oil and sauté garlic and ginger until fragrant.\nAdd chicken broth, soy sauce, and miso paste, and bring to a simmer.\nAdd mushrooms and carrot, cook until tender.\nIn a separate pot, boil eggs for 7 minutes, then cool, peel, and halve.\nAdd spinach to the broth and cook until wilted.\nDivide noodles into bowls, pour broth and vegetables over them.\nTop with halved eggs and sliced green onions.\nSeason with salt and pepper to taste.\n\n\nIngredients:\n\n240 g all-purpose flour\n200 g grated carrots\n300 g sugar\n240 ml vegetable oil\n4 large eggs\n1 tsp baking powder\n1 tsp baking soda\n1 tsp ground cinnamon\n0.5 tsp ground nutmeg\n0.5 tsp salt\n1 tsp vanilla extract\n\nPreparation:\n\nBeat eggs and sugar, add oil and vanilla.\nMix flour, baking powder, baking soda, cinnamon, nutmeg, and salt.\nCombine wet and dry ingredients, fold in carrots.\nBake at 175°C for 35-40 minutes.\n\n\nIngredients:\n\n450 g chicken breast, cubed\n1 large onion, chopped\n3 cloves garlic, minced\n1 tbsp ginger, minced\n400 ml coconut milk\n400 g diced tomatoes\n2 tbsp curry powder\n1 tsp turmeric\n1 tsp cumin\n1 tsp coriander\nSalt and pepper to taste\n2 tbsp vegetable oil\nFresh cilantro for garnish\n\nPreparation:\n\nSauté onion, garlic, and ginger in oil.\nAdd spices and chicken, cook until browned.\nAdd tomatoes and coconut milk, simmer until chicken is cooked.\nSeason with salt and pepper, garnish with cilantro.\n\n\nIngredients:\n\n250 g all-purpose flour\n150 g sugar\n150 g brown sugar\n225 g butter, softened\n2 large eggs\n1 tsp vanilla extract\n1 tsp baking soda\n0.5 tsp salt\n300 g chocolate chips\n\nPreparation:\n\nPreheat oven to 175°C.\nCream together butter, sugar, and brown sugar.\nAdd eggs and vanilla, mix well.\nCombine flour, baking soda, and salt.\nGradually add dry ingredients to wet ingredients.\nFold in chocolate chips.\nDrop spoonfuls of dough onto a baking sheet.\nBake for 10-12 minutes until golden brown.\n\n\nIngredients:\n\n200 g cherry tomatoes, halved\n1 cucumber, diced\n1 red onion, thinly sliced\n1 green bell pepper, diced\n100 g feta cheese, crumbled\n50 g black olives\n2 tbsp olive oil\n1 tbsp red wine vinegar\n1 tsp dried oregano\nSalt and pepper to taste\n\nPreparation:\n\nCombine tomatoes, cucumber, onion, bell pepper, feta, and olives in a bowl.\nWhisk together olive oil, vinegar, oregano, salt, and pepper.\nPour dressing over salad and toss to combine.\nServe immediately.\n\n\n\n\n\nCommit your changes\nSwitch back to GitHub Desktop and have a look at the interface. Do you see your changes? Now commit your recipe file. Enter a commit message and a description and then click the commit button.\n\n\nFor the fast ones:\n\nAdd other recipes and commit them to your repository\nMake changes to existing recipes and commit them\nAdd and commit some other file formats (e.g. a png picture of your dish, a pdf file, …)\n\nHow do these files look like in GitHub Desktop?\n\n\n\n\n\n\n\nPublish your project on GitHub (10 min)\nPublish your cook book project on GitHub (Publish button on the top right). In the dialogue that opens, chose to make your project public (easier for the collaboration session tomorrow).\n\nCheck out your brand-new GitHub repository\nCheck out how your repository on GitHub looks like. You can find it via Repository -&gt; View on GitHub or by logging into your GitHub account in the browser.\nHave a brief look around in your GitHub repository. Which buttons are there? How do your files look like?\n\n\n\nFor the fast ones\nSwitch back to your local repo and make some more changes. Commit them, push them to GitHub and check out how they look online.\nSome ideas:\n\nWork on the README file and add some information about your cook book project there.\n\nYou can check out this example repository to see a slightly more advanced README.\n\nAdd or change recipes\n\n\n\n\n\nUndo changes in your repository (5 min)\nIf you only have 1 commit in your project, make 1-2 other ones (e.g. add a recipe or change something).\nNow, have a brief look at the history of your repository in GitHub Desktop.\nChoose a commit that you want to revert. Select the commit and right-click to revert it. See how your history has changed.\n\n\n\n\nAdd a .gitignore file\n\n\nIgnore files\nWe only want actual recipe files in our project. All other files should be ignored.\nFind a random file on your computer (e.g. a PDF, an Excel file, …) and copy it into your cook book folder.\nCheck if GitHub Desktop recognized the change to your repository, but do not commit this file.\nInstead, ignore the file with a right click and select Ignore file.\nThis will add the file to the .gitignore file.\nThen check the Changes view of GitHub Desktop. What is different now?\nHave a look at the newly created .gitignore file. You can just commit and push changes to a .gitignore file like with any other file.\n\n\n\n\nCheckout a previous commit\nTo see your cook book at an earlier stage, select the commit you want to jump back to. Then right-click and checkout this commit.\nYou will get a warning that you will create a detached HEAD state. This is ok, so checkout anyways.\nSee how your history changed. GitHub desktop will tell you that you are now in Detached HEAD mode. If you now look at your cook book files, you will see that they correspond to an earlier version.\n\n\n\n\n\n\nNote\n\n\n\nYou cannot work on the project in this state. You can only look at the files.\n\n\nTo come back to the current state, click on the current branch button at the top and select the main branch again"
+    "text": "Tasks\nCreate your own Git cook book 🧑‍🍳.\nAll recipes will be simple text files and changes will be commited to the repository.\nThe goal is to give you a first idea and feeling for the basic Git workflow.\nIf you are stuck in a task, you can have a look at the How-To description of the Git workflow with detailed explanations and Screenshots of all steps.\n\n1 Local repo2 GitHub3 Undo changes4 Ignore filesExtra\n\n\n\nCreate your own Git cook book 🧑‍🍳\n\nCreate a new repository\nOpen GitHub Desktop and create a new repository (File -&gt; New repository) for your cook book project.\nIn the dialogue box that opens:\n\nGive it the following name: cookBook-yourName (replacing yourName with your name)\n\nThis name is needed for tomorrow when we collaborate\n\nSelect where on your machine you want the cook book to be stored\nCheck the box to initialize with a README file\n\nNow initialize the repository.\n\n\nOpen your project in the explorer\nGo to Repository -&gt; Show in Explorer to open your project in the explorer.\nDo you see the hidden .git folder in there?\nIf you don’t see it you probably have to unhide hidden files.\nIn the Windows explorer, go to View and then check the Hidden items checkbox:\n\nIn the Mac finder, hit Command + Shift + . (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.\n\n\nAdd your favorite recipe\nCreate and open a text file (file ending .txt) in a text editor. Then add a recipe to the file. To speed things up, you can choose one from below and copy paste it into your file.\n\n🥞 Banana pancakes🍜 Ramen Soup🍰 Carrot cake🍛 Chicken curry🍪 Chocolate Chip Cookies🥗 Greek Salad\n\n\nIngredients:\n\n2 ripe bananas\n2 large eggs\n120 g all-purpose flour\n240 ml milk\n1 tsp baking powder\n1 tsp vanilla extract\n1 tbsp sugar\nPinch of salt\nButter or oil for cooking\n\nPreparation:\n\nMash bananas and mix with eggs, milk, and vanilla.\nCombine flour, baking powder, sugar, and salt.\nMix dry ingredients into wet ingredients until smooth.\nCook on a heated pan with butter or oil until golden brown.\n\n\nIngredients:\n\n200 g ramen noodles\n1 liter chicken broth\n2 cloves garlic, minced\n1 tbsp ginger, minced\n2 tbsp soy sauce\n1 tbsp miso paste\n2 large eggs\n100 g mushrooms, sliced\n1 carrot, julienned\n100 g spinach\n2 green onions, sliced\n1 tbsp sesame oil\nSalt and pepper to taste\n\nPreparation:\n\nCook ramen noodles according to package instructions, drain and set aside.\nIn a pot, heat sesame oil and sauté garlic and ginger until fragrant.\nAdd chicken broth, soy sauce, and miso paste, and bring to a simmer.\nAdd mushrooms and carrot, cook until tender.\nIn a separate pot, boil eggs for 7 minutes, then cool, peel, and halve.\nAdd spinach to the broth and cook until wilted.\nDivide noodles into bowls, pour broth and vegetables over them.\nTop with halved eggs and sliced green onions.\nSeason with salt and pepper to taste.\n\n\nIngredients:\n\n240 g all-purpose flour\n200 g grated carrots\n300 g sugar\n240 ml vegetable oil\n4 large eggs\n1 tsp baking powder\n1 tsp baking soda\n1 tsp ground cinnamon\n0.5 tsp ground nutmeg\n0.5 tsp salt\n1 tsp vanilla extract\n\nPreparation:\n\nBeat eggs and sugar, add oil and vanilla.\nMix flour, baking powder, baking soda, cinnamon, nutmeg, and salt.\nCombine wet and dry ingredients, fold in carrots.\nBake at 175°C for 35-40 minutes.\n\n\nIngredients:\n\n450 g chicken breast, cubed\n1 large onion, chopped\n3 cloves garlic, minced\n1 tbsp ginger, minced\n400 ml coconut milk\n400 g diced tomatoes\n2 tbsp curry powder\n1 tsp turmeric\n1 tsp cumin\n1 tsp coriander\nSalt and pepper to taste\n2 tbsp vegetable oil\nFresh cilantro for garnish\n\nPreparation:\n\nSauté onion, garlic, and ginger in oil.\nAdd spices and chicken, cook until browned.\nAdd tomatoes and coconut milk, simmer until chicken is cooked.\nSeason with salt and pepper, garnish with cilantro.\n\n\nIngredients:\n\n250 g all-purpose flour\n150 g sugar\n150 g brown sugar\n225 g butter, softened\n2 large eggs\n1 tsp vanilla extract\n1 tsp baking soda\n0.5 tsp salt\n300 g chocolate chips\n\nPreparation:\n\nPreheat oven to 175°C.\nCream together butter, sugar, and brown sugar.\nAdd eggs and vanilla, mix well.\nCombine flour, baking soda, and salt.\nGradually add dry ingredients to wet ingredients.\nFold in chocolate chips.\nDrop spoonfuls of dough onto a baking sheet.\nBake for 10-12 minutes until golden brown.\n\n\nIngredients:\n\n200 g cherry tomatoes, halved\n1 cucumber, diced\n1 red onion, thinly sliced\n1 green bell pepper, diced\n100 g feta cheese, crumbled\n50 g black olives\n2 tbsp olive oil\n1 tbsp red wine vinegar\n1 tsp dried oregano\nSalt and pepper to taste\n\nPreparation:\n\nCombine tomatoes, cucumber, onion, bell pepper, feta, and olives in a bowl.\nWhisk together olive oil, vinegar, oregano, salt, and pepper.\nPour dressing over salad and toss to combine.\nServe immediately.\n\n\n\n\n\nCommit your changes\nSwitch back to GitHub Desktop and have a look at the interface. Do you see your changes? Now commit your recipe file. Enter a commit message and a description and then click the commit button.\n\n\nFor the fast ones:\n\nAdd other recipes and commit them to your repository\nMake changes to existing recipes and commit them\nAdd and commit some other file formats (e.g. a png picture of your dish, a pdf file, …)\n\nHow do these files look like in GitHub Desktop?\n\n\n\n\n\n\n\nPublish your project on GitHub\nPublish your cook book project on GitHub (Publish button on the top right). In the dialogue that opens, chose to make your project public (easier for the collaboration session tomorrow).\n\nCheck out your brand-new GitHub repository\nCheck out how your repository on GitHub looks like. You can find it via Repository -&gt; View on GitHub or by logging into your GitHub account in the browser.\nHave a brief look around in your GitHub repository. Which buttons are there? How do your files look like?\n\n\n\nFor the fast ones\nSwitch back to your local repo and make some more changes. Commit them, push them to GitHub and check out how they look online.\nSome ideas:\n\nWork on the README file and add some information about your cook book project there.\n\nYou can check out this example repository to see a slightly more advanced README.\n\nAdd or change recipes\n\n\n\n\n\nRevert a commit\nIf you only have 1 commit in your project, make 1-2 other ones (e.g. add a recipe or change something).\nNow, have a brief look at the history of your repository in GitHub Desktop.\nChoose a commit that you want to revert. Select the commit and right-click to revert it. See how your history has changed.\n\n\nUndo uncommitted changes\nMake some changes to an existing recipe file, but do not commit them. See how GitHub Desktop recognizes these changes. Now, right-click on the changed file and select Discard changes.\n\n\n\n\nAdd a .gitignore file\n\n\nIgnore files\nWe only want actual recipe files in our project. All other files should be ignored.\nFind a random file on your computer (e.g. a PDF, an Excel file, …) and copy it into your cook book folder.\nCheck if GitHub Desktop recognized the change to your repository, but do not commit this file.\nInstead, ignore the file with a right click and select Ignore file.\nThis will add the file to the .gitignore file.\nThen check the Changes view of GitHub Desktop. What is different now?\nHave a look at the newly created .gitignore file. You can just commit and push changes to a .gitignore file like with any other file.\n\n\n\n\nCheckout a previous commit\nTo see your cook book at an earlier stage, select the commit you want to jump back to. Then right-click and checkout this commit.\nYou will get a warning that you will create a detached HEAD state. This is ok, so checkout anyways.\nSee how your history changed. GitHub desktop will tell you that you are now in Detached HEAD mode. If you now look at your cook book files, you will see that they correspond to an earlier version.\n\n\n\n\n\n\nNote\n\n\n\nYou cannot work on the project in this state. You can only look at the files.\n\n\nTo come back to the current state, click on the current branch button at the top and select the main branch again"
   },
   {
-    "objectID": "sessions/01_intro_git.html#create-your-own-git-cook-book-15-min",
-    "href": "sessions/01_intro_git.html#create-your-own-git-cook-book-15-min",
+    "objectID": "sessions/01_intro_git.html#create-your-own-git-cook-book",
+    "href": "sessions/01_intro_git.html#create-your-own-git-cook-book",
     "title": "A Git workflow for individual projects",
-    "section": "Create your own Git cook book 🧑‍🍳 (15 min)",
-    "text": "Create your own Git cook book 🧑‍🍳 (15 min)\n\nCreate a new repository\nOpen GitHub Desktop and create a new repository (File -&gt; New repository) for your cook book project.\nIn the dialogue box that opens:\n\nGive it the following name: cookBook-yourName (replacing yourName with your name)\n\nThis name is needed for tomorrow when we collaborate\n\nSelect where on your machine you want the cook book to be stored\nCheck the box to initialize with a README file\n\nNow initialize the repository.\n\n\nOpen your project in the explorer\nGo to Repository -&gt; Show in Explorer to open your project in the explorer.\nDo you see the hidden .git folder in there?\nIf you don’t see it you probably have to unhide hidden files.\nIn the Windows explorer, go to View and then check the Hidden items checkbox:\n\nIn the Mac finder, hit Command + Shift + . (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.\n\n\nAdd your favorite recipe\nCreate and open a text file (file ending .txt) in a text editor. Then add a recipe to the file. To speed things up, you can choose one from below and copy paste it into your file.\n\n🥞 Banana pancakes🍜 Ramen Soup🍰 Carrot cake🍛 Chicken curry🍪 Chocolate Chip Cookies🥗 Greek Salad\n\n\nIngredients:\n\n2 ripe bananas\n2 large eggs\n120 g all-purpose flour\n240 ml milk\n1 tsp baking powder\n1 tsp vanilla extract\n1 tbsp sugar\nPinch of salt\nButter or oil for cooking\n\nPreparation:\n\nMash bananas and mix with eggs, milk, and vanilla.\nCombine flour, baking powder, sugar, and salt.\nMix dry ingredients into wet ingredients until smooth.\nCook on a heated pan with butter or oil until golden brown.\n\n\nIngredients:\n\n200 g ramen noodles\n1 liter chicken broth\n2 cloves garlic, minced\n1 tbsp ginger, minced\n2 tbsp soy sauce\n1 tbsp miso paste\n2 large eggs\n100 g mushrooms, sliced\n1 carrot, julienned\n100 g spinach\n2 green onions, sliced\n1 tbsp sesame oil\nSalt and pepper to taste\n\nPreparation:\n\nCook ramen noodles according to package instructions, drain and set aside.\nIn a pot, heat sesame oil and sauté garlic and ginger until fragrant.\nAdd chicken broth, soy sauce, and miso paste, and bring to a simmer.\nAdd mushrooms and carrot, cook until tender.\nIn a separate pot, boil eggs for 7 minutes, then cool, peel, and halve.\nAdd spinach to the broth and cook until wilted.\nDivide noodles into bowls, pour broth and vegetables over them.\nTop with halved eggs and sliced green onions.\nSeason with salt and pepper to taste.\n\n\nIngredients:\n\n240 g all-purpose flour\n200 g grated carrots\n300 g sugar\n240 ml vegetable oil\n4 large eggs\n1 tsp baking powder\n1 tsp baking soda\n1 tsp ground cinnamon\n0.5 tsp ground nutmeg\n0.5 tsp salt\n1 tsp vanilla extract\n\nPreparation:\n\nBeat eggs and sugar, add oil and vanilla.\nMix flour, baking powder, baking soda, cinnamon, nutmeg, and salt.\nCombine wet and dry ingredients, fold in carrots.\nBake at 175°C for 35-40 minutes.\n\n\nIngredients:\n\n450 g chicken breast, cubed\n1 large onion, chopped\n3 cloves garlic, minced\n1 tbsp ginger, minced\n400 ml coconut milk\n400 g diced tomatoes\n2 tbsp curry powder\n1 tsp turmeric\n1 tsp cumin\n1 tsp coriander\nSalt and pepper to taste\n2 tbsp vegetable oil\nFresh cilantro for garnish\n\nPreparation:\n\nSauté onion, garlic, and ginger in oil.\nAdd spices and chicken, cook until browned.\nAdd tomatoes and coconut milk, simmer until chicken is cooked.\nSeason with salt and pepper, garnish with cilantro.\n\n\nIngredients:\n\n250 g all-purpose flour\n150 g sugar\n150 g brown sugar\n225 g butter, softened\n2 large eggs\n1 tsp vanilla extract\n1 tsp baking soda\n0.5 tsp salt\n300 g chocolate chips\n\nPreparation:\n\nPreheat oven to 175°C.\nCream together butter, sugar, and brown sugar.\nAdd eggs and vanilla, mix well.\nCombine flour, baking soda, and salt.\nGradually add dry ingredients to wet ingredients.\nFold in chocolate chips.\nDrop spoonfuls of dough onto a baking sheet.\nBake for 10-12 minutes until golden brown.\n\n\nIngredients:\n\n200 g cherry tomatoes, halved\n1 cucumber, diced\n1 red onion, thinly sliced\n1 green bell pepper, diced\n100 g feta cheese, crumbled\n50 g black olives\n2 tbsp olive oil\n1 tbsp red wine vinegar\n1 tsp dried oregano\nSalt and pepper to taste\n\nPreparation:\n\nCombine tomatoes, cucumber, onion, bell pepper, feta, and olives in a bowl.\nWhisk together olive oil, vinegar, oregano, salt, and pepper.\nPour dressing over salad and toss to combine.\nServe immediately.\n\n\n\n\n\nCommit your changes\nSwitch back to GitHub Desktop and have a look at the interface. Do you see your changes? Now commit your recipe file. Enter a commit message and a description and then click the commit button.\n\n\nFor the fast ones:\n\nAdd other recipes and commit them to your repository\nMake changes to existing recipes and commit them\nAdd and commit some other file formats (e.g. a png picture of your dish, a pdf file, …)\n\nHow do these files look like in GitHub Desktop?"
+    "section": "Create your own Git cook book 🧑‍🍳",
+    "text": "Create your own Git cook book 🧑‍🍳\n\nCreate a new repository\nOpen GitHub Desktop and create a new repository (File -&gt; New repository) for your cook book project.\nIn the dialogue box that opens:\n\nGive it the following name: cookBook-yourName (replacing yourName with your name)\n\nThis name is needed for tomorrow when we collaborate\n\nSelect where on your machine you want the cook book to be stored\nCheck the box to initialize with a README file\n\nNow initialize the repository.\n\n\nOpen your project in the explorer\nGo to Repository -&gt; Show in Explorer to open your project in the explorer.\nDo you see the hidden .git folder in there?\nIf you don’t see it you probably have to unhide hidden files.\nIn the Windows explorer, go to View and then check the Hidden items checkbox:\n\nIn the Mac finder, hit Command + Shift + . (the period key) at the same time. This is the keyboard shortcut to hide and unhide files and folders.\n\n\nAdd your favorite recipe\nCreate and open a text file (file ending .txt) in a text editor. Then add a recipe to the file. To speed things up, you can choose one from below and copy paste it into your file.\n\n🥞 Banana pancakes🍜 Ramen Soup🍰 Carrot cake🍛 Chicken curry🍪 Chocolate Chip Cookies🥗 Greek Salad\n\n\nIngredients:\n\n2 ripe bananas\n2 large eggs\n120 g all-purpose flour\n240 ml milk\n1 tsp baking powder\n1 tsp vanilla extract\n1 tbsp sugar\nPinch of salt\nButter or oil for cooking\n\nPreparation:\n\nMash bananas and mix with eggs, milk, and vanilla.\nCombine flour, baking powder, sugar, and salt.\nMix dry ingredients into wet ingredients until smooth.\nCook on a heated pan with butter or oil until golden brown.\n\n\nIngredients:\n\n200 g ramen noodles\n1 liter chicken broth\n2 cloves garlic, minced\n1 tbsp ginger, minced\n2 tbsp soy sauce\n1 tbsp miso paste\n2 large eggs\n100 g mushrooms, sliced\n1 carrot, julienned\n100 g spinach\n2 green onions, sliced\n1 tbsp sesame oil\nSalt and pepper to taste\n\nPreparation:\n\nCook ramen noodles according to package instructions, drain and set aside.\nIn a pot, heat sesame oil and sauté garlic and ginger until fragrant.\nAdd chicken broth, soy sauce, and miso paste, and bring to a simmer.\nAdd mushrooms and carrot, cook until tender.\nIn a separate pot, boil eggs for 7 minutes, then cool, peel, and halve.\nAdd spinach to the broth and cook until wilted.\nDivide noodles into bowls, pour broth and vegetables over them.\nTop with halved eggs and sliced green onions.\nSeason with salt and pepper to taste.\n\n\nIngredients:\n\n240 g all-purpose flour\n200 g grated carrots\n300 g sugar\n240 ml vegetable oil\n4 large eggs\n1 tsp baking powder\n1 tsp baking soda\n1 tsp ground cinnamon\n0.5 tsp ground nutmeg\n0.5 tsp salt\n1 tsp vanilla extract\n\nPreparation:\n\nBeat eggs and sugar, add oil and vanilla.\nMix flour, baking powder, baking soda, cinnamon, nutmeg, and salt.\nCombine wet and dry ingredients, fold in carrots.\nBake at 175°C for 35-40 minutes.\n\n\nIngredients:\n\n450 g chicken breast, cubed\n1 large onion, chopped\n3 cloves garlic, minced\n1 tbsp ginger, minced\n400 ml coconut milk\n400 g diced tomatoes\n2 tbsp curry powder\n1 tsp turmeric\n1 tsp cumin\n1 tsp coriander\nSalt and pepper to taste\n2 tbsp vegetable oil\nFresh cilantro for garnish\n\nPreparation:\n\nSauté onion, garlic, and ginger in oil.\nAdd spices and chicken, cook until browned.\nAdd tomatoes and coconut milk, simmer until chicken is cooked.\nSeason with salt and pepper, garnish with cilantro.\n\n\nIngredients:\n\n250 g all-purpose flour\n150 g sugar\n150 g brown sugar\n225 g butter, softened\n2 large eggs\n1 tsp vanilla extract\n1 tsp baking soda\n0.5 tsp salt\n300 g chocolate chips\n\nPreparation:\n\nPreheat oven to 175°C.\nCream together butter, sugar, and brown sugar.\nAdd eggs and vanilla, mix well.\nCombine flour, baking soda, and salt.\nGradually add dry ingredients to wet ingredients.\nFold in chocolate chips.\nDrop spoonfuls of dough onto a baking sheet.\nBake for 10-12 minutes until golden brown.\n\n\nIngredients:\n\n200 g cherry tomatoes, halved\n1 cucumber, diced\n1 red onion, thinly sliced\n1 green bell pepper, diced\n100 g feta cheese, crumbled\n50 g black olives\n2 tbsp olive oil\n1 tbsp red wine vinegar\n1 tsp dried oregano\nSalt and pepper to taste\n\nPreparation:\n\nCombine tomatoes, cucumber, onion, bell pepper, feta, and olives in a bowl.\nWhisk together olive oil, vinegar, oregano, salt, and pepper.\nPour dressing over salad and toss to combine.\nServe immediately.\n\n\n\n\n\nCommit your changes\nSwitch back to GitHub Desktop and have a look at the interface. Do you see your changes? Now commit your recipe file. Enter a commit message and a description and then click the commit button.\n\n\nFor the fast ones:\n\nAdd other recipes and commit them to your repository\nMake changes to existing recipes and commit them\nAdd and commit some other file formats (e.g. a png picture of your dish, a pdf file, …)\n\nHow do these files look like in GitHub Desktop?"
   },
   {
-    "objectID": "sessions/01_intro_git.html#publish-your-project-on-github-10-min",
-    "href": "sessions/01_intro_git.html#publish-your-project-on-github-10-min",
+    "objectID": "sessions/01_intro_git.html#publish-your-project-on-github",
+    "href": "sessions/01_intro_git.html#publish-your-project-on-github",
     "title": "A Git workflow for individual projects",
-    "section": "Publish your project on GitHub (10 min)",
-    "text": "Publish your project on GitHub (10 min)\nPublish your cook book project on GitHub (Publish button on the top right). In the dialogue that opens, chose to make your project public (easier for the collaboration session tomorrow).\n\nCheck out your brand-new GitHub repository\nCheck out how your repository on GitHub looks like. You can find it via Repository -&gt; View on GitHub or by logging into your GitHub account in the browser.\nHave a brief look around in your GitHub repository. Which buttons are there? How do your files look like?"
+    "section": "Publish your project on GitHub",
+    "text": "Publish your project on GitHub\nPublish your cook book project on GitHub (Publish button on the top right). In the dialogue that opens, chose to make your project public (easier for the collaboration session tomorrow).\n\nCheck out your brand-new GitHub repository\nCheck out how your repository on GitHub looks like. You can find it via Repository -&gt; View on GitHub or by logging into your GitHub account in the browser.\nHave a brief look around in your GitHub repository. Which buttons are there? How do your files look like?"
   },
   {
     "objectID": "sessions/01_intro_git.html#for-the-fast-ones-1",
@@ -392,11 +399,18 @@
     "text": "For the fast ones\nSwitch back to your local repo and make some more changes. Commit them, push them to GitHub and check out how they look online.\nSome ideas:\n\nWork on the README file and add some information about your cook book project there.\n\nYou can check out this example repository to see a slightly more advanced README.\n\nAdd or change recipes"
   },
   {
-    "objectID": "sessions/01_intro_git.html#undo-changes-in-your-repository-5-min",
-    "href": "sessions/01_intro_git.html#undo-changes-in-your-repository-5-min",
+    "objectID": "sessions/01_intro_git.html#revert-a-commit",
+    "href": "sessions/01_intro_git.html#revert-a-commit",
     "title": "A Git workflow for individual projects",
-    "section": "Undo changes in your repository (5 min)",
-    "text": "Undo changes in your repository (5 min)\nIf you only have 1 commit in your project, make 1-2 other ones (e.g. add a recipe or change something).\nNow, have a brief look at the history of your repository in GitHub Desktop.\nChoose a commit that you want to revert. Select the commit and right-click to revert it. See how your history has changed."
+    "section": "Revert a commit",
+    "text": "Revert a commit\nIf you only have 1 commit in your project, make 1-2 other ones (e.g. add a recipe or change something).\nNow, have a brief look at the history of your repository in GitHub Desktop.\nChoose a commit that you want to revert. Select the commit and right-click to revert it. See how your history has changed."
+  },
+  {
+    "objectID": "sessions/01_intro_git.html#undo-uncommitted-changes",
+    "href": "sessions/01_intro_git.html#undo-uncommitted-changes",
+    "title": "A Git workflow for individual projects",
+    "section": "Undo uncommitted changes",
+    "text": "Undo uncommitted changes\nMake some changes to an existing recipe file, but do not commit them. See how GitHub Desktop recognizes these changes. Now, right-click on the changed file and select Discard changes."
   },
   {
     "objectID": "sessions/01_intro_git.html#ignore-files-1",
@@ -420,74 +434,193 @@
     "text": "For whom is this course?\nThe target audience of this workshop are beginners without prior experience with Git and GitHub. However, the workshop might also be interesting if you already use Git for your personal projects but want to learn more about the underlying concepts and collaboration using Git and GitHub."
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html",
-    "href": "how-tos/git_workflow_usethis.html",
-    "title": "A Git workflow with RStudio, R and usethis",
+    "objectID": "how-tos/git_workflow_vscode.html",
+    "href": "how-tos/git_workflow_vscode.html",
+    "title": "A Git workflow with VS Code",
     "section": "",
-    "text": "For this workflow, you need\n\nGit installed\nRStudio and R installed\nThe R package usethis installed\n\nThe usethis is a very cool workflow package that has a lot of functionality including Git workflows. Install it in R with:\n\ninstall.packages(\"usethis\")\n\n\n\nYou can manage access to GitHub with a personal access token (PAT) instead of using your password. Check if you already have a personal access token for GitHub.\n\nusethis::gh_token_help()\n\nThis will tell you if you already have a token and if not how you can create one. To create a new token, call the function:\n\nusethis::create_github_token()\n\nThis will open GitHub and ask you to sign in.\nNext, you are asked to create a new personal access token.\nOn top enter a note that reminds you what this token is for (e.g. Something like “RStudio/R on HP laptop”).\nSet an expiration date of your choice (the shorter the more secure, but you have to update more often - GitHub will send you a reminder for this).\nYou can also select the scopes for your PAT. For general use case, the default selected scopes are enough. Scroll down and click on Generate token.\nCopy the token to the clipboard.\n\n\n\n\n\n\nWarning\n\n\n\nYou will not be able to read the token again after you closed this window. So leave the window open until you successfully set up your connection.\n\n\nNow register the token with git using the function:\n\ngitcreds::gitcreds_set()\n\nYou are now prompted to paste your token into the R console.\nNow your PAT should be added to the credentials. You can check it again with\n\nusethis::gh_token_help()\n\n\n\nIf you want to load the usethis package automatically when starting R, you can add it to your .Rprofile. This way, you have all the usethis functionality available without having to load the package first.\n\n\n\n\n\n\nCareful when adding packages to .Rprofile\n\n\n\nLoading packages automatically should only be done for packages that are not used in your R scripts. Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else.\nAdding utility packages to the .Rprofile can however be convenient.\nRead more about this topic here.\n\n\nYou can open your .Rprofile file with\n\nusethis::edit_r_profile()\n\nThen you can add the following line, save the file and close it:\n\n# supress messages just means that messages are not printed when loading the package\nif (interactive()) {\n  suppressMessages(library(usethis))\n}\noptions(\n  usethis.protocol = \"https\" # or \"ssh\" if you set up ssh\n)\n\nWith this, usethis will be loaded every time you open RStudio and you already registered the default protocol that you want to use with Git (This is only relevant for the Git things you do with usethis)."
+    "text": "In this guide, we will work on a cook book project using Git and VS Code. We will start by going through all the steps for an individual project (you’re working on the cook book alone) and then we will see how to collaborate with others."
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#setup-pat-to-use-https-protocol-with-github",
-    "href": "how-tos/git_workflow_usethis.html#setup-pat-to-use-https-protocol-with-github",
-    "title": "A Git workflow with RStudio, R and usethis",
+    "objectID": "how-tos/git_workflow_vscode.html#step-1-initialize-a-new-repository",
+    "href": "how-tos/git_workflow_vscode.html#step-1-initialize-a-new-repository",
+    "title": "A Git workflow with VS Code",
+    "section": "Step 1: Initialize a new repository",
+    "text": "Step 1: Initialize a new repository\nFirst, open your project folder (in my case cookBook) in VS Code.\nOpen VS Code, then go to File → Open Folder… and select your folder. In my case it’s a folder named cookBook that already has one recipe pie.txt inside.\n\nNow open the Source Control view (left sidebar, the branch icon, 3rd from the top). If your folder is not yet a Git repository, VS Code suggests initializing one.\nClick Initialize Repository.\n\nAfter initialization, VS Code creates a local Git repository in that folder."
+  },
+  {
+    "objectID": "how-tos/git_workflow_vscode.html#step-2-add-a-recipe",
+    "href": "how-tos/git_workflow_vscode.html#step-2-add-a-recipe",
+    "title": "A Git workflow with VS Code",
+    "section": "Step 2: Add a recipe",
+    "text": "Step 2: Add a recipe\nIf your project folder is empty, create a new file for your first recipe."
+  },
+  {
+    "objectID": "how-tos/git_workflow_vscode.html#step-3-stage-changes-and-commit",
+    "href": "how-tos/git_workflow_vscode.html#step-3-stage-changes-and-commit",
+    "title": "A Git workflow with VS Code",
+    "section": "Step 3: Stage changes and commit",
+    "text": "Step 3: Stage changes and commit\nIn Source Control, stage the file by clicking the + next to pie.txt. If you want to stage multiple files at once, you can also click the + next to “Changes” to Stage All Changes:\n\nEnter a commit message in the box on top. Optionally, you can also add a more detailed description after a blank line:\n\nPress Commit (or hit Ctrl/Cmd + Enter).\n\nExplore the changes\nTo explore the changes, make 2 or 3 more commits (e.g. add other files or change existing ones).\nIf you make changes to an existing file and you want to see what changed before staging/committing, you can:\nOpen the Source Control view to see your changes. Clicking a file shows a side-by-side diff.\n\nThis can be very useful to check what you changed before formulating your commit message.\n\n\n\n\n\n\nGood commit messages\n\n\n\nThere are guidelines on how to write good commit messages. This becomes especially important when collaborating. See https://cbea.ms/git-commit/ for more info.\n\n\n\n\nLook at the commit history\nAfter doing several commits, you can explore the commit. You can find it below the source view as a timeline of commits. You can click on each commit to explore further which files changed and what the changes were."
+  },
+  {
+    "objectID": "how-tos/git_workflow_vscode.html#step-4-share-your-project-on-github",
+    "href": "how-tos/git_workflow_vscode.html#step-4-share-your-project-on-github",
+    "title": "A Git workflow with VS Code",
+    "section": "Step 4: Share your project on GitHub",
+    "text": "Step 4: Share your project on GitHub\nNow we want to share our cook book with the world (or with collaborators).\nIn Source Control, click Publish Branch:\n\nIf you do this for the first time, VS Code will ask you to sign in to GitHub. Just follow the prompts until you’re signed in and back in VS Code.\nIn the tool bar on top, choose public or private in the dialog.\n\nVS Code will create a new repository on GitHub, add it as the origin remote, and push your main branch."
+  },
+  {
+    "objectID": "how-tos/git_workflow_vscode.html#step-5-push-new-changes-to-github",
+    "href": "how-tos/git_workflow_vscode.html#step-5-push-new-changes-to-github",
+    "title": "A Git workflow with VS Code",
+    "section": "Step 5: Push new changes to GitHub",
+    "text": "Step 5: Push new changes to GitHub\nAfter future commits, you can push them by clicking the Synch Changes button. The number next to the arrow indicates how many commits you are about to push.:\n\n\n\n\n\n\n\nNote\n\n\n\nNow VS Code will be connected to GitHub. You can check if you are logged in by clicking the Accounts icon in the Activity Bar (bottom left). If you are signed in, you will see your GitHub account there like this:\n\nOpen the Command Palette (Ctrl/Cmd + Shift + P) and type “Git” to see all the different Git and GitHub options that you have now."
+  },
+  {
+    "objectID": "how-tos/git_workflow_vscode.html#step-1-create-a-new-branch",
+    "href": "how-tos/git_workflow_vscode.html#step-1-create-a-new-branch",
+    "title": "A Git workflow with VS Code",
+    "section": "Step 1: Create a new branch",
+    "text": "Step 1: Create a new branch\nLook in the status bar (bottom left) to see which branch you are on (probably main) and click on it. This will open a pop up where you can Create new branch:\n\nEnter a name for your new branch (no white space in name allowed, e.g. add_vegan_pie) and hit Enter. This will create and switch the branch for you. You can see that you are now on the new branch in the status bar and in your Git Graph view:"
+  },
+  {
+    "objectID": "how-tos/git_workflow_vscode.html#step-2-change-files-and-push-changes",
+    "href": "how-tos/git_workflow_vscode.html#step-2-change-files-and-push-changes",
+    "title": "A Git workflow with VS Code",
+    "section": "Step 2: Change files and push changes",
+    "text": "Step 2: Change files and push changes\nNow that you are on your new branch, you can make changes to the files. Add a new recipe vegan_pie.txt for example.\nWhen you are done making changes, stage and commit them (like in Step 3 of the individual workflow).\nYou can now see that you have commits on your feature branch that are not on main yet. This is indicated by the colors in the graph view and the branch names next to the commits:\n\nYou can now click Publish Branch to push your new changes to GitHub where you can do a pull request to merge your changes into main."
+  },
+  {
+    "objectID": "how-tos/git_workflow_vscode.html#step-3-create-a-pull-request",
+    "href": "how-tos/git_workflow_vscode.html#step-3-create-a-pull-request",
+    "title": "A Git workflow with VS Code",
+    "section": "Step 3: Create a pull request",
+    "text": "Step 3: Create a pull request\nSee here for a guide on how to create a pull requests."
+  },
+  {
+    "objectID": "how-tos/git_workflow_terminal.html",
+    "href": "how-tos/git_workflow_terminal.html",
+    "title": "A Git workflow with the terminal",
     "section": "",
-    "text": "You can manage access to GitHub with a personal access token (PAT) instead of using your password. Check if you already have a personal access token for GitHub.\n\nusethis::gh_token_help()\n\nThis will tell you if you already have a token and if not how you can create one. To create a new token, call the function:\n\nusethis::create_github_token()\n\nThis will open GitHub and ask you to sign in.\nNext, you are asked to create a new personal access token.\nOn top enter a note that reminds you what this token is for (e.g. Something like “RStudio/R on HP laptop”).\nSet an expiration date of your choice (the shorter the more secure, but you have to update more often - GitHub will send you a reminder for this).\nYou can also select the scopes for your PAT. For general use case, the default selected scopes are enough. Scroll down and click on Generate token.\nCopy the token to the clipboard.\n\n\n\n\n\n\nWarning\n\n\n\nYou will not be able to read the token again after you closed this window. So leave the window open until you successfully set up your connection.\n\n\nNow register the token with git using the function:\n\ngitcreds::gitcreds_set()\n\nYou are now prompted to paste your token into the R console.\nNow your PAT should be added to the credentials. You can check it again with\n\nusethis::gh_token_help()\n\n\n\nIf you want to load the usethis package automatically when starting R, you can add it to your .Rprofile. This way, you have all the usethis functionality available without having to load the package first.\n\n\n\n\n\n\nCareful when adding packages to .Rprofile\n\n\n\nLoading packages automatically should only be done for packages that are not used in your R scripts. Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else.\nAdding utility packages to the .Rprofile can however be convenient.\nRead more about this topic here.\n\n\nYou can open your .Rprofile file with\n\nusethis::edit_r_profile()\n\nThen you can add the following line, save the file and close it:\n\n# supress messages just means that messages are not printed when loading the package\nif (interactive()) {\n  suppressMessages(library(usethis))\n}\noptions(\n  usethis.protocol = \"https\" # or \"ssh\" if you set up ssh\n)\n\nWith this, usethis will be loaded every time you open RStudio and you already registered the default protocol that you want to use with Git (This is only relevant for the Git things you do with usethis)."
+    "text": "In this guide, we will work on a cook book project using Git and the terminal. We will start going through all the steps for an individual project (you’re working on the cook book alone) and then we will see how to collaborate with others."
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#step-1-create-new-r-project",
-    "href": "how-tos/git_workflow_usethis.html#step-1-create-new-r-project",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "Step 1: Create new R project",
-    "text": "Step 1: Create new R project\nTo create a new R project for this exercise call the function:\n\nusethis::create_project(path = \"path/to/project/project_name\")\n\nThis will create a folder with project_name and set up and empty RStudio project. The project will then immediately open in a new RStudio instance. You can see that by default, the project already has some files inside (among them a .gitignore file)."
+    "objectID": "how-tos/git_workflow_terminal.html#a-word-on-authentication",
+    "href": "how-tos/git_workflow_terminal.html#a-word-on-authentication",
+    "title": "A Git workflow with the terminal",
+    "section": "A word on authentication",
+    "text": "A word on authentication\nYou might ask yourself: why do I need GitHub Desktop if we are using the terminal? The reason is that GitHub Desktop makes it much easier to set up the connection between your local machine and GitHub. Authentication is handled for you using OAuth. During this process, GitHub Desktop securely stores your credentials in your operating system’s native credential store (Windows: Windows Credential Manager, macOS: Keychain Access, Linux: libsecret/gnome-keyring, depending on the distro).\nBecause Git itself can read from these credential stores, other Git clients (e.g. command line, RStudio, VS Code) can also use the same authentication. This works as long as you are using HTTPS URLs for your repositories.\nIf you prefer to use SSH for authentication (for automation, servers, or personal preference), you need to set up SSH keys and add them to GitHub. See here for a guide on how to do this."
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#step-2-initialize-a-git-repository",
-    "href": "how-tos/git_workflow_usethis.html#step-2-initialize-a-git-repository",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "Step 2: Initialize a git repository",
-    "text": "Step 2: Initialize a git repository\nWith the project opened call the function\n\nusethis::use_git()\n\nYou are now informed which changes will be committed. This is just the first commit that will include all the files that are in created by default and that are not in the .gitignore.\nConfirm that you want to commit these files by selecting the correct number and press enter. Then agree to the first commit with the commit message “Initial commit”.\nRStudio will be restarted and a the git GUI client will be added.\nCan you find the Git Tab in the top right pane?"
+    "objectID": "how-tos/git_workflow_terminal.html#configure-git",
+    "href": "how-tos/git_workflow_terminal.html#configure-git",
+    "title": "A Git workflow with the terminal",
+    "section": "Configure Git",
+    "text": "Configure Git\nGit needs to know who you are in order to sign your commits correctly. If you already set up GitHub Desktop, you might already have the minimal Git configuration ready.\nThe Git configuration can be set locally (just for the current repo) or globally (default for all repos without local configuration). Here, we just set a global configuration for all repositories.\nTo check if you already have a configuration run\ngit config --global -l\nIf you don’t see a user.name or user.email or get a message, that the .gitconfig file does not exist, run the following to configure:\ngit config --global user.name \"&lt;your_user_name&gt;\"\ngit config --global user.email \"&lt;your_user_email&gt;\"\nUse the user name and email that you also use for your GitHub account."
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#step-3-create-a-remote-repository-on-github",
-    "href": "how-tos/git_workflow_usethis.html#step-3-create-a-remote-repository-on-github",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "Step 3: Create a remote repository on GitHub",
-    "text": "Step 3: Create a remote repository on GitHub\nCreate a new repository on GitHub that will be associated with your local repository.\nCall the function\n\nusethis::use_github(private = TRUE) # default is private = FALSE\n\nThis should now open GitHub in the browser and bring you to a freshly created GitHub project that is not associated with your local repository.\nReally convenient :tada:"
+    "objectID": "how-tos/git_workflow_terminal.html#step-1-initialize-a-new-repository",
+    "href": "how-tos/git_workflow_terminal.html#step-1-initialize-a-new-repository",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 1: Initialize a new repository",
+    "text": "Step 1: Initialize a new repository\nA new Git project can be started in an empty folder or in a folder that already contains files. For this example, first can create a new folder cookBook somewhere ony your computer.\nAfter opening the terminal (Git Bash on Windows, Terminal on macOS/Linux), move into the folder you created:\ncd cookBook # go into the folder\ncd ..       # go back one level\nYou might have to chain multiple cd commands to get to the right location.\n\n\n\n\n\n\nTip\n\n\n\nOn Windows, you can also right-click the project folder and choose Git Bash Here. (Windows 11: first click Show more options.)\n\n\n\nYour terminal should now show the path of your cookBook folder, like this:\n\nNow you can initialize a new Git repository in this folder by running:\ngit init\nYou should see a message telling you that the repository was initialized. In Git Bash, you can now also see that you are in a Git repository, because the branch name is indicated in blue behind the folder path:\n\nYou can also check that a new hidden folder .git was created in your cookBook folder. To print all files including hidden ones:\nls -a\nand you should see the .git folder:"
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#step-4-make-some-changes",
-    "href": "how-tos/git_workflow_usethis.html#step-4-make-some-changes",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "Step 4: Make some changes",
-    "text": "Step 4: Make some changes\nCreate a new R file in your project and add some content to it.\nYou can just copy the following code for convenience:\n\n# Look at the first lines of the iris dataset\nhead(iris)\n# What is the iris dataset -&gt; Call the help\n?iris\n# How many rows and columns does the data set have?\nrownum &lt;- nrow(iris)\ncolnum &lt;- ncol(iris)\nprint(paste0(\"The iris dataset has \", rownum, \" rows and \", colnum, \" columns.\"))\n# Some summary statistics on the iris data set\nsummary(iris)\n\n# create a plot\nplot(iris$Petal.Length, iris$Petal.Width,\n  xlab = \"Petal Length\",\n  ylab = \"Petal Width\",\n  main = \"Petal Width vs Petal Length\",\n  pch = 20,\n  col = ifelse(iris$Species == \"setosa\", \"coral1\",\n    ifelse(iris$Species == \"virginica\", \"cyan4\",\n      ifelse(iris$Species == \"versicolor\",\n        \"darkgoldenrod2\", \"grey\"\n      )\n    )\n  )\n)\n# add a legend\nlegend(\"bottomright\", c(\"setosa\", \"virginica\", \"versicolor\"),\n  col = c(\"coral1\", \"cyan4\", \"darkgoldenrod2\"), pch = 20\n)\n\nSave the file in your project."
+    "objectID": "how-tos/git_workflow_terminal.html#step-2-add-the-first-recipe",
+    "href": "how-tos/git_workflow_terminal.html#step-2-add-the-first-recipe",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 2: Add the first recipe",
+    "text": "Step 2: Add the first recipe\nOpen your cook book project in the file explorer.\nAdd a new text file with your favorite recipe (Let’s assume it’s pie). Create a file called pie.txt and add the recipe text below to it:\nIngredients:\n150 g butter\n200 g sugar\n3 eggs\n350 g flour\n1 pkg. baking powder\njuice from one lemon\n\nMix everything together and put in the oven\nfor 45 mins at 200 °C.\nSave the file and switch back to the terminal.\n\nExplore the changes to your repository with git status\nCheck the current status of your Git repository by running\ngit status\nThis will show you that pie.txt is a new and untracked file:\n\nThe message already tells you what to do next: You can stage the file to be included in the next commit."
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#step-5-commit-and-push-the-new-file",
-    "href": "how-tos/git_workflow_usethis.html#step-5-commit-and-push-the-new-file",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "Step 5: Commit and push the new file",
-    "text": "Step 5: Commit and push the new file\nIn the Git Pane of RStudio, click on the “Commit” button (both buttons bring you to a similar window.):\n\nStage your file (i.e. git add) by checking the check box next to it. On the bottom you can see the code that you added (therefore green).\n\nEnter a commit message on the right and click commit. When the commit is finished, close the little window that opened.\nNow push the changes to GitHub by clicking on the green upward arrow on the top right.\nGo to GitHub and check if everything was pushed as you expected."
+    "objectID": "how-tos/git_workflow_terminal.html#step-3-stage-the-new-file",
+    "href": "how-tos/git_workflow_terminal.html#step-3-stage-the-new-file",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 3: Stage the new file",
+    "text": "Step 3: Stage the new file\nTo stage the changes to pie.txt (i.e. the creation of the file) run\ngit add pie.txt\nThis means that now pie.txt is ready to be committed.\n\n\n\n\n\n\nStage multiple files at once\n\n\n\nIf you have multiple files, you want to stage, you can do this in one step with\ngit add *\n\n\nNow you can check the repository status with git status again to confirm this:\n\nGit now tells you, that pie.txt is now ready to be committed."
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#step-6-create-a-new-branch",
-    "href": "how-tos/git_workflow_usethis.html#step-6-create-a-new-branch",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "Step 6: Create a new branch",
-    "text": "Step 6: Create a new branch\nIn this step, you will create a new branch for a new feature that you want to introduce. This branch will later be use to do a pull request on GitHub.\nIn RStudio, you can create a new branch, by clicking on the little violet branch symbol in the Git pane:\n\nEnter a name for your new branch (no white space in name!) and leave everything else as it is. Click on create and RStudio will create and switch the branch for you. Note that now, the checked out branch is not master/main anymore but you new branch (see image above)."
+    "objectID": "how-tos/git_workflow_terminal.html#step-4-make-a-commit",
+    "href": "how-tos/git_workflow_terminal.html#step-4-make-a-commit",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 4: Make a commit",
+    "text": "Step 4: Make a commit\nTo commit all changes that are staged, run\ngit commit\nNow your your default text editor will open, and you can add a commit message and an optional description (this all the text followed by the empty line).\nFor me this opens VS Code and it looks like this:\n\nWhen you are done writing the commit message, save the file and close the editor.\nLook how the status of your repository has changed with\ngit status\nNo you don’t have any more uncommited changes in your project:\n\n\n\n\n\n\n\nGood commit messages\n\n\n\nThere are guidelines on how to write good commit messages. This becomes especially important when collaborating. Have a look here for some guidelines on how to write good commit messages and why this is important.\n\n\n\nLook at the commit history\nTo look at the history of your commits, run\ngit log\nThis will show you all commits in reverse chronological order (most recent first). You can also see who did the commit, when it was done and the commit message.\n\nIf you want a shorter summary, you can also use\ngit log --oneline"
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#step-7-change-files-and-push-new-branch-to-remote",
-    "href": "how-tos/git_workflow_usethis.html#step-7-change-files-and-push-new-branch-to-remote",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "Step 7: Change files and push new branch to remote",
-    "text": "Step 7: Change files and push new branch to remote\nOpen the R file that you created in your project. Now change some of the code.\nYou can delete a part of it and instead add something else, like e.g.\n\nv1 &lt;- c(1, \"a\", 2, 3)\nv2 &lt;- c(TRUE, TRUE, 1, FALSE, 0)\nv3 &lt;- c(0, \"23\", 5, 7)\nv4 &lt;- c(4L, 6L, 23.5345)\nv5 &lt;- c(TRUE, \"a\", FALSE, \"FALSE\")\n\nIt’s not important that the code makes sense here.\nNow save the file, commit and push it again (repeat step 5 and make sure that you are not on master/main but on your new branch)."
+    "objectID": "how-tos/git_workflow_terminal.html#step-5-share-your-project-on-github",
+    "href": "how-tos/git_workflow_terminal.html#step-5-share-your-project-on-github",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 5: Share your project on GitHub",
+    "text": "Step 5: Share your project on GitHub\nNow we want to share our cook book with the world (or our collaborators), so we want to publish it on GitHub.\nSo what we want to do is connect our local repository with a remote repository on GitHub.\nIn the terminal, this is slightly more complicated than with GitHub Desktop.\nGo to the GitHub website, log into your account and click on the green New button on the left of the start page:\n\nEnter a repository name (e.g. cookBook), select if it should be private or public and add a description if you like. Important: Do not create the repository with a README or license file. It should look like this:\n\nGitHub will now bring you to the newly created repository. Since the repository is empty, it will show you instructions on how to add files to it. We need to follow the instructions under “…or push an existing repository from the command line”:\n\nSo switch over to the terminal and run the three commands shown there one after another:\ngit remote add origin https://github.com/selinaZitrone/cookBook.git # connect the remote\ngit branch -M main          # rename the local branch to main\ngit push -u origin main     # push the local main branch to Github\n(Of course replace the URL with the URL of your own repository.)\nNow you can head over to GitHub and refresh the page of your repository. You should now see your pie.txt file there:"
   },
   {
-    "objectID": "how-tos/git_workflow_usethis.html#step-8-create-a-pull-request",
-    "href": "how-tos/git_workflow_usethis.html#step-8-create-a-pull-request",
-    "title": "A Git workflow with RStudio, R and usethis",
-    "section": "Step 8: Create a pull request",
-    "text": "Step 8: Create a pull request\nSee here for a guide on pull requests."
+    "objectID": "how-tos/git_workflow_terminal.html#add-collaborators-on-github-repository",
+    "href": "how-tos/git_workflow_terminal.html#add-collaborators-on-github-repository",
+    "title": "A Git workflow with the terminal",
+    "section": "Add collaborators on GitHub repository",
+    "text": "Add collaborators on GitHub repository\nTo collaborate, your friend needs to add you to their GitHub project. On the GitHub webpage of the repository, they can go to Settings -&gt; Collaborators -&gt; Add people:\n\nThen add people using their GitHub user name. The invited person will get an invitation email for the repository. Accept this invitation and you are now a collaborator on your friend’s project."
+  },
+  {
+    "objectID": "how-tos/git_workflow_terminal.html#step-1-clone-a-remote-repository",
+    "href": "how-tos/git_workflow_terminal.html#step-1-clone-a-remote-repository",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 1: Clone a remote repository",
+    "text": "Step 1: Clone a remote repository\nBefore you can start working on your friend’s cook book, you need to clone their repository. This means getting your own local copy of the cook book.\nTo clone a repository, you need to know the repositories address. You can find and copy it by clicking on the green code button on GitHub (in this example, I just clone my own repository as a demonstration):\n\nMake sure you select the HTTPS address (unless you set up SSH keys, then you can also use the SSH address).\nOpen the terminal, navigate to a location where you want to clone the project and run:\ngit clone https://github.com/selinaZitrone/cookBook.git\n(Of course replace the address with the repository you actually want to clone).\nAfter cloning, I navigate into the newly created folder using\ncd cookBook # or your friend's repository name\nYou can see in the last line that I am in a Git repository, because the branch name is indicated in blue:"
+  },
+  {
+    "objectID": "how-tos/git_workflow_terminal.html#step-2-create-a-new-branch",
+    "href": "how-tos/git_workflow_terminal.html#step-2-create-a-new-branch",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 2: Create a new branch",
+    "text": "Step 2: Create a new branch\nLet’s say, you want to add a vegan pie recipe to your friend’s cook book. To use the collaboration workflow discussed in the lecture, you need to create a new branch to work on.\nTo create a new branch with the name “add_vegan_pie” just run\ngit branch add_vegan_pie\nAfter the branch is created, you need to switch to it with\ngit switch add_vegan_pie\nTo see which branch you are currently on, run\ngit branch\nThe green, highlighted branch is the one you are currently on (but you can also see it in the blue branch name next to the path).\n\nNow you can start working on this branch. Add a file for the vegan pie and then stage and commit them like you are used to (see steps 2-4 in the previous section)."
+  },
+  {
+    "objectID": "how-tos/git_workflow_terminal.html#step-3-publish-and-push-your-branch",
+    "href": "how-tos/git_workflow_terminal.html#step-3-publish-and-push-your-branch",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 3: Publish and push your branch",
+    "text": "Step 3: Publish and push your branch\nTo share your branch with the vegan pie recipe with your friend, you need to push the branch to the remote repository on GitHub. This works just like with the main branch using git push.\nBut the first time you push a new branch, you need to specify the upstream by running:\ngit push --set-upstream origin add_vegan_pie\nNow your branch is pushed to GitHub and you can do a pull request."
+  },
+  {
+    "objectID": "how-tos/git_workflow_terminal.html#step-4-create-a-pull-request",
+    "href": "how-tos/git_workflow_terminal.html#step-4-create-a-pull-request",
+    "title": "A Git workflow with the terminal",
+    "section": "Step 4: Create a pull request",
+    "text": "Step 4: Create a pull request\nSee here for a guide on how to create a pull requests to ask your friend to integrate your recipe into their cookbook."
+  },
+  {
+    "objectID": "how-tos/git_workflow_terminal.html#add-a-gitignore-file",
+    "href": "how-tos/git_workflow_terminal.html#add-a-gitignore-file",
+    "title": "A Git workflow with the terminal",
+    "section": "Add a gitignore file",
+    "text": "Add a gitignore file\n\nPut a pdf file in your repo\nLook at git status: It should now show that you can commit the pdf file. But for this example, we want to ignore it.\nAdd a .gitignore file to your project\n\n\n\n\n\n\n\nCreate a .gitignore file on Windows\n\n\n\nOn Windows, you cannot create a file without a file name. So the Windows explorer will complain if you try to create a file with only the file ending .gitignore. One way around this is to use the terminal. In Git bash, just run\ntouch .gitignore\nto create a gitignore file\n\n\n\nIgnore pdf files\n\nAdd a line with the pattern *.pdf to your gitignore file and save it\n\nNow look at git status again. If everything worked, you should not see the changes in the pdf anymore, because it was ignored."
+  },
+  {
+    "objectID": "how-tos/git_workflow_terminal.html#compare-commits",
+    "href": "how-tos/git_workflow_terminal.html#compare-commits",
+    "title": "A Git workflow with the terminal",
+    "section": "Compare commits",
+    "text": "Compare commits\n\nChange some text in pie.txt\nstage it with git add\nlook at the diff with git diff --staged\ncommit the changes\ncompare this commit to the previous one with\n\ngit commit HEAD^\n\npush to origin"
+  },
+  {
+    "objectID": "how-tos/git_workflow_terminal.html#merge-your-new-branch-with-the-main",
+    "href": "how-tos/git_workflow_terminal.html#merge-your-new-branch-with-the-main",
+    "title": "A Git workflow with the terminal",
+    "section": "Merge your new branch with the main",
+    "text": "Merge your new branch with the main\nIf you want to locally integrate changes you did in a separate branch into the main branch, you first need to switch back to the main branch:\ngit switch main\nNow merge the commits from your branch with\ngit merge add_vegan_pie\nCheck if it actually worked with\ngit log"
+  },
+  {
+    "objectID": "how-tos/create_pull_request.html",
+    "href": "how-tos/create_pull_request.html",
+    "title": "Open a pull request on GitHub",
+    "section": "",
+    "text": "You can open a pull request when you want to integrate changes made on one branch into another branch. Usually this happens, when you or a collaborator made some changes in a separate branch and those changes should now be merged into the main branch.\nThe advantage of a pull request in comparison to a simple merge is that it can first be commented and reviewed by the collaborators before the changes are accepted.\nLet’s say you created a new branch called add_cookies, made some changes and pushed the branch to GitHub. If you now open your remote repository website, GitHub automatically detected this branch and ask you to create a pull request for it.\nIt should look something like this:\n\nClick on Compare & pull request.\nNow is the time to describe your changes to your collaborators, so they can understand what you did. Add a title and description for your pull request. This can become quite a long text (sometimes even with screenshots attached) if you made lots of changes that you need to explain. When you are finished click on Create pull request:\n\nNow your collaborators get notified of the pull request and can browse your code and make comments.\nUnder the “Conversation” tab, you and your collaborators can make comments and discuss the changes. To see how it looks like, make a comment yourself.\nOn the top, you can also navigate to Files changed and see all the changes that are introduced to the project in this pull request:\n\nIn the “Files changed” tab, you can select single or multiple lines of code and add comments to it.\nJust explore the functionality of pull requests a bit by yourself."
+  },
+  {
+    "objectID": "course_preparation.html",
+    "href": "course_preparation.html",
+    "title": "Course preparations",
+    "section": "",
+    "text": "In order to have a smooth workshop start, you need to prepare a few technical things so you can jump right into using Git on the first day.\n\nInstall Git on your machine\nYou can follow my guide below but you can also find the download and installation guides for all major operating systems on the official Git website. If you have an old version of Git already installed, please make sure to update it prior to the workshop. You can checkout this article that explains how to find your current Git version and how to update to a newer one.\n\nWindowsLinux (Ubuntu)MacOS\n\n\nYou can download Git from here.\nDownload and install the correct version for your machine (just click “Click here to download”). Use recommended or default settings during the installation. Most options can also be changed later if you want to.\nWith the Git installation for Windows, you also get a program called “Git Bash”. Git Bash is a terminal application for Windows that provides a Git command line experience.\nOpen the Git Bash application (you can find it searching in the Windows search bar) and run (just type it and hit Enter)\ngit --version\nIf the Git installation was successful, you should see the version of Git printed to the console.\n\n\nYou can install Git from the terminal. Run\nsudo apt-get update\nsudo apt-get install git\nCheck the version of Git that you have installed with\ngit --version\n\n\nIf you are using Xcode, you might already have Git installed. To check if this is the case, open the terminal and run\ngit --version\nIf the terminal tells you which version of Git is installed, you can check if you can update your current Git installation.\nIf you need to install Git, you can do this with homebrew. Just run\nbrew install git\nThen check the version and verify the installation with\ngit --version\n\n\n\n\n\nSign up for GitHub\nI will use GitHub as a remote repository service in the workshop and you can create an account here.\n\n\n\n\n\n\nUse your institutional email address to get benefits\n\n\n\nIf you sign up for GitHub with an institutional email address, you can get a free upgrade to GitHub Pro. This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.\n\n\n\n\nInstall GitHub Desktop\nIn the course, I’ll be using the GitHub Desktop application as a graphical user interface to work with Git.\nThere are detailed step by step guides on how to install and set up GitHub Desktop on the GitHub Website. Please follow this guide and do Part 1 (Installing GitHub Desktop) and Part 2 (Configuring your account).\n\n\n\n\n\n\nLinux users\n\n\n\nIf you are running a Linux OS, you can install GitHub Desktop from the shiftkey repository as on the GitHub Desktop website, there is only a Windows and MacOS version available. When you are done with the installation step, please head over to the GitHub Desktop documentation linked above and follow Part 2 (Configuring your account)."
   },
   {
     "objectID": "how-tos/git_workflow_gh_desktop.html",
@@ -581,130 +714,81 @@
     "text": "Ignore files\nIf you have files in your project that you don’t want to track with Git (e.g. temporary files, large files, …), you can add them to a .gitignore file.\nLet’s say, I have a word document with my notes in the project and I don’t want to track it with Git and share them on GitHub. So, I don’t want to commit the changes, but instead ignore them.\nIn GitHub Desktop, you can ignore files that appear in your list of changes by right-clicking on them and selecting Ignore file:\n\nYou can also choose to ignore all files of this filetype by selecting Ignore all files.\nThis will automatically create a .gitignore file in your project folder (if it doesn’t exist yet) and add the respective file or file type to it.\nYou can now commit and push the .gitignore file to GitHub like any other file:\n\nIn the future, Git will ignore all files that are listed in the .gitignore file and will not show them in the list of changes anymore."
   },
   {
-    "objectID": "course_preparation.html",
-    "href": "course_preparation.html",
-    "title": "Course preparations",
+    "objectID": "how-tos/git_workflow_usethis.html",
+    "href": "how-tos/git_workflow_usethis.html",
+    "title": "A Git workflow with RStudio, R and usethis",
     "section": "",
-    "text": "In order to have a smooth workshop start, you need to prepare a few technical things so you can jump right into using Git on the first day.\n\nInstall Git on your machine\nYou can follow my guide below but you can also find the download and installation guides for all major operating systems on the official Git website. If you have an old version of Git already installed, please make sure to update it prior to the workshop. You can checkout this article that explains how to find your current Git version and how to update to a newer one.\n\nWindowsLinux (Ubuntu)MacOS\n\n\nYou can download Git from here.\nDownload and install the correct version for your machine (just click “Click here to download”). Use recommended or default settings during the installation. Most options can also be changed later if you want to.\nWith the Git installation for Windows, you also get a program called “Git Bash”. Git Bash is a terminal application for Windows that provides a Git command line experience.\nOpen the Git Bash application (you can find it searching in the Windows search bar) and run (just type it and hit Enter)\ngit --version\nIf the Git installation was successful, you should see the version of Git printed to the console.\n\n\nYou can install Git from the terminal. Run\nsudo apt-get update\nsudo apt-get install git\nCheck the version of Git that you have installed with\ngit --version\n\n\nIf you are using Xcode, you might already have Git installed. To check if this is the case, open the terminal and run\ngit --version\nIf the terminal tells you which version of Git is installed, you can check if you can update your current Git installation.\nIf you need to install Git, you can do this with homebrew. Just run\nbrew install git\nThen check the version and verify the installation with\ngit --version\n\n\n\n\n\nSign up for GitHub\nI will use GitHub as a remote repository service in the workshop and you can create an account here.\n\n\n\n\n\n\nUse your institutional email address to get benefits\n\n\n\nIf you sign up for GitHub with an institutional email address, you can get a free upgrade to GitHub Pro. This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.\n\n\n\n\nInstall GitHub Desktop\nIn the course, I’ll be using the GitHub Desktop application as a graphical user interface to work with Git.\nThere are detailed step by step guides on how to install and set up GitHub Desktop on the GitHub Website. Please follow this guide and do Part 1 (Installing GitHub Desktop) and Part 2 (Configuring your account).\n\n\n\n\n\n\nLinux users\n\n\n\nIf you are running a Linux OS, you can install GitHub Desktop from the shiftkey repository as on the GitHub Desktop website, there is only a Windows and MacOS version available. When you are done with the installation step, please head over to the GitHub Desktop documentation linked above and follow Part 2 (Configuring your account)."
+    "text": "In this guide, we will work on a cook book project using Git, R and RStudio. We will start going through all the steps for an individual project (you’re working on the cook book alone) and then we will see how to collaborate with others."
   },
   {
-    "objectID": "how-tos/create_pull_request.html",
-    "href": "how-tos/create_pull_request.html",
-    "title": "Open a pull request on GitHub",
-    "section": "",
-    "text": "You can open a pull request when you want to integrate changes made on one branch into another branch. Usually this happens, when you or a collaborator made some changes in a separate branch and those changes should now be merged into the main branch.\nThe advantage of a pull request in comparison to a simple merge is that it can first be commented and reviewed by the collaborators before the changes are accepted.\nLet’s say you created a new branch called add_cookies, made some changes and pushed the branch to GitHub. If you now open your remote repository website, GitHub automatically detected this branch and ask you to create a pull request for it.\nIt should look something like this:\n\nClick on Compare & pull request.\nNow is the time to describe your changes to your collaborators, so they can understand what you did. Add a title and description for your pull request. This can become quite a long text (sometimes even with screenshots attached) if you made lots of changes that you need to explain. When you are finished click on Create pull request:\n\nNow your collaborators get notified of the pull request and can browse your code and make comments.\nUnder the “Conversation” tab, you and your collaborators can make comments and discuss the changes. To see how it looks like, make a comment yourself.\nOn the top, you can also navigate to Files changed and see all the changes that are introduced to the project in this pull request:\n\nIn the “Files changed” tab, you can select single or multiple lines of code and add comments to it.\nJust explore the functionality of pull requests a bit by yourself."
+    "objectID": "how-tos/git_workflow_usethis.html#setup-pat-to-use-https-protocol-with-github",
+    "href": "how-tos/git_workflow_usethis.html#setup-pat-to-use-https-protocol-with-github",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Setup PAT to use HTTPS protocol with GitHub",
+    "text": "Setup PAT to use HTTPS protocol with GitHub\nYou can manage access to GitHub with a personal access token (PAT) instead of using your password. Check if you already have a personal access token with the correct configurations for GitHub.\n\nusethis::gh_token_help()\n\nThis will tell you exactly what’s going on (in general, usethis is very helpful - so always read what it prints in the console): Do you already have a token or are problems with your current token? And if you need a token, it will also tell you can create one. To create a new token, call the function:\n\nusethis::create_github_token()\n\nThis will open GitHub and ask you to sign in.\nNext, you are asked to create a new personal access token.\nOn top enter a note to remind you what this token is for (e.g. Something like “RStudio on PC”).\nSet an expiration date of your choice (the shorter the more secure, but you have to update more often - GitHub will send you a reminder for this).\nYou can also choose the scope for your PAT but for general use, the default settings are fine.\n\nScroll down and click on Generate token.\nCopy the token to the clipboard.\n\n\n\n\n\n\nWarning\n\n\n\nYou will not be able to read the token again after you closed GitHub. So leave the window open until you successfully set up your connection. You can also save the token in a safe place (e.g. a password manager).\n\n\nNow register the token with git using the function:\n\ngitcreds::gitcreds_set()\n\nYou are now prompted to paste your token into the R console.\nNow your PAT should be added to the credentials. You can check it again with\n\nusethis::gh_token_help()\n\nCheck the console to see if everything is fine and usethis now knows your GitHub Account data.\n\nOptional: Add usethis to your .Rprofile\nIf you want to load the usethis package automatically when starting R, you can add it to your .Rprofile. This way, you have all the usethis functionality available without having to load the package first.\n\n\n\n\n\n\nCareful when adding packages to .Rprofile\n\n\n\nLoading packages via the .Rprofile should only be done for packages that are not used in your R scripts. Otherwise, you might forget to explicitly load the package in your script and the script breaks if you use it somewhere else.\nAdding utility packages like usethis to the .Rprofile can however be very convenient.\nRead more about this topic here.\n\n\nYou can open your .Rprofile file with\n\nusethis::edit_r_profile()\n\nThen you can add the following line, save the file and close it:\n\n# supress messages just means that messages are not printed when loading the package\nif (interactive()) {\n  suppressMessages(library(usethis))\n}\noptions(\n  usethis.protocol = \"https\" # or \"ssh\" if you set up ssh\n)\n\nWith this, usethis will be loaded every time you open RStudio and you already registered the default protocol that you want to use with Git (This is only relevant for the Git things you do with usethis)."
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html",
-    "href": "how-tos/git_workflow_terminal.html",
-    "title": "A Git workflow with the terminal",
-    "section": "",
-    "text": "In this guide, we will work on a cook book project using Git and the terminal. We will start going through all the steps for an individual project (you’re working on the cook book alone) and then we will see how to collaborate with others."
+    "objectID": "how-tos/git_workflow_usethis.html#step-1-create-new-r-project",
+    "href": "how-tos/git_workflow_usethis.html#step-1-create-new-r-project",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 1: Create new R project",
+    "text": "Step 1: Create new R project\nTo create a new R project for this exercise call the function:\n\nusethis::create_project(path = \"path/to/project/project_name\")\n\nThis will create a folder with project_name and set up and empty RStudio project. The project will open in a new RStudio instance. You can see that by default, the project already has some files inside (among them a .gitignore file).\nHere you can see my new project (called “demo_project”) in R Studio. The files are highlighted in pink:\n\nOf course you can also set up the project manually via RStudio (File -&gt; New Project -&gt; New Directory -&gt; New Project) but I want to showcase the functionality of usethis here."
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html#a-word-on-authentication",
-    "href": "how-tos/git_workflow_terminal.html#a-word-on-authentication",
-    "title": "A Git workflow with the terminal",
-    "section": "A word on authentication",
-    "text": "A word on authentication\nYou might ask yourself: why do I need GitHub Desktop if we are using the terminal? The reason is that GitHub Desktop makes it much easier to set up the connection between your local machine and GitHub. Authentication is handled for you using OAuth. During this process, GitHub Desktop securely stores your credentials in your operating system’s native credential store (Windows: Windows Credential Manager, macOS: Keychain Access, Linux: libsecret/gnome-keyring, depending on the distro).\nBecause Git itself can read from these credential stores, other Git clients (e.g. command line, RStudio, VS Code) can also use the same authentication. This works as long as you are using HTTPS URLs for your repositories.\nIf you prefer to use SSH for authentication (for automation, servers, or personal preference), you need to set up SSH keys and add them to GitHub. See here for a guide on how to do this."
+    "objectID": "how-tos/git_workflow_usethis.html#step-2-initialize-a-new-git-repository",
+    "href": "how-tos/git_workflow_usethis.html#step-2-initialize-a-new-git-repository",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 2: Initialize a new Git repository",
+    "text": "Step 2: Initialize a new Git repository\nWith the project open call the function\n\nusethis::use_git()\n\nRead the text in the console:\nR tells you which changes will be committed. This is just the first commit that will include all the files that are in created by default and that are not in the .gitignore.\nConfirm that you want to commit these files by selecting the correct number for the “Yes” answer and press enter. Then agree to the first commit with the commit message “Initial commit” (again by selecting the correct number).\nRStudio will restart and a the Git GUI client will be added.\nCan you find the Git tab in the top right pane? Here is where all the buttons for Git are located."
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html#configure-git",
-    "href": "how-tos/git_workflow_terminal.html#configure-git",
-    "title": "A Git workflow with the terminal",
-    "section": "Configure Git",
-    "text": "Configure Git\nGit needs to know who you are in order to sign your commits correctly. If you already set up GitHub Desktop, you might already have the minimal Git configuration ready.\nThe Git configuration can be set locally (just for the current repo) or globally (default for all repos without local configuration). Here, we just set a global configuration for all repositories.\nTo check if you already have a configuration run\ngit config --global -l\nIf you don’t see a user.name or user.email or get a message, that the .gitconfig file does not exist, run the following to configure:\ngit config --global user.name \"&lt;your_user_name&gt;\"\ngit config --global user.email \"&lt;your_user_email&gt;\"\nUse the user name and email that you also use for your GitHub account."
+    "objectID": "how-tos/git_workflow_usethis.html#step-3-publish-your-project-on-github",
+    "href": "how-tos/git_workflow_usethis.html#step-3-publish-your-project-on-github",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 3: Publish your project on GitHub",
+    "text": "Step 3: Publish your project on GitHub\nYou can skip this step if you only want to work locally. But I recommend you try it, it’s really cool.\nTo create a new GitHub repository and link it to your local repository, all we need to do is all the function:\n\nusethis::use_github(private = TRUE) # default is private = FALSE\n\nWith the private argument you can choose if your repository should be private or public.\nThis should now open GitHub in the browser and bring you to a freshly created GitHub project with all the files that were in your local repository (not a lot yet).\nReally convenient 🎉"
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html#step-1-initialize-a-new-repository",
-    "href": "how-tos/git_workflow_terminal.html#step-1-initialize-a-new-repository",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 1: Initialize a new repository",
-    "text": "Step 1: Initialize a new repository\nA new Git project can be started in an empty folder or in a folder that already contains files. For this example, first can create a new folder cookBook somewhere ony your computer.\nAfter opening the terminal (Git Bash on Windows, Terminal on macOS/Linux), move into the folder you created:\ncd cookBook # go into the folder\ncd ..       # go back one level\nYou might have to chain multiple cd commands to get to the right location.\n\n\n\n\n\n\nTip\n\n\n\nOn Windows, you can also right-click the project folder and choose Git Bash Here. (Windows 11: first click Show more options.)\n\n\n\nYour terminal should now show the path of your cookBook folder, like this:\n\nNow you can initialize a new Git repository in this folder by running:\ngit init\nYou should see a message telling you that the repository was initialized. In Git Bash, you can now also see that you are in a Git repository, because the branch name is indicated in blue behind the folder path:\n\nYou can also check that a new hidden folder .git was created in your cookBook folder. To print all files including hidden ones:\nls -a\nand you should see the .git folder:"
+    "objectID": "how-tos/git_workflow_usethis.html#step-4-make-some-changes",
+    "href": "how-tos/git_workflow_usethis.html#step-4-make-some-changes",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 4: Make some changes",
+    "text": "Step 4: Make some changes\nNow let’s make some changes to the project.\nCreate a new R file in your project and add some content to it.\nYou can just copy the following code for convenience:\n\nlibrary(ggplot2)\npenguins |&gt;\n  ggplot(aes(x = flipper_len, y = body_mass, color = species)) +\n  geom_point() +\n  theme_minimal()\n\nSave the file in your project."
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html#step-2-add-the-first-recipe",
-    "href": "how-tos/git_workflow_terminal.html#step-2-add-the-first-recipe",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 2: Add the first recipe",
-    "text": "Step 2: Add the first recipe\nOpen your cook book project in the file explorer.\nAdd a new text file with your favorite recipe (Let’s assume it’s pie). Create a file called pie.txt and add the recipe text below to it:\nIngredients:\n150 g butter\n200 g sugar\n3 eggs\n350 g flour\n1 pkg. baking powder\njuice from one lemon\n\nMix everything together and put in the oven\nfor 45 mins at 200 °C.\nSave the file and switch back to the terminal.\n\nExplore the changes to your repository with git status\nCheck the current status of your Git repository by running\ngit status\nThis will show you that pie.txt is a new and untracked file:\n\nThe message already tells you what to do next: You can stage the file to be included in the next commit."
+    "objectID": "how-tos/git_workflow_usethis.html#step-5-make-a-commit",
+    "href": "how-tos/git_workflow_usethis.html#step-5-make-a-commit",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 5: Make a commit",
+    "text": "Step 5: Make a commit\nIf you have new changes that are not committed yet, you will see the changes listed in the Git pane of RStudio (top right). I have for example addedd a new file called penguins_plot.R.\nTo commit this file, just click on the “Commit” button in the Git pane:\n\nNow you can select which files you want to commit. In this case we only have one file. To select (i.e. stage) files, just check the check box next to the file name. Now you can also see the changes that you made in the file (the code that you added is green, deleted code is shown in red).\nEnter a commit message in the top right field. You can write a one-line commit message. Optionally, you can also add a more detailed description of your changes followed by a blank line. Click Commit when you are ready.\n\nWhen everything is finished, close the commit window that opened."
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html#step-3-stage-the-new-file",
-    "href": "how-tos/git_workflow_terminal.html#step-3-stage-the-new-file",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 3: Stage the new file",
-    "text": "Step 3: Stage the new file\nTo stage the changes to pie.txt (i.e. the creation of the file) run\ngit add pie.txt\nThis means that now pie.txt is ready to be committed.\n\n\n\n\n\n\nStage multiple files at once\n\n\n\nIf you have multiple files, you want to stage, you can do this in one step with\ngit add *\n\n\nNow you can check the repository status with git status again to confirm this:\n\nGit now tells you, that pie.txt is now ready to be committed."
+    "objectID": "how-tos/git_workflow_usethis.html#step-6-push-the-changes-to-github",
+    "href": "how-tos/git_workflow_usethis.html#step-6-push-the-changes-to-github",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 6: Push the changes to GitHub",
+    "text": "Step 6: Push the changes to GitHub\nNow push the changes to GitHub by clicking on the green upward arrow on the top right.\n\nGo to GitHub and check if everything was pushed as you expected."
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html#step-4-make-a-commit",
-    "href": "how-tos/git_workflow_terminal.html#step-4-make-a-commit",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 4: Make a commit",
-    "text": "Step 4: Make a commit\nTo commit all changes that are staged, run\ngit commit\nNow your your default text editor will open, and you can add a commit message and an optional description (this all the text followed by the empty line).\nFor me this opens VS Code and it looks like this:\n\nWhen you are done writing the commit message, save the file and close the editor.\nLook how the status of your repository has changed with\ngit status\nNo you don’t have any more uncommited changes in your project:\n\n\n\n\n\n\n\nGood commit messages\n\n\n\nThere are guidelines on how to write good commit messages. This becomes especially important when collaborating. Have a look here for some guidelines on how to write good commit messages and why this is important.\n\n\n\nLook at the commit history\nTo look at the history of your commits, run\ngit log\nThis will show you all commits in reverse chronological order (most recent first). You can also see who did the commit, when it was done and the commit message.\n\nIf you want a shorter summary, you can also use\ngit log --oneline"
+    "objectID": "how-tos/git_workflow_usethis.html#step-1-create-a-new-branch",
+    "href": "how-tos/git_workflow_usethis.html#step-1-create-a-new-branch",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 1: Create a new branch",
+    "text": "Step 1: Create a new branch\nIn this step, you will create a new branch for a new feature that you want to introduce. This branch will later be use to do a pull request on GitHub.\nIn RStudio, you can create a new branch (e.g. to add a data analysis file), by clicking on the little violet branch symbol in the Git pane:\n\nEnter a name for your new branch (no white space in name allowed) and leave everything else as it is. Click on create and RStudio will create and switch the branch for you. The new branch will also directly be pushed to GitHub Don’t worry - this does not mess up anything. You are in a new branch so the main branch stays untouched by this. You can close the dialog that opened now. Note that the branch that you are on is not main anymore but you new branch (see image above)."
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html#step-5-share-your-project-on-github",
-    "href": "how-tos/git_workflow_terminal.html#step-5-share-your-project-on-github",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 5: Share your project on GitHub",
-    "text": "Step 5: Share your project on GitHub\nNow we want to share our cook book with the world (or our collaborators), so we want to publish it on GitHub.\nSo what we want to do is connect our local repository with a remote repository on GitHub.\nIn the terminal, this is slightly more complicated than with GitHub Desktop.\nGo to the GitHub website, log into your account and click on the green New button on the left of the start page:\n\nEnter a repository name (e.g. cookBook), select if it should be private or public and add a description if you like. Important: Do not create the repository with a README or license file. It should look like this:\n\nGitHub will now bring you to the newly created repository. Since the repository is empty, it will show you instructions on how to add files to it. We need to follow the instructions under “…or push an existing repository from the command line”:\n\nSo switch over to the terminal and run the three commands shown there one after another:\ngit remote add origin https://github.com/selinaZitrone/cookBook.git # connect the remote\ngit branch -M main          # rename the local branch to main\ngit push -u origin main     # push the local main branch to Github\n(Of course replace the URL with the URL of your own repository.)\nNow you can head over to GitHub and refresh the page of your repository. You should now see your pie.txt file there:"
+    "objectID": "how-tos/git_workflow_usethis.html#step-2-change-files-and-push-changes",
+    "href": "how-tos/git_workflow_usethis.html#step-2-change-files-and-push-changes",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 2: Change files and push changes",
+    "text": "Step 2: Change files and push changes\nNow that you are on your new branch, you can make changes to the files.\nYou could for example add a new R file with some data analysis code. Or you could add new code to the R file that you already created in step 4 of the individual workflow.\nWhen you are done making changes, commit and push them (like in step 5 and 6 of the individual workflow).\nNow your changes should be available on GitHub in the new branch and you can do a pull request."
   },
   {
-    "objectID": "how-tos/git_workflow_terminal.html#add-collaborators-on-github-repository",
-    "href": "how-tos/git_workflow_terminal.html#add-collaborators-on-github-repository",
-    "title": "A Git workflow with the terminal",
-    "section": "Add collaborators on GitHub repository",
-    "text": "Add collaborators on GitHub repository\nTo collaborate, your friend needs to add you to their GitHub project. On the GitHub webpage of the repository, they can go to Settings -&gt; Collaborators -&gt; Add people:\n\nThen add people using their GitHub user name. The invited person will get an invitation email for the repository. Accept this invitation and you are now a collaborator on your friend’s project."
-  },
-  {
-    "objectID": "how-tos/git_workflow_terminal.html#step-1-clone-a-remote-repository",
-    "href": "how-tos/git_workflow_terminal.html#step-1-clone-a-remote-repository",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 1: Clone a remote repository",
-    "text": "Step 1: Clone a remote repository\nBefore you can start working on your friend’s cook book, you need to clone their repository. This means getting your own local copy of the cook book.\nTo clone a repository, you need to know the repositories address. You can find and copy it by clicking on the green code button on GitHub (in this example, I just clone my own repository as a demonstration):\n\nMake sure you select the HTTPS address (unless you set up SSH keys, then you can also use the SSH address).\nOpen the terminal, navigate to a location where you want to clone the project and run:\ngit clone https://github.com/selinaZitrone/cookBook.git\n(Of course replace the address with the repository you actually want to clone).\nAfter cloning, I navigate into the newly created folder using\ncd cookBook # or your friend's repository name\nYou can see in the last line that I am in a Git repository, because the branch name is indicated in blue:"
-  },
-  {
-    "objectID": "how-tos/git_workflow_terminal.html#step-2-create-a-new-branch",
-    "href": "how-tos/git_workflow_terminal.html#step-2-create-a-new-branch",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 2: Create a new branch",
-    "text": "Step 2: Create a new branch\nLet’s say, you want to add a vegan pie recipe to your friend’s cook book. To use the collaboration workflow discussed in the lecture, you need to create a new branch to work on.\nTo create a new branch with the name “add_vegan_pie” just run\ngit branch add_vegan_pie\nAfter the branch is created, you need to switch to it with\ngit checkout add_vegan_pie\nTo see which branch you are currently on, run\ngit branch\nThe green, highlighted branch is the one you are currently on (but you can also see it in the blue branch name next to the path).\n\nNow you can start working on this branch. Add a file for the vegan pie and then stage and commit them like you are used to (see steps 2-4 in the previous section)."
-  },
-  {
-    "objectID": "how-tos/git_workflow_terminal.html#step-3-publish-and-push-your-branch",
-    "href": "how-tos/git_workflow_terminal.html#step-3-publish-and-push-your-branch",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 3: Publish and push your branch",
-    "text": "Step 3: Publish and push your branch\nTo share your branch with the vegan pie recipe with your friend, you need to push the branch to the remote repository on GitHub. This works just like with the main branch using git push.\nBut the first time you push a new branch, you need to specify the upstream by running:\ngit push --set-upstream origin add_vegan_pie\nNow your branch is pushed to GitHub and you can do a pull request."
-  },
-  {
-    "objectID": "how-tos/git_workflow_terminal.html#step-4-create-a-pull-request",
-    "href": "how-tos/git_workflow_terminal.html#step-4-create-a-pull-request",
-    "title": "A Git workflow with the terminal",
-    "section": "Step 4: Create a pull request",
-    "text": "Step 4: Create a pull request\nSee here for a guide on how to create a pull requests to ask your friend to integrate your recipe into their cookbook."
-  },
-  {
-    "objectID": "how-tos/git_workflow_terminal.html#add-a-gitignore-file",
-    "href": "how-tos/git_workflow_terminal.html#add-a-gitignore-file",
-    "title": "A Git workflow with the terminal",
-    "section": "Add a gitignore file",
-    "text": "Add a gitignore file\n\nPut a pdf file in your repo\nLook at git status: It should now show that you can commit the pdf file. But for this example, we want to ignore it.\nAdd a .gitignore file to your project\n\n\n\n\n\n\n\nCreate a .gitignore file on Windows\n\n\n\nOn Windows, you cannot create a file without a file name. So the Windows explorer will complain if you try to create a file with only the file ending .gitignore. One way around this is to use the terminal. In Git bash, just run\ntouch .gitignore\nto create a gitignore file\n\n\n\nIgnore pdf files\n\nAdd a line with the pattern *.pdf to your gitignore file and save it\n\nNow look at git status again. If everything worked, you should not see the changes in the pdf anymore, because it was ignored."
-  },
-  {
-    "objectID": "how-tos/git_workflow_terminal.html#compare-commits",
-    "href": "how-tos/git_workflow_terminal.html#compare-commits",
-    "title": "A Git workflow with the terminal",
-    "section": "Compare commits",
-    "text": "Compare commits\n\nChange some text in pie.txt\nstage it with git add\nlook at the diff with git diff --staged\ncommit the changes\ncompare this commit to the previous one with\n\ngit commit HEAD^\n\npush to origin"
-  },
-  {
-    "objectID": "how-tos/git_workflow_terminal.html#merge-your-new-branch-with-the-main",
-    "href": "how-tos/git_workflow_terminal.html#merge-your-new-branch-with-the-main",
-    "title": "A Git workflow with the terminal",
-    "section": "Merge your new branch with the main",
-    "text": "Merge your new branch with the main\nIf you want to locally integrate changes you did in a separate branch into the main branch, you first need to switch back to the main branch:\ngit checkout main\nNow merge the commits from your branch with\ngit merge add_vegan_pie\nCheck if it actually worked with\ngit log"
+    "objectID": "how-tos/git_workflow_usethis.html#step-3-create-a-pull-request",
+    "href": "how-tos/git_workflow_usethis.html#step-3-create-a-pull-request",
+    "title": "A Git workflow with RStudio, R and usethis",
+    "section": "Step 3: Create a pull request",
+    "text": "Step 3: Create a pull request\nSee here for a guide on how to create a pull requests."
   },
   {
     "objectID": "how-tos/ssh_keys.html",
@@ -753,7 +837,7 @@
     "href": "sessions/02_git_collaboration.html#tasks",
     "title": "A collaboration workflows with Git",
     "section": "Tasks",
-    "text": "Tasks\nThe goal of these tasks is to get a feeling for a collaborative Git workflow.\nIf you are stuck in a task, you can have a look at the How-To description of the Git workflow with detailed explanations and screenshots of the steps.\n\n1 Clone2 Branch and merge3 Pull requestsExtra\n\n\n\nClone the cook book repo of your team mate (5 min)\nUse GitHub Desktop to clone the cook book repository of your team mate.\nGo to File -&gt; Clone Repository.\nIn the tab “GitHub.com” you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your team mate and clone it to a local path of your choice.\n\n\n\n\n\n\nWhat if I don’t see the repository of my team mate?\n\n\n\nYou can also clone a repository using its URL. Switch to the tab “URL” in GitHub Desktop. Open your team mate’s repository on GitHub (find the correct link here). On the GitHub page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of GitHub Desktop. Then clone it to a local path of your choice.\n\n\nOpen your team mate’s cook book in the explorer to see which files are already in there (Repository -&gt; Show in Explorer).\n\n\n\n\nTry branching and merging (10 min)\nMake sure that you are in your team mate’s cook book (check which repository you are in on the top left).\nCreate a new branch to add a recipe (Branch -&gt; New branch).\nMake sure that you are now in the new branch by looking in the top middle of GitHub Desktop what your current branch is:\n\nNow go to the project folder (Repository -&gt; Show in Explorer) and add a file for a new recipe.\nYou can again copy paste a recipe from below to save some time.\n\n🥞 Banana pancakes🍜 Ramen Soup🍰 Carrot cake🍛 Chicken curry🍪 Chocolate Chip Cookies🥗 Greek Salad\n\n\nIngredients:\n\n2 ripe bananas\n2 large eggs\n120 g all-purpose flour\n240 ml milk\n1 tsp baking powder\n1 tsp vanilla extract\n1 tbsp sugar\nPinch of salt\nButter or oil for cooking\n\nPreparation:\n\nMash bananas and mix with eggs, milk, and vanilla.\nCombine flour, baking powder, sugar, and salt.\nMix dry ingredients into wet ingredients until smooth.\nCook on a heated pan with butter or oil until golden brown.\n\n\nIngredients:\n\n200 g ramen noodles\n1 liter chicken broth\n2 cloves garlic, minced\n1 tbsp ginger, minced\n2 tbsp soy sauce\n1 tbsp miso paste\n2 large eggs\n100 g mushrooms, sliced\n1 carrot, julienned\n100 g spinach\n2 green onions, sliced\n1 tbsp sesame oil\nSalt and pepper to taste\n\nPreparation:\n\nCook ramen noodles according to package instructions, drain and set aside.\nIn a pot, heat sesame oil and sauté garlic and ginger until fragrant.\nAdd chicken broth, soy sauce, and miso paste, and bring to a simmer.\nAdd mushrooms and carrot, cook until tender.\nIn a separate pot, boil eggs for 7 minutes, then cool, peel, and halve.\nAdd spinach to the broth and cook until wilted.\nDivide noodles into bowls, pour broth and vegetables over them.\nTop with halved eggs and sliced green onions.\nSeason with salt and pepper to taste.\n\n\nIngredients:\n\n240 g all-purpose flour\n200 g grated carrots\n300 g sugar\n240 ml vegetable oil\n4 large eggs\n1 tsp baking powder\n1 tsp baking soda\n1 tsp ground cinnamon\n0.5 tsp ground nutmeg\n0.5 tsp salt\n1 tsp vanilla extract\n\nPreparation:\n\nBeat eggs and sugar, add oil and vanilla.\nMix flour, baking powder, baking soda, cinnamon, nutmeg, and salt.\nCombine wet and dry ingredients, fold in carrots.\nBake at 175°C for 35-40 minutes.\n\n\nIngredients:\n\n450 g chicken breast, cubed\n1 large onion, chopped\n3 cloves garlic, minced\n1 tbsp ginger, minced\n400 ml coconut milk\n400 g diced tomatoes\n2 tbsp curry powder\n1 tsp turmeric\n1 tsp cumin\n1 tsp coriander\nSalt and pepper to taste\n2 tbsp vegetable oil\nFresh cilantro for garnish\n\nPreparation:\n\nSauté onion, garlic, and ginger in oil.\nAdd spices and chicken, cook until browned.\nAdd tomatoes and coconut milk, simmer until chicken is cooked.\nSeason with salt and pepper, garnish with cilantro.\n\n\nIngredients:\n\n250 g all-purpose flour\n150 g sugar\n150 g brown sugar\n225 g butter, softened\n2 large eggs\n1 tsp vanilla extract\n1 tsp baking soda\n0.5 tsp salt\n300 g chocolate chips\n\nPreparation:\n\nPreheat oven to 175°C.\nCream together butter, sugar, and brown sugar.\nAdd eggs and vanilla, mix well.\nCombine flour, baking soda, and salt.\nGradually add dry ingredients to wet ingredients.\nFold in chocolate chips.\nDrop spoonfuls of dough onto a baking sheet.\nBake for 10-12 minutes until golden brown.\n\n\nIngredients:\n\n200 g cherry tomatoes, halved\n1 cucumber, diced\n1 red onion, thinly sliced\n1 green bell pepper, diced\n100 g feta cheese, crumbled\n50 g black olives\n2 tbsp olive oil\n1 tbsp red wine vinegar\n1 tsp dried oregano\nSalt and pepper to taste\n\nPreparation:\n\nCombine tomatoes, cucumber, onion, bell pepper, feta, and olives in a bowl.\nWhisk together olive oil, vinegar, oregano, salt, and pepper.\nPour dressing over salad and toss to combine.\nServe immediately.\n\n\n\nAdd and commit that new recipe to your branch.\nNow switch back to the main branch (click on the “current branch” button on top and select “main”).\nMerge your new branch into the main branch (Branch -&gt; Merge into current branch -&gt; select your branch). Now check the commit history to see if your branch commit is actually there.\nNow push the “main” to GitHub by clicking the push button to share your changes with your team mate.\n\n\n\n\nMake a pull request in your team mate’s repo (10 min)\nNow it’s again time to modify something in your team mate’s cook book. Make sure you are in your team mate’s repository on the top left of GitHub desktop.\n\nCreate another branch and make some changes\nCreate another branch (Branch -&gt; New branch) and make sure that you are on that branch (top middle section of GitHub Desktop).\n\n\nMake some changes\nOpen a file in your team mate’s cook book and make some changes. Save and close the file and switch to GitHub Desktop.\nNow commit these changes.\n\n\nPublish and push branch\nPublish and push your branch to GitHub by clicking on the publish/push button.\n\n\nPull request\nNow open the repository on GitHub (Repository -&gt; View on GitHub). On top you should already see the option to “Compare and pull request”:\n\nClick on that button and use the dialogue window that opens to describe your changes. Then create the pull request by clicking on the green button that says “Create pull request”.\n\n\nFor the fast ones\nAs long as the pull request is not merged, you can still make changes to your branch and push them to GitHub. The pull request will automatically update with the new changes. So you can now switch to your machine again, make sure that in GitHub Desktop you are still on your branch and make some more changes to repository. Commit and push the changes to GitHub.\n\n\n\n\n\nReview pull request on your repo\nNow it’s time to look at the pull request your team mate left in your repository and decide if you want to merge it or not.\nWhen you have a pull request, you can see it on top, indicated by the number next to the pull request button:\n\nOpen the pull request by clickon on the button and selecting the Pull request from the list of pull requests.\nClick through the tabs on top. E.g. the “Files changed” tab is very interesting.\nYou can comment on the pull request if you want and ask for changes.\nWhen you are happy, you can merge the pull request by clicking on the green “Merge pull request” button:\n\nNow the changes are integrated into the main branch."
+    "text": "Tasks\nThe goal of these tasks is to get a feeling for a collaborative Git workflow.\nIf you are stuck in a task, you can have a look at the How-To description of the Git workflow with detailed explanations and screenshots of the steps.\n\n1 Clone2 Branch and merge3 Pull requestsExtra\n\n\n\nClone the cook book repo of your team mate (5 min)\nUse GitHub Desktop to clone the cook book repository of your team mate.\nGo to File -&gt; Clone Repository.\nIn the tab “GitHub.com” you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your team mate and clone it to a local path of your choice.\n\n\n\n\n\n\nWhat if I don’t see the repository of my team mate?\n\n\n\nYou can also clone a repository using its URL. Switch to the tab “URL” in GitHub Desktop. Open your team mate’s repository on GitHub (find the correct link here). On the GitHub page of the repo, click on the green code button on the top right, copy the HTTPS address and then paste it in the URL field of GitHub Desktop. Then clone it to a local path of your choice.\n\n\nOpen your team mate’s cook book in the explorer to see which files are already in there (Repository -&gt; Show in Explorer).\n\n\n\n\nTry branching and merging (10 min)\nMake sure that you are in your team mate’s cook book (check which repository you are in on the top left).\nCreate a new branch to add a recipe (Branch -&gt; New branch).\nMake sure that you are now in the new branch by looking in the top middle of GitHub Desktop what your current branch is:\n\nNow go to the project folder (Repository -&gt; Show in Explorer) and add a file for a new recipe.\nYou can again copy paste a recipe from below to save some time.\n\n🥞 Banana pancakes🍜 Ramen Soup🍰 Carrot cake🍛 Chicken curry🍪 Chocolate Chip Cookies🥗 Greek Salad\n\n\nIngredients:\n\n2 ripe bananas\n2 large eggs\n120 g all-purpose flour\n240 ml milk\n1 tsp baking powder\n1 tsp vanilla extract\n1 tbsp sugar\nPinch of salt\nButter or oil for cooking\n\nPreparation:\n\nMash bananas and mix with eggs, milk, and vanilla.\nCombine flour, baking powder, sugar, and salt.\nMix dry ingredients into wet ingredients until smooth.\nCook on a heated pan with butter or oil until golden brown.\n\n\nIngredients:\n\n200 g ramen noodles\n1 liter chicken broth\n2 cloves garlic, minced\n1 tbsp ginger, minced\n2 tbsp soy sauce\n1 tbsp miso paste\n2 large eggs\n100 g mushrooms, sliced\n1 carrot, julienned\n100 g spinach\n2 green onions, sliced\n1 tbsp sesame oil\nSalt and pepper to taste\n\nPreparation:\n\nCook ramen noodles according to package instructions, drain and set aside.\nIn a pot, heat sesame oil and sauté garlic and ginger until fragrant.\nAdd chicken broth, soy sauce, and miso paste, and bring to a simmer.\nAdd mushrooms and carrot, cook until tender.\nIn a separate pot, boil eggs for 7 minutes, then cool, peel, and halve.\nAdd spinach to the broth and cook until wilted.\nDivide noodles into bowls, pour broth and vegetables over them.\nTop with halved eggs and sliced green onions.\nSeason with salt and pepper to taste.\n\n\nIngredients:\n\n240 g all-purpose flour\n200 g grated carrots\n300 g sugar\n240 ml vegetable oil\n4 large eggs\n1 tsp baking powder\n1 tsp baking soda\n1 tsp ground cinnamon\n0.5 tsp ground nutmeg\n0.5 tsp salt\n1 tsp vanilla extract\n\nPreparation:\n\nBeat eggs and sugar, add oil and vanilla.\nMix flour, baking powder, baking soda, cinnamon, nutmeg, and salt.\nCombine wet and dry ingredients, fold in carrots.\nBake at 175°C for 35-40 minutes.\n\n\nIngredients:\n\n450 g chicken breast, cubed\n1 large onion, chopped\n3 cloves garlic, minced\n1 tbsp ginger, minced\n400 ml coconut milk\n400 g diced tomatoes\n2 tbsp curry powder\n1 tsp turmeric\n1 tsp cumin\n1 tsp coriander\nSalt and pepper to taste\n2 tbsp vegetable oil\nFresh cilantro for garnish\n\nPreparation:\n\nSauté onion, garlic, and ginger in oil.\nAdd spices and chicken, cook until browned.\nAdd tomatoes and coconut milk, simmer until chicken is cooked.\nSeason with salt and pepper, garnish with cilantro.\n\n\nIngredients:\n\n250 g all-purpose flour\n150 g sugar\n150 g brown sugar\n225 g butter, softened\n2 large eggs\n1 tsp vanilla extract\n1 tsp baking soda\n0.5 tsp salt\n300 g chocolate chips\n\nPreparation:\n\nPreheat oven to 175°C.\nCream together butter, sugar, and brown sugar.\nAdd eggs and vanilla, mix well.\nCombine flour, baking soda, and salt.\nGradually add dry ingredients to wet ingredients.\nFold in chocolate chips.\nDrop spoonfuls of dough onto a baking sheet.\nBake for 10-12 minutes until golden brown.\n\n\nIngredients:\n\n200 g cherry tomatoes, halved\n1 cucumber, diced\n1 red onion, thinly sliced\n1 green bell pepper, diced\n100 g feta cheese, crumbled\n50 g black olives\n2 tbsp olive oil\n1 tbsp red wine vinegar\n1 tsp dried oregano\nSalt and pepper to taste\n\nPreparation:\n\nCombine tomatoes, cucumber, onion, bell pepper, feta, and olives in a bowl.\nWhisk together olive oil, vinegar, oregano, salt, and pepper.\nPour dressing over salad and toss to combine.\nServe immediately.\n\n\n\nAdd and commit that new recipe to your branch.\nNow switch back to the main branch (click on the “current branch” button on top and select “main”).\nMerge your new branch into the main branch (Branch -&gt; Merge into current branch -&gt; select your branch). Now check the commit history to see if your branch commit is actually there.\nNow push the “main” to GitHub by clicking the push button to share your changes with your team mate.\n\n\n\n\nMake a pull request in your team mate’s repo (10 min)\nNow it’s again time to modify something in your team mate’s cook book. Make sure you are in your team mate’s repository on the top left of GitHub desktop.\n\nCreate another branch and make some changes\nCreate another branch (Branch -&gt; New branch) and make sure that you are on that branch (top middle section of GitHub Desktop).\n\n\nMake some changes\nOpen a file in your team mate’s cook book and make some changes. Save and close the file and switch to GitHub Desktop.\nNow commit these changes.\n\n\nPublish and push branch\nPublish and push your branch to GitHub by clicking on the publish/push button.\n\n\nPull request\nNow open the repository on GitHub (Repository -&gt; View on GitHub). On top you should already see the option to “Compare and pull request”:\n\nClick on that button and use the dialogue window that opens to describe your changes. Then create the pull request by clicking on the green button that says “Create pull request”.\n\n\nFor the fast ones\nAs long as the pull request is not merged, you can still make changes to your branch and push them to GitHub. The pull request will automatically update with the new changes. So you can now switch to your machine again, make sure that in GitHub Desktop you are still on your branch and make some more changes to repository. Commit and push the changes to GitHub.\n\n\n\n\n\nReview pull request on your repo\nNow it’s time to look at the pull request your team mate left in your repository and decide if you want to merge it or not.\nWhen you have a pull request, you can see it on top, indicated by the number next to the pull request button:\n\nOpen the pull request by clicking on the button and selecting the Pull request from the list of pull requests.\nClick through the tabs on top. E.g. the “Files changed” tab is very interesting.\nYou can comment on the pull request if you want and ask for changes.\nWhen you are happy, you can merge the pull request by clicking on the green “Merge pull request” button:\n\nNow the changes are integrated into the main branch."
   },
   {
     "objectID": "sessions/02_git_collaboration.html#clone-the-cook-book-repo-of-your-team-mate-5-min",
@@ -781,7 +865,7 @@
     "href": "sessions/02_git_collaboration.html#review-pull-request-on-your-repo",
     "title": "A collaboration workflows with Git",
     "section": "Review pull request on your repo",
-    "text": "Review pull request on your repo\nNow it’s time to look at the pull request your team mate left in your repository and decide if you want to merge it or not.\nWhen you have a pull request, you can see it on top, indicated by the number next to the pull request button:\n\nOpen the pull request by clickon on the button and selecting the Pull request from the list of pull requests.\nClick through the tabs on top. E.g. the “Files changed” tab is very interesting.\nYou can comment on the pull request if you want and ask for changes.\nWhen you are happy, you can merge the pull request by clicking on the green “Merge pull request” button:\n\nNow the changes are integrated into the main branch."
+    "text": "Review pull request on your repo\nNow it’s time to look at the pull request your team mate left in your repository and decide if you want to merge it or not.\nWhen you have a pull request, you can see it on top, indicated by the number next to the pull request button:\n\nOpen the pull request by clicking on the button and selecting the Pull request from the list of pull requests.\nClick through the tabs on top. E.g. the “Files changed” tab is very interesting.\nYou can comment on the pull request if you want and ask for changes.\nWhen you are happy, you can merge the pull request by clicking on the green “Merge pull request” button:\n\nNow the changes are integrated into the main branch."
   },
   {
     "objectID": "slides/02_git_collaboration.html#before-we-start",
@@ -830,7 +914,7 @@
     "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-2",
     "title": "Introduction to version control with Git",
     "section": "Get a repo from a remote",
-    "text": "Get a repo from a remote\n\nTo clone a repo, you need to know the repo’s URL\n\n\n\nYou can clone all public repositories\n\nYou can only push if you are authorized\n\nYou can clone private repositories if you are a owner/collaborator"
+    "text": "Get a repo from a remote\nYou can clone\n\nall of your own repositories (public and private)\nall repositories you are a collaborator on (public and private)\nall public repositories of other people\n\n\nAll you need is the URL of the remote repository"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-changes-from-the-remote",
@@ -844,7 +928,7 @@
     "href": "slides/02_git_collaboration.html#a-simple-collaboration-workflow",
     "title": "Introduction to version control with Git",
     "section": "A simple collaboration workflow",
-    "text": "A simple collaboration workflow\n\n\n\nOne remote repo on GitHub, multiple local repos\n\n\nIdea: Everyone works on the same branch\n\nPull before you start working\nPush after you finished working"
+    "text": "A simple collaboration workflow\n\n\n\nOne remote repo on GitHub, multiple local repos (Bob and me)\n\n\nIdea: Everyone works on the same branch\n\nPull before you start working\nPush after you finished working"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-1",
@@ -854,18 +938,18 @@
     "text": "A simple collaboration workflow\n\n\nThis works well if\n\nRepo is not updated often\nYou don’t work on the same files simultaneously\nNo need to discuss changes before they are integrated\nYou collaborate with yourself"
   },
   {
-    "objectID": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-2",
-    "href": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-2",
-    "title": "Introduction to version control with Git",
-    "section": "A simple collaboration workflow",
-    "text": "A simple collaboration workflow\n\n\nThis workflow starts to be problematic when\n\nPeople push often/forget to pull regularly\n\nPotential conflicts on main\n\nYou just want to experiment\n\nEverything goes directly to main"
-  },
-  {
     "objectID": "slides/02_git_collaboration.html#lets-give-it-a-try",
     "href": "slides/02_git_collaboration.html#lets-give-it-a-try",
     "title": "Introduction to version control with Git",
     "section": "Let’s give it a try",
     "text": "Let’s give it a try\n\n\nMake sure you are in the repository of your team mate\nOpen a recipe in the cook book of your team mate\n\nRepository -&gt; Show in Explorer\n\nChange something in there\nCommit the change and push it\n\n\n\nGet the changes of your team mate from the remote.\n\nSwitch to your own cook book repository\nPull the changes (Same button as the push button)\nHave a look at the commit history to see what changed"
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-2",
+    "href": "slides/02_git_collaboration.html#a-simple-collaboration-workflow-2",
+    "title": "Introduction to version control with Git",
+    "section": "A simple collaboration workflow",
+    "text": "A simple collaboration workflow\n\n\nThis workflow starts to be problematic when\n\nPeople push often/forget to pull regularly\n\nPotential conflicts on main\n\nYou just want to experiment\n\nEverything goes directly to main"
   },
   {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow",
@@ -896,6 +980,20 @@
     "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\nGit merge brings the commits from the branch to main"
   },
   {
+    "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
+    "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
+    "title": "Introduction to version control with Git",
+    "section": "Merging changes from a branch",
+    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\nIf there was a commit in main, a merge commit is introduced."
+  },
+  {
+    "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
+    "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
+    "title": "Introduction to version control with Git",
+    "section": "Merging changes from a branch",
+    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\nIf there was a commit in main, a merge commit is introduced."
+  },
+  {
     "objectID": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github",
     "href": "slides/02_git_collaboration.html#a-branching-merging-workflow-with-github",
     "title": "Introduction to version control with Git",
@@ -915,40 +1013,5 @@
     "title": "Introduction to version control with Git",
     "section": "A branching-merging workflow with GitHub",
     "text": "A branching-merging workflow with GitHub\nA pull request is basically asking your collaborators:\n\nWhat do you think of my changes? Can we integrate them in main or do we still need to change something?\n\n\nGitHub has nice features for pull requests, e.g.:\n\nProvide context and explanations for your changes\nCollaborators can easily compare versions\nCollaborators can discuss and comment on your changes\n\n\n\nA pull request is merged on GitHub when everyone agreed on the code."
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#next-week",
-    "href": "slides/02_git_collaboration.html#next-week",
-    "title": "Introduction to version control with Git",
-    "section": "Next week",
-    "text": "Next week\n\nMonday 2.30 - 3.30 on Webex (link via email)\nUntil then: work with Git on your own (~ 1 - 2 h)\n\nPick something you find most interesting/useful to you\n\nCollect questions/problems/discoveries\nMore Git topics"
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#some-ideas",
-    "href": "slides/02_git_collaboration.html#some-ideas",
-    "title": "Introduction to version control with Git",
-    "section": "Some ideas",
-    "text": "Some ideas\n\nStart working with Git on one of your research projects\nPublish one of your projects on GitHub including a nice README\nPractice collaboration by contributing to your team mate’s cook using pull requests\n\nYour team mate can answer your pull requests and request some changes :)"
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#some-ideas-1",
-    "href": "slides/02_git_collaboration.html#some-ideas-1",
-    "title": "Introduction to version control with Git",
-    "section": "Some ideas",
-    "text": "Some ideas\n\nCheck out the How-To guides if you want to\n\nRecap GH Desktop\nlearn about Git in the terminal\nlearn about Git + R\n\nIf you find a mistake on my websites\n\nEdit the page on GitHub (and make a Pull request) or report an issue\n\nCheckout the additional resources"
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
-    "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-1",
-    "title": "Introduction to version control with Git",
-    "section": "Merging changes from a branch",
-    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\nIf there was a commit on a common file in main, a merge commit is introduced."
-  },
-  {
-    "objectID": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
-    "href": "slides/02_git_collaboration.html#merging-changes-from-a-branch-2",
-    "title": "Introduction to version control with Git",
-    "section": "Merging changes from a branch",
-    "text": "Merging changes from a branch\nTo bring changes to the main branch you need to merge them.\n\n\nMostly merging happens without problems, but…\n… if the same line was edited on separate branches…\n… there will be a merge conflict 😱\n\n\n\nMerge conflicts need to be solved manually. You need to chose which of the conflicting versions you want to keep."
   }
 ]
