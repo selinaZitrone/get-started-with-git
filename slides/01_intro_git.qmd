@@ -458,6 +458,38 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
 > Publish your cook book on GitHub <br>
 > Complete [Task 2 "GitHub"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks)
 
+## Preparation for tomorrow
+
+- Tomorrow we have teams of 2
+- Collaborate on the cook book of your team mate
+
+## Preparation for tomorrow
+
+::: {.nonincremental}
+1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+
+:::
+
+## Preparation for tomorrow
+
+:::{.nonincremental}
+1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
+
+:::
+
+![](../how-tos/img/gh_add_collaborator.png){width=68% fig-align="center"}
+
+## Preparation for tomorrow
+
+:::{.nonincremental}
+1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
+2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
+3. Accept the invitation of your team mate to their repository 
+  - You will get an Email or you can do it on GitHub
+
+:::
+
 ## Summary of the basic steps
 
 :::{.nonincremental}
@@ -564,7 +596,7 @@ Some essentials that will improve your published repository:
 . . . 
 
 If you are interested, browse some nice GitHub repositories for inspiration (e.g.
-[Computational notebooks guide](https://github.com/FellowsFreiesWissen/computational_notebooks), [Repo to publish code from a manuscript](https://github.com/AnneLew/Lewerentz-etal_2021_Macrophytes-DDG))
+[Computational notebooks guide](https://github.com/FellowsFreiesWissen/computational_notebooks))
 
 # Thanks for your attention {.inverse}
 
@@ -586,38 +618,3 @@ Take your work space back in time temporarily with `git checkout`
 
 ![](img/day1/commit_history_checkout.png){width=85%}
 
-
-
-
-## Preparation for tomorrow
-
-- Tomorow we have teams of 2
-- Collaborate on the cook book of your team mate
-
-## Preparation for tomorrow
-
-::: {.nonincremental}
-1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-
-:::
-
-
-## Preparation for tomorrow
-
-:::{.nonincremental}
-1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
-
-:::
-
-![](../how-tos/img/gh_add_collaborator.png){width=68% fig-align="center"}
-
-## Preparation for tomorrow
-
-:::{.nonincremental}
-1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
-3. Accept the invitation of your team mate to their repository 
-  - You will get an Email or you can do it on GitHub
-
-:::
