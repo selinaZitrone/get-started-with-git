@@ -1,0 +1,144 @@
+---
+title: "A Git workflow with VS Code"
+---
+
+In this guide, we will work on a cook book project using Git and VS Code.
+We will start by going through all the steps for an individual project (you're working on
+the cook book alone) and then we will see how to collaborate with others.
+
+# Preparations
+
+To follow this guide you need:
+
+- Git installed
+- A GitHub account
+- VS Code installed
+
+Check out the [course preparations](../course_preparation.qmd) if you miss anything from this list.
+
+# A Git workflow for your individual project
+
+## Step 1: Initialize a new repository
+
+First, open your project folder (in my case `cookBook`) in VS Code.
+
+Open VS Code, then go to **File → Open Folder…** and select your folder. In my case it's a folder  named `cookBook` that already has one recipe `pie.txt` inside.
+
+![](img/vs_open_folder.png)
+
+Now open the Source Control view (left sidebar, the branch icon, 3rd from the top). If your folder is not yet a Git repository, VS Code suggests initializing one.
+
+Click **Initialize Repository**.  
+
+![](img/vs_init.png)
+
+After initialization, VS Code creates a local Git repository in that folder.
+
+## Step 2: Add a recipe
+
+If your project folder is empty, create a new file for your first recipe.
+
+## Step 3: Stage changes and commit
+
+In **Source Control**, stage the file by clicking the **+** next to `pie.txt`. If you want to stage multiple files at once, you can also click the **+** next to "Changes" to **Stage All Changes**:
+
+![](img/vs_untracked_changes.png)
+
+Enter a commit message in the box on top. Optionally, you can also add a more detailed description after a blank line: 
+
+![](img/vs_stage_pre_commit.png)
+
+Press **Commit** (or hit **Ctrl/Cmd + Enter**).
+
+### Explore the changes
+
+To explore the changes, make 2 or 3 more commits (e.g. add other files or change existing ones).
+
+If you make changes to an existing file and you want to see what changed before staging/committing, you can:
+
+Open the **Source Control** view to see your changes. Clicking a file shows a side-by-side diff.
+
+![](img/vs_explore_changes.png)
+
+This can be very useful to check what you changed before formulating your commit message.
+
+:::{.callout-tip}
+## Good commit messages
+
+There are guidelines on how to write good commit messages.
+This becomes especially important when collaborating.
+See <https://cbea.ms/git-commit/> for more info.
+:::
+
+### Look at the commit history
+
+After doing several commits, you can explore the commit.
+You can find it below the source view as a timeline of commits. You can click on each commit to explore further which files changed and what the changes were.
+
+![](img/vs_graph.png)
+
+## Step 4: Share your project on GitHub
+
+Now we want to share our cook book with the world (or with collaborators).
+
+In **Source Control**, click **Publish Branch**:
+
+![](img/vs_publish_branch.png)
+
+If you do this for the first time, VS Code will ask you to sign in to GitHub. Just follow the prompts until you're signed in and back in VS Code.
+
+In the tool bar on top, choose public or private in the dialog.
+
+![](img/vs_publish.png)
+
+VS Code will create a new repository on GitHub, add it as the `origin` remote, and push your `main` branch.
+
+## Step 5: Push new changes to GitHub
+
+After future commits, you can push them by clicking the **Synch Changes** button. The number next to the arrow indicates how many commits you are about to push.:
+
+![](img/vs_sync.png)
+
+:::{.callout-note}
+
+Now VS Code will be connected to GitHub. You can check if you are logged in by clicking the Accounts icon in the Activity Bar (bottom left). If you are signed in, you will see your GitHub account there like this:
+
+![](img/vs_signed_in.png)
+
+Open the Command Palette (Ctrl/Cmd + Shift + P) and type "Git" to see all the different Git and GitHub options that you have now.
+:::
+
+# Collaboration workflows
+
+In collaboration workflows, you normally first need to be added as a collaborator to a project. Then you can clone the project to your computer and work on it. We will skip those two steps here.
+You cannot do this from within VS Code. So if you want to clone a repository, you would need to do it with
+[GitHub Desktop](git_workflow_gh_desktop.qmd) or in the [terminal](git_workflow_terminal.qmd).
+
+In the following, we will explore branching and merging from inside VS Code on our own
+project. But the workflow is the same when you work on a project of someone else.
+
+## Step 1: Create a new branch
+
+Look in the status bar (bottom left) to see which branch you are on (probably `main`) and click on it. This will open a pop up where you can **Create new branch**:
+
+![](img/vs_create_branch.png)
+
+Enter a name for your new branch (no white space in name allowed, e.g. `add_vegan_pie`) and hit Enter. This will create and switch the branch for you. You can see that you are now on the new branch in the status bar and in your Git Graph view:
+
+![](img/vs_on_new_branch.png)
+
+## Step 2: Change files and push changes
+
+Now that you are on your new branch, you can make changes to the files. Add a new recipe `vegan_pie.txt` for example.
+
+When you are done making changes, stage and commit them (like in Step 3 of the individual workflow).
+
+You can now see that you have commits on your feature branch that are not on `main` yet. This is indicated by the colors in the graph view and the branch names next to the commits:
+
+![](img/vs_new_commits_on_branch.png)
+
+You can now click **Publish Branch** to push your new changes to GitHub where you can do a pull request to merge your changes into `main`.
+
+## Step 3: Create a pull request
+
+See [here](create_pull_request.qmd) for a guide on how to create a pull requests.
