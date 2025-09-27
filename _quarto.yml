@@ -49,8 +49,8 @@ format:
   html:
     embed-resources: true
     theme:
-      light: [flatly, style/theme_dark.scss]
-      dark: [darkly, style/theme_light.scss]
+      light: [flatly, style/theme_light.scss]
+      dark: [darkly, style/theme_dark.scss]
     css: style/style.css
     toc: true
     code-copy: true

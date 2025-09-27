@@ -26,7 +26,8 @@ $secondary:     $col5 !default;
 $light:         $gray-200 !default;
 $dark:          $gray-700 !default;
 
-$link-color: $col3 !default;
-$code-color: $col6 !default;
-$body-color: $col1 !default;
-$code-block-bg: $gray-100 !default;
+$link-color: lighten($col3, 10%) !default;
+$code-color: $col4 !default;
+$body-color: $gray-100 !default;
+$code-block-bg: $gray-800 !default;
+$code-bg: $gray-800 !default;
