@@ -16,7 +16,7 @@ format:
     code-line-numbers: false
     theme: slides.scss
     auto-stretch: false
-    scrollable: true
+    scrollable: false
     fig-align: center
 editor: source
 execute: 
