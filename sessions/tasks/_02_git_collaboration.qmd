@@ -6,7 +6,7 @@ If you are stuck in a task, you can have a look at the [How-To description](../h
 
 # 1 Clone 
 
-## Clone the cook book repo of your team mate (5 min)
+## Clone the cook book repo of your team mate
 
 Use GitHub Desktop to clone the cook book repository of your team mate.
 
@@ -29,7 +29,7 @@ Open your team mate's cook book in the explorer to see which files are already i
 
 # 2 Branch and merge
 
-## Try branching and merging (10 min)
+## Try branching and merging
 
 Make sure that you are in your team mate's cook book (check which repository you are in on the top left).
 
@@ -215,9 +215,13 @@ Merge your new branch into the main branch (**Branch -> Merge into current branc
 
 Now push the "main" to GitHub by clicking the push button to share your changes with your team mate.
 
+#### For the fast ones
+
+Switch back to your branch again and make some more changes to the recipe you added. Commit them and merge the branch again into main. Push main to GitHub again.
+
 # 3 Pull requests
 
-## Make a pull request in your team mate's repo (10 min)
+## Make a pull request in your team mate's repo
 
 Now it's again time to modify something in your team mate's cook book. Make sure you are in your team mate's repository on the top left of GitHub desktop. 
 
