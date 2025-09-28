@@ -5,10 +5,9 @@ from: markdown+emoji
 
 ## Learn Git
 
-- [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf): Always handy if you don't remember the basic commands for the 
-terminal.
-
-- [Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc): Very nice blogpost. Explains really well the concepts of git, also more advanced ones like `rebase` or `cherry-pick`.
+- [Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc): Very nice blogpost. Explains the concepts of git really well, also more advanced ones like `rebase` or `cherry-pick`.
+  - Is related to [this Git training](https://github.com/UnseenWizzard/git_training) for learning the Git
+concepts in the command line. 
 
 - [How to write good commit messages](https://cbea.ms/git-commit/): Explains why good commit messages are important and gives 7 rules for writing them.
 
@@ -16,8 +15,8 @@ terminal.
 
 ### Git :heart: command line
 
-- Follow [this Git training](https://github.com/UnseenWizzard/git_training) for learning the Git
-concepts in the command line. 
+- [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf): Always handy if you don't remember the basic commands for the 
+terminal.
 
 ### Git :heart: R
 
@@ -32,8 +31,13 @@ to set up Git and a GitHub connection in R and R Studio
 - There are detailed step by step guides on how to set up GitHub Desktop and how to
 work with in the [GitHub Desktop Documentation](https://docs.github.com/desktop)
 
-## Other resources
+### Git :heart: VS Code
 
-- [Connect GitHub Desktop with a Gitlab repository](https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104?gi=b32bd84e7fe4)
-- [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html)
-- [A markdown cheat sheet for your README files](https://github.com/im-luka/markdown-cheatsheet)
+- The [VS Code documentation](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git) has a nice section on version control with Git in VS Code.
+- For uses specifically with GitHub, also have a look at the [GitHub in VS Code documentation](https://code.visualstudio.com/docs/sourcecontrol/github).
+
+## Other useful things
+
+- [Connect GitHub Desktop with a Gitlab repository](https://itnext.io/how-to-use-github-desktop-with-gitlab-cd4d2de3d104?gi=b32bd84e7fe4): This is interesting if you want to use GitHub Desktop but your repository is on GitLab (e.g. because your institution has it's own GitLab server).
+- [Connecting the repo with Zenodo to get a DOI](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html): Important if you want to make your code citable, especially if it's connected to a publication.
+- [A markdown cheat sheet for your README files](https://github.com/im-luka/markdown-cheatsheet): READMES are essential for good repositories. Check out the markdown cheat sheet for formatting options.
