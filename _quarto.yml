@@ -32,6 +32,8 @@ website:
             href: how-tos/git_workflow_terminal.qmd
           - text: RStudio, R and `usethis`
             href: how-tos/git_workflow_usethis.qmd
+          - text: VS Code
+            href: how-tos/git_workflow_vscode.qmd
           - text: Create pull requests on GitHub
             href: how-tos/create_pull_request.qmd
           - text: Utility - Set up SSH keys
