@@ -221,14 +221,7 @@
     "href": "slides/01_intro_git.html#how-to-write-good-commit-messages",
     "title": "Introduction to version control with Git",
     "section": "How to write good commit messages?",
-    "text": "How to write good commit messages?\n\n\n\nxkcd on commit messages"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#how-to-write-good-commit-messages-1",
-    "href": "slides/01_intro_git.html#how-to-write-good-commit-messages-1",
-    "title": "Introduction to version control with Git",
-    "section": "How to write good commit messages?",
-    "text": "How to write good commit messages?\n\n\n✔️\nAdd pie recipe\n\nThis is my favorite pie in the world. \nThe recipe comes from my grandfather and \nhe learned it from his neighbor.\n\n❌\nadded a file.\n\nThis is really good.\n\n\nSee here for more details but some general rules:\n\nLimit summary line to 50 characters\nCapitalize summary line\nDo not end summary line with period\nUse imperative mood in the subject line\nUse the Description to explain what and why, not how"
+    "text": "How to write good commit messages?\n\n\n\n\n\nxkcd on commit messages\n\n\n\n\n✔️\nAdd pie recipe\n\nThis is my favorite pie in the world. \nThe recipe comes from my grandfather and \nhe learned it from his neighbor.\n❌\nadded a file.\n\nThis is really good.\n\n\n\nSee here for more details and guidelines."
   },
   {
     "objectID": "slides/01_intro_git.html#the-commit-history",
@@ -266,34 +259,6 @@
     "text": "Advantages of publishing your projects\n\nVisibility and Credit\nPortfolio of your work\nOthers can build on your work\nGet feedback\nCitations\nReproducibility"
   },
   {
-    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow",
-    "href": "slides/01_intro_git.html#preparation-for-tomorrow",
-    "title": "Introduction to version control with Git",
-    "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nTomorrow we have teams of 2\nCollaborate on the cook book of your team mate"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-1",
-    "href": "slides/01_intro_git.html#preparation-for-tomorrow-1",
-    "title": "Introduction to version control with Git",
-    "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-2",
-    "href": "slides/01_intro_git.html#preparation-for-tomorrow-2",
-    "title": "Introduction to version control with Git",
-    "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository"
-  },
-  {
-    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-3",
-    "href": "slides/01_intro_git.html#preparation-for-tomorrow-3",
-    "title": "Introduction to version control with Git",
-    "section": "Preparation for tomorrow",
-    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository\nAccept the invitation of your team mate to their repository\n\n\nYou will get an Email or you can do it on GitHub"
-  },
-  {
     "objectID": "slides/01_intro_git.html#summary-of-the-basic-steps",
     "href": "slides/01_intro_git.html#summary-of-the-basic-steps",
     "title": "Introduction to version control with Git",
@@ -327,6 +292,34 @@
     "title": "Introduction to version control with Git",
     "section": "Ignore files with .gitignore",
     "text": "Ignore files with .gitignore\n\nCreate a file with the name .gitignore in working directory\nAdd all files and directories you want to ignore to the .gitignore file\n\n\nExample\n# Ignore single files\n\nmy_notes.docx  # ignore the file my_notes.docx\ndebug.log # ignore the file debug.log\n\n\n# Ignore files with specific endings\n\n*.html    # ignore all .html files\n*.pdf     # ignore all .pdf files\n\n# Ignore directories\n\nbuild/    # ignore all files in subdirectory build\nSee here for more ignore patterns that you can use."
+  },
+  {
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow",
+    "title": "Introduction to version control with Git",
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nTomorrow we have teams of 2\nCollaborate on the cook book of your team mate"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-1",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow-1",
+    "title": "Introduction to version control with Git",
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-2",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow-2",
+    "title": "Introduction to version control with Git",
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository"
+  },
+  {
+    "objectID": "slides/01_intro_git.html#preparation-for-tomorrow-3",
+    "href": "slides/01_intro_git.html#preparation-for-tomorrow-3",
+    "title": "Introduction to version control with Git",
+    "section": "Preparation for tomorrow",
+    "text": "Preparation for tomorrow\n\nEnter your GitHub Account Name and the link to your repo here\nLook for the GitHub Name of your team mate and add them as a collaborator to your repository\nAccept the invitation of your team mate to their repository\n\n\nYou will get an Email or you can do it on GitHub"
   },
   {
     "objectID": "slides/01_intro_git.html#checkout-a-previous-commit",
