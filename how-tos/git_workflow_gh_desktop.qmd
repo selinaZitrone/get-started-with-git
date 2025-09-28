@@ -254,7 +254,7 @@ This option works for GitHub repositories but also for all other remote reposito
 To clone a repository, you need to know the repositories address. 
 You can find the HTTPS address by clicking the green code button on the repository page on GitHub:
 
-![](img/gh_copy_adress.png)
+![](img/gh_copy_address_https.png)
 
 Copy the address to your clipboard.
 
