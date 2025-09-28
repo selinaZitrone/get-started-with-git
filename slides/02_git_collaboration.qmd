@@ -348,6 +348,41 @@ A pull request is merged on GitHub when **everyone agreed on the code**.
 > [Create a pull request on your team mate's repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
 > Complete task 3 "Pull requests"
 
+# Some good practice tips {.inverse}
+
+## Git
+
+- Commit often (small changes that can be described in one commit message)
+- Write good commit messages (it becomes a habit)
+- Push (at least) daily (backup!)
+- Use `.gitignore`
+- Don't commit secrets ;)
+
+## Publishing
+
+Some essentials that will improve your published repository:
+
+- Add a good README.md file
+  - Tell people what your project is about and how to use it
+  - Check out the [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting options
+- Add a LICENSE file
+  - Tell others how to use your code
+- Add a DOI to your repository (e.g. via [Zenodo](https://emilio-berti.GitHub.io/idiv-git-introduction/21-GitHub_zenodo/index.html))
+
+. . . 
+
+If you are interested, browse some nice GitHub repositories for inspiration (e.g.
+[Computational notebooks guide](https://github.com/FellowsFreiesWissen/computational_notebooks))
+
+## What now?
+
+- Git can seem complicated at first, but you will get used to it
+- Make it a habit to use Git, start with your own projects
+- Improve your workflow step by step
+- Practice makes perfect
+
+Check out the [resources page](https://selinazitrone.github.io/get-started-with-git/resources.html) and the different How-tos for more info and practice.
+
 # Thanks for your attention
 
 > Questions?

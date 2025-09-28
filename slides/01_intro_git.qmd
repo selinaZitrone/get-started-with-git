@@ -526,6 +526,7 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
 # Now you (5 min) {.task-slide}
 
 > Undo some changes in your cook book
+> Complete [Task 3 "Undo changes"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
 
 # Ignore files with `.gitignore` {.inverse}
 
@@ -571,32 +572,7 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 # Now you (5 min) {.task-slide}
 
 > Ignore some files in your cook book project
-
-# Some good practice tips {.inverse}
-
-## Git
-
-- Commit often (small changes that can be described in one commit message)
-- Write good commit messages (it becomes a habit)
-- Push (at least) daily (backup!)
-- Use `.gitignore`
-- Don't commit secrets
-
-## Publishing
-
-Some essentials that will improve your published repository:
-
-- Add a good README.md file
-  - Tell people what your project is about and how to use it
-  - Check out the [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting options
-- Add a LICENSE file
-  - Tell others how to use your code
-- Add a DOI to your repository (e.g. via [Zenodo](https://emilio-berti.GitHub.io/idiv-git-introduction/21-GitHub_zenodo/index.html))
-
-. . . 
-
-If you are interested, browse some nice GitHub repositories for inspiration (e.g.
-[Computational notebooks guide](https://github.com/FellowsFreiesWissen/computational_notebooks))
+> Complete [Task 4 "Ignore files"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
 
 # Thanks for your attention {.inverse}
 
