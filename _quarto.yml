@@ -45,6 +45,8 @@ website:
     left: 
       - text: Course preparation
         href: course_preparation.qmd
+      - text: Git glossary
+        href: glossary.qmd  
 
 
 format:

@@ -1,0 +1,129 @@
+---
+title: "Git Glossary"
+format: html
+---
+
+A quick reference to the most common Git and GitHub terms you'll encounter in this workshop.  
+
+## 🔤 Alphabetical Index
+
+- [.gitignore](#gitignore)
+- [Branch](#branch)
+- [Clone](#clone)
+- [Commit](#commit)
+- [Commit Message](#commit-message)
+- [Fork](#fork)
+- [Git](#git)
+- [GitHub / GitLab](#github-gitlab)
+- [GitHub Desktop](#github-desktop)
+- [History (Log)](#history-log)
+- [Issue](#issue)
+- [License](#license)
+- [Local Repository](#local-repository)
+- [Main Branch](#main-branch)
+- [Merge](#merge)
+- [Merge Conflict](#merge-conflict)
+- [Pull](#pull)
+- [Pull Request (PR)](#pull-request-pr)
+- [Push](#push)
+- [README](#readme)
+- [Remote Repository](#remote-repository)
+- [Repository (repo)](#repository)
+- [Restore / Discard](#restore-discard)
+- [Revert](#revert)
+- [Stage](#stage)
+
+## 🗂 Repository Basics
+
+### Repository (repo) {#repository}
+A project folder that Git tracks. It contains your files **and** the entire history of changes.  
+See also: [Local Repository](#local-repository), [Remote Repository](#remote-repository).
+
+### Local Repository {#local-repository}
+The copy of the repository on **your computer**. This is where you make changes before you [push](#push) them.
+
+### Remote Repository {#remote-repository}
+The copy of the repository hosted on a service like [**GitHub** or **GitLab**](#github--gitlab), usually shared with others.  
+See also: [Push](#push), [Pull](#pull), [Clone](#clone).
+
+### Git {#git}
+The underlying version control system. [GitHub Desktop](#github-desktop) is just a friendlier interface to it.
+
+### GitHub / GitLab {#github-gitlab}
+Websites that host [remote repositories](#remote-repository) and provide collaboration features like [pull requests](#pull-request-pr), [issues](#issue), and wikis.
+
+### GitHub Desktop {#github-desktop}
+A **graphical application** for using [Git](#git) and [GitHub](#github--gitlab) without the terminal.  
+It lets you [clone](#clone), [commit](#commit), [push](#push), [pull](#pull), create [branches](#branch), and manage [pull requests](#pull-request-pr) through a point-and-click interface.
+
+### Main Branch {#main-branch}
+The default [branch](#branch) in most repositories. It usually represents the "official" project history.
+
+### Fork {#fork}
+Your personal copy of someone else's repository on [GitHub](#github--gitlab). Useful for contributing to open source projects.  
+
+## ✍️ Working with Changes
+
+### Stage {#stage}
+The step before committing. You choose which changes you want to include in the next [commit](#commit). In [GitHub Desktop](#github-desktop), this is done by checking the boxes next to changed files.
+
+### Commit {#commit}
+A saved snapshot of your project at a point in time. Think of it as a "save point" in a game. Each commit has a unique ID and a message describing the changes.
+
+### Commit Message {#commit-message}
+A short description you write when making a [commit](#commit).  
+It explains *why* you made the change.  
+Good commit messages make it easier for you (and teammates) to understand the [history](#history-log) later.  
+In GitHub Desktop, you’ll see a box for the **summary** (short title) and an optional **description**.  
+
+
+### History (Log) {#history-log}
+The list of past [commits](#commit). In [GitHub Desktop](#github-desktop), you can view this in the **History** tab.
+
+### Restore / Discard {#restore-discard}
+Throw away uncommitted changes and return files to their last committed state.
+
+### Revert {#revert}
+Undo a [commit](#commit) by creating a new commit that cancels it out. The history stays intact.
+
+### Branch {#branch}
+A separate line of development. Often used to work on a feature without touching the [main branch](#main-branch).  
+See also: [Merge](#merge), [Pull Request](#pull-request-pr).
+
+### Merge {#merge}
+Combine changes from one [branch](#branch) into another.
+
+### Merge Conflict {#merge-conflict}
+Happens when Git can't automatically [merge](#merge) changes. You'll need to choose which version to keep.
+
+## 🌐 Sharing & Collaboration
+
+### Push {#push}
+Send your [commits](#commit) from your [local repository](#local-repository) to the [remote repository](#remote-repository).
+
+### Pull {#pull}
+Download [commits](#commit) from the [remote repository](#remote-repository) into your [local repository](#local-repository), so you're up to date.  
+See also: [Push](#push).
+
+### Clone {#clone}
+Make a **copy of a remote repository** onto your computer as a [local repository](#local-repository).
+
+### Pull Request (PR) {#pull-request-pr}
+A request to [merge](#merge) changes from one [branch](#branch) into another (common on GitHub).  
+It's also a place for code review and discussion.  
+See also: [Merge Conflict](#merge-conflict), [Issue](#issue), [Fork](#fork).
+
+### Issue {#issue}
+A ticket for tracking bugs, feature requests, or tasks within a repository.  
+Often connected to [pull requests](#pull-request-pr).
+
+## 📄 Project Files & Config
+
+### `.gitignore` {#gitignore}
+A file that tells Git which files or folders to **ignore** (e.g. temporary files, build artifacts).
+
+### README {#readme}
+A file (usually `README.md`) that explains what a project is, how to use it, and other helpful info.
+
+### License {#license}
+A file that tells others how they are allowed to use or share the project.
