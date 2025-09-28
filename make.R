@@ -7,7 +7,7 @@ system("quarto render")
 # render slides as pdf
 slides_html <- list.files(
   here::here("docs/slides"),
-  pattern = "01|02|03",
+  pattern = "01|02",
   full.names = TRUE
 )
 
