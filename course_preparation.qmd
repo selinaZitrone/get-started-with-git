@@ -48,26 +48,22 @@ Check the version of Git that you have installed with
 git --version
 ```
 
-# MacOS
+# macOS
 
-If you are using Xcode, you might already have Git installed. To check if this is the case, open the terminal and run
+Open the Terminal app and run
 
 ```sh
 git --version
 ```
 
-If the terminal tells you which version of Git is installed, you can check if you can update your current Git installation.
+If Git is already installed, you will see the version of Git printed to the console.
 
-If you need to install Git, you can do this with homebrew. Just run
+If Git is not installed yet, macOS will ask you to install the "command line developer tools". Click **Install**, wait until the installation is finished and run `git --version` again to check that it worked.
+
+Alternatively, if you use [Homebrew](https://brew.sh/), you can install Git with
 
 ```sh
 brew install git
-```
-
-Then check the version and verify the installation with 
-
-```sh
-git --version
 ```
 
 :::
@@ -96,6 +92,10 @@ interface to work with Git.
 There are detailed step by step guides on how to install and set up GitHub Desktop
 on the GitHub Website. Please follow [this guide](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop#part-1-installing-github-desktop) and 
 do Part 1 (Installing GitHub Desktop) and Part 2 (Configuring your account).
+
+When GitHub Desktop asks you to **configure Git**, enter your name and the email address of your GitHub account. This information is shown on all your commits.
+You can check or change it later under **File -> Options -> Git** (macOS: **GitHub Desktop -> Settings -> Git**).
+This setting is also used when you work with Git in the terminal, RStudio or VS Code.
 
 :::{.callout-note}
 
