@@ -44,7 +44,18 @@ This is the keyboard shortcut to hide and unhide files and folders.
 
 Create and open a text file (file ending `.txt`) in a text editor.
 Then add a recipe to the file. To speed things up, you can choose one from
-below and copy paste it into your file. 
+below and copy paste it into your file.
+
+::: {.callout-note}
+
+## Use a plain-text editor
+
+Any plain-text editor works, e.g. Notepad (Windows), TextEdit (macOS) or VS Code.
+
+- **macOS:** TextEdit saves formatted text by default. Before saving, choose **Format -> Make Plain Text**.
+- **Windows:** File endings are hidden by default, so a file you name `recipe.txt` might actually be called `recipe.txt.txt`. To see file endings, check **File name extensions** in the Explorer (in the same place as **Hidden items** above).
+
+:::
 
 :::{.panel-tabset}
 
