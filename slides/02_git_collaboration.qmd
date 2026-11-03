@@ -378,3 +378,82 @@ Check out the [resources page](https://selinazitrone.github.io/get-started-with-
 # Thanks for your attention
 
 > Questions?
+
+# Appendix: Merge conflicts {.inverse}
+
+## Merge conflicts
+
+![Artwork by [@allison_horst](https://twitter.com/allison_horst)](img/day3/merge_conflicts.png){fig-alt="Cartoon of the GitHub octocat mascot hugging a very sad looking little furry monster while the monster points accusingly at an open laptop with \"MERGE CONFLICT\" in red across the entire screen. The laptop has angry eyes and claws and a wicked smile. In text across the top reads \"gitHUG\" with a small heart." width=75%}
+
+## When do conflicts happen?
+
+- Two changes to the **same lines of the same file**
+  - e.g. on two branches that you want to merge
+  - or in your local and the remote repo when you pull
+- Git cannot decide which version to keep, so it **asks you**
+- Nothing is lost and you can always abort the merge
+
+## What a conflict looks like
+
+Git marks the conflicting lines in the file:
+
+```md
+1 tsp vanilla extract
+<<<<<<< HEAD
+1 tbsp honey
+=======
+3 tbsp sugar
+>>>>>>> more-sugar
+Pinch of salt
+```
+
+- Between `<<<<<<< HEAD` and `=======`: version on your current branch (main)
+- Between `=======` and `>>>>>>> more-sugar`: version on the branch you merge
+
+## Editors can help
+
+Many editors highlight conflicts and let you choose a version with one click, e.g. VS Code:
+
+![](img/day2/conflict_vscode.png){width=80% fig-alt="Conflict in VS Code: the current change 1 tbsp honey and the incoming change 3 tbsp sugar are highlighted in different colors, with the options Accept Current Change, Accept Incoming Change, Accept Both Changes and Compare Changes above them"}
+
+## Resolve conflicts in GitHub Desktop
+
+GitHub Desktop warns you before the merge
+
+![](img/day2/conflict_merge_dialog.png){width=45% fig-alt="GitHub Desktop dialog Merge into main with the branch more-sugar selected and the warning: There will be 1 conflicted file when merging more-sugar into main"}
+
+## Resolve conflicts in GitHub Desktop
+
+![](img/day2/conflict_resolve_dialog.png){width=70% fig-alt="GitHub Desktop dialog Resolve conflicts before Merge listing the conflicted file banana_pancakes.txt, with the open dropdown offering to use the modified file from main or from more-sugar"}
+
+::: {.nonincremental}
+
+1. Open the file in your editor, keep what you want (or combine both) and **delete the markers**
+2. Or use the dropdown to keep the whole file from one branch
+
+:::
+
+## Resolve conflicts in GitHub Desktop
+
+When all conflicts are resolved, finish the merge with **Continue merge** (or go back with **Abort merge**)
+
+![](img/day2/conflict_resolved.png){width=55% fig-alt="GitHub Desktop dialog showing that all conflicted files have been resolved, with the buttons Continue merge and Abort merge"}
+
+## Resolve conflicts in the terminal
+
+::: {.nonincremental}
+
+- `git merge more-sugar` reports the conflict
+- `git status` shows the conflicted files
+- Open the file, keep what you want and delete the markers
+- `git add <file>` and `git commit` to finish the merge
+- Or go back with `git merge --abort`
+
+:::
+
+## How to avoid conflicts
+
+- **Pull before** you start working
+- **Commit and push often** (small changes)
+- Keep branches **short-lived** and merge them regularly
+- **Talk to your collaborators**: Who works on which file?
