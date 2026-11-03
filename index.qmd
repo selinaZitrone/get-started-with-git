@@ -5,8 +5,45 @@ subtitle: "Workshop by Selina Baldauf"
 
 <hr>
 **Workshop sessions**<br><br>
-📅 Monday, 10.11.2025 from  2 - 4 p.m. <br>
-📅 Tuesday, 11.11.2025 from 2 - 4 p.m. <br>
+```{=html}
+<!-- Dates are loaded from course-info.json so they can be changed without re-rendering -->
+<div id="session-dates">📅 Loading dates ...</div>
+<script>
+  (function () {
+    const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const pad = (n) => String(n).padStart(2, "0");
+
+    // "14:00" -> {text: "2", period: "p.m."}
+    const formatTime = (time) => {
+      const [h, m] = time.split(":").map(Number);
+      return {
+        text: (h % 12 || 12) + (m ? ":" + pad(m) : ""),
+        period: h < 12 ? "a.m." : "p.m."
+      };
+    };
+
+    const formatSession = (session) => {
+      const [y, mo, d] = session.date.split("-").map(Number);
+      const date = new Date(y, mo - 1, d);
+      const start = formatTime(session.start);
+      const end = formatTime(session.end);
+      const startText = start.period === end.period ? start.text : start.text + " " + start.period;
+      return "📅 " + weekdays[date.getDay()] + ", " + pad(d) + "." + pad(mo) + "." + y +
+        " from " + startText + " - " + end.text + " " + end.period;
+    };
+
+    const el = document.getElementById("session-dates");
+    fetch("course-info.json", { cache: "no-cache" })
+      .then((response) => response.json())
+      .then((info) => {
+        el.innerHTML = info.sessions.map(formatSession).join("<br>");
+      })
+      .catch(() => {
+        el.textContent = "📅 The dates could not be loaded. Please check the course announcement.";
+      });
+  })();
+</script>
+```
 <hr>
 
 # Course description:
