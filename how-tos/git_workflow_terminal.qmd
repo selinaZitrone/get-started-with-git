@@ -141,8 +141,10 @@ This means that now `pie.txt` is ready to be committed.
 If you have multiple files, you want to stage, you can do this in one step with
 
 ``` sh
-git add *
+git add .
 ```
+
+The `.` stands for the current folder, so this stages all changes in your project (including hidden files like `.gitignore`).
 :::
 
 Now you can check the repository status with `git status` again to confirm this:
@@ -356,7 +358,7 @@ to create a gitignore file
 -   look at the diff with `git diff --staged`
 -   commit the changes
 -   compare this commit to the previous one with
-    -   `git commit HEAD^`
+    -   `git diff HEAD^ HEAD`
 -   push to origin
 
 ## Merge your new branch with the `main`

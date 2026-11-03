@@ -38,13 +38,13 @@ To test if the setup was successful,
 run 
 
 ```sh
-ssh -T git@github.com`
+ssh -T git@github.com
 ```
 
-or 
+or
 
 ```sh
-ssh -T git@gitlab.com`
+ssh -T git@gitlab.com
 ```
 
 and see if Gitlab or GitHub answer to you.

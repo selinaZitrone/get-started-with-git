@@ -111,8 +111,8 @@ Open the Command Palette (Ctrl/Cmd + Shift + P) and type "Git" to see all the di
 # Collaboration workflows
 
 In collaboration workflows, you normally first need to be added as a collaborator to a project. Then you can clone the project to your computer and work on it. We will skip those two steps here.
-You cannot do this from within VS Code. So if you want to clone a repository, you would need to do it with
-[GitHub Desktop](git_workflow_gh_desktop.qmd) or in the [terminal](git_workflow_terminal.qmd).
+If you want to try it, the [GitHub Desktop guide](git_workflow_gh_desktop.qmd#collaboration-workflows) shows how to add collaborators on GitHub.
+To clone a repository from VS Code, open the Command Palette (Ctrl/Cmd + Shift + P), run **Git: Clone** and paste the repository URL (or pick one of your GitHub repositories from the list).
 
 In the following, we will explore branching and merging from inside VS Code on our own
 project. But the workflow is the same when you work on a project of someone else.
