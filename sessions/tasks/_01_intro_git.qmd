@@ -25,9 +25,9 @@ In the dialogue box that opens:
 
 Now initialize the repository.
 
-### Open your project in the explorer
+### Open your project in the file explorer
 
-Go to **Repository -> Show in Explorer** to open your project in the explorer.
+Go to **Repository -> Show in Explorer** (macOS: **Show in Finder**) to open your project in the file explorer.
 
 Do you see the hidden `.git` folder in there?
 

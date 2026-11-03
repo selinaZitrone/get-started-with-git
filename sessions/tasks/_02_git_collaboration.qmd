@@ -25,7 +25,7 @@ of GitHub Desktop. Then clone it to a local path of your choice.
 
 :::
 
-Open your team mate's cook book in the explorer to see which files are already in there (**Repository -> Show in Explorer**).
+Open your team mate's cook book in the file explorer to see which files are already in there (**Repository -> Show in Explorer**, on macOS **Show in Finder**).
 
 # 2 Branch and merge
 
@@ -39,7 +39,7 @@ Make sure that you are now in the new branch by looking in the top middle of Git
 
 ![](tasks/img/current_branch.png)
 
-Now go to the project folder (**Repository -> Show in Explorer**) and add a file for a new recipe.
+Now go to the project folder (**Repository -> Show in Explorer**, on macOS **Show in Finder**) and add a file for a new recipe.
 
 You can again copy paste a recipe from below to save some time.
 

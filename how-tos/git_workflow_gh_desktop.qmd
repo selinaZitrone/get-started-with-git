@@ -67,7 +67,7 @@ Click on **Create repository** when you are done.
 :::
 
 Now you successfully created a new Git repository for your cook book project.
-To open the folder where the repository is stored, you can go to **Repository -> Show in Explorer**.
+To open the folder where the repository is stored, you can go to **Repository -> Show in Explorer** (macOS: **Show in Finder**).
 This will open your file explorer (Windows Explorer, Finder, ...) in the folder of your repository:
 
 ![](img/ghd_project_folder.png)
@@ -80,7 +80,7 @@ There already is some content in the project folder:
 
 ## Step 2: Add the first recipe
 
-Open your cook book project in the file explorer (**Repository -> Show in Explorer**).
+Open your cook book project in the file explorer (**Repository -> Show in Explorer**, on macOS **Show in Finder**).
 
 Add a new text file with your favorite recipe (Let's assume it's pie). 
 Create a file called pie.txt and add the recipe text below to it:

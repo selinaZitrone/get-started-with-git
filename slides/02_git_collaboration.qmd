@@ -209,7 +209,7 @@ This works well if
 
 - Make sure you are in the repository of your team mate
 - Open a recipe in the cook book of your team mate
-  - **Repository -> Show in Explorer**
+  - **Repository -> Show in Explorer/Finder**
 - Change something in there
 - Commit the change and push it
 
