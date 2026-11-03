@@ -157,7 +157,7 @@ All you need is the URL of the remote repository
 # Now you (5 min) {.task-slide}
 
 > Clone your team mate's cook Book repo<br>
-> Details in [Task 2 "Clone"](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)
+> Details in [Task 1 "Clone"](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)
 
 ## Get changes from the remote
 
@@ -249,7 +249,7 @@ This workflow starts to be problematic when
 ![](img/day2/collab_branching_merging.png)
 
 - One remote repo on GitHub, multiple local repos
-- Idea: Everyone works on the their **separate branch**
+- Idea: Everyone works on their **separate branch**
   - **Merge** branch with the main when work is done
 - **Pull before** and **push after** working
 
@@ -291,14 +291,6 @@ To bring changes to the main branch you need to **merge** them.
 
 If there was a commit in main, a *merge commit* is introduced.
 
-## Merging changes from a branch
-
-To bring changes to the main branch you need to **merge** them.
-
-![](img/day2/merge_branch_stew_merge_commit.png)
-
-If there was a commit in main, a *merge commit* is introduced.
-
 # Now you (10 min) {.task-slide}
 > [Create a branch and merge it in your team mate's cook book](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
 > Complete task 2 "Branch and merge"
@@ -308,7 +300,7 @@ If there was a commit in main, a *merge commit* is introduced.
 ![](img/day2/collab_branching_pre_pr.png)
 
 - One remote repo on GitHub, multiple local repos
-- Idea: Everyone works on the their separate branch
+- Idea: Everyone works on their separate branch
   - ~~**Merge** branch with the main when work is done~~
 
 ## A branching-merging workflow with GitHub
@@ -318,7 +310,7 @@ If there was a commit in main, a *merge commit* is introduced.
 ::: {.nonincremental}
 
 - One remote repo on GitHub, multiple local repos
-- Idea: Everyone works on the their separate branch
+- Idea: Everyone works on their separate branch
   - ~~**Merge** branch with the main when work is done~~
   - **Create a pull request** on GitHub to ask for a merge
 
@@ -367,7 +359,7 @@ Some essentials that will improve your published repository:
   - Check out the [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting options
 - Add a LICENSE file
   - Tell others how to use your code
-- Add a DOI to your repository (e.g. via [Zenodo](https://emilio-berti.GitHub.io/idiv-git-introduction/21-GitHub_zenodo/index.html))
+- Add a DOI to your repository (e.g. via [Zenodo](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html))
 
 . . . 
 
