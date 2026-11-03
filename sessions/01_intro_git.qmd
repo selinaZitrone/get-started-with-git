@@ -5,7 +5,7 @@ callout-appearance: default
 
 ## Description
 
-In session we will cover the following topics:
+In this session we will cover the following topics:
 
 - What is Git and what are the basic concepts?
 - A simple Git workflow for your individual projects
@@ -13,7 +13,7 @@ In session we will cover the following topics:
   - Undoing changes
 - Publishing projects on GitHub
 
-In the [next session](02_git_collaboration.qmd), I will learn a collaborative workflow using Git and
+In the [next session](02_git_collaboration.qmd), you will learn a collaborative workflow using Git and
 GitHub.
 
 ## Slides

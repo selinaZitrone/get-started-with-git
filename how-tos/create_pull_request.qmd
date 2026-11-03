@@ -11,8 +11,8 @@ commented and reviewed by the collaborators before the changes are accepted.
 
 Let's say you created a new branch called `add_cookies`, made some changes and pushed 
 the branch to GitHub.
-If you now open your remote repository website, GitHub automatically detected this
-branch and ask you to create a pull request for it.
+If you now open your remote repository website, GitHub automatically detects this
+branch and asks you to create a pull request for it.
 
 It should look something like this:
 

@@ -17,7 +17,7 @@ The main goal of this workshop is to give you the basic skills to start using Gi
 
 In 2 sessions, we will cover the following topics:
 
-1. [Session 1](sessions/01_intro_git.qmd): Basic Git concepts and workflow for individual projects (Initializing a repository, commiting changes, pushing to a remote repository on GitHub)
+1. [Session 1](sessions/01_intro_git.qmd): Basic Git concepts and workflow for individual projects (Initializing a repository, committing changes, pushing to a remote repository on GitHub)
 2. [Session 2](sessions/02_git_collaboration.qmd): Collaborating with Git and GitHub (Branching, merging, pull requests)
 
 You will learn both the theory and the practice with hands-on exercises.

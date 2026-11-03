@@ -1,6 +1,6 @@
 Create your own Git cook book 🧑‍🍳.
 
-All recipes will be simple text files and changes will be commited to the repository.
+All recipes will be simple text files and changes will be committed to the repository.
 
 The goal is to give you a first idea and feeling for the basic Git workflow.
 
@@ -226,7 +226,7 @@ then click the commit button.
 
 ## Publish your project on GitHub
 
-Publish your cook book project on GitHub (**Publish** button on the top right). In the dialogue that opens, chose to **make your project public** (easier for the collaboration session tomorrow).
+Publish your cook book project on GitHub (**Publish** button on the top right). In the dialogue that opens, choose to **make your project public** (easier for the collaboration session tomorrow).
 
 ### Check out your brand-new GitHub repository
 
@@ -266,8 +266,6 @@ See how GitHub Desktop recognizes these changes.
 Now, right-click on the changed file and select **Discard changes**.
 
 # 4 Ignore files
-
-### Add a `.gitignore` file
 
 ## Ignore files
 

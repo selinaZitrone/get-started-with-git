@@ -72,7 +72,7 @@ See <https://cbea.ms/git-commit/> for more info.
 
 ### Look at the commit history
 
-After doing several commits, you can explore the commit.
+After doing several commits, you can explore the commit history.
 You can find it below the source view as a timeline of commits. You can click on each commit to explore further which files changed and what the changes were.
 
 ![](img/vs_graph.png)
@@ -95,7 +95,7 @@ VS Code will create a new repository on GitHub, add it as the `origin` remote, a
 
 ## Step 5: Push new changes to GitHub
 
-After future commits, you can push them by clicking the **Synch Changes** button. The number next to the arrow indicates how many commits you are about to push.:
+After future commits, you can push them by clicking the **Sync Changes** button. The number next to the arrow indicates how many commits you are about to push:
 
 ![](img/vs_sync.png)
 
@@ -141,4 +141,4 @@ You can now click **Publish Branch** to push your new changes to GitHub where yo
 
 ## Step 3: Create a pull request
 
-See [here](create_pull_request.qmd) for a guide on how to create a pull requests.
+See [here](create_pull_request.qmd) for a guide on how to create a pull request.

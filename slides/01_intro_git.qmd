@@ -300,7 +300,7 @@ A cook book project to collect all my favorite recipes.
 
 . . .
 
-In real life this would be e.g. a data analysis project, your thesis in LaTex, 
+In real life this would be e.g. a data analysis project, your thesis in LaTeX, 
 a software project, ...
 
 ## Step 1: Initialize a Git repository

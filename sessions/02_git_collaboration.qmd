@@ -1,5 +1,5 @@
 ---
-title: "A collaboration workflows with Git"
+title: "A collaboration workflow with Git"
 callout-appearance: default
 ---
 

@@ -28,7 +28,7 @@ There are two options to start working with a Git repository:
 1. Create a new repository from scratch
 2. Use an existing project and put it under version control (if you already have a cook book folder on your computer)
 
-For our cook book, we choose option 1 because we don't have an project yet.
+For our cook book, we choose option 1 because we don't have a project yet.
 
 :::{.panel-tabset}
 
@@ -40,7 +40,7 @@ Go to **File -> New repository** (keyboard shortcut Ctrl/Cmd + N)
 
 This opens up the dialog box below.
 You can give your repository a name, add a description (optional) and then choose where on your computer it should be 
-created (the local path). If you want, you can also initialize the repo with a REAMDE file. This is 
+created (the local path). If you want, you can also initialize the repo with a README file. This is 
 usually a good idea as you can use this file to guide users through the repository. For the cook book project, my setup looks like this:
 
 ![](img/ghd_new_repo_create.png)
@@ -245,7 +245,7 @@ Now you can start working with the repository of your friend.
 You could just make changes, commit them and push them to the remote repository (see steps 2-5 in the previous section).
 But there is a more elegant way that we will see in the next steps.
 
-(Look at option 2 if you friend's repository is not in the list of your repositories)
+(Look at option 2 if your friend's repository is not in the list of your repositories)
 
 # Option 2: Clone repositories using URL
 
@@ -297,7 +297,7 @@ Now your branch should be pushed to GitHub and you can do a pull request.
 
 ## Step 4: Create a pull request
 
-See [here](create_pull_request.qmd) for a guide on how to create a pull requests
+See [here](create_pull_request.qmd) for a guide on how to create a pull request
 to ask your friend to integrate your recipe into their cookbook.
 
 ---

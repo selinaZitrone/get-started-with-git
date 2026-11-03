@@ -156,7 +156,7 @@ All you need is the URL of the remote repository
 
 # Now you (5 min) {.task-slide}
 
-> Clone your team mate's cook Book repo<br>
+> Clone your team mate's cook book repo<br>
 > Details in [Task 1 "Clone"](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)
 
 ## Get changes from the remote

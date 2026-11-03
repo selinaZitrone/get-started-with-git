@@ -49,7 +49,7 @@ Use the user name and email that you also use for your GitHub account.
 
 ## Step 1: Initialize a new repository
 
-A new Git project can be started in an empty folder or in a folder that already contains files. For this example, first can create a new folder `cookBook` somewhere ony your computer.
+A new Git project can be started in an empty folder or in a folder that already contains files. For this example, first create a new folder `cookBook` somewhere on your computer.
 
 After opening the terminal (Git Bash on Windows, Terminal on macOS/Linux), move into the folder you created:
 
@@ -161,7 +161,7 @@ To commit all changes that are staged, run
 git commit
 ```
 
-Now your your default text editor will open, and you can add a commit message and an optional description (this all the text followed by the empty line).
+Now your default text editor will open, and you can add a commit message and an optional description (this is all the text after an empty line).
 
 For me this opens VS Code and it looks like this:
 
@@ -175,7 +175,7 @@ Look how the status of your repository has changed with
 git status
 ```
 
-No you don't have any more uncommited changes in your project:
+Now you don't have any more uncommitted changes in your project:
 
 ![](img/git_commit.png)
 
@@ -321,7 +321,7 @@ Now your branch is pushed to GitHub and you can do a pull request.
 
 ## Step 4: Create a pull request
 
-See [here](create_pull_request.qmd) for a guide on how to create a pull requests to ask your friend to integrate your recipe into their cookbook.
+See [here](create_pull_request.qmd) for a guide on how to create a pull request to ask your friend to integrate your recipe into their cookbook.
 
 ------------------------------------------------------------------------
 

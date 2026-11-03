@@ -30,7 +30,7 @@ You can manage access to GitHub with a personal access token (PAT) instead of us
 usethis::gh_token_help()
 ```
 
-This will tell you exactly what's going on (in general, `usethis` is very helpful - so always read what it prints in the console): Do you already have a token or are problems with your current token? And if you need a token, it will also tell you can create one. To create a new token, call the function:
+This will tell you exactly what's going on (in general, `usethis` is very helpful - so always read what it prints in the console): Do you already have a token or are problems with your current token? And if you need a token, it will also tell you how you can create one. To create a new token, call the function:
 
 ```{r}
 usethis::create_github_token()
@@ -95,7 +95,7 @@ usethis::edit_r_profile()
 Then you can add the following line, save the file and close it:
 
 ```{r}
-# supress messages just means that messages are not printed when loading the package
+# suppress messages just means that messages are not printed when loading the package
 if (interactive()) {
   suppressMessages(library(usethis))
 }
@@ -116,7 +116,7 @@ To create a new R project for this exercise call the function:
 usethis::create_project(path = "path/to/project/project_name")
 ```
 
-This will create a folder with `project_name` and set up and empty RStudio project.
+This will create a folder with `project_name` and set up an empty RStudio project.
 The project will open in a new RStudio instance. You can see that by default, the project already has some files inside (among them a `.gitignore` file).
 
 Here you can see my new project (called "demo_project") in R Studio. The files are highlighted in pink:
@@ -135,11 +135,11 @@ usethis::use_git()
 
 Read the text in the console:
 
-R tells you which changes will be committed. This is just the first commit that will include all the files that are in created by default and that are not in the `.gitignore`.
+R tells you which changes will be committed. This is just the first commit that will include all the files that are created by default and that are not in the `.gitignore`.
 
 Confirm that you want to commit these files by selecting the correct number for the "Yes" answer and press enter. Then agree to the first commit with the commit message "Initial commit" (again by selecting the correct number).
 
-RStudio will restart and a the Git GUI client will be added.
+RStudio will restart and the Git GUI client will be added.
 
 Can you find the `Git` tab in the top right pane? Here is where all the buttons for Git are located.
 
@@ -150,7 +150,7 @@ Can you find the `Git` tab in the top right pane? Here is where all the buttons 
 You can skip this step if you only want to work locally. But I recommend you try it, it's really cool.
 
 To create a new GitHub repository and link it to your local repository, all we need to do
-is all the function:
+is call the function:
 
 ```{r}
 usethis::use_github(private = TRUE) # default is private = FALSE
@@ -183,7 +183,7 @@ Save the file in your project.
 
 ## Step 5: Make a commit
 
-If you have new changes that are not committed yet, you will see the changes listed in the Git pane of RStudio (top right). I have for example addedd a new file called `penguins_plot.R`.
+If you have new changes that are not committed yet, you will see the changes listed in the Git pane of RStudio (top right). I have for example added a new file called `penguins_plot.R`.
 
 To commit this file, just click on the "Commit" button in the Git pane:
 
@@ -222,7 +222,7 @@ project. But the workflow is the same when you work on a project of someone else
 
 ## Step 1: Create a new branch
 
-In this step, you will create a new branch for a new feature that you want to introduce. This branch will later be use to do a pull request on GitHub.
+In this step, you will create a new branch for a new feature that you want to introduce. This branch will later be used to do a pull request on GitHub.
 
 In RStudio, you can create a new branch (e.g. to add a data analysis file), by clicking on the little violet branch symbol in the Git pane:
 
@@ -230,7 +230,7 @@ In RStudio, you can create a new branch (e.g. to add a data analysis file), by c
 
 Enter a name for your new branch (no white space in name allowed) and leave everything else as it is. Click on create and RStudio will create and switch the branch for you. The new branch will also
 directly be pushed to GitHub Don't worry - this does not mess up anything. You are in a new branch so the main branch stays untouched by this. You can close the dialog that opened now.
-Note that the branch that you are on is not main anymore but you new branch (see image above).
+Note that the branch that you are on is not main anymore but your new branch (see image above).
 
 ## Step 2: Change files and push changes
 
@@ -245,4 +245,4 @@ Now your changes should be available on GitHub in the new branch and you can do 
 
 ## Step 3: Create a pull request
 
-See [here](create_pull_request.qmd) for a guide on how to create a pull requests.
+See [here](create_pull_request.qmd) for a guide on how to create a pull request.
