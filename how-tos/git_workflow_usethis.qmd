@@ -83,7 +83,7 @@ Loading packages via the `.Rprofile` should only be done for packages that are n
 
 Adding utility packages like `usethis` to the `.Rprofile` can however be very convenient.
 
-Read more about this topic [here](https://devtut.github.io/r/rprofile.html).
+Read more about this topic [here](https://rstats.wtf/r-startup.html#rprofile).
 :::
 
 You can open your `.Rprofile` file with

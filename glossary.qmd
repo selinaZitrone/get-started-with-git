@@ -43,7 +43,7 @@ See also: [Local Repository](#local-repository), [Remote Repository](#remote-rep
 The copy of the repository on **your computer**. This is where you make changes before you [push](#push) them.
 
 ### Remote Repository {#remote-repository}
-The copy of the repository hosted on a service like [**GitHub** or **GitLab**](#github--gitlab), usually shared with others.  
+The copy of the repository hosted on a service like [**GitHub** or **GitLab**](#github-gitlab), usually shared with others.  
 See also: [Push](#push), [Pull](#pull), [Clone](#clone).
 
 ### Git {#git}
@@ -53,14 +53,14 @@ The underlying version control system. [GitHub Desktop](#github-desktop) is just
 Websites that host [remote repositories](#remote-repository) and provide collaboration features like [pull requests](#pull-request-pr), [issues](#issue), and wikis.
 
 ### GitHub Desktop {#github-desktop}
-A **graphical application** for using [Git](#git) and [GitHub](#github--gitlab) without the terminal.  
+A **graphical application** for using [Git](#git) and [GitHub](#github-gitlab) without the terminal.  
 It lets you [clone](#clone), [commit](#commit), [push](#push), [pull](#pull), create [branches](#branch), and manage [pull requests](#pull-request-pr) through a point-and-click interface.
 
 ### Main Branch {#main-branch}
 The default [branch](#branch) in most repositories. It usually represents the "official" project history.
 
 ### Fork {#fork}
-Your personal copy of someone else's repository on [GitHub](#github--gitlab). Useful for contributing to open source projects.  
+Your personal copy of someone else's repository on [GitHub](#github-gitlab). Useful for contributing to open source projects.  
 
 ## ✍️ Working with Changes
 

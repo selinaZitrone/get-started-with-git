@@ -1,6 +1,6 @@
 The goal of these tasks is to get a feeling for a collaborative Git workflow.
 
-If you are stuck in a task, you can have a look at the [How-To description](../how-tos/git_workflow_gh_desktop.qmd#collaboration-using-branching){target="_blank"} of the Git workflow with detailed explanations and screenshots of the steps.
+If you are stuck in a task, you can have a look at the [How-To description](../how-tos/git_workflow_gh_desktop.qmd#collaboration-workflows){target="_blank"} of the Git workflow with detailed explanations and screenshots of the steps.
 
 :::{.panel-tabset}
 
