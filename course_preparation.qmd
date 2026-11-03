@@ -78,10 +78,13 @@ I will use GitHub as a remote repository service in the workshop and you can [cr
 
 ::: {.callout-tip}
 
-## Use your institutional email address to get benefits
+## Free benefits for students and academic staff
 
-If you sign up for GitHub with an institutional email address, you can get a free upgrade to GitHub Pro.
-This gives you some additional benefits like private wikis and more. You can always add a second email address later or change it if you leave your institution.
+Students and academic staff can get free benefits through [GitHub Education](https://github.com/education) (e.g. GitHub Pro for students, free GitHub Copilot).
+These are not added automatically: you need to apply and verify your affiliation, e.g. with your institutional email address and a student ID or enrollment certificate (i.e. "Immatrikulationsbescheinigung").
+You don't need any of this for the workshop but it might be interesting if you use GitHub long-term.
+
+If you plan to apply, adding your institutional email address to your account helps. You can always add a second email address later or change it if you leave your institution.
 
 :::
 
