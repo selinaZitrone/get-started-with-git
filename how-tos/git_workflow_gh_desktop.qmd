@@ -336,3 +336,56 @@ You can now commit and push the `.gitignore` file to GitHub like any other file:
 ![](img/ghd_gitignore.png)
 
 In the future, Git will ignore all files that are listed in the `.gitignore` file and will not show them in the list of changes anymore.
+
+## Resolve merge conflicts
+
+A merge conflict happens when the same lines of the same file were changed in two different ways, e.g. on two branches that you want to merge, or locally and on GitHub when you pull. Git cannot decide which version to keep, so it asks you. Don't worry, nothing is lost.
+
+Let's say, on `main` I changed `1 tbsp sugar` to `1 tbsp honey` in my banana pancakes recipe. On the branch `more-sugar`, I changed the same line to `3 tbsp sugar`.
+
+When I try to merge `more-sugar` into `main` (**Branch -> Merge into current branch**), GitHub Desktop already warns me that there will be a conflict:
+
+![](../slides/img/day2/conflict_merge_dialog.png){width="60%"}
+
+When I click **Create a merge commit**, GitHub Desktop shows me which files have conflicts:
+
+![](../slides/img/day2/conflict_resolve_dialog.png)
+
+Now I have two options:
+
+- Use the dropdown to keep the whole file from one of the branches.
+- Open the file in an editor and decide line by line.
+
+In the file, Git marks the conflicting lines like this:
+
+```md
+<<<<<<< HEAD
+1 tbsp honey
+=======
+3 tbsp sugar
+>>>>>>> more-sugar
+```
+
+The part between `<<<<<<< HEAD` and `=======` is the version on your current branch (`main`), the part between `=======` and `>>>>>>> more-sugar` is the version from the branch you merge.
+Keep the version you want (or combine both), delete the marker lines and save the file.
+
+Many editors help you with this. VS Code for example lets you choose a version with one click:
+
+![](../slides/img/day2/conflict_vscode.png)
+
+When you switch back to GitHub Desktop, it shows that all conflicts are resolved. Click **Continue merge** to finish the merge with a merge commit:
+
+![](../slides/img/day2/conflict_resolved.png){width="70%"}
+
+If you change your mind, you can click **Abort merge** at any time to go back to the state before the merge.
+
+:::{.callout-tip}
+
+## Avoid conflicts
+
+- Pull before you start working
+- Commit and push often (small changes)
+- Keep branches short-lived and merge them regularly
+- Talk to your collaborators about who works on which file
+
+:::
