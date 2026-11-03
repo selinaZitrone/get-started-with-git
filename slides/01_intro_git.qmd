@@ -76,7 +76,7 @@ Did anyone have problems with the workshop preparation?
 
 ## Organization
 
-Material is all [online](https://selinazitrone.GitHub.io/get-started-with-git/)
+Material is all [online](https://selinazitrone.github.io/get-started-with-git/)
 
 :::{.nonincremental}
 
@@ -178,7 +178,7 @@ Git is a **distributed version control system**
 
 ## How to use Git?
 
-After you [installed it](https://www.atlassian.com/de/git/tutorials/install-git) there are different ways to interact with the software.
+After you [installed it](https://selinazitrone.github.io/get-started-with-git/course_preparation.html) there are different ways to interact with the software.
 
 ## How to use Git - Terminal
 
@@ -244,7 +244,7 @@ A Git GUI is integrated in most (all?) IDEs, e.g. R Studio, VS Code
   
 Standalone Git GUI software, e.g. GitHub Desktop, Source Tree, ...
 
-![](img/day1/GitHub_desktop.png){width=50% fig-align="center"}
+![](img/day1/github_desktop.png){width=50% fig-align="center"}
 
 . . .
 
@@ -282,7 +282,7 @@ Standalone Git GUI software, e.g. GitHub Desktop, Source Tree, ...
 
 :::{.callout-tip}
 
-Have a look at the [website](https://selinazitrone.GitHub.io/get-started-with-git/) where you find **How-To guides for the other methods** as well.
+Have a look at the [website](https://selinazitrone.github.io/get-started-with-git/) where you find **How-To guides for the other methods** as well.
 
 :::
 
@@ -409,7 +409,7 @@ See [here](https://cbea.ms/git-commit/) for more details and guidelines.
 . . .
 
 > Start your own cook book <br>
-> Complete [Task 1 "Local repo"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
+> Complete [Task 1 "Local repo"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
 
 
 ## Step 4: Share changes with the remote repo
@@ -446,7 +446,7 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
 # Now you (5 min){.task-slide}
 
 > Publish your cook book on GitHub <br>
-> Complete [Task 2 "GitHub"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks)
+> Complete [Task 2 "GitHub"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks)
 
 ## Summary of the basic steps
 
@@ -484,7 +484,7 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
 # Now you (5 min) {.task-slide}
 
 > Undo some changes in your cook book
-> Complete [Task 3 "Undo changes"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
+> Complete [Task 3 "Undo changes"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
 
 # Ignore files with `.gitignore` {.inverse}
 
@@ -530,7 +530,7 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 # Now you (5 min) {.task-slide}
 
 > Ignore some files in your cook book project
-> Complete [Task 4 "Ignore files"](https://selinazitrone.GitHub.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
+> Complete [Task 4 "Ignore files"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
 
 # Thanks for your attention {.inverse}
 
