@@ -10,12 +10,16 @@ A quick reference to the most common Git and GitHub terms you'll encounter in th
 - [.gitignore](#gitignore)
 - [Branch](#branch)
 - [Clone](#clone)
+- [Collaborator](#collaborator)
 - [Commit](#commit)
 - [Commit Message](#commit-message)
+- [Detached HEAD](#detached-head)
+- [Fetch](#fetch)
 - [Fork](#fork)
 - [Git](#git)
 - [GitHub / GitLab](#github-gitlab)
 - [GitHub Desktop](#github-desktop)
+- [HEAD](#head)
 - [History (Log)](#history-log)
 - [Issue](#issue)
 - [License](#license)
@@ -23,6 +27,7 @@ A quick reference to the most common Git and GitHub terms you'll encounter in th
 - [Main Branch](#main-branch)
 - [Merge](#merge)
 - [Merge Conflict](#merge-conflict)
+- [Origin](#origin)
 - [Pull](#pull)
 - [Pull Request (PR)](#pull-request-pr)
 - [Push](#push)
@@ -31,7 +36,7 @@ A quick reference to the most common Git and GitHub terms you'll encounter in th
 - [Repository (repo)](#repository)
 - [Restore / Discard](#restore-discard)
 - [Revert](#revert)
-- [Stage](#stage)
+- [Stage / Staging Area](#stage)
 
 ## 🗂 Repository Basics
 
@@ -45,6 +50,9 @@ The copy of the repository on **your computer**. This is where you make changes 
 ### Remote Repository {#remote-repository}
 The copy of the repository hosted on a service like [**GitHub** or **GitLab**](#github-gitlab), usually shared with others.  
 See also: [Push](#push), [Pull](#pull), [Clone](#clone).
+
+### Origin {#origin}
+The default name Git gives to the [remote repository](#remote-repository) you cloned from or published to. That's why GitHub Desktop shows buttons like **Push origin** or **Fetch origin**.
 
 ### Git {#git}
 The underlying version control system. [GitHub Desktop](#github-desktop) is just a friendlier interface to it.
@@ -64,8 +72,8 @@ Your personal copy of someone else's repository on [GitHub](#github-gitlab). Use
 
 ## ✍️ Working with Changes
 
-### Stage {#stage}
-The step before committing. You choose which changes you want to include in the next [commit](#commit). In [GitHub Desktop](#github-desktop), this is done by checking the boxes next to changed files.
+### Stage / Staging Area {#stage}
+The step before committing. You choose which changes you want to include in the next [commit](#commit). The staged changes are collected in the **staging area**. In [GitHub Desktop](#github-desktop), this is done by checking the boxes next to changed files.
 
 ### Commit {#commit}
 A saved snapshot of your project at a point in time. Think of it as a "save point" in a game. Each commit has a unique ID and a message describing the changes.
@@ -79,6 +87,12 @@ In GitHub Desktop, you’ll see a box for the **summary** (short title) and an o
 
 ### History (Log) {#history-log}
 The list of past [commits](#commit). In [GitHub Desktop](#github-desktop), you can view this in the **History** tab.
+
+### HEAD {#head}
+A pointer to where you currently are in the [history](#history-log). Usually, it points to the latest [commit](#commit) of the [branch](#branch) you are on. When you switch branches, HEAD moves with you.
+
+### Detached HEAD {#detached-head}
+The state you are in when you check out a specific (older) [commit](#commit) instead of a [branch](#branch). You can look at your files as they were at that point in time. New commits in this state don't belong to any branch, so switch back to a branch (e.g. [main](#main-branch)) before you continue working.
 
 ### Restore / Discard {#restore-discard}
 Throw away uncommitted changes and return files to their last committed state.
@@ -94,19 +108,27 @@ See also: [Merge](#merge), [Pull Request](#pull-request-pr).
 Combine changes from one [branch](#branch) into another.
 
 ### Merge Conflict {#merge-conflict}
-Happens when Git can't automatically [merge](#merge) changes. You'll need to choose which version to keep.
+Happens when Git can't automatically [merge](#merge) changes. You'll need to choose which version to keep.  
+See the [GitHub Desktop how-to](how-tos/git_workflow_gh_desktop.qmd#resolve-merge-conflicts) for how to resolve conflicts.
 
 ## 🌐 Sharing & Collaboration
 
 ### Push {#push}
 Send your [commits](#commit) from your [local repository](#local-repository) to the [remote repository](#remote-repository).
 
+### Fetch {#fetch}
+Check the [remote repository](#remote-repository) for new [commits](#commit) and download them, **without** changing your files yet. In GitHub Desktop, this is the **Fetch origin** button.  
+See also: [Pull](#pull).
+
 ### Pull {#pull}
-Download [commits](#commit) from the [remote repository](#remote-repository) into your [local repository](#local-repository), so you're up to date.  
+Download [commits](#commit) from the [remote repository](#remote-repository) into your [local repository](#local-repository), so you're up to date. A pull is a [fetch](#fetch) followed by a [merge](#merge).  
 See also: [Push](#push).
 
 ### Clone {#clone}
 Make a **copy of a remote repository** onto your computer as a [local repository](#local-repository).
+
+### Collaborator {#collaborator}
+A person who is allowed to [push](#push) to a repository on [GitHub](#github-gitlab). The owner of the repository can add collaborators under **Settings -> Collaborators**.
 
 ### Pull Request (PR) {#pull-request-pr}
 A request to [merge](#merge) changes from one [branch](#branch) into another (common on GitHub).  
