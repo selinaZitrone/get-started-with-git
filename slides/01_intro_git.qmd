@@ -30,9 +30,9 @@ from: markdown+emoji
 
 ::: {.column width="80%"}
 
-- 🎓 Ecology/Theoretical Ecology
-- 💻 **Scientific programmer** @ [Freie Universität Berlin](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
-- 👩‍🏫 **Teaching** R, Git, good scientific practice, ...
+- Ecology/Theoretical Ecology
+- **Scientific programmer** @ [Freie Universität Berlin](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
+- **Teaching** R, Git, good scientific practice, ...
 :::
 ::: {.column width = "20%"}
 
@@ -51,11 +51,31 @@ from: markdown+emoji
 
 :::
 
+## Workshop overview
+
+🎯 Learn simple Git workflows in **theory and practice** that you can **immediately apply** to your research projects.
+
+- Day 1: Git concepts and individual Git workflow
+- Day 2: Collaborative Git workflow
+
+## Workshop material
+
+Material is all [online](https://selinazitrone.github.io/get-started-with-git/)
+
+:::{.nonincremental}
+
+- Slides 
+- Tasks for Hands-on
+- Step by step guides for different workflows
+- Will stay online after the workshop
+
+:::
+
 ## Before we start
 
 . . .
 
-I :heart: questions
+- Questions and feedback any time
 
 . . .
 
@@ -65,26 +85,6 @@ Did anyone have problems with the workshop preparation?
 - Install Git
 - Install GitHub Desktop
 - Get a GitHub account and connect it with GitHub Desktop
-:::
-
-## Workshop overview
-
-🎯 Learn simple Git workflows in **theory and practice** that you can **immediately apply** to your research projects.
-
-- Day 1: Git concepts and individual Git workflow
-- Day 2: Collaborative Git workflow
-
-## Organization
-
-Material is all [online](https://selinazitrone.github.io/get-started-with-git/)
-
-:::{.nonincremental}
-
-- View and download slides 
-- Tasks for Hands-on
-- Step by step guides for different workflows
-- Will stay online after the workshop
-
 :::
 
 # Let's get started {.inverse}
