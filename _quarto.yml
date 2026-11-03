@@ -15,6 +15,9 @@ website:
   repo-actions: [edit, issue]
   repo-branch: master
   title: "Git course"
+  page-footer:
+    left: "© 2021–2026 Selina Baldauf"
+    right: "Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 
   navbar:
     right:
