@@ -4099,7 +4099,44 @@ vertical-align: -.125em;
 
 
 <hr>
-<strong>Workshop sessions</strong><br><br> 📅 Monday, 10.11.2025 from 2 - 4 p.m. <br> 📅 Tuesday, 11.11.2025 from 2 - 4 p.m. <br>
+<p><strong>Workshop sessions</strong><br><br></p>
+<!-- Dates are loaded from course-info.json so they can be changed without re-rendering -->
+<div id="session-dates">📅 Loading dates ...</div>
+<script>
+  (function () {
+    const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const pad = (n) => String(n).padStart(2, "0");
+
+    // "14:00" -> {text: "2", period: "p.m."}
+    const formatTime = (time) => {
+      const [h, m] = time.split(":").map(Number);
+      return {
+        text: (h % 12 || 12) + (m ? ":" + pad(m) : ""),
+        period: h < 12 ? "a.m." : "p.m."
+      };
+    };
+
+    const formatSession = (session) => {
+      const [y, mo, d] = session.date.split("-").map(Number);
+      const date = new Date(y, mo - 1, d);
+      const start = formatTime(session.start);
+      const end = formatTime(session.end);
+      const startText = start.period === end.period ? start.text : start.text + " " + start.period;
+      return "📅 " + weekdays[date.getDay()] + ", " + pad(d) + "." + pad(mo) + "." + y +
+        " from " + startText + " - " + end.text + " " + end.period;
+    };
+
+    const el = document.getElementById("session-dates");
+    fetch("course-info.json", { cache: "no-cache" })
+      .then((response) => response.json())
+      .then((info) => {
+        el.innerHTML = info.sessions.map(formatSession).join("<br>");
+      })
+      .catch(() => {
+        el.textContent = "📅 The dates could not be loaded. Please check the course announcement.";
+      });
+  })();
+</script>
 <hr>
 <section id="course-description" class="level1">
 <h1>Course description:</h1>
@@ -4107,7 +4144,7 @@ vertical-align: -.125em;
 <p>The main goal of this workshop is to give you the basic skills to start using Git for your own projects both individually and in collaboration with your friends &amp; colleagues.</p>
 <p>In 2 sessions, we will cover the following topics:</p>
 <ol type="1">
-<li><a href="./sessions/01_intro_git.html">Session 1</a>: Basic Git concepts and workflow for individual projects (Initializing a repository, commiting changes, pushing to a remote repository on GitHub)</li>
+<li><a href="./sessions/01_intro_git.html">Session 1</a>: Basic Git concepts and workflow for individual projects (Initializing a repository, committing changes, pushing to a remote repository on GitHub)</li>
 <li><a href="./sessions/02_git_collaboration.html">Session 2</a>: Collaborating with Git and GitHub (Branching, merging, pull requests)</li>
 </ol>
 <p>You will learn both the theory and the practice with hands-on exercises.</p>
@@ -4537,8 +4574,21 @@ vertical-align: -.125em;
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2021–2026 Selina Baldauf</p>
+</div>   
+    <div class="nav-footer-center">
+       
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/selinaZitrone/get-started-with-git/edit/master/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/selinaZitrone/get-started-with-git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/selinaZitrone/get-started-with-git/edit/master/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/selinaZitrone/get-started-with-git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>

@@ -4072,6 +4072,7 @@ vertical-align: -.125em;
   <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository (repo)</a></li>
   <li><a href="#local-repository" id="toc-local-repository" class="nav-link" data-scroll-target="#local-repository">Local Repository</a></li>
   <li><a href="#remote-repository" id="toc-remote-repository" class="nav-link" data-scroll-target="#remote-repository">Remote Repository</a></li>
+  <li><a href="#origin" id="toc-origin" class="nav-link" data-scroll-target="#origin">Origin</a></li>
   <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a></li>
   <li><a href="#github-gitlab" id="toc-github-gitlab" class="nav-link" data-scroll-target="#github-gitlab">GitHub / GitLab</a></li>
   <li><a href="#github-desktop" id="toc-github-desktop" class="nav-link" data-scroll-target="#github-desktop">GitHub Desktop</a></li>
@@ -4080,10 +4081,12 @@ vertical-align: -.125em;
   </ul></li>
   <li><a href="#working-with-changes" id="toc-working-with-changes" class="nav-link" data-scroll-target="#working-with-changes">✍️ Working with Changes</a>
   <ul class="collapse">
-  <li><a href="#stage" id="toc-stage" class="nav-link" data-scroll-target="#stage">Stage</a></li>
+  <li><a href="#stage" id="toc-stage" class="nav-link" data-scroll-target="#stage">Stage / Staging Area</a></li>
   <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit">Commit</a></li>
   <li><a href="#commit-message" id="toc-commit-message" class="nav-link" data-scroll-target="#commit-message">Commit Message</a></li>
   <li><a href="#history-log" id="toc-history-log" class="nav-link" data-scroll-target="#history-log">History (Log)</a></li>
+  <li><a href="#head" id="toc-head" class="nav-link" data-scroll-target="#head">HEAD</a></li>
+  <li><a href="#detached-head" id="toc-detached-head" class="nav-link" data-scroll-target="#detached-head">Detached HEAD</a></li>
   <li><a href="#restore-discard" id="toc-restore-discard" class="nav-link" data-scroll-target="#restore-discard">Restore / Discard</a></li>
   <li><a href="#revert" id="toc-revert" class="nav-link" data-scroll-target="#revert">Revert</a></li>
   <li><a href="#branch" id="toc-branch" class="nav-link" data-scroll-target="#branch">Branch</a></li>
@@ -4093,8 +4096,10 @@ vertical-align: -.125em;
   <li><a href="#sharing-collaboration" id="toc-sharing-collaboration" class="nav-link" data-scroll-target="#sharing-collaboration">🌐 Sharing &amp; Collaboration</a>
   <ul class="collapse">
   <li><a href="#push" id="toc-push" class="nav-link" data-scroll-target="#push">Push</a></li>
+  <li><a href="#fetch" id="toc-fetch" class="nav-link" data-scroll-target="#fetch">Fetch</a></li>
   <li><a href="#pull" id="toc-pull" class="nav-link" data-scroll-target="#pull">Pull</a></li>
   <li><a href="#clone" id="toc-clone" class="nav-link" data-scroll-target="#clone">Clone</a></li>
+  <li><a href="#collaborator" id="toc-collaborator" class="nav-link" data-scroll-target="#collaborator">Collaborator</a></li>
   <li><a href="#pull-request-pr" id="toc-pull-request-pr" class="nav-link" data-scroll-target="#pull-request-pr">Pull Request (PR)</a></li>
   <li><a href="#issue" id="toc-issue" class="nav-link" data-scroll-target="#issue">Issue</a></li>
   </ul></li>
@@ -4137,12 +4142,16 @@ vertical-align: -.125em;
 <li><a href="#gitignore">.gitignore</a></li>
 <li><a href="#branch">Branch</a></li>
 <li><a href="#clone">Clone</a></li>
+<li><a href="#collaborator">Collaborator</a></li>
 <li><a href="#commit">Commit</a></li>
 <li><a href="#commit-message">Commit Message</a></li>
+<li><a href="#detached-head">Detached HEAD</a></li>
+<li><a href="#fetch">Fetch</a></li>
 <li><a href="#fork">Fork</a></li>
 <li><a href="#git">Git</a></li>
 <li><a href="#github-gitlab">GitHub / GitLab</a></li>
 <li><a href="#github-desktop">GitHub Desktop</a></li>
+<li><a href="#head">HEAD</a></li>
 <li><a href="#history-log">History (Log)</a></li>
 <li><a href="#issue">Issue</a></li>
 <li><a href="#license">License</a></li>
@@ -4150,6 +4159,7 @@ vertical-align: -.125em;
 <li><a href="#main-branch">Main Branch</a></li>
 <li><a href="#merge">Merge</a></li>
 <li><a href="#merge-conflict">Merge Conflict</a></li>
+<li><a href="#origin">Origin</a></li>
 <li><a href="#pull">Pull</a></li>
 <li><a href="#pull-request-pr">Pull Request (PR)</a></li>
 <li><a href="#push">Push</a></li>
@@ -4158,7 +4168,7 @@ vertical-align: -.125em;
 <li><a href="#repository">Repository (repo)</a></li>
 <li><a href="#restore-discard">Restore / Discard</a></li>
 <li><a href="#revert">Revert</a></li>
-<li><a href="#stage">Stage</a></li>
+<li><a href="#stage">Stage / Staging Area</a></li>
 </ul>
 </section>
 <section id="repository-basics" class="level2">
@@ -4174,8 +4184,12 @@ See also: <a href="#local-repository">Local Repository</a>, <a href="#remote-rep
 </section>
 <section id="remote-repository" class="level3">
 <h3 class="anchored" data-anchor-id="remote-repository">Remote Repository</h3>
-<p>The copy of the repository hosted on a service like <a href="#github--gitlab"><strong>GitHub</strong> or <strong>GitLab</strong></a>, usually shared with others.<br>
+<p>The copy of the repository hosted on a service like <a href="#github-gitlab"><strong>GitHub</strong> or <strong>GitLab</strong></a>, usually shared with others.<br>
 See also: <a href="#push">Push</a>, <a href="#pull">Pull</a>, <a href="#clone">Clone</a>.</p>
+</section>
+<section id="origin" class="level3">
+<h3 class="anchored" data-anchor-id="origin">Origin</h3>
+<p>The default name Git gives to the <a href="#remote-repository">remote repository</a> you cloned from or published to. That’s why GitHub Desktop shows buttons like <strong>Push origin</strong> or <strong>Fetch origin</strong>.</p>
 </section>
 <section id="git" class="level3">
 <h3 class="anchored" data-anchor-id="git">Git</h3>
@@ -4187,7 +4201,7 @@ See also: <a href="#push">Push</a>, <a href="#pull">Pull</a>, <a href="#clone">C
 </section>
 <section id="github-desktop" class="level3">
 <h3 class="anchored" data-anchor-id="github-desktop">GitHub Desktop</h3>
-<p>A <strong>graphical application</strong> for using <a href="#git">Git</a> and <a href="#github--gitlab">GitHub</a> without the terminal.<br>
+<p>A <strong>graphical application</strong> for using <a href="#git">Git</a> and <a href="#github-gitlab">GitHub</a> without the terminal.<br>
 It lets you <a href="#clone">clone</a>, <a href="#commit">commit</a>, <a href="#push">push</a>, <a href="#pull">pull</a>, create <a href="#branch">branches</a>, and manage <a href="#pull-request-pr">pull requests</a> through a point-and-click interface.</p>
 </section>
 <section id="main-branch" class="level3">
@@ -4196,14 +4210,14 @@ It lets you <a href="#clone">clone</a>, <a href="#commit">commit</a>, <a href="#
 </section>
 <section id="fork" class="level3">
 <h3 class="anchored" data-anchor-id="fork">Fork</h3>
-<p>Your personal copy of someone else’s repository on <a href="#github--gitlab">GitHub</a>. Useful for contributing to open source projects.</p>
+<p>Your personal copy of someone else’s repository on <a href="#github-gitlab">GitHub</a>. Useful for contributing to open source projects.</p>
 </section>
 </section>
 <section id="working-with-changes" class="level2">
 <h2 class="anchored" data-anchor-id="working-with-changes">✍️ Working with Changes</h2>
 <section id="stage" class="level3">
-<h3 class="anchored" data-anchor-id="stage">Stage</h3>
-<p>The step before committing. You choose which changes you want to include in the next <a href="#commit">commit</a>. In <a href="#github-desktop">GitHub Desktop</a>, this is done by checking the boxes next to changed files.</p>
+<h3 class="anchored" data-anchor-id="stage">Stage / Staging Area</h3>
+<p>The step before committing. You choose which changes you want to include in the next <a href="#commit">commit</a>. The staged changes are collected in the <strong>staging area</strong>. In <a href="#github-desktop">GitHub Desktop</a>, this is done by checking the boxes next to changed files.</p>
 </section>
 <section id="commit" class="level3">
 <h3 class="anchored" data-anchor-id="commit">Commit</h3>
@@ -4219,6 +4233,14 @@ In GitHub Desktop, you’ll see a box for the <strong>summary</strong> (short ti
 <section id="history-log" class="level3">
 <h3 class="anchored" data-anchor-id="history-log">History (Log)</h3>
 <p>The list of past <a href="#commit">commits</a>. In <a href="#github-desktop">GitHub Desktop</a>, you can view this in the <strong>History</strong> tab.</p>
+</section>
+<section id="head" class="level3">
+<h3 class="anchored" data-anchor-id="head">HEAD</h3>
+<p>A pointer to where you currently are in the <a href="#history-log">history</a>. Usually, it points to the latest <a href="#commit">commit</a> of the <a href="#branch">branch</a> you are on. When you switch branches, HEAD moves with you.</p>
+</section>
+<section id="detached-head" class="level3">
+<h3 class="anchored" data-anchor-id="detached-head">Detached HEAD</h3>
+<p>The state you are in when you check out a specific (older) <a href="#commit">commit</a> instead of a <a href="#branch">branch</a>. You can look at your files as they were at that point in time. New commits in this state don’t belong to any branch, so switch back to a branch (e.g. <a href="#main-branch">main</a>) before you continue working.</p>
 </section>
 <section id="restore-discard" class="level3">
 <h3 class="anchored" data-anchor-id="restore-discard">Restore / Discard</h3>
@@ -4239,7 +4261,8 @@ See also: <a href="#merge">Merge</a>, <a href="#pull-request-pr">Pull Request</a
 </section>
 <section id="merge-conflict" class="level3">
 <h3 class="anchored" data-anchor-id="merge-conflict">Merge Conflict</h3>
-<p>Happens when Git can’t automatically <a href="#merge">merge</a> changes. You’ll need to choose which version to keep.</p>
+<p>Happens when Git can’t automatically <a href="#merge">merge</a> changes. You’ll need to choose which version to keep.<br>
+See the <a href="./how-tos/git_workflow_gh_desktop.html#resolve-merge-conflicts">GitHub Desktop how-to</a> for how to resolve conflicts.</p>
 </section>
 </section>
 <section id="sharing-collaboration" class="level2">
@@ -4248,14 +4271,23 @@ See also: <a href="#merge">Merge</a>, <a href="#pull-request-pr">Pull Request</a
 <h3 class="anchored" data-anchor-id="push">Push</h3>
 <p>Send your <a href="#commit">commits</a> from your <a href="#local-repository">local repository</a> to the <a href="#remote-repository">remote repository</a>.</p>
 </section>
+<section id="fetch" class="level3">
+<h3 class="anchored" data-anchor-id="fetch">Fetch</h3>
+<p>Check the <a href="#remote-repository">remote repository</a> for new <a href="#commit">commits</a> and download them, <strong>without</strong> changing your files yet. In GitHub Desktop, this is the <strong>Fetch origin</strong> button.<br>
+See also: <a href="#pull">Pull</a>.</p>
+</section>
 <section id="pull" class="level3">
 <h3 class="anchored" data-anchor-id="pull">Pull</h3>
-<p>Download <a href="#commit">commits</a> from the <a href="#remote-repository">remote repository</a> into your <a href="#local-repository">local repository</a>, so you’re up to date.<br>
+<p>Download <a href="#commit">commits</a> from the <a href="#remote-repository">remote repository</a> into your <a href="#local-repository">local repository</a>, so you’re up to date. A pull is a <a href="#fetch">fetch</a> followed by a <a href="#merge">merge</a>.<br>
 See also: <a href="#push">Push</a>.</p>
 </section>
 <section id="clone" class="level3">
 <h3 class="anchored" data-anchor-id="clone">Clone</h3>
 <p>Make a <strong>copy of a remote repository</strong> onto your computer as a <a href="#local-repository">local repository</a>.</p>
+</section>
+<section id="collaborator" class="level3">
+<h3 class="anchored" data-anchor-id="collaborator">Collaborator</h3>
+<p>A person who is allowed to <a href="#push">push</a> to a repository on <a href="#github-gitlab">GitHub</a>. The owner of the repository can add collaborators under <strong>Settings -&gt; Collaborators</strong>.</p>
 </section>
 <section id="pull-request-pr" class="level3">
 <h3 class="anchored" data-anchor-id="pull-request-pr">Pull Request (PR)</h3>
@@ -4701,8 +4733,21 @@ Often connected to <a href="#pull-request-pr">pull requests</a>.</p>
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2021–2026 Selina Baldauf</p>
+</div>   
+    <div class="nav-footer-center">
+       
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/selinaZitrone/get-started-with-git/edit/master/glossary.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/selinaZitrone/get-started-with-git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/selinaZitrone/get-started-with-git/edit/master/glossary.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/selinaZitrone/get-started-with-git/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>
