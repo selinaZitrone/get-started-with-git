@@ -259,9 +259,11 @@ As long as the pull request is not merged, you can still make changes to your br
 So you can now switch to your machine again, make sure that in GitHub Desktop you are
 still on your branch and make some more changes to repository. Commit and push the changes to GitHub. 
 
-# Extra
+# 4 Review and merge
 
-## Review pull request on your repo
+## Review and merge the pull request on your repo
+
+Wait until we start this task together, so that everyone has a pull request to review.
 
 Now it's time to look at the pull request your team mate left in your repository and decide if you want to merge it or not.
 
@@ -279,6 +281,8 @@ When you are happy, you can merge the pull request by clicking on the green "Mer
 
 ![](tasks/img/merge_pr.png)
 
-Now the changes are integrated into the main branch.
+Now the changes are integrated into the main branch on GitHub.
+
+Finally, switch to your own cook book repository in GitHub Desktop and pull the changes (**Pull origin**; if the button says **Fetch origin**, click that first). Have a look at the commit history to see what changed.
 
 :::

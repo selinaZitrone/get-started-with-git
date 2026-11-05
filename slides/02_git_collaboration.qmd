@@ -187,6 +187,7 @@ All you need is the URL of the remote repository
 
 :::
 
+- A **branch** is a separate line of commits. `main` is the default one.
 - Idea: Everyone works on the same branch
   - **Pull before** you start **working**
   - **Push after** you finished **working**
@@ -225,7 +226,7 @@ This works well if
 Get the changes of your team mate from the remote.
 
 - Switch to your own cook book repository
-- Pull the changes (same place as the push button: click **Fetch origin**, then **Pull origin**)
+- Pull the changes (same place as the push button: **Pull origin**; if it says **Fetch origin**, click that first)
 - Have a look at the commit history to see what changed
 
 :::
@@ -342,6 +343,10 @@ A pull request is merged on GitHub when **everyone agreed on the code**.
 # Now you (10 min) {.task-slide}
 > [Create a pull request on your team mate's repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
 > Complete task 3 "Pull requests"
+
+# Now you (5 min) {.task-slide}
+> [Review and merge the pull request in your own repo](https://selinazitrone.github.io/get-started-with-git/sessions/02_git_collaboration.html#tasks)<br>
+> Complete task 4 "Review and merge"
 
 # Some good practice tips {.inverse}
 
