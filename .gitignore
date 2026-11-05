@@ -4,3 +4,4 @@
 slides/img/images.pptx
 /.quarto/
 /_extensions
+**/*.quarto_ipynb

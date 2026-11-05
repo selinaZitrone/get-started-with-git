@@ -31,9 +31,17 @@ from: markdown+emoji
 ::: {.column width="80%"}
 
 - Ecology/Theoretical Ecology
-- **Scientific programmer** @ [Freie Universität Berlin](https://www.bcp.fu-berlin.de/biologie/arbeitsgruppen/botanik/ag_tietjen/index.html)
-- **Teaching** R, Git, good scientific practice, ...
+- Scientific programmer
+
+. . .
+
+:::{.nonincremental}
+- Teaching technical skills for scientist: 
+  - R, Git, good scientific practice, ...
 :::
+
+:::
+
 ::: {.column width = "20%"}
 
 ![](img/selina_cropped.jpg){fig-align="right"}
@@ -47,7 +55,7 @@ from: markdown+emoji
 
 :::{.text-small}
 
-{{< fa envelope >}} selina.baldauf@fu-berlin.de &nbsp;&nbsp; {{< fa brands bluesky >}} @selina-b
+{{< fa envelope >}} selina.baldauf@fu-berlin.de &nbsp;&nbsp; {{< fa globe >}} [selinabaldauf.com](https://selinabaldauf.com)
 
 :::
 
@@ -76,6 +84,7 @@ Material is all [online](https://selinazitrone.github.io/get-started-with-git/)
 . . .
 
 - Questions and feedback any time
+- Certificates at the end
 
 . . .
 
@@ -443,7 +452,54 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
 - Citations
 - Reproducibility
 
-# Now you (5 min){.task-slide}
+## The README file
+
+- `README.md` is the **landing page** of your project on GitHub
+- Written in **Markdown**: plain text with simple formatting
+
+. . .
+
+:::{.columns}
+
+:::{.column width="50%"}
+
+**You write**
+
+```markdown
+# My cook book
+
+A collection of my **favorite** recipes
+
+- Pasta
+- Pizza
+```
+
+:::
+
+:::{.column width="50%"}
+
+**GitHub shows**
+
+:::{.nonincremental style="border: 1px solid #d0d7de; border-radius: 6px; padding: 0.5em 1em;"}
+
+[My cook book]{style="display: block; font-size: 1.1em; font-weight: bold;"}
+
+A collection of my **favorite** recipes
+
+- Pasta
+- Pizza
+
+:::
+
+:::
+
+:::
+
+. . .
+
+See [GitHub's Markdown guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for more formatting options.
+
+# Now you (10 min){.task-slide}
 
 > Publish your cook book on GitHub <br>
 > Complete [Task 2 "GitHub"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks)
@@ -491,13 +547,19 @@ Use remote repos to **synchronize**, **share** and **collaborate** (can be publi
 ## Ignore files with `.gitignore`
 
 - Git tracks all files in your working directory
+
+. . .
+
+:::{.nonincremental}
 - Often, we have files we do not want tracked
   - Personal notes
-  - Compiled code and build directories
+  - Big output files
   - Log files 
   - Hidden system files
   - Personal IDE config files
   - ...
+
+:::
   
 ## Ignore files with `.gitignore`
 
@@ -530,11 +592,20 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 # Now you (5 min) {.task-slide}
 
 > Ignore some files in your cook book project
-> Complete [Task 4 "Ignore files"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
+> Complete [Task 4 "Ignore files"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks)
 
-# Thanks for your attention {.inverse}
+## Summary: Individual git workflow
 
-> Questions?
+- `git init`: Initialize a git repository
+- `git add`: Add files to the staging area
+- `git commit`: Take a snapshot of your current project version
+- `git push`: Push new commits to the remote repository
+- `.gitignore`: Ignore files and directories
+- Undo changes with `git revert` or `git restore`
+
+. . .
+
+This is all you need for **version control** and **publishing** of your personal projects.
 
 ## Preparation for tomorrow
 
@@ -568,6 +639,9 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 
 :::
 
+# Thanks for your attention {.inverse}
+
+> Questions?
 
 # Go back in time {.inverse}
 
