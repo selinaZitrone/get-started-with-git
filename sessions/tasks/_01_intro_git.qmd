@@ -246,6 +246,7 @@ You can find it via **Repository -> View on GitHub** or by logging into your Git
 
 Have a brief look around in your GitHub repository.
 Which buttons are there? How do your files look like?
+Can you find your README? How is it displayed?
 
 ## For the fast ones
 
@@ -254,9 +255,19 @@ Commit them, push them to GitHub and check out how they look online.
 
 Some ideas:
 
-- Work on the README file and add some information about your cook book project there.
-  - You can check out this [example repository](https://github.com/selinaZitrone/cookbook-git-training) to see a slightly more advanced README.
-- Add or change recipes
+**Work on your README**
+
+Tell people what your cook book is about in your `README.md` file.
+Use [GitHub's Markdown guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to look up the syntax.
+
+Some things to try:
+
+- Add a heading and a short description with some **bold** text
+- Add a list of your recipes
+- Link to one of your recipe files, e.g. `[Pasta](pasta.md)`
+- A bit tricky: Add a picture of a dish, e.g. `![My pasta](pasta.png)`. You need to add the image to your repository first.
+
+**Add or change recipes**
 
 # 3 Undo changes
 
