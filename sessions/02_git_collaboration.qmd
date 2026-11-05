@@ -17,6 +17,8 @@ This session will be about:
 Check out the [previous session](01_intro_git.qmd) if you missed it, 
 where I talked about basic Git concepts and a simple Git workflow.
 
+## Slides
+
 
 ```{=html}
 <iframe class="slide-deck" width="780" height="500" src="../slides/02_git_collaboration.html"></iframe>

@@ -215,7 +215,9 @@ Merge your new branch into the main branch (**Branch -> Merge into current branc
 
 Now push the "main" to GitHub by clicking the push button to share your changes with your team mate.
 
-#### For the fast ones
+#### Optional task (if you finish early)
+
+You can do this or skip it and just take a break.
 
 Switch back to your branch again and make some more changes to the recipe you added. Commit them and merge the branch again into main. Push main to GitHub again.
 
@@ -249,7 +251,9 @@ On top you should already see the option to "Compare and pull request":
 
 Click on that button and use the dialogue window that opens to describe your changes. Then create the pull request by clicking on the green button that says "Create pull request".
 
-#### For the fast ones
+#### Optional task (if you finish early)
+
+You can do this or skip it and just take a break.
 
 As long as the pull request is not merged, you can still make changes to your branch and push them to GitHub. The pull request will automatically update with the new changes.
 So you can now switch to your machine again, make sure that in GitHub Desktop you are

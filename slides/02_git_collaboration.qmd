@@ -29,6 +29,8 @@ from: markdown+emoji
 
 Let's check if we are all set with the [teams](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit#gid=0).
 
+Did you accept the invitation from your team mate? You need it to push to their repo.
+
 ## Recap
 
 :::{.columns}
@@ -143,6 +145,7 @@ You can clone
 - all of your own repositories (public and private)
 - all repositories you are a collaborator on (public and private)
 - all public repositories of other people
+  - To contribute: **fork** the repo (your own copy on GitHub), then clone your fork
 
 . . .
 
@@ -222,7 +225,7 @@ This works well if
 Get the changes of your team mate from the remote.
 
 - Switch to your own cook book repository
-- Pull the changes (Same button as the push button)
+- Pull the changes (same place as the push button: click **Fetch origin**, then **Pull origin**)
 - Have a look at the commit history to see what changed
 
 :::
@@ -236,7 +239,7 @@ Get the changes of your team mate from the remote.
 This workflow starts to be problematic when
 
 - People push often/forget to pull regularly
-  - Potential conflicts on main
+  - Potential conflicts on main (two people changed the same lines, see appendix)
 - You just want to experiment
   - Everything goes directly to main
   
@@ -261,13 +264,13 @@ This workflow starts to be problematic when
 
 **Advantages** of this approach
 
-- Guarantee that main always works
+- Helps keep main working
 - Potential conflicts don't have to be solved on main
 - You can experiment without messing up the main
 
 ## Working on a separate branch
 
-The steps to create and work on a separate branch are easy:
+To create and work on a separate branch:
 
 ![](img/day2/create_branch_stew.png)
 
@@ -354,9 +357,8 @@ A pull request is merged on GitHub when **everyone agreed on the code**.
 
 Some essentials that will improve your published repository:
 
-- Add a good README.md file
+- Expand your README.md file
   - Tell people what your project is about and how to use it
-  - Check out the [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting options
 - Add a LICENSE file
   - Tell others how to use your code
 - Add a DOI to your repository (e.g. via [Zenodo](https://emilio-berti.github.io/idiv-git-introduction/21-github_zenodo/index.html))
