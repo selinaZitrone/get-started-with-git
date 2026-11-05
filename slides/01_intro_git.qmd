@@ -2,7 +2,7 @@
 title: "Introduction to version control with Git"
 subtitle: "Day 1: Concepts and individual Git workflow"
 author: "Selina Baldauf"
-date: today
+date: 2026-11-09
 date-format: long
 format: 
   revealjs:

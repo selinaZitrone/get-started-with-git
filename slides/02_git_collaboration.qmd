@@ -2,7 +2,7 @@
 title: "Introduction to version control with Git"
 subtitle: "Day 2: Branching, Merging and collaboration workflows"
 author: "Selina Baldauf"
-date: today
+date: 2026-11-10
 date-format: long
 format: 
   revealjs:
