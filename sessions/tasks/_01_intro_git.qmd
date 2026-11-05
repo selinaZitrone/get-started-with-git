@@ -226,7 +226,9 @@ Do you see your changes?
 Now commit your recipe file. Enter a commit message and a description and
 then click the commit button.
 
-### For the fast ones
+### Optional tasks (if you finish early)
+
+You can do these in any order — or skip them and just take a break.
 
 - Add other recipes and commit them to your repository
 - Make changes to existing recipes and commit them
@@ -247,7 +249,9 @@ Have a brief look around.
 Which buttons are there? What do your files look like?
 Can you find your README? How is it displayed?
 
-### For the fast ones
+### Optional tasks (if you finish early)
+
+You can do these in any order — or skip them and just take a break.
 
 Switch back to your local repo and make some more changes.
 Commit them, push them to GitHub and check out how they look online.
