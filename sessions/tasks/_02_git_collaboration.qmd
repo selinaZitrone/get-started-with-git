@@ -12,16 +12,13 @@ Use GitHub Desktop to clone the cook book repository of your team mate.
 
 Go to **File -> Clone Repository**.
 
-In the tab "GitHub.com" you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your team mate and clone it to a local path of your choice.
+In the tab "GitHub.com" you will find a list of all your repositories, including the ones where you are a collaborator. Find the repository of your team mate and clone it to a local path of your choice (not inside your own cook book folder).
 
 :::{.callout-caution}
 ## What if I don't see the repository of my team mate?
 
 
-You can also clone a repository using its URL. Switch to the tab "URL" in GitHub Desktop.
- Open your team mate's repository on GitHub (find the correct link [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)). On the GitHub page of the repo, click on the green code button
-on the top right, copy the HTTPS address and then paste it in the URL field
-of GitHub Desktop. Then clone it to a local path of your choice.
+You can also clone with the URL of the repository. Open your team mate's repo on GitHub (see the [team spreadsheet](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)), click the green **Code** button and copy the HTTPS address. In GitHub Desktop, switch to the "URL" tab and paste it there. Then clone it to a local path of your choice (not inside your own cook book folder).
 
 :::
 
@@ -35,13 +32,13 @@ Make sure that you are in your team mate's cook book (check which repository you
 
 Create a new branch to add a recipe (**Branch -> New branch**).
 
-Make sure that you are now in the new branch by looking in the top middle of GitHub Desktop what your current branch is:
+Check the top middle of GitHub Desktop: Your new branch should be the current branch.
 
 ![](tasks/img/current_branch.png)
 
 Now go to the project folder (**Repository -> Show in Explorer**, on macOS **Show in Finder**) and add a file for a new recipe.
 
-You can again copy paste a recipe from below to save some time.
+You can again copy paste a recipe from below. Choose one that isn't in there yet.
 
 :::{.panel-tabset}
 
@@ -213,23 +210,23 @@ Now switch back to the main branch (click on the "current branch" button on top 
 
 Merge your new branch into the main branch (**Branch -> Merge into current branch -> select your branch**). Now check the commit history to see if your branch commit is actually there.
 
-Now push the "main" to GitHub by clicking the push button to share your changes with your team mate.
+Push main to GitHub (**Push origin**) to share your changes with your team mate.
 
 #### Optional task (if you finish early)
 
 You can do this or skip it and just take a break.
 
-Switch back to your branch again and make some more changes to the recipe you added. Commit them and merge the branch again into main. Push main to GitHub again.
+Switch back to your branch, change the recipe you added and commit. Then switch to main, merge your branch and push main to GitHub.
 
 # 3 Pull requests
 
 ## Make a pull request in your team mate's repo
 
-Now it's again time to modify something in your team mate's cook book. Make sure you are in your team mate's repository on the top left of GitHub desktop. 
+Make sure you are in your team mate's repository (top left of GitHub Desktop).
 
-#### Create another branch and make some changes
+#### Create another branch
 
-Create another branch (**Branch -> New branch**) and make sure that you are on that branch (top middle section of GitHub Desktop).
+Switch to main, then create another branch (**Branch -> New branch**). Make sure that you are on that branch (top middle of GitHub Desktop).
 
 #### Make some changes
 
@@ -240,12 +237,12 @@ Now commit these changes.
 
 #### Publish and push branch
 
-Publish and push your branch to GitHub by clicking on the publish/push button.
+Click **Publish branch** on the top right to push your branch to GitHub.
 
-#### Pull request
+#### Create the pull request
 
 Now open the repository on GitHub (**Repository -> View on GitHub**).
-On top you should already see the option to "Compare and pull request":
+On top you should already see the option to "Compare & pull request":
 
 ![](tasks/img/compare_and_pr.png)
 
@@ -255,9 +252,8 @@ Click on that button and use the dialogue window that opens to describe your cha
 
 You can do this or skip it and just take a break.
 
-As long as the pull request is not merged, you can still make changes to your branch and push them to GitHub. The pull request will automatically update with the new changes.
-So you can now switch to your machine again, make sure that in GitHub Desktop you are
-still on your branch and make some more changes to repository. Commit and push the changes to GitHub. 
+Until the pull request is merged, it updates automatically with anything you push to your branch.
+To try this, make sure you are still on your branch in GitHub Desktop, make some more changes, then commit and push them.
 
 # 4 Review and merge
 
@@ -267,15 +263,13 @@ Wait until we start this task together, so that everyone has a pull request to r
 
 Now it's time to look at the pull request your team mate left in your repository and decide if you want to merge it or not.
 
-When you have a pull request, you can see it on top, indicated by the number next to the pull request button:
+You can see new pull requests by the number next to **Pull requests** at the top of your repo:
 
 ![](tasks/img/new_pr.png)
 
-Open the pull request by clicking on the button and selecting the Pull request from the list of pull requests.
+Open the pull request and click through the tabs, e.g. **Files changed**.
 
-Click through the tabs on top. E.g. the "Files changed" tab is very interesting.
-
-You can comment on the pull request if you want and ask for changes.
+You can leave a comment or ask for changes if you want.
 
 When you are happy, you can merge the pull request by clicking on the green "Merge pull request" button:
 

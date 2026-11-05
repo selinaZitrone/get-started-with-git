@@ -144,7 +144,7 @@ commit messages and why this is important.
 ### Look at the commit history
 
 To look at the history of your commits, you can switch from the "Changes" to the
-"History" view of GitHub desktop. It gives you all the details about previous commits:
+"History" view of GitHub Desktop. It gives you all the details about previous commits:
 
 ![](img/ghd_history.png)
 
