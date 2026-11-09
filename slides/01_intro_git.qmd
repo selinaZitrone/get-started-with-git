@@ -519,7 +519,7 @@ See [GitHub's Markdown guide](https://docs.github.com/en/get-started/writing-on-
 
 # Undo things {.inverse}
 
-> `git revert`, `git restore`
+> `git restore`, `git revert`
 
 ## Restore/Discard uncommitted changes
 
@@ -539,7 +539,7 @@ See [GitHub's Markdown guide](https://docs.github.com/en/get-started/writing-on-
 
 # Now you (5 min) {.task-slide}
 
-> Undo some changes in your cook book
+> Discard uncommitted changes and revert a commit <br>
 > Complete [Task 3 "Undo changes"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks) 
 
 # Ignore files with `.gitignore` {.inverse}
@@ -591,53 +591,33 @@ See [here](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) for
 
 # Now you (5 min) {.task-slide}
 
-> Ignore some files in your cook book project
+> Ignore a file and commit the `.gitignore` <br>
 > Complete [Task 4 "Ignore files"](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks)
 
-## Summary: Individual git workflow
+## Summary: Individual Git workflow
 
-- `git init`: Initialize a git repository
-- `git add`: Add files to the staging area
-- `git commit`: Take a snapshot of your current project version
-- `git push`: Push new commits to the remote repository
-- `.gitignore`: Ignore files and directories
-- Undo changes with `git revert` or `git restore`
+- **Track changes:** `git init`, `git add`, `git commit`
+- **Publish and back up:** `git push`
+- **Undo changes:** `git restore`, `git revert`
+- **Ignore files:** `.gitignore`
 
 . . .
 
 This is all you need for **version control** and **publishing** of your personal projects.
+
+. . .
+
+Tomorrow: **Collaborate** with others on GitHub
 
 ## Preparation for tomorrow
 
 - Tomorrow we have teams of 2
 - Collaborate on the cook book of your team mate
 
-## Preparation for tomorrow
+# Homework {.task-slide}
 
-::: {.nonincremental}
-1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-
-:::
-
-## Preparation for tomorrow
-
-:::{.nonincremental}
-1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
-
-:::
-
-![](../how-tos/img/gh_add_collaborator.png){width=68% fig-align="center"}
-
-## Preparation for tomorrow
-
-:::{.nonincremental}
-1. Enter your GitHub Account Name and the link to your repo [here](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)
-2. Look for the GitHub Name of your team mate and add them as a collaborator to your repository
-3. Accept the invitation of your team mate to their repository 
-  - You will get an Email or you can do it on GitHub
-
-:::
+> Invite your team mate to your repo and accept their invitation <br>
+> Complete the [Homework](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks) tasks
 
 # Thanks for your attention {.inverse}
 

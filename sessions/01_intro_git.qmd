@@ -11,6 +11,7 @@ In this session we will cover the following topics:
 - A simple Git workflow for your individual projects
   - Tracking changes
   - Undoing changes
+  - Ignoring files
 - Publishing projects on GitHub
 
 In the [next session](02_git_collaboration.qmd), you will learn a collaborative workflow using Git and

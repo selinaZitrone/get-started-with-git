@@ -249,14 +249,20 @@ Have a brief look around.
 Which buttons are there? What do your files look like?
 Can you find your README? How is it displayed?
 
+### Enter your repository in the spreadsheet
+
+Tomorrow you will work in pairs on the cook book of your team mate.
+
+Find your name in the [teams spreadsheet](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing){target="_blank"} and enter your GitHub user name and the link to your repository (copy it from your browser's address bar).
+
 ### Optional tasks (if you finish early)
 
 You can do these in any order — or skip them and just take a break.
 
-Switch back to your local repo and make some more changes.
-Commit them, push them to GitHub and check out how they look online.
-
 **Work on your README**
+
+Switch back to your local repo and work on the readme. Then commit and push the results
+and check the changes on GitHub.
 
 Tell people what your cook book is about in your `README.md` file.
 Use [GitHub's Markdown guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to look up the syntax.
@@ -270,7 +276,16 @@ Some things to try:
 
 **Add or change recipes**
 
+Switch back to your local repo and change more files. You can e.g. add or change recipes.
+Then commit and push the results and check the changes on GitHub.
+
 # 3 Undo changes
+
+## Undo uncommitted changes
+
+Make some changes to an existing recipe file, but do not commit them.
+See how GitHub Desktop recognizes these changes.
+Now, right-click on the changed file and select **Discard changes**.
 
 ## Revert a commit
 
@@ -281,48 +296,92 @@ Now, have a brief look at the history of your repository in GitHub Desktop.
 In the **History** tab, right-click your most recent commit and select **Revert changes in commit**.
 What happened to your history?
 
-## Undo uncommitted changes
-
-Make some changes to an existing recipe file, but do not commit them.
-See how GitHub Desktop recognizes these changes.
-Now, right-click on the changed file and select **Discard changes**.
-
 # 4 Ignore files
 
 ## Ignore files
 
-Sometimes there are files in your project folder that you don't want in your repository.
+Sometimes there are files in your project folder that should not end up in your repository (e.g. large data files, personal notes, temporary files).
 
-Find a random file on your computer (e.g. a PDF, an Excel file, ...) and copy it into your cook book folder.
+### Add a file you don't want to track
 
-Check if GitHub Desktop recognized the change to your repository, but do not commit
-this file.
+Copy any file from your computer (e.g. a PDF or an Excel file) into your cook book folder.
 
-Instead, right-click the file and select **Ignore file**.
+Switch to GitHub Desktop. Do you see the new file in the **Changes** tab? Don't commit it!
 
-This will add the file to the `.gitignore` file.
+### Ignore the file
 
-Then check the *Changes* view of GitHub Desktop. What is different now?
+Right-click the file in the **Changes** tab and select **Ignore file**.
 
-Have a look at the newly created `.gitignore` file. Then commit and push it like any other file.
+What changed in the **Changes** tab? Which file appeared instead?
+
+### Commit the `.gitignore` file
+
+Open the `.gitignore` file in a text editor. What's inside?
+
+Commit and push the `.gitignore` file.
+
+### Optional tasks (if you finish early)
+
+- Copy two more files of the same type (e.g. two PDFs) into your folder. Right-click one and select **Ignore all .pdf files**. How does the `.gitignore` change?
+
+# Homework
+
+## Prepare for the collaboration tomorrow
+
+Tomorrow you will work on the cook book of your team mate.
+For this, you need access to each other's repositories on GitHub.
+
+### Invite your team mate
+
+Find the GitHub user name of your team mate in the [teams spreadsheet](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing){target="_blank"}.
+
+Open your cook book repository on GitHub (in GitHub Desktop: **Repository -> View on GitHub**).
+
+Go to the **Settings** tab of your repository (not the settings of your GitHub account) and select **Collaborators -> Add people**.
+
+![](../how-tos/img/gh_add_collaborator.png)
+
+::: {.callout-note}
+GitHub might ask you to confirm your password or enter a 2FA code. This is normal.
+:::
+
+Search for the GitHub user name of your team mate and add them to your repository.
+
+### Accept the invitation of your team mate
+
+You will get an email from GitHub with the invitation of your team mate. Open it and accept the invitation.
+
+No email? Open the link to your team mate's repository from the spreadsheet, add `/invitations` to the end of the address and accept the invitation there.
+
+### Let us know you are ready
+
+In the spreadsheet, check the box **I accepted my partner's invitation**.
 
 # Extra
 
 ## Checkout a previous commit
 
-To see your cook book at an earlier stage, select the commit you want to jump back to. Then right-click and checkout this commit.
+You can jump back in time to see your cook book at an earlier stage.
 
-You will get a warning that you will create a detached HEAD state. This is ok, so check it out anyway.
+### Check out an earlier commit
 
-See how your history changed. GitHub Desktop will tell you that you are now in detached HEAD state. 
-If you now look at your cook book files, you will see that they correspond to an earlier version.
+In the **History** tab, right-click an older commit and select **Checkout commit**.
+
+GitHub Desktop warns you that this puts you in a *detached HEAD* state. That's ok, so check it out anyway.
+
+### Look around
+
+- What does the **Current branch** button at the top say now?
+- Open your cook book folder. Which recipes are there? Do they match the commit you checked out?
 
 ::: {.callout-note}
-You cannot work on the project in this state. 
-You can only look at the files. 
+In detached HEAD state, only look at the files. Don't make changes here.
 :::
 
-To come back to the current state, click on the current branch button at the top
-and select the main branch again.
+### Go back to the present
+
+Click the **Current branch** button and select **main**.
+
+Check your cook book folder: are all your recipes back?
 
 :::
