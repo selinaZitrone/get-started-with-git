@@ -149,7 +149,7 @@ You can clone
 - all of your own repositories (public and private)
 - all repositories you are a collaborator on (public and private)
 - all public repositories of other people
-  - To contribute: **fork** the repo (your own copy on GitHub), then clone your fork
+  - To contribute: **fork** repo (your own copy on GitHub), then clone fork
 
 . . .
 

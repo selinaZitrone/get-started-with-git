@@ -949,7 +949,7 @@
     "href": "slides/02_git_collaboration.html#get-a-repo-from-a-remote-2",
     "title": "Introduction to version control with Git",
     "section": "Get a repo from a remote",
-    "text": "Get a repo from a remote\nYou can clone\n\nall of your own repositories (public and private)\nall repositories you are a collaborator on (public and private)\nall public repositories of other people\n\nTo contribute: fork the repo (your own copy on GitHub), then clone your fork\n\n\n\nAll you need is the URL of the remote repository"
+    "text": "Get a repo from a remote\nYou can clone\n\nall of your own repositories (public and private)\nall repositories you are a collaborator on (public and private)\nall public repositories of other people\n\nTo contribute: fork repo (your own copy on GitHub), then clone fork\n\n\n\nAll you need is the URL of the remote repository"
   },
   {
     "objectID": "slides/02_git_collaboration.html#get-changes-from-the-remote",
