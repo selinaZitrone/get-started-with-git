@@ -27,9 +27,13 @@ from: markdown+emoji
 
 ## Before we start
 
-Let's check if we are all set with the [teams](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit#gid=0).
+- Today you work in pairs on the cook book of your team mate
+- For this, you need access to each other's repositories
 
-Did you accept the invitation from your team mate? You need it to push to their repo.
+# Now you (10 min) {.task-slide}
+
+> Invite your team mate and accept their invitation <br>
+> Complete the [invitation task](https://selinazitrone.github.io/get-started-with-git/sessions/01_intro_git.html#tasks) from day 1 (tab "Homework")
 
 ## Recap
 

@@ -11,8 +11,10 @@ Gitlab, you can seamlessly collaborate without losing the overview of your proje
 
 This session will be about:
 
+- Cloning and pulling
 - Branching and merging with Git
 - A collaboration workflow with GitHub
+- Pull requests and code review
 
 Check out the [previous session](01_intro_git.qmd) if you missed it, 
 where I talked about basic Git concepts and a simple Git workflow.

@@ -17,6 +17,8 @@ In the tab "GitHub.com" you will find a list of all your repositories, including
 :::{.callout-caution}
 ## What if I don't see the repository of my team mate?
 
+- Click the refresh button next to the search field. The list does not always update automatically.
+- Check that you accepted your team mate's invitation (open the link to your team mate's repo from the [team spreadsheet](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing) and add `/invitations` to the end of the address). Without the invitation, you can clone the repo but you cannot push to it.
 
 You can also clone with the URL of the repository. Open your team mate's repo on GitHub (see the [team spreadsheet](https://docs.google.com/spreadsheets/d/1tNwDnfKM84gI-Xd5myr4gbRRJeRGBvAuAr4YjOy-M-o/edit?usp=sharing)), click the green **Code** button and copy the HTTPS address. In GitHub Desktop, switch to the "URL" tab and paste it there. Then clone it to a local path of your choice (not inside your own cook book folder).
 
@@ -30,11 +32,15 @@ Open your team mate's cook book in the file explorer to see which files are alre
 
 Make sure that you are in your team mate's cook book (check which repository you are in on the top left).
 
-Create a new branch to add a recipe (**Branch -> New branch**).
+#### Create a branch
+
+Create a new branch to add a recipe (**Branch -> New branch**). Give it a short name that describes what you will do, e.g. `add-ramen`.
 
 Check the top middle of GitHub Desktop: Your new branch should be the current branch.
 
 ![](tasks/img/current_branch.png)
+
+#### Add a recipe
 
 Now go to the project folder (**Repository -> Show in Explorer**, on macOS **Show in Finder**) and add a file for a new recipe.
 
@@ -204,11 +210,17 @@ Serve immediately.
 :::
 
 
-Add and commit that new recipe to your branch. 
+#### Commit to your branch
+
+Add and commit that new recipe to your branch.
+
+#### Merge into main
 
 Now switch back to the main branch (click on the "current branch" button on top and select "main").
 
 Merge your new branch into the main branch (**Branch -> Merge into current branch -> select your branch**). Now check the commit history to see if your branch commit is actually there.
+
+#### Push main
 
 Push main to GitHub (**Push origin**) to share your changes with your team mate.
 
